@@ -311,6 +311,25 @@ const Page: NextPage = () => {
           </p>
         </Section>
       </div>
+
+      {/* open advertisment pricing section */}
+      <div className="py-10">
+        <Section>
+          <h2 className="text-4xl">
+            Top-Rated Paid Social Advertising Services
+          </h2>
+
+          <p className="pt-10">
+            We are a social media advertising agency that believes in
+            transparency, so that's why we post our social media advertising
+            pricing. Our affordable social media advertising services allow us
+            to meet the needs of a variety of businesses based on specific
+            priorities. Our social media advertising services can incorporate
+            anyone with a varying social ad spend budget, from a small business
+            owner to a large corporation.
+          </p>
+        </Section>
+      </div>
     </div>
   );
 };
