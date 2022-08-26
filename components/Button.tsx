@@ -40,7 +40,7 @@ const Button: FC<ButtonProps> = ({
             : white
             ? "bg-white text-black"
             : "bg-black"
-        }`}
+        } h-full`}
       >
         {text}
         {arrow !== undefined ? <Arrow arrow={arrow!} /> : ""}

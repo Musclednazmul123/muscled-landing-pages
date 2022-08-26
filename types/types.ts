@@ -66,3 +66,12 @@ export interface TableProp {
   headers: string[];
   rows: row[];
 }
+
+type ContentLink = {
+  title: string;
+  url: string;
+};
+
+export interface TableOfContentProp {
+  links: ContentLink[];
+}
