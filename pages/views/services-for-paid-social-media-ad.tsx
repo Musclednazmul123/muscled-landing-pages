@@ -11,7 +11,7 @@ import Button from "components/Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
 
 const Page: NextPage = () => {
-  const list = [
+  const cardList = [
     { icon: true, text: "15 hours quarterly" },
     { icon: true, text: "$1,800 monthly investment" },
     { icon: true, text: "Best for websites under 250 pages" },
@@ -25,6 +25,54 @@ const Page: NextPage = () => {
     { icon: true, text: "35 hours quarterly" },
     { icon: true, text: "$4,800 monthly investment" },
     { icon: true, text: "Best for websites under 250 pages" },
+  ];
+
+  const advertisingServiceList = [
+    {
+      title: "Services for Facebook Advertising",
+      content:
+        "Reach a global audience of over one billion people by using media advertising management services for Facebook, the world's largest social media network.",
+    },
+    {
+      title: "Services for Instagram Advertising",
+      content:
+        "Increase brand awareness and engagement with a competitive Instagram ad campaign that encourages users to interact with your brand and purchase your products.",
+    },
+    {
+      title: "Services for Twitter advertising ",
+      content:
+        "With Twitter's social media advertising services, you can connect easily with current and potential customers. Become the company that customers follow and trust.",
+    },
+    {
+      title: "Services for LinkedIn Advertising",
+      content:
+        "Start advertising on the best lead generation social media platform. With compelling and personalized ads for your audience, you can target and capture valuable leads.",
+    },
+    {
+      title: "Services for YouTube Advertising ",
+      content:
+        "With social media ad management services for YouTube, you can access more than one-third of the Internet. Start creating text and video ads that generate engagement and sales.",
+    },
+    {
+      title: "Services for Pinterest Advertising",
+      content:
+        "Engage with a specific and highly targeted audience through a managed Pinterest social media campaign that generates visibility, sales, and more for your company.",
+    },
+    {
+      title: "Advertising on Social Media for Ecommerce",
+      content:
+        "With social media ads, you can increase traffic to your e-commerce store and start selling more online!",
+    },
+    {
+      title: "Advertising on Social Media for Businesses",
+      content:
+        "Increase enterprise sales with social ads (for ad budgets higher than $10,000 per month)!",
+    },
+    {
+      title: "D2C Social Media Marketing",
+      content:
+        "Attract, connect, and sell with social media ads customized to your direct-to-consumer business!",
+    },
   ];
 
   return (
@@ -64,7 +112,7 @@ const Page: NextPage = () => {
             highlight="Standard consultation & reporting plan"
             description="$950 INITIAL INVESTMENT"
             title="15% of ad spend"
-            list={list}
+            list={cardList}
             className="text-red-400 w-full max-w-[400px]"
             starIcon={1}
             type="pricing"
@@ -97,7 +145,7 @@ const Page: NextPage = () => {
       </Section>
 
       {/* social advertising section */}
-      <div className="pt-20 pb-40 bg-[#C40000]/10">
+      <div className="mt-6 pt-20 pb-40 bg-[#C40000]/10">
         <Section>
           <FlexLayout align="align-start">
             <div className="w-[75%]">
@@ -136,7 +184,7 @@ const Page: NextPage = () => {
             <div className="w-[25%]">
               <div
                 className="w-full text-white p-4 rounded-md"
-                style={{ background: `url(${abstImg.src}) /cover` }}
+                style={{ background: `url(${abstImg.src})` }}
               >
                 <div className="w-[80%] space-y-8">
                   <h5>
@@ -158,7 +206,7 @@ const Page: NextPage = () => {
           <FlexLayout>
             <div className="w-[50%]">
               <div className="space-y-5 mb-14">
-                <p>
+                <p className="w-[80%]">
                   "I would highly recommend Muscled for social media
                   management." Muscled's team is very proficient; their article
                   writing is outstanding, and their social team produces
@@ -187,6 +235,30 @@ const Page: NextPage = () => {
             </div>
           </FlexLayout>
         </Section>
+      </div>
+
+      {/* advertisment services section */}
+      <div>
+        <div className="py-28">
+          <h3 className="text-center text-3xl">
+            Services for Social Media Advertising for Every Platform{" "}
+          </h3>
+        </div>
+
+        <div className="bg-black py-10">
+          <Section>
+            <div className="grid grid-cols-3 justify-center gap-12">
+              {advertisingServiceList.map((service, idx) => (
+                <div key={idx} className="bg-white py-5 self-stretch w-[80%]">
+                  <div className="mx-auto w-[80%] space-y-10">
+                    <h4 className="text-xl w-[90%]">{service.title}</h4>
+                    <p>{service.content}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Section>
+        </div>
       </div>
     </div>
   );
