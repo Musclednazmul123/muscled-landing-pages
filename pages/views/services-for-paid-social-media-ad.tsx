@@ -8,6 +8,7 @@ import Card from "components/Card";
 import FlexLayout from "components/layout/FlexLayout";
 import abstImg from "components/assets/abstract.png";
 import Button from "components/Button";
+import VideoFrame from "components/Fawwaz/VideoFrame";
 
 const Page: NextPage = () => {
   const list = [
@@ -146,6 +147,43 @@ const Page: NextPage = () => {
                   <Button text="Request a Proposal" />
                 </div>
               </div>
+            </div>
+          </FlexLayout>
+        </Section>
+      </div>
+
+      {/* testimonial section */}
+      <div className="bg-black text-white pt-14 pb-20">
+        <Section>
+          <FlexLayout>
+            <div className="w-[50%]">
+              <div className="space-y-5 mb-14">
+                <p>
+                  "I would highly recommend Muscled for social media
+                  management." Muscled's team is very proficient; their article
+                  writing is outstanding, and their social team produces
+                  excellent results."
+                </p>
+
+                <h5>Associate in Category Development</h5>
+
+                <h5>Company Name</h5>
+              </div>
+
+              <div className="w-[47%]">
+                <Button
+                  customColor="bg-[#C40000]"
+                  text="See Our Clients’ Testimonials"
+                />
+              </div>
+            </div>
+
+            <div className="w-[40%]">
+              <iframe
+                className="w-full h-[300px]"
+                src={"https://www.youtube.com/embed/D0UnqGm_miA"}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
             </div>
           </FlexLayout>
         </Section>

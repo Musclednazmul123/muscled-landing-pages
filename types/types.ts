@@ -13,6 +13,7 @@ export interface ButtonProps {
   red?: boolean;
   violate?: boolean;
   white?: boolean;
+  customColor?: string;
   outline?: boolean;
   shadow?: boolean;
   rounded?: boolean;
