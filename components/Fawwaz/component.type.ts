@@ -9,12 +9,13 @@ export interface CardProps {
 export interface CardHeaderProps {
 	children: ReactNode;
 	className?: string;
-	title: string;
+	title?: string;
 	rate: string;
+	monthly?: JSX.Element;
 	type?: "basic" | "premium" | "ultimate";
 }
 
-export interface CardContent {
+export interface CardContentProps {
 	className?: string;
 	children: ReactNode;
 }

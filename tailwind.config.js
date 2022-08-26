@@ -18,6 +18,7 @@ module.exports = {
 				"black-80": "#000000CC",
 				"black-70": "#000000B2",
 				"black-footer": "#141010",
+				"bold-red": "#C40000",
 				"red-12": "#C400001F",
 				"red-10": "#C400001A",
 				"red-9": "#C4000017",

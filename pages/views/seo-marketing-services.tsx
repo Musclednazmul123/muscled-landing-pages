@@ -76,7 +76,14 @@ const Page: NextPage = () => {
 
 				<div className="flex flex-wrap justify-center lg:justify-between gap-2">
 					<Card className="rounded-sm border-2 max-w-[400px] w-full">
-						<CardHeader title="STANDARD PLAN" rate="2,500">
+						<CardHeader
+							title="STANDARD PLAN"
+							rate="2,500"
+							monthly={
+								<span className="block text-black text-opacity-50">
+									per month
+								</span>
+							}>
 							<AiFillStar className="card-icon fill-black-50" />
 						</CardHeader>
 						<CardContent className="space-y-11">
@@ -102,7 +109,12 @@ const Page: NextPage = () => {
 						<CardHeader
 							title="PREMIUM PLAN"
 							rate="5,000"
-							type="premium">
+							type="premium"
+							monthly={
+								<span className="block text-black text-opacity-50">
+									per month
+								</span>
+							}>
 							<div className="flex">
 								<AiFillStar className="card-icon fill-black-70" />
 								<AiFillStar className="card-icon fill-black-70" />
@@ -131,7 +143,12 @@ const Page: NextPage = () => {
 						<CardHeader
 							title="ULTIMATE PLAN"
 							rate="8,000"
-							type="ultimate">
+							type="ultimate"
+							monthly={
+								<span className="block text-black text-opacity-50">
+									per month
+								</span>
+							}>
 							<div className="flex">
 								<AiFillStar className="card-icon fill-black-80" />
 								<AiFillStar className="card-icon fill-black-80" />
