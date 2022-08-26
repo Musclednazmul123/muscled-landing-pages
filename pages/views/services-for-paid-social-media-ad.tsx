@@ -8,7 +8,7 @@ import Card from "components/Card";
 import FlexLayout from "components/layout/FlexLayout";
 import abstImg from "components/assets/abstract.png";
 import Button from "components/Button";
-import VideoFrame from "components/Fawwaz/VideoFrame";
+import Table from "components/Table";
 
 const Page: NextPage = () => {
   const cardList = [
@@ -328,6 +328,185 @@ const Page: NextPage = () => {
             anyone with a varying social ad spend budget, from a small business
             owner to a large corporation.
           </p>
+        </Section>
+      </div>
+
+      {/* standard consultation and reporting plans */}
+      <div className="py-10">
+        <Section>
+          <h2 className="text-4xl mb-20">
+            Social Media Advertising: Standard Consultation and Reporting Plans
+          </h2>
+
+          <Table
+            headers={[
+              "Features",
+              "1 Social Network",
+              "2 Social Networks",
+              "3 Social Networks",
+              "4 Social Networks",
+              "5 Social Networks",
+            ]}
+            rows={[
+              [
+                "Number of Unique Ads",
+                "up to 4",
+                "up to 6",
+                "up to 8",
+                "up to 9",
+                "up to 10",
+              ],
+              [
+                "Number of Advertising Campaigns/Target Audiences",
+                "up to 4",
+                "up to 6",
+                "up to 8",
+                "up to 9",
+                "up to 10",
+              ],
+              [
+                "Number of Unique Custom Advertising Images",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+              ],
+              [
+                "Social Media Remarketing Campaign & Ad",
+                "0",
+                "1",
+                "1",
+                "1",
+                "1",
+              ],
+              [
+                "Monthly Advertising Targeting & Copy Tweaks",
+                "up to 4",
+                "up to 6",
+                "up to 7",
+                "up to 8",
+                "up to 9",
+              ],
+              ["Demographic Targeting", "0", "2", "2", "2", "2"],
+              [
+                "Keywords, Interest, User Intent Targeting",
+                "0",
+                "1",
+                "1",
+                "1",
+                "1",
+              ],
+              [
+                "School/Profession/Workplace Targeting",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              [
+                "Company Size, Industry, Job Title, etc. Targeting",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              [
+                "Custom Image Compression & Delivery of Source Files",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              ["Mobile Device Optimized Ads", "✅", "✅", "✅", "✅", "✅"],
+              [
+                "Installation of Network Tracking Pixels on Website",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              [
+                "Dedicated Social Media Advertising Account Manager",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              [
+                "Monitoring of Social Ad Comments",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              ["48 Business Hour Response Time", "✅", "✅", "✅", "✅", "✅"],
+              [
+                "Up to 1 personal Social Media Consultations per Month",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              [
+                "Standard WebFX Monthly Reporting & Analysis",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              ["Access to MarketingCloudFX", "✅", "✅", "✅", "✅", "✅"],
+              ["Ad Account Setup & Optimization", "✅", "✅", "✅", "✅", "✅"],
+              [
+                "450+ SMEs behind campaign driving results",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+                "✅",
+              ],
+              [
+                "Weekly Call or Campaign Status Update (optional)",
+                "$450/month",
+                "$450/month",
+                "$450/month",
+                "$450/month",
+                "$450/month",
+              ],
+              [
+                "Initial Campaign Investment – Month 1",
+                "$950",
+                "$1,350",
+                "$1,650",
+                "$1,850",
+                "$2,350",
+              ],
+              [
+                "Ongoing Monthly Campaign Investment (Standard Advertising Consultation and Reporting)",
+                "$550 or 15% of ad spend, whichever is greater",
+                "$750 or 15% of ad spend, whichever is greater",
+                "$950 or 15% of ad spend, whichever is greater",
+                "$1,150 or 15% of ad spend, whichever is greater",
+                "$1,150 or 15% of ad spend, whichever is greater",
+              ],
+              [
+                "Required Ad Spend Range (Standard Advertising Consultation and Reporting)",
+                "$1,000 – $10,000",
+                "$2,000 – $10,000",
+                "$3,000 – $10,000",
+                "$4,000 – $10,000",
+                "$5,000 – $10,000",
+              ],
+            ]}
+          />
         </Section>
       </div>
     </div>

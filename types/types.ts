@@ -59,3 +59,10 @@ export interface FlexLayoutProp {
   direction?: string;
   align?: string;
 }
+
+type row = string[];
+
+export interface TableProp {
+  headers: string[];
+  rows: row[];
+}
