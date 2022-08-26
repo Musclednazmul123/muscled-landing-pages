@@ -16,7 +16,7 @@ import Star from "components/assets/svg/Star";
 import ChevronDown from "components/assets/svg/ChevronDown";
 
 const Page: NextPage = () => {
-  const cardList = [
+  const list1 = [
     { icon: true, text: "15 hours quarterly" },
     { icon: true, text: "$1,800 monthly investment" },
     { icon: true, text: "Best for websites under 250 pages" },
@@ -80,6 +80,33 @@ const Page: NextPage = () => {
     },
   ];
 
+  const servicesCardData = [
+    {
+      title: "Social Media Services",
+      services: [
+        "Social Media Design",
+        "Social Media Management",
+        "Social Media Pricing",
+        "Facebook Advertising Services",
+        "Instagram Advertising Services",
+      ],
+    },
+    {
+      title: "SEO Services",
+      services: ["SEO Services", "Enterprise SEO Pricing", "Local SEO Pricing"],
+    },
+    {
+      title: "Other WebFX Services",
+      services: [
+        "Enterprise Marketing Agency",
+        "Account-Based Marketing",
+        "Web Design",
+        "Web Video Production",
+        "Voice Search Optimization",
+      ],
+    },
+  ];
+
   return (
     <div>
       {/* First Section */}
@@ -117,7 +144,7 @@ const Page: NextPage = () => {
             highlight="Standard consultation & reporting plan"
             description="$950 INITIAL INVESTMENT"
             title="15% of ad spend"
-            list={cardList}
+            list={list1}
             className="text-red-400 w-full max-w-[400px]"
             starIcon={1}
             type="pricing"
@@ -1272,6 +1299,29 @@ const Page: NextPage = () => {
               />
             </div>
           </FlexLayout>
+        </Section>
+      </div>
+
+      {/* services card section */}
+      <div className="pb-16 pt-20">
+        <Section>
+          <div className="mx-auto w-max">
+            <FlexLayout spaceClass="space-x-20">
+              {servicesCardData.map((serviceData, idx) => (
+                <div
+                  key={idx}
+                  className="self-stretch pt-7 px-7 pb-10 bg-[#C40000]/[3%] text-black/70 space-y-7 w-[300px]"
+                >
+                  <p className="font-medium text-xl">{serviceData.title}</p>
+                  {serviceData.services.map((service, idx2) => (
+                    <p className="text-sm underline" key={`${idx}_${idx2}`}>
+                      {service}
+                    </p>
+                  ))}
+                </div>
+              ))}
+            </FlexLayout>
+          </div>
         </Section>
       </div>
     </div>
