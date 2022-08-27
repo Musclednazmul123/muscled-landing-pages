@@ -149,6 +149,7 @@ const Page: NextPage = () => {
             className="text-red-400 w-full max-w-[400px]"
             starIcon={1}
             type="pricing"
+            headerBgColor="bg-[#C40000]/[3%]"
           />
           <Card
             subtitle="2 SOCIAL NETWORKS"
@@ -161,6 +162,7 @@ const Page: NextPage = () => {
             className="text-red-400 w-full max-w-[400px]"
             starIcon={2}
             type="pricing"
+            headerBgColor="bg-[#C40000]/[6%]"
           />
           <Card
             subtitle="3 SOCIAL NETWORKS"
@@ -173,6 +175,7 @@ const Page: NextPage = () => {
             className="text-red-400 w-full max-w-[400px]"
             starIcon={3}
             type="pricing"
+            headerBgColor="bg-[#C40000]/[9%]"
           />
         </div>
       </Section>

@@ -38,6 +38,7 @@ export interface IProps {
   duration?: string;
   highlight?: string;
   height?: number;
+  headerBgColor?: string;
 }
 
 export interface IconProps {
