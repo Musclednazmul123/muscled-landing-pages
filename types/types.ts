@@ -61,7 +61,7 @@ export interface FlexLayoutProp {
   align?: string;
 }
 
-type row = string | any[];
+type row = (string | any)[];
 
 export interface TableProp {
   headers: string[];
