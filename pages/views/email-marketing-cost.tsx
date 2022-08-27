@@ -78,7 +78,7 @@ const Page: NextPage = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="py-10 px-8 gap-8 bg-white">
+                            <div className="flex flex-col py-10 px-8 gap-8 bg-white">
                                 <div className="flex items-center gap-4">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ const Page: NextPage = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="py-10 px-8 gap-8 bg-white">
+                            <div className="py-10 flex flex-col px-8 gap-8 bg-white">
                                 <div className="flex items-center gap-4">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ const Page: NextPage = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="py-10 px-8 gap-8 bg-white">
+                            <div className="py-10 flex flex-col px-8 gap-8 bg-white">
                                 <div className="flex items-center gap-4">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
