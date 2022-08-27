@@ -79,6 +79,7 @@ const Page: NextPage = () => {
 						<CardHeader
 							title="STANDARD PLAN"
 							rate="2,500"
+							type="basic"
 							monthly={
 								<span className="block text-black text-opacity-50">
 									per month

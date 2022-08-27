@@ -1,30 +1,77 @@
-import React from "react";
+import React, { ReactElement, ReactNode } from "react";
 import { NextPage } from "next";
 import { Hero, Section } from "components/Fawwaz/Sections";
 import SEOMarketingSVG from "../../components/assets/svg/SEOMarketingSVG";
 import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
-import { Card, CardHeader } from "components/Fawwaz/Card";
+import { Card, CardContent, CardHeader, IconItem } from "components/Fawwaz/Card";
 
+import { FaCheckCircle } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 
-const Page: NextPage = () => {
-	const list = [
-		{ icon: true, text: "15 hours quarterly" },
-		{ icon: true, text: "$1,800 monthly investment" },
-		{ icon: true, text: "Best for websites under 250 pages" },
-	];
-	const list2 = [
-		{ icon: true, text: "25 hours quarterly" },
-		{ icon: true, text: "$3,600 monthly investment" },
-		{ icon: true, text: "Best for websites under 250 pages" },
-	];
-	const list3 = [
-		{ icon: true, text: "35 hours quarterly" },
-		{ icon: true, text: "$4,800 monthly investment" },
-		{ icon: true, text: "Best for websites under 250 pages" },
-	];
+const pricingCards = [
+	{
+		rate: "2,050",
+		title: "1-2 Social Network",
+		type: "basic",
+		star: [<AiFillStar className="card-icon fill-black-50" />],
+		content: [
+			{
+				icon: <FaCheckCircle />,
+				title: "4 intial website user testing videos slebew"
+			}
+		]
+	},
+	{
+		rate: "10,000",
+		title: "1-2 Social Network",
+		type: "premium",
+		star: [
+			<AiFillStar className="card-icon fill-black-50" />,
+			<AiFillStar className="card-icon fill-black-50" />,
+		],
+		content: [
+			{
+				icon: <FaCheckCircle />,
+				title: "4 intial website user testing videos slebew"
+			}
+		]
+	},
+	{
+		rate: "65,000",
+		title: "1-2 Social Network",
+		type: "ultimate",
+		star: [
+			<AiFillStar className="card-icon fill-black-50" />,
+			<AiFillStar className="card-icon fill-black-50" />,
+			<AiFillStar className="card-icon fill-black-50" />,
+		],
+		content: [
+			{
+				icon: <FaCheckCircle />,
+				title: "4 intial website user testing videos slebew"
+			}
+		]
+	},
+];
 
+const list = [
+	{ icon: true, text: "15 hours quarterly" },
+	{ icon: true, text: "$1,800 monthly investment" },
+	{ icon: true, text: "Best for websites under 250 pages" },
+];
+const list2 = [
+	{ icon: true, text: "25 hours quarterly" },
+	{ icon: true, text: "$3,600 monthly investment" },
+	{ icon: true, text: "Best for websites under 250 pages" },
+];
+const list3 = [
+	{ icon: true, text: "35 hours quarterly" },
+	{ icon: true, text: "$4,800 monthly investment" },
+	{ icon: true, text: "Best for websites under 250 pages" },
+];
+
+const Page: NextPage = () => {
 	return (
 		<div>
 			{/* First Section */}
@@ -53,50 +100,36 @@ const Page: NextPage = () => {
 			{/* pricing card section */}
 			<Section>
 				<div className="flex py-2 space-x-5">
-					{/* <Card subtitle="1 SOCIAL NETWORK" height={780} duration='month' highlight='Standard consultation & reporting plan' description="$950 INITIAL INVESTMENT" title="15% of ad spend" list={list} className="text-red-400 w-full max-w-[400px] bg-red-6" starIcon={1} type='pricing' />
-				<Card subtitle="2 SOCIAL NETWORKS" height={780} duration='month'  highlight='Standard consultation & reporting plan' description="$1,350 INITIAL INVESTMENT"  title="15% of ad spend" list={list2} className="text-red-400 w-full max-w-[400px] bg-red-9" starIcon={2} type='pricing' />
-				<Card subtitle="3 SOCIAL NETWORKS" height={780} duration='month'  highlight='Standard consultation & reporting plan' description="$1,650 INITIAL INVESTMENT" title="15% of ad spend" list={list3} className="text-red-400 w-full max-w-[400px] bg-red-12" starIcon={3} type='pricing' /> */}
-					<Card className="max-w-[400px] w-full border-black-70 border rounded-md">
-						<CardHeader
-							rate="2,050"
-							title="1-2 SOCIAL NETWORKS"
-							monthly={
-								<p className="font-bold text-bold-red">month</p>
-							}>
-							<div className="flex">
-								<AiFillStar className="card-icon fill-black-50" />
-							</div>
-						</CardHeader>
-					</Card>
-					<Card className="max-w-[400px] w-full border-black-70 border rounded-md">
-						<CardHeader
-							rate="10,000"
-							title="2-4 SOCIAL NETWORKS"
-							type="premium"
-							monthly={
-								<p className="font-bold text-bold-red">month</p>
-							}>
-							<div className="flex">
-								<AiFillStar className="card-icon fill-black-70" />
-								<AiFillStar className="card-icon fill-black-70" />
-							</div>
-						</CardHeader>
-					</Card>
-					<Card className="max-w-[400px] w-full border-black-70 border rounded-md">
-						<CardHeader
-							rate="65,000"
-							title="3-7 SOCIAL NETWORKS"
-							type="ultimate"
-							monthly={
-								<p className="font-bold text-bold-red">month</p>
-							}>
-							<div className="flex">
-								<AiFillStar className="card-icon fill-black-80" />
-								<AiFillStar className="card-icon fill-black-80" />
-								<AiFillStar className="card-icon fill-black-80" />
-							</div>
-						</CardHeader>
-					</Card>
+					{pricingCards.map((pricing, index) => (
+						<Card
+							key={index}
+							className="max-w-[400px] w-full border-black-70 border rounded-md">
+							<CardHeader
+								rate={pricing.rate}
+								title={pricing.title}
+								type={pricing.type}
+								monthly={
+									<p className="font-bold text-bold-red">
+										month
+									</p>
+								}>
+								<div className="flex">
+									{pricing.star.map(
+										(Component): JSX.Element => Component
+									)}
+								</div>
+							</CardHeader>
+							<CardContent>
+								<CardContent className="space-y-11">
+									{
+										pricing.content.map((content) => (
+											<IconItem icon={content.icon} title={content.title} className="mt-4 justify-center"/>
+										))
+									}
+								</CardContent>
+							</CardContent>
+						</Card>
+					))}
 				</div>
 			</Section>
 		</div>

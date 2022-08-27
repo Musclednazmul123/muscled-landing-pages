@@ -6,13 +6,15 @@ export interface CardProps {
 	className: string;
 }
 
+type CardHeaderType = "basic" | "premium" | "ultimate"
+
 export interface CardHeaderProps {
 	children: ReactNode;
 	className?: string;
 	title?: string;
 	rate: string;
 	monthly?: JSX.Element;
-	type?: "basic" | "premium" | "ultimate";
+	type: CardHeaderType | string | undefined;
 }
 
 export interface CardContentProps {

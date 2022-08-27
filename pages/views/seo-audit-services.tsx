@@ -60,7 +60,7 @@ const Page: NextPage = () => {
 
 				<div className="max-w-[540px] mx-auto mt-10">
 					<Card className="rounded-sm border-2">
-						<CardHeader title="MARKETLEADERPLAN" rate="8,000">
+						<CardHeader title="MARKETLEADERPLAN" rate="8,000" type="basic">
 							<AiFillStar className="card-icon fill-black-50" />
 						</CardHeader>
 						<CardContent className="text-left space-y-11 pt-5">
