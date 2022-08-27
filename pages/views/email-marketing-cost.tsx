@@ -34,7 +34,7 @@ const Page: NextPage = () => {
                 </div>
             </Section>
 
-            {/* Our partner section */}
+            {/* Our partners section */}
             <Section className="text-center pt-16">
                 <h3 className="text-black-50 text-2xl">Our Partners</h3>
 
