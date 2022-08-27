@@ -23,6 +23,9 @@ module.exports = {
 				"red-9": "#C4000017",
 				"red-6": "#C400000F",
 				"red-3": "#C4000008",
+				"pink-3": "rgba(196, 0, 0, 0.03)",
+				"pink-6": "rgba(196, 0, 0, 0.06)",
+				"pink-9": "rgba(196, 0, 0, 0.09)"
 			},
 			fontFamily: {
 				sans: ["Poppins", ...defaultTheme.fontFamily.sans],
