@@ -10,23 +10,23 @@ import TableOfContext from "./TableOfContext/TableOfContext";
 import ServiceTable from "./ServiceTable/ServiceTable";
 
 export default function LandingPage() {
-  return (
-    <>
-      <Hero />
-      <OurPartner />
-      <Pricing />
-      <Testimonial />
-      <PromotionalSection />
-      <ServiceTable />
-      <div className="mt-[120px] mx-auto container lg:px-20 md:px-12 px-4 lg:flex items-start pb-12">
-        <div className="lg:w-[60%]">
-          <GuideDetails />
-          <Faq />
-        </div>
-        <div className="lg:w-[40%]">
-          <TableOfContext />
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<Hero />
+			<OurPartner />
+			<Pricing />
+			<Testimonial />
+			<PromotionalSection />
+			<ServiceTable />
+			<div className="mt-[120px] mx-auto container lg:px-20 md:px-12 px-4 lg:flex items-start pb-12">
+				<div className="lg:w-[60%]">
+					<GuideDetails />
+					<Faq />
+				</div>
+				<div className="lg:w-[40%]">
+					<TableOfContext />
+				</div>
+			</div>
+		</>
+	);
 }
