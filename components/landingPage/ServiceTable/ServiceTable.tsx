@@ -6,35 +6,35 @@ type Props = {};
 export default function ServiceTable({}: Props) {
   return (
     <>
-      <div className="text-center mt-24 mb-10">
-        <h2 className="text-4xl font-bold leading-[130%] text-center text-black text-opacity-80">
+      <div className="text-center mt-24 mb-10 px-5 md:px-10 lg:px-20 mx-auto  container">
+        <h2 className="md:text-4xl text-2xl font-bold leading-[130%] text-center text-black text-opacity-80">
           Muscled Pricing: Ecommerce PPC Management
         </h2>
-        <p className="text-2xl leading-[150%] text-center text-black text-opacity-70 mt-7">
+        <p className="md:text-2xl text-lg leading-[150%] text-center text-black text-opacity-70 mt-7">
           Browse our ecommerce PPC management plans and prices now!
         </p>
       </div>
 
-      <div className="mx-auto container overflow-x-auto flex flex-shrink-0">
-        <Table className="table-fixed w-full">
+      <div className="px-5 md:px-10 lg:px-20 mx-auto  container overflow-x-auto flex flex-shrink-0 w-full">
+        <Table className="md:table-fixed table-auto w-full overflow-x-auto">
           <thead>
             <tr>
               <Th
-                className="text-left text-white rounded-tl-xl"
+                className="text-left text-white rounded-tl-xl border-b border-black border-opacity-10"
                 content="Features"
               />
               <Td
-                className="text-center font-bold"
+                className="text-center font-bold border-b border-black border-opacity-10"
                 content="Bronze"
                 type="Bronze"
               />
               <Td
-                className="text-center font-bold"
+                className="text-center font-bold border-b border-black border-opacity-10"
                 content="Silver"
                 type="Silver"
               />
               <Td
-                className="text-center font-bold"
+                className="text-center font-bold rounded-tr-xl border-b border-black border-opacity-10"
                 content="Gold"
                 type="Gold"
               />
@@ -74,9 +74,21 @@ export default function ServiceTable({}: Props) {
                 className="text-white text-left"
                 content="Vertical Content Creation"
               />
-              <Td type="Bronze" content="Add $1,200/month" />
-              <Td type="Silver" content="Add $1,200/month" />
-              <Td type="Gold" content="Add $1,200/month" />
+              <Td
+                className="lg:text-base text-sm"
+                type="Bronze"
+                content="Add $1,200/month"
+              />
+              <Td
+                className="lg:text-base text-sm"
+                type="Silver"
+                content="Add $1,200/month"
+              />
+              <Td
+                className="lg:text-base text-sm"
+                type="Gold"
+                content="Add $1,200/month"
+              />
             </tr>
             <tr>
               <Th
@@ -358,7 +370,7 @@ export default function ServiceTable({}: Props) {
                     <p>Give Us a Call if You Need Information</p>
                     <div className="flex gap-2 items-center mt-2 cursor-pointer">
                       <AiFillPhone className="fill-sky-500" />
-                      <p className="text-sky-500 font-bold text-[24px]">
+                      <p className="text-sky-500 font-bold lg:text-[24px]">
                         888-601-5359
                       </p>
                     </div>
@@ -366,25 +378,28 @@ export default function ServiceTable({}: Props) {
                 }
               />
               <Td
+                className="md:px-0 px-12"
                 type="Bronze"
                 content={
-                  <button className="mt-10 md:text-xl text-lg font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black ml-[10px] rounded text-white">
+                  <button className="lg:text-xl text-sm font-semibold hover:bg-opacity-70 leading-[150%] lg:h-[60px] border border-black lg:px-10 px-5 bg-black ml-[10px] rounded text-white">
                     Get Started
                   </button>
                 }
               />
               <Td
+                className="md:px-0 px-12"
                 type="Silver"
                 content={
-                  <button className="mt-10 md:text-xl text-lg font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black ml-[10px] rounded text-white">
+                  <button className="lg:text-xl text-sm font-semibold hover:bg-opacity-70 leading-[150%] lg:h-[60px] border border-black lg:px-10 px-5 bg-black ml-[10px] rounded text-white">
                     Get Started
                   </button>
                 }
               />
               <Td
+                className="rounded-br-xl md:px-0 px-12"
                 type="Gold"
                 content={
-                  <button className="mt-10 md:text-xl text-lg font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black ml-[10px] rounded text-white">
+                  <button className="lg:text-xl text-sm font-semibold hover:bg-opacity-70 leading-[150%] lg:h-[60px] border border-black lg:px-10 px-5 bg-black ml-[10px] rounded text-white">
                     Get Started
                   </button>
                 }

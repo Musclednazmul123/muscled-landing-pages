@@ -28,8 +28,8 @@ function Hero() {
     },
   ];
   return (
-    <>
-      <div className="xl:p-[100px] md:p-20 p-4 bg-black bg-opacity-70 xl:flex items-center justify-center">
+    <div className="bg-black bg-opacity-70">
+      <div className="xl:py-[100px] md:py-20 py-4  px-5 md:px-10 lg:px-20 mx-auto container  xl:flex items-center justify-between">
         <div className="max-w-[720px]">
           <p className="md:text-lg text-base font-medium  xl:text-left text-center leading-[100%] text-white">
             Home {">"} WEB DEVELOPMENT {">"} SERVICES
@@ -85,7 +85,7 @@ function Hero() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

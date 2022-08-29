@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../../assets/landingPageSVG/Icons";
 export default function Pricing() {
   return (
-    <div className="py-16 bg-[#F9F9F9] mt-[50px] mx-auto conatiner lg:px-0 md:px-12 px-4">
+    <div className="py-16  mt-[50px] px-5 md:px-10 lg:px-20 mx-auto container">
       <h2 className="md:text-4xl text-2xl font-bold leading-[130%] text-center">
         Ecommerce PPC Management Services
       </h2>
@@ -16,7 +16,9 @@ export default function Pricing() {
                 Bronze{" "}
               </p>
             </div>
-            <p className="md:text-4xl text-2xl font-bold leading-10 text-red-700">$4,500</p>
+            <p className="md:text-4xl text-2xl font-bold leading-10 text-red-700">
+              $4,500
+            </p>
           </div>
           <div className="px-7 py-10 space-y-[30px]">
             <div className="flex items-center ">
@@ -62,7 +64,9 @@ export default function Pricing() {
                 Silver{" "}
               </p>
             </div>
-            <p className="md:text-4xl text-2xl font-bold leading-10 text-red-700">$6,300</p>
+            <p className="md:text-4xl text-2xl font-bold leading-10 text-red-700">
+              $6,300
+            </p>
           </div>
           <div className="px-7 py-10 space-y-[30px]">
             <div className="flex items-center ">
@@ -109,7 +113,9 @@ export default function Pricing() {
                 Gold{" "}
               </p>
             </div>
-            <p className="md:text-4xl text-2xl font-bold leading-10 text-red-700">$7,200</p>
+            <p className="md:text-4xl text-2xl font-bold leading-10 text-red-700">
+              $7,200
+            </p>
           </div>
           <div className="px-7 py-10 space-y-[30px]">
             <div className="flex items-center ">

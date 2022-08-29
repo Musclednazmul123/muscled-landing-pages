@@ -22,12 +22,12 @@ export default function OurPartner() {
     },
   ];
   return (
-    <div className="mt-[50px] flex flex-col items-center justify-center">
+    <div className="mt-[50px] flex flex-col items-center justify-center px-5 md:px-10 lg:px-20 mx-auto container">
       <h2 className="text-2xl font-bold leading-loose text-black text-opacity-50">
         Our Partners
       </h2>
       <div className="mt-5">
-        <div className="flex items-center flex-wrap justify-center gap-x-[70px] gap-y-4 lg:px-0 md:px-12 px-4">
+        <div className="flex items-center flex-wrap justify-center gap-x-[70px] gap-y-4 ">
           {logo.map((logo, index) => {
             return <Icon customClasses="" icon={logo.icon} />;
           })}

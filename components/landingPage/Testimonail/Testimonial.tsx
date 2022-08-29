@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Testimonial() {
   return (
-    <div className="lg:px-20 md:px-12 px-4 py-20 bg-black">
-      <div className="mx-auto container">
-        <div className="lg:flex items-center justify-center lg:gap-x-[60px]">
+    <div className=" py-20 bg-black">
+      <div className="px-5 md:px-10 lg:px-20 mx-auto container">
+        <div className="lg:flex items-center justify-between lg:gap-x-[60px]">
           <div className="lg:max-w-[556px]">
             <p className="md:text-2xl text-xl leading-[36px] text-gray-50">
               "I positively recommend Muscled for ecommerce management and

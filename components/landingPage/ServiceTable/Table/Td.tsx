@@ -1,9 +1,15 @@
 import { FC } from "react";
-
+export interface TableBodyChildProps {
+	content?: string | JSX.Element;
+	className?: string;
+	type: "Bronze" | "Silver" | "Gold" ;
+}
 const Td: FC<TableBodyChildProps> = ({ className, content, type }) => {
   return (
     <td
-      className={`${className ? className : ""} ${
+      className={`${
+        className ? className : " border-b border-black border-opacity-10"
+      } ${
         type === "Bronze"
           ? "bg-red-3"
           : type === "Silver"
@@ -19,4 +25,3 @@ const Td: FC<TableBodyChildProps> = ({ className, content, type }) => {
 };
 
 export default Td;
-
