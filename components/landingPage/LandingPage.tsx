@@ -16,7 +16,7 @@ export default function LandingPage() {
       <Pricing />
       <Testimonial />
       <PromotionalSection />
-      <div className="mt-[120px] mx-auto lg:px-20 md:px-12 px-4 lg:flex items-start">
+      <div className="mt-[120px] mx-auto container lg:px-20 md:px-12 px-4 lg:flex items-start">
         <div className="lg:w-[60%]">
           <GuideDetails />
           <Faq />
