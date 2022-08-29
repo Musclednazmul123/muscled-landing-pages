@@ -12,13 +12,13 @@ const Mediamanagement = () => {
     <div className="py-10">
       <Section>
         <FlexLayout>
-          <div className="w-[70%] self-start">
+          <div className="w-[65%] self-start">
             <div>
               <h2 className="text-4xl w-[80%]">
                 A complete social media ad management solution
               </h2>
 
-              <div className="w-[95%] pt-10">
+              <div className="w-[72%] pt-10">
                 <p>
                   Your company doesn't have to worry about managing social media
                   advertising campaigns on LinkedIn or Facebook when you are
@@ -33,7 +33,7 @@ const Mediamanagement = () => {
                 </p>
               </div>
 
-              <ul className="list-decimal ml-4 mt-8">
+              <ul className="list-decimal ml-4 mt-8 w-[72%] space-y-1">
                 <li>Dedicated Account manager for social media advertising</li>
                 <li>
                   A dedicated team that will respond quickly (within 48 business
@@ -63,7 +63,7 @@ const Mediamanagement = () => {
                 </li>
               </ul>
 
-              <p className="mt-7 w-[95%]">
+              <p className="mt-7 w-[78%]">
                 If your company has never advertised on social media before, our
                 social media advertising services include the installation of
                 network tracking pixels on your website, such as the Facebook
@@ -72,31 +72,34 @@ const Mediamanagement = () => {
               </p>
             </div>
 
-            <div className="w-[90%] bg-[#C40000]/[6%] mt-8 py-10 px-10">
+            <div className="w-[88%] bg-[#C40000]/[6%] mt-16 py-10 px-10">
               <FlexLayout spaceClass="space-x-0">
-                <div className="w-[75%] space-y-7">
-                  <h2 className="text-4xl w-[90%]">
+                <div className="w-[90%] space-y-7">
+                  <h2 className="text-4xl">
                     74% of people use social media when making a purchasing
                     decision.
                   </h2>
 
-                  <p className="w-[70%]">
+                  <p className="w-[85%]">
                     Make their decision easy with a stellar social media
                     presence. See how your brand can level up by requesting a
                     no-obligation proposal today.
                   </p>
 
-                  <div className="flex flex-wrap gap-2 w-[80%]">
+                  <div className="flex flex-wrap gap-2 w-[90%]">
                     <Input
                       type="text"
                       placeholder="Enter Your Website Link"
                       className="text-sm flex-1 md:text-lg w-[50%]"
                     />
-                    <Button className="bg-black" text="Send Proposal" />
+                    <Button
+                      className="bg-black h-full font-semibold"
+                      text="Send Proposal"
+                    />
                   </div>
                 </div>
 
-                <div className="w-[25%] self-start">
+                <div className="w-[165px] self-start">
                   <TLifeCommunity />
                 </div>
               </FlexLayout>
@@ -107,7 +110,7 @@ const Mediamanagement = () => {
                 Who is using social media advertising services?
               </h2>
 
-              <div className="w-[95%]">
+              <div className="w-[77%]">
                 <p className="pt-10">
                   Social media advertising services can benefit your business
                   whether you sell business-to-consumer, business-to-business,
@@ -147,7 +150,7 @@ const Mediamanagement = () => {
                 Which platform should I use to manage social media ads?
               </h2>
 
-              <div className="w-[95%]">
+              <div className="w-[77%]">
                 <p className="pt-10">
                   While there are numerous paid social media advertising
                   platforms available on the Internet, it is crucial to select
@@ -290,7 +293,7 @@ const Mediamanagement = () => {
             <div>
               <h5 className="pt-12">Twitter advertising </h5>
 
-              <div className="w-[95%]">
+              <div className="w-[77%]">
                 <p className="pt-7">
                   Twitter has over 330 million monthly active users who tweet
                   and scroll through their feeds. Twitter provides a variety of
@@ -327,7 +330,7 @@ const Mediamanagement = () => {
             <div>
               <h5 className="pt-12">Pinterest advertising</h5>
 
-              <div className="w-[95%]">
+              <div className="w-[77%]">
                 <p className="pt-7">
                   As of September 2017, Pinterest had over 200 million monthly
                   active users. Pinterest advertising provides campaigns based
@@ -366,7 +369,7 @@ const Mediamanagement = () => {
             <div>
               <h5 className="pt-12">YouTube advertising</h5>
 
-              <div className="w-[95%]">
+              <div className="w-[77%]">
                 <p className="pt-7">
                   With over 1.3 billion users, YouTube has developed into more
                   than just a video-watching platform; it is now the world's
@@ -395,7 +398,7 @@ const Mediamanagement = () => {
             <div>
               <h5 className="pt-12">Snapchat advertising</h5>
 
-              <div className="w-[95%]">
+              <div className="w-[77%]">
                 <p className="pt-7">
                   Snapchat has 187 million daily active users, with 71% being
                   under the age of 34. Snapchat is a perfect way to spend your
@@ -416,16 +419,19 @@ const Mediamanagement = () => {
               </div>
             </div>
 
-            <div className="w-[90%] bg-[#C40000]/[6%] mt-8 py-10 px-10">
+            <div className="w-[80%] bg-[#C40000]/[6%] mt-16 py-10 px-10">
               <FlexLayout spaceClass="space-x-0">
-                <div className="w-[75%] space-y-7 self-start">
-                  <p className="text-lg font-medium">
+                <div className="w-[80%] space-y-7 self-start">
+                  <p className="text-xl font-medium">
                     New to social media marketing? We’ve got just the thing.
                     Check out our FREE guide to social media marketing.
                   </p>
 
-                  <div className="w-[40%]">
-                    <Button text="show me the guide" />
+                  <div className="w-[50%]">
+                    <Button
+                      className="h-[60px] font-medium px-0"
+                      text="show me the guide"
+                    />
                   </div>
                 </div>
 
@@ -440,7 +446,7 @@ const Mediamanagement = () => {
                 Should I hire a social media marketing agency?
               </h2>
 
-              <div className="w-[95%] pt-10">
+              <div className="w-[77%] pt-10">
                 <p>
                   Hiring someone to do your campaign in-house can be one of the
                   most expensive aspects of social media advertising services
@@ -517,30 +523,35 @@ const Mediamanagement = () => {
               </div>
             </div>
 
-            <div className="w-[90%] bg-[#C40000]/[6%] mt-14 py-10 px-10">
+            <div className="w-[80%] bg-[#C40000]/[6%] mt-16 py-10 px-10">
               <FlexLayout spaceClass="space-x-0">
-                <div className="w-[75%] space-y-7 self-start">
-                  <h3 className="text-xl w-[80%]">
+                <div className="w-[80%] space-y-7 self-start">
+                  <h3 className="text-xl">
                     Clients can’t get enough of our social media services.
                   </h3>
 
-                  <p>
+                  <p className="w-[80%]">
                     "I would highly recommend Muscled for social media
                     management." Muscled's team is very proficient; their
                     article writing is outstanding, and their social team
                     produces excellent results."
                   </p>
 
-                  <h5>Associate in Category Development</h5>
+                  <p className="text-sm font-medium">
+                    Associate in Category Development
+                  </p>
 
                   <p>Company Name</p>
 
-                  <div className="w-[40%]">
-                    <Button text="see case study" />
+                  <div className="w-[50%]">
+                    <Button
+                      className="font-medium h-[60px] px-0"
+                      text="see case study"
+                    />
                   </div>
                 </div>
 
-                <div className="w-[25%] self-start">
+                <div className="w-[20%] self-start">
                   <TLifeCommunity />
                 </div>
               </FlexLayout>
@@ -551,7 +562,7 @@ const Mediamanagement = () => {
                 3 good tips for choosing the best paid social ad agency
               </h2>
 
-              <div className="w-[95%] pt-10">
+              <div className="w-[77%] pt-10">
                 <p>
                   With so many agencies available, it can be difficult to select
                   the best one for your company. But don't worry — it doesn't
@@ -626,11 +637,11 @@ const Mediamanagement = () => {
             </div>
 
             <div>
-              <h2 className="text-4xl w-[80%] mt-12">
+              <h2 className="text-4xl w-[90%] mt-12">
                 FAQs about Social Media Advertising Services
               </h2>
 
-              <div className="w-[95%] pt-10">
+              <div className="w-[77%] pt-10">
                 <p>
                   Are you interested in learning more about social media
                   advertising services? View our Frequently Asked Questions:
@@ -663,12 +674,12 @@ const Mediamanagement = () => {
             </div>
 
             <div>
-              <h2 className="text-4xl w-[80%] mt-12">
+              <h2 className="text-4xl w-[87%] mt-12">
                 Make contact with a leading provider of social media advertising
                 services!
               </h2>
 
-              <div className="w-[95%] pt-10">
+              <div className="w-[77%] pt-10">
                 <p>
                   Look no further than Muscled if you're looking for the best
                   social media advertising agency that is near you!
@@ -691,18 +702,18 @@ const Mediamanagement = () => {
               </div>
             </div>
 
-            <div className="bg-[#086680] mt-10 py-5 px-7 w-[55%]">
-              <h3 className="text-2xl text-white">
+            <div className="bg-[#086680] mt-10 py-5 px-7 w-[67%]">
+              <h3 className="text-2xl text-white w-[65%]">
                 For verified ratings of our marketing services,please read our:
               </h3>
 
               <div className="pt-4 pb-2">
                 <FlexLayout spaceClass="space-x-0">
-                  <Star className="fill-[#a8CC22] w-[5%]" opacity={1} />
-                  <Star className="fill-[#F8CC25] w-[5%]" opacity={1} />
-                  <Star className="fill-[#F8CC25] w-[5%]" opacity={1} />
-                  <Star className="fill-[#F8CC25] w-[5%]" opacity={1} />
-                  <Star className="fill-[#F8CC25] w-[5%]" opacity={1} />
+                  <Star className="fill-[#F8CC25] w-[20px]" opacity={1} />
+                  <Star className="fill-[#F8CC25] w-[20px]" opacity={1} />
+                  <Star className="fill-[#F8CC25] w-[20px]" opacity={1} />
+                  <Star className="fill-[#F8CC25] w-[20px]" opacity={1} />
+                  <Star className="fill-[#F8CC25] w-[20px]" opacity={1} />
                 </FlexLayout>
               </div>
 
@@ -721,7 +732,7 @@ const Mediamanagement = () => {
             </div>
           </div>
 
-          <div className="w-[30%] self-start">
+          <div className="w-[35%] self-start">
             <CollapsingTableOfContent
               links={[
                 {

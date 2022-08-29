@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { FlexLayoutProp } from "../../../types/types";
+import { FlexLayoutProp } from "../types";
 
 const FlexLayout: FC<FlexLayoutProp> = ({
   children,
