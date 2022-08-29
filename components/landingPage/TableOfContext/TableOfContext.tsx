@@ -3,7 +3,7 @@ import React from "react";
 type Props = {};
 
 export default function TableOfContext({}: Props) {
-	const [list, setList] = React.useState<boolean>(false);
+	const [list, setList] = React.useState<boolean>();
 	const listData = [
 		{
 			title: "What does our PPC Management Service Offer?",

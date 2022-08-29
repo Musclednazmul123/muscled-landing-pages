@@ -5,12 +5,12 @@ type Props = {
 	ptag: string;
 };
 
-export default function SQuestionCard({ question, ptag }: Props) {
+export default function QuestionCard({ question, ptag }: Props) {
 	const [faq, setFaq] = React.useState<boolean>();
 
 	return (
 		<>
-			<div className="bg-white p-[10px]">
+			<div className="bg-white p-[10px] rounded-[10px]">
 				<div className="flex items-center justify-between">
 					<p className="md:text-xl text-lg font-bold leading-loose text-black text-opacity-70">
 						{question}
@@ -27,7 +27,7 @@ export default function SQuestionCard({ question, ptag }: Props) {
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
-							d={faq ? "M12 4.5v15m7.5-7.5h-15" : "M19.5 12h-15"}
+							d={faq ? "M19.5 12h-15" : "M12 4.5v15m7.5-7.5h-15"}
 						/>
 					</svg>
 				</div>
