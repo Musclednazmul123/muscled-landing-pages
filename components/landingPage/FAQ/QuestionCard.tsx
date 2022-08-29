@@ -1,19 +1,18 @@
 import React from "react";
 
 type Props = {
-  
   question: string;
   ptag: string;
 };
 
-export default function QuestionCard({  question, ptag }: Props) {
+export default function QuestionCard({ question, ptag }: Props) {
   const [faq, setFaq] = React.useState();
 
   return (
     <>
       <div className="bg-white p-[10px]">
         <div className="flex items-center justify-between">
-          <p className="text-xl font-bold leading-loose text-black text-opacity-70">
+          <p className="md:text-xl text-lg font-bold leading-loose text-black text-opacity-70">
             {question}
           </p>
           <svg
@@ -33,7 +32,7 @@ export default function QuestionCard({  question, ptag }: Props) {
           </svg>
         </div>
         {faq && (
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-lg leading-loose text-black text-opacity-70 mt-5">
             {ptag}
           </p>
         )}

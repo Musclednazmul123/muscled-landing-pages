@@ -34,7 +34,9 @@ export default function TableOfContext({}: Props) {
   return (
     <div className="flex flex-col items-center justify-end lg:mt-0 mt-12">
       <div
-        className="bg-[#3E5661] lg:max-w-[440px] w-full p-5 rounded-tl-lg rounded-tr-lg cursor-pointer"
+        className={`bg-[#3E5661] lg:max-w-[440px] w-full p-5 cursor-pointer ${
+          list ? `rounded-t-lg  ` : `rounded-lg  `
+        }`}
         onClick={() => setList(!list)}
       >
         <div className="flex items-center justify-between">
@@ -53,7 +55,7 @@ export default function TableOfContext({}: Props) {
                 />
               </svg>
             </div>
-            <p className="text-xl font-bold leading-loose text-white ml-[10px]">
+            <p className="md:text-xl text-lg font-bold leading-loose text-white ml-[10px]">
               Table of contents
             </p>
           </div>
@@ -90,7 +92,7 @@ export default function TableOfContext({}: Props) {
       </div>
       {list && (
         <div className="bg-white py-[10px] px-5 lg:max-w-[440px] rounded-b-lg">
-          <ul className="text-xl leading-loose underline text-purple-800 list-disc px-5">
+          <ul className="md:text-xl text-lg leading-loose underline text-purple-800 list-disc px-5 space-y-5">
             {listData.map((i) => {
               return (
                 <li>

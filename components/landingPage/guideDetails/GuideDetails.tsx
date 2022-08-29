@@ -6,10 +6,10 @@ export default function GuideDetails({}: Props) {
   return (
     <>
       <div className="">
-        <h2 className="text-4xl font-bold leading-10 text-black text-opacity-80">
+        <h2 className="md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80">
           What does our PPC Management Service Offer?
         </h2>
-        <p className="text-xl leading-[30px] text-black text-opacity-70 mt-10">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70 mt-10">
           You just need to turn the key to get things going.
           <br />
           We understand that you don’t want to get lost in the process of
@@ -28,16 +28,16 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       <div className="mt-20">
-        <p className="text-xl leading-[30px] font-bold text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
           Google Shopping
         </p>
         <br />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           We’ll secure you a prime spot in the user search results with Google
           Ads.
         </p>
         <div className="bg-gray-300 my-5 h-[320px]" />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           The people that are ready to buy the product you offer will see your
           ads first.
           <br />
@@ -49,15 +49,15 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       <div className="mt-20">
-        <p className="text-xl leading-[30px] font-bold text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
           Google Ads
         </p>
         <br />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Google Ads will help you maximize your real estate results.
         </p>
         <div className="bg-gray-300 my-5 h-[320px]" />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Improve your brand awareness and sales. Advertise your brand and
           products. You don’t have to worry about shopping cart abandonment, our
           diverse pay-per-click ad strategies are here for you. Expect us to
@@ -65,16 +65,16 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       <div className="mt-20">
-        <p className="text-xl leading-[30px] font-bold text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
           Bing Ads
         </p>
         <br />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Bing Ads are now called Microsoft Advertising, which we are more than
           happy to cover.
         </p>
         <div className="bg-gray-300 my-5 h-[320px]" />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Gain an edge over your competitors who brushed off Bing Ads with a
           dedicated campaign that is ready to be made at your call. Get ready to
           make more sales, expand your brand awareness even further, and snatch
@@ -83,31 +83,31 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       <div className="mt-20">
-        <p className="text-xl leading-[30px] font-bold text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
           Remarketing
         </p>
         <br />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           You have an option to deal with 96% of the people that left your store
           without touching anything.
         </p>
         <br />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Remarketing will be here to help you advertise to people that have
           seen your products before. Expect your company, along with your
           account manager, to get shoppers back and make sales.
         </p>
       </div>
       <div className="mt-20">
-        <p className="text-xl leading-[30px] font-bold text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
           GoDataFeed
         </p>
         <br />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Let our team handle your GoDataFeed.
         </p>
         <div className="bg-gray-300 my-5 h-[320px]" />
-        <p className="text-xl leading-[30px] text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
           Spend your time dealing with more transactions, taking care of your
           inventory, and growing your business. Count on us to watch your
           GoDataFeed close.
@@ -120,36 +120,38 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       {/* MOOVOVOVOVO */}
-      <div className="w-full relative h-[628px] mt-[120px] overflow-hidden flex items-center justify-center">
+      <div className="w-full relative lg:h-[628px] mt-[120px] overflow-hidden flex items-center justify-center">
         <img
           src="https://i.ibb.co/T2MYY7f/bg-back.png"
           alt="bg-image"
-          className="absolute bottom-0 left-0 w-full"
+          className="absolute bottom-0 left-0 w-full h-full"
         />
-        <div className="relative z-30 p-10 flex items-center justify-center">
+        <div className="relative z-30 md:p-10 p-5 md:flex items-center justify-center">
           <div>
-            <p className="text-4xl font-bold leading-[53px] text-gray-50">
+            <p className="md:text-4xl text-2xl font-bold md:leading-[53px] text-gray-50 md:text-left text-center">
               Need help with your Ecommerce PPC Management Services
             </p>
-            <p className="text-2xl font-bold leading-[36px] text-gray-50 mt-5">
+            <p className="md:text-2xl text-lg font-bold leading-[36px] text-gray-50 mt-5 md:text-left text-center">
               Check out our
               <br />
               Ecommerce PPC Management Services
             </p>
-            <button className="mt-10 md:text-xl text-lg font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black rounded text-white">
+            <button className="mt-10 md:text-xl md:w-auto w-full text-md font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black rounded text-white">
               View the Guide
             </button>
           </div>
-          <img src="https://i.ibb.co/MZBGHxf/Procfile.png" />
+          <div className="flex items-center justify-center md:mt-0 mt-5 md:w-1/2">
+            <img src="https://i.ibb.co/MZBGHxf/Procfile.png" />
+          </div>
         </div>
       </div>
 
       {/* MOOVOVOVOVO */}
       <div className="mt-[120px]">
-        <h2 className="text-4xl font-bold leading-10 text-black text-opacity-80">
+        <h2 className="md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80">
           How do We Go About Our PPC Management Service?
         </h2>
-        <p className="text-xl leading-loose text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-10">
           See how Muscled Digital Agency does its ecommerce PPC management
           service.
           <br />
@@ -186,10 +188,10 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       <div className="mt-[120px]">
-        <h2 className="text-4xl font-bold leading-10 text-black text-opacity-80">
+        <h2 className="md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80">
           Why choose the MUSCLED PPC Management Service?
         </h2>
-        <p className="text-xl leading-loose text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-10">
           Here’s what our ecommerce PPC Management Service can offer.
           <br />
           <ul className="list-disc pl-8">
@@ -218,11 +220,11 @@ export default function GuideDetails({}: Props) {
         </p>
       </div>
       <div className="mt-[120px]">
-        <h2 className="text-4xl font-bold leading-10 text-black text-opacity-80">
+        <h2 className="md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80">
           How could Muscled Digital Agency help my business through their PPC
           Management Service?
         </h2>
-        <p className="text-xl leading-loose text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-10">
           Investing in your business’ ecommerce PPC will bring you more traffic
           to your store or website, which means more customers that can drive
           immediate sales. Here’s a list of how we could help you.
@@ -239,10 +241,10 @@ export default function GuideDetails({}: Props) {
           below.
         </p>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Cost-effective Advertising
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             ay-per-click advertising has an average ROI of $2 for your every $1
             spent. The scales get better. If you’re looking to invest in Google
             ads, your ROI would pump up to $8 for the same price. PPC is a
@@ -261,10 +263,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Hyper-targeted Ads
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             Through your account manager, we’ll also give you options on which
             to go based on your company’s current performance and long-term
             goals.
@@ -278,6 +280,7 @@ export default function GuideDetails({}: Props) {
               <li>Behavior</li>
               <li>Topics</li>
             </ul>
+            <br />
             It will be natural for you to remarket once your ads are targeted.
             This option will allow you to focus on your ideal audience that has
             visited your website or abandoned their shopping carts from another.
@@ -293,10 +296,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             More Qualified Traffic
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             PPC doesn’t make you wait for results. The minute you go live, you
             can expect your PPC ads to drive relevant traffic to your store or
             website.
@@ -321,10 +324,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Brand Awareness
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             PPC will let people know who you are.
             <br />
             <br />
@@ -353,10 +356,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Better Overview
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             With our PPC Management Service, it will be easy for both of us to
             know what works and what doesn’t.
             <br />
@@ -381,19 +384,19 @@ export default function GuideDetails({}: Props) {
         </div>
       </div>
       <div className="mt-[120px]">
-        <h2 className="text-4xl font-bold leading-10 text-black text-opacity-80">
+        <h2 className="md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80">
           Why choose Muscled Digital Agency for your ecommerce PPC management?
         </h2>
-        <p className="text-xl leading-loose text-black text-opacity-70">
+        <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-10">
           We understand what it takes to help make the most of your PPC
           campaigns.
           <br />
         </p>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             We offer transparency and integrity
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             You can already see what the Muscled Digital Agency has to offer for
             the right price.
             <br />
@@ -410,10 +413,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Our heart is set on your success
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             We want you to be successful.
             <br />
             <br />
@@ -430,10 +433,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Giving the best client experience is a priority
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             You will be heard.
             <br />
             <br />
@@ -447,10 +450,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Brand Awareness
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             PPC will let people know who you are.
             <br />
             <br />
@@ -479,10 +482,10 @@ export default function GuideDetails({}: Props) {
           </p>
         </div>
         <div className="mt-20">
-          <p className="text-xl font-bold leading-relaxed text-black text-opacity-80">
+          <p className="md:text-xl text-base font-bold leading-relaxed text-black text-opacity-80">
             Better Overview
           </p>
-          <p className="text-xl leading-loose text-black text-opacity-70 mt-5">
+          <p className="md:text-xl text-base leading-loose text-black text-opacity-70 mt-5">
             With our PPC Management Service, it will be easy for both of us to
             know what works and what doesn’t.
             <br />

@@ -17,7 +17,7 @@ export default function FAQ({}: Props) {
   ];
   return (
     <>
-      <h2 className="text-4xl font-bold leading-[52px] text-black text-opacity-80 mt-[120px]">
+      <h2 className="md:text-4xl text-2xl font-bold leading-[52px] text-black text-opacity-80 mt-[120px]">
         FAQs about ecommerce PPC management services.
       </h2>
       <div className="space-y-5 mt-5">

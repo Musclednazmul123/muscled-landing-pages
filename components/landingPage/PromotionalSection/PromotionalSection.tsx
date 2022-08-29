@@ -3,10 +3,10 @@ import React from "react";
 export default function PromotionalSection() {
   return (
     <div className="lg:px-20 md:px-12 px-4 py-20 bg-[#F6EAEA] mt-[120px] flex flex-col justify-center items-center">
-      <p className="text-4xl font-bold leading-[52px] text-center  max-w-[1000px]">
+      <p className="md:text-4xl text-2xl font-bold leading-[52px] text-center  max-w-[1000px]">
         Boost your orders with our PPC Management Service
       </p>
-      <p className="text-xl leading-[30px] text-center mt-5 max-w-[1000px]">
+      <p className="md:text-xl text-base leading-[30px] text-center mt-5 max-w-[1000px]">
         Your company might be running late now that around 65% of small to
         midsized businesses had taken that mad dash to PPC advertising. What you
         need is a competitive strategy. Even if you take that step now, it won’t
