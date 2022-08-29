@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../../assets/landingPageSVG/Icons";
 export default function Pricing() {
   return (
-    <div className="py-16 bg-[#F9F9F9] mt-[50px] mx-auto conatiner px-4">
+    <div className="py-16 bg-[#F9F9F9] mt-[50px] mx-auto conatiner lg:px-0 md:px-12 px-4">
       <h2 className="md:text-4xl text-2xl font-bold leading-[130%] text-center">
         Ecommerce PPC Management Services
       </h2>
