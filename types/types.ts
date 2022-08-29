@@ -52,27 +52,3 @@ export interface SVGProps {
   className?: string;
   opacity?: number;
 }
-
-export interface FlexLayoutProp {
-  spaceClass?: string;
-  children: ReactNode;
-  justify?: string;
-  direction?: string;
-  align?: string;
-}
-
-type row = (string | any)[];
-
-export interface TableProp {
-  headers: string[];
-  rows: row[];
-}
-
-type ContentLink = {
-  title: string;
-  url: string;
-};
-
-export interface TableOfContentProp {
-  links: ContentLink[];
-}

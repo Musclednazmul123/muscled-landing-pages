@@ -1,26 +1,26 @@
 import React, { FC } from "react";
-import { TableProp } from "../types/types";
+import { TableProp } from "./types";
 
 const Table: FC<TableProp> = ({ headers, rows }) => {
-  const headerSize = Math.floor(100 / headers.length);
   return (
     <div
-      className={`grid w-full my-8 overflow-x-scroll`}
+      className="grid w-full overflow-x-scroll"
       style={{
-        gridTemplateColumns: `repeat(${headers.length}, 300px)`,
+        gridTemplateColumns: `repeat(${headers.length}, 1fr)`,
       }}
     >
       {headers.map((header, index) => (
         <div
-          className={`text-3xl ${
+          className={`text-3xl justify-start grid place-content-center ${
+            index > 0 ? "justify-center" : "pl-4"
+          } ${
             index === 0
               ? "bg-black/80 text-white rounded-tl-xl"
               : index % 2 != 0
               ? "bg-[#C4000008]/[3%]"
               : "bg-[#C40000]/[6%]"
-          } ${
-            index + 1 == headers.length && "rounded-tr-xl"
-          } font-bold px-6 py-8 border border-[#000000]/5 `}
+          } ${index + 1 == headers.length && "rounded-tr-xl"}
+          font-bold w-[310px] h-[212px] border border-[#000000]/5 `}
           key={index}
         >
           <p className={`${index > 0 && "w-min mx-auto"}`}>{header}</p>
@@ -29,7 +29,9 @@ const Table: FC<TableProp> = ({ headers, rows }) => {
       {rows.map((row, subIdx) => {
         return row.map((text, index) => (
           <div
-            className={`px-6 py-8 ${
+            className={`w-[310px] p-5 h-[90px] justify-start grid place-content-center ${
+              index > 0 ? "justify-center text-center" : "pl-4"
+            } ${
               index === 0
                 ? "bg-black/80 text-white"
                 : index % 2 != 0
@@ -42,9 +44,7 @@ const Table: FC<TableProp> = ({ headers, rows }) => {
             } ${subIdx === rows.length - 1 && index === 0 && "rounded-bl-xl"}`}
             key={`${index}_${subIdx}`}
           >
-            <p className={`w-fit ${index > 0 && "w-fit mx-auto text-center"}`}>
-              {text}
-            </p>
+            <p>{text}</p>
           </div>
         ));
       })}

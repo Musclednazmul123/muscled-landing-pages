@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import FlexLayout from "./layout/FlexLayout";
-import ChevronDown from "./assets/svg/ChevronDown";
-import List from "./assets/svg/List";
+import ChevronDown from "../assets/svg/ChevronDown";
+import List from "../assets/svg/List";
 import React, { FC } from "react";
-import { TableOfContentProp } from "../types/types";
+import { TableOfContentProp } from "./types";
 
 const TableOfContent: FC<TableOfContentProp> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(true);
