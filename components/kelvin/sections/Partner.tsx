@@ -11,18 +11,20 @@ import { Section } from "../../Fawwaz/Sections";
 
 const Partner = () => {
   return (
-    <Section className="text-center pt-10">
-      <h3 className="text-black-50 text-2xl">Our Partners</h3>
+    <div className="bg-white">
+      <Section className="text-center pt-14">
+        <h3 className="text-black-50 text-2xl">Our Partners</h3>
 
-      <div className="pt-7 flex flex-wrap justify-between pb-12 gap-6">
-        <Logo src={logo2.src} width={138} height={36} />
-        <Logo src={logo1.src} width={154} height={34} />
-        <Logo src={logo3.src} width={170} height={41} />
-        <Logo src={logo4.src} width={163} height={42} />
-        <Logo src={logo5.src} width={100} height={51} />
-        <Logo src={logo6.src} width={147} height={46} />
-      </div>
-    </Section>
+        <div className="pt-7 flex flex-wrap justify-between pb-12 gap-6">
+          <Logo src={logo2.src} width={138} height={36} />
+          <Logo src={logo1.src} width={154} height={34} />
+          <Logo src={logo3.src} width={170} height={41} />
+          <Logo src={logo4.src} width={163} height={42} />
+          <Logo src={logo5.src} width={100} height={51} />
+          <Logo src={logo6.src} width={147} height={46} />
+        </div>
+      </Section>
+    </div>
   );
 };
 
