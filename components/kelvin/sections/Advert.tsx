@@ -12,31 +12,34 @@ const Advert = () => {
               Top-Rated Paid Social Advertising Services
             </h2>
 
-            <p className="pt-10 text-[#000000]/70">
-              Social media advertising services have become an essential
-              component of social strategy for businesses of all sizes. With
-              social advertising, businesses can expand strategies to reach the
-              right people at the right time as algorithms change.
-            </p>
+            <div className="text-xl">
+              <p className="pt-10 text-[#000000]/70">
+                Social media advertising services have become an essential
+                component of social strategy for businesses of all sizes. With
+                social advertising, businesses can expand strategies to reach
+                the right people at the right time as algorithms change.
+              </p>
 
-            <p className="pt-10 text-[#000000]/70">
-              Every social advertising platform has its own way of reaching out
-              to people, and each has its own set of advantages. As a result,
-              almost any business can benefit from using social advertising to
-              engage, notify, and transform their target audience.
-            </p>
+              <p className="pt-10 text-[#000000]/70">
+                Every social advertising platform has its own way of reaching
+                out to people, and each has its own set of advantages. As a
+                result, almost any business can benefit from using social
+                advertising to engage, notify, and transform their target
+                audience.
+              </p>
 
-            <p className="pt-10 text-[#000000]/70">
-              Contact us online today to learn more about how our agency and
-              social media ad management services can help you grow your online
-              presence, increase sales, and improve customer loyalty. You can
-              also contact us to talk one-on-one.
-            </p>
+              <p className="pt-10 text-[#000000]/70">
+                Contact us online today to learn more about how our agency and
+                social media ad management services can help you grow your
+                online presence, increase sales, and improve customer loyalty.
+                You can also contact us to talk one-on-one.
+              </p>
 
-            <p className="pt-10 text-[#000000]/70">
-              If you'd like to speak with a strategist about the advantages of
-              social media ad management, please contact us online today!
-            </p>
+              <p className="pt-10 text-[#000000]/70">
+                If you'd like to speak with a strategist about the advantages of
+                social media ad management, please contact us online today!
+              </p>
+            </div>
           </div>
 
           <div className="w-[35%]">
