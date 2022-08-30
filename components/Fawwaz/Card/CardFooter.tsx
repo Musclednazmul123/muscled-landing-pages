@@ -20,7 +20,11 @@ const CardFooter: FC<PropsCardFooter> = ({
       <Button
         bgColor="bg-[#000]"
         textColor="text-white"
-        className="py-4 px-10 text-[0.8em]"
+        className={
+          buttonLabel
+            ? "w-56 py-4 px-10 text-xl font-medium"
+            : "py-4 px-10 text-[0.8em]"
+        }
       >
         {buttonLabel}
       </Button>

@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactNode } from "react";
 import { NextPage } from "next";
 import { Hero, Section } from "components/Fawwaz/Sections";
 import MuscledD2CSVG from "components/assets/svg/MuscledD2CSVG";
@@ -17,8 +18,99 @@ import {
   IconItem,
   CardFooter,
 } from "components/Fawwaz/Card";
+
 import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";
 import { FaCheckCircle } from "react-icons/fa";
+
+export interface CardHeaderDataProps {
+  title: string;
+  rate: string;
+  type?: "basic" | "premium" | "ultimate";
+  description?: string;
+  iconItems: { [key: string]: string }[];
+  isFooterDescription?: boolean;
+  footerDescition?: string;
+  buttonLabel?: string;
+}
+const cardData: CardHeaderDataProps[] = [
+  {
+    title: "Aggressive",
+    rate: "4,500",
+    description: "or 18%, whichever is higher",
+    iconItems: [
+      {
+        iconTitle: "Up to 2 networks",
+        class: "mt-2",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 5 campaigns",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 20 ads",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+    ],
+    isFooterDescription: true,
+    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
+    buttonLabel: "Send Proposal",
+  },
+  {
+    title: "Market Leader",
+    rate: "6,300",
+    type: "premium",
+    description: "or 18%, whichever is higher",
+    iconItems: [
+      {
+        iconTitle: "Up to 2 networks",
+        class: "mt-2",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 5 campaigns",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 20 ads",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+    ],
+    isFooterDescription: true,
+    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
+    buttonLabel: "Send Proposal",
+  },
+  {
+    title: "Enterprise",
+    rate: "7,200",
+    type: "ultimate",
+    description: "or 18%, whichever is higher",
+    iconItems: [
+      {
+        iconTitle: "Up to 2 networks",
+        class: "mt-2",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 5 campaigns",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 20 ads",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+    ],
+    isFooterDescription: true,
+    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
+    buttonLabel: "Send Proposal",
+  },
+];
 
 const Page: NextPage = () => {
   return (
@@ -42,120 +134,38 @@ const Page: NextPage = () => {
         <h2 className="text-4xl text-center mt-10 mb-14">
           Explore Direct-to-Consumer Social Service Programs.
         </h2>
-
-        {/* <p className="py-14 flex flex-wrap justify-center gap-1">
-          Need help?
-          <span className="underline cursor-pointer">Schedule a call now</span>
-        </p> */}
-
         <div className="flex flex-wrap justify-center lg:justify-between gap-2">
-          <Card className="rounded-sm border-2 max-w-[400px] w-full">
-            <CardHeader
-              title="Aggressive"
-              rate="4,500"
-              description="or 18%, whichever is higher"
-            >
-              <AiFillStar className="card-icon fill-black-50" />
-            </CardHeader>
-            <CardContent className="space-y-11">
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 2 networks"
-                className="mt-2"
-              />
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 5 campaigns"
-                className="mt-4"
-              />
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 20 ads"
-                className="mt-4"
-              />
-            </CardContent>
-            <CardFooter
-              isFooterDescription
-              footerDescition="$1,550 MIN INITIAL SETUP FEE"
-              buttonLabel="Send Proposal"
-            />
-          </Card>
-          <Card className="rounded-sm border-2 max-w-[400px] w-full">
-            <CardHeader
-              title="Market Leader"
-              rate="6,300"
-              type="premium"
-              description="or 18%, whichever is higher"
-            >
-              <div className="flex">
-                <AiFillStar className="card-icon fill-black-70" />
-                <AiFillStar className="card-icon fill-black-70" />
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-11">
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 2 networks"
-                className="mt-2"
-              />
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 5 campaigns"
-                className="mt-4"
-              />
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 20 ads"
-                className="mt-4"
-              />
-            </CardContent>
-            <CardFooter
-              isFooterDescription
-              footerDescition="$1,550 MIN INITIAL SETUP FEE"
-              buttonLabel="Send Proposal"
-            />
-          </Card>
-          <Card className="rounded-sm border-2 max-w-[400px] w-full">
-            <CardHeader
-              title="Enterprise"
-              rate="7,200"
-              type="ultimate"
-              description="or 18%, whichever is higher"
-            >
-              <div className="flex">
-                <AiFillStar className="card-icon fill-black-80" />
-                <AiFillStar className="card-icon fill-black-80" />
-                <AiFillStar className="card-icon fill-black-80" />
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-11">
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 2 networks"
-                className="mt-2"
-              />
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 5 campaigns"
-                className="mt-4"
-              />
-              <IconItem
-                icon={<FaCheckCircle size={15} />}
-                title="Up to 20 ads"
-                className="mt-4"
-              />
-            </CardContent>
-            <CardFooter
-              isFooterDescription
-              footerDescition="$1,550 MIN INITIAL SETUP FEE"
-              buttonLabel="Send Proposal"
-            />
-          </Card>
+          {cardData &&
+            cardData.map((cardItem) => {
+              return (
+                <Card className="rounded-sm border-2 max-w-[400px] w-full">
+                  <CardHeader
+                    title={cardItem?.title}
+                    rate={cardItem?.rate}
+                    description={cardItem?.description}
+                    type={cardItem?.type}
+                  >
+                    <AiFillStar className="card-icon fill-black-50" />
+                  </CardHeader>
+                  <CardContent className="space-y-11">
+                    {cardItem &&
+                      cardItem.iconItems.map((item) => (
+                        <IconItem
+                          icon={<FaCheckCircle size={15} />}
+                          title={item?.iconTitle}
+                          className={item?.class}
+                        />
+                      ))}
+                  </CardContent>
+                  <CardFooter
+                    isFooterDescription={cardItem?.isFooterDescription}
+                    footerDescition={cardItem?.footerDescition}
+                    buttonLabel={cardItem?.buttonLabel}
+                  />
+                </Card>
+              );
+            })}
         </div>
-
-        <p className="underline text-center mt-14 mb-24 cursor-pointer">
-          See Full Deliverables
-        </p>
       </Section>
     </div>
   );
