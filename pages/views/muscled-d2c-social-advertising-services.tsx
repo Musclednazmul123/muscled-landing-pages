@@ -2,8 +2,14 @@ import React from "react";
 import { NextPage } from "next";
 import { Hero, Section } from "components/Fawwaz/Sections";
 import MuscledD2CSVG from "components/assets/svg/MuscledD2CSVG";
-import logo from "components/assets/logo/logo1.png";
+import logo1 from "components/assets/logo/logo1.png";
+import logo3 from "components/assets/logo/logo3.png";
+import logo4 from "components/assets/logo/logo4.png";
+import logo5 from "components/assets/logo/logo5.png";
+import logo6 from "components/assets/logo/logo6.png";
+import logo7 from "components/assets/logo/logo7.png";
 import Logo from "components/Fawwaz/Logo";
+import PartnerLogoSection from "components/common/Partner";
 import {
   Card,
   CardHeader,
@@ -27,17 +33,10 @@ const Page: NextPage = () => {
         />
       </div>
       {/* Our partner section */}
-      <Section className="text-center pt-16">
-        <h3 className="text-black-50 text-2xl">Our Partners</h3>
+      <PartnerLogoSection
+        noOfLogos={[logo1, logo3, logo4, logo5, logo6, logo7]}
+      />
 
-        <div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-        </div>
-      </Section>
       {/* Third section */}
       <Section>
         <h2 className="text-4xl text-center">
