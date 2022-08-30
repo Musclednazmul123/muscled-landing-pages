@@ -9,7 +9,7 @@ import logo4 from "components/assets/logo/logo4.png";
 import logo5 from "components/assets/logo/logo5.png";
 import logo6 from "components/assets/logo/logo6.png";
 import logo7 from "components/assets/logo/logo7.png";
-import Logo from "components/Fawwaz/Logo";
+import DirectToConsumer from "components/common/DirectToConsumer";
 import PartnerLogoSection from "components/common/Partner";
 import {
   Card,
@@ -167,6 +167,8 @@ const Page: NextPage = () => {
             })}
         </div>
       </Section>
+      {/* Section 4 */}
+      <DirectToConsumer />
     </div>
   );
 };
