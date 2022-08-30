@@ -29,7 +29,7 @@ function Hero() {
 	];
 	return (
 		<div className="bg-black bg-opacity-70">
-			<div className="xl:py-[100px] md:py-20 py-4  px-5 md:px-10 lg:px-20 mx-auto container  xl:flex items-center justify-between">
+			<div className="xl:py-[100px] md:py-20 py-4  px-5 md:px-10 lg:px-20 xl:px-4 mx-auto container  xl:flex items-center justify-between">
 				<div className="max-w-[720px]">
 					<p className="md:text-lg text-base font-medium  xl:text-left text-center leading-[100%] text-white">
 						Home {">"} WEB DEVELOPMENT {">"} SERVICES
@@ -47,7 +47,7 @@ function Hero() {
 					</p>
 					<div className="mt-[30px] xl:flex hidden">
 						<input
-							className="text-xl leading-[150%] focus:outline-none py-[15px] px-5 text-black placeholder-text-black placeholder-opacity-50 rounded bg-white max-w-[480px] w-full"
+							className="text-xl leading-[150%]  px-5 focus:outline-none py-[15px]  text-black placeholder-text-black placeholder-opacity-50 rounded bg-white max-w-[480px] w-full"
 							placeholder="Enter Your Website Link"
 						/>
 						<button className="text-xl whitespace-nowrap font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black ml-[10px] rounded text-white">
