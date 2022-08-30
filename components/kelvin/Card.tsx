@@ -34,7 +34,7 @@ const Card: FC<IProps> = ({
         <h3 className="text-4xl text-[#C40000] flex flex-col items-center justify-center mb-2">
           <span>{title}</span>{" "}
           {duration && (
-            <span className="text-sm font-normal text-gray-700">
+            <span className="text-sm font-normal text-black/70">
               /{duration}
             </span>
           )}
@@ -50,16 +50,16 @@ const Card: FC<IProps> = ({
       {/* body */}
       <div className="p-5 space-y-5">
         {list?.map((listItem, index) => (
-          <FlexLayout key={index} spaceClass="space-x-5">
+          <div key={index} className="space-x-5 flex">
             {listItem.icon && (
               <span className="self-start mt-1">
                 <Check className="w-5 h-5" />
               </span>
             )}
-            <span className="text-black-70 text-lg w-[80%]">
+            <span className="text-black-70 text-lg w-[80%] self-start">
               {listItem.text}
             </span>
-          </FlexLayout>
+          </div>
         ))}
       </div>
 
