@@ -9,7 +9,7 @@ import TLifeCommunity from "../../assets/svg/techLifeCommunity";
 
 const Mediamanagement = () => {
   return (
-    <div className="py-10">
+    <div className="pb-10 pt-[134px]">
       <Section>
         <FlexLayout>
           <div className="w-[62%] self-start">
