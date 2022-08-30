@@ -12,13 +12,13 @@ const Mediamanagement = () => {
     <div className="py-10">
       <Section>
         <FlexLayout>
-          <div className="w-[65%] self-start">
+          <div className="w-[62%] self-start">
             <div>
               <h2 className="text-4xl w-[80%]">
                 A complete social media ad management solution
               </h2>
 
-              <div className="w-[72%] pt-10">
+              <div className="w-[81%] pt-10">
                 <p>
                   Your company doesn't have to worry about managing social media
                   advertising campaigns on LinkedIn or Facebook when you are
@@ -732,7 +732,7 @@ const Mediamanagement = () => {
             </div>
           </div>
 
-          <div className="w-[35%] self-start">
+          <div className="w-[38%] self-start">
             <CollapsingTableOfContent
               links={[
                 {

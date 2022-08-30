@@ -16,7 +16,7 @@ const TableOfContent: FC<TableOfContentProp> = ({ links }) => {
   return (
     <nav className="w-full border border-black/20 rounded-md">
       <header
-        className="rounded-t-md w-full flex items-center justify-between bg-[#FAE8E8] text-sm p-3 cursor-pointer mb-[1px]"
+        className="rounded-t w-full flex items-center justify-between bg-[#FAE8E8] text-sm p-3 cursor-pointer mb-[1px] h-[64px]"
         onClick={toggle}
       >
         <FlexLayout>
@@ -31,14 +31,18 @@ const TableOfContent: FC<TableOfContentProp> = ({ links }) => {
         </div>
       </header>
 
-      <div className={`${isOpen ? "animate-slide" : "animate-slideUp"}`}>
+      <div
+        className={`${
+          isOpen ? "animate-slide bg-white" : "animate-slideUp bg-[#FAE8E8]"
+        } rounded-b border-b`}
+      >
         {isOpen && (
-          <div className="p-5">
-            <ul className="list-disc text-[#518ADE] marker:text-[#518ADE] ml-2">
+          <div className="py-10 px-8">
+            <ul className="list-disc space-y-6 text-[#518ADE] marker:text-[#518ADE] ml-2">
               {links.map((link, index) => (
-                <li key={index} className="mb-3">
+                <li key={index}>
                   <Link href={link.url}>
-                    <a className="text-sm">{link.title}</a>
+                    <a className="">{link.title}</a>
                   </Link>
                 </li>
               ))}
