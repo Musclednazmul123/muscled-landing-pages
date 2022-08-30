@@ -49,17 +49,19 @@ const Page: NextPage = () => {
 			</div>
 
 			{/* Second section */}
-			<Section className="text-center pt-16">
-				<h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
+			<div className="bg-white">
+				<Section className="text-center pt-16">
+					<h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
 
-				<div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-				</div>
-			</Section>
+					<div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+					</div>
+				</Section>
+			</div>
 
 			{/* Third section */}
 			<Section>

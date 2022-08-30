@@ -41,17 +41,19 @@ const Page: NextPage = () => {
 				/>
 			</div>
 
-			<Section className="text-center pt-16">
-				<h3 className="text-black-50 text-2xl">Our Partners</h3>
+			<div className="bg-white">
+				<Section className="text-center pt-16">
+					<h3 className="text-black-50 text-2xl">Our Partners</h3>
 
-				<div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-				</div>
-			</Section>
+					<div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+					</div>
+				</Section>
+			</div>
 
 			<Section>
 				<h2 className="text-4xl text-center mt-9">

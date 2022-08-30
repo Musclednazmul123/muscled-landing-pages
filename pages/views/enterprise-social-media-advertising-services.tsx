@@ -13,8 +13,8 @@ import {
 import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
 import Button from "components/Fawwaz/Button";
 
-import { FaCheck, FaCheckCircle, FaChevronRight } from "react-icons/fa";
-import { AiFillStar, AiFillPhone } from "react-icons/ai";
+import { FaCheck, FaCheckCircle } from "react-icons/fa";
+import { AiFillStar, AiFillPhone, AiOutlineRight } from "react-icons/ai";
 import fanelImag from "../../components/assets/icon-sales-funnel.png";
 
 interface ITableBody {
@@ -38,19 +38,19 @@ const pricingCards = [
 		star: [AiFillStar],
 		content: [
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Up to 5-10 ad campaigns",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Up to 20-40 unique ads",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Advanced AI tracking",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "$10,000-$20,000 / mo. monthly ad spend",
 			},
 		],
@@ -62,19 +62,19 @@ const pricingCards = [
 		star: [AiFillStar, AiFillStar],
 		content: [
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Up to 5-20 ad campaigns",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Up to 20-40 unique ads",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Dedicated account manager",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "$100,000-$500,000 / mo. monthly ad spend",
 			},
 		],
@@ -86,19 +86,19 @@ const pricingCards = [
 		star: [AiFillStar, AiFillStar, AiFillStar],
 		content: [
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Up to 30-50 ad campaigns",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Up to 120-200 unique ads",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "Custom reporting dashboard",
 			},
 			{
-				icon: <FaCheckCircle />,
+				icon: <FaCheckCircle className="fill-black"/>,
 				title: "$1M-$1.5M / mo. monthly ad spend",
 			},
 		],
@@ -770,18 +770,21 @@ const Page: NextPage = () => {
 					input
 				/>
 			</div>
-			{/* Our partner section */}
-			<Section className="text-center pt-16">
-				<h3 className="text-black-50 text-2xl">Our Partners</h3>
 
-				<div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-				</div>
-			</Section>
+			{/* Our partner section */}
+			<div className="bg-white mb-[185px]">
+				<Section className="text-center pt-16">
+					<h3 className="text-black-50 text-2xl">Our Partners</h3>
+
+					<div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+					</div>
+				</Section>
+			</div>
 
 			{/* pricing card section */}
 			<Section>
@@ -838,16 +841,16 @@ const Page: NextPage = () => {
 			</Section>
 			{/* end pricing section */}
 
-			<Section className="flex flex-wrap justify-center pt-16">
-				<div className="flex py-2 space-y-9">
-					<p className="flex text-4xl font-medium text-sky-500">
+			<Section className="flex justify-center pt-[125px]">
+				<div className="flex text-sky-500 py-2 items-center">
+					<p className="text-[40px] font-medium">
 						See Full Deliverables
-						<FaChevronRight className="ml-10" />
 					</p>
+					<AiOutlineRight className="text-5xl ml-10" />
 				</div>
 			</Section>
 
-			<Section className="pt-16">
+			<Section className="pt-[125px]">
 				<div className="flex py-2 space-y-16 justify-center flex-col">
 					<h1 className="text-4xl text-justify">
 						Turn followers into customers with Muscled’s social
@@ -906,11 +909,11 @@ const Page: NextPage = () => {
 				</div>
 			</Section>
 
-			<div className="pt-32">
+			<div className="py-[200px]">
 				<Testimonial />
 			</div>
 
-			<Section className="pt-32">
+			<Section>
 				{connectTarget.map((content, key) => (
 					<div key={key} className="py-2 space-y-16 justify-center">
 						<h1 className="flex text-4xl text-justify">
@@ -930,7 +933,7 @@ const Page: NextPage = () => {
 				))}
 			</Section>
 
-			<Section className="mt-52">
+			<Section className="mt-[200px]">
 				<h1 className="text-4xl text-center mb-40">
 					MUSCLED Enterprise Social Media Advertising Pricing
 				</h1>
@@ -1002,7 +1005,7 @@ const Page: NextPage = () => {
 											key={key}
 											content={content}
 											type={
-												key === 1 || key === 3
+												key === 0 || key === 2
 													? "basic"
 													: "premium"
 											}
@@ -1029,17 +1032,6 @@ const Page: NextPage = () => {
 									}
 								/>
 								<Td
-									type="premium"
-									content={
-										<Button
-											bgColor="bg-black"
-											textColor="text-white"
-											className="mx-auto">
-											Get Started
-										</Button>
-									}
-								/>
-								<Td
 									type="basic"
 									content={
 										<Button
@@ -1063,6 +1055,17 @@ const Page: NextPage = () => {
 								/>
 								<Td
 									type="basic"
+									content={
+										<Button
+											bgColor="bg-black"
+											textColor="text-white"
+											className="mx-auto">
+											Get Started
+										</Button>
+									}
+								/>
+								<Td
+									type="premium"
 									className="rounded-br-xl"
 									content={
 										<Button
@@ -1079,7 +1082,7 @@ const Page: NextPage = () => {
 				</div>
 			</Section>
 
-			<Section className="flex flex-wrap pt-20">
+			<Section className="flex flex-wrap mt-[135px]">
 				<div className="justify-center">
 					<h1 className="mb-14 text-4xl text-center">
 						Social media advertising services for every business
@@ -1096,7 +1099,7 @@ const Page: NextPage = () => {
 				</div>
 			</Section>
 
-			<Section className="pt-20">
+			<Section className="mt-[150px]">
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
 					{socialCards.map((content, key) => (
 						<div
@@ -1168,12 +1171,12 @@ const Page: NextPage = () => {
 						<img
 							src="https://picsum.photos/200"
 							alt=""
-							className="w-[760px] h-[525px] mt-40 mb-20"
+							className="w-[760px] h-[525px] mt-[132px] mb-[60px]"
 						/>
 
 						{How.map((content, key) => (
 							<div key={key}>
-								<h1 className="text-[40px] mb-16">
+								<h1 className="text-[40px] mb-[70px]">
 									{content.title}
 								</h1>
 								<p className="text-xl">{content.description}</p>
@@ -1261,7 +1264,7 @@ const Page: NextPage = () => {
 						<img
 							src="https://picsum.photos/210"
 							alt=""
-							className="w-[760px] h-[525px] mt-40 mb-20"
+							className="w-[760px] h-[525px] mt-[60px] mb-[60px]"
 						/>
 
 						{Why.map((content, key) => (
@@ -1388,7 +1391,7 @@ const Page: NextPage = () => {
 						</div>
 						<div className="text-[#D2D2D2] flex items-center">
 							<p>INDUSTRY-LEADING 863 TESTIMONIALS</p>
-							<FaChevronRight className="ml-8" />
+							<AiOutlineRight className="ml-8" />
 						</div>
 						<p className="text-[#D2D2D2]">
 							MUSCLED Agency Rating 4.9 out of 5 with 267 ratings
@@ -1403,7 +1406,9 @@ const Page: NextPage = () => {
 						<div
 							key={key}
 							className="w-auto min-h-[363px] bg-red-3 p-8 space-y-7 min-w-[320px] text-black-70">
-							<p className="font-medium text-2xl">{content.title}</p>
+							<p className="font-medium text-2xl">
+								{content.title}
+							</p>
 							<ul className="space-y-7">
 								{content.lists.map((list, key) => (
 									<Fragment key={key}>
