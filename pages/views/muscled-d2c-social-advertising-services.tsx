@@ -39,7 +39,7 @@ const Page: NextPage = () => {
 
       {/* Third section */}
       <Section>
-        <h2 className="text-4xl text-center">
+        <h2 className="text-4xl text-center mt-10 mb-14">
           Explore Direct-to-Consumer Social Service Programs.
         </h2>
 
@@ -50,30 +50,43 @@ const Page: NextPage = () => {
 
         <div className="flex flex-wrap justify-center lg:justify-between gap-2">
           <Card className="rounded-sm border-2 max-w-[400px] w-full">
-            <CardHeader title="Aggressive" rate="$4,500">
+            <CardHeader
+              title="Aggressive"
+              rate="4,500"
+              description="or 18%, whichever is higher"
+            >
               <AiFillStar className="card-icon fill-black-50" />
             </CardHeader>
             <CardContent className="space-y-11">
               <IconItem
                 icon={<FaCheckCircle size={15} />}
                 title="Up to 2 networks"
-                className="mt-2 justify-center"
+                className="mt-2"
               />
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="Shopping cart abandonment testing"
-                className="mt-4 justify-center"
+                title="Up to 5 campaigns"
+                className="mt-4"
               />
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="Heatmap and click stream testing on 8 pages"
-                className="mt-4 justify-center"
+                title="Up to 20 ads"
+                className="mt-4"
               />
             </CardContent>
-            <CardFooter />
+            <CardFooter
+              isFooterDescription
+              footerDescition="$1,550 MIN INITIAL SETUP FEE"
+              buttonLabel="Send Proposal"
+            />
           </Card>
           <Card className="rounded-sm border-2 max-w-[400px] w-full">
-            <CardHeader title="Market Leader" rate="$6,300" type="premium">
+            <CardHeader
+              title="Market Leader"
+              rate="6,300"
+              type="premium"
+              description="or 18%, whichever is higher"
+            >
               <div className="flex">
                 <AiFillStar className="card-icon fill-black-70" />
                 <AiFillStar className="card-icon fill-black-70" />
@@ -82,24 +95,33 @@ const Page: NextPage = () => {
             <CardContent className="space-y-11">
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="4 initial website user testing videos"
-                className="mt-2 justify-center"
+                title="Up to 2 networks"
+                className="mt-2"
               />
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="Shopping cart abandonment testing"
-                className="mt-4 justify-center"
+                title="Up to 5 campaigns"
+                className="mt-4"
               />
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="Heatmap and click stream testing on 8 pages"
-                className="mt-4 justify-center"
+                title="Up to 20 ads"
+                className="mt-4"
               />
             </CardContent>
-            <CardFooter />
+            <CardFooter
+              isFooterDescription
+              footerDescition="$1,550 MIN INITIAL SETUP FEE"
+              buttonLabel="Send Proposal"
+            />
           </Card>
           <Card className="rounded-sm border-2 max-w-[400px] w-full">
-            <CardHeader title="Enterprise" rate="$7,200" type="ultimate">
+            <CardHeader
+              title="Enterprise"
+              rate="7,200"
+              type="ultimate"
+              description="or 18%, whichever is higher"
+            >
               <div className="flex">
                 <AiFillStar className="card-icon fill-black-80" />
                 <AiFillStar className="card-icon fill-black-80" />
@@ -109,21 +131,25 @@ const Page: NextPage = () => {
             <CardContent className="space-y-11">
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="4 initial website user testing videos"
-                className="mt-2 justify-center"
+                title="Up to 2 networks"
+                className="mt-2"
               />
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="Shopping cart abandonment testing"
-                className="mt-4 justify-center"
+                title="Up to 5 campaigns"
+                className="mt-4"
               />
               <IconItem
                 icon={<FaCheckCircle size={15} />}
-                title="Heatmap and click stream testing on 8 pages"
-                className="mt-4 justify-center"
+                title="Up to 20 ads"
+                className="mt-4"
               />
             </CardContent>
-            <CardFooter />
+            <CardFooter
+              isFooterDescription
+              footerDescition="$1,550 MIN INITIAL SETUP FEE"
+              buttonLabel="Send Proposal"
+            />
           </Card>
         </div>
 
