@@ -10,7 +10,9 @@ import logo5 from "components/assets/logo/logo5.png";
 import logo6 from "components/assets/logo/logo6.png";
 import logo7 from "components/assets/logo/logo7.png";
 import DirectToConsumer from "components/common/DirectToConsumer";
+import ReusableTestimonials from "components/common/Testimonials";
 import PartnerLogoSection from "components/common/Partner";
+import { testimonialData } from "components/utils/muscled-d2c-constants";
 import {
   Card,
   CardHeader,
@@ -169,6 +171,8 @@ const Page: NextPage = () => {
       </Section>
       {/* Section 4 */}
       <DirectToConsumer />
+      {/* Section5 */}
+      <ReusableTestimonials testimonialData={testimonialData} />
     </div>
   );
 };
