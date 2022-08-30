@@ -105,3 +105,28 @@
 	background: #083A74CC;
 	inset: 0;
 } 
+
+/* ============Hero section============ */
+
+.custom-hero {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.custom-svg-div {
+	font-family: 'Poppins';
+	width: 436px;
+	height: 106px;
+	left: 890.5px;
+	top: 135.5px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+}
+
+.custom-svg-text {
+	
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+}
