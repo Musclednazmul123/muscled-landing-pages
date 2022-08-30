@@ -3,7 +3,7 @@ import { Section } from "../../Fawwaz/Sections";
 
 const AdvPricing = () => {
   return (
-    <div className="py-10">
+    <div className="pt-14 pb-16">
       <Section>
         <h2 className="text-4xl">
           Muscled Provides Open Social Media Advertising Pricing
