@@ -12,7 +12,7 @@ const Table: FC<TableProp> = ({ headers, rows }) => {
       {headers.map((header, index) => (
         <div
           className={`text-3xl justify-start grid place-content-center ${
-            index > 0 ? "justify-center" : "pl-4"
+            index > 0 ? "justify-center text-center" : "pl-4"
           } ${
             index === 0
               ? "bg-black/80 text-white rounded-tl-xl"
@@ -20,7 +20,7 @@ const Table: FC<TableProp> = ({ headers, rows }) => {
               ? "bg-[#C4000008]/[3%]"
               : "bg-[#C40000]/[6%]"
           } ${index + 1 == headers.length && "rounded-tr-xl"}
-          font-bold w-[310px] h-[212px] border border-[#000000]/5 `}
+          font-bold w-[283px] h-[212px] border-b border-[#000000]/[15%] `}
           key={index}
         >
           <p className={`${index > 0 && "w-min mx-auto"}`}>{header}</p>
@@ -29,7 +29,7 @@ const Table: FC<TableProp> = ({ headers, rows }) => {
       {rows.map((row, subIdx) => {
         return row.map((text, index) => (
           <div
-            className={`w-[310px] p-5 h-[90px] justify-start grid place-content-center ${
+            className={`w-[283px] p-5 h-[90px] justify-start grid place-content-center ${
               index > 0 ? "justify-center text-center" : "pl-4"
             } ${
               index === 0
@@ -37,7 +37,7 @@ const Table: FC<TableProp> = ({ headers, rows }) => {
                 : index % 2 != 0
                 ? "bg-[#C4000008]/[3%]"
                 : "bg-[#C40000]/[6%]"
-            } border border-[#000000]/5 ${
+            } border-b border-[#000000]/[15%] ${
               subIdx === rows.length - 1 &&
               index === headers.length - 1 &&
               "rounded-br-lg"
