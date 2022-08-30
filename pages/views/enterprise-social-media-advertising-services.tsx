@@ -38,19 +38,19 @@ const pricingCards = [
 		star: [AiFillStar],
 		content: [
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Up to 5-10 ad campaigns",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Up to 20-40 unique ads",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Advanced AI tracking",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "$10,000-$20,000 / mo. monthly ad spend",
 			},
 		],
@@ -62,19 +62,19 @@ const pricingCards = [
 		star: [AiFillStar, AiFillStar],
 		content: [
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Up to 5-20 ad campaigns",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Up to 20-40 unique ads",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Dedicated account manager",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "$100,000-$500,000 / mo. monthly ad spend",
 			},
 		],
@@ -86,19 +86,19 @@ const pricingCards = [
 		star: [AiFillStar, AiFillStar, AiFillStar],
 		content: [
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Up to 30-50 ad campaigns",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Up to 120-200 unique ads",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "Custom reporting dashboard",
 			},
 			{
-				icon: <FaCheckCircle className="fill-black"/>,
+				icon: <FaCheckCircle className="fill-black" />,
 				title: "$1M-$1.5M / mo. monthly ad spend",
 			},
 		],
@@ -618,17 +618,15 @@ const allrounderTeam = [
 	},
 ];
 
-const PartnerAgency = [
-	{
-		title: "Partner with the agency that puts focus on the value they give to the client",
-		description: {
-			one: "No matter how much you spend on advertising, we all want to see returns.",
-			two: "At Muscled, our social media agency focuses not only on the results but we want it to be real results. We focus on the metrics that matter the most for you and your business, we’re sales driven. That’s why, in the past # years, we’ve helped our clients earn more than  #$ in revenue.",
-			three: "Our services (over the last # years) have also generated the following results for our clients:",
-			four: "As your partner, you can trust Muscled to help your brand thrive using social media. Whether you’re looking to build your follower base, boost your online sales, or improve your brand awareness, our team of experts can get the job done.",
-		},
+const PartnerAgency = {
+	title: "Partner with the agency that puts focus on the value they give to the client",
+	description: {
+		one: "No matter how much you spend on advertising, we all want to see returns.",
+		two: "At Muscled, our social media agency focuses not only on the results but we want it to be real results. We focus on the metrics that matter the most for you and your business, we’re sales driven. That’s why, in the past # years, we’ve helped our clients earn more than  #$ in revenue.",
+		three: "Our services (over the last # years) have also generated the following results for our clients:",
+		four: "As your partner, you can trust Muscled to help your brand thrive using social media. Whether you’re looking to build your follower base, boost your online sales, or improve your brand awareness, our team of experts can get the job done.",
 	},
-];
+};
 
 const PartnerList = [
 	"5.2 million phone calls",
@@ -1312,28 +1310,26 @@ const Page: NextPage = () => {
 							</div>
 						))}
 
-						{PartnerAgency.map((content, key) => (
-							<div key={key} className="text-xl">
-								<h1 className="my-12">{content.title}</h1>
-								<p className="mb-4 mt 8">
-									{content.description.one}
-								</p>
-								<p className="my-4">
-									{content.description.two}
-								</p>
-								<p className="my-4">
-									{content.description.three}
-								</p>
-								<ul className="my-4 ml-10 list-disc">
-									{PartnerList.map((item, key) => (
-										<li key={key}>{item}</li>
-									))}
-								</ul>
-								<p className="my-4">
-									{content.description.four}
-								</p>
-							</div>
-						))}
+						<div className="text-xl">
+							<h1 className="my-12">{PartnerAgency.title}</h1>
+							<p className="pt-14 pb-20">
+								{PartnerAgency.description.one}
+							</p>
+							<p className="my-4">
+								{PartnerAgency.description.two}
+							</p>
+							<p className="my-4">
+								{PartnerAgency.description.three}
+							</p>
+							<ul className="my-4 ml-10 list-disc">
+								{PartnerList.map((item, key) => (
+									<li key={key}>{item}</li>
+								))}
+							</ul>
+							<p className="my-4">
+								{PartnerAgency.description.four}
+							</p>
+						</div>
 
 						{FAQs.map((content, key) => (
 							<div key={key}>
@@ -1389,11 +1385,11 @@ const Page: NextPage = () => {
 							<AiFillStar className="fill-yellow-400 text-3xl" />
 							<AiFillStar className="fill-yellow-400 text-3xl" />
 						</div>
-						<div className="text-[#D2D2D2] flex items-center">
+						<div className="text-[#D2D2D2] font-medium flex items-center">
 							<p>INDUSTRY-LEADING 863 TESTIMONIALS</p>
 							<AiOutlineRight className="ml-8" />
 						</div>
-						<p className="text-[#D2D2D2]">
+						<p className="text-[#D2D2D2] font-normal">
 							MUSCLED Agency Rating 4.9 out of 5 with 267 ratings
 						</p>
 					</div>
@@ -1401,7 +1397,7 @@ const Page: NextPage = () => {
 			</Section>
 
 			<Section className="mt-36 mb-28">
-				<div className="flex justify-around px-5">
+				<div className="flex flex-wrap gap-10 md:gap-24 justify-around px-5">
 					{lastCards.map((content, key) => (
 						<div
 							key={key}
