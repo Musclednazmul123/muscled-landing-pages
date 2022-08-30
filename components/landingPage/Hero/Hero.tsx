@@ -45,12 +45,12 @@ function Hero() {
 						how much we can help you by requesting a free ecommerce PPC proposal
 						today?{" "}
 					</p>
-					<div className="mt-[30px] xl:block hidden">
+					<div className="mt-[30px] xl:flex hidden">
 						<input
 							className="text-xl leading-[150%] focus:outline-none py-[15px] px-5 text-black placeholder-text-black placeholder-opacity-50 rounded bg-white max-w-[480px] w-full"
 							placeholder="Enter Your Website Link"
 						/>
-						<button className="text-xl font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black ml-[10px] rounded text-white">
+						<button className="text-xl whitespace-nowrap font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black ml-[10px] rounded text-white">
 							Send Proposal
 						</button>
 					</div>
@@ -75,7 +75,7 @@ function Hero() {
 						);
 					})}
 				</div>
-				<div className="mt-[30px] xl:hidden block">
+				<div className="mt-[30px] xl:hidden block ">
 					<input
 						className="text-xl leading-[150%] focus:outline-none py-[15px] px-5 text-black placeholder-text-black placeholder-opacity-50 rounded bg-white xl:max-w-[480px] w-full"
 						placeholder="Enter Your Website Link"
