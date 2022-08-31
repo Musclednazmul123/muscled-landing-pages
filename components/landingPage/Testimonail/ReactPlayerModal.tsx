@@ -23,7 +23,7 @@ const ReactPlayerModal: React.FC<Props> = ({ url }) => {
 				>
 					<div
 						onClick={(e) => e.stopPropagation()}
-						className=" relative pr-10  overflow-visible"
+						className=" relative pr-7  overflow-visible"
 						onMouseEnter={() => setHover(true)}
 						onMouseLeave={() => setHover(false)}
 					>
@@ -35,7 +35,7 @@ const ReactPlayerModal: React.FC<Props> = ({ url }) => {
 								viewBox="0 0 24 24"
 								strokeWidth="1.5"
 								stroke="currentColor"
-								className=" w-6  h-6 absolute -right-3 -top-1  cursor-pointer text-white"
+								className=" w-5  h-5 absolute right-0	 -top-1  cursor-pointer text-white"
 							>
 								<path
 									strokeLinecap="round"
