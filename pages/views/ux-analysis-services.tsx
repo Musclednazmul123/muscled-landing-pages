@@ -2,7 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 
 // components
-import { Section, Testimonial, Hero } from "components/Fawwaz/Sections";
+import { Section } from "components/Fawwaz/Sections";
 import UxAnalysisHero from "../../components/UxAnalysisHero/index";
 import Partners from "../../components/UxAnalysisComponents/LogosSection";
 import PricingCard from "../../components/UxAnalysisComponents/PricingCards";
