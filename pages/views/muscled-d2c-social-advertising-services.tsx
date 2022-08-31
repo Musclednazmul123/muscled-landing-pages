@@ -13,6 +13,7 @@ import DirectToConsumer from "components/common/DirectToConsumer";
 import ReusableTestimonials from "components/common/Testimonials";
 import PartnerLogoSection from "components/common/Partner";
 import AdditionalSocailMedia from "components/common/AdditionalSocailMedia";
+import SocialMediaAdvertising from "components/common/SocialMediaAdvertising";
 import {
   testimonialData,
   AdditionalSocailMediaMetaData,
@@ -181,6 +182,8 @@ const Page: NextPage = () => {
       <AdditionalSocailMedia
         AdditionalSocailMediaMetaData={AdditionalSocailMediaMetaData}
       />
+      {/* Section 6 */}
+      <SocialMediaAdvertising />
     </div>
   );
 };
