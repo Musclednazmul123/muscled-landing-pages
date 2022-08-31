@@ -2,19 +2,22 @@ import React, { FC } from 'react';
 import { PricingCardProps } from '../component.type';
 import Button from '../Button';
 
-import CheckMark from '../../assets/svg/CheckMark';
+import Check from '../../assets/svg/Check';
+import Star from '../../assets/svg/Star';
 
 const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
     return (
         <>
             <div className='pricing-card'>
                 <div className="card-header flex flex-col justify-between items-center">
+                    <div className="flex">
                     {type == 'basic' ? (
-                        <p>one Star</p>
+                        <Star />
                     ) : type == 'premium' ? (
-                        <p>two star</p>
-                    ) : <p>three star</p>
+                        <><Star /> <Star /></>
+                    ) : <><Star /> <Star /> <Star /></>
                     }
+                    </div>
                     <p className='card-title'>{title}</p>
                     <p className='card-rate'>{rate}</p>
 
@@ -22,7 +25,7 @@ const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
                 <div className="card-content">
                     {content?.map((item, key) => (
                         <div className='flex gap-3 items-center justify-center content-item-wrapper' key={key}>
-                            <CheckMark />
+                            <Check />
                             <p className='content-item'>{item}</p>
                         </div>
                     ) )
