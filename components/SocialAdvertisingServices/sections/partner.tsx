@@ -5,8 +5,8 @@ import Logo from '../components/partnerSection/logo'
 
 const Partners = () => {
   const displayPartnerLogo = () => {
-    return PartnerData.map((item: string) => {
-      return <Logo src={item} className="my-2 md:my-0" />
+    return PartnerData.map((item: string, key: number) => {
+      return <Logo src={item} className="my-2 md:my-0" key={key} />
     })
   }
 

@@ -16,13 +16,14 @@ const HeroSection: FC<HeroSectionProps> = ({
 }) => {
   console.log(FeatureData)
   const DisplayFeatures = () => {
-    return FeatureData.map((item) => {
+    return FeatureData.map((item, key) => {
       return (
         <Feature
           topSubHeading={item.topSubHeading}
           heading={item.Heading}
           bottomSubHeading={item.bottomSubHeading}
           icon={item.icon}
+          key={key}
         />
       )
     })
