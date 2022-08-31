@@ -91,8 +91,8 @@ export default function TableOfContext({}: Props) {
 				</div>
 			</div>
 			{list && (
-				<div className="bg-white py-[10px] px-5 lg:max-w-[440px] rounded-b-lg">
-					<ul className="md:text-xl text-lg leading-loose underline text-purple-800 list-disc px-5 space-y-5">
+				<div className="bg-white py-[10px] pl-7 pr-5 lg:max-w-[440px] rounded-b-lg">
+					<ul className="md:text-xl text-lg leading-loose underline text-[#5F27BD] list-disc px-5 space-y-5">
 						{listData.map((i) => {
 							return (
 								<li>
