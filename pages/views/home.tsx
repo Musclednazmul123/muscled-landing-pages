@@ -1,10 +1,8 @@
 import * as React from 'react'
 import { NextPage, NextPageContext } from 'next'
-import Button from '../../components/Button'
-import Card from '../../components/Card'
 
 import Hero from '../../components/Fawwaz/Sections/Hero';
-import FunnelSVG from '../../components/assets/svg/FunnelSVG';
+import OurPartners from '../../components/Fawwaz/Sections/OurPartners';
 
 interface Props {
   query: { name?: string }
@@ -21,6 +19,7 @@ const Home: NextPage<Props> = ({ query }) => {
           // heroSVG = {FunnelSVG}
           input 
       />
+      <OurPartners />
     </>
   )
 }

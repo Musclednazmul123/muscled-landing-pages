@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 // Card
 export interface CardProps {
@@ -78,9 +78,10 @@ export interface HeroSectionProps {
 
 // miscellaneous
 export interface PartnerLogo {
-	src: string;
-	width: number;
-	height: number;
+	src?: string;
+	width?: number;
+	height?: number;
+	logo: ReactNode;
 }
 
 export interface VideoFrameProps {
