@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon src/main.ts",
+		"dev": "next dev",
 		"build:clean": "rimraf .next",
 		"build:ui": "npx next build",
 		"build:server": "npx tsc --project tsconfig.server.json && npx babel .next/production-server -d .next/production-server --extensions \".js\"",
@@ -29,6 +29,7 @@
 		"react": "18.0.0",
 		"react-dom": "18.0.0",
 		"react-icons": "^4.4.0",
+		"react-player": "^2.10.1",
 		"reflect-metadata": "^0.1.13",
 		"rxjs": "^7.5.5"
 	},
