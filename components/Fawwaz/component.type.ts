@@ -7,7 +7,7 @@ export interface PricingCardProps {
 	title?: string;
 	rate?: string;
 	type?: "basic" | "premium" | "ultimate";
-	content?: object;
+	content?: [];
 }	
 export interface CardProps {
 	children: ReactNode;

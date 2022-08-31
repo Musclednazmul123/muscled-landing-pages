@@ -200,15 +200,13 @@
 	gap: 23px;
 
 	width: 400px;
-	height: 780px;
+	/* height: 780px; */
 
 	background: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.7);
 	border-radius: 10px;
 
-	/* Inside auto layout */
-
-	flex: none;
+	/* flex: none; */
 	order: 0;
 	align-self: stretch;
 	flex-grow: 0;
@@ -235,4 +233,17 @@
 	font-size: 40px;
 	line-height: 130%;
 	color: #C40000;
+}
+
+.card-item-wrapper {
+	margin: 0px 30px 30px;
+}
+
+.card-item {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 130%;
+	color: rgba(0, 0, 0, 0.7);
 }

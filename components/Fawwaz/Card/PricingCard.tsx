@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import { PricingCardProps } from '../component.type';
 
+import CheckMark from '../../assets/svg/CheckMark';
+
 const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
     return (
         <>
@@ -17,7 +19,14 @@ const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
 
                 </div>
                 <div className="card-content">
+                    {content?.map((item, key) => (
+                        <div className='flex gap-3 items-center justify-center card-item-wrapper' key={key}>
+                            <CheckMark />
+                            <p className='card-item'>{item}</p>
+                        </div>
+                    ) )
 
+                    }
                 </div>
                 <div className="card-footer">
 
