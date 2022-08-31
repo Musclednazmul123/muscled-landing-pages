@@ -1,13 +1,21 @@
+import { title } from "process";
 import { FC, ReactNode } from "react";
 
 // Card
+
+export interface PricingCardProps {
+	title?: string;
+	rate?: string;
+	type?: "basic" | "premium" | "ultimate";
+	content?: object;
+}	
 export interface CardProps {
 	children: ReactNode;
-	className: string;
+	className?: string;
 }
 
 export interface CardHeaderProps {
-	children: ReactNode;
+	children?: ReactNode;
 	className?: string;
 	title: string;
 	rate: string;
@@ -16,7 +24,7 @@ export interface CardHeaderProps {
 
 export interface CardContent {
 	className?: string;
-	children: ReactNode;
+	children?: ReactNode;
 }
 
 export interface IconProps {

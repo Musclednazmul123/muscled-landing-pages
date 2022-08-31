@@ -176,11 +176,63 @@
 	background: #F5F5F5;
 }
 
-.pricing-title {
+.pricing-section-title {
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 130%;
 	color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 60px;
+}
+
+.card-wrapper {
+	gap: 70px;
+}
+
+
+.pricing-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 0px 40px;
+	gap: 23px;
+
+	width: 400px;
+	height: 780px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.card-header {
+	padding: 40px 0px;
+	gap: 40px;
+}
+
+.card-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.card-rate {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #C40000;
 }
