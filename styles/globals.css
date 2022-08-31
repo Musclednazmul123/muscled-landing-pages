@@ -108,8 +108,25 @@
 
 /* ============Hero section============ */
 
+.highlight {
+	color:rgba(196, 0, 0, 0.7)
+}
+
 .custom-hero {
 	background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+	margin-top: 30px;
+}
+
+.hero-description {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .custom-svg-div {
@@ -123,10 +140,15 @@
 	border-radius: 3px;
 }
 
-.custom-svg-text {
-	
-	font-style: normal;
+.svg-text-large {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 41.6px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.svg-text-small {
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 130%;
+	font-size: 14px;
+	line-height: 20.8px;
 }
