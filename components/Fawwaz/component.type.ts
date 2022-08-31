@@ -79,6 +79,7 @@ export interface HeroSectionProps {
 	pagination?: JSX.Element;
 	title: string;
 	description: string;
+	descriptionTextColor?: string;
 	heroSVG?: JSX.Element | ReactNode;
 	input?:boolean;
 }

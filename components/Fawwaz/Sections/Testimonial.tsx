@@ -1,13 +1,13 @@
 import { FC } from "react";
+import ReactPlayer from "react-player";
 
 import { Section } from "../Sections";
 import Button from "../Button";
-import VideoFrame from "components/Fawwaz/VideoFrame";
 
 
-const Testimonials: FC = () => {
+const Testimonial: FC = () => {
 	return (
-		<div className="bg-black">
+		<div className="bg-black mt-[200px]">
 			<Section className="flex flex-wrap justify-center py-20 px-3 gap-32">
 				<div className="max-w-[560px] text-accent-white">
 					<p className="text-xl md:text-2xl mb-8">
@@ -28,11 +28,11 @@ const Testimonials: FC = () => {
 					</Button>
 				</div>
 				<div className="w-[500px] min-h-[400px] h-full bg-white-gray relative">
-					<VideoFrame className="w-full h-full absolute" allowFullScreen />
+					<ReactPlayer url="https://www.youtube.com/embed/D0UnqGm_miA" width={540} height={400} />
 				</div>
 			</Section>
 		</div>
 	);
 };
 
-export default Testimonials;
+export default Testimonial;
