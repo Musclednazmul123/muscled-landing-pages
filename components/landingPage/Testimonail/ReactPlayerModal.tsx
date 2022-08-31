@@ -23,19 +23,20 @@ const ReactPlayerModal: React.FC<Props> = ({ url }) => {
 				>
 					<div
 						onClick={(e) => e.stopPropagation()}
-						className=" relative pr-7  overflow-visible"
+						className=" relative pr-7  overflow-visible "
 						onMouseEnter={() => setHover(true)}
 						onMouseLeave={() => setHover(false)}
 					>
 						{hover && (
 							<svg
+								tabIndex={1}
 								onClick={() => setIsPlaying(false)}
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
 								strokeWidth="1.5"
 								stroke="currentColor"
-								className=" w-5  h-5 absolute right-0	 -top-1  cursor-pointer text-white"
+								className=" w-5  h-5 absolute right-0 focus:border border-white	 -top-1  cursor-pointer text-white"
 							>
 								<path
 									strokeLinecap="round"
