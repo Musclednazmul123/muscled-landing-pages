@@ -1,7 +1,6 @@
 import React from "react";
-import { ReactNode } from "react";
 import { NextPage } from "next";
-import { Hero, Section } from "components/Fawwaz/Sections";
+import { Hero } from "components/Fawwaz/Sections";
 import MuscledD2CSVG from "components/assets/svg/MuscledD2CSVG";
 import logo1 from "components/assets/logo/logo1.png";
 import logo3 from "components/assets/logo/logo3.png";
@@ -14,110 +13,11 @@ import ReusableTestimonials from "components/common/Testimonials";
 import PartnerLogoSection from "components/common/Partner";
 import AdditionalSocailMedia from "components/common/AdditionalSocailMedia";
 import SocialMediaAdvertising from "components/common/SocialMediaAdvertising";
+import CardSection from "components/common/CardSection";
 import {
   testimonialData,
   AdditionalSocailMediaMetaData,
 } from "components/utils/muscled-d2c-constants";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  IconItem,
-  CardFooter,
-} from "components/Fawwaz/Card";
-
-import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";
-import { FaCheckCircle } from "react-icons/fa";
-
-export interface CardHeaderDataProps {
-  title: string;
-  rate: string;
-  type?: "basic" | "premium" | "ultimate";
-  description?: string;
-  iconItems: { [key: string]: string }[];
-  isFooterDescription?: boolean;
-  footerDescition?: string;
-  buttonLabel?: string;
-}
-const cardData: CardHeaderDataProps[] = [
-  {
-    title: "Aggressive",
-    rate: "4,500",
-    description: "or 18%, whichever is higher",
-    iconItems: [
-      {
-        iconTitle: "Up to 2 networks",
-        class: "mt-2",
-        // icon: <FaCheckCircle size={15} />,
-      },
-      {
-        iconTitle: "Up to 5 campaigns",
-        class: "mt-4",
-        // icon: <FaCheckCircle size={15} />,
-      },
-      {
-        iconTitle: "Up to 20 ads",
-        class: "mt-4",
-        // icon: <FaCheckCircle size={15} />,
-      },
-    ],
-    isFooterDescription: true,
-    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
-    buttonLabel: "Send Proposal",
-  },
-  {
-    title: "Market Leader",
-    rate: "6,300",
-    type: "premium",
-    description: "or 18%, whichever is higher",
-    iconItems: [
-      {
-        iconTitle: "Up to 2 networks",
-        class: "mt-2",
-        // icon: <FaCheckCircle size={15} />,
-      },
-      {
-        iconTitle: "Up to 5 campaigns",
-        class: "mt-4",
-        // icon: <FaCheckCircle size={15} />,
-      },
-      {
-        iconTitle: "Up to 20 ads",
-        class: "mt-4",
-        // icon: <FaCheckCircle size={15} />,
-      },
-    ],
-    isFooterDescription: true,
-    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
-    buttonLabel: "Send Proposal",
-  },
-  {
-    title: "Enterprise",
-    rate: "7,200",
-    type: "ultimate",
-    description: "or 18%, whichever is higher",
-    iconItems: [
-      {
-        iconTitle: "Up to 2 networks",
-        class: "mt-2",
-        // icon: <FaCheckCircle size={15} />,
-      },
-      {
-        iconTitle: "Up to 5 campaigns",
-        class: "mt-4",
-        // icon: <FaCheckCircle size={15} />,
-      },
-      {
-        iconTitle: "Up to 20 ads",
-        class: "mt-4",
-        // icon: <FaCheckCircle size={15} />,
-      },
-    ],
-    isFooterDescription: true,
-    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
-    buttonLabel: "Send Proposal",
-  },
-];
 
 const Page: NextPage = () => {
   return (
@@ -135,45 +35,8 @@ const Page: NextPage = () => {
       <PartnerLogoSection
         noOfLogos={[logo1, logo3, logo4, logo5, logo6, logo7]}
       />
-
       {/* Third section */}
-      <Section>
-        <h2 className="text-4xl text-center mt-10 mb-14">
-          Explore Direct-to-Consumer Social Service Programs.
-        </h2>
-        <div className="flex flex-wrap justify-center lg:justify-between gap-2">
-          {cardData &&
-            cardData.map((cardItem) => {
-              return (
-                <Card className="rounded-sm border-2 max-w-[400px] w-full">
-                  <CardHeader
-                    title={cardItem?.title}
-                    rate={cardItem?.rate}
-                    description={cardItem?.description}
-                    type={cardItem?.type}
-                  >
-                    <AiFillStar className="card-icon fill-black-50" />
-                  </CardHeader>
-                  <CardContent className="space-y-11">
-                    {cardItem &&
-                      cardItem.iconItems.map((item) => (
-                        <IconItem
-                          icon={<FaCheckCircle size={15} />}
-                          title={item?.iconTitle}
-                          className={item?.class}
-                        />
-                      ))}
-                  </CardContent>
-                  <CardFooter
-                    isFooterDescription={cardItem?.isFooterDescription}
-                    footerDescition={cardItem?.footerDescition}
-                    buttonLabel={cardItem?.buttonLabel}
-                  />
-                </Card>
-              );
-            })}
-        </div>
-      </Section>
+      <CardSection />
       {/* Section 4 */}
       <DirectToConsumer />
       {/* Section5 */}

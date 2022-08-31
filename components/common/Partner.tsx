@@ -12,7 +12,6 @@ interface PropsPartnerSection {
   noOfLogos: PropsLogos[];
 }
 const PartnerLogoSection = ({ noOfLogos }: PropsPartnerSection) => {
-  console.log(noOfLogos, "noOfLogos");
   return (
     <section className="text-center pt-16 pl-16 pr-16 pb-5 bg-white w-full flex flex-col content-evenly  ">
       <h3 className="text-black-50 text-2xl">Our Partners</h3>

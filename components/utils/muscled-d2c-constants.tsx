@@ -1,6 +1,7 @@
 import { AiOutlineCheck, AiFillPhone } from "react-icons/ai";
 import Button from "components/Fawwaz/Button";
 import React from "react";
+import { CardHeaderDataProps } from "components/common/types";
 
 export const testimonialData = {
   para1: `"The  Muscled team is the perfect package for our social media needs!" They handle everything from ad design to targeted marketing to page administration and monitoring!"`,
@@ -179,3 +180,83 @@ export const SocialMediaAdvertisingMetaData = {
     },
   ],
 };
+
+export const cardData: CardHeaderDataProps[] = [
+  {
+    title: "Aggressive",
+    rate: "4,500",
+    description: "or 18%, whichever is higher",
+    iconItems: [
+      {
+        iconTitle: "Up to 2 networks",
+        class: "mt-2",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 5 campaigns",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 20 ads",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+    ],
+    isFooterDescription: true,
+    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
+    buttonLabel: "Send Proposal",
+  },
+  {
+    title: "Market Leader",
+    rate: "6,300",
+    type: "premium",
+    description: "or 18%, whichever is higher",
+    iconItems: [
+      {
+        iconTitle: "Up to 2 networks",
+        class: "mt-2",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 5 campaigns",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 20 ads",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+    ],
+    isFooterDescription: true,
+    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
+    buttonLabel: "Send Proposal",
+  },
+  {
+    title: "Enterprise",
+    rate: "7,200",
+    type: "ultimate",
+    description: "or 18%, whichever is higher",
+    iconItems: [
+      {
+        iconTitle: "Up to 2 networks",
+        class: "mt-2",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 5 campaigns",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+      {
+        iconTitle: "Up to 20 ads",
+        class: "mt-4",
+        // icon: <FaCheckCircle size={15} />,
+      },
+    ],
+    isFooterDescription: true,
+    footerDescition: "$1,550 MIN INITIAL SETUP FEE",
+    buttonLabel: "Send Proposal",
+  },
+];
