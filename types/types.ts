@@ -52,3 +52,10 @@ export interface SVGProps {
   className?: string;
   opacity?: number;
 }
+
+export interface HeroCardProps {
+  img: string;
+  title: string;
+  number: string;
+  subtitle: string;
+}
