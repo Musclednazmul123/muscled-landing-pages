@@ -32,7 +32,7 @@ export default function Testimonial() {
 			{isplaying && (
 				<div className="bg-black fixed top-0 h-full w-full bg-opacity-90 flex items-center justify-center px-6">
 					<div
-						className="px-11  relative"
+						className=" relative px-5 overflow-visible"
 						onMouseEnter={() => setHover(true)}
 						onMouseLeave={() => setHover(false)}
 					>
@@ -44,7 +44,7 @@ export default function Testimonial() {
 								viewBox="0 0 24 24"
 								strokeWidth="1.5"
 								stroke="currentColor"
-								className=" w-6  h-6 absolute right-3 top-0  cursor-pointer text-white"
+								className=" w-6  h-6 absolute -right-2 -top-1  cursor-pointer text-white"
 							>
 								<path
 									strokeLinecap="round"
@@ -56,7 +56,7 @@ export default function Testimonial() {
 						<ReactPlayer
 							url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 							playing={true}
-							controls={true}
+							controls={hover}
 						/>
 					</div>
 				</div>
