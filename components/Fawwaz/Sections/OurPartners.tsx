@@ -14,12 +14,12 @@ const OurPartners = () => {
             <div className="our-partner">
                 <h4 className='partner-title text-center'>Our Partners</h4>
                 <div className='partner-wrapper grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8'>
-                    <Partner src='https://google.com' logo={<PartnerOne />}/>
-                    <Partner src='https://google.com' logo={<PartnerTwo />}/>
-                    <Partner src='https://google.com' logo={<PartnerThree />}/>
-                    <Partner src='https://google.com' logo={<PartnerFour />}/>
-                    <Partner src='https://google.com' logo={<PartnerFive />}/>
-                    <Partner src='https://google.com' logo={<PartnerSix />}/>
+                    <Partner src='https://google.com' children={<PartnerOne />}/>
+                    <Partner src='https://google.com' children={<PartnerTwo />}/>
+                    <Partner src='https://google.com' children={<PartnerThree />}/>
+                    <Partner src='https://google.com' children={<PartnerFour />}/>
+                    <Partner src='https://google.com' children={<PartnerFive />}/>
+                    <Partner src='https://google.com' children={<PartnerSix />}/>
                     
                 </div>
             </div>

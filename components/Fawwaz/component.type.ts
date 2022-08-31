@@ -81,7 +81,7 @@ export interface PartnerLogo {
 	src?: string;
 	width?: number;
 	height?: number;
-	logo: ReactNode;
+	children: ReactNode;
 }
 
 export interface VideoFrameProps {

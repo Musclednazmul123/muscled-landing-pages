@@ -1,9 +1,6 @@
 import * as React from 'react'
 import { NextPage, NextPageContext } from 'next'
 
-import Hero from '../../components/Fawwaz/Sections/Hero';
-import OurPartners from '../../components/Fawwaz/Sections/OurPartners';
-
 interface Props {
   query: { name?: string }
 }
@@ -13,13 +10,7 @@ const Home: NextPage<Props> = ({ query }) => {
 
   return (
     <>
-      <Hero 
-          title={"Landing Page Design Services for PPC Campaigns"} 
-          description = {''} 
-          // heroSVG = {FunnelSVG}
-          input 
-      />
-      <OurPartners />
+      
     </>
   )
 }

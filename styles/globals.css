@@ -156,6 +156,7 @@
 /* ========Partner section=========== */
 
 .our-partner {
+	background: #FFFFFF;
 	padding: 50px 100px;
 }
 
@@ -167,4 +168,19 @@
 	line-height: 130%;
 	color: rgba(0, 0, 0, 0.5);
 	margin-bottom: 28px;
+}
+
+/* ===========pricing plan section============ */
+
+.pricing-section {
+	background: #F5F5F5;
+}
+
+.pricing-title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: rgba(0, 0, 0, 0.8);
 }
