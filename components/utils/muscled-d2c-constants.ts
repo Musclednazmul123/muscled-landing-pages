@@ -3,3 +3,29 @@ export const testimonialData = {
   para2: `Manager of a Store`,
   buttonLabel: `See Our Clients’ Testimonials`,
 };
+
+export const AdditionalSocailMediaMetaData = {
+  heading: `Additional social media marketing services from Muscled`,
+  para: ` Looking for platform-specific social marketing services? Check out these
+  resources:`,
+  items: [
+    {
+      itemTitle: "Ecommerce Social Media Advertising",
+      itemPara: ` Drive traffic to your ecommerce store and start selling more online
+  with social media ads!`,
+      buttonLabel: "Lear more",
+    },
+    {
+      itemTitle: "Ecommerce Social Media Advertising",
+      itemPara: ` Drive traffic to your ecommerce store and start selling more online
+    with social media ads!`,
+      buttonLabel: "Lear more",
+    },
+    {
+      itemTitle: "Ecommerce Social Media Advertising",
+      itemPara: ` Drive traffic to your ecommerce store and start selling more online
+    with social media ads!`,
+      buttonLabel: "Lear more",
+    },
+  ],
+};

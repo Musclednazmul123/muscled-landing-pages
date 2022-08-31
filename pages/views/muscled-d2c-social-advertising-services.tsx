@@ -12,7 +12,11 @@ import logo7 from "components/assets/logo/logo7.png";
 import DirectToConsumer from "components/common/DirectToConsumer";
 import ReusableTestimonials from "components/common/Testimonials";
 import PartnerLogoSection from "components/common/Partner";
-import { testimonialData } from "components/utils/muscled-d2c-constants";
+import AdditionalSocailMedia from "components/common/AdditionalSocailMedia";
+import {
+  testimonialData,
+  AdditionalSocailMediaMetaData,
+} from "components/utils/muscled-d2c-constants";
 import {
   Card,
   CardHeader,
@@ -173,6 +177,10 @@ const Page: NextPage = () => {
       <DirectToConsumer />
       {/* Section5 */}
       <ReusableTestimonials testimonialData={testimonialData} />
+      {/* Section6 */}
+      <AdditionalSocailMedia
+        AdditionalSocailMediaMetaData={AdditionalSocailMediaMetaData}
+      />
     </div>
   );
 };
