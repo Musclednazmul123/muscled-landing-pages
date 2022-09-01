@@ -27,7 +27,7 @@ export default function Testimonial() {
 							// width={"500px"}
 							// height={"500px"}
 							url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-							thumbnail="main.png"
+							// thumbnail="main.png"
 						/>
 					</div>
 				</div>
