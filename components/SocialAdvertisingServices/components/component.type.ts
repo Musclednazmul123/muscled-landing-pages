@@ -53,3 +53,10 @@ export interface ServicePackages {
   children?: ReactNode
   className?: string
 }
+
+export interface ServiceCard {
+  heading: string
+  subHeading: string
+  buttonText: string
+  className?: string
+}

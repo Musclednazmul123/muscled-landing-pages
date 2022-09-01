@@ -6,6 +6,7 @@ import PartnerSection from '../../components/SocialAdvertisingServices/sections/
 import ServicePackages from '../../components/SocialAdvertisingServices/sections/servicePlans'
 import { CustomerMediaAdvertising } from '../../components/SocialAdvertisingServices/sections'
 import ClientTestimonials from '../../components/SocialAdvertisingServices/sections/clientTestimonials'
+import { BusinessAdvertisingServices } from '../../components/SocialAdvertisingServices/sections'
 
 const Page: NextPage = () => {
   // console.log(HeroSectionData)
@@ -21,6 +22,7 @@ const Page: NextPage = () => {
       <ServicePackages />
       <CustomerMediaAdvertising />
       <ClientTestimonials />
+      <BusinessAdvertisingServices />
     </>
   )
 }
