@@ -22,7 +22,7 @@ const ReactPlayerModal: React.FC<Props> = ({
 		<>
 			<div
 				style={{
-					backgroundImage: thumbnail && `url(${thumbnail})`,
+					backgroundImage: thumbnail && `url('./${thumbnail}')`,
 					backgroundPosition: "center",
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
