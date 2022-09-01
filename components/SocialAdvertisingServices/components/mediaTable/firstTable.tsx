@@ -29,7 +29,7 @@ const FirstTable = () => {
       <table className="rounded-xl my-8">
         <tbody>
           <tr className="font-bold border-b border-neutral-500 text-center">
-            <td className="px-8 py-4 bg-black-80 text-white rounded-tl-xl">
+            <td className="p-4  bg-black-80 text-white rounded-tl-xl text-left">
               Features
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-3">Aggressive</td>
@@ -39,8 +39,8 @@ const FirstTable = () => {
             </td>
           </tr>
           {displayTableRows()}
-          <tr>
-            <td className="flex flex-col px-8 py-4 bg-black-80 text-white rounded-bl-xl">
+          <tr className="">
+            <td className="flex flex-col px-8 py-4 bg-black-80 text-white rounded-bl-xl ">
               <p className="my-4">Give Us a Call if You Need Information</p>
               <a className="flex" href="tel:+18886015359">
                 <Image src={PhoneImg} alt="phone" width={24} height={24} />
@@ -50,10 +50,10 @@ const FirstTable = () => {
               </a>
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-3">
-              <Button text="Get Started" className="px-8 py-4" />
+              <Button text="Get Started" className="px-8 py-4 m-auto" />
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-6">
-              <Button text="Get Started" className="px-8 py-4" />
+              <Button text="Get Started" className="px-8 py-4 m-auto" />
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-9 rounded-br-xl">
               <Button text="Get Started" className="px-8 py-4" />

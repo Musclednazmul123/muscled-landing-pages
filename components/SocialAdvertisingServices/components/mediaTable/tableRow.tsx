@@ -14,7 +14,7 @@ const TableRow: FC<tableRow> = ({
   return (
     <tr
       className={`${className ? className : ''} ${
-        isHead ? 'font-bold' : ''
+        isHead ? 'font-bold' : 'font-light'
       } text-center border-b border-neutral-500`}
     >
       <td className="px-4 py-8 bg-black-80 text-left text-white w-1/4">

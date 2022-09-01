@@ -15,7 +15,7 @@ const clientTestimonials = () => {
           <p className="font-bold">Manager of a Store</p>
           <Button
             text="See Our Clients' Testimonials"
-            backgroundColor="bg-red-600"
+            backgroundColor="bg-red-base"
           />
         </div>
         <div className="basis-1/5"></div>

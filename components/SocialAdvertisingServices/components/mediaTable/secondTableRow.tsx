@@ -10,7 +10,7 @@ const SecondTableRow: FC<secondTableRow> = ({
   return (
     <tr
       className={`${
-        isHead ? 'font-bold' : ''
+        isHead ? 'font-bold' : 'font-light'
       } text-center border-b border-neutral-500`}
     >
       <td className="w-1/2 py-4 px-8 bg-black-80 text-white text-left">
