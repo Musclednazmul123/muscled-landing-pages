@@ -60,3 +60,12 @@ export interface ServiceCard {
   buttonText: string
   className?: string
 }
+
+export interface tableRow {
+  feature: string
+  aggressive: string
+  marketLeader: string
+  enterprise: string
+  isHead?: boolean
+  className?: string
+}
