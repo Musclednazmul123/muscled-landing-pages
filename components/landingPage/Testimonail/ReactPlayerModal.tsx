@@ -1,18 +1,37 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import PlayIcon from "./playIcon";
 
 interface Props {
 	url: string;
+	Icon: any;
+	thumbnail?: string;
+	width?: string;
+	height?: string;
 }
 
-const ReactPlayerModal: React.FC<Props> = ({ url }) => {
+const ReactPlayerModal: React.FC<Props> = ({
+	url,
+	Icon,
+	thumbnail,
+	width,
+	height,
+}) => {
 	const [isplaying, setIsPlaying] = React.useState<boolean>(false);
 	const [hover, setHover] = React.useState<boolean>(false);
 	return (
 		<>
-			<div className="bg-gray-300 rounded-lg lg:mt-0 mt-12 lg:w-[640px] md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center">
-				<PlayIcon onClick={() => setIsPlaying(true)} />
+			<div
+				style={{
+					backgroundImage: thumbnail && `url(${thumbnail})`,
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+					width: width && width,
+					height: height && height,
+				}}
+				className="bg-gray-300 rounded-lg lg:mt-0 mt-12 lg:w-[640px] md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center"
+			>
+				<Icon onClick={() => setIsPlaying(true)} />
 			</div>
 			{isplaying && (
 				<div
