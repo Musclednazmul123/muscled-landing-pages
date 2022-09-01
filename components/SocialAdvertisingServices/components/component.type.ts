@@ -69,3 +69,10 @@ export interface tableRow {
   isHead?: boolean
   className?: string
 }
+
+export interface secondTableRow {
+  feature: string
+  pixel: boolean
+  catalogs: boolean
+  isHead: boolean
+}

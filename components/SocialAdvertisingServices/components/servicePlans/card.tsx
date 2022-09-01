@@ -43,7 +43,7 @@ const Card: FC<Card> = ({
     >
       <div
         className={`flex flex-col items-center justify-around p-4 gap-y-6 basis-2/5 rounded-t-xl ${
-          bgColor ? bgColor : 'bg-red-100'
+          bgColor ? bgColor : ''
         }`}
       >
         <div

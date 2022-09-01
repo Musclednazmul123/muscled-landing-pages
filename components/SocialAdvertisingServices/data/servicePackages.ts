@@ -22,7 +22,7 @@ export const CardData: {
       '1 personal ecommerce consultation / month'
     ],
     includes: 'Includes strategy and competitive data analysis',
-    bgColor: 'bg-red-100'
+    bgColor: 'bg-red-3'
   },
   {
     stars: 2,
@@ -34,7 +34,7 @@ export const CardData: {
       '2 personal ecommerce consultation / month'
     ],
     includes: 'Includes strategy and competitive data analysis',
-    bgColor: 'bg-red-100'
+    bgColor: 'bg-red-6'
   },
   {
     stars: 3,
@@ -46,6 +46,6 @@ export const CardData: {
       '4 personal ecommerce consultation / month'
     ],
     includes: 'Includes strategy and competitive data analysis',
-    bgColor: 'bg-red-100'
+    bgColor: 'bg-red-9'
   }
 ]
