@@ -20,7 +20,6 @@ const TableOfContents = () => {
         <Image src={ListIcon} alt="list" width={26} height={20} /> Table Of
         Contents
       </p>
-      {/* <ul className="list-disc text-[#5F27BD]">{displayContents(contents)}</ul> */}
       <List content={contents} className="text-[#5F27BD]" />
     </div>
   )
