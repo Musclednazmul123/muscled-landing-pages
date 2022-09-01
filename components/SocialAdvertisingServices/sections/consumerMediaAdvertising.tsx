@@ -4,7 +4,7 @@ import Button from '../components/heroSection/button'
 
 const CustomerMediaAdvertising = () => {
   return (
-    <div className="bg-red-100">
+    <div className="bg-red-50">
       <DynamicSection className="h-[80vh] flex-col md:flex-row">
         <div className="flex flex-col basis-[60%] gap-y-4 justify-center">
           <h2>What is direct-to-consumer social media advertising?</h2>

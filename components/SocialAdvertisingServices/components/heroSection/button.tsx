@@ -11,7 +11,7 @@ const Button: FC<HeroButton> = ({
     <button
       className={`px-4 py-2 rounded-md ${className ? ` ${className}` : ''} ${
         textColor ? ` text-${textColor}` : 'text-white'
-      } ${backgroundColor ? ` bg-${backgroundColor}` : 'bg-black'}`}
+      } ${backgroundColor ? backgroundColor : 'bg-black'}`}
     >
       {text}
     </button>
