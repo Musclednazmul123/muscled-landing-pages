@@ -121,7 +121,7 @@ export default function GuideDetails({}: Props) {
 				</p>
 			</div>
 			{/* MOOVOVOVOVO */}
-			<div className="w-full relative lg:h-[628px] mt-[120px] overflow-hidden ">
+			<div className="max-w-[760px] relative lg:h-[628px] mt-[120px] overflow-hidden ">
 				<img
 					src="https://i.ibb.co/T2MYY7f/bg-back.png"
 					alt="bg-image"
@@ -129,13 +129,15 @@ export default function GuideDetails({}: Props) {
 				/>
 				<div className="relative z-30 md:p-10 p-5 md:flex items-center mt-20 justify-center">
 					<div>
-						<p className="md:text-4xl text-2xl font-bold md:leading-[53px] text-gray-50 md:text-left text-center">
+						<p className="md:text-4xl text-2xl font-bold md:leading-[60px] text-gray-50 md:text-left text-center">
 							Need help with your Ecommerce PPC Management Services
 						</p>
 						<p className="md:text-2xl text-lg font-bold leading-[36px] text-gray-50 mt-5 md:text-left text-center">
 							Check out our
 							<br />
-							Ecommerce PPC Management Services
+							Ecommerce PPC Management
+							<br />
+							Services
 						</p>
 						<button className="mt-10 md:text-xl md:w-auto w-full text-md font-semibold hover:bg-opacity-70 leading-[150%] h-[60px] border border-black px-10 bg-black rounded text-white">
 							View the Guide
@@ -152,7 +154,7 @@ export default function GuideDetails({}: Props) {
 				<h2 className="md:text-4xl text-2xl font-bold leading-[52px] text-black text-opacity-80">
 					How do We Go About Our PPC Management Service?
 				</h2>
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70 mt-10">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70 mt-10">
 					See how Muscled Digital Agency does its ecommerce PPC management
 					service.
 					<br />
@@ -165,20 +167,20 @@ export default function GuideDetails({}: Props) {
 							your business and competitors within the same industry.
 						</li>
 						<li>
-							<span className="font-bold"> Mapping:</span> We will provide
-							everything that your business needs to thrive from keywords, your
-							target audience, ad groups, landing pages, copy, and content,
-							among others. We’ll go through everything and see what works and
-							what doesn’t. Upon the launch of your ad campaign, we’ll monitor
-							our strategy’s performance and make changes for more improvements
-							to make the best out of your investments.
+							<span className="font-bold md:leading-[30px]"> Mapping:</span> We
+							will provide everything that your business needs to thrive from
+							keywords, your target audience, ad groups, landing pages, copy,
+							and content, among others. We’ll go through everything and see
+							what works and what doesn’t. Upon the launch of your ad campaign,
+							we’ll monitor our strategy’s performance and make changes for more
+							improvements to make the best out of your investments.
 						</li>
 						<li>
-							<span className="font-bold">Workouts:</span> Expect an
-							easy-to-follow report for you and your team. Your dedicated
-							account manager will be happy to answer your questions and provide
-							you with redeveloped plans on how the next month should go based
-							on past data. Better results are bound to come.
+							<span className="font-bold md:leading-[30px]">Workouts:</span>{" "}
+							Expect an easy-to-follow report for you and your team. Your
+							dedicated account manager will be happy to answer your questions
+							and provide you with redeveloped plans on how the next month
+							should go based on past data. Better results are bound to come.
 						</li>
 					</ul>
 					<br />
