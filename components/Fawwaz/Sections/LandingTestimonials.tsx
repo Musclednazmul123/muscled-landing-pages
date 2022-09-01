@@ -5,7 +5,7 @@ import VideoFrame from "components/Fawwaz/VideoFrame";
 
 const LandingTestimonials = () => {
 	return (
-		<div className="bg-black testimonial-section">
+		<div className="bg-black testimonial-section px-6 md:px-24 py-20">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 				<div className="text-accent-white">
 					<p className="text-lg md:text-2xl mb-8">

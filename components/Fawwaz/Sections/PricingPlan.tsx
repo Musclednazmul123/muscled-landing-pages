@@ -24,7 +24,7 @@ const PricingPlan = () => {
     return (
         <>
             <div className="pricing-section mb-10">
-                <p className='pricing-section-title text-center'>Explore PPC Landing Page Service Plans</p>
+                <p className='pricing-section-title text-center text-2xl md:text-4xl font-bold leading-normal mb-14'>Explore PPC Landing Page Service Plans</p>
                 
                 <div className="card-wrapper flex md:flex-row flex-col justify-center items-center">
                     <PricingCard title='DYNAMIC W/ TESTING' rate='$2,400 / page' type='basic' content={basicContent} />

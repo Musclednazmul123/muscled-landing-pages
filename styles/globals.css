@@ -177,13 +177,8 @@
 }
 
 .pricing-section-title {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 130%;
 	color: rgba(0, 0, 0, 0.8);
-	margin-bottom: 60px;
+	/* margin-bottom: 60px; */
 }
 
 .card-wrapper {
@@ -274,11 +269,6 @@
 
 /* ===============Promotion section================ */
 
-.promotion-section {
-	padding: 0px 100px;
-	margin: 0px 0px 50px 0px;
-}
-
 .promotion-content {
 	padding: 0px;
 	gap: 40px;
@@ -289,15 +279,6 @@
 	font-size: 20px;
 	line-height: 150%;
 	color: #000000;
-}
-
-.promotion-title {
-	margin-bottom: 40px;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 130%;
 }
 
 .promotion-banner {
@@ -325,14 +306,15 @@ ul li {
 }
 
 
-/* ==============Testimonial Section============= */
+/* ============Promo section================= */
 
-.testimonial-section {
-	padding: 80px 100px;
+
+.promo-content > ol {
+	padding-left: 20px;
+    list-style-type: decimal;
 }
 
-/* ============Promo section two================= */
-
-.promo-section-two {
-	padding: 100px;
+.promo-content > ol li {
+	margin: 0 10px;
+    padding: 0 10px;
 }
