@@ -76,3 +76,8 @@ export interface secondTableRow {
   catalogs: boolean
   isHead: boolean
 }
+
+export interface ListType {
+  content: string[]
+  className?: string
+}

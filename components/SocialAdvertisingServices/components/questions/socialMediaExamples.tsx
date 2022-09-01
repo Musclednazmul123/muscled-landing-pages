@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const SocialMediaExamples = () => {
   return (
-    <div className="flex flex-col gap-y-6">
+    <div className="flex flex-col space-y-4 md:space-y-8 lg:space-y-12">
       <h3>Some D2C Social Media Examples</h3>
       <p>
         You have likely seen paid advertisements on various social media
