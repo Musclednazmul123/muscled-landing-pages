@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import { HeroSection } from '../../components/SocialAdvertisingServices/sections'
 import { HeroSectionData } from '../../components/SocialAdvertisingServices/data/hero'
 import PartnerSection from '../../components/SocialAdvertisingServices/sections/partner'
+import ServicePackages from '../../components/SocialAdvertisingServices/sections/servicePlans'
 
 const Page: NextPage = () => {
   // console.log(HeroSectionData)
@@ -15,6 +16,7 @@ const Page: NextPage = () => {
         />
       </div>
       <PartnerSection />
+      <ServicePackages />
     </>
   )
 }

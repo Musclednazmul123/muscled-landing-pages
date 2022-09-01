@@ -38,3 +38,18 @@ export interface logoProps {
   src: string
   className?: string
 }
+
+export interface Card {
+  stars: Number
+  packageName: string
+  packagePrice: number
+  features: string[]
+  includes: string
+  bgColor?: string
+  className?: string
+}
+
+export interface ServicePackages {
+  children?: ReactNode
+  className?: string
+}

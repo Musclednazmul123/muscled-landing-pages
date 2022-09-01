@@ -1,0 +1,67 @@
+import React, { FC } from 'react'
+import { Card } from '../component.type'
+import Image from 'next/image'
+import Star from '../../../assets/SocialAdvertisingServices/servicePackage/Star.png'
+import CheckMark from '../../../assets/SocialAdvertisingServices/servicePackage/Vector.png'
+import Button from '../heroSection/button'
+
+const Card: FC<Card> = ({
+  stars,
+  packageName,
+  packagePrice,
+  features,
+  includes,
+  className,
+  bgColor
+}) => {
+  const displayStars = () => {
+    // console.log(stars)
+    for (let i: number = 0; i < stars; i++) {
+      console.log(i, 'loop')
+      return <Image src={Star} alt="star" width={30} height={30} />
+    }
+  }
+  const displayFeatures = () => {
+    return features.map((item: string, key: number) => {
+      return (
+        <div className="flex justify-around items-center w-full" key={key}>
+          <Image
+            src={CheckMark}
+            alt="check"
+            width={24}
+            height={24}
+            className="basis-1/5 m-auto"
+          />
+          <p className="basis-4/5">{item}</p>
+        </div>
+      )
+    })
+  }
+  return (
+    <div
+      className={`flex flex-col border-[1px] border-black rounded-xl basis-1/4 lg:h-[70vh] ${className} ? ${className} : ''`}
+    >
+      <div
+        className={`flex flex-col items-center justify-around p-4 gap-y-6 basis-2/5 rounded-t-xl ${
+          bgColor ? bgColor : 'bg-red-100'
+        }`}
+      >
+        <div
+          className={`flex ${stars == 1 ? 'justify-center' : 'justify-around'}`}
+        >
+          {displayStars()}
+        </div>
+        <h4>{packageName}</h4>
+        <h3 className="text-red-600">${packagePrice}</h3>
+      </div>
+      <div className="p-4 basis-3/5 justify-around flex flex-col bg-white rounded-b-xl">
+        <div className="flex flex-col basis-3/5 justify-around border-b border-neutral-500 ">
+          {displayFeatures()}
+        </div>
+        <p className="text-center p-4">{includes}</p>
+        <Button text="Send Proposal" className="my-4 mx-8" />
+      </div>
+    </div>
+  )
+}
+export default Card
