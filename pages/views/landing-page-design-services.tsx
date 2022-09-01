@@ -6,6 +6,7 @@ import Hero from '../../components/Fawwaz/Sections/Hero';
 import OurPartners from '../../components/Fawwaz/Sections/OurPartners';
 import PricingPlan from '../../components/Fawwaz/Sections/PricingPlan';
 import PromotionOne from '../../components/Fawwaz/Sections/PromotionOne';
+import PromotionTwo from '../../components/Fawwaz/Sections/PromotionTwo';
 import LandingTestimonials from 'components/Fawwaz/Sections/LandingTestimonials';
 
  const Page: NextPage = () => {
@@ -34,6 +35,10 @@ import LandingTestimonials from 'components/Fawwaz/Sections/LandingTestimonials'
 
             <section>
                 <LandingTestimonials />
+            </section>
+
+            <section>
+                <PromotionTwo />
             </section>
         </>
     )
