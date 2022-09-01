@@ -271,3 +271,57 @@
 	width: 236px;
 	/* height: 130px; */
 }
+
+/* ===============Promotion section================ */
+
+.promotion-section {
+	padding: 0px 100px;
+	margin: 0px 0px 50px 0px;
+}
+
+.promotion-content {
+	padding: 0px;
+	gap: 40px;
+}
+
+.promotion-content-list {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #000000;
+}
+
+.promotion-title {
+	margin-bottom: 40px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+}
+
+.promotion-banner {
+	/* height: 284px; */
+	background: linear-gradient(90deg, rgba(8, 104, 230, 0.712), rgba(28, 192, 214, 0.329));
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.banner-content {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24.1667px;
+	line-height: 29px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+ul li {
+	margin-left: 30px;
+	list-style-type:disc;
+}
+
+

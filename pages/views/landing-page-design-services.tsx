@@ -5,7 +5,7 @@ import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
 import Hero from '../../components/Fawwaz/Sections/Hero';
 import OurPartners from '../../components/Fawwaz/Sections/OurPartners';
 import PricingPlan from '../../components/Fawwaz/Sections/PricingPlan';
-
+import PromotionOne from '../../components/Fawwaz/Sections/PromotionOne';
 
  const Page: NextPage = () => {
 
@@ -19,7 +19,11 @@ import PricingPlan from '../../components/Fawwaz/Sections/PricingPlan';
             />
             <OurPartners />
             <PricingPlan />
-            {/* <Conversion /> */}
+            <section>
+                <PromotionOne 
+                    title='Improving your sales with Landing Page Design Services'
+                />
+            </section>
         </>
     )
 }

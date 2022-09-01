@@ -49,6 +49,14 @@ export interface InputButtonProps {
 	rounded?: boolean;
 }
 
+export interface RoundedBtnProps {
+	bgColor: string;
+	textColor: string;
+	textSize: string,
+	children: ReactNode;
+	roundedFull: boolean;
+}
+
 //  Table
 export interface TableProps {
 	children: ReactNode;
@@ -96,4 +104,8 @@ export interface VideoFrameProps {
 	className: string;
 	sourceURL?: string;
 	allowFullScreen?: boolean;
+}
+
+export interface PromotionOneProps {
+	title?: string;
 }
