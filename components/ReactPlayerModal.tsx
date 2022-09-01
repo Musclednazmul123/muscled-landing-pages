@@ -31,7 +31,9 @@ const ReactPlayerModal: React.FC<Props> = ({
 				}}
 				className="bg-gray-300 rounded-lg lg:mt-0 mt-12 lg:w-[640px] md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center"
 			>
-				<Icon onClick={() => setIsPlaying(true)} />
+				<div onClick={() => setIsPlaying(true)}>
+					<Icon />
+				</div>
 			</div>
 			{isplaying && (
 				<div

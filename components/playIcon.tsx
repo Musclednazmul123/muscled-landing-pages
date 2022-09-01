@@ -1,17 +1,10 @@
 import React from "react";
 
-type Props = {
-	onClick: () => void;
-};
-
-export default function playIcon({ onClick }: Props) {
+export default function playIcon() {
 	return (
 		<>
 			{" "}
-			<div
-				onClick={onClick}
-				className="w-16 h-16 cursor-pointer flex items-center justify-center bg-black text-white  bg-opacity-[0.05] "
-			>
+			<div className="w-16 h-16 cursor-pointer flex items-center justify-center bg-black text-white  bg-opacity-[0.05] ">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="#fff"
