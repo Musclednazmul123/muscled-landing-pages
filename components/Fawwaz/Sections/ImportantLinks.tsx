@@ -4,7 +4,7 @@ import LinkCard from '../../extra/LinkCard';
 const ImportantLinks = () => {
     return (
         <>
-            <div className='py-24 px-6 md:px-24 flex flex-col md:flex-row justify-between items-center gap-4'>
+            <div className='py-24 px-6 md:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:items-center'>
                 <LinkCard 
                     title={"Social Media Services"}
                     links={[

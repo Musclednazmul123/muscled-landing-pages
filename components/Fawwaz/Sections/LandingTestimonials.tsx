@@ -8,7 +8,7 @@ import PlayIcon from 'components/Icons/PlayIcon';
 const LandingTestimonials = () => {
 	return (
 		<div className="bg-black testimonial-section px-6 md:px-24 py-20">
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
 				<div className="text-accent-white">
 					<p className="text-lg md:text-2xl mb-8">
                     ‘’Muscled continues to provide advanced solutions that add value to my company and my clients on a consistent basis. Muscled is worth the investment, easily outpacing the competition!"

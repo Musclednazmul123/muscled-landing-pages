@@ -24,7 +24,7 @@ const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
                 </div>
                 <div className="card-content">
                     {content?.map((item, key) => (
-                        <div className='flex gap-3 items-center justify-center content-item-wrapper' key={key}>
+                        <div className='flex gap-3 items-start justify-center content-item-wrapper' key={key}>
                             <Check />
                             <p className='content-item'>{item}</p>
                         </div>
@@ -33,14 +33,14 @@ const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
                     }
                 </div>
                 <div className="card-footer">
-                    <div className="px-4 py-10 mt-4 flex items-center justify-center flex-col">
+                    <div className="px-4 mt-4 flex items-center justify-center flex-col">
                         <p className="border-t border-[#000] w-full mx-5 my-10 text-center" />
                         <div className='card-footer-content'>
                             <p>Fully Responsive Design</p>
                             <Button
                                 bgColor="bg-[#000]"
                                 textColor="text-white"
-                                className="py-4 px-10 text-[0.8em]">
+                                className="py-2 px-10 text-[0.8em]">
                                 Send Proposal
                             </Button>
                         </div>

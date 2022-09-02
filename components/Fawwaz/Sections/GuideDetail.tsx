@@ -163,18 +163,18 @@ const GuideDetail = () => {
                                     <div className='bg-[#0D263D] px-24 py-20'>
                                         <div className="flex flex-col lg:flex lg:flex-row mb-4 gap-10">
                                             <div className='text-white'>
-                                                <p className='text-base mb-2'>
+                                                <p className='text-base mb-2 mr-40'>
                                                     93% of the Muscled customers are extremely satisfied with their digital marketing results.
                                                 </p>
                                                 <p className='text-sm'>
                                                 “Working with Muscled, everything is very organised and strategic. We’re only a year into our partnership nd our expectations have definetly been met.”
                                                 </p>
                                             </div>
-                                            <div>
+                                            <div className='mt-4'>
                                                 <SpeechBubble />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className='mt-2'>
                                             <Button
                                                 bgColor="bg-black"
                                                 textColor="text-white"
@@ -220,8 +220,8 @@ const GuideDetail = () => {
                                 <p>
                                 If you want to do more with your website and ad campaigns, schedule a call. We’re looking forward to giving your website the workout that it needs!
                                 </p>
-                                <div className='px-12 py-9 bg-[#086680] flex flex-col gap-2'>
-                                    <h4 className='text-3xl text-white'>For verified ratings of our marketing services,please read our:</h4>
+                                <div className='px-12 mt-24 py-9 bg-[#086680] md:w-[660px] md:h-[338px] flex flex-col gap-4 justify-center'>
+                                    <h4 className='text-3xl text-white leading-[48px]'>For verified ratings of our marketing services,please read our:</h4>
                                     <div className='flex text-[#F8CC25]'>
                                         <AiFillStar />
                                         <AiFillStar />
@@ -230,11 +230,11 @@ const GuideDetail = () => {
                                         <AiFillStar />
                                     </div>
                                     <div className='flex items-center text-[#D2D2D2] text-base'>
-                                        <p>INDUSTRY-LEADING 863 TESTIMONIALS</p>
+                                        <p className='leading-[24px]'>INDUSTRY-LEADING 863 TESTIMONIALS</p>
                                         <BiChevronRight size={25}/>
                                     </div>
                                     <div className='flex items-center text-[#D2D2D2] text-base'>
-                                        <p>MUSCLED Agency Rating 4.9 out of 5 with 267 ratings</p>
+                                        <p className='leading-[24px]'>MUSCLED Agency Rating 4.9 out of 5 with 267 ratings</p>
                                     </div>
                                 </div>
                             </>

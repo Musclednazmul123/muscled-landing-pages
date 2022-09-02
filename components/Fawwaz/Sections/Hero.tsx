@@ -18,9 +18,9 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 			<div className="max-w-[640px]">
 				{/* //? Pagination -- this should be dynamic? */}
 				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-					<span>Home {router.asPath.replace('/', ' > ')}</span>
-					<span>Digital Marketing {router.asPath.replace('/', ' > ')}</span>
-					<span>Services {router.asPath.replace('/', ' > ')}</span>
+					<span>Home {'>'}</span>
+					<span>Digital Marketing {'>'}</span>
+					<span>Services</span>
 				</p>
 
 				<h1 className="hero-title text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
