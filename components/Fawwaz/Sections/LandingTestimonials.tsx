@@ -2,8 +2,7 @@ import React, { FC } from "react";
 import Button from "../Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
 import ReactPlayerModal from "components/ReactPlayerModal";
-import PlayIcon from 'components/Icons/PlayIcon'
-import bgYoutube from 'components/assets/bg-youtube.png';
+import PlayIcon from 'components/Icons/PlayIcon';
 
 
 const LandingTestimonials = () => {
@@ -29,7 +28,7 @@ const LandingTestimonials = () => {
 					<ReactPlayerModal 
 						url= 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
 						Icon={PlayIcon}
-						thumbnail={bgYoutube}
+						thumbnail={'./vdo-thumb.png'}
 						width={'360'}
 						height={'250'}
 					/>

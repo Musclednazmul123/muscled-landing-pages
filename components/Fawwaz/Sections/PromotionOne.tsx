@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { PromotionOneProps } from '../component.type';
 import ButtonRounded from '../ButtonRounded';
-import ImacBanner from '../../assets/iMac-24-inch.png'
+// import ImacBanner from '../../assets/iMac-24-inch.png'
 
 const PromotionOne: FC<PromotionOneProps> = ({title}) => {
     return (
@@ -35,7 +35,7 @@ const PromotionOne: FC<PromotionOneProps> = ({title}) => {
                             />
                         </div>
                         <div className='banner-bg-image'>
-                            <img src={ImacBanner} alt="iMac-banner-img" />
+                            <img src='./iMac-24-inch.png' alt="iMac-banner-img" />
                         </div>
                         
                     </div>
