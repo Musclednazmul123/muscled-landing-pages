@@ -21,8 +21,9 @@ const D2cBrands = () => {
         your social media goals.
       </p>
       <p>
-        Contact our social media professionals at XXXXXXXXXXX or hit us up
-        online to learn how to expand your D2C brand!
+        Contact our social media professionals at{' '}
+        <a href="tel:+123456789">XXXXXXXXXXX</a> or hit us up online to learn
+        how to expand your D2C brand!
       </p>
     </div>
   )

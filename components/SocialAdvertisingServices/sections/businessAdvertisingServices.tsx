@@ -12,6 +12,7 @@ const BusinessAdvertisingServices = () => {
           heading={item.heading}
           subHeading={item.subHeading}
           buttonText={item.buttonText}
+          key={key}
         />
       )
     })

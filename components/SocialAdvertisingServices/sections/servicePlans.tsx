@@ -17,6 +17,7 @@ const ServicePlans: FC<ServicePackages> = ({ children, className }) => {
           includes={item.includes}
           bgColor={item.bgColor}
           className="bg-white"
+          key={key}
         />
       )
     })

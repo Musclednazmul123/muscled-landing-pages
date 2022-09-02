@@ -4,7 +4,7 @@ import { ListType } from '../component.type'
 const List: FC<ListType> = ({ content, className }) => {
   const displayList = (array: string[]) => {
     return array.map((item: string, key: number) => {
-      return <li>{item}</li>
+      return <li key={key}>{item}</li>
     })
   }
   return (

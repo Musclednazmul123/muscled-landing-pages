@@ -17,6 +17,7 @@ const FirstTable = () => {
           marketLeader={item.marketLeader}
           enterprise={item.enterprise}
           isHead={item.isHead}
+          key={key}
         />
       )
     })

@@ -6,7 +6,13 @@ const Accordion = () => {
   const displayPanels = (array: typeof faqsData) => {
     return array.map(
       (item: { heading: string; description: string }, key: number) => {
-        return <Panel heading={item.heading} description={item.description} />
+        return (
+          <Panel
+            heading={item.heading}
+            description={item.description}
+            key={key}
+          />
+        )
       }
     )
   }

@@ -16,6 +16,7 @@ const SecondTable = () => {
           pixel={item.pixel}
           catalogs={item.catalogs}
           isHead={item.isHead}
+          key={key}
         />
       )
     })

@@ -39,7 +39,6 @@ const CustomerMediaAdvertising = () => {
               Icon={Play}
               width="100%"
               height="100%"
-              playing={true}
             />
           </div>
           <div className="bg-[#3E5661] p-8 flex justify-center md:justify-start items-center rounded-xl basis-[30%]">

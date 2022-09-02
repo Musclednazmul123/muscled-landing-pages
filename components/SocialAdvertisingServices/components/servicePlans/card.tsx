@@ -18,7 +18,9 @@ const Card: FC<Card> = ({
   const splitLabels = (Array: number) => {
     if (typeof Array != 'undefined' && Array != null) {
       for (let i = 0; i < Array; i++) {
-        labels.push(<Image src={Star} alt="star" width={30} height={30} />)
+        labels.push(
+          <Image src={Star} alt="star" width={30} height={30} key={i} />
+        )
       }
     }
   }

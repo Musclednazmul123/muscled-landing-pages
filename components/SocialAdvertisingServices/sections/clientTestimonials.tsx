@@ -7,7 +7,7 @@ import Play from '../../playIcon'
 const clientTestimonials = () => {
   return (
     <div className="bg-black text-white">
-      <DynamicSection className="gap-x-6  p-4 md:p-8 lg:p-16 flex-col md:flex-row space-y-4">
+      <DynamicSection className="gap-x-6  p-4 md:p-8 lg:px-4 lg:py-16 flex-col md:flex-row space-y-4">
         <div className="flex flex-col basis-2/5 justify-around items-start lg:text-2xl space-y-4">
           <p>
             "The Muscled team is the perfect package for our social media
