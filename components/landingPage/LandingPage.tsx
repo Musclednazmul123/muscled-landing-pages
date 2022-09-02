@@ -18,12 +18,12 @@ export default function LandingPage() {
 			<Testimonial />
 			<PromotionalSection />
 			<ServiceTable />
-			<div className="mt-[120px] px-5 md:px-10 lg:px-20 mx-auto container gap-[60px] lg:flex items-start pb-12">
-				<div className="lg:w-[60%]">
+			<div className="mt-[100px] px-5 md:px-10 lg:px-20 mx-auto container gap-[60px] lg:flex items-start pb-12 relative">
+				<div className="lg:w-[60%] mt-[20px]">
 					<GuideDetails />
 					<Faq />
 				</div>
-				<div className="lg:w-[40%]">
+				<div className="lg:w-[40%] sticky top-0 pt-[20px]">
 					<TableOfContext />
 				</div>
 			</div>
