@@ -161,7 +161,7 @@ const GuideDetail = () => {
                                 </p>
                                 <div>
                                     <div className='bg-[#0D263D] px-24 py-20'>
-                                        <div className="flex flex-col md:flex mb-4 gap-10">
+                                        <div className="flex flex-col lg:flex lg:flex-row mb-4 gap-10">
                                             <div className='text-white'>
                                                 <p className='text-base mb-2'>
                                                     93% of the Muscled customers are extremely satisfied with their digital marketing results.
