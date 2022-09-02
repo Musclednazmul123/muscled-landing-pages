@@ -22,7 +22,7 @@ const FirstTable = () => {
     })
   }
   return (
-    <DynamicSection className="flex-col">
+    <DynamicSection className="flex-col overflow-x-auto">
       <h2 className="text-center my-4 md:my-8 lg:my-16">
         Muscled's D2C Social Media Advertising Services
       </h2>

@@ -40,7 +40,7 @@ export interface logoProps {
 }
 
 export interface Card {
-  stars: Number
+  stars: number
   packageName: string
   packagePrice: number
   features: string[]

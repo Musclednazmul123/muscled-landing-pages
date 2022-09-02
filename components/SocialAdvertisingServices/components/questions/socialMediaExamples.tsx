@@ -28,7 +28,10 @@ const SocialMediaExamples = () => {
       </p>
       <div className={styles.backgroundImage}>
         <div
-          className={styles.overlay + ' p-4 text-white flex justify-between'}
+          className={
+            styles.overlay +
+            ' p-4 text-white flex flex-col md:flex-row justify-between'
+          }
         >
           <div className="basis-3/5 p-4">
             <h3 className="font-bold text-white my-4 md:my-8">

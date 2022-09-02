@@ -21,7 +21,7 @@ const SecondTable = () => {
     })
   }
   return (
-    <DynamicSection className="flex-col">
+    <DynamicSection className="flex-col overflow-x-auto">
       <table className="w-full my-8">
         <tbody>
           <tr className="text-center border-b border-neutral-500 font-bold">

@@ -12,10 +12,10 @@ const Partners = () => {
 
   return (
     <DynamicSection className="flex-col justify-between py-8">
-      <h4 className="text-center text-neutral-500 mb-0 md:mb-8">
+      <h4 className="text-center text-neutral-500 mb-4 md:mb-8">
         Our Partners
       </h4>
-      <div className=" flex flex-col md:flex-row justify-between">
+      <div className=" flex flex-col md:flex-row justify-between items-center">
         {displayPartnerLogo()}
       </div>
     </DynamicSection>

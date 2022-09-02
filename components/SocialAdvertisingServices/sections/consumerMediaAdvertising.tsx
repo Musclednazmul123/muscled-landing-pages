@@ -1,13 +1,14 @@
 import React from 'react'
 import DynamicSection from '../components/DynamicSection'
 import Button from '../components/heroSection/button'
-import ReactPlayer from 'react-player'
+import ReactPlayerModal from '../../ReactPlayerModal'
+import Play from '../../playIcon'
 
 const CustomerMediaAdvertising = () => {
   return (
     <div className="bg-red-50">
-      <DynamicSection className="py-8 flex-col md:flex-row">
-        <div className="flex flex-col basis-[60%] gap-y-4 justify-center">
+      <DynamicSection className="py-8 flex-col md:flex-row space-y-4">
+        <div className="flex flex-col basis-[60%] gap-y-4 justify-center space-y-4">
           <h2>What is direct-to-consumer social media advertising?</h2>
           <p>
             A great way to boost your D2C business are paid social media ads
@@ -31,16 +32,17 @@ const CustomerMediaAdvertising = () => {
           </p>
         </div>
         <div className="basis-[10%]"></div>
-        <div className="flex flex-col justify-around basis-[30%]">
-          <div className="bg-neutral-200 rounded-xl basis-[50%]">
-            <ReactPlayer
+        <div className="flex flex-col justify-around basis-[30%] space-y-4">
+          <div className="bg-neutral-200 rounded-xl basis-[50%] space-y-4">
+            <ReactPlayerModal
               url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              Icon={Play}
               width="100%"
               height="100%"
               playing={true}
             />
           </div>
-          <div className="bg-[#3E5661] p-8 flex justify-start items-center rounded-xl basis-[30%]">
+          <div className="bg-[#3E5661] p-8 flex justify-center md:justify-start items-center rounded-xl basis-[30%]">
             <Button text="Send Proposal" className="px-8 py-4" />
           </div>
         </div>

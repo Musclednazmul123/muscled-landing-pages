@@ -31,10 +31,10 @@ const HeroSection: FC<HeroSectionProps> = ({
     })
   }
   return (
-    <DynamicSection className="flex-col md:flex-row md:h-[75vh] gap-y-4 md:gap-y-0">
+    <DynamicSection className="flex-col md:flex-row md:h-[75vh] space-y-4 md:space-y-0">
       <div className="flex flex-col basis-[50%] text-white justify-around">
         <span>Home {router.asPath.replace('/', ' > ')}</span>
-        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl  font-bold text-white">
+        <h2 className="text-2xl lg:text-3xl xl:text-4xl my-2 font-bold text-white">
           {title}
         </h2>
         <p className="text-left mt-2 md:mt-0">{description}</p>

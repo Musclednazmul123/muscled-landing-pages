@@ -27,7 +27,7 @@ const ServicePlans: FC<ServicePackages> = ({ children, className }) => {
         <h3 className="text-center my-12">
           Explore Direct-to-Consumer Social Service Plans
         </h3>
-        <div className="flex flex-col md:flex-row justify-around">
+        <div className="flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
           {displayCards()}
         </div>
       </DynamicSection>

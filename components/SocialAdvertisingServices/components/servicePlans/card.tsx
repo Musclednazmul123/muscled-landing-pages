@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, ReactNode } from 'react'
 import { Card } from '../component.type'
 import Image from 'next/image'
 import Star from '../../../assets/SocialAdvertisingServices/servicePackage/Star.png'
@@ -14,7 +14,7 @@ const Card: FC<Card> = ({
   className,
   bgColor
 }) => {
-  let labels: unknown[] = []
+  let labels: ReactNode[] = []
   const splitLabels = (Array: number) => {
     if (typeof Array != 'undefined' && Array != null) {
       for (let i = 0; i < Array; i++) {
@@ -29,7 +29,7 @@ const Card: FC<Card> = ({
     splitLabels(stars)
     return features.map((item: string, key: number) => {
       return (
-        <div className="flex justify-around items-center w-full" key={key}>
+        <div className="flex justify-around items-center w-full my-2" key={key}>
           <Image
             src={CheckMark}
             alt="check"
