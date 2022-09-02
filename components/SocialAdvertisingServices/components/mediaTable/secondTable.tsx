@@ -44,10 +44,10 @@ const SecondTable = () => {
                 </p>
               </a>
             </td>
-            <td className="px-8 py-4 w-1/4 bg-red-6">
+            <td className="px-8 py-4 w-1/4 bg-red-6 text-center">
               <Button text="Get Started" className="px-8 py-4" />
             </td>
-            <td className="px-8 py-4 w-1/4 bg-red-9 rounded-br-xl">
+            <td className="px-8 py-4 w-1/4 bg-red-9 rounded-br-xl text-center">
               <Button text="Get Started" className="px-8 py-4" />
             </td>
           </tr>

@@ -6,6 +6,7 @@ import Button from '../components/heroSection/button'
 import { HeroSectionProps } from '../components/component.type'
 import { FeatureData } from '../data/hero'
 import Feature from '../components/heroSection/feature'
+import { useRouter } from 'next/router'
 
 const HeroSection: FC<HeroSectionProps> = ({
   title,
@@ -14,7 +15,8 @@ const HeroSection: FC<HeroSectionProps> = ({
   input,
   className
 }) => {
-  console.log(FeatureData)
+  const router = useRouter()
+
   const DisplayFeatures = () => {
     return FeatureData.map((item, key) => {
       return (
@@ -31,6 +33,7 @@ const HeroSection: FC<HeroSectionProps> = ({
   return (
     <DynamicSection className="flex-col md:flex-row md:h-[75vh] gap-y-4 md:gap-y-0">
       <div className="flex flex-col basis-[50%] text-white justify-around">
+        <span>Home {router.asPath.replace('/', ' > ')}</span>
         <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white">
           {title}
         </h2>
@@ -39,11 +42,11 @@ const HeroSection: FC<HeroSectionProps> = ({
           <Input
             placeholder="Enter your website link"
             type="text"
-            className="basis-3/4"
+            className="basis-3/4 h-12 border-gray-500 border-[1px]"
           />
           <Button
             text="Send Proposal"
-            className="basis-1/4 md:ml-2 mt-2 md:mt-0"
+            className="basis-1/4 md:ml-2 mt-2 md:mt-0 h-12"
           />
         </div>
       </div>

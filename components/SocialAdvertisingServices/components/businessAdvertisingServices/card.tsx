@@ -16,7 +16,7 @@ const Card: FC<ServiceCard> = ({
     >
       <h4 className="font-bold">{heading}</h4>
       <p className="">{subHeading}</p>
-      <Button text={buttonText} backgroundColor="bg-red-base" />
+      <Button text={buttonText} backgroundColor="bg-red-base h-16" />
     </div>
   )
 }

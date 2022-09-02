@@ -16,8 +16,9 @@ const Card: FC<Card> = ({
 }) => {
   const displayStars = () => {
     // console.log(stars)
-    for (let i: number = 0; i < stars; i++) {
-      console.log(i, 'loop')
+
+    for (var i = 0; i < stars; i++) {
+      // console.log(i, 'loop')
       return <Image src={Star} alt="star" width={30} height={30} />
     }
   }
@@ -52,7 +53,7 @@ const Card: FC<Card> = ({
           {displayStars()}
         </div>
         <h4>{packageName}</h4>
-        <h3 className="text-red-600">${packagePrice}</h3>
+        <h3 className="text-red-base">${packagePrice}</h3>
       </div>
       <div className="p-4 basis-3/5 justify-around flex flex-col bg-white rounded-b-xl">
         <div className="flex flex-col basis-3/5 justify-around border-b border-neutral-500 ">

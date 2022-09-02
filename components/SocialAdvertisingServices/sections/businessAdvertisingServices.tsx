@@ -28,7 +28,9 @@ const BusinessAdvertisingServices = () => {
             Muscled.
           </h4>
         </div>
-        <div className="flex justify-between basis-3/5">{displayCards()}</div>
+        <div className="flex flex-col md:flex-row justify-between basis-3/5">
+          {displayCards()}
+        </div>
       </DynamicSection>
     </div>
   )

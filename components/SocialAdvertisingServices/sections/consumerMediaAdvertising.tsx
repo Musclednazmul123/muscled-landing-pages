@@ -1,6 +1,7 @@
 import React from 'react'
 import DynamicSection from '../components/DynamicSection'
 import Button from '../components/heroSection/button'
+import ReactPlayer from 'react-player'
 
 const CustomerMediaAdvertising = () => {
   return (
@@ -31,7 +32,14 @@ const CustomerMediaAdvertising = () => {
         </div>
         <div className="basis-[10%]"></div>
         <div className="flex flex-col justify-around basis-[30%]">
-          <div className="bg-neutral-200 rounded-xl basis-[50%]"></div>
+          <div className="bg-neutral-200 rounded-xl basis-[50%]">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              width="100%"
+              height="100%"
+              playing={true}
+            />
+          </div>
           <div className="bg-[#3E5661] p-8 flex justify-start items-center rounded-xl basis-[30%]">
             <Button text="Send Proposal" className="px-8 py-4" />
           </div>

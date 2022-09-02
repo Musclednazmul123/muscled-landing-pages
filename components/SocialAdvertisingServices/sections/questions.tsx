@@ -9,7 +9,7 @@ import SocialAdvertising from '../components/questions/socialAdvertising'
 import Faq from '../components/questions/faq'
 const Questions = () => {
   return (
-    <DynamicSection className="justify-between my-8">
+    <DynamicSection className="justify-between my-8 flex-col-reverse md:flex-row">
       <div className="basis-[50%] space-y-4 md:space-y-8 lg:space-y-12 flex flex-col">
         <SocialMediaExamples />
         <AdvertisingServices />
