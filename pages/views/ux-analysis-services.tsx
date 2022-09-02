@@ -19,8 +19,8 @@ const Page: NextPage = () => {
       <UxAnalysisHero />
       <Partners />
       <PricingCard />
-      <Section className="py-10 flex justify-center">
-        <h4 className="underline flex items-center flex-row text-[#C40000]">
+      <Section className="my-20 flex justify-center">
+        <h4 className="underline flex items-center flex-row text-[#C40000] font-normal opacity-70">
           <a href="">SEE FULL DELIVERABLES </a>
           <BiChevronRight className="w-10 h-10" />
         </h4>

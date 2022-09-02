@@ -5,7 +5,7 @@ import { Section } from "../Fawwaz/Sections";
 
 // images
 import Logo1 from "components/assets/logo/Logo1.png";
-import Logo2 from "components/assets/logo/logo1.png";
+import Logo2 from "components/assets/logo/Logo2.png";
 import Logo3 from "components/assets/logo/Logo4.png";
 import Logo4 from "components/assets/logo/Logo5.png";
 import Logo5 from "components/assets/logo/Logo6.png";

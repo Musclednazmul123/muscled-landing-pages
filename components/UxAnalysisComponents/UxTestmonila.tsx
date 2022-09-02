@@ -1,6 +1,7 @@
 import React from "react";
-import { Testimonial } from "components/Fawwaz/Sections";
-import VideoFrame from "components/Fawwaz/VideoFrame";
+import ReactPlayerModal from "components/ReactPlayerModal";
+import playIcon from "./playIcon";
+import Testimonial from "./Testimonial";
 
 export default function UxTesmonial() {
   return (
@@ -51,9 +52,12 @@ export default function UxTesmonial() {
             </p>
           </div>
           <div className="w-[389px] min-h-[214px] relative">
-            <VideoFrame
-              className="w-[389px] h-[214px] absolute"
-              allowFullScreen
+            <ReactPlayerModal
+              width="389px"
+              height="214px"
+              thumbnail="thumbnail.png"
+              Icon={playIcon}
+              url=""
             />
           </div>
         </div>
