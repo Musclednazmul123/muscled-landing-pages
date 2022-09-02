@@ -20,7 +20,10 @@ const TableOfContents = () => {
         <Image src={ListIcon} alt="list" width={26} height={20} /> Table Of
         Contents
       </p>
-      <List content={contents} className="text-[#5F27BD]" />
+      <List
+        content={contents}
+        className="text-[#5F27BD] underline space-y-4 px-4 py-8"
+      />
     </div>
   )
 }

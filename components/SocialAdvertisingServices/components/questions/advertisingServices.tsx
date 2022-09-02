@@ -4,7 +4,7 @@ import { d2cEcommerce, d2cPartner, d2cBusiness } from '../../data/questions'
 
 const AdvertisingServices = () => {
   return (
-    <div className="space-y-4 md:space-y-8 lg:space-y-12 flex flex-col">
+    <div className="space-y-3 md:space-y-6 lg:space-y-9 flex flex-col">
       <h3>What do Muscled´s social media advertising services include?</h3>
       <p>
         In the table above we showed you our custom D2C social ad deliverables.
