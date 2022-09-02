@@ -11,8 +11,8 @@ import PartnerSix from 'components/assets/svg/partner/PartnerSix';
 const OurPartners = () => {
     return (
         <>
-            <div className="our-partner">
-                <h4 className='partner-title text-center'>Our Partners</h4>
+            <div className="our-partner py-12 px-24 bg-white">
+                <h4 className='partner-title font-bold mb-7 text-center'>Our Partners</h4>
                 <div className='partner-wrapper grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8'>
                     <Partner src='https://google.com' children={<PartnerOne />}/>
                     <Partner src='https://google.com' children={<PartnerTwo />}/>

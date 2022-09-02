@@ -8,7 +8,7 @@ import Star from '../../assets/svg/Star';
 const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
     return (
         <>
-            <div className='pricing-card'>
+            <div className='pricing-card lg:w-96 bg-white'>
                 <div className="card-header flex flex-col justify-between items-center">
                     <div className="flex">
                     {type == 'basic' ? (

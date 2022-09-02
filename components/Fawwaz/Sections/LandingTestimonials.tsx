@@ -2,8 +2,8 @@ import React, { FC } from "react";
 import Button from "../Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
 import ReactPlayerModal from "components/ReactPlayerModal";
-import { BiPlayCircle } from 'react-icons/bi'
 import PlayIcon from 'components/Icons/PlayIcon'
+import bgYoutube from 'components/assets/bg-youtube.png';
 
 
 const LandingTestimonials = () => {
@@ -25,14 +25,13 @@ const LandingTestimonials = () => {
 						See Our Client's Testimonials
 					</Button>
 				</div>
-				<div className="min-h-[400px] h-full bg-white-gray relative">
-					
+				<div>
 					<ReactPlayerModal 
-						url= 'https://www.youtube.com/embed/D0UnqGm_miA'
-						Icon={<PlayIcon />}
-						thumbnail='https://www.youtube.com/embed/D0UnqGm_miA'
-						width={'100'}
-						height={'400'}
+						url= 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+						Icon={PlayIcon}
+						thumbnail={bgYoutube}
+						width={'360'}
+						height={'250'}
 					/>
 				</div>
 			</div>
@@ -41,8 +40,3 @@ const LandingTestimonials = () => {
 };
 
 export default LandingTestimonials;
-
-
-
-
-{/* <VideoFrame className="w-full h-full absolute" allowFullScreen /> */}
