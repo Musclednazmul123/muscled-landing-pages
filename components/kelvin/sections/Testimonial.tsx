@@ -2,7 +2,8 @@ import React from "react";
 import Section from "../../Fawwaz/Sections/Section";
 import FlexLayout from "../layout/FlexLayout";
 import Button from "../Button";
-import ReactPlayer from "react-player";
+import ReactPlayerModal from "../../ReactPlayerModal";
+import PlayIcon from "../../playIcon";
 
 const Testimonial = () => {
   return (
@@ -33,11 +34,9 @@ const Testimonial = () => {
           </div>
 
           <div className="w-[540px] self-start">
-            <ReactPlayer
-              light
-              width={540}
-              url={"https://www.youtube.com/embed/D0UnqGm_miA"}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            <ReactPlayerModal
+              Icon={PlayIcon}
+              url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             />
           </div>
         </FlexLayout>
