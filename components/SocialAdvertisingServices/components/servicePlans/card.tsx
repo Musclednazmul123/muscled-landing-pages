@@ -44,7 +44,7 @@ const Card: FC<Card> = ({
   }
   return (
     <div
-      className={`flex flex-col border-[1px] border-black rounded-xl basis-1/4 lg:h-[70vh] ${className} ? ${className} : ''`}
+      className={`flex flex-col border-[1px] border-black rounded-xl basis-1/4  ${className} ? ${className} : ''`}
     >
       <div
         className={`flex flex-col items-center justify-around p-4 gap-y-6 basis-2/5 rounded-t-xl ${
@@ -60,7 +60,7 @@ const Card: FC<Card> = ({
         <h3 className="text-red-base">${packagePrice}</h3>
       </div>
       <div className="p-4 basis-3/5 justify-around flex flex-col bg-white rounded-b-xl">
-        <div className="flex flex-col basis-3/5 justify-around border-b border-neutral-500 ">
+        <div className="flex flex-col basis-3/5 justify-around border-b border-neutral-500 gap-y-4 py-4">
           {displayFeatures()}
         </div>
         <p className="text-center p-4">{includes}</p>

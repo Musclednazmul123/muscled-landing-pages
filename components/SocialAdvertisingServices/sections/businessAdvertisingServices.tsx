@@ -18,7 +18,7 @@ const BusinessAdvertisingServices = () => {
   }
   return (
     <div className="bg-neutral-100 py-4 md:py-8">
-      <DynamicSection className="flex-col lg:h-[70vh] justify-around">
+      <DynamicSection className="flex-col space-y-8 justify-around">
         <div className="text-center basis-2/5">
           <h2 className="font-bold mb-8">
             Social Media Advertising Services For Every Business

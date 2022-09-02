@@ -13,17 +13,17 @@ const AdvertisingServices = () => {
         social media platforms.
       </p>
       <p>With Muscled as your D2C partner you will acquire:</p>
-      <List content={d2cPartner} className="ml-12" />
+      <List content={d2cPartner} />
       <p>
         Extremely helpful for D2C business, access to to advanced ad targeting
         options among them:
       </p>
-      <List content={d2cBusiness} className="ml-12" />
+      <List content={d2cBusiness} />
       <p>
         Our D2C ecommerce clients will also be able to enjoy a streamlined
         integration with platforms like:
       </p>
-      <List content={d2cEcommerce} className="ml-12" />
+      <List content={d2cEcommerce} />
       <p>
         With our custom deliverables and pricing options we will help your D2C
         business achieve the best possible results. Still not convinced? Then

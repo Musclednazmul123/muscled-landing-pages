@@ -11,7 +11,7 @@ const ConsumerAdvertising = () => {
         directly to customers.
       </p>
       <p>With D2C social ads, you'll be able to: </p>
-      <List content={consumerAdvertisingList} className="ml-12 space-y-4" />
+      <List content={consumerAdvertisingList} className="space-y-4" />
       <p>
         If you are aiming to get better results-and heavily invest in
         advertising to consumers who want to purchase from you- then social

@@ -10,7 +10,7 @@ const SocialAdvertising = () => {
       <p>
         D2C social media ads are a perfect fit for the following businesses:
       </p>
-      <List content={socialAdvertisingList} className="space-y-4 ml-12" />
+      <List content={socialAdvertisingList} className="space-y-4" />
       <p>
         If you want to learn more talk to one of our experts on D2C social
         advertisement to help you decide is this is good for your business.

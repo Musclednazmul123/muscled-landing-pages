@@ -8,7 +8,7 @@ const List: FC<ListType> = ({ content, className }) => {
     })
   }
   return (
-    <ul className={`${className ? className : ''} list-disc`}>
+    <ul className={`${className ? className : ''} list-disc ml-12`}>
       {displayList(content)}
     </ul>
   )

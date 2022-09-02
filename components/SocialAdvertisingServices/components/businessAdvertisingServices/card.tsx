@@ -10,7 +10,7 @@ const Card: FC<ServiceCard> = ({
 }) => {
   return (
     <div
-      className={`px-4 py-4 md:py-8 lg:px-8 lg:py-8 flex flex-col justify-around basis-[30%] bg-white  ${
+      className={`px-4 py-4 md:py-8 lg:px-8 lg:py-8 flex flex-col justify-around basis-[30%] bg-white space-y-4  ${
         className ? className : ''
       }`}
     >

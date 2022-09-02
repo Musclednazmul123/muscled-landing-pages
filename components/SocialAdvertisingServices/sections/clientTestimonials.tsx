@@ -6,8 +6,8 @@ import ReactPlayer from 'react-player'
 const clientTestimonials = () => {
   return (
     <div className="bg-black text-white">
-      <DynamicSection className="gap-x-6 md:h-[50vh] p-4 md:p-8 lg:p-16 flex-col md:flex-row">
-        <div className="flex flex-col basis-2/5 justify-around items-start lg:text-2xl">
+      <DynamicSection className="gap-x-6  p-4 md:p-8 lg:p-16 flex-col md:flex-row">
+        <div className="flex flex-col basis-2/5 justify-around items-start lg:text-2xl space-y-4">
           <p>
             "The Muscled team is the perfect package for our social media
             needs!" They handle everything from ad design to targeted marketing

@@ -16,13 +16,13 @@ const TableOfContents = () => {
   }
   return (
     <div className="flex flex-col justify-between items-center bg-white rounded-xl sticky top-5">
-      <p className="py-4 px-12 rounded-t-xl bg-[#3E5661] text-white w-full flex items-center gap-x-4">
-        <Image src={ListIcon} alt="list" width={26} height={20} /> Table Of
-        Contents
+      <p className="py-4 px-12 rounded-t-xl bg-[#3E5661] text-white w-full flex items-center space-x-4">
+        <Image src={ListIcon} alt="list" width={26} height={20} />{' '}
+        <p className="ml-2">Table Of Contents</p>
       </p>
       <List
         content={contents}
-        className="text-[#5F27BD] underline space-y-4 px-4 py-8"
+        className="text-[#5F27BD] underline space-y-4 px-4 py-8 ml-12"
       />
     </div>
   )

@@ -34,7 +34,7 @@ const HeroSection: FC<HeroSectionProps> = ({
     <DynamicSection className="flex-col md:flex-row md:h-[75vh] gap-y-4 md:gap-y-0">
       <div className="flex flex-col basis-[50%] text-white justify-around">
         <span>Home {router.asPath.replace('/', ' > ')}</span>
-        <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white">
+        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl  font-bold text-white">
           {title}
         </h2>
         <p className="text-left mt-2 md:mt-0">{description}</p>
@@ -42,11 +42,11 @@ const HeroSection: FC<HeroSectionProps> = ({
           <Input
             placeholder="Enter your website link"
             type="text"
-            className="basis-3/4 h-12 border-gray-500 border-[1px]"
+            className="basis-3/5 h-12 border-gray-500 border-[1px]"
           />
           <Button
             text="Send Proposal"
-            className="basis-1/4 md:ml-2 mt-2 md:mt-0 h-12"
+            className="basis-2/5 md:ml-2 mt-2 md:mt-0 h-12"
           />
         </div>
       </div>
