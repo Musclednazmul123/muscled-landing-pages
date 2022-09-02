@@ -11,7 +11,7 @@ const Input: FC<HeroInput> = ({ type, placeholder, className }) => {
       <input
         type={type}
         placeholder={placeholder}
-        className="border-none focus:border-none text-black"
+        className="border-none focus:border-none text-black outline-none"
       />
     </div>
   )

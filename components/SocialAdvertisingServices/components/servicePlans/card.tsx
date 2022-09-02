@@ -14,21 +14,15 @@ const Card: FC<Card> = ({
   className,
   bgColor
 }) => {
-  let labels = []
+  let labels: unknown[] = []
   const splitLabels = (Array: number) => {
     if (typeof Array != 'undefined' && Array != null) {
       for (let i = 0; i < Array; i++) {
         labels.push(<Image src={Star} alt="star" width={30} height={30} />)
       }
-      // return labels;
     }
   }
   const displayStars = () => {
-    // for (var i = 0; i < stars; i++) {
-    //   console.log(stars, 'star loop', i)
-    //       <Image src={Star} alt="star" width={30} height={30} />
-    //   )
-    // }
     return labels
   }
   const displayFeatures = () => {
