@@ -109,3 +109,15 @@ export interface VideoFrameProps {
 export interface PromotionOneProps {
 	title?: string;
 }
+
+export interface GuideItemProps {
+	id: string;
+	question: string;
+	headingSize: 'small' | 'large';
+	children: ReactNode;
+}
+
+
+export interface TableOfContentsProps {
+	questions: [{id:string; question:string;}];
+}

@@ -10,6 +10,7 @@ import PromotionTwo from '../../components/Fawwaz/Sections/PromotionTwo';
 import PromotionThree from '../../components/Fawwaz/Sections/PromotionThree';
 import LandingTestimonials from 'components/Fawwaz/Sections/LandingTestimonials';
 import ServiceTable from 'components/Fawwaz/Sections/ServiceTable';
+import GuideDetail from 'components/Fawwaz/Sections/GuideDetail';
 
  const Page: NextPage = () => {
 
@@ -49,6 +50,10 @@ import ServiceTable from 'components/Fawwaz/Sections/ServiceTable';
 
             <section>
                 <ServiceTable />
+            </section>
+
+            <section>
+                <GuideDetail />
             </section>
         </>
     )
