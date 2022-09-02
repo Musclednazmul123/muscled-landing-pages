@@ -25,6 +25,7 @@ export interface IconProps {
   title: string;
   className?: string;
   full?: string;
+  headingClassName?: string;
 }
 
 // Form

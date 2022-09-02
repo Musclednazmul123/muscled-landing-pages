@@ -2,6 +2,7 @@ import { AiOutlineCheck, AiFillPhone } from "react-icons/ai";
 import Button from "components/Fawwaz/Button";
 import React from "react";
 import { CardHeaderDataProps } from "components/common/types";
+import { BsDot } from "react-icons/bs";
 
 export const testimonialData = {
   para1: `"The  Muscled team is the perfect package for our social media needs!" They handle everything from ad design to targeted marketing to page administration and monitoring!"`,
@@ -260,3 +261,51 @@ export const cardData: CardHeaderDataProps[] = [
     buttonLabel: "Send Proposal",
   },
 ];
+
+export const TableMetaData = {
+  heading: " Table of Contents",
+  items: [
+    {
+      icon: <BsDot />,
+      title: "Some D2C Social Media Examples",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] pt-2 w-[400px]",
+    },
+    {
+      icon: <BsDot />,
+      title: "What do Muscled´s social media advertising services include?",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] mt-10",
+    },
+    {
+      icon: <BsDot />,
+      title: "What Kind of social media ads fit D2C brands?",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] mt-10",
+    },
+    {
+      icon: <BsDot />,
+      title: "The Benefits of direct to consumer social media advertising",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] mt-10",
+    },
+    {
+      icon: <BsDot />,
+      title: "Why is D2C social advertising for?",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] mt-10",
+    },
+    {
+      icon: <BsDot />,
+      title: "Launch your custom D2C social ads right away!",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] mt-10",
+    },
+    {
+      icon: <BsDot />,
+      title: "FAQs",
+      className: "underline decoration-[#5F27BD] text-[#5F27BD] mt-10",
+    },
+    {
+      icon: <BsDot />,
+      title:
+        "Get the digital workout for your store with Muscled Digital Agency!",
+      className:
+        "underline decoration-[#5F27BD] text-[#5F27BD] pb-[10px] mt-10",
+    },
+  ],
+};

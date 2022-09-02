@@ -18,7 +18,7 @@ import {
   testimonialData,
   AdditionalSocailMediaMetaData,
 } from "components/utils/muscled-d2c-constants";
-
+import SocialMediaAds from "components/common/SocialMediaAds";
 const Page: NextPage = () => {
   return (
     <div>
@@ -47,6 +47,8 @@ const Page: NextPage = () => {
       />
       {/* Section 6 */}
       <SocialMediaAdvertising />
+      {/* Section 7 */}
+      <SocialMediaAds />
     </div>
   );
 };

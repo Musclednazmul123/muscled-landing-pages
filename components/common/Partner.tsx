@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../Fawwaz/Logo";
-import logo from "components/assets/logo/logo1.png";
 
 interface PropsLogos {
   blurDataURL: string;
