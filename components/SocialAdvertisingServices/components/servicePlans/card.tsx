@@ -14,15 +14,25 @@ const Card: FC<Card> = ({
   className,
   bgColor
 }) => {
-  const displayStars = () => {
-    // console.log(stars)
-
-    for (var i = 0; i < stars; i++) {
-      // console.log(i, 'loop')
-      return <Image src={Star} alt="star" width={30} height={30} />
+  let labels = []
+  const splitLabels = (Array: number) => {
+    if (typeof Array != 'undefined' && Array != null) {
+      for (let i = 0; i < Array; i++) {
+        labels.push(<Image src={Star} alt="star" width={30} height={30} />)
+      }
+      // return labels;
     }
   }
+  const displayStars = () => {
+    // for (var i = 0; i < stars; i++) {
+    //   console.log(stars, 'star loop', i)
+    //       <Image src={Star} alt="star" width={30} height={30} />
+    //   )
+    // }
+    return labels
+  }
   const displayFeatures = () => {
+    splitLabels(stars)
     return features.map((item: string, key: number) => {
       return (
         <div className="flex justify-around items-center w-full" key={key}>
