@@ -121,3 +121,8 @@ export interface GuideItemProps {
 export interface TableOfContentsProps {
 	questions: [{id:string; question:string;}];
 }
+
+export interface LinkCardProps {
+	title: string;
+	links: [];
+}

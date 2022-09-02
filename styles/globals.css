@@ -318,3 +318,19 @@ ul li {
 	margin: 0 10px;
     padding: 0 10px;
 }
+
+
+.link-card {
+	background: rgba(196, 0, 0, 0.03);
+}
+
+.link-card-heading {
+	font-size: 24px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.link-card-item {
+	text-decoration: underline;
+	color: rgba(0, 0, 0, 0.7);
+}
