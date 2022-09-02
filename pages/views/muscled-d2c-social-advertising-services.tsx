@@ -19,6 +19,7 @@ import {
   AdditionalSocailMediaMetaData,
 } from "components/utils/muscled-d2c-constants";
 import SocialMediaAds from "components/common/SocialMediaAds";
+import TextSection from "components/common/TextSection";
 const Page: NextPage = () => {
   return (
     <div>
@@ -49,6 +50,7 @@ const Page: NextPage = () => {
       <SocialMediaAdvertising />
       {/* Section 7 */}
       <SocialMediaAds />
+      <TextSection />
     </div>
   );
 };
