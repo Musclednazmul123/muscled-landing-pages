@@ -732,7 +732,7 @@ const Mediamanagement = () => {
             </div>
           </div>
 
-          <div className="w-[38%] self-start">
+          <div className="w-[38%] self-start sticky top-1">
             <CollapsingTableOfContent
               links={[
                 {
