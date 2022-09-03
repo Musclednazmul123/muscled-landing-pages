@@ -52,7 +52,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 
 			<div className="max-w-[436px] grid grid-cols-1 gap-4">
 
-				<div className="custom-svg-div grid grid-cols-4 grid-flow-row-dense px-4">
+				<div className="custom-svg-div py-2.5 grid grid-cols-4 grid-flow-row-dense px-4">
 					<div className="pt-2">
 						<FunnelSVG />
 					</div>
@@ -62,7 +62,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 						<p className="svg-text-small" style={{color: "#BBBBBB"}}>IN CLIENT REVENUE</p>
 					</div>
 				</div>
-				<div className="custom-svg-div grid grid-cols-4 grid-flow-row-dense px-4 ">
+				<div className="custom-svg-div py-2.5 grid grid-cols-4 grid-flow-row-dense px-4 ">
 					<div>
 						<UserSVG />
 					</div>
@@ -72,7 +72,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 						<p className="svg-text-small" style={{color: "#BBBBBB"}}>IN LEADS FOR OUR CLIENTS</p>
 					</div>
 				</div>
-				<div className="custom-svg-div grid grid-cols-4 grid-flow-row-dense px-4 ">
+				<div className="custom-svg-div py-2.5 grid grid-cols-4 grid-flow-row-dense px-4 ">
 					<div className="pt-2">
 						<TrophySVG />
 					</div>
@@ -82,7 +82,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 						<p className="svg-text-small" style={{color: "#BBBBBB"}}>DIGITAL MARKETING EXPERTS</p>
 					</div>
 				</div>
-				<div className="custom-svg-div grid grid-cols-4 grid-flow-row-dense px-4 ">
+				<div className="custom-svg-div py-2.5 grid grid-cols-4 grid-flow-row-dense px-4 ">
 					<div className="pt-2">
 						<CloudComputingSVG />
 					</div>

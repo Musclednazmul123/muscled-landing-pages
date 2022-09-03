@@ -4,7 +4,10 @@ const PromotionTwo = () => {
     return (
         <>
             <div className="promo-section px-6 md:px-24 pt-24">
-                <p className='text-left text-2xl md:text-4xl mb-24 font-bold leading-normal'>What are the Perks of choosing Muscled as your landing page designer?</p>
+                <div>
+                <p className='text-left text-2xl md:text-4xl mb-4 font-bold leading-normal'>What are the Perks of choosing Muscled as your landing</p>
+                <p className='text-left text-2xl md:text-4xl mb-24 font-bold leading-normal'>page designer?</p>
+                </div>
                 <p className='text-center text-xl leading-normal font-normal mb-24'>By partnering with Muscled and our team of in house professional landing page designers gives your company a competitive edge.  With our landing page design services you will have access to built in solutions to the design, launch, and upkeep of your landing pages, which will lead to more leads, sales, and earnings for your business.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">

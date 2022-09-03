@@ -196,26 +196,12 @@
 }
 
 .card-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 30px;
-
 	width: 340px;
 	height: 270.5px;
 }
 
-.content-item-wrapper {
-	margin: 0px 30px 30px;
-}
-
 .content-item {
 	width: 301px;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 20px;
 	line-height: 130%;
 	color: rgba(0, 0, 0, 0.7);
@@ -223,16 +209,10 @@
 
 
 .card-footer-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	padding: 0px;
-	gap: 40px;
 	font-size: 20px;
-	line-height: 150%;
 	color: rgba(0, 0, 0, 0.8);
 	width: 236px;
-	/* height: 130px; */
 }
 
 /* ===============Promotion section================ */
@@ -314,5 +294,11 @@ ul li {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+}
+
+
+
+.react-player-modal:hover {
+	cursor: pointer;
 }
 

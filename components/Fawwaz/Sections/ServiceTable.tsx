@@ -13,7 +13,7 @@ const ServiceTable = () => {
                 </div>
                 <Table className='table-fixed'>
                     <thead>
-                        <tr className='border-b border-gray-200'>
+                        <tr className='border-b border-gray-500'>
                             <Th
                                 className="text-left text-white rounded-tl-xl"
                                 content="Features"
@@ -32,7 +32,7 @@ const ServiceTable = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Fully Responsive Design Across All Devices (Desktop, Mobile, Tablet)"
@@ -45,7 +45,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Online project management scheduling"
@@ -58,7 +58,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Dedicated account representative"
@@ -71,7 +71,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Market research"
@@ -84,7 +84,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Conversion strategy"
@@ -97,7 +97,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Conversion best practices documentation"
@@ -110,7 +110,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="2 hours coaching on strategy implementation"
@@ -123,7 +123,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Development of unique selling position"
@@ -136,7 +136,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Landing page design"
@@ -149,7 +149,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Landing page programming/build"
@@ -162,7 +162,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Multivariate conversion testing"
@@ -175,7 +175,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Copywriting"
@@ -188,7 +188,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="User testing"
@@ -201,7 +201,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Setup of auto responders"
@@ -214,7 +214,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="PPC campaign review"
@@ -227,7 +227,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Flash/jQuery interactive calls to action"
@@ -240,7 +240,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Conversion path implementation"
@@ -253,7 +253,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Lead forms integrated into CRM (ex. Salesforce.com)"
@@ -266,7 +266,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Performance test reporting"
@@ -279,7 +279,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Conversion reporting"
@@ -292,7 +292,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="450+ SMEs behind campaign driving results"
@@ -305,7 +305,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Database integration"
@@ -318,7 +318,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Video creation & implementation"
@@ -331,7 +331,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Time frame"
@@ -344,7 +344,7 @@ const ServiceTable = () => {
                                 type="premium" 
                             />
 						</tr>
-                        <tr className="text-center text-black-80 border-b border-gray-200">
+                        <tr className="text-center text-black-80 border-b border-gray-500">
                             <Th
                                 className="text-left text-white font-normal"
                                 content="Investment"

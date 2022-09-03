@@ -3,7 +3,7 @@ import React from 'react';
 import GuideItem from '../../extra/GuideItem';
 import TableOfContents from '../../extra/TableOfContents';
 import Button from 'components/Fawwaz/Button';
-import SpeechBubble from 'components/assets/svg/SpeechBubble';
+import SpeechBubbleStar from 'components/assets/svg/SpeechBubbleStar';
 import { BiChevronRight } from 'react-icons/bi';
 import { AiFillStar } from 'react-icons/ai'
 
@@ -161,24 +161,26 @@ const GuideDetail = () => {
                                 </p>
                                 <div>
                                     <div className='bg-[#0D263D] px-24 py-20'>
-                                        <div className="flex flex-col lg:flex lg:flex-row mb-4 gap-10">
+                                        <div className="flex flex-col lg:flex lg:flex-row items-center justify-center mb-4 gap-10">
                                             <div className='text-white'>
-                                                <p className='text-base mb-2 mr-40'>
+                                                <p className='text-base font-bold mb-1 md:mr-40'>
                                                     93% of the Muscled customers are extremely satisfied with their digital marketing results.
                                                 </p>
                                                 <p className='text-sm'>
-                                                “Working with Muscled, everything is very organised and strategic. We’re only a year into our partnership nd our expectations have definetly been met.”
-                                                </p>
+                                                “Working with Muscled, everything is</p> 
+                                                <p className='text-sm'>very organised and strategic. We’re</p> 
+                                                <p className='text-sm'>only a year into our partnership nd our</p> 
+                                                <p className='text-sm'>expectations have definetly been met.”</p>
                                             </div>
                                             <div className='mt-4'>
-                                                <SpeechBubble />
+                                                <SpeechBubbleStar />
                                             </div>
                                         </div>
-                                        <div className='mt-2'>
+                                        <div className='mt-14'>
                                             <Button
                                                 bgColor="bg-black"
                                                 textColor="text-white"
-                                                className="mx-auto">
+                                                className="sm:text-base mx-auto font-bold rounded-[10px]">
                                                 View more client Testimonials
                                             </Button>
                                         </div>
@@ -221,7 +223,10 @@ const GuideDetail = () => {
                                 If you want to do more with your website and ad campaigns, schedule a call. We’re looking forward to giving your website the workout that it needs!
                                 </p>
                                 <div className='px-12 mt-24 py-9 bg-[#086680] md:w-[660px] md:h-[338px] flex flex-col gap-4 justify-center'>
-                                    <h4 className='text-3xl text-white leading-[48px]'>For verified ratings of our marketing services,please read our:</h4>
+                                    <h4 className='text-3xl text-white font-bold'>
+                                        For verified ratings of our 
+                                    </h4>
+                                    <h4 className='text-3xl text-white font-bold'>marketing services,please read our:</h4>
                                     <div className='flex text-[#F8CC25]'>
                                         <AiFillStar />
                                         <AiFillStar />
@@ -230,8 +235,8 @@ const GuideDetail = () => {
                                         <AiFillStar />
                                     </div>
                                     <div className='flex items-center text-[#D2D2D2] text-base'>
-                                        <p className='leading-[24px]'>INDUSTRY-LEADING 863 TESTIMONIALS</p>
-                                        <BiChevronRight size={25}/>
+                                        <p className='leading-[24px] mr-4'>INDUSTRY-LEADING 863 TESTIMONIALS</p>
+                                        <BiChevronRight size={36}/>
                                     </div>
                                     <div className='flex items-center text-[#D2D2D2] text-base'>
                                         <p className='leading-[24px]'>MUSCLED Agency Rating 4.9 out of 5 with 267 ratings</p>

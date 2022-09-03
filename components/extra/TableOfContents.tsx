@@ -7,7 +7,7 @@ import { FaListAlt } from "react-icons/fa";
 
 const TableOfContents: FC<TableOfContentsProps> = ({questions}) => {
 
-    const [showContent, setShowContent] = useState(false)
+    const [showContent, setShowContent] = useState(true)
 
     return (
         <>

@@ -24,7 +24,7 @@ const LandingTestimonials = () => {
 						See Our Client's Testimonials
 					</Button>
 				</div>
-				<div>
+				<div className="react-player-modal">
 					<ReactPlayerModal 
 						url= 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
 						Icon={PlayIcon}
