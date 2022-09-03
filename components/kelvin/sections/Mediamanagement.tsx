@@ -702,8 +702,8 @@ const Mediamanagement = () => {
               </div>
             </div>
 
-            <div className="bg-[#086680] mt-10 py-5 px-7 w-[67%]">
-              <h3 className="text-2xl text-white w-[65%]">
+            <div className="bg-[#086680] mt-20 pt-8 pb-6 pl-8 w-[67%]">
+              <h3 className="text-2xl text-white w-[85%]">
                 For verified ratings of our marketing services,please read our:
               </h3>
 
@@ -726,7 +726,7 @@ const Mediamanagement = () => {
                 </div>
               </FlexLayout>
 
-              <p className="text-[#D2D2D2] mt-2 text-[0.7rem]">
+              <p className="text-[#D2D2D2] mt-4 text-[0.7rem]">
                 MUSCLED Agency Rating 4.9 out of 5 with 267 ratings
               </p>
             </div>
