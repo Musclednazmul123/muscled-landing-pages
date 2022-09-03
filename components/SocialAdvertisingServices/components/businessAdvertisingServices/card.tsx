@@ -14,9 +14,9 @@ const Card: FC<ServiceCard> = ({
         className ? className : ''
       }`}
     >
-      <h4 className="font-bold">{heading}</h4>
-      <p className="">{subHeading}</p>
-      <Button text={buttonText} backgroundColor="bg-red-base h-16" />
+      <h4 className="font-bold text-[20px]">{heading}</h4>
+      <p className="text-[20px]">{subHeading}</p>
+      <Button text={buttonText} backgroundColor="bg-red-base" />
     </div>
   )
 }

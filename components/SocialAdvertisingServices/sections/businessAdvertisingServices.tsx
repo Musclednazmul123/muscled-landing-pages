@@ -21,10 +21,10 @@ const BusinessAdvertisingServices = () => {
     <div className="bg-neutral-100 py-4 md:py-8">
       <DynamicSection className="flex-col space-y-8 justify-around">
         <div className="text-center basis-2/5">
-          <h2 className="font-bold mb-8">
+          <h2 className="font-bold mb-8 text-[40px]">
             Social Media Advertising Services For Every Business
           </h2>
-          <h4>
+          <h4 className="text-[24px]">
             Check the D2C Ecommerce and Social Media Integration options from
             Muscled.
           </h4>

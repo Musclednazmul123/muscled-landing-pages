@@ -25,7 +25,7 @@ const SecondTable = () => {
     <DynamicSection className="flex-col overflow-x-auto">
       <table className="w-full my-8">
         <tbody>
-          <tr className="text-center border-b border-neutral-500 font-bold">
+          <tr className="text-center border-b border-neutral-500 font-bold text-[16px]">
             <td className="w-1/2 py-4 px-8 bg-black-80 text-white text-left rounded-tl-xl">
               Features
             </td>
@@ -35,12 +35,12 @@ const SecondTable = () => {
             </td>
           </tr>
           {displayRows()}
-          <tr>
+          <tr className="text-[16px]">
             <td className="flex flex-col px-8 py-4 bg-black-80 text-white rounded-bl-xl">
               <p className="my-4">Give Us a Call if You Need Information</p>
               <a className="flex" href="tel:+18886015359">
                 <Image src={PhoneImg} alt="phone" width={24} height={24} />
-                <p className="ml-2 font-bold text-xl text-[#48BBFC]">
+                <p className="ml-2 font-bold text-[]24px text-[#48BBFC]">
                   888-601-5359
                 </p>
               </a>

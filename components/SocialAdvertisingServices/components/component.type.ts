@@ -81,3 +81,8 @@ export interface ListType {
   content: string[]
   className?: string
 }
+
+export interface feature {
+  firstTableData: string
+  secondTableData: string
+}

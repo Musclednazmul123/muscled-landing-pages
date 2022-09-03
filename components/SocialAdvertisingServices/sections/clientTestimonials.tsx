@@ -9,12 +9,12 @@ const clientTestimonials = () => {
     <div className="bg-black text-white">
       <DynamicSection className="gap-x-6  p-4 md:p-8 lg:px-4 lg:py-16 flex-col md:flex-row space-y-4">
         <div className="flex flex-col basis-2/5 justify-around items-start lg:text-2xl space-y-4">
-          <p>
+          <p className="text-[24px]">
             "The Muscled team is the perfect package for our social media
             needs!" They handle everything from ad design to targeted marketing
             to page administration and monitoring!"
           </p>
-          <p className="font-bold">Manager of a Store</p>
+          <p className="font-bold text-[20px]">Manager of a Store</p>
           <Button
             text="See Our Clients' Testimonials"
             backgroundColor="bg-red-base"

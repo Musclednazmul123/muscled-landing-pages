@@ -9,8 +9,10 @@ const CustomerMediaAdvertising = () => {
     <div className="bg-red-50">
       <DynamicSection className="py-8 flex-col md:flex-row space-y-4">
         <div className="flex flex-col basis-[60%] gap-y-4 justify-center space-y-4">
-          <h2>What is direct-to-consumer social media advertising?</h2>
-          <p>
+          <h2 className="text-[40px]">
+            What is direct-to-consumer social media advertising?
+          </h2>
+          <p className="text-[20px]">
             A great way to boost your D2C business are paid social media ads
             that will increase your exposure on social media platforms. With the
             social media algorithms constantly changing it is harder to reach
@@ -18,7 +20,7 @@ const CustomerMediaAdvertising = () => {
             Paid advertisements will immediately raise awareness of your brand
             and products.
           </p>
-          <p>
+          <p className="text-[20px]">
             Below we´ll take a deep dive into D2C social advertising, go over
             some examples, and see how plans can help grow your brand. We have
             worked with countless D2C brands-just like yours- to reach amazing
@@ -26,7 +28,7 @@ const CustomerMediaAdvertising = () => {
             implementing social media advertising? Then contact us online to
             chat with one of the social media professionals in our crew.
           </p>
-          <p>
+          <p className="text-[20px]">
             If you want to talk directly to the source then hit this number to
             reach our Digital Marketing Specialist.
           </p>

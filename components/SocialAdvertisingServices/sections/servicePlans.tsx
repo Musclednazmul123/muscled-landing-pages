@@ -25,7 +25,7 @@ const ServicePlans: FC<ServicePackages> = ({ children, className }) => {
   return (
     <div className="bg-neutral-200">
       <DynamicSection className="flex-col my-8 p-4">
-        <h3 className="text-center my-12">
+        <h3 className="text-center my-12 text-[40px]">
           Explore Direct-to-Consumer Social Service Plans
         </h3>
         <div className="flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">

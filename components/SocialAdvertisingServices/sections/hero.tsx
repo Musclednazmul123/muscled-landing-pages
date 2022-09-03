@@ -31,27 +31,31 @@ const HeroSection: FC<HeroSectionProps> = ({
     })
   }
   return (
-    <DynamicSection className="flex-col md:flex-row md:h-[75vh] space-y-4 md:space-y-0">
-      <div className="flex flex-col basis-[50%] text-white justify-around">
+    <DynamicSection className="flex-col md:flex-row space-y-4 md:space-y-0 2xl:h-[75vh] justify-between">
+      <div className="flex flex-col xl:basis-[60%] text-white justify-around ">
         <span>Home {router.asPath.replace('/', ' > ')}</span>
-        <h2 className="text-2xl lg:text-3xl xl:text-4xl my-2 font-bold text-white">
-          {title}
-        </h2>
-        <p className="text-left mt-2 md:mt-0">{description}</p>
+        <div className="space-y-8 mb-4">
+          {/* text-2xl lg:text-3xl xl:text-5xl */}
+          <h2 className="my-2 font-bold text-white text-[56px]">{title}</h2>
+          <p className="text-left text-[20px] font-light mt-2 md:mt-0">
+            {description}
+          </p>
+        </div>
         <div className="flex flex-col md:flex-row w-full justify-between mt-2 md:mt-0">
           <Input
             placeholder="Enter your website link"
             type="text"
-            className="basis-3/5 h-12 border-gray-500 border-[1px]"
+            className="basis-[70%] h-16 border-gray-500 border-[1px]"
           />
           <Button
             text="Send Proposal"
-            className="basis-2/5 md:ml-2 mt-2 md:mt-0 h-12"
+            className="basis-[30%] md:ml-2 mt-2 md:mt-0 h-16"
+            link="social-advertising-services"
           />
         </div>
       </div>
-      <div className="flex basis-[10%]"></div>
-      <div className="flex flex-col gap-y-4 items-center justify-center basis-[40%]">
+      {/* <div className="flex basis-[10%]"></div> */}
+      <div className="flex flex-col gap-y-4 items-center justify-center basis-[37%]">
         {DisplayFeatures()}
       </div>
     </DynamicSection>
