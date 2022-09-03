@@ -10,7 +10,7 @@ import { AiFillStar } from 'react-icons/ai'
 const GuideDetail = () => {
     return (
         <>
-            <div className="pt-24 px-6 md:px-24 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="pt-24 px-6 md:px-24 grid grid-cols-1 md:grid-cols-3 gap-16">
                 <div className="order-2 md:order-1 md:col-span-2">
                     <GuideItem 
                         id='why-ppc'
@@ -242,38 +242,40 @@ const GuideDetail = () => {
                     />
 
                 </div>
-                <div className='order-1 col-span-1 lg:order-2 lg:ml-auto md:w-full lg:max-w-[400px]'>
-                    <TableOfContents 
-                        questions={
-                            [
-                                {
-                                    id: 'why-ppc',
-                                    question: 'What is PPC?'
-                                },
-                                {
-                                    id: 'ppc-campaign',
-                                    question: 'Why have a landing page for a PPC campaign?'
-                                },
-                                {
-                                    id: 'page-guide',
-                                    question: 'How Landing Pages Guide Your Audience'
-                                },
-                                {
-                                    id: 'better-exp',
-                                    question: 'How landing pages help you provide a better experience'
-                                },
-                                {
-                                    id: 'how-much',
-                                    question: 'How much do you need to spend on a custom landing page?'
-                                },
-                                {
-                                    id: 'how-much-specific',
-                                    question: 'How much does a specific custom landing page cost?'
-                                }
+                <div className='custom-relative order-1 col-span-1 lg:order-2 lg:ml-auto md:w-full lg:max-w-[400px]'>
+                    <div className='custom-sticky'>
+                        <TableOfContents 
+                            questions={
+                                [
+                                    {
+                                        id: 'why-ppc',
+                                        question: 'What is PPC?'
+                                    },
+                                    {
+                                        id: 'ppc-campaign',
+                                        question: 'Why have a landing page for a PPC campaign?'
+                                    },
+                                    {
+                                        id: 'page-guide',
+                                        question: 'How Landing Pages Guide Your Audience'
+                                    },
+                                    {
+                                        id: 'better-exp',
+                                        question: 'How landing pages help you provide a better experience'
+                                    },
+                                    {
+                                        id: 'how-much',
+                                        question: 'How much do you need to spend on a custom landing page?'
+                                    },
+                                    {
+                                        id: 'how-much-specific',
+                                        question: 'How much does a specific custom landing page cost?'
+                                    }
 
-                            ]
-                        }
-                    />
+                                ]
+                            }
+                        />
+                    </div>
                 </div>
             </div>
         </>
