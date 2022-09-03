@@ -72,25 +72,25 @@ const Mediamanagement = () => {
               </p>
             </div>
 
-            <div className="w-[88%] bg-[#C40000]/[6%] mt-16 py-10 px-10">
+            <div className="w-[90%] bg-[#C40000]/[6%] mt-16 py-10 px-10">
               <FlexLayout spaceClass="space-x-0">
-                <div className="w-[90%] space-y-7">
+                <div className="w-[95%] space-y-7">
                   <h2 className="text-4xl">
                     74% of people use social media when making a purchasing
                     decision.
                   </h2>
 
-                  <p className="w-[85%]">
+                  <p className="w-[88%]">
                     Make their decision easy with a stellar social media
                     presence. See how your brand can level up by requesting a
                     no-obligation proposal today.
                   </p>
 
-                  <div className="flex flex-wrap gap-2 w-[90%]">
+                  <div className="flex flex-wrap gap-2">
                     <Input
                       type="text"
                       placeholder="Enter Your Website Link"
-                      className="text-sm flex-1 md:text-lg w-[50%]"
+                      className="text-sm flex-1 md:text-lg w-[70%]"
                     />
                     <Button
                       className="bg-black h-full font-semibold"
