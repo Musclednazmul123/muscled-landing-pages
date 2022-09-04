@@ -18,7 +18,7 @@ const CardHeader: FC<CardHeaderProps> = ({
 					: "bg-red-3"
 			}`}>
 			{children}
-			<h4 className="mt-4 mb-10 font-bold text-2xl text-black-80">
+			<h4 className="mt-4 mb-[63px] font-bold text-2xl text-black-80">
 				{title}
 			</h4>
 			<h1 className="mb-2 text-center">

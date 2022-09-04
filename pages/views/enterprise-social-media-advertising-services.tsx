@@ -36,8 +36,6 @@ const Page: NextPage = () => {
 
 			{/* Last cards */}
 			<LastCards />
-
-			<Footer />
 		</div>
 	);
 };

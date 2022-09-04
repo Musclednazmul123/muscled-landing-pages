@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import { Section } from '..';
 
@@ -351,16 +351,16 @@ const Tables: React.FC = () => {
 						<thead>
 							<tr>
 								{tableHeader.map((content, key) => (
-									<>
+									<Fragment key={key}>
 										{!key ? (
 											<Th
-												key={key}
+												
 												content={content}
 												className="py-14 text-white text-left text-2xl rounded-tl-xl"
 											/>
 										) : (
 											<Td
-												key={key}
+												
 												content={content}
 												className={`py-14 px-14 font-bold text-center text-2xl ${
 													key ===
@@ -375,7 +375,7 @@ const Tables: React.FC = () => {
 												}
 											/>
 										)}
-									</>
+									</Fragment>
 								))}
 							</tr>
 						</thead>

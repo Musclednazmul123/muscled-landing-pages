@@ -8,7 +8,7 @@ import { CardContentProps } from "../component.type";
 
 const CardContent: FC<CardContentProps> = ({ className, children }) => {
 	return (
-		<div className={`px-7 mt-4 ${className ? className : ''} `}>
+		<div className={`px-7 ${className ? className : ''} `}>
 			{children}
 		</div>
 	);

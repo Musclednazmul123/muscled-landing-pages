@@ -6,7 +6,7 @@ const TurnFollowers: FC = () => {
 	return (
 		<Section className="mt-[125px]">
 			<div className="flex py-2 space-y-16 justify-center flex-col">
-				<h1 className="text-4xl leading-[60px] text-justify">
+				<h1 className="text-4xl leading-[60px]">
 					Turn followers into customers with Muscled’s social media
 					advertising
 				</h1>

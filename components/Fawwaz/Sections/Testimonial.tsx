@@ -1,14 +1,15 @@
 import { FC } from "react";
-import ReactPlayer from "react-player";
 
 import { Section } from "../Sections";
 import Button from "../Button";
+import ReactPlayerModal from "components/ReactPlayerModal";
 
+import PlayIcon from "../../Icons/PlayIcon";
 
 const Testimonial: FC = () => {
 	return (
 		<div className="bg-black mt-[200px]">
-			<Section className="flex flex-wrap justify-center py-20 px-3 gap-32">
+			<Section className="flex flex-wrap justify-center items-center py-20 px-3 gap-32">
 				<div className="max-w-[560px] text-accent-white">
 					<p className="text-xl md:text-2xl mb-8">
 						“Muscled has gone above and beyond to make me happy. So
@@ -27,9 +28,13 @@ const Testimonial: FC = () => {
 						See Our Client's Testimonials
 					</Button>
 				</div>
-				<div className="w-[500px] min-h-[400px] h-full bg-white-gray relative">
-					<ReactPlayer url="https://www.youtube.com/embed/D0UnqGm_miA" width={540} height={400} />
-				</div>
+				<ReactPlayerModal
+					url="https://www.youtube.com/embed/D0UnqGm_miA"
+					thumbnail="https://www.youtube.com/embed/D0UnqGm_miA"
+					Icon={PlayIcon}
+					width="500px"
+					height="400px"
+				/>
 			</Section>
 		</div>
 	);

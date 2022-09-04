@@ -3,7 +3,7 @@ import { FC } from "react";
 import { Section } from "..";
 import Logo from "../../Logo";
 
-import logo from "../../../assets/logo/logo1.png";
+import logo from "../../../assets/logos/logo1.png";
 
 const Partner: FC = () => {
 	return (

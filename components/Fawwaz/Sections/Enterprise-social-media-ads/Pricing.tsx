@@ -107,28 +107,28 @@ const Pricing: FC = () => {
 										month
 									</p>
 								}>
-								<div className="flex">
+								<div className="flex mb-[30px]">
 									{pricing.star.map(
 										(Component, key): JSX.Element => (
 											<Component
 												key={key}
-												className="card-icon fill-black-50"
+												className={`card-icon ${index === 2 ? `fill-black-80` : index === 1 ? `fill-black-70` : `fill-black-50`}`}
 											/>
 										)
 									)}
 								</div>
 							</CardHeader>
-							<CardContent className="space-y-9">
+							<CardContent className="space-y-9 my-10">
 								{pricing.content.map((content, key) => (
 									<IconItem
 										key={key}
 										icon={content.icon}
 										title={content.title}
-										className="mt-4 text-black-70"
+										className="text-black-70 font-normal"
 									/>
 								))}
 							</CardContent>
-							<div className="px-4 py-10 mt-4 flex items-center justify-center flex-col">
+							<div className="px-4 pb-10 mt-4 flex items-center justify-center flex-col">
 								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center" />
 								<p className="mb-10 text-black-80">
 									$3,125 INITIAL INVESTMENT
