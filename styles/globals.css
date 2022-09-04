@@ -171,10 +171,17 @@
 }
 
 .card-header {
-	background: rgba(196, 0, 0, 0.03);
 	padding: 40px 0px;
 	gap: 40px;
 	margin-bottom: 24px;
+}
+
+.light-pink {
+	background: rgba(196, 0, 0, 0.03);
+}
+
+.dark-pink {
+	background: rgba(196, 0, 0, 0.06);
 }
 
 .card-title {
@@ -296,6 +303,9 @@ ul li {
 	top: 0;
 }
 
+.tbl-content-btn:hover {
+	cursor: pointer;
+}
 
 
 .react-player-modal:hover {

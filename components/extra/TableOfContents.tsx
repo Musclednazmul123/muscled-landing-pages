@@ -17,7 +17,7 @@ const TableOfContents: FC<TableOfContentsProps> = ({questions}) => {
                         <FaListAlt size={20} />
                         Table of Contents
                     </h2>
-                    <div className='text-black' onClick={()=>setShowContent(!showContent)}>
+                    <div className='tbl-content-btn text-black' onClick={()=>setShowContent(!showContent)}>
                         {showContent ? <BiChevronUp size={25} /> : <BiChevronDown size={25} />}
                     </div>
                 </div>

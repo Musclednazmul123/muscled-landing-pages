@@ -9,12 +9,12 @@ const PricingCard: FC<PricingCardProps> = ({ title, rate, type, content }) => {
     return (
         <>
             <div className='pricing-card lg:w-96 bg-white'>
-                <div className="card-header flex flex-col justify-between items-center">
+                <div className={`card-header ${type=='basic' ? 'light-pink' : 'dark-pink'} flex flex-col justify-between items-center`}>
                     <div className="flex">
                     {type == 'basic' ? (
-                        <Star />
+                        <Star opacity={0.5} />
                     ) : type == 'premium' ? (
-                        <><Star /> <Star /></>
+                        <><Star opacity={0.7} /> <Star opacity={0.7} /></>
                     ) : <><Star /> <Star /> <Star /></>
                     }
                     </div>
