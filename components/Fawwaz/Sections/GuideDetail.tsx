@@ -470,21 +470,29 @@ const GuideDetail = () => {
                                         question: 'Why have a landing page for a PPC campaign?'
                                     },
                                     {
-                                        id: 'page-guide',
-                                        question: 'How Landing Pages Guide Your Audience'
-                                    },
-                                    {
-                                        id: 'better-exp',
-                                        question: 'How landing pages help you provide a better experience'
-                                    },
-                                    {
                                         id: 'how-much',
                                         question: 'How much do you need to spend on a custom landing page?'
                                     },
                                     {
                                         id: 'how-much-specific',
                                         question: 'How much does a specific custom landing page cost?'
-                                    }
+                                    },
+                                    {
+                                        id: '8-crucial',
+                                        question: '8 crucial components for top landing page designs'
+                                    },
+                                    {
+                                        id: 'first-last-impression',
+                                        question: 'A landing page is your first and last impression'
+                                    },
+                                    {
+                                        id: 'faq',
+                                        question: 'FAQs about landing page design services'
+                                    },
+                                    {
+                                        id: 'get-the-most',
+                                        question: 'Get the most out of your landing page designs'
+                                    },
 
                                 ]
                             }
