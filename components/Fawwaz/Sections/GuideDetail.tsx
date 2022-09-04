@@ -142,6 +142,215 @@ const GuideDetail = () => {
                     />
 
                     <GuideItem 
+                        id="ppc-landing-pages"
+                        question='PPC Landing Pages'
+                        headingSize='small'
+                        children={
+                            <>
+                                <p>
+                                These are the salespeople for your online PPC campaigns. For it to be effective, you need to have a landing page unique to the ad campaign, a type of content that is customized and tested to convert your target audience. 
+                                </p>
+                                <p>
+                                This is your first and best chance to turn people into buyers. That’s why we’ll experiment until we find what works best with your brand through Google’s Website Optimizer tool.
+                                </p>
+                                <p>
+                                Landing pages also show the success of your marketing strategy through the number of new conversions you get from your specific landing sites. To be sure of its authenticity, we’ll make sure that it’ll only be available through the original source, like emails, online advertisements, and search engine listings, among others. 
+                                </p>
+                            </>    
+                        }
+                    />
+
+                    <GuideItem 
+                        id='social-media-landing-pages'
+                        question='Social media landing pages'
+                        headingSize='small'
+                        children={
+                            <>
+                            <p>
+                            These landing pages are designed to be viral on internet forums and social media platforms like Twitter or Facebook. It may be an engaging blog article, an educational resource, or a piece of breaking news that gets people talking. You know you’re looking at the best landing page designs if they continue to drive traffic to your site for months, even years, after they’re built.
+                            </p>
+                            <p>
+                            A good social media landing site must have content that is compelling, relevant, and useful. Social media landing pages that don't have one of these three things must be redesigned. 
+                            </p>
+                            <p>                        
+                            Users are more inclined to take note and share a page with useful content. Internet users don’t want to lose a page that helped them before, so most popular social network landing sites have content that allows users to still access them later. That’s why social media landing pages are different due to the fact that they want to turn people into fans instead of persuading them to buy, unlike PPC landing pages.
+                            </p>
+                            <p>                       
+                            Unlike PPC landing pages, social media landing pages must also be keyword-specific and lead to other pages on your site. The more indexable they are, the more people will find them.
+                            </p>
+                            <p>                        
+                            Muscled Digital Agency makes landing pages that work. We’ll examine colors, visuals, and content layout, among others. We’ll dig deep and consider the trends and user intent to be able to provide you with the best landing page that is unique to your business and industry. 
+                            </p>
+                            <p>                       
+                            To see how a custom landing page can boost your website’s performance, schedule a call!
+                            </p>
+                            </>                        
+                        }
+                    />
+
+                    <GuideItem 
+                        id='8-crucial-components'
+                        question='8 crucial components for top landing page designs'
+                        headingSize='large'
+                        children={
+                            <>
+                                <p>An effective landing page design hinges upon effective components and structure. Let’s take a look at eight things that make a landing page good.</p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='focus-on-one-product'
+                        question='It focuses on one product or service'
+                        headingSize='small'
+                        children={
+                            <>
+                                <p>
+                                A landing page needs to deliver a focused experience for your viewers. It is expected that your goal should be to persuade them to make a purchase, be it a product or service, and it loses its edge the moment you offer other things. 
+                                </p>
+                                <p>
+                                Decide on the only item that will be sold on your landing page. For example, if your landing page was made to sell gardening tools, people would get confused if they clicked on your advertisement and found a house for sale.
+                                </p>
+                                <p>
+                                Concentrating on a single product or service will allow you to get the best results from your PPC and social media marketing.
+                                </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='landing-consistent'
+                        question='The landing pages are consistent'
+                        headingSize='small'
+                        children={
+                            <>
+                                <p>
+                                It’s normal to invest a lot of time in making sure that your landing page will be excellent. You want it to not only attract attention but also reflect your company’s brand.
+                                </p>
+                                <p>
+                                Branding is an important aspect of PPC. You can still get clicks and have no converts, but not all hope is lost. This will pay off in the long run when people need to buy the product or avail of the service you provide. If you’ve established your brand well, they’ll favor it over your competitors.
+                                </p>
+                                <p>
+                                This is why your landing pages need to be memorable. Keep a simple yet eye-catching design. Pick the colors and typefaces that will suit your business best. Your style should match what your company is supposed to be.
+                                </p>
+                                <p>
+                                Consistency is key. Help your audience become more familiar with your brand.
+                                </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='catchy-headline'
+                        question='The headlines are catchy'
+                        headingSize='small'
+                        children={
+                            <>
+                            <p>
+                                Headlines are the first thing that people see on your page. Put your best foot forward. Make an interesting title that’ll make an impression on your audience. Otherwise, they’ll skim the whole page, click away, and forget about it. 
+                            </p>
+                            <p>
+                                Returning to our gardening tool company, setting your headline to be “Gardening Tools for Sale” might not work for your target audience. On the other hand, a title like “Greenify Your Garden with this Amazing Set of Tools” has a higher chance of attracting attention. People who do want to “greenify” their gardens will most likely check what you offer.
+                            </p>
+                            <p>
+                                Remember that your leads are built on catchy headlines
+                            </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='visuals'
+                        question='It has visuals'
+                        headingSize='small'
+                        children={
+                            <>
+                            <p>
+                            People don’t want to face a wall of text. Other than boosting engagement, the use of visuals on your landing page will point your users to where you’ll want them to be.
+                            </p>
+                            <p>
+                            Still, you don’t want it to be overbearing. Try to limit yourself to a single photo or a video. You don’t want your audience to get confused and lose sight of the purpose of your landing page.
+                            </p>
+                            <p>
+                            You can’t go wrong with photos, especially if you’re selling something. It’s the best and simplest way to let your future customers see how your product works in action. 
+                            </p>
+                            <p>
+                            You can also show how dependable your company is by showing how confident your people are in their uniforms. You can also rely on photos to point users to the product you’re offering; this can help focus their attention on the most important content in your page.
+                            </p>
+                            <p>
+                            You can’t also go wrong with videos if you have the resources to produce them. Videos boost landing page conversions by 86 percent.
+                            </p>
+                            <p>
+                            Videos are by far the best way to keep your audience on your landing page. It's fantastic for branding, especially when you can deliver most of the information that your users need without having them navigate around the page.
+                            </p>
+                            <p>
+                            The longer your audience stays on your landing page, the more likely it is that they will choose your company and convert themselves into customers.
+                            </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='strong-cta'
+                        question='The landing page has strong calls to action (CTAs)'
+                        headingSize='small'
+                        children={
+                            <>
+                                <p>
+                                Having a call to action, or CTA, means the difference between someone moving forward and forgetting about your site and them remembering it. You need to create an effective CTA to make those users stay and even return when they need to get your product or avail your services.
+                                </p>
+                                <p>
+                                This is your first and last chance to tell your audience what to do. And if you’re convincing enough, this might turn your newfound leads into sales. You need to be upfront about it. A generic call to action will be ignored. You need to inform your viewers what will happen if they click on that button.
+                                </p>
+                                <p>
+                                Don’t settle for “Click here to download immediately” or “Click here!” Use specific CTAs like “Get your free guide now!” or “Learn how to code today!” 
+                                </p>
+                                <p>
+                                Your audience needs to understand what they’re going to get. They need to be fully aware of what you’re offering them. This is why you should only sell one product or service on your landing page.
+                                </p>
+                                <p>
+                                An excellent CTA will get you the hottest leads for your company. You need them to be as effective as they can be.
+                                </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='trust-signal'
+                        question='The landing page has trust signals'
+                        headingSize='small'
+                        children={
+                            <>
+                            <p>
+                                You need to demonstrate why your product is the best option. The trust signals on your page will reinforce that thought and give the impression that your company really is the best alternative. 
+                            </p>
+                            <p>
+                                Testimonials, awards, and accolades are the most common ones you can use. If your company won an award, add that to the landing page. You should also not shy away from client testimonials that speak to the quality of your product or service.
+                            </p>
+                            <p>
+                                You can obtain particular client testimonials that speak to the quality of your product or service. Testimonials help to validate the fact that others have had a great experience with your product or service. It contributes to the development of confidence in your company.
+                            </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
+                        id='page-accessible'
+                        question='The landing page is accessible'
+                        headingSize='small'
+                        children={
+                            <>
+                                <p>
+                                You should know that your landing page will be accessed by users on their mobile phones. Make sure that your landing page will also look good on mobile.
+                                </p>
+                                <p>
+                                Your website needs to have a responsive design. It guarantees that your page will adapt to the device being used, ensuring the greatest possible experience a user can have on your website for increased engagement and conversions for your company.
+                                </p>
+                            </>
+                        }
+                    />
+
+                    <GuideItem 
                         id='short-form'
                         question='It has short forms'
                         headingSize='small'
