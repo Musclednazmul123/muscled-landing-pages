@@ -15,17 +15,17 @@ const ServiceTable = () => {
                     <thead>
                         <tr className='border-b border-neutral-800'>
                             <Th
-                                className="text-left text-white rounded-tl-xl"
+                                className="text-left text-white border-b border-neutral-800 rounded-tl-xl"
                                 content="Features"
                             />
                             <Td
-                                className="text-center font-bold"
+                                className="border-b border-gray-300 text-center font-bold"
                                 content="Dynamic w/ Testing"
                                 type="basic"
                             />
 
                             <Td
-                                className="text-center font-bold"
+                                className="border-b border-gray-300 text-center font-bold"
                                 content="Fully-Optimized"
                                 type="premium"
                             />
@@ -34,326 +34,398 @@ const ServiceTable = () => {
                     <tbody>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Fully Responsive Design Across All Devices (Desktop, Mobile, Tablet)"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck 
+                                className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Online project management scheduling"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Dedicated account representative"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Market research"
                             />
                             <Td 
                                 type="basic" 
+                                className='border-b border-gray-300'
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Conversion strategy"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Conversion best practices documentation"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="2 hours coaching on strategy implementation"
                             />
                             <Td 
                                 type="basic" 
+                                className='border-b border-gray-300'
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Development of unique selling position"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Landing page design"
                             />
                             <Td 
-                                content="2 Iterations" type="basic" 
+                                content="2 Iterations" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="2 Iterations"
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Landing page programming/build"
                             />
                             <Td 
-                                content="1 Iterations" type="basic" 
+                                content="1 Iterations"
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="3 Iterations" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Multivariate conversion testing"
                             />
                             <Td 
-                                content="1 Iterations" type="basic" 
+                                content="1 Iterations" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="3 Iterations" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Copywriting"
                             />
                             <Td 
-                                content="By Quote" type="basic" 
+                                content="By Quote" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="By Quote" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="User testing"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Setup of auto responders"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className="border-b border-gray-300"
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="PPC campaign review"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Flash/jQuery interactive calls to action"
                             />
                             <Td 
                                 type="basic" 
+                                className='border-b border-gray-300'
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Conversion path implementation"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
-                            />
-                            <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
-                                type="premium" 
-                            />
-						</tr>
-                        <tr className="text-center text-black-80 border-b border-neutral-800">
-                            <Th
-                                className="text-left text-white font-normal"
-                                content="Lead forms integrated into CRM (ex. Salesforce.com)"
-                            />
-                            <Td 
+                                className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
+                                content="Lead forms integrated into CRM (ex. Salesforce.com)"
+                            />
+                            <Td 
+                                type="basic" 
+                                className='border-b border-gray-300'
+                            />
+                            <Td 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
+                                type="premium" 
+                            />
+						</tr>
+                        <tr className="text-center text-black-80 border-b border-neutral-800">
+                            <Th
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Performance test reporting"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Conversion reporting"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="450+ SMEs behind campaign driving results"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} type="basic" 
+                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Database integration"
                             />
                             <Td 
-                                content="By Quote" type="basic" 
+                                content="By Quote" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="By Quote" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Video creation & implementation"
                             />
                             <Td 
-                                content="By Quote" type="basic" 
+                                content="By Quote" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="By Quote" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Time frame"
                             />
                             <Td 
-                                content="7 weeks" type="basic" 
+                                content="7 weeks" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="10 to 14 weeks" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
                         <tr className="text-center text-black-80 border-b border-neutral-800">
                             <Th
-                                className="text-left text-white font-normal"
+                                className="text-left text-white border-b border-neutral-800 font-normal"
                                 content="Investment"
                             />
                             <Td 
-                                content="$2,400" type="basic" 
+                                content="$2,400" 
+                                className='border-b border-gray-300'
+                                type="basic" 
                             />
                             <Td 
                                 content="$3,200" 
+                                className='border-b border-gray-300'
                                 type="premium" 
                             />
 						</tr>
