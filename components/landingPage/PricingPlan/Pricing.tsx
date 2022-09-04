@@ -8,7 +8,7 @@ export default function Pricing() {
           Ecommerce PPC Management Services
         </h2>
         <div className="container mx-auto max-w-[1240px] justify-items-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-[60px] gap-5">
-          <div className="bg-white max-w-[400px] border rounded-lg border-black border-opacity-70">
+          <div className="bg-white overflow-hidden max-w-[400px] border rounded-lg border-black border-opacity-70">
             <div className="inline-flex flex-col space-y-[70px] items-center justify-between py-10 bg-[#FDF7F7] rounded-bl-lg rounded-br-lg w-full">
               <div className="flex flex-col items-center justify-start">
                 <Icon icon="star" customClasses="text-[#7E7B7B]" />
@@ -53,7 +53,7 @@ export default function Pricing() {
               </button>
             </div>
           </div>
-          <div className="bg-white border max-w-[400px] rounded-lg border-black border-opacity-70">
+          <div className="bg-white overflow-hidden border max-w-[400px] rounded-lg border-black border-opacity-70">
             <div className="inline-flex flex-col space-y-[70px] items-center justify-between py-10 bg-[#FCF0F0] rounded-bl-lg rounded-br-lg w-full">
               <div className="flex flex-col items-center justify-start">
                 <div className="flex items-center gap-x-[10px]">
@@ -101,7 +101,7 @@ export default function Pricing() {
               </button>
             </div>
           </div>
-          <div className="bg-white border rounded-lg max-w-[400px] border-black border-opacity-70">
+          <div className="bg-white overflow-hidden border rounded-lg max-w-[400px] border-black border-opacity-70">
             <div className="inline-flex flex-col space-y-[70px] items-center justify-between py-10 bg-[#FAE8E8] rounded-bl-lg rounded-br-lg w-full">
               <div className="flex flex-col items-center justify-start">
                 <div className="flex items-center gap-x-[10px]">

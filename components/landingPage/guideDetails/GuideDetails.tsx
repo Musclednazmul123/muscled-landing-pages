@@ -120,14 +120,14 @@ export default function GuideDetails({}: Props) {
           performance of your store.
         </p>
       </div>
-      <div className="max-w-[760px] relative lg:h-[628px] mt-[120px] overflow-hidden ">
+      <div className="max-w-[760px] relative 2xl:h-[628px] mt-[120px] overflow-hidden ">
         <img
           src="https://i.ibb.co/T2MYY7f/bg-back.png"
           alt="bg-image"
-          className="absolute bottom-0 object-scale-down left-0 w-full h-full"
+          className="absolute bottom-0 2xl:object-scale-down left-0 w-full h-full"
         />
-        <div className="relative z-30  md:gap-x-[30px] md:flex items-center mt-20 justify-center">
-          <div className="md:max-w-[450px]">
+        <div className="relative z-30  md:gap-x-[30px] 2xl:py-0 py-5 md:flex items-center 2xl:mt-20 justify-center">
+          <div className="md:max-w-[450px] 2xl:px-0 px-5">
             <p className="md:text-[40px] text-2xl font-bold md:leading-[60px] text-gray-50 md:text-left text-center">
               Need help with your Ecommerce PPC Management Services
             </p>
