@@ -5,7 +5,7 @@ import { Section } from "..";
 import { Table, Th, Td } from "../../Table";
 import Button from "../../Button";
 
-import { AiFillPhone } from "react-icons/ai";
+import { PhoneIcon } from "@heroicons/react/solid";
 
 import { tableHeader, tableBody, tableFooter } from "./const/table";
 
@@ -92,7 +92,7 @@ const Tables: React.FC = () => {
 											Information
 										</p>
 										<div className="flex gap-2 items-center mt-2 cursor-pointer">
-											<AiFillPhone className="fill-sky-500" />
+											<PhoneIcon className="fill-sky-500 w-6 h-6 rotate-[260deg]" />
 											<p className="text-sky-500 font-bold">
 												888-601-5359
 											</p>

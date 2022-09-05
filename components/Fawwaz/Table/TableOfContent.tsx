@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import { FaListAlt } from "react-icons/fa";
-import { BiChevronUp } from "react-icons/bi";
+import { ChevronUpIcon } from "@heroicons/react/outline"
 
 import { TableOfContentProps } from "../component.type";
 
@@ -24,7 +24,7 @@ const TableOfContent: FC<TableOfContentProps> = ({
 					<FaListAlt size={20} />
 					Table of Contents
 				</h2>
-				<BiChevronUp size={25} className={`${titleIconColor ? titleIconColor : "fill-white"} ${isOpen ? "rotate-0" : "rotate-180"}`}/>
+				<ChevronUpIcon className={`${titleIconColor ? titleIconColor : "fill-white"} ${isOpen ? "rotate-0" : "rotate-180"} w-8`}/>
 			</div>
 			<ul className={`w-full ${isOpen ? "h-auto" : "h-0 hidden"}`}>
 				<div className="py-8">

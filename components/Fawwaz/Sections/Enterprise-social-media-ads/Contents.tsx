@@ -4,8 +4,10 @@ import { Section } from "..";
 import { TableOfContent } from "../../Table";
 import { IconItem } from "components/Fawwaz/Card";
 
-import { AiOutlineRight, AiFillStar } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
+
+import { StarIcon } from "@heroicons/react/solid";
+import { ChevronRightIcon } from "@heroicons/react/outline";
 
 import {
 	learnMore,
@@ -45,7 +47,6 @@ const Contents: React.FC = () => {
 					<TableOfContent
 						bgColor="bg-[#FAE8E8]"
 						titleColor="text-black"
-						titleIconColor="fill-black"
 						isOpen={isOpen}
 						setIsOpen={() => setIsOpen((prev) => !prev)}
 						contents={contentsOfTOC.map((content, key) => (
@@ -265,15 +266,15 @@ const Contents: React.FC = () => {
 						read our:
 					</p>
 					<div className="flex">
-						<AiFillStar className="fill-yellow-400 text-3xl" />
-						<AiFillStar className="fill-yellow-400 text-3xl" />
-						<AiFillStar className="fill-yellow-400 text-3xl" />
-						<AiFillStar className="fill-yellow-400 text-3xl" />
-						<AiFillStar className="fill-yellow-400 text-3xl" />
+						<StarIcon className="fill-yellow-400 w-8" />
+						<StarIcon className="fill-yellow-400 w-8" />
+						<StarIcon className="fill-yellow-400 w-8" />
+						<StarIcon className="fill-yellow-400 w-8" />
+						<StarIcon className="fill-yellow-400 w-8" />
 					</div>
 					<div className="text-[#D2D2D2] font-medium flex items-center">
 						<p>INDUSTRY-LEADING 863 TESTIMONIALS</p>
-						<AiOutlineRight className="ml-8" />
+						<ChevronRightIcon className="ml-8 w-10" />
 					</div>
 					<p className="text-[#D2D2D2] font-normal">
 						MUSCLED Agency Rating 4.9 out of 5 with 267 ratings

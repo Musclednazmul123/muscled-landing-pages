@@ -9,17 +9,17 @@ import {
 	IconItem,
 } from "components/Fawwaz/Card";
 
-import { AiFillStar, AiOutlineRight } from "react-icons/ai";
-import { FaCheckCircle } from "react-icons/fa";
+import { StarIcon, CheckCircleIcon } from "@heroicons/react/solid";
+import { ChevronRightIcon } from "@heroicons/react/outline";
 
-const CheckIcon: FC = () => <FaCheckCircle className="fill-black w-6 h-6" />;
+const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
 
 const pricingCards = [
 	{
 		rate: "2,050",
 		title: "1-2 Social Network",
 		type: "basic",
-		star: [AiFillStar],
+		star: [StarIcon],
 		content: [
 			{
 				icon: <CheckIcon />,
@@ -43,7 +43,7 @@ const pricingCards = [
 		rate: "10,000",
 		title: "1-2 Social Network",
 		type: "premium",
-		star: [AiFillStar, AiFillStar],
+		star: [StarIcon, StarIcon],
 		content: [
 			{
 				icon: <CheckIcon />,
@@ -67,7 +67,7 @@ const pricingCards = [
 		rate: "65,000",
 		title: "1-2 Social Network",
 		type: "ultimate",
-		star: [AiFillStar, AiFillStar, AiFillStar],
+		star: [StarIcon, StarIcon, StarIcon],
 		content: [
 			{
 				icon: <CheckIcon />,
@@ -149,7 +149,7 @@ const Pricing: FC = () => {
 					<p className="text-2xl md:text-[40px] font-medium">
 						See Full Deliverables
 					</p>
-					<AiOutlineRight className="text-2xl md:text-5xl ml-10" />
+					<ChevronRightIcon className="w-14 md:text-5xl ml-10" />
 				</div>
 			</Section>
 		</>
