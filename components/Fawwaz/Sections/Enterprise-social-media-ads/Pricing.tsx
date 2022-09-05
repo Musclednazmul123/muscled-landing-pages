@@ -118,13 +118,13 @@ const Pricing: FC = () => {
 									)}
 								</div>
 							</CardHeader>
-							<CardContent className="space-y-9 my-10">
+							<CardContent className="space-y-9 my-10 min-h-[276px]">
 								{pricing.content.map((content, key) => (
 									<IconItem
 										key={key}
 										icon={content.icon}
 										title={content.title}
-										className="text-black-70 font-normal"
+										className="text-black-70 font-normal text-xl"
 									/>
 								))}
 							</CardContent>

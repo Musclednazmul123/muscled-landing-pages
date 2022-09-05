@@ -1,9 +1,7 @@
 import { FC } from "react";
 
 import { Section } from "..";
-import Logo from "../../Logo";
-
-import logo from "../../../assets/logos/logo1.png";
+import Icons from "components/assets/landingPageSVG/Icons";
 
 const Partner: FC = () => {
 	return (
@@ -12,11 +10,12 @@ const Partner: FC = () => {
 				<h3 className="text-black-50 text-2xl">Our Partners</h3>
 
 				<div className="pt-[27.55px] flex flex-wrap justify-between pb-12 gap-6">
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
+					<Icons icon="logo1" />
+					<Icons icon="logo2" />
+					<Icons icon="logo3" />
+					<Icons icon="logo4" />
+					<Icons icon="logo5" />
+					<Icons icon="logo6" />
 				</div>
 			</Section>
 		</div>

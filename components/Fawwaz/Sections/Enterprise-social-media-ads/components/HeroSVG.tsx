@@ -45,8 +45,8 @@ const values = [
 const HeroSVG: FC = () => {
 	return (
 		<div className="space-y-[10px]">
-			{values.map((value) => (
-				<div className="flex bg-black-80 py-2 w-[436px] pl-1">
+			{values.map((value, key) => (
+				<div key={key} className="flex bg-black-80 py-2 w-[436px] pl-1">
 					<Image
 						src={value.image.src}
 						alt={`${value.image.alt}`}

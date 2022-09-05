@@ -13,7 +13,7 @@ import Ticks from "./SVGIcons/Ticks";
 import Star from "./SVGIcons/Star";
 type Props = {
 	icon: string;
-	customClasses: string;
+	customClasses?: string;
 };
 
 export default function Icons({ icon, customClasses }: Props) {
