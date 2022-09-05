@@ -41,6 +41,22 @@ const listFour = [
   "Invite event responses",
   " And even more!",
 ];
+
+const listFive = [
+  "Create personalized ads for your e-commerce store to market directly to customers.",
+  "Use advanced targeting to reach a highly targeted audience of ready-to-buy customers.",
+  "Avoid wasting social ad spend and impressions by targeting broadly.",
+  "Direct marketing to your email list, previous customers, and friends of previous customers",
+  "Increase brand awareness by having social media users share your ads.",
+];
+
+const listSix = [
+  " Online stores",
+  "Consumer products",
+  "Goods for the consumer",
+  "Companies involved in food and nutrition",
+  "B2C specialty companies",
+];
 const TextSection = () => {
   return (
     <Section className=" text-[20px] pt-[10px] leading-[30px] text-[#000000]/[0.7]">
@@ -48,7 +64,7 @@ const TextSection = () => {
         title={`Muscled direct-to-consumer social media advertising services — what do our
         plans include?`}
       />
-      <p className="pt-[40px] leading-[30px] font-normal text-[#000000]/[0.7]">
+      <p className="pt-[40px] leading-[30px] font-normal text-[#000000]/[0.7] w-[760px]">
         We've broken down our custom D2C social ad deliverables in the table
         above. All of our plans are customized to support D2C brands in higher
         exposure, engagement, leads, and sales through top social channels
@@ -59,21 +75,26 @@ const TextSection = () => {
         <br />
         <TextList list={listOne} />
         You'll also have access to advanced ad targeting options, which are
-        especially beneficial for B2C businesses
-        <br />
-        <br />. Custom audiences can be created using social pixels or customer
-        lists.
+        especially beneficial for B2C businesses.
         <br />
         <br />
-        Targeting by keyword, interest, and user intent <br />
+        Custom audiences can be created using social pixels or customer lists.
+        <br />
+        <br />
+        Targeting by keyword, interest, and user intent
+        <br />
         <br />
         Targeting at school, profession, and workplace
         <br />
-        <br /> Targeting by company size, industry, job title, and so on
         <br />
-        <br /> Device selection <br />
+        Targeting by company size, industry, job title, and so on
         <br />
-        Demographic profiling <br />
+        <br />
+        Device selection
+        <br />
+        <br />
+        Demographic profiling
+        <br />
         <br />
         D2C e-commerce brands will also benefit from easier integration with
         platforms such as:
@@ -107,6 +128,69 @@ const TextSection = () => {
       <br />
       <br /> Contact our social experts online to learn how we can help your D2C
       brand grow!
+      <TextHeading title="The Advantages of Direct-to-Consumer Social Media Advertising" />
+      D2C social advertising has numerous advantages for businesses that sell
+      directly to consumers. <br />
+      <br />
+      You can use D2C social ads to:
+      <TextList list={listFive} />
+      If you want to get better results — and spend every penny on advertising
+      to customers who want to buy from you — social media ads are the way to
+      go.
+      <TextHeading title="Who should use direct-to-consumer social advertising?" />
+      Not sure if direct-to-consumer social advertising is a good idea?
+      <br />
+      D2C social media ads are ideal for the following companies:
+      <TextList list={listSix} />
+      Want to learn more and speak with a professional about whether D2C social
+      advertising is right for your company?
+      <br />
+      <br />
+      Contact Muscled and connect with one of our social experts!
+      <br />
+      <br />
+      Launch your D2C social ads right away!
+      <br />
+      <br />
+      Are you ready to begin with direct to consumer social media advertising?
+      <br />
+      <br />
+      Muscled can assist! We have over 25 years of experience developing
+      successful social ad campaigns for hundreds of satisfied customers. In
+      addition, we are a Meta Business Partner. You can be convinced that we
+      understand what it takes to get your company the ROI it deserves.
+      <br />
+      Contact our social media experts today. We're excited to provide social
+      media advertising services to help your D2C business grow!
+      <TextHeading title="FAQs about ecommerce PPC management services." />
+      <div className="text-[#000000]/0.7 bg-[#FFFFFF] mb-[20px] w-[760px] pl-[10px] pb-[10px] rounded-[10px]">
+        <section className="flex justify-between items-center">
+          <p className="font-semibold text-[20px] w-[400px] mb-[20px] pt-[10px]">
+            What are ecommerce PPC services?
+          </p>
+          <p className="w-[16px] h-[0px] border-[1px] border-[#000000] mr-[25px]"></p>
+        </section>
+        <p className="font-normal text-[20px] w-[730px]">
+          Ecommerce PPC services are for advertising on pay-per-click ad
+          networks, like Google Ads, Bing, Microsoft Advertising, Facebook, and
+          many more. You are to expect the development, management, and
+          monitoring of your ad campaigns.
+        </p>
+      </div>
+      <div className="text-[#000000]/0.7 bg-[#FFFFFF] mb-[100px] w-[760px] pl-[10px] pb-[10px] rounded-[10px]">
+        <section className="flex justify-between items-center">
+          <p className="font-semibold text-[20px] w-[463px] mb-[20px] pt-[10px]">
+            How much do ecommerce PPC services cost?
+          </p>
+          <p className="w-[16px] h-[0px] border-[1px] border-[#000000] mr-[25px]"></p>
+        </section>
+        <p className="font-normal text-[20px] w-[730px]">
+          Typically, ecommerce PPC plans cost $400 to $5000, it could also be 10
+          to 20% of your monthly ad spend. The price varies, depending on
+          several factors like your intended ad spend or the PPC agency’s
+          pricing.
+        </p>
+      </div>
     </Section>
   );
 };

@@ -13,6 +13,7 @@ export interface CardHeaderProps {
   rate: string;
   type?: "basic" | "premium" | "ultimate";
   description?: string;
+  bgColor?: string;
 }
 
 export interface CardContent {

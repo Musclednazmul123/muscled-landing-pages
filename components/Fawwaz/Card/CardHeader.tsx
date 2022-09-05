@@ -7,16 +7,19 @@ const CardHeader: FC<CardHeaderProps> = ({
   type,
   children,
   description,
+  bgColor,
 }) => {
   return (
     <div
-      className={`bg-[#fdf7f7] flex flex-col items-center justify-center py-10 ${
+      className={`bg-[#c40000]/0.03 flex flex-col items-center justify-center py-10 ${
         type === "premium"
           ? "bg-red-6"
           : type === "ultimate"
           ? "bg-red-9"
           : "bg-red-3"
-      }`}
+      }
+	 
+	  `}
     >
       {children}
       <h4 className="mt-4 mb-10 font-bold">{title}</h4>
