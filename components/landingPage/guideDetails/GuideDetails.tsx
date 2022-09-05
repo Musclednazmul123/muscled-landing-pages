@@ -145,7 +145,7 @@ export default function GuideDetails({}: Props) {
           <div className="flex items-center justify-center md:mt-0 mt-5 md:w-[200px] flex-shrink-0">
             <img
               src="https://i.ibb.co/MZBGHxf/Procfile.png"
-              className="h-[200px] w-full"
+              className="h-[200px] md:w-full w-[200px]"
             />
           </div>
         </div>
