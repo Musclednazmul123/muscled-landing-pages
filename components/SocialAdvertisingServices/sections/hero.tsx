@@ -55,7 +55,7 @@ const HeroSection: FC<HeroSectionProps> = ({
         </div>
       </div>
       {/* <div className="flex basis-[10%]"></div> */}
-      <div className="flex flex-col gap-y-4 items-center justify-center basis-[37%]">
+      <div className="flex flex-col items-center justify-center basis-[37%] max-h-[454px] self-center">
         {DisplayFeatures()}
       </div>
     </DynamicSection>

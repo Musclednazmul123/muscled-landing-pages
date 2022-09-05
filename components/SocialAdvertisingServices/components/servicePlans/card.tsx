@@ -19,8 +19,7 @@ const Card: FC<Card> = ({
     if (typeof Array != 'undefined' && Array != null) {
       for (let i = 0; i < Array; i++) {
         labels.push(
-          // <Image src={Star} alt="star" width={30} height={30} key={i} />
-          <Star key={i} opacity={'0.9'} />
+          <Star key={i} opacity={Array === 1 ? 0.5 : Array === 2 ? 0.7 : 0.9} />
         )
       }
     }
@@ -32,25 +31,34 @@ const Card: FC<Card> = ({
     splitLabels(stars)
     return features.map((item: string, key: number) => {
       return (
-        <div className="flex justify-around items-center w-full " key={key}>
+        <div
+          className="flex justify-between items-center w-full max-w-[340px]"
+          key={key}
+        >
           <Image
             src={CheckMark}
             alt="check"
             width={24}
             height={24}
-            className="basis-1/5 m-auto"
+            className="basis-[10%] m-auto"
           />
-          <p className="basis-4/5 text-[20px]">{item}</p>
+          <p
+            className={`basis-[90%] pl-2 text-[20px] ${
+              key === 0 ? 'whitespace-nowrap' : ''
+            }`}
+          >
+            {item}
+          </p>
         </div>
       )
     })
   }
   return (
     <div
-      className={`flex flex-col border-[1px] border-black rounded-xl basis-1/3 mx-2  ${className} ? ${className} : ''`}
+      className={`flex flex-col border-[1px] min-w-[400px] min-h-[776px] border-black rounded-xl basis-1/3 mx-2  ${className} ? ${className} : ''`}
     >
       <div
-        className={`flex flex-col items-center justify-around p-4 space-y-6  rounded-t-[10px] rounded-b-[10px]  ${
+        className={`flex flex-col items-center justify-around p-4 space-y-6 min-h-[300px]  rounded-t-[10px] rounded-b-[10px]  ${
           bgColor ? bgColor : ''
         }`}
       >
@@ -61,16 +69,22 @@ const Card: FC<Card> = ({
         >
           {displayStars()}
         </div>
-        <h4 className="text-[24px]">{packageName}</h4>
-        <h3 className="pt-12 text-red-base text-[40px]">${packagePrice}</h3>
+        <h4 className="text-[24px] uppercase">{packageName}</h4>
+        <h3 className="pt-12 text-red-base text-[40px] min-h-[52px] pb-4">
+          ${packagePrice}
+        </h3>
       </div>
-      <div className="p-4 basis-[60%] justify-around flex flex-col bg-white rounded-b-[10px]">
-        <div className="flex flex-col basis-3/5 justify-around border-b border-neutral-500 min-h-[200px] gap-y-4 pb-4">
+      <div className="py-4 basis-[60%] justify-around items-center flex flex-col bg-white rounded-b-[10px] min-h-[476px]">
+        <div className="flex flex-col justify-around min-h-[164px] gap-y-4">
           {displayFeatures()}
         </div>
-        <div className="basis-2/5 flex flex-col justify-center mt-4 space-y-4">
-          <p className="text-center text-[24px]">{includes}</p>
-          <Button text="Send Proposal" className=" mx-8" />
+        <div className="border-t border-[rgba(0,0,0,0.5)] border-[1px] min-w-[360px]"></div>
+        <div className=" flex flex-col  space-y-6 w-4/5 justify-around items-center mx-auto min-w-[320px]">
+          <p className="text-center text-[20px]">{includes}</p>
+          <Button
+            text="Send Proposal"
+            className="h-16 min-w-[226px] font-semibold"
+          />
         </div>
       </div>
     </div>

@@ -23,8 +23,8 @@ const ServicePlans: FC<ServicePackages> = ({ children, className }) => {
     })
   }
   return (
-    <div className="bg-neutral-200">
-      <DynamicSection className="flex-col my-8 p-4">
+    <div className="bg-[#f5f5f5] py-12">
+      <DynamicSection className="flex-col my-8">
         <h3 className="text-center my-12 text-[40px]">
           Explore Direct-to-Consumer Social Service Plans
         </h3>

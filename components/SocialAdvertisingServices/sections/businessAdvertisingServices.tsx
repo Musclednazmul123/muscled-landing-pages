@@ -18,18 +18,18 @@ const BusinessAdvertisingServices = () => {
     })
   }
   return (
-    <div className="bg-neutral-100 py-4 md:py-8">
-      <DynamicSection className="flex-col space-y-8 justify-around">
+    <div className="bg-neutral-100 pt-[240px] ">
+      <DynamicSection className="flex-col  justify-around">
         <div className="text-center basis-2/5">
-          <h2 className="font-bold mb-8 text-[40px]">
+          <h2 className="font-bold mb-[30px] text-[40px]">
             Social Media Advertising Services For Every Business
           </h2>
-          <h4 className="text-[24px]">
+          <p className="text-[24px] mb-[80px]">
             Check the D2C Ecommerce and Social Media Integration options from
             Muscled.
-          </h4>
+          </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-between basis-3/5 space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between basis-3/5 space-y-4 md:space-y-0 space-x-[35px]">
           {displayCards()}
         </div>
       </DynamicSection>

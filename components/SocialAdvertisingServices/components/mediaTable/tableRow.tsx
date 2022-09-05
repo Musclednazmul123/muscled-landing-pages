@@ -17,7 +17,7 @@ const TableRow: FC<tableRow> = ({
         isHead ? 'font-bold' : 'font-light'
       } text-center border-b border-neutral-500 text-[16px]`}
     >
-      <td className="px-4 py-8 bg-black-80 text-left text-white w-1/4">
+      <td className="px-4 py-8 bg-black-80 text-left text-white min-w-[310px] min-h-[84px]">
         {feature}
       </td>
       <Value featureValue={aggressive} type="aggressive" />

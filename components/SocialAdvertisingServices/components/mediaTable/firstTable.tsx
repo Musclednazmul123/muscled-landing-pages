@@ -23,26 +23,28 @@ const FirstTable = () => {
     })
   }
   return (
-    <DynamicSection className="flex-col overflow-x-auto">
-      <h2 className="text-center my-4 md:my-8 lg:my-16 text-[40px]">
+    <DynamicSection className="flex-col overflow-x-auto mt-">
+      <h2 className="text-center my-4 md:my-8 lg:my-16 text-[40px] text-black-80">
         Muscled's D2C Social Media Advertising Services
       </h2>
       <table className="rounded-xl my-8">
         <tbody>
-          <tr className="font-bold border-b border-neutral-500 text-center">
-            <td className="p-4  bg-black-80 text-white rounded-tl-xl text-left text-[16px]">
+          <tr className="font-bold border-b border-neutral-500 text-center min-h-[84px]">
+            <td className="p-4  bg-black-80 text-white rounded-tl-xl text-left text-[16px] h-[84px] w-[310px]">
               Features
             </td>
-            <td className="px-8 py-4 w-1/4 bg-red-3 text-[16px]">Aggressive</td>
-            <td className="px-8 py-4 w-1/4 bg-red-6 text-[16px]">
+            <td className="px-8 py-4  bg-red-3 text-[16px] h-[84px] w-[310px]">
+              Aggressive
+            </td>
+            <td className="px-8 py-4  bg-red-6 text-[16px] h-[84px] w-[310px]">
               Market Leader
             </td>
-            <td className="px-8 py-4 w-1/4 bg-red-9 rounded-tr-xl text-[16px]">
+            <td className="px-8 py-4  bg-red-9 rounded-tr-xl text-[16px] h-[84px] w-[310px]">
               Enterprise
             </td>
           </tr>
           {displayTableRows()}
-          <tr className="text-[16px]">
+          <tr className="text-[16px] max-h-[154px]">
             <td className="flex flex-col px-8 py-4 bg-black-80 text-white rounded-bl-xl ">
               <p className="my-4 text-[16px]">
                 Give Us a Call if You Need Information
