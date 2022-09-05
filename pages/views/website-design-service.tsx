@@ -3,6 +3,7 @@ import { NextPage } from "next/";
 
 import { Section, Hero } from "components/Fawwaz/Sections";
 import Logo from "components/Fawwaz/Logo";
+
 import WebsiteDesignService from "components/assets/svg/WebsiteDesignService";
 import logo from "components/assets/logo/logo1.png";
 

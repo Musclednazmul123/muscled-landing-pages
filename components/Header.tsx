@@ -114,12 +114,18 @@ const Header: FC = () => {
             <ChevronDownIcon className="w-6 h-5 ml-2" />
           </div>
           <div
-            className={`absolute top-15 ${
+            className={`absolute top-14 z-50 w-48 -left-4 ${
               modalOpen !== "2" && "hidden"
             } w-full py-2`}
           >
-            <ul>
-              <li className="p-2 bg-slate-50">sub-menu</li>
+            <ul className=" bg-slate-50">
+              {["website-design-service"].map((item: string) => (
+                <Link href={`/seo-marketing-services`}>
+                  <li className="p-2 cursor-pointer ">
+                    {item.replace(/-/g, " ")}
+                  </li>
+                </Link>
+              ))}
             </ul>
           </div>
         </div>
