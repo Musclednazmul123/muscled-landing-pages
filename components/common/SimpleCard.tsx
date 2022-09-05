@@ -10,7 +10,7 @@ const SimpleCard = ({ itemTitle, itemPara, buttonLabel }: SimpleCardProps) => {
       </p>
       <p className="w-[310px] h-[104px] mr-[40px] ml-[40px] ">{itemPara}</p>
       <span className="w-[227px] h-[66px] mr-[81.5px] ml-[81.5px] mt-[58px]">
-        <Button text={buttonLabel} arrow="small" />
+        <Button text={buttonLabel} arrow="arrowIcon" />
       </span>
     </div>
   );

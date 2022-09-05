@@ -1,18 +1,25 @@
-import Link from 'next/link'
-import React from 'react'
-import { FC } from 'react'
-import { ButtonProps } from '../types/types'
-
+import Link from "next/link";
+import React from "react";
+import { FC } from "react";
+import { ButtonProps } from "../types/types";
+import arrowIcon from "components/assets/Vector.png";
 interface Props {
-  arrow: String
+  arrow: String;
 }
 const Arrow = ({ arrow }: Props) => {
-  if (arrow === 'small') {
-    return <div className='ml-2'>Small</div>
+  if (arrow === "small") {
+    return <div className="ml-2">Small</div>;
+  }
+  if (arrow === "arrowIcon") {
+    return (
+      <div className="ml-[56px]">
+        <img src={arrowIcon.src} width="14px" height="12.25px" />
+      </div>
+    );
   }
 
-  return <div className='ml-2'>big</div>
-}
+  return <div className="ml-2">big</div>;
+};
 
 const Button: FC<ButtonProps> = ({
   text,
@@ -28,26 +35,26 @@ const Button: FC<ButtonProps> = ({
     <div>
       <button
         className={` text-white flex justify-center items-center text-md py-2 text-semibold px-5 w-full active:scale-[95%] ${
-          rounded ? 'rounded-full' : 'rounded-md'
-        } ${shadow && ' shadow-sm'} ${outline && ' border-2 border-gray-600'} ${
+          rounded ? "rounded-full" : "rounded-md"
+        } ${shadow && " shadow-sm"} ${outline && " border-2 border-gray-600"} ${
           violate
-            ? 'bg-[4E01A9]'
+            ? "bg-[4E01A9]"
             : red
-            ? 'bg-red-400'
+            ? "bg-red-400"
             : white
-            ? 'bg-white text-black'
-            : 'bg-black'
+            ? "bg-white text-black"
+            : "bg-black"
         }`}
       >
         {text}
-        {arrow !== undefined ? <Arrow arrow={arrow!} /> : ''}
+        {arrow !== undefined ? <Arrow arrow={arrow!} /> : ""}
         {/* <BiRightArrowAlt /> */}
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
 
 //default button will be black background aand white text, you can over write them by using this props
 
