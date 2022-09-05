@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 const Hero: FC<HeroSectionProps> = ({
 	title,
+	titleClassNames,
 	description,
 	descriptionTextColor,
 	heroSVG,
@@ -22,7 +23,7 @@ const Hero: FC<HeroSectionProps> = ({
 					<span>Home {router.asPath.replace("/", " > ")}</span>
 				</p>
 
-				<h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
+				<h1 className={`${titleClassNames ? titleClassNames : "text-[36px] leading-normal lg:text-[56px] lg:leading-72"} text-white mt-8 mb-5`}>
 					{title}
 				</h1>
 

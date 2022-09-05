@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 // Card
 export interface CardProps {
@@ -6,7 +6,7 @@ export interface CardProps {
 	className: string;
 }
 
-type CardHeaderType = "basic" | "premium" | "ultimate"
+type CardHeaderType = "basic" | "premium" | "ultimate";
 
 export interface CardHeaderProps {
 	children: ReactNode;
@@ -65,6 +65,15 @@ export interface TableBodyChildProps {
 	type: "basic" | "standard" | "premium" | "ultimate";
 }
 
+export interface TableOfContentProps {
+	bgColor?: string;
+	titleColor?: string;
+	titleIconColor?: string;
+	contents: JSX.Element[] | string[] | ReactNode;
+	isOpen: Boolean;
+	setIsOpen: () => void;
+}
+
 // Sections
 export interface SectionProps {
 	children: ReactNode;
@@ -78,10 +87,11 @@ export interface SectionProps {
 export interface HeroSectionProps {
 	pagination?: JSX.Element;
 	title: string;
+	titleClassNames?: string;
 	description: string;
 	descriptionTextColor?: string;
 	heroSVG?: JSX.Element | ReactNode;
-	input?:boolean;
+	input?: boolean;
 }
 
 // miscellaneous

@@ -16,7 +16,7 @@ import VideoFrame from "components/Fawwaz/VideoFrame";
 import { Table, Th, Td, TableOfContent } from "components/Fawwaz/Table";
 
 import SEOAuditSVG from "components/assets/svg/SEOAuditSVG";
-import logo from "components/assets/logo/logo1.png";
+import logo from "components/assets/logos/logo1.png";
 import sectionIcon from "components/assets/seo-box-icon.png";
 
 import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";

@@ -19,7 +19,7 @@ import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
 // assets
 // SVG
 import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
-import logo from "components/assets/logo/logo1.png";
+import logo from "components/assets/logos/logo1.png";
 import cardBg from "components/assets/qwe.png";
 import sectionIcon from "components/assets/1.png";
 
