@@ -86,7 +86,7 @@ export interface SectionProps {
 // hero
 export interface HeroSectionProps {
 	pagination?: JSX.Element;
-	title: string;
+	title: string | JSX.Element;
 	titleClassNames?: string;
 	description: string;
 	descriptionTextColor?: string;

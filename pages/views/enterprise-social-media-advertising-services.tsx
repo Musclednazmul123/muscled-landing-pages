@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { NextPage } from "next";
 
-import { Footer, Testimonial } from "components/Fawwaz/Sections";
+import { Testimonial } from "components/Fawwaz/Sections";
 import { Contents, Header, LastCards, Partner, Pricing, ReachOut, SocialMediaAds, Tables, TurnFollowers } from "../../components/Fawwaz/Sections/Enterprise-social-media-ads";
 
 const Page: NextPage = () => {

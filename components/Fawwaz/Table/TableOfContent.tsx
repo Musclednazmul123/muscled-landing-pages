@@ -19,7 +19,7 @@ const TableOfContent: FC<TableOfContentProps> = ({
 			<div
 				className={`${bgColor ? bgColor : "bg-[#3E5661]"} ${
 					titleColor ? titleColor : "text-white"
-				} rounded-md p-4 flex justify-between items-center`}>
+				} rounded-md p-4 flex justify-between items-center cursor-pointer`}>
 				<h2 className="flex items-center text-lg gap-2">
 					<FaListAlt size={20} />
 					Table of Contents
