@@ -11,6 +11,11 @@ import VideoFrame from "components/Fawwaz/VideoFrame";
 
 import WebsiteDesignService from "components/assets/svg/WebsiteDesignService";
 import logo from "components/assets/logo/logo1.png";
+import { TableOfContent } from "components/";
+import {
+  ChevronDoubleRightIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/outline";
 
 const Page: NextPage = () => {
   return (
@@ -121,6 +126,27 @@ const Page: NextPage = () => {
         </div>
       </Section>
       {/* End Pricing Table */}
+
+      <Section className="flex justify-between">
+        <div></div>
+
+        {/* Table of content */}
+        <TableOfContent
+          content={[
+            "Muscled’s website design services are an investment in the success of your site.",
+            "Award-winning web design. with open pricing.",
+            "Our collectionof websites.",
+            "What is included in Muscled’s Web Design servises.",
+            "Why use Muscled as your website design partner?",
+            "How Are Websites Designed by Muscled?",
+            "Why use Muscled as your website design partner?",
+            "Get Your Company a Website That is Focused on Performance.",
+          ]}
+          IconTable={<ChevronDoubleRightIcon />}
+          IconContent={<ChevronDownIcon />}
+        />
+        {/* End Table of content */}
+      </Section>
     </div>
   );
 };

@@ -120,7 +120,7 @@ const Header: FC = () => {
           >
             <ul className=" bg-slate-50">
               {["website-design-service"].map((item: string) => (
-                <Link href={`/website-design-service`}>
+                <Link href={`/website-design-service`} key={item}>
                   <li className="p-2 cursor-pointer ">
                     {item.replace(/-/g, " ")}
                   </li>
