@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { secondTableRow } from '../component.type'
+import Value from './featureValue'
 
 const SecondTableRow: FC<secondTableRow> = ({
   feature,
@@ -16,10 +17,8 @@ const SecondTableRow: FC<secondTableRow> = ({
       <td className="w-1/2 py-4 px-8 bg-black-80 text-white text-left">
         {feature}
       </td>
-      <td className="w-1/4 py-4 px-8 bg-red-6">{`${pixel ? 'Yes' : 'No'}`}</td>
-      <td className="w-1/4 py-4 px-8 bg-red-9">{`${
-        catalogs ? 'Yes' : 'No'
-      }`}</td>
+      <Value featureValue={pixel} type="pixel" />
+      <Value featureValue={catalogs} type="catalogs" />
     </tr>
   )
 }

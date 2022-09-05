@@ -83,6 +83,6 @@ export interface ListType {
 }
 
 export interface feature {
-  firstTableData: string
-  secondTableData: string
+  featureValue: string | boolean
+  type: string
 }

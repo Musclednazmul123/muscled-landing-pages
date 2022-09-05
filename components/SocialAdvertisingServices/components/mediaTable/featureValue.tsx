@@ -1,15 +1,41 @@
 import React, { FC, ReactNode } from 'react'
 import { feature } from '../component.type'
 
-const Value: FC<feature> = (
-  firstTableData: string,
-  secondTableData: boolean
-) => {
-  const displayValue = (data: string | boolean) => {
+const Value: FC<feature> = ({ featureValue, type }) => {
+  const setBg = (type: string) => {
+    switch (type) {
+      case 'aggressive': {
+        return 'bg-red-3'
+        break
+      }
+      case 'marketLeader': {
+        return 'bg-red-6'
+        break
+      }
+      case 'enterprise': {
+        return 'bg-red-9'
+        break
+      }
+      case 'pixel': {
+        return 'bg-red-6'
+        break
+      }
+      case 'catalogs': {
+        return 'bg-red-9'
+        break
+      }
+      default: {
+        return 'bg-red-3'
+        break
+      }
+    }
+  }
+
+  const displayValue = (data: string | boolean, type: string) => {
     if (typeof data === 'string') {
       if (data === 'true') {
         return (
-          <td className="px-4 py-8 bg-red-3 w-1/4">
+          <td className={`px-4 py-8  w-1/4 ${setBg(type)}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -25,16 +51,18 @@ const Value: FC<feature> = (
           </td>
         )
       } else {
-        return <td className="px-4 py-8 bg-red-3 w-1/4">{data}</td>
+        return <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>{data}</td>
       }
     } else if (typeof data === 'boolean') {
       if (data === true) {
-        return <td className="px-4 py-8 bg-red-3 w-1/4">Yes</td>
+        return <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>Yes</td>
       } else {
-        return <td className="px-4 py-8 bg-red-3 w-1/4">No</td>
+        return <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>No</td>
       }
+    } else {
+      return <td className={`px-4 py-8 w-1/4 bg-red-3}`}></td>
     }
   }
-  return displayValue(featureValue)
+  return displayValue(featureValue, type)
 }
 export default Value
