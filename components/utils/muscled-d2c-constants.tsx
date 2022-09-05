@@ -195,12 +195,12 @@ export const cardData: CardHeaderDataProps[] = [
       },
       {
         iconTitle: "Up to 5 campaigns",
-        class: "mt-4",
+        class: "mt-[20px]",
         // icon: <FaCheckCircle size={15} />,
       },
       {
         iconTitle: "Up to 20 ads",
-        class: "mt-4",
+        class: "mt-[20px]",
         // icon: <FaCheckCircle size={15} />,
       },
     ],
