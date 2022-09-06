@@ -118,7 +118,7 @@ const Header: FC = () => {
               } w-full py-2`}
           >
             <ul>
-              <Link href={`/website-rerender-services`}>
+              <Link href={`/website-redesign-services`}>
                 <li className='p-2 cursor-pointer bg-slate-50'>Website Rerender Services</li>
               </Link>
             </ul>

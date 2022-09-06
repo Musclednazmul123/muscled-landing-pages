@@ -6,6 +6,7 @@ import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
 import { Input } from "components/Fawwaz/Form";
 import Button from "components/Fawwaz/Button";
 import Logo from "components/Fawwaz/Logo";
+import RedesignSVG from "components/assets/svg/RedesignSVG";
 import {
     Card,
     CardHeader,
@@ -38,7 +39,7 @@ const Page: NextPage = () => {
                     All that you need to know about Muscled Digital Agency’s 
                     competitive website redesign services is right below. You 
                     can also fill out the form below to get an exact quote!"
-                    heroSVG={<SEOMarketingSVG className="w-80 lg:w-full" />}
+                    heroSVG={<RedesignSVG className="w-80 lg:w-full" />}
                     // input
                     button
                 />
