@@ -4,8 +4,13 @@ import { consumerAdvertisingList } from '../../data/questions'
 
 const ConsumerAdvertising = () => {
   return (
-    <div className="flex flex-col space-y3 md:space-y-6 lg:space-y-9">
-      <h3>The Benefits of direct to consumer social media advertising</h3>
+    <div
+      className="flex flex-col space-y3 md:space-y-6 lg:space-y-9"
+      id="consumerAdvertising"
+    >
+      <h3 className="font-bold text-[40px] leading-[52px] text-black-80">
+        The Benefits of direct to consumer social media advertising
+      </h3>
       <p>
         D2C social advertising grants many benefits for businesses selling
         directly to customers.

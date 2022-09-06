@@ -6,9 +6,9 @@ import Play from '../../playIcon'
 
 const CustomerMediaAdvertising = () => {
   return (
-    <div className="bg-red-50 py-12">
-      <DynamicSection className="py-8 flex-col md:flex-row space-y-4">
-        <div className="flex flex-col basis-[60%] gap-y-4 justify-center space-y-4">
+    <div className="bg-red-50 flex items-center h-[730px]">
+      <DynamicSection className="flex-col md:flex-row justify-center h-[570px]">
+        <div className="flex flex-col basis-[60%] space-y-4 justify-center">
           <h2 className="text-[40px]">
             What is direct-to-consumer social media advertising?
           </h2>
@@ -34,8 +34,8 @@ const CustomerMediaAdvertising = () => {
           </p>
         </div>
         <div className="basis-[10%]"></div>
-        <div className="flex flex-col justify-around basis-[30%] space-y-4">
-          <div className="bg-neutral-200 rounded-xl basis-[50%] space-y-4 min-w-[400px] min-h-[320px]">
+        <div className="flex flex-col justify-between basis-[30%]">
+          <div className="bg-neutral-200 rounded-xl basis-[50%] min-w-[400px] min-h-[320px]">
             <ReactPlayerModal
               url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               Icon={Play}
@@ -43,7 +43,7 @@ const CustomerMediaAdvertising = () => {
               height="100%"
             />
           </div>
-          <div className="bg-[#3E5661] p-8 flex justify-center md:justify-start items-center rounded-xl basis-[30%]">
+          <div className="bg-[#3E5661] py-8 pl-[40px] flex justify-center md:justify-start items-center rounded-xl basis-[30%] min-h-[200px]">
             <Button text="Send Proposal" className="px-8 py-4 font-semibold" />
           </div>
         </div>

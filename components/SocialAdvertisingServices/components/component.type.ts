@@ -37,12 +37,14 @@ export interface HeroButton {
 export interface logoProps {
   src: string
   className?: string
+  width?: number
+  height?: number
 }
 
 export interface Card {
   stars: number
   packageName: string
-  packagePrice: number
+  packagePrice: string
   features: string[]
   includes: string
   bgColor?: string
@@ -78,11 +80,19 @@ export interface secondTableRow {
 }
 
 export interface ListType {
-  content: string[]
+  content: string[] | unknown[]
   className?: string
+  id?: string
+  link?: string
 }
 
 export interface feature {
   featureValue: string | boolean
   type: string
+}
+
+export interface panel {
+  heading: string
+  description: string
+  index?: number
 }

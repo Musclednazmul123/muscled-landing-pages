@@ -51,13 +51,25 @@ const Value: FC<feature> = ({ featureValue, type }) => {
           </td>
         )
       } else {
-        return <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>{data}</td>
+        return (
+          <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>
+            <div className="w-[200px] m-auto leading-6">{data}</div>
+          </td>
+        )
       }
     } else if (typeof data === 'boolean') {
       if (data === true) {
-        return <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>Yes</td>
+        return (
+          <td className={`px-[20px] py-8 w-1/4 ${setBg(type)}`}>
+            <div className="w-[200px] m-auto">Yes</div>
+          </td>
+        )
       } else {
-        return <td className={`px-4 py-8 w-1/4 ${setBg(type)}`}>No</td>
+        return (
+          <td className={`px-[20px] py-8 w-1/4 ${setBg(type)}`}>
+            <div className="w-[200px] m-auto">No</div>
+          </td>
+        )
       }
     } else {
       return <td className={`px-4 py-8 w-1/4 bg-red-3}`}></td>

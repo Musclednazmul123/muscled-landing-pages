@@ -4,8 +4,13 @@ import { socialAdvertisingList } from '../../data/questions'
 
 const SocialAdvertising = () => {
   return (
-    <div className="space-y-3 md:space-y-6 lg:space-y-9 flex flex-col">
-      <h3>Why is D2C social advertising for?</h3>
+    <div
+      className="space-y-3 md:space-y-6 lg:space-y-9 flex flex-col"
+      id="socialAdvertising"
+    >
+      <h3 className="font-bold text-[40px] leading-[52px] text-black-80">
+        Why is D2C social advertising for?
+      </h3>
       <p>Unsure if direct to consumer social advertising is right for you?</p>
       <p>
         D2C social media ads are a perfect fit for the following businesses:

@@ -14,7 +14,7 @@ const SecondTableRow: FC<secondTableRow> = ({
         isHead ? 'font-bold' : 'font-light'
       } text-center border-b border-neutral-500 text-[16px]`}
     >
-      <td className="w-1/2 py-4 px-8 bg-black-80 text-white text-left">
+      <td className="w-1/2 py-4 px-[20px] bg-black-80 text-white text-left leading-6">
         {feature}
       </td>
       <Value featureValue={pixel} type="pixel" />

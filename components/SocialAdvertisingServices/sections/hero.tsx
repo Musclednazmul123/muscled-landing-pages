@@ -30,32 +30,43 @@ const HeroSection: FC<HeroSectionProps> = ({
       )
     })
   }
+  const getPath = () => {
+    let path = router.asPath
+    console.log(path)
+    path = path.replace('/', ' > ')
+    path = path.replace('-', ' ')
+    path = path.replace('-', ' ')
+    return path
+  }
+
   return (
-    <DynamicSection className="flex-col md:flex-row space-y-4 md:space-y-0 2xl:h-[75vh] justify-between">
-      <div className="flex flex-col xl:basis-[60%] text-white justify-around ">
-        <span>Home {router.asPath.replace('/', ' > ')}</span>
-        <div className="space-y-8 mb-4">
+    <DynamicSection className="flex-col md:flex-row  2xl:h-[75vh] justify-between">
+      <div className="flex flex-col xl:basis-[60%] text-white justify-center ">
+        <span className="uppercase mb-[30px]">Home {getPath()}</span>
+        <div className="">
           {/* text-2xl lg:text-3xl xl:text-5xl */}
-          <h2 className="my-2 font-bold text-white text-[56px]">{title}</h2>
-          <p className="text-left text-[20px] font-light mt-2 md:mt-0">
+          <p className="my-2 font-bold text-white text-[56px] whitespace-pre-line leading-[73px]">
+            {title}
+          </p>
+          <p className="text-left text-[20px] font-light mt-[20px] leading-8">
             {description}
           </p>
         </div>
-        <div className="flex flex-col md:flex-row w-full justify-between mt-2 md:mt-0">
+        <div className="flex flex-col md:flex-row w-full justify-center mt-[30px]">
           <Input
             placeholder="Enter your website link"
             type="text"
-            className="basis-[70%] h-16 border-gray-500 border-[1px]"
+            className="basis-[70%] h-[60px] w-[480px] border-gray-500 border-[1px]"
           />
           <Button
             text="Send Proposal"
-            className="basis-[30%] md:ml-2 mt-2 md:mt-0 h-16"
+            className="basis-[30%] ml-[10px] md:mt-0 h-[60px] w-[226px]"
             link="social-advertising-services"
           />
         </div>
       </div>
       {/* <div className="flex basis-[10%]"></div> */}
-      <div className="flex flex-col items-center justify-center basis-[37%] max-h-[454px] self-center">
+      <div className="flex flex-col items-center justify-center basis-[37%] max-h-[454px] ml-[80px] self-center">
         {DisplayFeatures()}
       </div>
     </DynamicSection>

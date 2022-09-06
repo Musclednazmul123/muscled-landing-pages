@@ -1,12 +1,45 @@
-export const contents: string[] = [
-  'Some D2C Social Media Examples',
-  'What do Muscled´s social media advertising services include?',
-  'What Kind of social media ads fit D2C brands?',
-  'The Benefits of direct to consumer social media advertising',
-  'Why is D2C social advertising for?',
-  'Launch your custom D2C social ads right away!',
-  'FAQs',
-  'Get the digital workout for your store with Muscled Digital Agency!'
+export const contents: { content: string; link: string }[] = [
+  {
+    content: 'Some D2C Social Media Examples',
+    link: 'socialMediaExamples'
+  },
+  {
+    content: 'What do Muscled´s social media advertising services include?',
+    link: 'advertisingServices'
+  },
+  {
+    content: 'What Kind of social media ads fit D2C brands?',
+    link: 'd2cBrands'
+  },
+  {
+    content: 'The Benefits of direct to consumer social media advertising',
+    link: 'consumerAdvertising'
+  },
+  {
+    content: 'Why is D2C social advertising for?',
+    link: 'socialAdvertising'
+  },
+  {
+    content: 'Launch your custom D2C social ads right away!',
+    link: 'launchAds'
+  },
+  {
+    content: 'FAQs',
+    link: 'faq'
+  },
+  {
+    content:
+      'Get the digital workout for your store with Muscled Digital Agency!',
+    link: 'socialMediaExamples'
+  }
+  // 'Some D2C Social Media Examples',
+  // 'What do Muscled´s social media advertising services include?',
+  // 'What Kind of social media ads fit D2C brands?',
+  // 'The Benefits of direct to consumer social media advertising',
+  // 'Why is D2C social advertising for?',
+  // 'Launch your custom D2C social ads right away!',
+  // 'FAQs',
+  // 'Get the digital workout for your store with Muscled Digital Agency!'
 ]
 
 export const d2cPartner: string[] = [

@@ -23,11 +23,11 @@ const FirstTable = () => {
     })
   }
   return (
-    <DynamicSection className="flex-col overflow-x-auto mt-">
-      <h2 className="text-center my-4 md:my-8 lg:my-16 text-[40px] text-black-80">
+    <DynamicSection className="flex-col overflow-x-auto ">
+      <h2 className="text-center my-[120px] text-[40px] text-black-80">
         Muscled's D2C Social Media Advertising Services
       </h2>
-      <table className="rounded-xl my-8">
+      <table className="rounded-xl">
         <tbody>
           <tr className="font-bold border-b border-neutral-500 text-center min-h-[84px]">
             <td className="p-4  bg-black-80 text-white rounded-tl-xl text-left text-[16px] h-[84px] w-[310px]">
@@ -45,24 +45,32 @@ const FirstTable = () => {
           </tr>
           {displayTableRows()}
           <tr className="text-[16px] max-h-[154px]">
-            <td className="flex flex-col px-8 py-4 bg-black-80 text-white rounded-bl-xl ">
-              <p className="my-4 text-[16px]">
+            <td className="flex flex-col px-8 py-[30px] bg-black-80 text-white rounded-bl-xl ">
+              <p className="my-4 text-[16px] leading-6">
                 Give Us a Call if You Need Information
               </p>
               <a className="flex" href="tel:+18886015359">
-                <Image src={PhoneImg} alt="phone" width={24} height={24} />
+                <div className="flex items-center">
+                  <Image src={PhoneImg} alt="phone" width={24} height={24} />
+                </div>
                 <p className="ml-2 font-bold text-[24px] text-[#48BBFC]">
                   888-601-5359
                 </p>
               </a>
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-3 text-center">
-              <Button text="Get Started" className="px-8 py-4 m-auto" />
+              <Button
+                text="Get Started"
+                className="px-8 py-4 m-auto font-semibold"
+              />
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-6 text-center">
-              <Button text="Get Started" className="px-8 py-4 m-auto" />
+              <Button
+                text="Get Started"
+                className="px-8 py-4 m-auto font-semibold"
+              />
             </td>
-            <td className="px-8 py-4 w-1/4 bg-red-9 rounded-br-xl text-center">
+            <td className="px-8 py-4 w-1/4 bg-red-9 rounded-br-xl text-center font-semibold">
               <Button text="Get Started" className="px-8 py-4" />
             </td>
           </tr>

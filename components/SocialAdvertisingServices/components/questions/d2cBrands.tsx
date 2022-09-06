@@ -4,8 +4,13 @@ import { AdTypes, AdObjectives } from '../../data/questions'
 
 const D2cBrands = () => {
   return (
-    <div className="space-y-3 md:space-y-6 lg:space-y-9 flex flex-col">
-      <h3>What Kind of social media ads fit D2C brands?</h3>
+    <div
+      className="space-y-3 md:space-y-6 lg:space-y-9 flex flex-col"
+      id="d2cBrands"
+    >
+      <h3 className="font-bold text-[40px] leading-[52px] text-black-80">
+        What Kind of social media ads fit D2C brands?
+      </h3>
       <p>For direct to consumer social media ads you can count on:</p>
       <List content={AdTypes} />
       <p>According to your D2C goals you customize the ad objectives to:</p>

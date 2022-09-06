@@ -55,7 +55,7 @@ const Card: FC<Card> = ({
   }
   return (
     <div
-      className={`flex flex-col border-[1px] min-w-[400px] min-h-[776px] border-black rounded-xl basis-1/3 mx-2  ${className} ? ${className} : ''`}
+      className={`flex flex-col border-[1px] min-w-[400px] min-h-[776px] border-black rounded-xl basis-1/3 mr-[20px]  ${className} ? ${className} : ''`}
     >
       <div
         className={`flex flex-col items-center justify-around p-4 space-y-6 min-h-[300px]  rounded-t-[10px] rounded-b-[10px]  ${

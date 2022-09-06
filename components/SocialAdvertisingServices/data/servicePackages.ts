@@ -7,7 +7,7 @@ export const features: string[] = [
 export const CardData: {
   stars: number
   packageName: string
-  packagePrice: number
+  packagePrice: string
   features: string[]
   includes: string
   bgColor: string
@@ -15,7 +15,7 @@ export const CardData: {
   {
     stars: 1,
     packageName: 'Bronze',
-    packagePrice: 4500,
+    packagePrice: '4,500',
     features: [
       '10 ecommerce posts / month',
       '1 ecommerce PPC network',
@@ -27,7 +27,7 @@ export const CardData: {
   {
     stars: 2,
     packageName: 'Silver',
-    packagePrice: 6300,
+    packagePrice: '6,300',
     features: [
       '20 ecommerce posts / month',
       '2 ecommerce PPC network',
@@ -39,7 +39,7 @@ export const CardData: {
   {
     stars: 3,
     packageName: 'Gold',
-    packagePrice: 7200,
+    packagePrice: '7,200',
     features: [
       '30 ecommerce posts / month',
       '3 ecommerce PPC network',

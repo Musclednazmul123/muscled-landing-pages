@@ -6,7 +6,10 @@ import Image from 'next/image'
 
 const SocialMediaExamples = () => {
   return (
-    <div className="flex flex-col space-y-3 md:space-y-6 lg:space-y-9">
+    <div
+      className="flex flex-col space-y-3 md:space-y-6 lg:space-y-9"
+      id="socialMediaExamples"
+    >
       <h3>Some D2C Social Media Examples</h3>
       <p>
         You have likely seen paid advertisements on various social media
@@ -30,19 +33,22 @@ const SocialMediaExamples = () => {
         <div
           className={
             styles.overlay +
-            ' p-4 text-white flex flex-col md:flex-row justify-between'
+            ' p-4 text-white flex flex-col md:flex-row justify-between items-center w-[760px] h-[568px]'
           }
         >
-          <div className="basis-3/5 p-4">
-            <h3 className="font-bold text-white my-4 md:my-8">
+          <div className="basis-3/5 min-w-[480px] min-h-[180px] p-4">
+            <h3 className="font-bold text-white mt-[80px] text-[40px] leading-[60px]">
               Need help with your Social media Advertising Services
             </h3>
-            <p className="text-2xl my-8">
+            <p className="text-[24px] font-bold mt-[20px] min-w-[480px] min-h-[180px] leading-[36px]">
               Check out our Ecommerce PPC Management Services
             </p>
-            <Button text="Veiw the Guide" className="my-4 md:my-8" />
+            <Button
+              text="Veiw the Guide"
+              className=" px-[40px] py-[15px] mb-[40px]"
+            />
           </div>
-          <div className="basis-2/5 flex justify-center items-center">
+          <div className="basis-2/5 w-[200px] flex justify-center items-center">
             <Image src={Pc} alt="computer" width={200} height={200} />
           </div>
         </div>

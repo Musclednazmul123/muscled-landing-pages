@@ -26,30 +26,34 @@ const SecondTable = () => {
       <table className="w-full my-8">
         <tbody>
           <tr className="text-center border-b border-neutral-500 font-bold text-[16px]">
-            <td className="w-1/2 py-4 px-8 bg-black-80 text-white text-left rounded-tl-xl">
+            <td className=" py-4 px-[20px] bg-black-80 text-white text-left rounded-tl-xl w-[600px]">
               Features
             </td>
-            <td className="w-1/4 py-4 px-8 bg-red-6">Integrations - Pixel</td>
-            <td className="w-1/4 py-4 px-8 bg-red-9 rounded-tr-xl">
+            <td className=" py-4 px-8 bg-red-6 w-[320px]">
+              Integrations - Pixel
+            </td>
+            <td className=" py-4 px-8 bg-red-9 rounded-tr-xl w-[320px]">
               Integrations - Catalogs
             </td>
           </tr>
           {displayRows()}
           <tr className="text-[16px]">
-            <td className="flex flex-col px-8 py-4 bg-black-80 text-white rounded-bl-xl">
+            <td className="flex flex-col px-[20px] py-[30px] bg-black-80 text-white rounded-bl-xl">
               <p className="my-4">Give Us a Call if You Need Information</p>
               <a className="flex" href="tel:+18886015359">
-                <Image src={PhoneImg} alt="phone" width={24} height={24} />
-                <p className="ml-2 font-bold text-[]24px text-[#48BBFC]">
+                <div className="flex items-center">
+                  <Image src={PhoneImg} alt="phone" width={24} height={24} />
+                </div>
+                <p className="ml-2 font-bold text-[24px] text-[#48BBFC]">
                   888-601-5359
                 </p>
               </a>
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-6 text-center">
-              <Button text="Get Started" className="px-8 py-4" />
+              <Button text="Get Started" className="px-8 py-4 font-semibold" />
             </td>
             <td className="px-8 py-4 w-1/4 bg-red-9 rounded-br-xl text-center">
-              <Button text="Get Started" className="px-8 py-4" />
+              <Button text="Get Started" className="px-8 py-4 font-semibold" />
             </td>
           </tr>
         </tbody>
