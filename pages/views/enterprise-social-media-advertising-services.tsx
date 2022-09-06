@@ -6,7 +6,7 @@ import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
 import Card from "components/Card";
 
- const Page: NextPage = () => {
+ const Page: NextPage = () => { 
 
     const list = [{"icon":true, "text":"15 hours quarterly"}, {"icon":true, "text":"$1,800 monthly investment"}, {"icon":true, "text":"Best for websites under 250 pages"}]
 	const list2 = [{"icon":true, "text":"25 hours quarterly"}, {"icon":true, "text":"$3,600 monthly investment"}, {"icon":true, "text":"Best for websites under 250 pages"}]

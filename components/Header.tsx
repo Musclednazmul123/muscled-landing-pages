@@ -9,12 +9,12 @@ import Link from 'next/link';
 const Header: FC = () => {
   const [modalOpen, setModalOpen] = useState<String>('')
 
-  return (
+  return ( 
     <div className='flex bg-white shadow-sm justify-between w-full items-center py-3 px-5 md:px-10 lg:px-20'>
       {/* Logo  */}
       <div className='relative h-10 w-32'>
         <Image  src={logo} layout='fill' className=' object-contain' />
-      </div>
+      </div> 
 
       {/* Menu */}
       <ul className='space-x-2 text-sm xl:text-md justify-center flex-1 mx-10 hidden lg:flex'>
@@ -32,7 +32,7 @@ const Header: FC = () => {
             className={`absolute top-15 z-50 ${
               modalOpen !== '1' && 'hidden'
             } w-full py-2`}
-          >
+          > 
             <ul>
               <Link href={`/seo-marketing-services`}>
                 <li className='p-2 cursor-pointer bg-slate-50'>SEO Marketing Services</li>

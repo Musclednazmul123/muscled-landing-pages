@@ -38,7 +38,7 @@ export class AppController {
     return {}
   }
 
-  
+
   @Render('services-for-paid-social-media-ad')
   @Get('/services-for-paid-social-media-ad')
   public servicesForPaidSocialMediaAd() {
@@ -51,7 +51,7 @@ export class AppController {
     return {}
   }
 
-  
+
 
   @Render('social-media-services')
   @Get('/social-media-services')
@@ -78,7 +78,7 @@ export class AppController {
     return {}
   }
 
-  
+
 
   @Render('muscled-d2c-social-advertising-services')
   @Get('/muscled-d2c-social-advertising-services')
@@ -86,11 +86,16 @@ export class AppController {
     return {}
   }
 
-  
+
   @Render('social-media-marketing-cost')
   @Get('/social-media-marketing-cost')
   public socialMediaMarketingCost() {
     return {}
   }
 
+  @Render('cms-development-services')
+  @Get('/cms-development-services')
+  public cmsDevelopmentServices() {
+    return {}
+  }
 }

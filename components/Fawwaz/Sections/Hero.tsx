@@ -6,7 +6,7 @@ import Button from "../Button";
 import { HeroSectionProps } from "../component.type";
 import { useRouter } from "next/router";
 
-const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
+const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => { 
 	const router =useRouter()
 	return (
 		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
