@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { NextPage } from "next/";
 
 import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
 import Button from "components/Fawwaz/Button";
-import { CarteServices, InputRange, OverBuild, Pricing } from "components";
+import {
+  CarteServices,
+  Input,
+  InputRange,
+  OverBuild,
+  Pricing,
+  Logo1,
+  Logo2,
+  Logo4,
+  Logo5,
+  Logo6,
+  Logo7,
+  Buttons,
+} from "components";
 import Logo from "components/Fawwaz/Logo";
 import image from "components/assets/image-14.png";
 import Covertion from "components/assets/Covertion.png";
@@ -17,7 +30,6 @@ import { Card } from "components/Fawwaz/Card";
 import VideoFrame from "components/Fawwaz/VideoFrame";
 
 import WebsiteDesignService from "components/assets/svg/WebsiteDesignService";
-import logo from "components/assets/logo/logo1.png";
 import { TableOfContent } from "components/";
 import {
   ChevronDoubleRightIcon,
@@ -26,6 +38,7 @@ import {
 import Link from "next/link";
 
 const Page: NextPage = () => {
+  const [value, setValue] = useState<string>("");
   return (
     <div>
       <div className="min-h-[890px] bg-black-70 px-3 lg:px-0">
@@ -33,19 +46,35 @@ const Page: NextPage = () => {
           title="Get a Custom Site That's Mobile and SEO Optimized with Website Design Services"
           description="With an award-winning design team, Muscled is a top web design company that builds cutting-edge, profitable websites that capture your brand, boost conversion rates, and help you reach your objectives."
           heroSVG={<WebsiteDesignService className="w-96 md:w-auto" />}
-          input
         />
+        <div className="flex flex-start mx-[100px]">
+          <Input
+            placeholder="Use calculator"
+            value={value}
+            onChange={(e: any) => setValue(e.target.value)}
+            className={
+              "w-[184px] bg-white h-[60px] placeholder:text-black placeholder:text-xl placeholder:font-normal pl-3 rounded-md"
+            }
+          />
+          <Buttons
+            title="Send me a quote"
+            width="w-[253px]"
+            height="h-[63px]"
+            className="ml-[10px] text-xl font-[600]"
+          />
+        </div>
       </div>
 
       <Section className="pt-16 text-center">
         <h3 className="text-2xl text-black-50">Our Partners</h3>
 
         <div className="flex flex-wrap justify-between gap-6 pt-5 pb-12">
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
-          <Logo src={logo.src} width={154} height={34} />
+          <Logo1 />
+          <Logo2 />
+          <Logo4 />
+          <Logo5 />
+          <Logo6 />
+          <Logo7 />
         </div>
       </Section>
 

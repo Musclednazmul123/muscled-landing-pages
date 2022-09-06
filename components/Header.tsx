@@ -1,10 +1,8 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import React from "react";
-import Image from "next/image";
-import logo from "components/assets/logo/logo1.png";
 import { ChevronDownIcon, MenuIcon } from "@heroicons/react/outline";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { MUSCLED } from "components";
 
 const Header: FC = () => {
   const [modalOpen, setModalOpen] = useState<String>("");
@@ -13,7 +11,7 @@ const Header: FC = () => {
     <div className="flex items-center justify-between w-full px-5 py-3 bg-white shadow-sm md:px-10 lg:px-20">
       {/* Logo  */}
       <div className="relative w-32 h-10">
-        <Image src={logo} layout="fill" className="object-contain " />
+        <MUSCLED />
       </div>
 
       {/* Menu */}
