@@ -165,7 +165,7 @@ const Contents: React.FC = () => {
 					))}
 
 					<img
-						src="https://picsum.photos/210"
+						src="https://picsum.photos/200"
 						alt=""
 						className="w-[760px] h-[525px] mt-[60px] mb-[60px]"
 					/>
