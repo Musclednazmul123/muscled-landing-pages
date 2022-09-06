@@ -3,7 +3,7 @@ import { NextPage } from "next/";
 
 import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
 import Button from "components/Fawwaz/Button";
-import { InputRange, OverBuild, Pricing } from "components";
+import { CarteServices, InputRange, OverBuild, Pricing } from "components";
 import Logo from "components/Fawwaz/Logo";
 import image from "components/assets/image-14.png";
 import Covertion from "components/assets/Covertion.png";
@@ -944,6 +944,39 @@ const Page: NextPage = () => {
           888-601-5359.
         </p>
       </Section>
+
+      {/* Services carte */}
+      <div className="flex justify-between mx-24 my-24">
+        <CarteServices
+          services={[
+            "Website Optimization Services",
+            "SEO Speed Optimization Pricing",
+            "SEO Audit",
+            "Convertion Rate Optimization",
+          ]}
+        />
+
+        <CarteServices
+          services={[
+            "Digital Marketing Services",
+            "SEO Service Packages",
+            "PPC",
+            "Website SEO Copywriting",
+            "All Internet Marketing Services",
+          ]}
+        />
+
+        <CarteServices
+          services={[
+            "SEO Design Services",
+            "SEO Web Design Company",
+            "Web Video Production",
+            "",
+            "",
+          ]}
+        />
+      </div>
+      {/* End Services carte */}
     </div>
   );
 };
