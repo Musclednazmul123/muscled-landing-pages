@@ -93,4 +93,10 @@ export class AppController {
     return {}
   }
 
+  @Render('website-redesign-services')
+  @Get('/website-redesign-services')
+  public websiteredesignservices() {
+    return {}
+  }
+
 }

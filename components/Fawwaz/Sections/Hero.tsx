@@ -6,8 +6,8 @@ import Button from "../Button";
 import { HeroSectionProps } from "../component.type";
 import { useRouter } from "next/router";
 
-const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
-	const router =useRouter()
+const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button }) => {
+	const router = useRouter()
 	return (
 		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
 			<div className="max-w-[640px]">
@@ -24,26 +24,42 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 					{description}
 				</p>
 
-				{input && 
-				
-				<div className="flex flex-wrap gap-2">
-					<Input
-						type="text"
-						placeholder="Enter Your Website Link"
-						className="text-sm flex-1 md:text-lg"
-					/>
-					<Button bgColor="bg-black" textColor="text-white">
-						<span className="text-sm md:text-lg">
-							Send Proposal
-						</span>
-					</Button>
-				</div>
+				{input &&
+
+					<div className="flex flex-wrap gap-2">
+						<Input
+							type="text"
+							placeholder="Enter Your Website Link"
+							className="text-sm flex-1 md:text-lg"
+						/>
+						<Button bgColor="bg-black" textColor="text-white">
+							<span className="text-sm md:text-lg">
+								Send Proposal
+							</span>
+						</Button>
+					</div>
+				}
+
+				{button &&
+
+					<div className="flex flex-wrap gap-2">
+						<Button bgColor="bg-white text-black" textColor="text-white">
+							<span className="text-sm md:text-lg">
+								View porfolio
+							</span>
+						</Button>
+						<Button bgColor="bg-black" textColor="text-white">
+							<span className="text-sm md:text-lg">
+								Build a custom quote
+							</span>
+						</Button>
+					</div>
 				}
 
 			</div>
 
 			<div>
-				{ heroSVG }
+				{heroSVG}
 			</div>
 		</Section>
 	);

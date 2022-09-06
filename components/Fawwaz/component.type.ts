@@ -74,6 +74,7 @@ export interface HeroSectionProps {
 	description: string;
 	heroSVG?: JSX.Element;
 	input?:boolean;
+	button?:boolean
 }
 
 // miscellaneous

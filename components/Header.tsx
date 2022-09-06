@@ -13,7 +13,7 @@ const Header: FC = () => {
     <div className='flex bg-white shadow-sm justify-between w-full items-center py-3 px-5 md:px-10 lg:px-20'>
       {/* Logo  */}
       <div className='relative h-10 w-32'>
-        <Image  src={logo} layout='fill' className=' object-contain' />
+        <Image src={logo} layout='fill' className=' object-contain' />
       </div>
 
       {/* Menu */}
@@ -29,9 +29,8 @@ const Header: FC = () => {
             <ChevronDownIcon className='h-5 w-6 ml-2' />
           </div>
           <div
-            className={`absolute top-15 z-50 ${
-              modalOpen !== '1' && 'hidden'
-            } w-full py-2`}
+            className={`absolute top-15 z-50 ${modalOpen !== '1' && 'hidden'
+              } w-full py-2`}
           >
             <ul>
               <Link href={`/seo-marketing-services`}>
@@ -78,8 +77,8 @@ const Header: FC = () => {
                 <li className='p-2 cursor-pointer bg-slate-50'>Social Media Marketing Cost</li>
               </Link>
 
-              
-              
+
+
             </ul>
           </div>
         </div>
@@ -95,9 +94,8 @@ const Header: FC = () => {
             <ChevronDownIcon className='h-5 w-6 ml-2' />
           </div>
           <div
-            className={`absolute top-15 ${
-              modalOpen !== '2' && 'hidden'
-            } w-full py-2`}
+            className={`absolute top-15 ${modalOpen !== '2' && 'hidden'
+              } w-full py-2`}
           >
             <ul>
               <li className='p-2 bg-slate-50'>sub-menu</li>
@@ -116,12 +114,13 @@ const Header: FC = () => {
             <ChevronDownIcon className='h-5 w-6 ml-2' />
           </div>
           <div
-            className={`absolute top-15 ${
-              modalOpen !== '3' && 'hidden'
-            } w-full py-2`}
+            className={`absolute top-15 ${modalOpen !== '3' && 'hidden'
+              } w-full py-2`}
           >
             <ul>
-              <li className='p-2 bg-slate-50'>sub-menu</li>
+              <Link href={`/website-rerender-services`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Website Rerender Services</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -138,9 +137,8 @@ const Header: FC = () => {
           </div>
 
           <div
-            className={`absolute top-15 ${
-              modalOpen !== '4' && 'hidden'
-            } w-full py-2`}
+            className={`absolute top-15 ${modalOpen !== '4' && 'hidden'
+              } w-full py-2`}
           >
             <ul>
               <li className='p-2 bg-slate-50'>sub-menu</li>
@@ -160,9 +158,8 @@ const Header: FC = () => {
           </div>
 
           <div
-            className={`absolute top-15 ${
-              modalOpen !== '5' && 'hidden'
-            } w-full py-2`}
+            className={`absolute top-15 ${modalOpen !== '5' && 'hidden'
+              } w-full py-2`}
           >
             <ul>
               <li className='p-2 bg-slate-50'>sub-menu</li>
