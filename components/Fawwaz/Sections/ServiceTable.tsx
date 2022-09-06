@@ -1,6 +1,7 @@
 import React from 'react';
 import {Table, Td, Th} from '../../../components/Fawwaz/Table';
-import { AiOutlineCheck, AiFillPhone } from 'react-icons/ai';
+import OutlineCheck from 'components/assets/svg/OutlineCheck';
+import FillPhone from 'components/assets/svg/FillPhone';
 import Button from 'components/Fawwaz/Button';
 
 const ServiceTable = () => {
@@ -38,13 +39,13 @@ const ServiceTable = () => {
                                 content="Fully Responsive Design Across All Devices (Desktop, Mobile, Tablet)"
                             />
                             <Td 
-                                content={<AiOutlineCheck 
-                                className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" 
+                             />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -55,12 +56,12 @@ const ServiceTable = () => {
                                 content="Online project management scheduling"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -71,12 +72,12 @@ const ServiceTable = () => {
                                 content="Dedicated account representative"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -91,7 +92,7 @@ const ServiceTable = () => {
                                 className='border-b border-gray-300'
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -102,12 +103,12 @@ const ServiceTable = () => {
                                 content="Conversion strategy"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -118,12 +119,12 @@ const ServiceTable = () => {
                                 content="Conversion best practices documentation"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -138,7 +139,7 @@ const ServiceTable = () => {
                                 className='border-b border-gray-300'
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -149,12 +150,12 @@ const ServiceTable = () => {
                                 content="Development of unique selling position"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -229,12 +230,12 @@ const ServiceTable = () => {
                                 content="User testing"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -245,12 +246,12 @@ const ServiceTable = () => {
                                 content="Setup of auto responders"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className="border-b border-gray-300"
                                 type="premium" 
                             />
@@ -261,12 +262,12 @@ const ServiceTable = () => {
                                 content="PPC campaign review"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -281,7 +282,7 @@ const ServiceTable = () => {
                                 className='border-b border-gray-300'
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -292,12 +293,12 @@ const ServiceTable = () => {
                                 content="Conversion path implementation"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -312,7 +313,7 @@ const ServiceTable = () => {
                                 className='border-b border-gray-300'
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -323,12 +324,12 @@ const ServiceTable = () => {
                                 content="Performance test reporting"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -339,12 +340,12 @@ const ServiceTable = () => {
                                 content="Conversion reporting"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -355,12 +356,12 @@ const ServiceTable = () => {
                                 content="450+ SMEs behind campaign driving results"
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="basic" 
                             />
                             <Td 
-                                content={<AiOutlineCheck className="mx-auto text-xl fill-green-500" />} 
+                                content={<OutlineCheck className="mx-auto text-xl" />} 
                                 className='border-b border-gray-300'
                                 type="premium" 
                             />
@@ -438,8 +439,8 @@ const ServiceTable = () => {
                                         Give Us a Call if You Need Information
                                         </p>
                                         <div className="flex gap-2 items-center mt-2 cursor-pointer">
-                                            <AiFillPhone className="fill-sky-500 text-2xl" />
-                                            <p className="text-sky-500 text-2xl font-bold">
+                                            <FillPhone className="fill-sky-500 text-2xl" />
+                                            <p className="text-sky-500 md:text-2xl font-bold">
                                                 888-601-5359
                                             </p>
                                         </div>

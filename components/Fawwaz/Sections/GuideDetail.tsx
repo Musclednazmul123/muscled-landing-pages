@@ -4,8 +4,8 @@ import GuideItem from '../../extra/GuideItem';
 import TableOfContents from '../../extra/TableOfContents';
 import Button from 'components/Fawwaz/Button';
 import SpeechBubbleStar from 'components/assets/svg/SpeechBubbleStar';
-import { BiChevronRight } from 'react-icons/bi';
-import { AiFillStar } from 'react-icons/ai'
+import ChevronSingleRight from 'components/assets/svg/ChevronSingleRight';
+import FillStar from 'components/assets/svg/FillStar';
 
 const GuideDetail = () => {
     return (
@@ -437,15 +437,15 @@ const GuideDetail = () => {
                                     </h4>
                                     <h4 className='text-3xl text-white font-bold'>marketing services,please read our:</h4>
                                     <div className='flex text-[#F8CC25]'>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
+                                        <FillStar />
+                                        <FillStar />
+                                        <FillStar />
+                                        <FillStar />
+                                        <FillStar />
                                     </div>
                                     <div className='flex items-center text-[#D2D2D2] text-base'>
                                         <p className='leading-[24px] mr-4'>INDUSTRY-LEADING 863 TESTIMONIALS</p>
-                                        <BiChevronRight size={36}/>
+                                        <ChevronSingleRight />
                                     </div>
                                     <div className='flex items-center text-[#D2D2D2] text-base'>
                                         <p className='leading-[24px]'>MUSCLED Agency Rating 4.9 out of 5 with 267 ratings</p>

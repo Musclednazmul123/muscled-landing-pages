@@ -1,6 +1,8 @@
 import React, { FC, useState } from 'react';
 import { TableOfContentsProps } from '../../components/Fawwaz/component.type';
-import { BiChevronDown, BiChevronUp, BiChevronsRight } from "react-icons/bi";
+import ChevronDown from 'components/assets/svg/ChevronDown';
+import ChevronUp from 'components/assets/svg/ChevronUp';
+import ChevronRight from 'components/assets/svg/ChevronRight';
 import { FaListAlt } from "react-icons/fa";
 
 
@@ -18,14 +20,16 @@ const TableOfContents: FC<TableOfContentsProps> = ({questions}) => {
                         Table of Contents
                     </h2>
                     <div className='tbl-content-btn text-black' onClick={()=>setShowContent(!showContent)}>
-                        {showContent ? <BiChevronUp size={25} /> : <BiChevronDown size={25} />}
+                        {showContent ? <ChevronUp /> : <ChevronDown />}
                     </div>
                 </div>
                 {showContent &&
                     <div className='table-content w-full flex flex-col gap-2'>
                         {questions.map((item, index) => (
                             <div className='flex items-center gap-2 mx-4 mt-2'>
-                                <BiChevronsRight />
+                                <span>
+                                <ChevronRight />
+                                </span>
                                 <p key={index}>{item.question}</p>
                             </div>
                         ))
