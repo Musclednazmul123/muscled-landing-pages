@@ -914,8 +914,8 @@ export default function ServiceTable({}: Props) {
 								content={
 									<>
 										<p>Give Us a Call if You Need Information</p>
-										<div className="flex gap-2 items-center mt-2 cursor-pointer">
-											<AiFillPhone className="fill-sky-500" />
+										<div className="flex gap-2 whitespace-nowrap items-center mt-2 cursor-pointer">
+											<AiFillPhone className="fill-sky-500 w-[32px] h-[32px]" />
 											<p className="text-sky-500 font-bold lg:text-[24px]">
 												888-601-5359
 											</p>
