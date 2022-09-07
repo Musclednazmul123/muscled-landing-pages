@@ -89,3 +89,8 @@ export interface VideoFrameProps {
 	sourceURL?: string;
 	allowFullScreen?: boolean;
 }
+
+export interface TestmonailProps {
+	p1?:string,
+	p2?:string,
+}
