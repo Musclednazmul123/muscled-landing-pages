@@ -29,21 +29,12 @@ const Hero14: NextPage<IProps> = ({
         <h1 className="my-20 leading-[72.8px] text-56">{title}</h1>
         <p className="text-xl font-normal leading-10 mb-30">{desc}</p>
         <div className="flex flex-start">
-          {/* <Input
-            placeholder={input?.placeholder}
-            type={input?.type || "text"}
-            value={input.value}
-            onChange={input?.onChange}
-            className={`w-[184px] bg-white h-[60px] placeholder:text-black placeholder:text-xl placeholder:font-normal py-4 px-5 rounded-xs ${input?.className}`}
-          />
-          <Buttons
-            title={buttons?.title}
-            onClick={buttons?.onClick}
-            width="w-[253px]"
-            height="h-[63px]"
-            className={`${buttons?.className}`}
-          /> */}
-          {children}
+          {/* @ts-ignore */}
+          {children.map((item: JSX.Element, idx: number) => (
+            <div key={title + idx.toString()} onClick={() => console.log(idx)}>
+              {item}
+            </div>
+          ))}{" "}
         </div>
       </div>
       <HeroIcon className="w-[436px]" />

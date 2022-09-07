@@ -1,13 +1,12 @@
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import { ErrorFallback } from "../../helpers";
-import { Card } from "../../components/Fawwaz/Card";
-import { Section } from "../../components/Fawwaz/Sections";
-import ReactPlayerModal from "../../components/ReactPlayerModal";
-import playIcon from "../../components/playIcon";
-import Button from "../Fawwaz/Button";
-import Image_14 from "../assets/image-14.png";
-import Buttons from "./Buttons";
+import { ErrorFallback } from "../../../helpers";
+import { Card } from "../../Fawwaz/Card";
+import { Section } from "../../Fawwaz/Sections";
+import ReactPlayerModal from "../../ReactPlayerModal";
+import playIcon from "../../playIcon";
+import Image_14 from "../../assets/image-14.png";
+import Buttons from "../Buttons";
 
 const DesignSevices = () => {
   return (

@@ -15,8 +15,8 @@ const OverBuild = () => {
         </Button>
       </div>
 
-      <div className="flex flex-col justify-between ml-4 text-center">
-        <h4 className="text-white">We’ve over biuld</h4>
+      <div className="flex flex-col justify-between ml-4 text-center h-[257px]">
+        <h4 className="text-white uppercase">We’ve over biuld</h4>
         <div className="flex">
           {["1", "5", "0", "0"].map((item: string) => (
             <div
@@ -28,7 +28,7 @@ const OverBuild = () => {
           ))}
         </div>
         <h4 className="text-white">WEBSITES</h4>
-        <h6 className="text-white">in a variety of industries.</h6>
+        <h6 className="text-white uppercase">in a variety of industries.</h6>
       </div>
     </div>
   );

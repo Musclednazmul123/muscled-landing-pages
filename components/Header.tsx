@@ -10,8 +10,8 @@ const Header: FC = () => {
   return (
     <div className="flex items-center justify-between w-full px-5 py-3 bg-white shadow-sm md:px-10 lg:px-20">
       {/* Logo  */}
-      <div className="relative w-32 h-10">
-        <MUSCLED />
+      <div className="relative">
+        <MUSCLED className="h-[25px] w-[127px]" />
       </div>
 
       {/* Menu */}

@@ -14,7 +14,12 @@ const Pricing: NextPage<IProps> = ({ title, desc, children }) => {
       <p className="text-lg">{desc}</p>
 
       <div className="flex flex-col justify-between mt-16 h-[1045px]">
-        {children}
+        {/* @ts-ignore */}
+        {children.map((item: JSX.Element, idx: number) => (
+          <div key={title + idx.toString()} onClick={() => console.log(idx)}>
+            {item}
+          </div>
+        ))}{" "}
       </div>
     </div>
   );

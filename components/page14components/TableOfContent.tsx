@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from "react";
 
 import { FaListAlt } from "react-icons/fa";
-import { BiUpArrowAlt } from "react-icons/bi";
 
 interface IProps {
   IconContent?: ReactNode;
