@@ -5,12 +5,12 @@ import Button from "../Button";
 
 const DirectToConsumer = () => {
   return (
-    <div className="w-50 bg-[#C40000]/[.06] h-[804px] mt-[100px] flex  ">
-      <div className="w-6/12 h-[804px] flex flex-col ml-[50px] mr-[80px] ">
-        <p className="text-[35px] font-bold mt-[80px] mb-[20px] w-[760px] ">
+    <div className="w-50 bg-[#C40000]/[.06] h-[804px] mt-[100px] flex pb-[80px] ">
+      <div className="w-6/12 h-[804px] flex flex-col ml-[50px] mr-[30px] pl-[50px] ">
+        <p className="text-[40px] font-bold mt-[80px] mb-[20px] w-[760px] h-[104px] leading-[52px] not-italic ">
           What exactly is direct-to-consumer social media advertising?
         </p>
-        <p>
+        <p className="text-[20px] leading-[30px] font-normal not-italic w-[760px] h-[520px]">
           Paid social media ads are an excellent way to increase your D2C
           company's visibility on social media platforms. Social algorithms have
           made it more difficult to reach and engage consumers in their news
@@ -31,15 +31,22 @@ const DirectToConsumer = () => {
           services, please call us.{" "}
         </p>
       </div>
-      <div className="w-6/12 h-[804px] mr-[50px] flex flex-col items-center">
-        <div className="bg-[#D9D9D9] w-[350px] h-[320px] mt-[117px]">
+      <div className="w-6/12 h-[804px] flex flex-col items-center ">
+        <div className="bg-[#D9D9D9] w-[400px] h-[320px] mt-[117px] rounded-[10px] bg-[#1c1c1c]">
           <ReactPlayer
-            width="350px"
+            width="400px"
             height="320px"
             url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+            style={{
+              borderRadius: "10px",
+              paddingTop: "2.5px",
+              paddingBottom: "2.5px",
+              paddingLeft: "2.5px",
+              paddingRight: "2.5px",
+            }}
           />
         </div>
-        <div className="bg-[#3E5661]  w-[350px] h-[200px] mt-[50px] flex justify-start items-center pl-[40px]">
+        <div className="bg-[#3E5661]  w-[400px] h-[200px] mt-[50px] flex justify-start items-center pl-[40px] rounded-[10px]">
           <Button text="Send Proposal" />
         </div>
       </div>
