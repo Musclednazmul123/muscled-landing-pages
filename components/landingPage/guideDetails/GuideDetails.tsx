@@ -9,7 +9,7 @@ export default function GuideDetails({}: Props) {
 				<h2 className="md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80">
 					What does our PPC Management Service Offer?
 				</h2>
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70 mt-10">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70 mt-10">
 					You just need to turn the key to get things going.
 					<br />
 					<br />
@@ -29,16 +29,16 @@ export default function GuideDetails({}: Props) {
 				</p>
 			</div>
 			<div className="mt-20">
-				<p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] font-bold text-black text-opacity-70">
 					Google Shopping
 				</p>
 				<br />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					We’ll secure you a prime spot in the user search results with Google
 					Ads.
 				</p>
 				<div className="bg-gray-300 my-5 h-[320px]" />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					The people that are ready to buy the product you offer will see your
 					ads first.
 					<br />
@@ -50,15 +50,15 @@ export default function GuideDetails({}: Props) {
 				</p>
 			</div>
 			<div className="mt-20">
-				<p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] font-bold text-black text-opacity-70">
 					Google Ads
 				</p>
 				<br />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Google Ads will help you maximize your real estate results.
 				</p>
 				<div className="bg-gray-300 my-5 h-[320px]" />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Improve your brand awareness and sales. Advertise your brand and
 					products. You don’t have to worry about shopping cart abandonment, our
 					diverse pay-per-click ad strategies are here for you. Expect us to
@@ -66,16 +66,16 @@ export default function GuideDetails({}: Props) {
 				</p>
 			</div>
 			<div className="mt-20">
-				<p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] font-bold text-black text-opacity-70">
 					Bing Ads
 				</p>
 				<br />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Bing Ads are now called Microsoft Advertising, which we are more than
 					happy to cover.
 				</p>
 				<div className="bg-gray-300 my-5 h-[320px]" />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Gain an edge over your competitors who brushed off Bing Ads with a
 					dedicated campaign that is ready to be made at your call. Get ready to
 					make more sales, expand your brand awareness even further, and snatch
@@ -84,31 +84,31 @@ export default function GuideDetails({}: Props) {
 				</p>
 			</div>
 			<div className="mt-20">
-				<p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] font-bold text-black text-opacity-70">
 					Remarketing
 				</p>
 				<br />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					You have an option to deal with 96% of the people that left your store
 					without touching anything.
 				</p>
 				<br />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Remarketing will be here to help you advertise to people that have
 					seen your products before. Expect your company, along with your
 					account manager, to get shoppers back and make sales.
 				</p>
 			</div>
 			<div className="mt-20">
-				<p className="md:text-xl text-base leading-[30px] font-bold text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] font-bold text-black text-opacity-70">
 					GoDataFeed
 				</p>
 				<br />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Let our team handle your GoDataFeed.
 				</p>
 				<div className="bg-gray-300 my-5 h-[320px]" />
-				<p className="md:text-xl text-base leading-[30px] text-black text-opacity-70">
+				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70">
 					Spend your time dealing with more transactions, taking care of your
 					inventory, and growing your business. Count on us to watch your
 					GoDataFeed close.
@@ -120,19 +120,18 @@ export default function GuideDetails({}: Props) {
 					performance of your store.
 				</p>
 			</div>
-			{/* MOOVOVOVOVO */}
-			<div className="max-w-[760px] relative lg:h-[628px] mt-[120px] overflow-hidden ">
+			<div className="max-w-[760px] relative 2xl:h-[628px] mt-[120px] overflow-hidden ">
 				<img
 					src="https://i.ibb.co/T2MYY7f/bg-back.png"
 					alt="bg-image"
-					className="absolute bottom-0 object-scale-down left-0 w-full h-full"
+					className="absolute bottom-0 2xl:object-scale-down left-0 w-full h-full"
 				/>
-				<div className="relative z-30 md:p-10 p-5 md:flex items-center mt-20 justify-center">
-					<div>
-						<p className="md:text-4xl text-2xl font-bold md:leading-[60px] text-gray-50 md:text-left text-center">
+				<div className="relative z-30 xl:pb-20  md:gap-x-[30px] 2xl:py-0 py-5 md:flex items-center 2xl:mt-20 justify-center">
+					<div className="md:max-w-[450px] 2xl:px-0 pl-5">
+						<p className="md:text-[40px]  text-2xl font-bold md:leading-[60px] text-gray-50 md:text-left text-center">
 							Need help with your Ecommerce PPC Management Services
 						</p>
-						<p className="md:text-2xl text-lg font-bold leading-[36px] text-gray-50 mt-5 md:text-left text-center">
+						<p className="md:text-2xl text-lg font-bold md:leading-[36px] text-gray-50 mt-5 md:text-left text-center">
 							Check out our
 							<br />
 							Ecommerce PPC Management
@@ -143,20 +142,23 @@ export default function GuideDetails({}: Props) {
 							View the Guide
 						</button>
 					</div>
-					<div className="flex items-center justify-center md:mt-0 mt-5 md:w-1/2">
-						<img src="https://i.ibb.co/MZBGHxf/Procfile.png" />
+					<div className="flex items-center justify-center md:mt-0 mt-5 md:w-[200px] flex-shrink-0">
+						<img
+							src="https://i.ibb.co/MZBGHxf/Procfile.png"
+							className="h-[200px] md:w-full w-[200px]"
+						/>
 					</div>
 				</div>
 			</div>
 
-			{/* MOOVOVOVOVO */}
 			<div className="mt-[120px]">
-				<h2 className="md:text-4xl text-2xl font-bold leading-[52px] text-black text-opacity-80">
+				<h2 className="md:text-4xl text-2xl font-bold md:leading-[52px] text-black text-opacity-80">
 					How do We Go About Our PPC Management Service?
 				</h2>
 				<p className="md:text-xl text-base md:leading-[30px] text-black text-opacity-70 mt-10">
 					See how Muscled Digital Agency does its ecommerce PPC management
 					service.
+					<br />
 					<br />
 					<ul className="list-disc pl-8">
 						<li>
@@ -166,6 +168,7 @@ export default function GuideDetails({}: Props) {
 							happen. That’s why your customized approach will be tailored to
 							your business and competitors within the same industry.
 						</li>
+						<br />
 						<li>
 							<span className="font-bold md:leading-[30px]"> Mapping:</span> We
 							will provide everything that your business needs to thrive from
@@ -175,6 +178,7 @@ export default function GuideDetails({}: Props) {
 							we’ll monitor our strategy’s performance and make changes for more
 							improvements to make the best out of your investments.
 						</li>
+						<br />
 						<li>
 							<span className="font-bold md:leading-[30px]">Workouts:</span>{" "}
 							Expect an easy-to-follow report for you and your team. Your
@@ -197,17 +201,20 @@ export default function GuideDetails({}: Props) {
 				<p className="md:text-xl text-base md:leading-[30px] leading-loose text-black text-opacity-70 mt-10">
 					Here’s what our ecommerce PPC Management Service can offer.
 					<br />
+					<br />
 					<ul className="list-disc pl-8">
 						<li>
 							<span className="font-bold">Precious Time:</span> Let an
 							experienced and dedicated account manager handle your Google Ads
 							and more. Find yourself some time to grow your business even more.
 						</li>
+						<br />
 						<li>
 							<span className="font-bold">Prime Results:</span> Paying for ads
 							gets your business on top of search results, but we’ll go the
 							extra mile and push you ahead of your competitors.
 						</li>
+						<br />
 						<li>
 							<span className="font-bold">Better Sales:</span> PPC is expected
 							to boost your capacity to reach new users, make higher sales, and
@@ -232,7 +239,8 @@ export default function GuideDetails({}: Props) {
 					to your store or website, which means more customers that can drive
 					immediate sales. Here’s a list of how we could help you.
 					<br />
-					<ul className="list-disc pl-8 font-bold">
+					<br />
+					<ul className="list-disc pl-8 font-bold space-y-[20px] md:leading-[30px]">
 						<li>Cost-effective Advertising</li>
 						<li>Hyper-targeted Ads</li>
 						<li>More Qualified Traffic</li>
@@ -275,7 +283,9 @@ export default function GuideDetails({}: Props) {
 						goals.
 						<br />
 						<br /> Here are your options for Google Ads:
-						<ul className="list-disc pl-8 font-bold">
+						<br />
+						<br />
+						<ul className="list-disc pl-8 font-bold space-y-[10px] md:leading-[30px]">
 							<li>Location</li>
 							<li>Demographics</li>
 							<li>Device</li>

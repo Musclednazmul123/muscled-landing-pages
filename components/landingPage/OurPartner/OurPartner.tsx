@@ -28,7 +28,7 @@ export default function OurPartner() {
 				<h2 className="text-2xl font-bold leading-loose text-black text-opacity-50">
 					Our Partners
 				</h2>
-				<div className="mt-5">
+				<div className="mt-1">
 					<div className="flex items-center flex-wrap xl:flex-nowrap justify-center gap-x-[70px] gap-y-4 ">
 						{logo.map((logo, index) => {
 							return <Icon customClasses="" icon={logo.icon} />;

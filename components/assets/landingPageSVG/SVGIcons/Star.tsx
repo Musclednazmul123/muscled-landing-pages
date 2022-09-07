@@ -14,8 +14,7 @@ export default function Star({}: Props) {
       >
         <path
           d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
-          fill="black"
-          fillOpacity="0.5"
+          fill="currentColor"
         />
       </svg>
     </>
