@@ -933,8 +933,6 @@ const Page: NextPage = () => {
 					</div>
 				</div>
 			</Section>
-
-			<Footer />
 		</div>
 	);
 };
