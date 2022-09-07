@@ -30,6 +30,7 @@ const Button: FC<ButtonProps> = ({
   white,
   violate,
   red,
+  className,
 }) => {
   return (
     <div>
@@ -44,7 +45,7 @@ const Button: FC<ButtonProps> = ({
             : white
             ? "bg-white text-black"
             : "bg-black"
-        }`}
+        }${className}`}
       >
         {text}
         {arrow !== undefined ? <Arrow arrow={arrow!} /> : ""}

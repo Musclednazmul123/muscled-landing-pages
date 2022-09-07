@@ -19,19 +19,19 @@ export const AdditionalSocailMediaMetaData = {
       itemTitle: "Ecommerce Social Media Advertising",
       itemPara: ` Drive traffic to your ecommerce store and start selling more online
   with social media ads!`,
-      buttonLabel: "Lear more",
+      buttonLabel: "Learn more",
     },
     {
       itemTitle: "Ecommerce Social Media Advertising",
       itemPara: ` Drive traffic to your ecommerce store and start selling more online
     with social media ads!`,
-      buttonLabel: "Lear more",
+      buttonLabel: "Learn more",
     },
     {
       itemTitle: "Ecommerce Social Media Advertising",
       itemPara: ` Drive traffic to your ecommerce store and start selling more online
     with social media ads!`,
-      buttonLabel: "Lear more",
+      buttonLabel: "Learn more",
     },
   ],
 };
