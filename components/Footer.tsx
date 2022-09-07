@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import { Section } from "./Fawwaz/Sections";
-import Button from "./Fawwaz/Button";
+import Button from "components/Button";
 import { Counter, CounterBox } from "./Fawwaz/Counter";
 
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
@@ -62,19 +62,16 @@ const Footer: FC<IProps> = ({ className }) => {
 					<p className="font-semibold text-2xl py-6">
 						Discover how we can help your business grow
 					</p>
-					<div className="relative w-full max-w-[600px]">
+					<div className="px-5 py-2 flex relative w-full max-w-[600px] rounded-md bg-white">
 						<Input
 							placeholder="Enter your website"
-							className="w-full md:py-6"
+							className="flex-grow text-black"
 							type="text"
 						/>
-						<Button
-							bgColor="bg-[#000000]"
-							textColor="text-white"
-							className="md:absolute md:top-3 md:right-4 mt-4 md:mt-0">
-							Send me a Proposal
-							<BiRightArrowAlt />
-						</Button>
+
+						<Button text= "Send me a Proposal"/>
+						
+		
 					</div>
 				</Section>
 				<div className="w-full lg:w-4/12 bg-red-800 pt-24 pl-4 pr-24 text-right pb-12">
@@ -88,18 +85,13 @@ const Footer: FC<IProps> = ({ className }) => {
 						<p>ARIZONA GARAGE DOOR SUPPLIER</p>
 					</div>
 					<div className="flex items-center gap-4 justify-end mt-9">
-						<Button
-							bgColor="bg-white-70"
-							textColor="text-black"
-							rounded>
-							<AiOutlineArrowLeft size={15} />
-						</Button>
-						<Button
-							bgColor="bg-white"
-							textColor="text-black"
-							rounded>
-							<AiOutlineArrowRight size={15} />
-						</Button>
+						
+						<div className="w-10 h-10 cursor-pointer active:scale-95 rounded-full bg-white flex justify-center items-center">
+							<AiOutlineArrowLeft className="text-black" size={15} />
+						</div>
+						<div className="w-10 h-10 active:scale-95 cursor-pointer rounded-full bg-white flex justify-center items-center">
+							<AiOutlineArrowRight className="text-black" size={15} />
+						</div>
 					</div>
 				</div>
 			</div>

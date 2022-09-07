@@ -1,13 +1,13 @@
-import { FC, useEffect, useState } from 'react'
-import React from 'react'
-import Image from 'next/image';
-import logo from "components/assets/logo/logo1.png";
-import { ChevronDownIcon, MenuIcon } from '@heroicons/react/outline'
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import { FC, useEffect, useState } from "react";
+import React from "react";
+import Image from "next/image";
+import logo from "components/assets/logos/logo1.png";
+import { ChevronDownIcon, MenuIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
+import Link from "next/link"; 
 
 const Header: FC = () => {
-  const [modalOpen, setModalOpen] = useState<String>('')
+  const [modalOpen, setModalOpen] = useState<String>("");
 
   return ( 
     <div className='flex bg-white shadow-sm justify-between w-full items-center py-3 px-5 md:px-10 lg:px-20'>
@@ -181,7 +181,7 @@ const Header: FC = () => {
 
       <MenuIcon className='lg:hidden h-10 w-10' />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
