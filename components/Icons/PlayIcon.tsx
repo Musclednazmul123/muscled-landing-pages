@@ -2,7 +2,7 @@ import React from "react";
 
 const PlayIcon = () => {
 	return (
-		<div className="bg-black opacity-50 p-5 hover:opacity-60">
+		<div className="bg-black opacity-50 p-5 hover:opacity-60 cursor-pointer">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="#fff"

@@ -16,7 +16,7 @@ import VideoFrame from "components/Fawwaz/VideoFrame";
 import { Table, Th, Td, TableOfContent } from "components/Fawwaz/Table";
 
 import SEOAuditSVG from "components/assets/svg/SEOAuditSVG";
-import logo from "components/assets/logo/logo1.png";
+import logo from "components/assets/logos/logo1.png";
 import sectionIcon from "components/assets/seo-box-icon.png";
 
 import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";
@@ -41,17 +41,19 @@ const Page: NextPage = () => {
 				/>
 			</div>
 
-			<Section className="text-center pt-16">
-				<h3 className="text-black-50 text-2xl">Our Partners</h3>
+			<div className="bg-white">
+				<Section className="text-center pt-16">
+					<h3 className="text-black-50 text-2xl">Our Partners</h3>
 
-				<div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-					<Logo src={logo.src} width={154} height={34} />
-				</div>
-			</Section>
+					<div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+						<Logo src={logo.src} width={154} height={34} />
+					</div>
+				</Section>
+			</div>
 
 			<Section>
 				<h2 className="text-4xl text-center mt-9">
@@ -60,7 +62,7 @@ const Page: NextPage = () => {
 
 				<div className="max-w-[540px] mx-auto mt-10">
 					<Card className="rounded-sm border-2">
-						<CardHeader title="MARKETLEADERPLAN" rate="$8,000">
+						<CardHeader title="MARKETLEADERPLAN" rate="8,000" type="basic">
 							<AiFillStar className="card-icon fill-black-50" />
 						</CardHeader>
 						<CardContent className="text-left space-y-11 pt-5">

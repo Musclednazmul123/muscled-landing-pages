@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 // Card
 export interface CardProps {
@@ -6,17 +6,24 @@ export interface CardProps {
 	className: string;
 }
 
+type CardHeaderType = "basic" | "premium" | "ultimate";
+
 export interface CardHeaderProps {
 	children: ReactNode;
 	className?: string;
-	title: string;
+	title?: string;
 	rate: string;
-	type?: "basic" | "premium" | "ultimate";
+	monthly?: JSX.Element;
+	type: CardHeaderType | string | undefined;
 }
 
-export interface CardContent {
+export interface CardContentProps {
 	className?: string;
 	children: ReactNode;
+}
+
+export interface CardFooterProps {
+	children?: ReactNode;
 }
 
 export interface IconProps {
@@ -48,7 +55,7 @@ export interface TableProps {
 }
 
 export interface TableHeadChildProps {
-	content: string | JSX.Element;
+	content: string | JSX.Element | ReactNode;
 	className?: string;
 }
 
@@ -56,6 +63,15 @@ export interface TableBodyChildProps {
 	content?: string | JSX.Element;
 	className?: string;
 	type: "basic" | "standard" | "premium" | "ultimate";
+}
+
+export interface TableOfContentProps {
+	bgColor?: string;
+	titleColor?: string;
+	titleIconColor?: string;
+	contents: JSX.Element[] | string[] | ReactNode;
+	isOpen: Boolean;
+	setIsOpen: () => void;
 }
 
 // Sections
@@ -70,10 +86,12 @@ export interface SectionProps {
 // hero
 export interface HeroSectionProps {
 	pagination?: JSX.Element;
-	title: string;
+	title: string | JSX.Element;
+	titleClassNames?: string;
 	description: string;
-	heroSVG?: JSX.Element;
-	input?:boolean;
+	descriptionTextColor?: string;
+	heroSVG?: JSX.Element | ReactNode;
+	input?: boolean;
 }
 
 // miscellaneous
