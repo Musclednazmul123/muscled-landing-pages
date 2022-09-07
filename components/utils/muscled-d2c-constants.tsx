@@ -69,69 +69,121 @@ export const SocialMediaAdvertisingMetaData = {
     },
     {
       heading: "Social Media Marketing Strategy",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Social Media Competitive Analysis",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Social Media Brand Reputation Analysis",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Social Media Audit + Recommendations",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Dedicated Social Media Account Manager",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Daily Monitoring of Included Social Assets",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "48 Business Hour or Less Customer Response Time",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Personal Social Media Consultations per Month",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading:
         "Access to Muscled editorial calendar & content publishing tools",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Standard Monthly Reporting and Analysis",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "Network Setup & Optimization",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: `Cover Photo & Profile Photo Design/Optimization`,
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]" />
+      ),
     },
     {
       heading: "450+ SMEs behind campaign driving results",
-      colData: <AiOutlineCheck className="mx-auto fill-green-500" />,
-      colData2: <AiOutlineCheck className="mx-auto fill-green-500" />,
+      colData: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px] " />
+      ),
+      colData2: (
+        <AiOutlineCheck className="mx-auto fill-green-500 w-[26.5px] h-[26.5px]  " />
+      ),
     },
     {
       heading: "Boosted Posts per Month",
@@ -163,21 +215,33 @@ export const SocialMediaAdvertisingMetaData = {
         <>
           <p>Give Us a Call if You Need Information</p>
           <div className="flex gap-2 items-center mt-2 cursor-pointer">
-            <AiFillPhone className="fill-sky-500" />
-            <p className="text-sky-500 font-bold">888-601-5359</p>
+            <AiFillPhone className="fill-sky-500 w-[25px] h-[25px]" />
+            <p className="text-sky-500 font-bold w-[176px] h-[34px] text-[24px] leading-[36px] not-italic">
+              888-601-5359
+            </p>
           </div>
         </>
       ),
       colData: (
-        <Button bgColor="bg-black" textColor="text-white" className="mx-auto">
+        <Button
+          bgColor="bg-black"
+          textColor="text-white"
+          className="mx-auto w-[196px] h-[60px] rounded-[5px] text-[20px] not-italic font-semibold leading-[30px]"
+        >
           Get Started
         </Button>
       ),
       colData2: (
-        <Button bgColor="bg-black" textColor="text-white" className="mx-auto">
+        <Button
+          bgColor="bg-black"
+          textColor="text-white"
+          className="mx-auto w-[196px] h-[60px] rounded-[5px] text-[20px] not-italic font-semibold leading-[30px]"
+        >
           Get Started
         </Button>
       ),
+      className1: "rounded-bl-xl",
+      className2: "rounded-br-xl",
     },
   ],
 };
