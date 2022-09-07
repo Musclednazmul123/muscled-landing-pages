@@ -7,7 +7,7 @@ interface IProps {
   number: string;
 }
 
-const Rectangle = ({ icon, text1, text2, number }: IProps) => {
+const Rectangle = ({ icon, text1, text2, number }: IProps) => { 
   return (
     <div className="bg-black flex w-[436px] h-[106px] rounded-sm">
       <div className="flex justify-center items-center ml-2">

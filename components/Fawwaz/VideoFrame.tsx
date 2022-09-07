@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { VideoFrameProps } from "./component.type"
 
 const VideoFrame: FC<VideoFrameProps> = ({ className, allowFullScreen, sourceURL, ...props }) => {
-	return (
+	return ( 
 		<iframe
             className={`${className ? className : "w-[560px] h-[315px]"}`}
 			src={ sourceURL ? sourceURL : "https://www.youtube.com/embed/D0UnqGm_miA"}

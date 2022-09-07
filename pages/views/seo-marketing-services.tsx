@@ -15,7 +15,7 @@ import {
 } from "components/Fawwaz/Card";
 
 import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
-
+ 
 // assets
 // SVG
 import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
@@ -172,7 +172,7 @@ const Page: NextPage = () => {
 							The Digital Workout That Grows Your Traffic and
 							Revenue through SEO
 						</h2>
-						<p className="md:text-xl">
+						<p className="md:text-xl"> 
 							<span>
 								Don’t let your page be buried. If you’re looking
 								for ways to improve your website, your best bet
@@ -181,7 +181,7 @@ const Page: NextPage = () => {
 							<br />
 							<br />
 							<span>But What is SEO?</span>
-							<br />
+							<br /> 
 							<br />
 							<span>
 								SEO is a digital marketing strategy that helps

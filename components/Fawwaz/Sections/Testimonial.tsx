@@ -6,7 +6,7 @@ import VideoFrame from "components/Fawwaz/VideoFrame";
 
 
 const Testimonials: FC = () => {
-	return (
+	return ( 
 		<div className="bg-black">
 			<Section className="flex flex-wrap justify-center py-20 px-3 gap-32">
 				<div className="max-w-[560px] text-accent-white">
