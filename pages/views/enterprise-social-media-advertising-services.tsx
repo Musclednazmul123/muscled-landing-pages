@@ -1,12 +1,35 @@
 import React from "react";
 import { NextPage } from "next";
-import { Hero, Section } from "components/Fawwaz/Sections";
+import { Hero, Section } from "components/Fawwaz/Sections"; 
 import SEOMarketingSVG from "../../components/assets/svg/SEOMarketingSVG";
 import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
 import Card from "components/Card";
 
+<<<<<<< Updated upstream
  const Page: NextPage = () => { 
+=======
+<<<<<<< HEAD
+const Page: NextPage = () => {
+	const list = [
+		{ icon: true, text: "15 hours quarterly" },
+		{ icon: true, text: "$1,800 monthly investment" },
+		{ icon: true, text: "Best for websites under 250 pages" },
+	];
+	const list2 = [
+		{ icon: true, text: "25 hours quarterly" },
+		{ icon: true, text: "$3,600 monthly investment" },
+		{ icon: true, text: "Best for websites under 250 pages" },
+	];
+	const list3 = [
+		{ icon: true, text: "35 hours quarterly" },
+		{ icon: true, text: "$4,800 monthly investment" },
+		{ icon: true, text: "Best for websites under 250 pages" },
+	];
+=======
+ const Page: NextPage = () => { 
+>>>>>>> alijawwad/cms_development_services
+>>>>>>> Stashed changes
 
     const list = [{"icon":true, "text":"15 hours quarterly"}, {"icon":true, "text":"$1,800 monthly investment"}, {"icon":true, "text":"Best for websites under 250 pages"}]
 	const list2 = [{"icon":true, "text":"25 hours quarterly"}, {"icon":true, "text":"$3,600 monthly investment"}, {"icon":true, "text":"Best for websites under 250 pages"}]
