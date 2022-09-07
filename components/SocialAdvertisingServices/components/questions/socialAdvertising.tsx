@@ -22,7 +22,7 @@ const SocialAdvertising = () => {
       </p>
       <p>
         Contact our social media professionals at{' '}
-        <a className="text-[#8248FC] text-xl font-bold" href="tel:+123456789">
+        <a className="text-xl" href="tel:+123456789">
           XXXXXXXXXXX
         </a>{' '}
         or hit us up online to learn how to expand your D2C brand!

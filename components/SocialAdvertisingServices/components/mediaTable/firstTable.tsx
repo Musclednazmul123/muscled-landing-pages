@@ -27,9 +27,9 @@ const FirstTable = () => {
       <h2 className="text-center my-[120px] text-[40px] text-black-80">
         Muscled's D2C Social Media Advertising Services
       </h2>
-      <table className="rounded-xl">
+      <table className="rounded-xl h-[1054px]">
         <tbody>
-          <tr className="font-bold border-b border-neutral-500 text-center min-h-[84px]">
+          <tr className="font-bold border-b border-[rgba(0,0,0,0.1)] text-center min-h-[84px]">
             <td className="p-4  bg-black-80 text-white rounded-tl-xl text-left text-[16px] h-[84px] w-[310px]">
               Features
             </td>
@@ -45,7 +45,7 @@ const FirstTable = () => {
           </tr>
           {displayTableRows()}
           <tr className="text-[16px] max-h-[154px]">
-            <td className="flex flex-col px-8 py-[30px] bg-black-80 text-white rounded-bl-xl ">
+            <td className="flex flex-col px-8 py-[30px] bg-black-80 text-white rounded-bl-xl border-t-[1px] border-[rgba(0,0,0,0.1)]">
               <p className="my-4 text-[16px] leading-6">
                 Give Us a Call if You Need Information
               </p>

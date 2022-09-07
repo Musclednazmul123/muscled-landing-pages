@@ -23,10 +23,10 @@ const SecondTable = () => {
   }
   return (
     <DynamicSection className="flex-col overflow-x-auto">
-      <table className="w-full my-8">
+      <table className="w-full my-[120px]">
         <tbody>
-          <tr className="text-center border-b border-neutral-500 font-bold text-[16px]">
-            <td className=" py-4 px-[20px] bg-black-80 text-white text-left rounded-tl-xl w-[600px]">
+          <tr className="text-center border-b border-[rgba(0,0,0,0.1)] font-bold text-[16px] h-[84px]">
+            <td className="py-4 px-[20px] bg-black-80 text-white text-left rounded-tl-xl w-[600px]">
               Features
             </td>
             <td className=" py-4 px-8 bg-red-6 w-[320px]">

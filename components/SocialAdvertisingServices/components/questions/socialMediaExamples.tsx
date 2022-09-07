@@ -19,11 +19,11 @@ const SocialMediaExamples = () => {
         Let's take a look . a this Facebook ad from Muscled D2C client
         Recreation Outfitters:
       </p>
-      <div className="bg-white-gray flex justify-center items-center w-full h-[20vh]">
+      <div className="bg-white-gray flex justify-center items-center w-full h-[220px]">
         Ad Banner
       </div>
       <p>Here is another ad from the same company on Instagram.</p>
-      <div className="bg-white-gray flex justify-center items-center w-full h-[20vh]">
+      <div className="bg-white-gray flex justify-center items-center w-full h-[220px]">
         Ad Banner
       </div>
       <p>

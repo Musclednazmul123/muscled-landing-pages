@@ -6,22 +6,6 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
   const [open, setOpen] = useState(false)
   const togglePanel = (id: number | undefined) => {
     setOpen(!open)
-    const svg: string = (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-6 h-6 plusminus"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 010 1.954l-7.108 4.061A1.125 1.125 0 013 16.811z"
-        />
-      </svg>
-    )
 
     // const icon = document.getElementById(`expand-${id}`)
     document.getElementById(`panel-${id}`)?.classList.toggle('hidden')
@@ -29,9 +13,6 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
     document
       .getElementById(`expand-${id}`)
       ?.classList.toggle(`${styles.active}`)
-
-    let target = document.getElementById(`expand-${id}`)
-    // target ? (target.innerHTML = svg) : ''
   }
   return (
     <div className="rounded-xl w-full">
@@ -46,7 +27,7 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
           onClick={(e) => {
             togglePanel(index)
           }}
-          className={'' + styles.plusminu}
+          className={'cursor-pointer' + styles.plusminu}
         >
           {open ? (
             <svg
@@ -55,7 +36,7 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 cursor-pointer"
             >
               <path
                 strokeLinecap="round"
@@ -70,7 +51,7 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 cursor-pointer"
             >
               <path
                 strokeLinecap="round"
@@ -79,8 +60,6 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
               />
             </svg>
           )}
-
-          {/* <div className="plusminus" id={`icon-${index ? index : ''}`}></div> */}
         </div>
       </label>
       <div
