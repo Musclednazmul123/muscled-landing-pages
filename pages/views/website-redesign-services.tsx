@@ -9,6 +9,7 @@ import cardBg from "components/assets/qwe.png";
 import Button from "components/Fawwaz/Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
 import WebredesignServicesContent from '../../components/WebsiteRedesignService'
+import { TableOfContent } from "components/Fawwaz/Table";
 
 
 
@@ -112,6 +113,7 @@ const Page: NextPage = () => {
                     {/* Website redesign service options */}
                     <WebredesignServicesContent />
                 </div>
+                <TableOfContent />
 
                 {/* Request an Instant Quote */}
 
