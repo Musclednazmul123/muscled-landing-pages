@@ -35,7 +35,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <div>
       <button
-        className={` text-white flex justify-center items-center text-md py-2 text-semibold px-5 w-full active:scale-[95%] ${
+        className={` text-white h-full flex justify-center items-center text-md py-2 text-semibold px-5 w-full active:scale-[95%] ${
           rounded ? "rounded-full" : "rounded-md"
         } ${shadow && " shadow-sm"} ${outline && " border-2 border-gray-600"} ${
           violate
