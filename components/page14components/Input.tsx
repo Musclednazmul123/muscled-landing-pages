@@ -26,7 +26,7 @@ const index: FC<Props> = ({
   endIcon,
 }) => {
   return (
-    <div className={`flex justify-between  rounded-md overflow-hidden`} id={id}>
+    <div className={`flex justify-between rounded-sm overflow-hidden`} id={id}>
       {inIcon && inIcon}
       <input
         value={value}
@@ -37,7 +37,7 @@ const index: FC<Props> = ({
           onChange(onChange)
         }
         style={style}
-        className={` outline-none  ${className}`}
+        className={` outline-none ${className}`}
       />
       {endIcon && endIcon}
     </div>

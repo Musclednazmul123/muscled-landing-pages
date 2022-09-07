@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 import React from "react";
 import { ChevronDownIcon, MenuIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-import { MUSCLED } from "components";
+import { MUSCLED } from "components/page14components";
 
 const Header: FC = () => {
   const [modalOpen, setModalOpen] = useState<String>("");

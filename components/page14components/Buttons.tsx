@@ -5,7 +5,7 @@ import React, { ReactNode } from "react";
 interface IProps {
   className?: string;
   children?: ReactNode;
-  title: string;
+  title?: string;
   bgColor?: string;
   color?: string;
   height?: string;

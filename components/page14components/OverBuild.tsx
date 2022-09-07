@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Fawwaz/Button";
+import Button from "../Fawwaz/Button";
 
 import { ArrowRightIcon } from "@heroicons/react/outline";
 

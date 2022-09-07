@@ -1,24 +1,20 @@
 import React, { useState } from "react";
 import { NextPage } from "next/";
-
-import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
+import { Section, Testimonial } from "components/Fawwaz/Sections";
 import Button from "components/Fawwaz/Button";
 import {
-  CarteServices,
+  Hero14,
   Input,
+  Buttons,
+  WebsiteDesignService,
+  TableOfContent,
+  CarteServices,
   InputRange,
   OverBuild,
   Pricing,
-  Logo1,
-  Logo2,
-  Logo4,
-  Logo5,
-  Logo6,
-  Logo7,
-  Buttons,
-} from "components";
-import Logo from "components/Fawwaz/Logo";
-import image from "components/assets/image-14.png";
+  OurPartners,
+  DesignSevices,
+} from "components/page14components";
 import Covertion from "components/assets/Covertion.png";
 import UxTesting from "components/assets/UxTesting.png";
 import UserShop from "components/assets/UserShop.png";
@@ -26,11 +22,7 @@ import UserTurn from "components/assets/UserTurn.png";
 import Critical from "components/assets/Critical.png";
 import Direction from "components/assets/Direction.png";
 import Increase from "components/assets/Increase.png";
-import { Card } from "components/Fawwaz/Card";
-import VideoFrame from "components/Fawwaz/VideoFrame";
 
-import WebsiteDesignService from "components/assets/svg/WebsiteDesignService";
-import { TableOfContent } from "components/";
 import {
   ChevronDoubleRightIcon,
   ChevronDownIcon,
@@ -41,95 +33,43 @@ const Page: NextPage = () => {
   const [value, setValue] = useState<string>("");
   return (
     <div>
-      <div className="min-h-[890px] bg-black-70 px-3 lg:px-0">
-        <Hero
-          title="Get a Custom Site That's Mobile and SEO Optimized with Website Design Services"
-          description="With an award-winning design team, Muscled is a top web design company that builds cutting-edge, profitable websites that capture your brand, boost conversion rates, and help you reach your objectives."
-          heroSVG={<WebsiteDesignService className="w-96 md:w-auto" />}
+      {/* Hero Section */}
+      <Hero14
+        title="Get a Custom Site That's Mobile and SEO Optimized with Website Design Services"
+        desc="With an award-winning design team, Muscled is a top web design
+        company that builds cutting-edge, profitable websites that capture
+        your brand, boost conversion rates, and help you reach your
+        objectives."
+        HeroIcon={WebsiteDesignService}
+      >
+        <Input
+          placeholder="Use calculator"
+          value={value}
+          onChange={(e: any) => setValue(e.target.value)}
+          className={
+            "w-[184px] bg-white h-[60px] placeholder:text-black placeholder:text-xl placeholder:font-normal py-4 px-5 rounded-xs"
+          }
         />
-        <div className="flex flex-start mx-[100px]">
-          <Input
-            placeholder="Use calculator"
-            value={value}
-            onChange={(e: any) => setValue(e.target.value)}
-            className={
-              "w-[184px] bg-white h-[60px] placeholder:text-black placeholder:text-xl placeholder:font-normal pl-3 rounded-md"
-            }
-          />
-          <Buttons
-            title="Send me a quote"
-            width="w-[253px]"
-            height="h-[63px]"
-            className="ml-[10px] text-xl font-[600]"
-          />
-        </div>
-      </div>
+        <Buttons
+          title="Send me a quote"
+          width="w-[253px]"
+          height="h-[63px]"
+          className="ml-[10px] text-xl font-[600]"
+          onClick={() => console.log("buttons clicked")}
+        />
+      </Hero14>
 
-      <Section className="pt-16 text-center">
-        <h3 className="text-2xl text-black-50">Our Partners</h3>
+      {/* Our Partners Section */}
+      <OurPartners />
 
-        <div className="flex flex-wrap justify-between gap-6 pt-5 pb-12">
-          <Logo1 />
-          <Logo2 />
-          <Logo4 />
-          <Logo5 />
-          <Logo6 />
-          <Logo7 />
-        </div>
-      </Section>
+      {/* Design Sevices Section */}
+      <DesignSevices />
 
-      <Section className="flex flex-wrap md:flex-nowrap h-[652px] gap-24 py-3 mt-1 md:justify-center xl:justify-start bg-[#F5F5F5]">
-        <div className="w-[652px] h-[280px]">
-          <p className="text-lg ">
-            Your website is the first point of contact customers have with your
-            company in the modern digital environment.
-          </p>
-          <p className="mt-8 text-lg">
-            Because of this, web design accounts for about 95% of a user's first
-            impression. Web Design Services can significantly affect your
-            company's bottom line for the same reason.
-          </p>
-          <p className="mt-8 text-lg">
-            For this reason, more businesses are not just reviewing the layout
-            of their websites, but also teaming up with Muscled, a web design
-            company that has helped its clients generate more than $3 billion in
-            income over the course of its 25+ years in business and billions of
-            data points.
-          </p>
-          <p className="mt-8 text-lg">
-            With more than 50 web design awards under our belts, we are
-            convinced that we can create a custom website that generates sales
-            for your particular company. With MarketingCloudFX, you will have
-            the platform for tracking (and accelerating) the return on
-            investment of your new site (ROI).
-          </p>
-        </div>
-
-        <div className="w-full md:w-[480px] h-[280px]">
-          <div className="bg-gradient-to-r relative min-w-[200px] w-full max-w-[480px] h-[280px] mx-auto bg-white-gray md:mx-0">
-            <VideoFrame className="absolute w-full h-full" />
-          </div>
-          <Card className="bg-[#3E5661] flex flex-col w-[480px] h-[270px] mt-4 mx-auto md:mx-0 rounded-md">
-            <h4 className="p-6 pb-0 text-white">
-              Looking for custom plans and pricing? Request a proposal to
-              receive yours.
-            </h4>
-            <div className="flex flex-row items-center justify-between pl-6 ">
-              <Button bgColor="bg-white" textColor="text-black">
-                Get Free Proposal
-              </Button>
-              <div>
-                <img src={image.src} alt={image.src} />
-              </div>
-            </div>
-          </Card>
-        </div>
-      </Section>
-
+      {/* Testimonial Section */}
       <Testimonial />
 
-      {/* Pricing Table */}
-      <Section className="w-[996px] mx-auto my-20">
+      {/* Pricing Table Section */}
+      <Section className="w-[996px] mx-auto my-21">
         <Pricing
           title={"Get a Free Quote Now Making use of our web design calculator"}
           desc={`For a free, immediate quote, enter your needs into the sliders below and then click the "See Pricing" button. You'll get an overall range outlining how much it may cost to have such a website carried up because we\'ll give you both low and high end estimates for each service category.`}
@@ -152,11 +92,11 @@ const Page: NextPage = () => {
           <InputRange inputTitle="CMS" inputText="Standard" left="23%" />
         </Pricing>
 
-        <div className="w-full my-5">
+        <div className="w-full my-7">
           <Button
             textColor="text-white"
             bgColor="bg-black"
-            className="mx-auto text-xl"
+            className="mx-auto text-xl w-[234px] font-[500] h-[60px]"
           >
             See Pricing
           </Button>

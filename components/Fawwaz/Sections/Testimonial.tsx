@@ -1,38 +1,45 @@
 import { FC } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import { ErrorFallback } from "helpers";
 
 import { Section } from "../Sections";
 import Button from "../Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
-
+import ReactPlayerModal from "components/ReactPlayerModal";
+import playIcon from "components/playIcon";
 
 const Testimonials: FC = () => {
-	return (
-		<div className="bg-black">
-			<Section className="flex flex-wrap justify-center py-20 px-3 gap-32">
-				<div className="max-w-[560px] text-accent-white">
-					<p className="text-xl md:text-2xl mb-8">
-						“Muscled has gone above and beyond to make me happy. So
-						far, after a few months, I have already seen significant
-						improvement in rankings and conversions, and they have
-						also greatly improved the speed of my site.”
-					</p>
+  return (
+    <div className="bg-black">
+      <Section className="flex flex-wrap justify-center gap-32 px-3 py-20">
+        <div className="max-w-[560px] text-accent-white">
+          <p className="mb-8 text-xl md:text-2xl">
+            “Muscled has gone above and beyond to make me happy. So far, after a
+            few months, I have already seen significant improvement in rankings
+            and conversions, and they have also greatly improved the speed of my
+            site.”
+          </p>
 
-					<p className="font-bold text-xl md:text-2xl mb-8">Owner</p>
+          <p className="mb-8 text-xl font-bold md:text-2xl">Owner</p>
 
-					<p className="font-bold text-base md:text-xl mb-14">
-						Company Name
-					</p>
+          <p className="text-base font-bold md:text-xl mb-14">Company Name</p>
 
-					<Button bgColor="bg-[#C40000]" textColor="text-white">
-						See Our Client's Testimonials
-					</Button>
-				</div>
-				<div className="w-[500px] min-h-[400px] h-full bg-white-gray relative">
-					<VideoFrame className="w-full h-full absolute" allowFullScreen />
-				</div>
-			</Section>
-		</div>
-	);
+          <Button bgColor="bg-[#C40000]" textColor="text-white">
+            See Our Client's Testimonials
+          </Button>
+        </div>
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <ReactPlayerModal
+            thumbnail={"../../components/assets/OurDesignServices.png"}
+            url="https://www.youtube.com/embed/D0UnqGm_miA"
+            Icon={playIcon}
+            width={"480px"}
+            height={"280px"}
+          />
+        </ErrorBoundary>
+      </Section>
+    </div>
+  );
 };
 
 export default Testimonials;
