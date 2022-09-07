@@ -22,6 +22,7 @@ export default function Testimonial() {
 								See Our Clients’ Testimonials
 							</button>
 						</div>
+						<div className="w-[650px]">
 						<VideoPlayer
 							Icon={PlayIcon}
 							// width={"500px"}
@@ -29,6 +30,7 @@ export default function Testimonial() {
 							url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 							// thumbnail="main.png"
 						/>
+						</div>
 					</div>
 				</div>
 			</div>
