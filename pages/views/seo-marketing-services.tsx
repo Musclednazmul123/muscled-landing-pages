@@ -19,7 +19,7 @@ import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
 // assets
 // SVG
 import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
-import logo from "components/assets/logo/logo1.png";
+// import logo from "components/assets/logo/logo1.png";
 import cardBg from "components/assets/qwe.png";
 import sectionIcon from "components/assets/1.png";
 
@@ -52,13 +52,13 @@ const Page: NextPage = () => {
 			<Section className="text-center pt-16">
 				<h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
 
-				<div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
+				{/* <div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
 					<Logo src={logo.src} width={154} height={34} />
 					<Logo src={logo.src} width={154} height={34} />
 					<Logo src={logo.src} width={154} height={34} />
 					<Logo src={logo.src} width={154} height={34} />
 					<Logo src={logo.src} width={154} height={34} />
-				</div>
+				</div> */} 
 			</Section>
 
 			{/* Third section */}

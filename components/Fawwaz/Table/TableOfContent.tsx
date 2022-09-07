@@ -12,8 +12,8 @@ const TableOfContent: FC = () => {
 			<div className="bg-[#3E5661] text-white rounded-md p-4 flex justify-between items-center">
 				<h2 className="flex items-center text-lg gap-2">
 					<FaListAlt size={20} />
-					Table of Contents
-				</h2>
+					Table of Contents 
+				</h2> 
 				<BiUpArrowAlt size={25} />
 			</div>
 			<ul className="w-full">

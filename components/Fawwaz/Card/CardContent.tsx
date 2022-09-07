@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import IconItem from "./IconItem"
 
-import { CardContent } from "../component.type";
+import { CardContent } from "../component.type"; 
 
 
 
