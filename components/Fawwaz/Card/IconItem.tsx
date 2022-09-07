@@ -9,7 +9,7 @@ const IconItem: FC<IconProps> = ({
   headingClassName,
 }) => {
   return (
-    <div className={`flex gap-[15px] items-center ${className}`}>
+    <div className={`flex items-center ${className}`}>
       <div>{icon}</div>
       <h3
         className={`${
