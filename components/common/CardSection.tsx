@@ -23,11 +23,11 @@ const CardSection = () => {
         Explore Direct-to-Consumer Social Service Programs.
       </h2>
 
-      <div className="flex flex-wrap justify-center lg:justify-between gap-2">
+      <div className="flex flex-wrap justify-center lg:justify-between w-[1240px]">
         {cardData &&
           cardData.map((cardItem) => {
             return (
-              <Card className="rounded-sm border-2 max-w-[400px] w-full">
+              <div className="rounded-sm border-[1px] border-[#000000]/[0.7] border-solid max-w-[400px] w-full bg-[#FFFFFF]">
                 <CardHeader
                   title={cardItem?.title}
                   rate={cardItem?.rate}
@@ -36,16 +36,40 @@ const CardSection = () => {
                 >
                   {cardItem?.type === "premium" && (
                     <div className="flex">
-                      <img src={star1.src} height="30px" width="30px" />
-                      <img src={star1.src} height="30px" width="30px" />
-                      <img src={star1.src} height="30px" width="30px" />
+                      <img
+                        src={star1.src}
+                        height="30px"
+                        width="30px"
+                        className="ml-[10px]"
+                      />
+                      <img
+                        src={star1.src}
+                        height="30px"
+                        width="30px"
+                        className="ml-[10px]"
+                      />
                     </div>
                   )}
                   {cardItem?.type === "ultimate" && (
                     <div className="flex">
-                      <img src={star2.src} height="30px" width="30px" />
-                      <img src={star2.src} height="30px" width="30px" />
-                      <img src={star2.src} height="30px" width="30px" />
+                      <img
+                        src={star2.src}
+                        height="30px"
+                        width="30px"
+                        className="ml-[10px]"
+                      />
+                      <img
+                        src={star2.src}
+                        height="30px"
+                        width="30px"
+                        className="ml-[10px]"
+                      />
+                      <img
+                        src={star2.src}
+                        height="30px"
+                        width="30px"
+                        className="ml-[10px]"
+                      />
                     </div>
                   )}
                   {cardItem.type === undefined && (
@@ -56,7 +80,7 @@ const CardSection = () => {
                   {cardItem &&
                     cardItem.iconItems.map((item) => (
                       <IconItem
-                        icon={<FaCheckCircle size={15} />}
+                        icon={<FaCheckCircle size={24} />}
                         title={item?.iconTitle}
                         className={item?.class}
                       />
@@ -67,7 +91,7 @@ const CardSection = () => {
                   footerDescition={cardItem?.footerDescition}
                   buttonLabel={cardItem?.buttonLabel}
                 />
-              </Card>
+              </div>
             );
           })}
       </div>

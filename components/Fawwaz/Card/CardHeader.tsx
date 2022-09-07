@@ -18,15 +18,18 @@ const CardHeader: FC<CardHeaderProps> = ({
           ? "bg-red-9"
           : "bg-red-3"
       }
-	 
 	  `}
     >
       {children}
-      <h4 className="mt-4 mb-10 font-bold">{title}</h4>
+      <h4 className="mt-4 mb-[25.5px] font-bold text-[24px] not-italic leading-[31.2px] text-[#000000]/[0.8] uppercase">
+        {title}
+      </h4>
       <h1 className="mb-2 text-center">
-        <span className="text-[#C40000] text-3xl font-bold">${rate}</span>
+        <span className="text-[#C40000] text-[40px] font-bold">${rate}</span>
         {description ? (
-          <div className="text-sm font-normal pt-6 ">{description}</div>
+          <div className="text-[20px] font-normal pt-[25.5px] w-[320px] leading-[26px] text-center text-[#000000]/[0.7]">
+            {description}
+          </div>
         ) : (
           <span className="block text-black text-opacity-50">per month</span>
         )}
