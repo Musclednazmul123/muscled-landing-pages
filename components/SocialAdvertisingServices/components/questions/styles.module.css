@@ -7,3 +7,15 @@
 .overlay {
     background: linear-gradient(0deg, rgba(8, 58, 116, 0.8), rgba(8, 58, 116, 0.8));
 }
+
+.pic1 {
+    background-image: url('../../../assets/SocialAdvertisingServices//adBanner/pic1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.pic2 {
+    background-image: url('../../../assets/SocialAdvertisingServices//adBanner/pic2.jpg');
+    background-size: cover;
+    background-position: center center;
+}

@@ -19,13 +19,17 @@ const SocialMediaExamples = () => {
         Let's take a look . a this Facebook ad from Muscled D2C client
         Recreation Outfitters:
       </p>
-      <div className="bg-white-gray flex justify-center items-center w-full h-[220px]">
-        Ad Banner
-      </div>
+      <div
+        className={
+          ' flex justify-center items-center w-full h-[220px] ' + styles.pic1
+        }
+      ></div>
       <p>Here is another ad from the same company on Instagram.</p>
-      <div className="bg-white-gray flex justify-center items-center w-full h-[220px]">
-        Ad Banner
-      </div>
+      <div
+        className={
+          ' flex justify-center items-center w-full h-[220px] ' + styles.pic2
+        }
+      ></div>
       <p>
         D2C social ad´s come in a myriad of ways designed to reach your goals.
       </p>
