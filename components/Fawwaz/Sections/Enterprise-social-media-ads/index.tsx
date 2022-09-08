@@ -1,0 +1,10 @@
+export { default as Header } from "./Header";
+export { default as Pricing } from "./Pricing";
+export { default as Partner } from "./Partner";
+export { default as TurnFollowers } from "./TurnFollowers";
+export { default as Testimonial } from "./Testimonial";
+export { default as ReachOut } from "./ReachOut";
+export { default as Tables } from "./Tables";
+export { default as SocialMediaAds } from "./SocialMediaAds";
+export { default as Contents } from "./Contents";
+export { default as LastCards } from "./LastCards";

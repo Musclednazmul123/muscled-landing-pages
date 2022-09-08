@@ -6,10 +6,6 @@
 
 
 
-
-
-
-
 @layer base{
 
 	body {
@@ -105,3 +101,214 @@
 	background: #083A74CC;
 	inset: 0;
 } 
+
+/* ============Hero section============ */
+
+.highlight {
+	color:rgba(196, 0, 0, 0.7)
+}
+
+.custom-hero {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+	margin-top: 30px;
+}
+
+.hero-description {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-svg-div {
+	font-family: 'Poppins';
+	height: 106px;
+	left: 890.5px;
+	top: 135.5px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+}
+
+.svg-text-large {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 41.6px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.svg-text-small {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20.8px;
+}
+
+/* ========Partner section=========== */
+
+.partner-title {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+/* ===========pricing plan section============ */
+
+.pricing-section {
+	background: #F5F5F5;
+}
+
+.pricing-section-title {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.card-wrapper {
+	gap: 70px;
+}
+
+
+.pricing-card {
+	padding: 0px 0px 40px;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+}
+
+.card-header {
+	padding: 40px 0px;
+	gap: 40px;
+	margin-bottom: 24px;
+}
+
+.light-pink {
+	background: rgba(196, 0, 0, 0.03);
+}
+
+.dark-pink {
+	background: rgba(196, 0, 0, 0.06);
+}
+
+.card-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.card-rate {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #C40000;
+}
+
+.card-content {
+	width: 340px;
+	height: 270.5px;
+}
+
+.content-item {
+	width: 301px;
+	font-size: 20px;
+	line-height: 130%;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+
+.card-footer-content {
+	padding: 0px;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.8);
+	width: 236px;
+}
+
+/* ===============Promotion section================ */
+
+.promotion-content {
+	padding: 0px;
+	gap: 40px;
+}
+
+.promotion-content-list {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #000000;
+}
+
+.promotion-banner {
+	/* height: 284px; */
+	background: linear-gradient(90deg, rgba(8, 104, 230, 0.712), rgba(28, 192, 214, 0.329));
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.banner-content {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24.1667px;
+	line-height: 29px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+ul li {
+	margin-left: 30px;
+	list-style-type:disc;
+}
+
+
+/* ============Promo section================= */
+
+
+.promo-content > ol {
+	padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.promo-content > ol li {
+	margin: 0 10px;
+    padding: 0 10px;
+}
+
+
+.link-card {
+	background: rgba(196, 0, 0, 0.03);
+}
+
+.link-card-heading {
+	font-size: 24px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.link-card-item {
+	text-decoration: underline;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* =============Table of content========== */
+
+.custom-relative {
+	position: relative;
+}
+
+.custom-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.tbl-content-btn:hover {
+	cursor: pointer;
+}
+
+
+.react-player-modal:hover {
+	cursor: pointer;
+}
+
