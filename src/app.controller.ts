@@ -91,4 +91,10 @@ export class AppController {
   public uxAnalysisServices() {
     return {};
   }
+  @Render('landing-page-design-services')
+  @Get('/landing-page-design-services')
+  public landingPageDesignServices() {
+    return {}
+  }
+
 }

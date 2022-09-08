@@ -1,15 +1,27 @@
-import React, { ReactNode } from "react";
+import React, {FC, ReactNode } from "react";
+
+import { title } from "process";
+
+
 
 // Card
+
+export interface PricingCardProps {
+	title?: string;
+	rate?: string;
+	type?: "basic" | "premium" | "ultimate";
+	content?: [];
+}	
 export interface CardProps {
-  children: ReactNode;
-  className: string;
+	children: ReactNode;
+	className?: string;
+
 }
 
 type CardHeaderType = "basic" | "premium" | "ultimate";
 
 export interface CardHeaderProps {
-	children: ReactNode;
+	children?: ReactNode;
 	className?: string;
 	title?: string;
 	rate: string;
@@ -31,6 +43,7 @@ export interface CardContent {
 }
 
 export interface CardFooterProps {
+	className?: string;
 	children?: ReactNode;
 }
 
@@ -54,6 +67,14 @@ export interface InputButtonProps {
   children?: ReactNode;
   className?: string;
   rounded?: boolean;
+}
+
+export interface RoundedBtnProps {
+	bgColor: string;
+	textColor: string;
+	textSize: string,
+	children: ReactNode;
+	roundedFull: boolean;
 }
 
 //  Table
@@ -114,13 +135,35 @@ export interface UXAnalysisHeroSectionProps {
 
 // miscellaneous
 export interface PartnerLogo {
-  src: string;
-  width: number;
-  height: number;
+	src?: string;
+	width?: number;
+	height?: number;
+	children?: ReactNode;
 }
 
 export interface VideoFrameProps {
   className: string;
   sourceURL?: string;
   allowFullScreen?: boolean;
+}
+
+export interface PromotionOneProps {
+	title?: string;
+}
+
+export interface GuideItemProps {
+	id: string;
+	question: string;
+	headingSize: 'small' | 'large';
+	children: ReactNode;
+}
+
+
+export interface TableOfContentsProps {
+	questions: [{id:string; question:string;}];
+}
+
+export interface LinkCardProps {
+	title: string;
+	links: [];
 }

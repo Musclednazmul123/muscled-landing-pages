@@ -3,6 +3,7 @@ import { NextPage, NextPageContext } from "next";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
 
+
 interface Props {
   query: { name?: string };
 }
