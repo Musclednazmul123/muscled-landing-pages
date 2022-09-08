@@ -4,13 +4,13 @@ import { NextPage } from "next";
 // components
 import { Hero, Section, TestimonialReuseable } from "components/Fawwaz/Sections";
 import RedesignSVG from "components/assets/svg/RedesignSVG";
-import { Card } from "components/Fawwaz/Card";
+// import { Card } from "components/Fawwaz/Card";
 import cardBg from "components/assets/qwe.png";
 import Button from "components/Fawwaz/Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
-import WebredesignServicesContent from '../../components/WebsiteRedesignService'
-import { TableOfContent } from "components/Fawwaz/Table";
-
+import { InputRangeSlider, Quotation, TableOfContent, WebsiteRedesignServicesContent } from '../../components/WebsiteRedesignService'
+import Card from "components/Fawwaz/Card/Card";
+import { ChevronDoubleRightIcon, ChevronDownIcon } from "@heroicons/react/outline";
 
 
 
@@ -91,7 +91,7 @@ const Page: NextPage = () => {
 
             {/* Website Redesign Calculator */}
             <div className="bg-red-10">
-                <Section className="text-center py-20 px-52">
+                <Section className="text-center lg:py-20 lg:px-52 lg:w-full flex flex-col">
                     <h2 className="text-4xl text-black-80">
                         Website Redesign Calculator — Get a Free Website Redesign Service Estimate!
                     </h2>
@@ -107,16 +107,72 @@ const Page: NextPage = () => {
                     </p>
                 </Section>
             </div>
-            <Section className="grid grid-cols-1 lg:grid-cols-4 py-32 gap-10">
-                <div className="order-2 lg:order-1 lg:col-span-2">
+            <Section className="py-32 gap-10">
+                <Quotation
+                    title="Request an Instant Quote using  Our Website Design Calculator"
+                    desc={`To get a free, instant quote, use the sliders below to indicate your needs, then click the "See Pricing" button. We'll show you both low and high-ended estimates for each service category, so you'll have an overall range of how much it might cost to build such a website.`}
+                >
+                    {/* <InputRangeSlider
+                        inputTitle="Number of pages"
+                        inputText="10 - 15"
+                        width={180}
+                    />
+                    <InputRangeSlider
+                        inputTitle="Style of design"
+                        inputText="Simple yet attractive"
+                        width={310}
+                    />
+                    <InputRangeSlider
+                        inputTitle="Copywriting number of pages"
+                        inputText="5 - 10"
+                        width={180}
+                        left={'35%'}
+                    />
+                    <InputRangeSlider
+                        inputTitle="SEO"
+                        inputText="30 keywords"
+                        width={230}
+                    />
+                    <InputRangeSlider
+                        inputTitle="Number of pages"
+                        inputText="10 - 15"
+                    />
+                    <InputRangeSlider
+                        inputTitle="Number of pages"
+                        inputText="10 - 15"
+                    />
+                    <InputRangeSlider
+                        inputTitle="Number of pages"
+                        inputText="10 - 15"
+                    />
+                    <InputRangeSlider
+                        inputTitle="Number of pages"
+                        inputText="10 - 15"
+                    /> */}
+                </Quotation>
+                <Section className="grid grid-cols-1 lg:grid-cols-4 py-32 gap-10">
+                    <div className="order-2 lg:order-1 lg:col-span-2">
 
-                    {/* Website redesign service options */}
-                    <WebredesignServicesContent />
-                </div>
-                <TableOfContent />
+                        {/* Website redesign service options */}
+                        <WebsiteRedesignServicesContent />
+                    </div>
+                    <TableOfContent
+                        content={[
+                            "Muscled's website design services are an investment in the success of your site.",
+                            "Award-winning web design. with open pricing.",
+                            "Our collectionof websites.",
+                            "What is included in Muscled's Web Design servises.",
+                            "Why use Muscled as your website design partner?",
+                            "How Are Websites Designed by Muscled?",
+                            "Why use Muscled as your website design partner?",
+                            "Get Your Company a Website That is Focused on Performance.",
+                        ]}
+                        IconTable={<ChevronDoubleRightIcon />}
+                        IconContent={<ChevronDownIcon />}
+                    />
+                    {/* Request an Instant Quote */}
 
-                {/* Request an Instant Quote */}
-
+                </Section>
             </Section>
         </>
     );
