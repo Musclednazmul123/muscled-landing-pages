@@ -18,7 +18,8 @@ export interface ButtonProps {
   shadow?: boolean;
   rounded?: boolean;
   arrow?: string;
-  text: string;
+  text?: string;
+  label?: string;
 }
 
 // card props and counter props
@@ -39,6 +40,7 @@ export interface IProps {
   highlight?: string;
   height?: number;
   headerBgColor?: string;
+  header?: number;
 }
 
 export interface IconProps {
@@ -51,4 +53,11 @@ export interface IconProps {
 export interface SVGProps {
   className?: string;
   opacity?: number;
+}
+
+export interface HeroCardProps {
+  img: string;
+  title: string;
+  number: string;
+  subtitle: string;
 }

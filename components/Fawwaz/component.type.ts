@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 
 // Card
 export interface CardProps {
-	children: ReactNode;
-	className: string;
+  children: ReactNode;
+  className: string;
 }
 
 type CardHeaderType = "basic" | "premium" | "ultimate";
@@ -20,6 +20,14 @@ export interface CardHeaderProps {
 export interface CardContentProps {
 	className?: string;
 	children: ReactNode;
+  title?: string;
+  rate?: string;
+  type?: "basic" | "premium" | "ultimate";
+}
+
+export interface CardContent {
+  className?: string;
+  children: ReactNode;
 }
 
 export interface CardFooterProps {
@@ -27,31 +35,31 @@ export interface CardFooterProps {
 }
 
 export interface IconProps {
-	icon?: JSX.Element;
-	title: string;
-	className?: string;
-	full?: string;
+  icon?: JSX.Element;
+  title: string;
+  className?: string;
+  full?: string;
 }
 
 // Form
 export interface InputProps {
-	type: string;
-	placeholder: string;
-	className?: string;
+  type: string;
+  placeholder: string;
+  className?: string;
 }
 
 export interface InputButtonProps {
-	bgColor: string;
-	textColor: string;
-	children?: ReactNode;
-	className?: string;
-	rounded?: boolean;
+  bgColor: string;
+  textColor: string;
+  children?: ReactNode;
+  className?: string;
+  rounded?: boolean;
 }
 
 //  Table
 export interface TableProps {
-	children: ReactNode;
-	className?: string;
+  children: ReactNode;
+  className?: string;
 }
 
 export interface TableHeadChildProps {
@@ -60,9 +68,9 @@ export interface TableHeadChildProps {
 }
 
 export interface TableBodyChildProps {
-	content?: string | JSX.Element;
-	className?: string;
-	type: "basic" | "standard" | "premium" | "ultimate";
+  content?: string | JSX.Element;
+  className?: string;
+  type: "basic" | "standard" | "premium" | "ultimate";
 }
 
 export interface TableOfContentProps {
@@ -76,8 +84,8 @@ export interface TableOfContentProps {
 
 // Sections
 export interface SectionProps {
-	children: ReactNode;
-	className?: string;
+  children: ReactNode;
+  className?: string;
 }
 // testi
 
@@ -94,15 +102,25 @@ export interface HeroSectionProps {
 	input?: boolean;
 }
 
+//AbdulRhman-UXAnalysis-Hero-Secion
+export interface UXAnalysisHeroSectionProps {  
+  pagination?: JSX.Element;
+  title: string;
+  description: string;
+  heroSVG?: JSX.Element;
+  input?: boolean;
+  children?: ReactNode;
+}
+
 // miscellaneous
 export interface PartnerLogo {
-	src: string;
-	width: number;
-	height: number;
+  src: string;
+  width: number;
+  height: number;
 }
 
 export interface VideoFrameProps {
-	className: string;
-	sourceURL?: string;
-	allowFullScreen?: boolean;
+  className: string;
+  sourceURL?: string;
+  allowFullScreen?: boolean;
 }

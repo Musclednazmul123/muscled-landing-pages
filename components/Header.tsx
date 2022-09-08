@@ -1,7 +1,8 @@
 import { FC, useEffect, useState } from "react";
 import React from "react";
 import Image from "next/image";
-import logo from "components/assets/logos/logo1.png";
+import logo from "components/assets/logo/Logo1.png";
+
 import { ChevronDownIcon, MenuIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -146,7 +147,6 @@ const Header: FC = () => {
               </ul>
             </div>
           </div>
-
           <div className="relative">
             <div
               onClick={() => setModalOpen(`${modalOpen === "4" ? "" : "4"}`)}

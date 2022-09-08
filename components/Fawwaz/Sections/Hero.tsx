@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React,{ FC } from "react";
 
 import { Section } from ".";
 import { Input } from "../Form";
@@ -55,6 +55,5 @@ const Hero: FC<HeroSectionProps> = ({
 			<div>{heroSVG}</div>
 		</Section>
 	);
-};
-
-export default Hero;
+				}
+	export default Hero;
