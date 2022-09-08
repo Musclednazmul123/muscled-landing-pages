@@ -57,7 +57,7 @@ export default function UxTesmonial() {
               height="214px"
               thumbnail="thumbnail.png"
               Icon={playIcon}
-              url=""
+              url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             />
           </div>
         </div>
