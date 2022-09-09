@@ -1,7 +1,5 @@
 import React, { FC, ReactNode } from "react";
-
 import { FaListAlt } from "react-icons/fa";
-import { BiUpArrowAlt } from "react-icons/bi";
 
 interface IProps {
   IconContent?: ReactNode;
@@ -14,13 +12,11 @@ const TableOfContent: FC<IProps> = ({
   IconContent,
   content,
   IconTable,
-  height,
 }) => {
   return (
     <div
       className="order-1 col-span-1 h-fit lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[440px] border rounded-md"
     >
-      {/* @ts-ignore */}
       <div className="bg-[#F2F2F2] rounded-md p-4 flex justify-between items-center">
         <h2 className="flex items-center gap-2 text-lg">
           <FaListAlt size={20} />
