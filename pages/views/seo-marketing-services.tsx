@@ -1,4 +1,4 @@
-import React from "react";
+import React,{FC,useState} from "react";
 import { NextPage } from "next";
 
 // components
@@ -11,7 +11,6 @@ import {
 	CardHeader,
 	CardContent,
 	IconItem,
-	CardFooter,
 } from "components/Fawwaz/Card";
 
 import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
@@ -24,9 +23,22 @@ import cardBg from "components/assets/qwe.png";
 import sectionIcon from "components/assets/1.png";
 
 import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";
-import { FaCheckCircle } from "react-icons/fa";
+import { StarIcon, CheckCircleIcon,ChevronDoubleRightIcon} from "@heroicons/react/solid";
+import { HiChevronDoubleRight } from "react-icons/hi";
 
+
+const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
+
+const contentsOfTOC = [
+	"Our First-Principle and Data-Driven SEO Process",
+	"What does the MUSCLED SEO Management Service look like?",
+	"How do I choose the BEST SEO company to help me?",
+	"How can SEO help my business grow?",
+	"Your SEO Strategy Needs to be Competitive",
+	"FAQs about SEO services",
+];
 const Page: NextPage = () => {
+	const [isOpen, setIsOpen] = useState(true);
 	return (
 		<>
 			{/* First Section */}
@@ -64,7 +76,7 @@ const Page: NextPage = () => {
 			</div>
 
 			{/* Third section */}
-			<Section>
+			<Section className="pt-5">
 				<h2 className="text-4xl text-center">
 					Explore SEO Marketing Service Plans
 				</h2>
@@ -83,30 +95,39 @@ const Page: NextPage = () => {
 							rate="2,500"
 							type="basic"
 							monthly={
-								<span className="block text-black text-opacity-50">
+								<span className="block text-black text-opacity-50 pt-4">
 									per month
 								</span>
 							}>
-							<AiFillStar className="card-icon fill-black-50" />
+							<StarIcon className="card-icon fill-black-50" />
 						</CardHeader>
-						<CardContent className="space-y-11">
+						<CardContent className="space-y-9 my-10 min-h-[276px]">
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="4 initial website user testing videos"
-								className="mt-2 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Shopping cart abandonment testing"
-								className="mt-4 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Heatmap and click stream testing on 8 pages"
-								className="mt-4 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 						</CardContent>
-						<CardFooter />
+						<div className="px-4 pb-10 mt-4 flex items-center justify-center flex-col">
+								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center" />
+								
+								<Button
+									bgColor="bg-[#000]"
+									textColor="text-white"
+									className="py-4 px-10 text-[-0.8em]">
+									Customize my Plan
+								</Button>
+							</div>
 					</Card>
 					<Card className="rounded-sm border-2 max-w-[400px] w-full">
 						<CardHeader
@@ -114,33 +135,42 @@ const Page: NextPage = () => {
 							rate="5,000"
 							type="premium"
 							monthly={
-								<span className="block text-black text-opacity-50">
+								<span className="block text-black text-opacity-50 pt-4">
 									per month
 								</span>
 							}>
 							<div className="flex">
-								<AiFillStar className="card-icon fill-black-70" />
-								<AiFillStar className="card-icon fill-black-70" />
+								<StarIcon className="card-icon fill-black-70" />
+								<StarIcon className="card-icon fill-black-70" />
 							</div>
 						</CardHeader>
-						<CardContent className="space-y-11">
+						<CardContent className="space-y-9 my-10 min-h-[276px]">
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="4 initial website user testing videos"
-								className="mt-2 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Shopping cart abandonment testing"
-								className="mt-4 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Heatmap and click stream testing on 8 pages"
-								className="mt-4 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 						</CardContent>
-						<CardFooter />
+						<div className="px-4 pb-10 mt-4 flex items-center justify-center flex-col">
+								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center" />
+								
+								<Button
+									bgColor="bg-[#000]"
+									textColor="text-white"
+									className="py-4 px-10 text-[-0.8em]">
+									Customize my Plan
+								</Button>
+							</div>
 					</Card>
 					<Card className="rounded-sm border-2 max-w-[400px] w-full">
 						<CardHeader
@@ -148,38 +178,47 @@ const Page: NextPage = () => {
 							rate="8,000"
 							type="ultimate"
 							monthly={
-								<span className="block text-black text-opacity-50">
+								<span className="block text-black text-opacity-50 pt-4">
 									per month
 								</span>
 							}>
 							<div className="flex">
-								<AiFillStar className="card-icon fill-black-80" />
-								<AiFillStar className="card-icon fill-black-80" />
-								<AiFillStar className="card-icon fill-black-80" />
+								<StarIcon className="card-icon fill-black-80" />
+								<StarIcon className="card-icon fill-black-80" />
+								<StarIcon className="card-icon fill-black-80" />
 							</div>
 						</CardHeader>
-						<CardContent className="space-y-11">
+						<CardContent className="space-y-9 my-10 min-h-[276px]">
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="4 initial website user testing videos"
-								className="mt-2 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Shopping cart abandonment testing"
-								className="mt-4 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Heatmap and click stream testing on 8 pages"
-								className="mt-4 justify-center"
+								className="text-black-70 font-normal text-xl"
 							/>
 						</CardContent>
-						<CardFooter />
+						<div className="px-4 pb-10 mt-4 flex items-center justify-center flex-col">
+								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center" />
+								
+								<Button
+									bgColor="bg-[#000]"
+									textColor="text-white"
+									className="py-4 px-10 text-[-0.8em]">
+									Customize my Plan
+								</Button>
+							</div>
 					</Card>
 				</div>
 
-				<p className="underline text-center mt-14 mb-24 cursor-pointer">
+				<p className="underline text-2x  text-center mt-14 mb-24 cursor-pointer text-[#5F27BD]">
 					See Full Deliverables
 				</p>
 			</Section>
@@ -280,8 +319,8 @@ const Page: NextPage = () => {
 					</p>
 				</div>
 
-				<div className="relative overflow-x-scroll">
-					<Table>
+				<div >
+					<Table className="table-fixed">
 						<thead>
 							<tr>
 								<Th
@@ -1179,7 +1218,7 @@ const Page: NextPage = () => {
 							<div className="seo-marketing-services-ads">
 								<div className="relative z-10 text-white grid grid-cols-3 gap-10">
 									<div className="col-span-2 space-y-10">
-										<h3 className="text-4xl">
+										<h3 className="text-4xl text-white leading-[60px]">
 											Build Up Your Sales Game.
 										</h3>
 										<p>
@@ -1680,7 +1719,21 @@ const Page: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<TableOfContent />
+				<TableOfContent
+						bgColor="bg-[#868686]"
+						titleColor="text-black"
+						titleIconColor="black"
+						isOpen={isOpen}
+						setIsOpen={() => setIsOpen((prev) => !prev)}
+						contents={contentsOfTOC.map((content, key) => (
+							<IconItem
+								key={key}
+								title={content}
+								icon={<ChevronDoubleRightIcon className="fill-black-80 w-5 h-5"/>}
+								className=" mb-5 w-full items-center text-black-80"
+							/>
+						))}
+					/>
 			</Section>
 
 			<Footer />
