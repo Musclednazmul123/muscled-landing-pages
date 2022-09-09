@@ -3,10 +3,13 @@ import { NextPage } from "next";
 
 import HeroSection from "components/CROServices/HeroSection";
 import PartnerSection from "components/CROServices/PartnerSection";
+import PricingPlanSection from "components/CROServices/PricingPlanSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
 import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
 import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
+import { Section } from "components/Fawwaz/Sections";
+import Card from "components/Card";
 
 const CROServicesPage: NextPage = () => {
   return (
@@ -45,6 +48,9 @@ const CROServicesPage: NextPage = () => {
       </div>
       <div>
         <PartnerSection />
+      </div>
+      <div>
+        <PricingPlanSection />
       </div>
     </div>
   );
