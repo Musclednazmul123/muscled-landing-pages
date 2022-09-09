@@ -59,7 +59,7 @@ const TableOfContents = () => {
       </div>
       <List
         content={contents}
-        className="text-[#5F27BD] cursor-pointer underline px-[20px] py-[10px] text-[20px] leading-[30px] space-y-[20px] font-normal md:m-auto rounded-b-xl w-[400px] flex flex-col justify-center"
+        className="text-[#5F27BD] cursor-pointer underline py-[10px] text-[20px] leading-[30px] space-y-[20px] font-normal md:m-auto rounded-b-xl w-[400px] flex flex-col justify-center"
         id="list"
       />
     </div>
