@@ -101,6 +101,12 @@ export class AppController {
   @Render('website-price')
   @Get('/website-price')
   public websitePrice() {
+  
+}
+
+@Render('social-advertising-services')
+  @Get('/social-advertising-services')
+  public socialAdvertisingServices() {
     return {}
   }
 }
