@@ -22,9 +22,8 @@ import logo from "components/assets/logos/logo1.png";
 import cardBg from "components/assets/qwe.png";
 import sectionIcon from "components/assets/1.png";
 
-import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";
+import { AiFillPhone, AiOutlineCheck } from "react-icons/ai";
 import { StarIcon, CheckCircleIcon,ChevronDoubleRightIcon} from "@heroicons/react/solid";
-import { HiChevronDoubleRight } from "react-icons/hi";
 
 
 const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
@@ -218,7 +217,7 @@ const Page: NextPage = () => {
 					</Card>
 				</div>
 
-				<p className="underline text-2x  text-center mt-14 mb-24 cursor-pointer text-[#5F27BD]">
+				<p className="underline text-2xl  text-center mt-14 mb-24 cursor-pointer text-[#5F27BD]">
 					See Full Deliverables
 				</p>
 			</Section>

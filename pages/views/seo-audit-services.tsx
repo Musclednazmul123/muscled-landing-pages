@@ -1,4 +1,4 @@
-import React from "react";
+import React,{FC,useState} from "react";
 import { NextPage } from "next";
 
 import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
@@ -19,10 +19,24 @@ import SEOAuditSVG from "components/assets/svg/SEOAuditSVG";
 import logo from "components/assets/logos/logo1.png";
 import sectionIcon from "components/assets/seo-box-icon.png";
 
-import { AiFillPhone, AiFillStar, AiOutlineCheck } from "react-icons/ai";
-import { FaCheckCircle } from "react-icons/fa";
+import { AiFillPhone, AiOutlineCheck } from "react-icons/ai";
+import { StarIcon, CheckCircleIcon} from "@heroicons/react/solid";
+import { BsDot } from "react-icons/bs"
+
+const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
+const contentsOfTOC = [
+	"Our Process",
+	"How Long D SEO Audit Services Take?",
+	"Why Invest In An SEO Package?",
+	"SEO Auditd: The On-Page Factors Affecting Your SEO",
+	"SEO Audits: The Off-Page Factors Affecting Your SEO",
+	"SEO Audits: The Server Files Affecting Your SEO",
+	"FAQs",
+	"How Do I Get Started With SEO Audit Services?",
+];
 
 const Page: NextPage = () => {
+	const [isOpen, setIsOpen] = useState(true);
 	return (
 		<div>
 			<div className="min-h-[890px] bg-black-70 px-3 lg:px-0">
@@ -63,31 +77,42 @@ const Page: NextPage = () => {
 				<div className="max-w-[540px] mx-auto mt-10">
 					<Card className="rounded-sm border-2">
 						<CardHeader title="MARKETLEADERPLAN" rate="8,000" type="basic">
-							<AiFillStar className="card-icon fill-black-50" />
+						<StarIcon className="card-icon fill-black-50" />
 						</CardHeader>
-						<CardContent className="text-left space-y-11 pt-5">
+						<CardContent className="space-y-9 mt-10 min-h-[276px]">
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="70 pages reviewed"
-								className="mt-2"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Future site strategy"
-								className="mt-4"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Backlink report"
-								className="mt-4"
+								className="text-black-70 font-normal text-xl"
 							/>
 							<IconItem
-								icon={<FaCheckCircle size={15} />}
+								icon={<CheckIcon />}
 								title="Complete audit report upon completion"
-								className="mt-4"
+								className="text-black-70 font-normal text-xl"
 							/>
 						</CardContent>
-						<CardFooter />
+						<div className="px-4 pb-10  flex items-center justify-center flex-col">
+								<p className="border-t border-[#000] w-full  mb-10 text-center" />
+								<p className="mb-10 text-black-80 text-xl">
+								30 - Day Duration
+								</p>
+								<Button
+									bgColor="bg-[#000]"
+									textColor="text-white"
+									className="py-4 px-10 text-[-0.8em]">
+									Send Proposal
+								</Button>
+							</div>
 					</Card>
 				</div>
 			</Section>
@@ -138,7 +163,7 @@ const Page: NextPage = () => {
 					<div className="relative min-w-[200px] w-full max-w-[400px] h-[320px] mx-auto bg-white-gray md:mx-0">
 						<VideoFrame className="absolute w-full h-full" />
 					</div>
-					<Card className="bg-[#3E5661] flex justify-start items-center w-[250px] h-[150px] p-6 mt-10 mx-auto md:mx-0 rounded-md">
+					<Card className="bg-[#3E5661] flex justify-start items-center w-full h-[150px] p-6 mt-10 mx-auto md:mx-0 rounded-md">
 						<Button bgColor="bg-black" textColor="text-white">
 							Send Proposal
 						</Button>
@@ -648,7 +673,7 @@ const Page: NextPage = () => {
 						<div className="seo-audit-services-ads">
 							<div className="relative z-10 text-white grid grid-cols-3 gap-10">
 								<div className="col-span-2 space-y-10">
-									<h3 className="text-4xl">
+									<h3 className="text-4xl text-white">
 										Build Up Your Sales Game.
 									</h3>
 									<p>
@@ -894,7 +919,18 @@ const Page: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<TableOfContent />
+				<TableOfContent
+						isOpen={isOpen}
+						setIsOpen={() => setIsOpen((prev) => !prev)}
+						contents={contentsOfTOC.map((content, key) => (
+							<IconItem
+								key={key}
+								title={content}
+								icon={<BsDot className="w-6 h-6"/>}
+								className=" mb-5 w-full items-center text-[#5F27BD] text-xl underline"
+							/>
+						))}
+					/>
 			</Section>
 
 			<Section className="grid mt-10 gap-8 lg:grid-cols-3 mb-44">
