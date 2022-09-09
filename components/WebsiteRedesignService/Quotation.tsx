@@ -9,7 +9,7 @@ interface IProps {
 
 const Quotation: NextPage<IProps> = ({ title, desc, children }) => {
   return (
-    <div className="bg-[#574a5b] h-[1395px] text-white p-16">
+    <div className="bg-[#574a5b] text-white p-16">
       <h4 className="mb-4 text-white">{title}</h4>
       <p className="text-lg">{desc}</p>
 

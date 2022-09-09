@@ -2,3 +2,4 @@ export { default as WebsiteRedesignServicesContent } from "./WebsiteRedesignServ
 export { default as InputRangeSlider } from "./InputRangeSlider"
 export { default as Quotation } from "./Quotation"
 export { default as TableOfContent } from "./TableOfContent"
+export { default as ServicesCard } from "./ServicesCard"

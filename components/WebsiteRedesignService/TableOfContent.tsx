@@ -18,8 +18,7 @@ const TableOfContent: FC<IProps> = ({
 }) => {
   return (
     <div
-      style={{ height: height || 510 }}
-      className="order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[440px] border rounded-md"
+      className="order-1 col-span-1 h-fit lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[440px] border rounded-md"
     >
       {/* @ts-ignore */}
       <div className="bg-[#F2F2F2] rounded-md p-4 flex justify-between items-center">

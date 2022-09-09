@@ -91,6 +91,5 @@ export interface VideoFrameProps {
 }
 
 export interface TestmonailProps {
-	p1?:string,
-	p2?:string,
+	services:string[],
 }

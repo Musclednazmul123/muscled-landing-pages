@@ -4,11 +4,10 @@ import { NextPage } from "next";
 // components
 import { Hero, Section, TestimonialReuseable } from "components/Fawwaz/Sections";
 import RedesignSVG from "components/assets/svg/RedesignSVG";
-// import { Card } from "components/Fawwaz/Card";
 import cardBg from "components/assets/qwe.png";
 import Button from "components/Fawwaz/Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
-import { InputRangeSlider, Quotation, TableOfContent, WebsiteRedesignServicesContent } from '../../components/WebsiteRedesignService'
+import { InputRangeSlider, Quotation, ServicesCard, TableOfContent, WebsiteRedesignServicesContent } from '../../components/WebsiteRedesignService'
 import Card from "components/Fawwaz/Card/Card";
 import { ChevronDoubleRightIcon, ChevronDownIcon } from "@heroicons/react/outline";
 
@@ -85,13 +84,15 @@ const Page: NextPage = () => {
 
             {/* Testimonial */}
             <TestimonialReuseable
-                p1="Every business is different, and that should show on the website that represents it. Muscled Digital Agency offers a range of options that should nail the look you want for your site."
-                p2="We will be giving you a plan that was made from the ground up."
+                services={[
+                    "Every business is different, and that should show on the website that represents it. Muscled Digital Agency offers a range of options that should nail the look you want for your site.",
+                    "We will be giving you a plan that was made from the ground up."
+                ]}
             />
 
             {/* Website Redesign Calculator */}
             <div className="bg-red-10">
-                <Section className="text-center lg:py-20 lg:px-52 lg:w-full flex flex-col">
+                <Section className="text-center py-8 lg:py-20 lg:px-52 lg:w-full flex flex-col">
                     <h2 className="text-4xl text-black-80">
                         Website Redesign Calculator — Get a Free Website Redesign Service Estimate!
                     </h2>
@@ -108,15 +109,17 @@ const Page: NextPage = () => {
                 </Section>
             </div>
             <Section className="py-32 gap-10">
+                {/* Quotation */}
                 <Quotation
                     title="Request an Instant Quote using  Our Website Design Calculator"
                     desc={`To get a free, instant quote, use the sliders below to indicate your needs, then click the "See Pricing" button. We'll show you both low and high-ended estimates for each service category, so you'll have an overall range of how much it might cost to build such a website.`}
                 >
-                    {/* <InputRangeSlider
+                    <InputRangeSlider
                         inputTitle="Number of pages"
                         inputText="10 - 15"
                         width={180}
                     />
+
                     <InputRangeSlider
                         inputTitle="Style of design"
                         inputText="Simple yet attractive"
@@ -134,23 +137,29 @@ const Page: NextPage = () => {
                         width={230}
                     />
                     <InputRangeSlider
-                        inputTitle="Number of pages"
-                        inputText="10 - 15"
+                        inputTitle="Responsive Design"
+                        inputText="Yes"
+                        left={'35%'}
                     />
                     <InputRangeSlider
-                        inputTitle="Number of pages"
-                        inputText="10 - 15"
+                        inputTitle="Database Integration"
+                        inputText="Basic"
+                        left={'35%'}
                     />
                     <InputRangeSlider
-                        inputTitle="Number of pages"
-                        inputText="10 - 15"
+                        inputTitle="Ecommerce Functionality"
+                        inputText="Basic"
+                        left={'35%'}
                     />
                     <InputRangeSlider
-                        inputTitle="Number of pages"
-                        inputText="10 - 15"
-                    /> */}
+                        inputTitle="CMS"
+                        inputText="Standard"
+                        left={'35%'}
+                        width={200}
+                    />
                 </Quotation>
-                <Section className="grid grid-cols-1 lg:grid-cols-4 py-32 gap-10">
+                {/* Content Section */}
+                <Section className="grid grid-cols-1 lg:grid-cols-4 py-12 md:py-32 gap-10">
                     <div className="order-2 lg:order-1 lg:col-span-2">
 
                         {/* Website redesign service options */}
@@ -173,6 +182,38 @@ const Page: NextPage = () => {
                     {/* Request an Instant Quote */}
 
                 </Section>
+
+                {/* Services Card */}
+                <div className="flex flex-col md:flex-row justify-between gap-4">
+                    <ServicesCard
+                        services={[
+                            "Website Optimization Services",
+                            "SEO Speed Optimization Pricing",
+                            "SEO Audit",
+                            "Convertion Rate Optimization",
+                        ]}
+                    />
+
+                    <ServicesCard
+                        services={[
+                            "Digital Marketing Services",
+                            "SEO Service Packages",
+                            "PPC",
+                            "Website SEO Copywriting",
+                            "All Internet Marketing Services",
+                        ]}
+                    />
+
+                    <ServicesCard
+                        services={[
+                            "SEO Design Services",
+                            "SEO Web Design Company",
+                            "Web Video Production",
+                            "",
+                            "",
+                        ]}
+                    />
+                </div>
             </Section>
         </>
     );
