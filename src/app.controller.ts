@@ -93,4 +93,11 @@ export class AppController {
     return {}
   }
 
+  
+  @Render('cro-services')
+  @Get('/cro-services')
+  public croServices() {
+    return {}
+  }
+
 }
