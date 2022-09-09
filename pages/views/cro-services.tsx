@@ -2,6 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 
 import HeroSection from "components/CROServices/HeroSection";
+import PartnerSection from "components/CROServices/PartnerSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
 import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
@@ -41,6 +42,9 @@ const CROServicesPage: NextPage = () => {
           title="Revenue-Generating Conversion Rate Optimization Services"
           description="All the traffic in the world is meaningless unless it converts into paying customers, sales, or clients. Optimizing your conversion rate is an important aspect of digital marketing that we at Muscled know very well. Our CRO pricing is completely transparent — you always know where your money is going and how it is helping your site generate revenue for you."
         />
+      </div>
+      <div>
+        <PartnerSection />
       </div>
     </div>
   );
