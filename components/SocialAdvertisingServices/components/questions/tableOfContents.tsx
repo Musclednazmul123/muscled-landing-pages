@@ -3,7 +3,7 @@ import { contents } from '../../data/questions'
 import Image from 'next/image'
 import ListIcon from '../../../assets/SocialAdvertisingServices/questions/listIcon.png'
 import List from '../questions/list'
-import Caret from '../../../assets/SocialAdvertisingServices/questions/caret.svg'
+// import Caret from '../../../assets/SocialAdvertisingServices/questions/caret.svg'
 
 const TableOfContents = () => {
   const toggleTable = () => {
@@ -21,9 +21,9 @@ const TableOfContents = () => {
         className="py-4 px-12 rounded-t-xl bg-[#3E5661] text-white w-full flex justify-between items-center h-[70px] space-x-4"
         id="contentHeader"
       >
-        <div className="flex items-center gap-x-4 text-[20px] font-bold">
+        <div className="flex items-center text-[20px] font-bold">
           <Image src={ListIcon} alt="list" width={26} height={20} />
-          Table Of Contents
+          <span className="ml-2">Table Of Contents</span>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const TableOfContents = () => {
       </div>
       <List
         content={contents}
-        className="text-[#5F27BD] cursor-pointer underline px-[20px] py-[10px] text-[20px] leading-[30px] h-[550px] space-y-[20px] font-normal md:m-auto rounded-b-xl w-[400px] flex flex-col justify-center"
+        className="text-[#5F27BD] cursor-pointer underline px-[20px] py-[10px] text-[20px] leading-[30px] space-y-[20px] font-normal md:m-auto rounded-b-xl w-[400px] flex flex-col justify-center"
         id="list"
       />
     </div>

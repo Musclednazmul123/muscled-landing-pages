@@ -45,7 +45,7 @@ const FirstTable = () => {
           </tr>
           {displayTableRows()}
           <tr className="text-[16px] max-h-[154px]">
-            <td className="flex flex-col px-8 py-[30px] bg-black-80 text-white rounded-bl-xl border-t-[1px] border-[rgba(0,0,0,0.1)]">
+            <td className="flex flex-col px-8 py-[30px] bg-black-80 text-white rounded-bl-xl">
               <p className="my-4 text-[16px] leading-6">
                 Give Us a Call if You Need Information
               </p>
