@@ -1,5 +1,5 @@
-import React from "react";
-import ReactPlayer from "react-player";
+import React from 'react'
+import ReactPlayer from 'react-player'
 
 interface Props {
   url: string;
@@ -74,4 +74,4 @@ const ReactPlayerModal: React.FC<Props> = ({
   );
 };
 
-export default ReactPlayerModal;
+export default ReactPlayerModal
