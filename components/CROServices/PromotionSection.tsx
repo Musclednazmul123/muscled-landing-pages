@@ -3,6 +3,8 @@ import { Hero, Section } from "../Fawwaz/Sections";
 import Card from "../Card";
 import { NextPage } from "next";
 import Banner from "./Banner";
+import bgImage from "../assets/card_bg_1.png";
+import IMac24Inch from "../assets/svg/iMac24Inch";
 
 const PromotionSection: NextPage = () => {
   return (
@@ -40,6 +42,8 @@ const PromotionSection: NextPage = () => {
         <Banner
           text="Looking for custom plans and pricing? Request a proposal to receive yours"
           buttonText="Get Free Proposal"
+          bgImageSrc={bgImage.src}
+          renderRightImage={() => <IMac24Inch />}
         />
       </div>
     </div>

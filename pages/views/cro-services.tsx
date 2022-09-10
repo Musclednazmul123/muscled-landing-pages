@@ -21,6 +21,8 @@ import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
 import { Section } from "components/Fawwaz/Sections";
 import Button from "components/Fawwaz/Button";
 import Card from "components/Card";
+import cardBg2 from "components/assets/card_bg_2.png";
+import IMac24Inch from "components/assets/svg/iMac24Inch";
 
 const CROServicesPage: NextPage = () => {
   return (
@@ -120,6 +122,14 @@ const CROServicesPage: NextPage = () => {
                 },
               ]}
             />
+            <div className="mt-10">
+              <Banner
+                text="Drive more revenue for your company"
+                buttonText="Get Free Proposal"
+                bgImageSrc={cardBg2.src}
+                shouldCenterTextVertically
+              />
+            </div>
           </div>
         </Section>
       </div>
