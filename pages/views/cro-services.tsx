@@ -3,6 +3,7 @@ import { NextPage } from "next";
 
 import Banner from "components/CROServices/Banner";
 import HeroSection from "components/CROServices/HeroSection";
+import PromotionSection2 from "components/CROServices/PromotionSection2";
 import PromotionSection from "components/CROServices/PromotionSection";
 import PartnerSection from "components/CROServices/PartnerSection";
 import TestimonialSection from "components/CROServices/TestimonialSection";
@@ -71,6 +72,9 @@ const CROServicesPage: NextPage = () => {
       </div>
       <div>
         <ServiceTableSection />
+      </div>
+      <div className="bg-[#C400000F] py-24">
+        <PromotionSection2 />
       </div>
     </div>
   );
