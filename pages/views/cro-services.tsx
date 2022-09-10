@@ -7,12 +7,14 @@ import PromotionSection2 from "components/CROServices/PromotionSection2";
 import PromotionSection from "components/CROServices/PromotionSection";
 import GuideDetailsSection from "components/CROServices/GuideDetailsSection";
 import PartnerSection from "components/CROServices/PartnerSection";
+import TOCSection from "components/CROServices/TOCSection";
 import TestimonialSection from "components/CROServices/TestimonialSection";
 import PricingPlanSection from "components/CROServices/PricingPlanSection";
 import ServiceTableSection from "components/CROServices/ServiceTableSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
 import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
+import { Table, Th, Td, TableOfContent } from "components/Fawwaz/Table";
 import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
 import { Section } from "components/Fawwaz/Sections";
 import Button from "components/Fawwaz/Button";
@@ -79,11 +81,42 @@ const CROServicesPage: NextPage = () => {
       </div>
       <div>
         <Section className="py-20 flex">
-          <div className="flex-1">
+          <div className="flex-1 pr-12">
             <GuideDetailsSection />
           </div>
           <div className="w-[440px]">
-            asdasddsa
+            <TOCSection
+              links={[
+                {
+                  title: "What Is Conversion Rate Optimization?",
+                  to: "/",
+                },
+                {
+                  title: "Why Is CRO So Important?",
+                  to: "/",
+                },
+                {
+                  title: "What Are The Advantages Of CRO Services?",
+                  to: "/",
+                },
+                {
+                  title: "What Do WebFX’s CRO Services Include?",
+                  to: "/",
+                },
+                {
+                  title: "Why Choose WebFX For CRO Services?",
+                  to: "/",
+                },
+                {
+                  title: "AQs About Conversion Rate Optimization Services",
+                  to: "/",
+                },
+                {
+                  title: "Grow Your Revenue With A Custom CRO Package",
+                  to: "/",
+                },
+              ]}
+            />
           </div>
         </Section>
       </div>
