@@ -3,6 +3,7 @@ import { NextPage } from "next";
 
 import Banner from "components/CROServices/Banner";
 import HeroSection from "components/CROServices/HeroSection";
+import FAQSection from "components/CROServices/FAQSection";
 import PromotionSection2 from "components/CROServices/PromotionSection2";
 import PromotionSection from "components/CROServices/PromotionSection";
 import GuideDetailsSection from "components/CROServices/GuideDetailsSection";
@@ -84,6 +85,7 @@ const CROServicesPage: NextPage = () => {
         <Section className="py-20 flex">
           <div className="flex-1 pr-12">
             <GuideDetailsSection />
+            <FAQSection />
           </div>
           <div className="w-[440px]">
             <TOCSection
@@ -121,6 +123,7 @@ const CROServicesPage: NextPage = () => {
           </div>
         </Section>
       </div>
+      <div></div>
       <div>
         <QuickLinksSection />
       </div>
