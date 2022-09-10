@@ -7,6 +7,7 @@ import PromotionSection from "components/CROServices/PromotionSection";
 import PartnerSection from "components/CROServices/PartnerSection";
 import TestimonialSection from "components/CROServices/TestimonialSection";
 import PricingPlanSection from "components/CROServices/PricingPlanSection";
+import ServiceTableSection from "components/CROServices/ServiceTableSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
 import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
@@ -67,6 +68,9 @@ const CROServicesPage: NextPage = () => {
           ownerName="Owner"
           companyName="Company Name"
         />
+      </div>
+      <div>
+        <ServiceTableSection />
       </div>
     </div>
   );
