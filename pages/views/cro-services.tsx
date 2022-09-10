@@ -5,6 +5,7 @@ import Banner from "components/CROServices/Banner";
 import HeroSection from "components/CROServices/HeroSection";
 import PromotionSection2 from "components/CROServices/PromotionSection2";
 import PromotionSection from "components/CROServices/PromotionSection";
+import GuideDetailsSection from "components/CROServices/GuideDetailsSection";
 import PartnerSection from "components/CROServices/PartnerSection";
 import TestimonialSection from "components/CROServices/TestimonialSection";
 import PricingPlanSection from "components/CROServices/PricingPlanSection";
@@ -75,6 +76,16 @@ const CROServicesPage: NextPage = () => {
       </div>
       <div className="bg-[#C400000F] py-24">
         <PromotionSection2 />
+      </div>
+      <div>
+        <Section className="py-20 flex">
+          <div className="flex-1">
+            <GuideDetailsSection />
+          </div>
+          <div className="w-[440px]">
+            asdasddsa
+          </div>
+        </Section>
       </div>
     </div>
   );
