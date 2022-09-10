@@ -1,7 +1,9 @@
 import React from "react";
 import { NextPage } from "next";
 
+import Banner from "components/CROServices/Banner";
 import HeroSection from "components/CROServices/HeroSection";
+import PromotionSection from "components/CROServices/PromotionSection";
 import PartnerSection from "components/CROServices/PartnerSection";
 import PricingPlanSection from "components/CROServices/PricingPlanSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
@@ -9,6 +11,7 @@ import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
 import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
 import { Section } from "components/Fawwaz/Sections";
+import Button from "components/Fawwaz/Button";
 import Card from "components/Card";
 
 const CROServicesPage: NextPage = () => {
@@ -51,6 +54,9 @@ const CROServicesPage: NextPage = () => {
       </div>
       <div>
         <PricingPlanSection />
+      </div>
+      <div>
+        <PromotionSection />
       </div>
     </div>
   );
