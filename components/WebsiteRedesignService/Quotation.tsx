@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { NextPage } from "next";
+import Button from "components/Fawwaz/Button";
 
 interface IProps {
   children?: ReactNode;
@@ -15,6 +16,15 @@ const Quotation: NextPage<IProps> = ({ title, desc, children }) => {
 
       <div className="flex flex-col justify-between mt-16 h-[1045px]">
         {children}
+      </div>
+      <div className="flex  mt-16 justify-end">
+        <Button
+          textColor="text-white"
+          bgColor="bg-black"
+          className=" text-xl w-full lg:w-3/5 font-[500] h-[60px]"
+        >
+          See Pricing
+        </Button>
       </div>
     </div>
   );
