@@ -5,6 +5,7 @@ import Banner from "components/CROServices/Banner";
 import HeroSection from "components/CROServices/HeroSection";
 import PromotionSection from "components/CROServices/PromotionSection";
 import PartnerSection from "components/CROServices/PartnerSection";
+import TestimonialSection from "components/CROServices/TestimonialSection";
 import PricingPlanSection from "components/CROServices/PricingPlanSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
 import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
@@ -57,6 +58,15 @@ const CROServicesPage: NextPage = () => {
       </div>
       <div>
         <PromotionSection />
+      </div>
+      <div className="bg-black text-white">
+        <TestimonialSection
+          testimony='"Muscled continues to provide advanced solutions that add value to my
+          company and my clients on a consistent basis. Muscled is worth the
+          investment, easily outpacing the competition!"'
+          ownerName="Owner"
+          companyName="Company Name"
+        />
       </div>
     </div>
   );
