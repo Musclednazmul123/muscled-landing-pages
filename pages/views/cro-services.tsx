@@ -6,6 +6,7 @@ import HeroSection from "components/CROServices/HeroSection";
 import PromotionSection2 from "components/CROServices/PromotionSection2";
 import PromotionSection from "components/CROServices/PromotionSection";
 import GuideDetailsSection from "components/CROServices/GuideDetailsSection";
+import QuickLinksSection from "components/CROServices/QuickLinksSections";
 import PartnerSection from "components/CROServices/PartnerSection";
 import TOCSection from "components/CROServices/TOCSection";
 import TestimonialSection from "components/CROServices/TestimonialSection";
@@ -119,6 +120,9 @@ const CROServicesPage: NextPage = () => {
             />
           </div>
         </Section>
+      </div>
+      <div>
+        <QuickLinksSection />
       </div>
     </div>
   );
