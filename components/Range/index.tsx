@@ -8,11 +8,11 @@ const Range = () => {
           {/* Number */}
           {/* Label */}
           <div className="text-white text-left">
-            <p>Number</p>
+            <p className="font-sans text-2xl font-semibold">Number of pages</p>
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex"> 
             {/* Label */}
             <div className={`bg-black h-5 w-[250px] rounded-full`}></div>
 
@@ -38,7 +38,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>10-50</div>
+                  <div>
+                    <p className="text-xl font-semibold">10-50</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +69,7 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>Style of Design</p>
+            <p className="font-sans text-2xl font-semibold">Style of design</p>
           </div>
 
           {/* Range div */}
@@ -98,7 +100,9 @@ const Range = () => {
                     </svg>
                   </div>
                   <div>
-                    <p>Simple Yet Attractive</p>
+                    <p className="text-xl font-semibold">
+                      Simple Yet Attractive
+                    </p>
                   </div>
                   <div>
                     <svg
@@ -128,7 +132,9 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>Copywriting number of Pages</p>
+            <p className="font-sans text-2xl font-semibold">
+              Copywriting number of Pages
+            </p>
           </div>
 
           {/* Range div */}
@@ -158,7 +164,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>5-10</div>
+                  <div>
+                    <p className="text-xl font-semibold">5-10</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +195,7 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>SEO</p>
+            <p className="font-sans text-2xl font-semibold">SEO</p>
           </div>
 
           {/* Range div */}
@@ -217,7 +225,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>30 KeyWords</div>
+                  <div>
+                    <p className="text-xl font-semibold">30 KeyWords</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +256,9 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>Responsive Design</p>
+            <p className="font-sans text-2xl font-semibold">
+              Responsive Design
+            </p>
           </div>
 
           {/* Range div */}
@@ -276,7 +288,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>Yes</div>
+                  <div>
+                    <p className="text-xl font-semibold">Yes</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +319,9 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>Database Integration</p>
+            <p className="font-sans text-2xl font-semibold">
+              Database Integration
+            </p>
           </div>
 
           {/* Range div */}
@@ -335,7 +351,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>Basic</div>
+                  <div>
+                    <p className="text-xl font-semibold">Basic</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +382,9 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>Ecommerce Funtionality</p>
+            <p className="font-sans text-2xl font-semibold">
+              Ecommerce Funtionality
+            </p>
           </div>
 
           {/* Range div */}
@@ -394,7 +414,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>Basic</div>
+                  <div>
+                    <p className="text-xl font-semibold">Basic</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -423,7 +445,7 @@ const Range = () => {
         <div className="flex justify-between py-6 mb-6">
           {/* Label */}
           <div className="text-white text-left">
-            <p>CMS</p>
+            <p className="font-sans text-2xl font-semibold">CMS</p>
           </div>
 
           {/* Range div */}
@@ -453,7 +475,9 @@ const Range = () => {
                       />
                     </svg>
                   </div>
-                  <div>Standard</div>
+                  <div>
+                    <p className="text-xl font-semibold">Standard</p>
+                  </div>
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -478,9 +502,9 @@ const Range = () => {
           </div>
         </div>
 
-        <div className="flex justify-end w-full">
+        <div className="flex justify-end w-full mt-16">
           <button className="bg-black w-[600px] rounded-lg text-white p-4">
-            <p className="font-sans">See Pricing</p>
+            <p className="font-sans text-xl font-semibold">See Pricing</p>
           </button>
         </div>
       </div>

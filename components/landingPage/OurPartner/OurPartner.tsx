@@ -33,7 +33,7 @@ export default function OurPartner() {
 						{logo.map((logo, index) => {
 							return <Icon customClasses="" icon={logo.icon} />;
 						})}
-					</div>
+					</div> 
 				</div>
 			</div>
 		</div>

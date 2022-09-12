@@ -18,15 +18,15 @@ const SimpleCard = ({
   items5,
 }: IProps) => {
   return (
-    <div className="xl:w-[30%] w-full font-sans bg-[#c400001a] ml-[20px] mb-20">
-      <div className="pl-5 py-5 flex flex-col justify-start items-start">
-        <h2 className="text-2xl font-medium">{heading}</h2>
+    <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
+      <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+        <h2 className="text-2xl font-medium pb-5">{heading}</h2>
         <ul className="py-5 text-xl font-sans">
-          <li className="pb-3">{items1}</li>
-          <li className="pb-3">{items2}</li>
-          <li className="pb-3">{items3}</li>
-          <li className="pb-3">{items4}</li>
-          <li>{items5}</li>
+          <li className="pb-5 ">{items1}</li>
+          <li className="pb-5">{items2}</li>
+          <li className="pb-5">{items3}</li>
+          <li className="pb-5">{items4}</li>
+          <li className="pb-5">{items5}</li>
         </ul>
       </div>
     </div>

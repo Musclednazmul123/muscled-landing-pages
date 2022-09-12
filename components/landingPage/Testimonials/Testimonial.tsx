@@ -22,7 +22,7 @@ export default function Testimonial() {
 								See Our Clients’ Testimonials
 							</button>
 						</div>
-						<VideoPlayer
+						<VideoPlayer 
 							Icon={PlayIcon}
 							// width={"500px"}
 							// height={"500px"}

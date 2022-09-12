@@ -2,7 +2,7 @@ import BlogArticle from "components/BlogArticle";
 import FreeQuote from "components/FreeQuote";
 import GetStartedForm from "components/GetStartedForm";
 import Hero from "components/Hero";
-import LearnMore from "components/LearnMore";
+import LearnMore from "components/LearnMore"; 
 import Plans from "components/Plans";
 import PricingQuestion from "components/PricingQuestion";
 import SocialMeidaAdPricing from "components/SocialMediaAdPricing";
@@ -10,10 +10,10 @@ import SocialMediaPricing from "components/SocialMediaPricing";
 
 function IndexPage() {
   return (
-    <div>
+    <div>  
       <Hero />
       <Plans />
-      <PricingQuestion />
+      <PricingQuestion /> 
       <SocialMediaPricing />
       <SocialMeidaAdPricing />
       <GetStartedForm />

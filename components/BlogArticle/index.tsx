@@ -11,7 +11,7 @@ function BlogArticle() {
     <section className={styles.wrapper}>
       <aside className={styles.wrapper__aside}>
         <TableOfContents
-          iconSVG={<MenuIcon />}
+          iconSVG={<MenuIcon />} 
           title="Table of content"
           contents={[
             "How much should you spend on social media marketing?",
