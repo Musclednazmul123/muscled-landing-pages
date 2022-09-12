@@ -1,7 +1,7 @@
 import React from "react";
 import { OverBuild, Paragraph } from "..";
 
-const Paragraph8 = () => {
+const Paragraph3 = () => {
   return (
     <Paragraph className="h-[536px]" title="Our collection of websites">
       <p>
@@ -13,4 +13,4 @@ const Paragraph8 = () => {
   );
 };
 
-export default Paragraph8;
+export default Paragraph3;

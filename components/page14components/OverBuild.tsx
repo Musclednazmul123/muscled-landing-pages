@@ -18,9 +18,9 @@ const OverBuild = () => {
       <div className="flex flex-col justify-between ml-4 text-center h-[257px]">
         <h4 className="text-white uppercase">We’ve over biuld</h4>
         <div className="flex">
-          {["1", "5", "0", "0"].map((item: string) => (
+          {["1", "5", "0", "0"].map((item: string, idx: number) => (
             <div
-              key={item}
+              key={idx}
               className="bg-white w-[65px] h-[90px] flex justify-center items-center mx-1 text-5xl font-extrabold"
             >
               {item}

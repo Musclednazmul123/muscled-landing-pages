@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import React from "react";
+import React, { ReactNode } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { ErrorFallback } from "../../helpers";
 
@@ -9,7 +9,7 @@ interface IProps {
   children: JSX.Element[];
 }
 
-const Pargraph: NextPage<IProps> = ({ className, title, children }) => {
+const Pargraph: NextPage<IProps> = ({ className, title = "", children }) => {
   return (
     <div
       className={`flex flex-col justify-between text-xl mx-25 mb-[45px] w-[760px] ${className}`}
@@ -17,8 +17,11 @@ const Pargraph: NextPage<IProps> = ({ className, title, children }) => {
       <h3 className="text-normal">{title}</h3>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         {/* @ts-ignore */}
-        {children.map((item: JSX.Element, idx: number) => {
-          const keys = (1 + (Math.random() + idx) * 1000).toString();
+        {children.map((item: any, idx: number) => {
+          const keys = (
+            title.slice(0, 50) +
+            (Math.random() + idx) * 1000
+          ).toString();
           return (
             <div key={keys} onClick={() => console.log(keys)}>
               {item}

@@ -1,12 +1,8 @@
 import { FC } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import { ErrorFallback } from "helpers";
 
 import { Section } from "../Sections";
 import Button from "../Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
-import ReactPlayerModal from "components/ReactPlayerModal";
-import playIcon from "components/playIcon";
 
 const Testimonials: FC = () => {
   return (
@@ -28,15 +24,9 @@ const Testimonials: FC = () => {
             See Our Client's Testimonials
           </Button>
         </div>
-        <ErrorBoundary FallbackComponent={ErrorFallback}>
-          <ReactPlayerModal
-            thumbnail={"../../components/assets/OurDesignServices.png"}
-            url="https://www.youtube.com/embed/D0UnqGm_miA"
-            Icon={playIcon}
-            width={"480px"}
-            height={"280px"}
-          />
-        </ErrorBoundary>
+        <div className="w-[500px] min-h-[400px] h-full bg-white-gray relative">
+          <VideoFrame className="absolute w-full h-full" allowFullScreen />
+        </div>
       </Section>
     </div>
   );

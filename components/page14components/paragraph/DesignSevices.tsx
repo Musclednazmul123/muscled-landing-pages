@@ -40,7 +40,7 @@ const DesignSevices = () => {
       <div className="flex-wrap w-[480px] h-[280px]">
         <ErrorBoundary FallbackComponent={ErrorFallback}>
           <ReactPlayerModal
-            thumbnail={"../../components/assets/OurDesignServices.png"}
+            // thumbnail={"../../assets/OurDesignServices.png"}
             url="https://www.youtube.com/embed/D0UnqGm_miA"
             Icon={playIcon}
             width={"480px"}
