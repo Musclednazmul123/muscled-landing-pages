@@ -35,7 +35,7 @@ const FAQSection = () => {
           most accurate pricing.
         </p>
         <p className="text-2xl font-bold mb-3">We achieve results</p>
-        <p className="text-lg mb-8">
+        <p className="text-lg mb-[72px]">
           We are committed to delivering results that have a genuine impact on
           our clients' most important objectives. We've generated over 7.8
           million leads and $3 billion in revenue for our clients over the last
