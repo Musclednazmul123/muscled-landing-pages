@@ -24,7 +24,7 @@ const SimpleCustomCMS = () => {
                 on a project while staying within your budget.
               </span>
             </li>
-            <li className="mt-1 md:pb-0 pl-12">
+            <li className="mt-1 md:pb-0">
               <span className="-ml-2">
                 Web integration of various CMS platforms, such as transactional,
                 e-commerce, and content-based CMS.
