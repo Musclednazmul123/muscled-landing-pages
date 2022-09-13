@@ -6,7 +6,7 @@ import Logo from "../Fawwaz/Logo";
 
 const FAQSection = () => {
   return (
-    <Section className=" pt-16">
+    <Section className="pt-20">
       <div>
         <p className="text-[40px] font-bold mb-10 leading-[52px]">
           FAQ's about Conversion Rate Optimization Services
