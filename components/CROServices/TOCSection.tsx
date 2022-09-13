@@ -11,7 +11,7 @@ export type TOCSectionsProps = {
 const TOCSections = (props: TOCSectionsProps) => {
  
 
-  const [isHidden, setIsHidden] = React.useState(false);
+  const [isHidden, setIsHidden] = React.useState(true);
 
   return (
     <div className="rounded-lg border border-gray-300 overflow-hidden">
