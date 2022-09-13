@@ -10,13 +10,7 @@ import Group from "../components/assets/group.png";
 import Trophy from "../components/assets/icon-trophy-big-1.png";
 import CloudComputing from "../components/assets/icon-cloud-computing-1.png";
 
-interface IProps {
-  title: string;
-  description: string;
-  input?: boolean;
-}
-
-const CMSHero: FC<IProps> = ({ title, description, input }) => {
+const CMSHero: FC = () => {
   const router = useRouter();
 
   return (
@@ -28,32 +22,37 @@ const CMSHero: FC<IProps> = ({ title, description, input }) => {
           </p>
 
           <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
-            {title}
+            CMS Development Services that are completely transparent
           </h1>
 
           <p className="text-white-70 text-[19px] font-sans leading-8 mb-8">
-            {description}
+            Content management systems (CMS) are a must-have for all websites,
+            from large informational sites to e-commerce stores. The simplest
+            way to ensure a proper web presence is to streamline and organize
+            your website, and{" "}
+            <span className="text-white font-bold"> Muscled</span> can assist.
+            Our CMS development services begin at $2,200 and are completely
+            transparent. Scroll down for more information, or contact us for a
+            specific quote!
           </p>
 
-          {input && (
-            <div className="flex flex-wrap gap-2">
-              <Input
-                type="text"
-                placeholder="Enter Your Website Link"
-                className="text-sm md:text-lg xl:h-[60px] h-[40px] xl:w-[470px] w-[287px]"
-              />
-              <button className="bg-black text-white font-poppins xl:py-[15px] py-[10px] px-[20px] xl:px-[45px] rounded-md">
-                Send Proposal
-              </button>
-            </div>
-          )}
+          <div className="flex flex-wrap gap-2">
+            <Input 
+              type="text"
+              placeholder="Enter Your Website Link"
+              className="text-sm md:text-lg xl:h-[60px] h-[40px] xl:w-[470px] w-[287px]"
+            />
+            <button className="bg-black text-white font-poppins xl:py-[15px] py-[10px] px-[20px] xl:px-[45px] rounded-md">
+              Send Proposal
+            </button>
+          </div>
         </div>
 
         {/* Right Side */}
         <div className="xl:ml-12 mx-auto">
-          <div className="max-w-[640px] xl:mt-20 -mt-24 max-h-[640px] flex flex-col justify-center">
+          <div className="max-w-[640px] max-h-[640px] flex flex-col justify-center">
             <div className="my-1">
-              <Rectangle  
+              <Rectangle
                 icon={IconSaleFunnel}
                 text1={"Access the data-fueled plans behind "}
                 number={"$3,021,182,299"}

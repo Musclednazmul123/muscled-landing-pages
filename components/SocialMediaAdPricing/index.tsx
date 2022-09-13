@@ -10,7 +10,7 @@ function SocialMeidaAdPricing() {
       <h3>
         How much does it cost to advertise on various social media platforms?
       </h3>
-
+ 
       <p>
         Do you want to know how much it will cost to advertise your company on
         social media?

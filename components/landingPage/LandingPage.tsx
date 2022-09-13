@@ -12,7 +12,7 @@ import ServiceTable from "./ServiceTable/ServiceTable";
 export default function LandingPage() {
 	return (
 		<>
-			<Hero />
+			<Hero /> 
 			<OurPartner />
 			<Pricing />
 			<Testimonial />

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Range = () => {
   return (
     <div>
       <div className="py-[40px] px-[5px] mt-6 font-sans">
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Number */}
           {/* Label */}
           <div className="text-white text-left">
@@ -12,14 +12,14 @@ const Range = () => {
           </div>
 
           {/* Range div */}
-          <div className="flex"> 
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[250px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -66,21 +66,21 @@ const Range = () => {
         </div>
 
         {/* Style of Design */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">Style of design</p>
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[250px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white ml-28 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white ml-28 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -129,7 +129,7 @@ const Range = () => {
         </div>
 
         {/* Copywriting number of Pages */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">
@@ -138,14 +138,14 @@ const Range = () => {
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[250px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white ml-36 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white ml-36 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -192,21 +192,21 @@ const Range = () => {
         </div>
 
         {/* SEO */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10 ">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">SEO</p>
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[250px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white ml-48 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white ml-48 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -253,7 +253,7 @@ const Range = () => {
         </div>
 
         {/* Responsive Design */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">
@@ -262,14 +262,14 @@ const Range = () => {
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[600px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white -ml-36 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white -ml-36 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -316,7 +316,7 @@ const Range = () => {
         </div>
 
         {/* Database Integration */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">
@@ -325,14 +325,14 @@ const Range = () => {
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[350px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white -ml-24 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white -ml-24 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -379,7 +379,7 @@ const Range = () => {
         </div>
 
         {/* Ecommerce Funtionality */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">
@@ -388,14 +388,14 @@ const Range = () => {
           </div>
 
           {/* Range div */}
-          <div className="flex">
+          <div className="flex ">
             {/* Label */}
             <div className={`bg-black h-5 w-[350px] rounded-full`}></div>
 
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white -ml-24 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white -ml-24 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>
@@ -442,7 +442,7 @@ const Range = () => {
         </div>
 
         {/* CMS */}
-        <div className="flex justify-between py-6 mb-6">
+        <div className="flex justify-between py-6 mb-10">
           {/* Label */}
           <div className="text-white text-left">
             <p className="font-sans text-2xl font-semibold">CMS</p>
@@ -456,7 +456,7 @@ const Range = () => {
             {/* Range */}
             <div className="flex justify-center items-center">
               <div
-                className={`bg-white -ml-24 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
+                className={`-mt-5 bg-white -ml-24 text-black px-[40px] py-[16px] rounded-full absolute w-auto flex justify-center items-center`}
               >
                 <div className="flex">
                   <div>

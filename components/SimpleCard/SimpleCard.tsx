@@ -1,33 +1,66 @@
 import React from "react";
 
-interface IProps {
-  heading: string;
-  items1: string;
-  items2: string;
-  items3?: string;
-  items4?: string;
-  items5?: string;
-}
-
-const SimpleCard = ({
-  heading,
-  items1,
-  items2,
-  items3,
-  items4,
-  items5,
-}: IProps) => {
+const SimpleCard = () => {
   return (
-    <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
-      <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
-        <h2 className="text-2xl font-medium pb-5">{heading}</h2>
-        <ul className="py-5 text-xl font-sans">
-          <li className="pb-5 ">{items1}</li>
-          <li className="pb-5">{items2}</li>
-          <li className="pb-5">{items3}</li>
-          <li className="pb-5">{items4}</li>
-          <li className="pb-5">{items5}</li>
-        </ul>
+    // <div className="bg-red-600 flex w-full xl:px-[70px]">
+    <div className="flex flex-col w-full md:flex-row justify-center items-center my-14">
+      <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
+        <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+          <h2 className="text-2xl font-medium pb-5">Web Design Services</h2>
+          <ul className="py-5 text-xl font-sans">
+            <li className="pb-5">
+              <a href="#">Web Design</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">Website Redesign</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">Landing Page Design</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">Rapid Web Design</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
+        <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+          <h2 className="text-2xl font-medium pb-5">Web Marketing Services</h2>
+          <ul className="py-5 text-xl font-sans">
+            <li className="pb-5">
+              <a href="#">SEO</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">Website Copywriting</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">PPC Management</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">Content Marketing</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">All Internet Marketing Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
+        <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+          <h2 className="text-2xl font-medium pb-5">
+            Learn More About CMS Development
+          </h2>
+          <ul className="py-5 text-xl font-sans">
+            <li className="pb-5">
+              <a href="#">The Complete Guide to Redesigning Your Website</a>
+            </li>
+            <li className="pb-5">
+              <a href="#">How to Know Which CMS to Use</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

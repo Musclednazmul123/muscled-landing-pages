@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import CmsMuscled from "../components/assets/cms-muscled.png";
 import CmsMuscledTwo from "../components/assets/cms-muscled-2.png";
 import TableIcon from "../components/assets/mdi_table-of-contents.png";
@@ -6,13 +6,15 @@ import Image from "next/image";
 import Logo from "components/Fawwaz/Logo";
 
 const AboutCMS = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  console.log(isOpen);
   return (
     <div>
-      {/* What Is th price of CMS */}
+      {/* What Is th price of CMS */}   
       {/* Section Fourth */}
       <div className="p-3">
-        <div className="flex flex-wrap gap-10 justify-center py-20">
-          <div className="max-w-[760px] space-y-7 ">
+        <div className="flex flex-wrap gap-7 justify-center py-20">
+          <div className="max-w-[760px] space-y-7">
             <h2 className="text-4xl">What is the price of a CMS?</h2>
             <p className="md:text-xl">
               <span>
@@ -64,184 +66,220 @@ const AboutCMS = () => {
           </div>
 
           {/* Right side */}
-          <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[373px]">
-            <div className="flex justify-between py-[15px] px-[10px] w-full">
-              <div className="flex ">
-                <Logo src={TableIcon} width={30} height={20} />
-                <h4 className="font-sans text-xl text-black font-bold ml-5">
-                  Table of Contents
-                </h4>
-              </div>
+          {isOpen ? (
+            <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[340px]">
+              <div className="flex justify-between py-[15px] px-[10px] w-full">
+                <div className="flex">
+                  <Logo src={TableIcon} width={30} height={20} />
+                  <h4 className="font-sans text-xl text-black font-bold ml-5">
+                    Table of Contents
+                  </h4>
+                </div>
 
-              <div className="mr-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6 -rotate-90"
+                <div
+                  className="mr-5 cursor-pointer animate-slideUp"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 -rotate-90"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div className={`py-[15px] px-[10px] bg-white animate-slideUp`}>
+                <div className="flex items-center pb-4 pl-1 justify-start ">
+                  <div className="h-auto w-3 flex">
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                      <path
+                        d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <p className="pl-3 text-base">
+                      What is the price of a CMS?
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center pb-4 pl-1 justify-start ">
+                  <div className="h-auto w-3 flex">
+                    <svg
+                      width="20"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                      <path
+                        d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                    </svg> 
+                  </div>
+
+                  <div> 
+                    <p className="pl-3 text-base">
+                      When should you hire CMS development services?
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center pb-4 pl-1 ">
+                  <div className="h-auto w-3 flex">
+                    <svg
+                      width="21"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                      <path
+                        d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p className="pl-3 text-base">
+                    CMS development services and SEO: a winning combination
+                  </p>
+                </div>
+
+                <div className="flex items-center pb-4 pl-1 ">
+                  <div className=" h-auto w-3 flex">
+                    <svg
+                      width="21"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                      <path
+                        d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <p className="pl-3 text-base">
+                      FAQs about CMS development services
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center pb-4 pl-1 ">
+                  <div className=" h-auto w-3 flex">
+                    <svg
+                      width="21"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                      <path
+                        d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
+                        fill="black"
+                        fill-opacity="0.8"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="pl-3 text-base">
+                      Let's get started on your custom CMS today
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            {/*  */}
-            <div className="py-[15px] px-[10px] bg-white">
-              <div className="flex items-center pb-4 pl-1 justify-start ">
-                <div className="h-auto w-3 flex">
+          ) : (
+            <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[65px]">
+              <div className="flex justify-between py-[15px] px-[10px] w-full">
+                <div className="flex">
+                  <Logo src={TableIcon} width={30} height={20} />
+                  <h4 className="font-sans text-xl text-black font-bold ml-5">
+                    Table of Contents
+                  </h4>
+                </div>
+                <div
+                  className="mr-5 cursor-pointer animate-slideUp"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
                   <svg
-                    width="12"
-                    height="10"
-                    viewBox="0 0 12 10"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 rotate-90"
                   >
                     <path
-                      d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                    <path
-                      d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
                   </svg>
-                </div>
-
-                <div>
-                  <p className="pl-3 text-base">What is the price of a CMS?</p>
-                </div>
-              </div>
-
-              <div className="flex items-center pb-4 pl-1 justify-start ">
-                <div className="h-auto w-3 flex">
-                  <svg
-                    width="20"
-                    height="10"
-                    viewBox="0 0 12 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                    <path
-                      d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                  </svg>
-                </div>
-
-                <div>
-                  <p className="pl-3 text-base">
-                    When should you hire CMS development services?
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center pb-4 pl-1 ">
-                <div className="h-auto w-3 flex">
-                  <svg
-                    width="21"
-                    height="10"
-                    viewBox="0 0 12 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                    <path
-                      d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                  </svg>
-                </div>
-                <p className="pl-3 text-base">
-                  CMS development services and SEO: a winning combination
-                </p>
-              </div>
-
-              <div className="flex items-center pb-4 pl-1 ">
-                <div className=" h-auto w-3 flex">
-                  <svg
-                    width="21"
-                    height="10"
-                    viewBox="0 0 12 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                    <path
-                      d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                  </svg>
-                </div>
-
-                <div>
-                  <p className="pl-3 text-base">
-                    FAQs about CMS development services
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center pb-4 pl-1 ">
-                <div className=" h-auto w-3 flex">
-                  <svg
-                    width="21"
-                    height="10"
-                    viewBox="0 0 12 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                    <path
-                      d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
-                      fill="black"
-                      fill-opacity="0.8"
-                    ></path>
-                  </svg>
-                </div>
-                <div>
-                  <p className="pl-3 text-base">
-                    Let's get started on your custom CMS today
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
 
-      {/* When should you hire CMS development services?
-       */}
+      {/* When should you hire CMS development services? 
+       */} 
       <div>
         <div className="flex flex-wrap gap-10 justify-start ">
-          <div className="xl:max-w-[740px] space-y-7 my-[7px] mx-[10px] xl:mx-[80px]">
-            <h2 className="text-4xl">
+          <div className="xl:max-w-[760px] space-y-7 my-[7px] mx-[10px] xl:mx-[80px]">
+            <h2 className="text-4xl leading-snug"> 
               When should you hire CMS development services?
             </h2>
             <Image src={CmsMuscled} layout="responsive" />
@@ -258,7 +296,7 @@ const AboutCMS = () => {
               use a CMS to help you manage your website better.
             </span>
             <br />
-            <br />
+            <br /> 
             <p className="text-md xl:text-xl">
               Here are a few reasons why you should change your CMS
             </p>
@@ -289,13 +327,13 @@ const AboutCMS = () => {
             </p>
 
             {/* CMS development services and SEO: a winning combination
-             */}
-            <div className="mt-8">
+             */} 
+            <div className="mt-8">  
               <h2 className="text-4xl pt-8 pb-8 pr-5">
                 CMS development services and SEO: <br /> a winning combination
               </h2>
-              <br />
-              <p className="text-md xl:text-xl">
+              <br /> 
+              <p className="text-md xl:text-xl"> 
                 Muscled doesn't stop after you've integrated your content
                 management system! One of our content management specialties is
                 designing and integrating search engine-friendly content
@@ -316,10 +354,10 @@ const AboutCMS = () => {
             </div>
 
             {/* FAQs about CMS development services  */}
-            <div className="mt-8  font-sans">
-              <h2 className="text-4xl pt-8 pb-8 mr-5">
+            <div className="mt-8  font-sans"> 
+              <h2 className="text-4xl pt-6 pb-8 mr-5">
                 FAQs about CMS development services
-              </h2>
+              </h2> 
               <br />
               <p className="text-md xl:text-xl">
                 Do you have any questions about CMS development services? See
@@ -329,7 +367,7 @@ const AboutCMS = () => {
 
               {/* What exactly is a CMS */}
               <h3 className="text-2xl font-sans font-bold">
-                What exactly is a CMS?
+                What exactly is a CMS? 
               </h3>
               <br />
               <p className="text-md xl:text-xl">

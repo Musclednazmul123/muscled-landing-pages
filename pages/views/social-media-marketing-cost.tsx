@@ -1,7 +1,7 @@
 import BlogArticle from "components/BlogArticle";
 import FreeQuote from "components/FreeQuote";
 import GetStartedForm from "components/GetStartedForm";
-import Hero from "components/Hero";
+import Hero from "components/Hero"; 
 import LearnMore from "components/LearnMore"; 
 import Plans from "components/Plans";
 import PricingQuestion from "components/PricingQuestion";
@@ -18,7 +18,7 @@ function IndexPage() {
       <SocialMeidaAdPricing />
       <GetStartedForm />
       <BlogArticle />
-      <FreeQuote />
+      <FreeQuote /> 
       <LearnMore />
     </div>
   );

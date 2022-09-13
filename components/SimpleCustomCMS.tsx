@@ -13,22 +13,28 @@ const SimpleCustomCMS = () => {
           Do you want to make it easier to manage the content on your website?
           For managing their websites, various web development companies use
           content management systems as customized web applications.
-          <span className="text-red-600 font-bold"> Muscled </span>
+          <span className="font-bold text-red-600"> Muscled </span>
           improves CMS support by including:
         </p>
         <div className="mt-7">
-          <ul className="text-center font-sans text-md xl:text-xl list-inside">
-            <li className="list-disc list-inside mt-1 md:pb-0">
-              CMS pricing packages that are customized to help you get started
-              on a project while staying within your budget.
+          <ul className=" font-sans text-md xl:text-xl list-inside list-disc">
+            <li className="mt-1 md:pb-0">
+              <span className="-ml-2">
+                CMS pricing packages that are customized to help you get started
+                on a project while staying within your budget.
+              </span>
             </li>
-            <li className="list-disc list-inside mt-1 md:pb-0">
-              Web integration of various CMS platforms, such as transactional,
-              e-commerce, and content-based CMS.
+            <li className="mt-1 md:pb-0 pl-12">
+              <span className="-ml-2">
+                Web integration of various CMS platforms, such as transactional,
+                e-commerce, and content-based CMS.
+              </span>
             </li>
-            <li className="list-disc list-outside mt-1 md:pb-0 ">
-              A team of CMS web developers and SEO experts who can provide
-              dependable and adaptable services to increase ROI.
+            <li className="mt-1 md:pb-0">
+              <span className="-ml-2">
+                A team of CMS web developers and SEO experts who can provide
+                dependable and adaptable services to increase ROI.
+              </span>
             </li>
           </ul>
         </div>

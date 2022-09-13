@@ -14,7 +14,7 @@ export default function Testimonial() {
 								"I positively recommend Muscled for ecommerce management and
 								content creation." Muscled team is extremely professional and
 								detailed in their work."
-							</p>
+							</p> 
 							<p className="md:text-xl text-lg font-bold leading-[30px] text-gray-50 mt-[30px]">
 								Associate in Category Development
 							</p>

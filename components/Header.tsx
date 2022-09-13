@@ -18,7 +18,7 @@ const Header: FC = () => {
 
       {/* Menu */}
       <ul className='space-x-2 text-sm xl:text-md justify-center flex-1 mx-10 hidden lg:flex'>
-        <div className='relative'>
+        <div className='relative'> 
           <div
             onClick={() => setModalOpen(`${modalOpen === '1' ? '' : '1'}`)}
             className=' flex  cursor-pointer p-2 items-center'
