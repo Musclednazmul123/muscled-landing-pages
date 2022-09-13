@@ -95,31 +95,31 @@ const CROServicesPage: NextPage = () => {
               links={[
                 {
                   title: "What Is Conversion Rate Optimization?",
-                  to: "/",
+                  to: "cro-services/#",
                 },
                 {
                   title: "Why Is CRO So Important?",
-                  to: "/",
+                  to: "cro-services/#",
                 },
                 {
                   title: "What Are The Advantages Of CRO Services?",
-                  to: "/",
+                  to: "cro-services/#",
                 },
                 {
                   title: "What Do WebFX’s CRO Services Include?",
-                  to: "/",
+                  to: "cro-services/#",
                 },
                 {
                   title: "Why Choose WebFX For CRO Services?",
-                  to: "/",
+                  to: "cro-services/#",
                 },
                 {
                   title: "AQs About Conversion Rate Optimization Services",
-                  to: "/",
+                  to: "cro-services/#",
                 },
                 {
                   title: "Grow Your Revenue With A Custom CRO Package",
-                  to: "/",
+                  to: "cro-services/#",
                 },
               ]}
             />
