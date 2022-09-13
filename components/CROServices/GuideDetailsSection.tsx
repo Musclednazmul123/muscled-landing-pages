@@ -11,7 +11,7 @@ const GuideDetailsSection = () => {
     <div>
       <div>
         <div className="mb-20">
-          <p className="text-4xl font-bold mb-10">
+          <p className="text-[40px] font-bold mb-10 leading-[52px]">
             What exactly is conversion rate optimization (CRO)?
           </p>
           <p className="text-lg">
@@ -23,7 +23,7 @@ const GuideDetailsSection = () => {
           </p>
         </div>
         <div className="mb-16">
-          <p className="text-4xl font-bold mb-10">
+          <p className="text-[40px] font-bold mb-10 leading-[52px]">
             Why is CRO important for your website?
           </p>
           <p className="text-lg">
@@ -88,7 +88,7 @@ const GuideDetailsSection = () => {
           </p>
         </div>
         <div>
-          <p className="text-4xl font-bold mb-10">
+          <p className="text-[40px] font-bold mb-10 leading-[52px]">
             What are the benefits of using CRO services?
           </p>
           <p className="text-lg">
@@ -199,7 +199,7 @@ const GuideDetailsSection = () => {
           </p>
         </div>
         <div>
-          <p className="text-4xl font-bold mb-12">
+          <p className="text-[40px] font-bold mb-10 leading-[52px]">
             Why should you choose Muscled for CRO services?
           </p>
           <p className="text-lg mb-8">
