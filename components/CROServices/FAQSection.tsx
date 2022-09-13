@@ -8,7 +8,7 @@ const FAQSection = () => {
   return (
     <Section className=" pt-16">
       <div>
-        <p className="text-4xl font-bold mb-12">
+        <p className="text-[40px] font-bold mb-10 leading-[52px]">
           FAQ's about Conversion Rate Optimization Services
         </p>
         <p className="text-lg mb-8">
@@ -41,10 +41,10 @@ const FAQSection = () => {
           million leads and $3 billion in revenue for our clients over the last
           five years.
         </p>
-        <p className="text-2xl font-bold mb-3">
+        <p className="text-[40px] font-bold mb-10 leading-[52px]">
           Grow your revenue with a custom CRO package
         </p>
-        <p className="text-lg mb-8">
+        <p className="text-lg mb-20">
           WebFX is a leader in conversion analysis and website conversion rate
           optimization services. We work with clients across the country, and in
           many industries, and we know what works. So if you’re ready to
