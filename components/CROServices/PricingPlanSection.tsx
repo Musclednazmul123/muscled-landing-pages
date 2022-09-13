@@ -7,7 +7,7 @@ const PricingPlanSection: NextPage = () => {
   return (
     <Section>
       <h2 className="text-center py-10 text-3xl">
-        Explore Social Media Advertising Service Packages
+        Explore Service Plans for Conversion Rate Optimization
       </h2>
       <div className="grid grid-cols-3 gap-5">
         <PricingCard
@@ -23,7 +23,7 @@ const PricingPlanSection: NextPage = () => {
           ]}
           starCount={1}
         />
-         <PricingCard
+        <PricingCard
           title="MARKET LEADER PLAN"
           duration="month"
           subtitle="Strategy & reporting included"
@@ -36,7 +36,7 @@ const PricingPlanSection: NextPage = () => {
           ]}
           starCount={2}
         />
-         <PricingCard
+        <PricingCard
           title="ENTERPRISE"
           duration="month"
           subtitle="Strategy & reporting included"
