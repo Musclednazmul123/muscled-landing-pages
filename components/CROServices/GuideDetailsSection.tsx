@@ -22,7 +22,7 @@ const GuideDetailsSection = () => {
             traffic to improve your company's bottom line.
           </p>
         </div>
-        <div className="mb-8">
+        <div className="mb-16">
           <p className="text-4xl font-bold mb-10">
             Why is CRO important for your website?
           </p>
