@@ -109,4 +109,12 @@ export class AppController {
   public socialAdvertisingServices() {
     return {}
   }
+
+@Render('digital-marketing')
+ @Get('/digital-marketing')
+  public digitalMarketingServices() {
+    return {}
+  }
+
 }
+  
