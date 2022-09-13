@@ -75,6 +75,7 @@ const CROServicesPage: NextPage = () => {
           investment, easily outpacing the competition!"'
           ownerName="Owner"
           companyName="Company Name"
+          videoUrl="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         />
       </div>
       <div>
