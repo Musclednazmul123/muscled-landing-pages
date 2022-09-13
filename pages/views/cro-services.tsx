@@ -141,7 +141,7 @@ const CROServicesPage: NextPage = () => {
           </div>
         </Section>
       </div>
-      <div>
+      <div className="bg-[#F0F5F9]">
         <QuickLinksSection />
       </div>
     </div>

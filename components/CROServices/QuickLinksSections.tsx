@@ -6,7 +6,7 @@ import Logo from "../Fawwaz/Logo";
 
 const QuickLinksSections = () => {
   return (
-    <Section className="py-32 grid grid-cols-3 gap-7">
+    <Section className="py-[104px] grid grid-cols-3 gap-7">
       <div>
         <QuickLinks
           title="SEO"
