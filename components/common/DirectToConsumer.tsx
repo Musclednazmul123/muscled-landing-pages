@@ -1,11 +1,24 @@
 import Section from "components/Fawwaz/Sections/Section";
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import Button from "../Button";
+import ReactPlayerModal from "components/ReactPlayerModal";
+import PlayIcon from "components/playIcon";
+import classNames from "classnames";
 
 const DirectToConsumer = () => {
+  const className = "flex";
+  const [toggle, setToggle] = useState(className);
+  const setFlex = () => {
+    if (toggle) return "flex";
+    else return "";
+  };
+  console.log("as");
+  console.log(toggle, "n");
   return (
-    <div className="w-50 bg-[#C40000]/[.06] h-[804px] mt-[100px] flex pb-[80px] ">
+    <div
+      className={`w-50 bg-[#C40000]/[.06] h-[804px] mt-[100px]  pb-[80px] ${toggle}`}
+    >
       <div className="w-6/12 h-[804px] flex flex-col ml-[50px] mr-[30px] pl-[50px] ">
         <p className="text-[40px] font-bold mt-[80px] mb-[20px] w-[760px] h-[104px] leading-[52px] not-italic ">
           What exactly is direct-to-consumer social media advertising?
@@ -31,19 +44,15 @@ const DirectToConsumer = () => {
           services, please call us.{" "}
         </p>
       </div>
-      <div className="w-6/12 h-[804px] flex flex-col items-center ">
+      <div className={`w-6/12 h-[804px]  flex-col items-center ${toggle} `}>
         <div className="bg-[#D9D9D9] w-[400px] h-[320px] mt-[117px] rounded-[10px] bg-[#1c1c1c]">
-          <ReactPlayer
+          <ReactPlayerModal
+            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             width="400px"
             height="320px"
-            url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-            style={{
-              borderRadius: "10px",
-              paddingTop: "2.5px",
-              paddingBottom: "2.5px",
-              paddingLeft: "2.5px",
-              paddingRight: "2.5px",
-            }}
+            Icon={PlayIcon}
+            className="flex"
+            setToggle={setToggle}
           />
         </div>
         <div className="bg-[#3E5661]  w-[400px] h-[200px] mt-[50px] flex justify-start items-center pl-[40px] rounded-[10px]">
