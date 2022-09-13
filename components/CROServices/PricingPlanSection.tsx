@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero, Section } from "../Fawwaz/Sections";
-import Card from "../Card";
+import PricingCard from "./PricingCard";
 import { NextPage } from "next";
 
 const PricingPlanSection: NextPage = () => {
@@ -9,60 +9,45 @@ const PricingPlanSection: NextPage = () => {
       <h2 className="text-center py-10 text-3xl">
         Explore Social Media Advertising Service Packages
       </h2>
-      <div className="flex py-2 space-x-5">
-        <Card
-          subtitle="AGGRESSIVE PLAN"
-          height={780}
+      <div className="grid grid-cols-3 gap-5">
+        <PricingCard
+          title="AGGRESSIVE PLAN"
           duration="month"
-          highlight="Strategy & reporting included"
+          subtitle="Strategy & reporting included"
           description="$3,00 INITIAL INVESTMENT"
-          title="$1,500"
-          list={[
-            { icon: true, text: "4 initial website user testing videos" },
-            { icon: true, text: "Heatmap and click stream testing on 8 pages" },
-            { icon: true, text: "Shopping cart abandonment testing" },
+          price="$1,500"
+          features={[
+            "4 initial website user testing videos",
+            "Heatmap and click stream testing on 8 pages",
+            "Shopping cart abandonment testing",
           ]}
-          className="text-red-500 w-full max-w-[400px]"
-          starIcon={1}
-          type="pricing"
+          starCount={1}
         />
-        <Card
-          subtitle="MARKET LEADER PLAN"
-          height={780}
+         <PricingCard
+          title="MARKET LEADER PLAN"
           duration="month"
-          highlight="Strategy & reporting included"
+          subtitle="Strategy & reporting included"
           description="$6,000 INITIAL INVESTMENT"
-          title="$3,500"
-          list={[
-            { icon: true, text: "6 initial website user testing videos" },
-            {
-              icon: true,
-              text: "Heatmap and click stream testing on 16 pages",
-            },
-            { icon: true, text: "Landing page creation" },
+          price="$3,500"
+          features={[
+            "6 initial website user testing videos",
+            "Heatmap and click stream testing on 16 pages",
+            "Landing page creation",
           ]}
-          className="text-red-400 w-full max-w-[400px]"
-          starIcon={2}
-          type="pricing"
+          starCount={2}
         />
-        <Card
-          subtitle="ENTERPRISE"
-          height={780}
+         <PricingCard
+          title="ENTERPRISE"
           duration="month"
-          highlight="Strategy & reporting included"
-          description="$8K STARTS AT MONTH 1"
-          title="$8,500"
-          list={[
-            { icon: true, text: "6 initial website user testing videos" },
-            {
-              icon: true,
-              text: "Heatmap and click stream testing on 16 pages",
-            },
-            { icon: true, text: "Custom UX design and development projects" },
+          subtitle="Strategy & reporting included"
+          description="$8K starts at month 1"
+          price="$8,500"
+          features={[
+            "6 initial website user testing videos",
+            "Heatmap and click stream testing on 8 pages",
+            "Custom UX design and development projects",
           ]}
-          className="text-red-400 w-full max-w-[400px]"
-          starIcon={3}
-          type="pricing"
+          starCount={3}
         />
       </div>
     </Section>
