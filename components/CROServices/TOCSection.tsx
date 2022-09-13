@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
 export type TOCSectionsProps = {
@@ -9,6 +9,8 @@ export type TOCSectionsProps = {
 };
 
 const TOCSections = (props: TOCSectionsProps) => {
+ 
+
   const [isHidden, setIsHidden] = React.useState(false);
 
   return (
@@ -50,7 +52,7 @@ const TOCSections = (props: TOCSectionsProps) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             style={{
-              transform: isHidden ? 'rotate(0deg)' : 'rotate(180deg)'
+              transform: isHidden ? "rotate(0deg)" : "rotate(180deg)",
             }}
           >
             <path

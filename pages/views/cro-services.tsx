@@ -85,56 +85,62 @@ const CROServicesPage: NextPage = () => {
         <PromotionSection2 />
       </div>
       <div>
-        <Section className="py-20 flex">
-          <div className="flex-1 pr-12">
-            <GuideDetailsSection />
-            <FAQSection />
-          </div>
-          <div className="w-[440px]">
-            <TOCSection
-              links={[
-                {
-                  title: "What Is Conversion Rate Optimization?",
-                  to: "cro-services/#",
-                },
-                {
-                  title: "Why Is CRO So Important?",
-                  to: "cro-services/#",
-                },
-                {
-                  title: "What Are The Advantages Of CRO Services?",
-                  to: "cro-services/#",
-                },
-                {
-                  title: "What Do WebFX’s CRO Services Include?",
-                  to: "cro-services/#",
-                },
-                {
-                  title: "Why Choose WebFX For CRO Services?",
-                  to: "cro-services/#",
-                },
-                {
-                  title: "AQs About Conversion Rate Optimization Services",
-                  to: "cro-services/#",
-                },
-                {
-                  title: "Grow Your Revenue With A Custom CRO Package",
-                  to: "cro-services/#",
-                },
-              ]}
-            />
-            <div className="mt-10">
-              <Banner
-                text="Drive more revenue for your company"
-                buttonText="Get Free Proposal"
-                bgImageSrc={cardBg2.src}
-                shouldCenterTextVertically
-              />
+        <Section className="py-20">
+          <div className="flex">
+            <div className="flex-1 pr-12">
+              <GuideDetailsSection />
             </div>
+            <div id="toc" className="w-[440px]">
+              <div className="sticky top-0">
+                <TOCSection
+                  links={[
+                    {
+                      title: "What Is Conversion Rate Optimization?",
+                      to: "cro-services/#",
+                    },
+                    {
+                      title: "Why Is CRO So Important?",
+                      to: "cro-services/#",
+                    },
+                    {
+                      title: "What Are The Advantages Of CRO Services?",
+                      to: "cro-services/#",
+                    },
+                    {
+                      title: "What Do WebFX’s CRO Services Include?",
+                      to: "cro-services/#",
+                    },
+                    {
+                      title: "Why Choose WebFX For CRO Services?",
+                      to: "cro-services/#",
+                    },
+                    {
+                      title: "AQs About Conversion Rate Optimization Services",
+                      to: "cro-services/#",
+                    },
+                    {
+                      title: "Grow Your Revenue With A Custom CRO Package",
+                      to: "cro-services/#",
+                    },
+                  ]}
+                />
+                <div className="mt-10">
+                  <Banner
+                    text="Drive more revenue for your company"
+                    buttonText="Get Free Proposal"
+                    bgImageSrc={cardBg2.src}
+                    shouldCenterTextVertically
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+            <FAQSection />
+            <div className="w-[440px] flex-shrink-0"></div>
           </div>
         </Section>
       </div>
-      <div></div>
       <div>
         <QuickLinksSection />
       </div>
