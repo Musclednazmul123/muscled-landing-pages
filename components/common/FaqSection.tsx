@@ -23,7 +23,7 @@ const FaqSection = (FaqData: FaqSectionProps) => {
         <p className="font-semibold text-[20px] w-[463px] mb-[15px] pt-[15px]">
           {title}
         </p>
-        <p className=" mr-[25px]">
+        <p className=" mr-[25px] cursor-pointer">
           {toggle ? (
             <AiOutlineMinus size={25} onClick={handleHide} />
           ) : (
