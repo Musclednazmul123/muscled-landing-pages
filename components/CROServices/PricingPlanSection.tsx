@@ -15,6 +15,7 @@ const PricingPlanSection: NextPage = () => {
           duration="month"
           subtitle="Strategy & reporting included"
           description="$3,00 INITIAL INVESTMENT"
+          headerClassName="bg-[#C4000008]"
           price="$1,500"
           features={[
             "4 initial website user testing videos",
@@ -28,6 +29,7 @@ const PricingPlanSection: NextPage = () => {
           duration="month"
           subtitle="Strategy & reporting included"
           description="$6,000 INITIAL INVESTMENT"
+          headerClassName="bg-[#C400000F]"
           price="$3,500"
           features={[
             "6 initial website user testing videos",
@@ -40,6 +42,7 @@ const PricingPlanSection: NextPage = () => {
           title="ENTERPRISE"
           duration="month"
           subtitle="Strategy & reporting included"
+          headerClassName="bg-[#C4000017]"
           description="$8K starts at month 1"
           price="$8,500"
           features={[

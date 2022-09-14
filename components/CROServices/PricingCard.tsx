@@ -9,6 +9,7 @@ export type PricingCardProps = {
   subtitle?: string;
   description?: string;
   features?: string[];
+  headerClassName?: string;
 };
 
 const PricingCard = (props: PricingCardProps) => {
@@ -20,12 +21,13 @@ const PricingCard = (props: PricingCardProps) => {
     subtitle,
     description,
     features,
+    headerClassName = "",
     ...rest
   } = props;
 
   return (
     <div className="border border-[rgba(0,0,0,0.7)] flex flex-col w-full rounded-[10px] overflow-hidden">
-      <div className="py-10 px-4 bg-[#C4000008]">
+      <div className={`py-10 px-4 ${headerClassName}`}>
         <div className="flex justify-center mb-[30px]">
           {Array.from({ length: starCount }).map((_, index) => (
             <svg
