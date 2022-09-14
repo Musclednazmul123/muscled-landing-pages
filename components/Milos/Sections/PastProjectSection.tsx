@@ -46,7 +46,7 @@ const PastProjectSection = () => {
     swipeToSlide: true,
   }
 
-  const sliderRef = useRef<typeof Slider | null>(null);
+  const sliderRef = useRef<Slider>(null);
 
   return (
     <div className="bg-[#F8FAA5] pt-[65px] pb-[159px]">
@@ -72,10 +72,10 @@ const PastProjectSection = () => {
       </div>
       <div className="mt-[316px]">
         <div className="text-right mr-[200px] mb-[69px] flex justify-end">
-          <button type="button" className="h-[82px] w-[82px] shadow-md bg-white rounded-full flex justify-center items-center" onClick={() => sliderRef.current.slickPrev()}>
+          <button type="button" className="h-[82px] w-[82px] shadow-md bg-white rounded-full flex justify-center items-center" onClick={() => sliderRef.current?.slickPrev()}>
             <img src={leftIcon.src} alt="" />
           </button>
-          <button type="button" className="h-[82px] w-[82px] shadow-md bg-white rounded-full ml-[69px] flex justify-center items-center" onClick={() => sliderRef.current.slickNext()}>
+          <button type="button" className="h-[82px] w-[82px] shadow-md bg-white rounded-full ml-[69px] flex justify-center items-center" onClick={() => sliderRef.current?.slickNext()}>
             <img src={rightIcon.src} alt="" />
           </button>
         </div>

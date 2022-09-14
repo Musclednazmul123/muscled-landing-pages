@@ -1,4 +1,4 @@
-import { Controller, Get, Query, Render } from "@nestjs/common";
+import { Controller, Get, Query, Render, Req } from "@nestjs/common";
 
 @Controller()
 export class AppController {
@@ -115,6 +115,20 @@ export class AppController {
   public digitalMarketingServices() {
     return {}
   }
+
+ @Get('web-development-services')
+  @Render('web-development-services')
+  public webDevelopmentServices(@Req() req:Request):{url:string} {
+    return {
+      url:req?.url
+  }
+}
+
+@Render('shopify-dev-services')
+@Get('/shopify-dev-services')
+public shopifyDevServices() {
+  return {}
+}
 
 }
   

@@ -14,7 +14,7 @@ const TableOfContents = () => {
   }
   return (
     <div
-      className="flex flex-col justify-between bg-white items-center  rounded-xl sticky top-5 w-[440px] h-[620px] transition-all ease-in-out duration-300 delay-50"
+      className="flex flex-col justify-between bg-white items-center  rounded-xl sticky top-5 w-[440px]  transition-all ease-in-out duration-300 delay-50"
       id="table"
     >
       <div
