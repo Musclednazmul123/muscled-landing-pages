@@ -9,6 +9,8 @@ export type PricingCardProps = {
   subtitle?: string;
   description?: string;
   features?: string[];
+  headerClassName?: string;
+  starClassName?: string;
 };
 
 const PricingCard = (props: PricingCardProps) => {
@@ -20,12 +22,14 @@ const PricingCard = (props: PricingCardProps) => {
     subtitle,
     description,
     features,
+    headerClassName = "",
+    starClassName = "",
     ...rest
   } = props;
 
   return (
     <div className="border border-[rgba(0,0,0,0.7)] flex flex-col w-full rounded-[10px] overflow-hidden">
-      <div className="py-10 px-4 bg-[#C4000008]">
+      <div className={`py-10 px-4 ${headerClassName}`}>
         <div className="flex justify-center mb-[30px]">
           {Array.from({ length: starCount }).map((_, index) => (
             <svg
@@ -34,15 +38,15 @@ const PricingCard = (props: PricingCardProps) => {
               viewBox="0 0 30 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[30px] h-[30px]"
+              className={`w-[30px] h-[30px]`}
               style={{
                 marginRight: index === starCount - 1 ? 0 : "10px",
               }}
             >
               <path
                 d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
-                fill="black"
                 fill-opacity="0.8"
+                className={starClassName}
               />
             </svg>
           ))}
@@ -96,4 +100,4 @@ const PricingCard = (props: PricingCardProps) => {
   );
 };
 
-export default PricingCard;
+export default PricingCard
