@@ -12,15 +12,15 @@ const QuickLinksSections = () => {
             links={[
               {
                 title: "SEO Campaign Management",
-                to: "",
+                to: "/cro-services#",
               },
               {
                 title: "Ecommerce SEO Management",
-                to: "",
+                to: "/cro-services#",
               },
               {
                 title: "Enterprise SEO Services",
-                to: "",
+                to: "/cro-services#",
               },
             ]}
           />
@@ -31,15 +31,15 @@ const QuickLinksSections = () => {
             links={[
               {
                 title: "PPC Management",
-                to: "",
+                to: "/cro-services#",
               },
               {
                 title: "Programmatic Advertising",
-                to: "",
+                to: "/cro-services#",
               },
               {
                 title: "Google Local Services Ads Management",
-                to: "",
+                to: "/cro-services#",
               },
             ]}
           />
@@ -50,15 +50,15 @@ const QuickLinksSections = () => {
             links={[
               {
                 title: "Web Design",
-                to: "",
+                to: "/cro-services#",
               },
               {
                 title: "Website Redesign",
-                to: "",
+                to: "/cro-services#",
               },
               {
                 title: "Landing Page Design",
-                to: "",
+                to: "/cro-services#",
               },
             ]}
           />
