@@ -2,6 +2,7 @@ import React from "react";
 import Section from "components/Fawwaz/Sections/Section";
 import TextHeading from "./TextHeading";
 import TextList from "./TextList";
+import FaqSection from "./FaqSection";
 
 const listOne = [
   "A dedicated account manager for social media",
@@ -57,6 +58,22 @@ const listSix = [
   "Companies involved in food and nutrition",
   "B2C specialty companies",
 ];
+
+const FaqData = {
+  title: "How much do ecommerce PPC services cost?",
+  description: `Typically, ecommerce PPC plans cost $400 to $5000, it could also be 10
+  to 20% of your monthly ad spend. The price varies, depending on
+  several factors like your intended ad spend or the PPC agency’s
+  pricing.`,
+};
+
+const FaqData2 = {
+  title: "What are ecommerce PPC services?",
+  description: ` Ecommerce PPC services are for advertising on pay-per-click ad
+  networks, like Google Ads, Bing, Microsoft Advertising, Facebook, and
+  many more. You are to expect the development, management, and
+  monitoring of your ad campaigns.`,
+};
 const TextSection = () => {
   return (
     <Section className=" text-[20px] pt-[10px] leading-[30px] text-[#000000]/[0.7]">
@@ -163,34 +180,8 @@ const TextSection = () => {
       Contact our social media experts today. We're excited to provide social
       media advertising services to help your D2C business grow!
       <TextHeading title="FAQs about ecommerce PPC management services." />
-      <div className="text-[#000000]/0.7 bg-[#FFFFFF] mb-[20px] w-[760px] pl-[10px] pb-[10px] rounded-[10px]">
-        <section className="flex justify-between items-center">
-          <p className="font-semibold text-[20px] w-[400px] mb-[20px] pt-[10px]">
-            What are ecommerce PPC services?
-          </p>
-          <p className="w-[16px] h-[0px] border-[1px] border-[#000000] mr-[25px]"></p>
-        </section>
-        <p className="font-normal text-[20px] w-[730px]">
-          Ecommerce PPC services are for advertising on pay-per-click ad
-          networks, like Google Ads, Bing, Microsoft Advertising, Facebook, and
-          many more. You are to expect the development, management, and
-          monitoring of your ad campaigns.
-        </p>
-      </div>
-      <div className="text-[#000000]/0.7 bg-[#FFFFFF] mb-[100px] w-[760px] pl-[10px] pb-[10px] rounded-[10px]">
-        <section className="flex justify-between items-center">
-          <p className="font-semibold text-[20px] w-[463px] mb-[20px] pt-[10px]">
-            How much do ecommerce PPC services cost?
-          </p>
-          <p className="w-[16px] h-[0px] border-[1px] border-[#000000] mr-[25px]"></p>
-        </section>
-        <p className="font-normal text-[20px] w-[730px]">
-          Typically, ecommerce PPC plans cost $400 to $5000, it could also be 10
-          to 20% of your monthly ad spend. The price varies, depending on
-          several factors like your intended ad spend or the PPC agency’s
-          pricing.
-        </p>
-      </div>
+      <FaqSection {...FaqData2} />
+      <FaqSection {...FaqData} />
     </Section>
   );
 };

@@ -33,7 +33,7 @@ const SocialMediaAds = () => {
               className=" mt-[120px] h-[568px] w-[760px] bg-no-repeat bg-center bg-cover bg-gradient-to-t from-cyan-500 to-blue-500"
               style={{
                 backgroundImage:
-                  "linear-gradient(0deg, rgba(8, 58, 116, 0.8), rgba(8, 58, 116, 0.8)), url('https://s3-alpha-sig.figma.com/img/5ac4/44af/013f20f332ab89e89039d9ba1821657c?Expires=1662940800&Signature=gbQq7B5Od4E~X576Fcs~FfBPy5-TnDzwZagXJBhcpybGl~8gbQXqxLZcg0uP2w9zPHZevmuXxeQ3wwvSvFj26if0F~bVZ22MV3brIujf3ZqkZC9cSBDa4M4v9joI6WN8G2GnXkhUW60CBprPRJK3dPcbzWzzI6qxc9SjJKPW1c2SbnJJQUI5dtgQGG-6xKfF~iFzsm8KqKuElOqKPif7aIgcvggFbgzIPoq9-MJMuxVMRBkbpEPfVhCMA1zDxLqwcw8YxHAzaDzo5tzZAYG1NDrVqttLBt7WZe570vRy0zQZmP8TblSfP7U4LZosux5bD493DE6z6bRdtPojRGobYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA')",
+                  "linear-gradient(0deg, rgba(8, 58, 116, 0.8), rgba(8, 58, 116, 0.8)), url('https://s3-alpha-sig.figma.com/img/5ac4/44af/013f20f332ab89e89039d9ba1821657c?Expires=1664150400&Signature=OI6RpNRr-tcu9Tyu0TWFGhVNi-2SvvaxVQvg1ounhxyvfuQoFjLe3l2zSFClHOrBX7fgWz0Nf1T1XGlSk7dEM7z-3ZFgKHsI4tYmkf8T8x5mMsAC4o9RUmgj908C7tfHebuy8ayK3UG4hLSSBoJUb6-8nNxpS7790Omlv0JvobmwB~tgW3qvQ07rdEldG1mN1lN9uIlwAStnr2yY-zhk-yE-VGCqbm~HCXvHLdiy9HgCTEmlCllKiI62RH9H-VeKNuJDWkbc6cI-WzyPFDudkTGfXxQrqwuvPCqwtQg9bGzZIT5b8p3f~GkO7Gs2AqFQqDHZs3q3oWY5pXE0LieUyA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA')",
               }}
             >
               <div className="w-[450px] h-[180px] text-[#F9F9F9] font-bold ml-[40px]">

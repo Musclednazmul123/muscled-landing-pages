@@ -44,7 +44,7 @@ const Button: FC<ButtonProps> = ({
             ? "bg-red-400"
             : white
             ? "bg-white text-black"
-            : "bg-black"
+            : "bg-black "
         }${className}`}
       >
         {text}

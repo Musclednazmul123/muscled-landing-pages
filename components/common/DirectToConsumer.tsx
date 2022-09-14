@@ -56,7 +56,10 @@ const DirectToConsumer = () => {
           />
         </div>
         <div className="bg-[#3E5661]  w-[400px] h-[200px] mt-[50px] flex justify-start items-center pl-[40px] rounded-[10px]">
-          <Button text="Send Proposal" />
+          <Button
+            text="Send Proposal"
+            className="bg-[#00000] w-[226px] h-[60px] rounded-[5px] not-italic font-semibold  text-[20px] leading-[30px]"
+          />
         </div>
       </div>
     </div>

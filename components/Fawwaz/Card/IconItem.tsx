@@ -14,7 +14,7 @@ const IconItem: FC<IconProps> = ({
       <h3
         className={`${
           !full &&
-          ` ${headingClassName} font-normal w-[400px] text-[20px] text-[#000000]/[0.7]`
+          ` ${headingClassName} font-normal w-[400px] text-[20px] text-[#000000]/[0.7] pl-[15px]`
         }`}
       >
         {title}

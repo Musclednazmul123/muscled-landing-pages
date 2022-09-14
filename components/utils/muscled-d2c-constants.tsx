@@ -339,44 +339,44 @@ export const TableMetaData = {
       icon: <BsDot size={30} />,
       title: "What do Muscled´s social media advertising services include?",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 ml-[20px]",
+        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 mx-[20px]",
     },
     {
       icon: <BsDot size={30} />,
       title: "What Kind of social media ads fit D2C brands?",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 ml-[20px]",
+        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 mx-[20px]",
     },
     {
       icon: <BsDot size={30} />,
       title: "The Benefits of direct to consumer social media advertising",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 ml-[20px]",
+        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 mx-[20px]",
     },
     {
       icon: <BsDot size={30} />,
       title: "Why is D2C social advertising for?",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 ml-[20px] list-disc",
+        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 mx-[20px] list-disc",
     },
     {
       icon: <BsDot size={30} />,
       title: "Launch your custom D2C social ads right away!",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 ml-[20px] list-disc",
+        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 mx-[20px] list-disc",
     },
     {
       icon: <BsDot size={30} />,
       title: "FAQs",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 ml-[20px] list-disc",
+        "underline decoration-[#5F27BD] text-[#5F27BD] mt-10 mx-[20px] list-disc",
     },
     {
       icon: <BsDot size={30} />,
       title:
         "Get the digital workout for your store with Muscled Digital Agency!",
       className:
-        "underline decoration-[#5F27BD] text-[#5F27BD] pb-[10px] mt-10 ml-[20px]",
+        "underline decoration-[#5F27BD] text-[#5F27BD] pb-[10px] mt-10 mx-[20px]",
     },
   ],
 };

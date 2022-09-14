@@ -11,7 +11,7 @@ interface PropsTableMetaData {
 }
 
 const TableOfContent = ({ TableMetaData }: PropsTableMetaData) => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const handleClick = () => {
     console.log("handle");
@@ -26,9 +26,17 @@ const TableOfContent = ({ TableMetaData }: PropsTableMetaData) => {
           {heading}
         </h2>
         {toggle ? (
-          <IoIosArrowDown size={25} onClick={handleClick} />
+          <IoIosArrowDown
+            size={25}
+            onClick={handleClick}
+            className="cursor-pointer"
+          />
         ) : (
-          <IoIosArrowUp size={25} onClick={handleClick} />
+          <IoIosArrowUp
+            size={25}
+            onClick={handleClick}
+            className="cursor-pointer"
+          />
         )}
       </div>
       {toggle && (
