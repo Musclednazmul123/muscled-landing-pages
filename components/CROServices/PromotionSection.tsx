@@ -10,7 +10,7 @@ const PromotionSection: NextPage = () => {
   return (
     <div className="flex flex-wrap gap-10 justify-center pt-[51px] pb-[145px]">
       <div className="max-w-[760px] space-y-7">
-        <h2 className="text-4xl leading-[52px]">
+        <h2 className="text-[40px] font-bold mb-10 leading-[52px]">
           Maximize your site’s perfomance with conversion rate optimization
           services
         </h2>
