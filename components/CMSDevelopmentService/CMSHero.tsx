@@ -1,14 +1,14 @@
 import { FC } from "react";
-import { Section } from "../components/Fawwaz/Sections";
+import { Section } from "../Fawwaz/Sections";
 import { useRouter } from "next/router";
-import { Input } from "../components/Fawwaz/Form";
+import { Input } from "../Fawwaz/Form";
 
-import Rectangle from "../components/Rectangle";
+import Rectangle from "../Rectangle";
 
-import IconSaleFunnel from "../components/assets/icon-sales-funnel.png";
-import Group from "../components/assets/group.png";
-import Trophy from "../components/assets/icon-trophy-big-1.png";
-import CloudComputing from "../components/assets/icon-cloud-computing-1.png";
+import IconSaleFunnel from "../../components/assets/icon-sales-funnel.png";
+import Group from "../../components/assets/group.png";
+import Trophy from "../../components/assets/icon-trophy-big-1.png";
+import CloudComputing from "../../components/assets/icon-cloud-computing-1.png";
 
 const CMSHero: FC = () => {
   const router = useRouter();

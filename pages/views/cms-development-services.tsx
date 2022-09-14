@@ -2,10 +2,10 @@ import { NextPage } from "next";
 
 // Components
 import Section from "../../components/Fawwaz/Sections/Section";
-import SimpleCard from "../../components/SimpleCard/SimpleCard";
-import SimpleCustomCMS from "../../components/SimpleCustomCMS";
-import CMSHero from "../../components/CMSHero";
-import AboutCMS from "../../components/AboutCMS";
+import SimpleCard from "../../components/CMSDevelopmentService/SimpleCard";
+import SimpleCustomCMS from "../../components/CMSDevelopmentService/SimpleCustomCMS";
+import CMSHero from "../../components/CMSDevelopmentService/CMSHero"; 
+import AboutCMS from "../../components/CMSDevelopmentService/AboutCMS";
 import Logo from "components/Fawwaz/Logo";
 // assets
 // SVG
@@ -52,7 +52,7 @@ const Page: NextPage = () => {
       <div className="flex flex-col md:flex-row justify-center items-center my-14">
         <SimpleCard />
       </div>
-    </div>
+    </div> 
   );
 };
 export default Page;

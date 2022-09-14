@@ -10,7 +10,7 @@ const SimpleCard = () => {
           <ul className="py-5 text-xl font-sans">
             <li className="pb-5">
               <a href="#">Web Design</a>
-            </li>
+            </li> 
             <li className="pb-5">
               <a href="#">Website Redesign</a>
             </li>

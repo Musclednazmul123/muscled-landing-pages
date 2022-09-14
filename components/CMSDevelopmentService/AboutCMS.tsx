@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CmsMuscled from "../components/assets/cms-muscled.png";
-import CmsMuscledTwo from "../components/assets/cms-muscled-2.png";
-import TableIcon from "../components/assets/mdi_table-of-contents.png";
+import CmsMuscled from "../../components/assets/cms-muscled.png";
+import CmsMuscledTwo from "../../components/assets/cms-muscled-2.png";
+import TableIcon from "../../components/assets/mdi_table-of-contents.png";
 import Image from "next/image";
 import Logo from "components/Fawwaz/Logo";
 

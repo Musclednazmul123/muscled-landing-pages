@@ -1,7 +1,7 @@
 import React from "react";
-import Range from "../components/Range";
+import Range from "../Range";
 
-const SimpleCustomCMS = () => {
+const SimpleCustomCMS = () => { 
   return (
     <div className="w-full bg-[#c40000]/[0.06] py-[40px] px-[5px] xl:py-[80px] xl:px-[70px] font-sans">
       <div>

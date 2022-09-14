@@ -4,7 +4,7 @@ import VideoPlayer from "../../ReactPlayerModal";
 import PlayIcon from "../../playIcon";
 
 export default function Testimonial() {
-	return (
+	return ( 
 		<>
 			<div className=" py-20 bg-black">
 				<div className="px-5 md:px-10 lg:px-20 mx-auto container">
