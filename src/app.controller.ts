@@ -130,5 +130,12 @@ public shopifyDevServices() {
   return {}
 }
 
+  
+  @Render('cro-services')
+  @Get('/cro-services')
+  public croServices() {
+    return {}
+  }
+
 }
   
