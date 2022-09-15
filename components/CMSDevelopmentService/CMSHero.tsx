@@ -3,7 +3,7 @@ import { Section } from "../Fawwaz/Sections";
 import { useRouter } from "next/router";
 import { Input } from "../Fawwaz/Form";
 
-import Rectangle from "../Rectangle"; 
+import Rectangle from "./Rectangle"; 
 
 import IconSaleFunnel from "../../components/assets/icon-sales-funnel.png";
 import Group from "../../components/assets/group.png";

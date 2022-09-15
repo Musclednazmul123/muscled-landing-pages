@@ -1,5 +1,5 @@
 import React from "react";
-import Range from "../Range";
+import Range from "./Range";
 
 const SimpleCustomCMS = () => { 
   return (
