@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button }) => {
 	const router = useRouter()
 	return (
-		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-8 lg:space-y-0 gap-4">
+		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-between items-center space-y-8 lg:space-y-0 gap-4">
 			<div className="flex flex-col max-w-[640px] items-center xl:items-start">
 				{/* //? Pagination -- this should be dynamic? */}
 				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
@@ -20,7 +20,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button
 					{title}
 				</h1>
 
-				<p className="text-white-70 leading-8 mb-8">
+				<p className="text-white-70 leading-8 mb-8 pr-16">
 					{description}
 				</p>
 
@@ -58,7 +58,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button
 
 			</div>
 
-			<div>
+			<div >
 				{heroSVG}
 			</div>
 		</Section>
