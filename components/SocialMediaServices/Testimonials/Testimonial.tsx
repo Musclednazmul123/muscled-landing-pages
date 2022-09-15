@@ -6,7 +6,7 @@ import PlayIcon from '../../playIcon';
 export default function Testimonial() {
   return (
     <>
-      <div className=' py-20 bg-black mt-[141px]'>
+      <div className=' py-20 bg-black'>
         <div className='px-5 md:px-10 lg:px-20 mx-auto container'>
           <div className='lg:flex items-start justify-between lg:justify-center lg:gap-x-[60px]'>
             <div className='lg:max-w-[580px]  pb-[76px]'>
@@ -23,14 +23,16 @@ export default function Testimonial() {
                 See Our Clients’ Testimonials
               </button>
             </div>
-            <div className='w-[650px]'>
-              <VideoPlayer
-                Icon={PlayIcon}
-                // width={"500px"}
-                // height={"500px"}
-                url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
-                // thumbnail="main.png"
-              />
+            <div className='flex'>
+              <div className='w-[650px]'>
+                <VideoPlayer
+                  Icon={PlayIcon}
+                  // width={"500px"}
+                  // height={"500px"}
+                  url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                  // thumbnail="main.png"
+                />
+              </div>
             </div>
           </div>
         </div>

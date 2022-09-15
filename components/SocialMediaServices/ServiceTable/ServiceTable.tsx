@@ -8,7 +8,7 @@ export default function ServiceTable({}: Props) {
     <>
       <div className='text-center mt-[120px] mb-[120px] px-5 md:px-10 lg:px-20 mx-auto  container'>
         <h2 className='md:text-4xl text-2xl font-bold max-w-[700px] mx-auto md:leading-[52px] text-center text-black text-opacity-80'>
-          <span className='whitespace-nowrap'>
+          <span className='sm:whitespace-nowrap  whitespace-normal'>
             Muscled Pricing: Social Media Marketing
           </span>
           <br /> Management Services
