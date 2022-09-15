@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import { NextPage } from "next";
 
 // components
@@ -6,12 +6,14 @@ import { Hero, Section, TestimonialReuseable } from "components/Fawwaz/Sections"
 import RedesignSVG from "components/assets/svg/RedesignSVG";
 import cardBg from "components/assets/qwe.png";
 import Button from "components/Fawwaz/Button";
-import VideoFrame from "components/Fawwaz/VideoFrame";
 import { InputRangeSlider, Quotation, ServicesCard, WebsiteRedesignServicesContent } from '../../components/WebsiteRedesignService'
 import Card from "components/Fawwaz/Card/Card";
 import { ChevronDoubleRightIcon, ChevronDownIcon, PlayIcon } from "@heroicons/react/outline";
 import VideoPlayer from "../../components/ReactPlayerModal";
 import TableOfContent from "components/Fawwaz/Table/TableOfContent";
+import { IconItem } from "components/Fawwaz/Card";
+import HeroSection from '../../components/WebsiteRedesignService/heroSection/HeroSection'
+import RevenueSection from '../../components/WebsiteRedesignService/revenueSection/RevenueSection'
 
 
 
@@ -30,72 +32,10 @@ const Page: NextPage = () => {
     return (
         <>
             {/* Hero Section */}
-            <div className="h-fit bg-black-70 px-3">
-                <Hero
-                    title="Website Redesign Services: Get Your Revenue a Workout!"
-                    description="Our goal is to improve your bottom line. Expect to 
-                    get more traffic, better leads, and an increase in your revenue. 
-                    All that you need to know about Muscled Digital Agency’s 
-                    competitive website redesign services is right below. You 
-                    can also fill out the form below to get an exact quote!"
-                    heroSVG={<RedesignSVG className="w-80 lg:w-full" />}
-                    // input
-                    button
-                />
-            </div>
+            <HeroSection />
 
             {/* Grow your revenue */}
-            <div className="p-3 bg-red-100">
-                <div className="flex flex-wrap gap-10 justify-center py-20">
-                    <div className="max-w-[760px] space-y-7">
-                        <h2 className="text-4xl">
-                            Grow your revenue with website redesign services.
-                        </h2>
-                        <p className="text-xl leading-5">
-                            <span>
-                                People take about 15 minutes to consume content, and 60% of them would rather read something more than just a wall of text. Your website needs to be both beautiful and effective. It takes four seconds before your site’s visitor switches to another site, so it's imperative that you invest in a company that can deliver.
-                            </span>
-                            <br /><br />
-                            <span>Make a site that garners attention and makes people stay longer with Muscled Digital Agency. Our in-house design and development team is ready to roll out and make the most of your investment count.</span>
-                            <br /><br />
-
-                            <span>
-                                Scroll down to see more specific details about how we do our website redesign services and know what kinds of questions you need to ask in order to communicate what your redesigned website is going to be.
-                            </span>
-                            <br /><br />
-
-                            <span>
-                                If you’re looking for a top-notch and competitive company, schedule Muscled Digital Agency a call.
-                            </span>
-                        </p>
-                    </div>
-
-                    <div className="w-full md:w-[400px]">
-                        <Card className="max-w-[440px] w-full p-6 rounded-md relative self-start my-3">
-                            <img
-                                src={cardBg.src}
-                                alt={cardBg.src}
-                                className="absolute top-0 left-0 w-full h-full z-10"
-                            />
-                            <p className="relative text-white max-w-[190px] z-20">
-                                Looking for custom plans and pricing? Request a
-                                proposal to receive yours.
-                            </p>
-                            <Button
-                                bgColor="bg-black"
-                                textColor="text-white"
-                                className="mt-6 relative z-20">
-                                Request a Proposal
-                            </Button>
-                        </Card>
-                        <VideoPlayer
-                            Icon={PlayIcon}
-                            width="w-fit"
-                            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                        />
-                    </div>
-                </div>
-            </div>
+            <RevenueSection />
 
             {/* Testimonial */}
             <TestimonialReuseable
@@ -182,7 +122,7 @@ const Page: NextPage = () => {
                     </div>
                     <TableOfContent
 
-                        bgColor="bg-[#868686]"
+                        bgColor="bg-[#F2F2F2]"
                         titleColor="text-black"
                         titleIconColor="black"
                         isOpen={isOpen}
@@ -192,7 +132,7 @@ const Page: NextPage = () => {
                                 key={key}
                                 title={content}
                                 icon={<ChevronDoubleRightIcon className="fill-black-80 w-5 h-5" />}
-                                className=" mb-5 w-full items-center text-black-80"
+
                             />
                         ))}
 
