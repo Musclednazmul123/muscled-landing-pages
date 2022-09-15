@@ -2,20 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { FC } from "react";
 import { ButtonProps } from "../types/types";
-import arrowIcon from "components/assets/Vector.png";
+
 interface Props {
   arrow: String;
 }
 const Arrow = ({ arrow }: Props) => {
   if (arrow === "small") {
     return <div className="ml-2">Small</div>;
-  }
-  if (arrow === "arrowIcon") {
-    return (
-      <div className="ml-[56px]">
-        <img src={arrowIcon.src} width="14px" height="12.25px" />
-      </div>
-    );
   }
 
   return <div className="ml-2">big</div>;
@@ -30,7 +23,6 @@ const Button: FC<ButtonProps> = ({
   white,
   violate,
   red,
-  className,
 }) => {
   return (
     <div>
@@ -45,7 +37,7 @@ const Button: FC<ButtonProps> = ({
             : white
             ? "bg-white text-black"
             : "bg-black "
-        }${className}`}
+        }`}
       >
         {text}
         {arrow !== undefined ? <Arrow arrow={arrow!} /> : ""}
