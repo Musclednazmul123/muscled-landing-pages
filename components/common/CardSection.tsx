@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  IconItem,
-  CardFooter,
-} from "../Fawwaz/Card";
+import IconItem from "./IconItem";
+import CardContent from "./CardContent";
+import CardFooter from "./CardFooter";
+import CardHeader from "./CardHeader";
 import { Section } from "components/Fawwaz/Sections";
-
-import { AiFillStar } from "react-icons/ai";
 import star from "components/assets/Star.png";
 import star1 from "components/assets/Star_2.png";
 import star2 from "components/assets/Star_3.png";

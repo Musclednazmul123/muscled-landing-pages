@@ -15,7 +15,7 @@ const SimpleCard = ({ itemTitle, itemPara, buttonLabel }: SimpleCardProps) => {
         <Button
           text={buttonLabel}
           arrow="arrowIcon"
-          className="w-[227px] h-[66px] rounded-[10px] bg-[#000000] font-bold text-[20px] not-italic"
+          className="w-[227px] h-[66px] rounded-[10px] bg-[#000000] font-[600px] text-[20px] not-italic"
         />
       </span>
     </div>

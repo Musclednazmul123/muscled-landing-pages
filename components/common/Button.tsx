@@ -1,7 +1,7 @@
 import React from "react";
 import { FC } from "react";
 import { ButtonProps } from "../../types/types";
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 interface Props {
   arrow: String;
 }
@@ -12,7 +12,7 @@ const Arrow = ({ arrow }: Props) => {
   if (arrow === "arrowIcon") {
     return (
       <div className="ml-[56px]">
-        <BsArrowRightShort size={14} />
+        <BsArrowRight size={16} />
       </div>
     );
   }

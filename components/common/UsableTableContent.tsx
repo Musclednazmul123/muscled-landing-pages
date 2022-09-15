@@ -1,6 +1,5 @@
-import { IconItem } from "../Fawwaz/Card";
+import IconItem from "./IconItem";
 import { FaListAlt } from "react-icons/fa";
-import vector1 from "components/assets/Vector-1.png";
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 interface PropsTableMetaData {
