@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode, useState } from "react";
 
 import { FaListAlt } from "react-icons/fa";
 
@@ -15,20 +15,26 @@ const TableOfContent: FC<IProps> = ({
   IconTable,
   height,
 }) => {
+  const [table, setTable] = useState(true);
+
   return (
     <div
-      style={{ height: height || 510 }}
-      className="order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[440px] border rounded-md"
+      style={{ height: table ? 520 : 55 }}
+      className="order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full overflow-hidden lg:max-w-[440px] border rounded-md"
     >
-      {/* @ts-ignore */}
-      <div className="bg-[#F2F2F2] rounded-md p-4 flex justify-between items-center">
+      <div
+        className="bg-[#F2F2F2] rounded-md p-4 flex justify-between items-center cursor-pointer"
+        onClick={() => setTable(!table)}
+      >
         <h2 className="flex items-center gap-2 text-lg">
           <FaListAlt size={20} />
           Table of Contents
         </h2>
-        <div className="flex w-6 h-6">{IconContent}</div>
+        <div className={`flex w-6 h-6 ${!table && "rotate-180"}`}>
+          {IconContent}
+        </div>
       </div>
-      <ul className="px-6">
+      <ul className={`px-6 `}>
         {content.map((item: string, idx: number) => (
           <div key={idx} className="flex items-center px-3 my-3">
             <div className="flex w-4 h-4 mr-2">{IconTable}</div> <li>{item}</li>
