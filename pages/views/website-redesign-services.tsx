@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import { NextPage } from "next";
 
 // components
@@ -16,15 +16,17 @@ import TableOfContent from "components/Fawwaz/Table/TableOfContent";
 
 
 
+const contentsOfTOC = [
+    "Our First-Principle and Data-Driven SEO Process",
+    "What does the MUSCLED SEO Management Service look like?",
+    "How do I choose the BEST SEO company to help me?",
+    "How can SEO help my business grow?",
+    "Your SEO Strategy Needs to be Competitive",
+    "FAQs about SEO services",
+];
 const Page: NextPage = () => {
-    const contentsOfTOC = [
-        "Our First-Principle and Data-Driven SEO Process",
-        "What does the MUSCLED SEO Management Service look like?",
-        "How do I choose the BEST SEO company to help me?",
-        "How can SEO help my business grow?",
-        "Your SEO Strategy Needs to be Competitive",
-        "FAQs about SEO services",
-    ];
+    const [isOpen, setIsOpen] = useState(true);
+
     return (
         <>
             {/* Hero Section */}
