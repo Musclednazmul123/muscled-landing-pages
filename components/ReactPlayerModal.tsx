@@ -29,7 +29,7 @@ const ReactPlayerModal: React.FC<Props> = ({
 					width: width && width,
 					height: height && height,
 				}}
-				className="bg-gray-300 rounded-lg lg:mt-0 mt-12 lg:w-[640px] md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center"
+				className="bg-gray-300 rounded-lg lg:mt-0 mt-12 md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center"
 			>
 				<div onClick={() => setIsPlaying(true)}>
 					<Icon />

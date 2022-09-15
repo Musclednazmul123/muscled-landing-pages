@@ -9,18 +9,18 @@ import { useRouter } from "next/router";
 const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button }) => {
 	const router = useRouter()
 	return (
-		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-between items-center space-y-8 lg:space-y-0 gap-4">
+		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center xl:justify-between items-center space-y-8 lg:space-y-0 gap-4">
 			<div className="flex flex-col max-w-[640px] items-center xl:items-start">
 				{/* //? Pagination -- this should be dynamic? */}
 				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
 					<span>Home {router.asPath.replace('/', ' > ')}</span>
 				</p>
 
-				<h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
+				<h1 className="text-[36px] text-center xl:text-start leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
 					{title}
 				</h1>
 
-				<p className="text-white-70 leading-8 mb-8 pr-16">
+				<p className="text-white-70 leading-8 mb-8 xl:pr-16 text-center xl:text-start">
 					{description}
 				</p>
 
@@ -42,7 +42,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button
 
 				{button &&
 
-					<div className="flex flex-wrap gap-2">
+					<div className="flex flex-wrap gap-2 justify-center	xl:justify-start">
 						<Button bgColor="bg-white text-black" textColor="text-white">
 							<span className="text-sm md:text-lg">
 								View porfolio

@@ -9,7 +9,7 @@ const WebsiteRedesignServicesContent = () => {
     <section>
       <div>
         <article>
-          <h3 className="leading-[154%]">
+          <h3 className="leading-[154%] text-3xl	">
             Website redesign service options from Muscled Digital Agency
           </h3>
           <br />
@@ -34,7 +34,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         <article>
-          <h3 className="leading-[154%]">
+          <h3 className="leading-[154%] text-3xl	">
             What should you expect from our website redesign service?{" "}
           </h3>
           <br />
@@ -121,7 +121,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         <article>
-          <h3 className="leading-[154%]">
+          <h3 className="leading-[154%] text-3xl">
             Web Design Services from a digital agency that cares about results.
           </h3>
           <p>
@@ -182,24 +182,29 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         {/* Portfolio Card */}
-        <Section className="flex py-12 px-6 justify-between gap-2 items-center	bg-black rounded-lg">
-          <div className="flex flex-col md:flex-row justify-items-stretch w-full	 items-center gap-4">
-            <div className="flex flex-col text-accent-white flex-1 w-64 justify-between">
-              <h4 className=" text-accent-white">
+        <Section>
+          <div className="flex flex-col lg:flex-row py-12 px-6 justify-between gap-2 items-center bg-black rounded-lg ">
+            <div className="flex flex-col text-accent-white lg:w-2/4 items-center lg:items-start">
+              <h4 className=" text-accent-white font-semibold leading-10 text-center">
                 We don’t want to tell you about the work we do, we want to{" "}
                 <span className="text-red-600"> SHOW </span>
                 you.
               </h4>
               <br />
-              <Button bgColor="bg-white text-black" textColor="text-white">
+              <Button
+                bgColor="bg-white text-black w-fit"
+                textColor="text-white"
+              >
                 <span className="text-sm md:text-lg">View our Portfolio</span>
                 <AiOutlineArrowRight />
               </Button>
             </div>
 
-            <div className=" text-accent-white basis-1/3  justify-between">
-              <p className="text-center">WE’VE BUILT OVER</p>
-              <div className="flex gap-2 md:gap-4">
+            <div className="flex flex-col text-accent-white justify-between w-fit items-center leading-8 space-y-1">
+              <p className="text-center lg:leading-7  w-3/4 sm:w-1/2">
+                WE’VE BUILT OVER
+              </p>
+              <div className="flex gap-2 md:gap-2">
                 <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
                 <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
                 <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
@@ -215,7 +220,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
         <br />
         <article>
-          <h3>Why do you need a website redesign service?</h3>
+          <h3 className="text-3xl">Why do you need a website redesign service?</h3>
           <br />
           <p>
             Do you find yourself falling short of your online marketing goals?
@@ -352,7 +357,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
         <br />
         <article>
-          <h3>Why do you need a website redesign?</h3>
+          <h3 className="text-3xl">Why do you need a website redesign?</h3>
           <br />
           <p>
             Consider these questions below to see if you should invest in a
@@ -525,7 +530,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
         <br />
         <article>
-          <h3>What should I focus on with my website redesign service?</h3>
+          <h3 className="text-3xl">What should I focus on with my website redesign service?</h3>
           <br />
           <p>
             The list below might help you focus on what your business needs.
@@ -676,9 +681,13 @@ const WebsiteRedesignServicesContent = () => {
         </article>
         <br />
         <br />
+        <br />
+        <br />
+        <br />
 
         <article>
-          <h3>FAQs for Web Redesign Services</h3>
+          <h3 className="text-3xl">FAQs for Web Redesign Services</h3>
+          <br />
           <br />
           <p className="font-bold	text-lg">
             What are website redesign services?
@@ -714,7 +723,9 @@ const WebsiteRedesignServicesContent = () => {
           </p>
           <br />
         </article>
-
+        <br />
+        <br />
+        
       </div>
     </section>
   );

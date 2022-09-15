@@ -7,9 +7,12 @@ import RedesignSVG from "components/assets/svg/RedesignSVG";
 import cardBg from "components/assets/qwe.png";
 import Button from "components/Fawwaz/Button";
 import VideoFrame from "components/Fawwaz/VideoFrame";
-import { InputRangeSlider, Quotation, ServicesCard, TableOfContent, WebsiteRedesignServicesContent } from '../../components/WebsiteRedesignService'
+import { InputRangeSlider, Quotation, ServicesCard, WebsiteRedesignServicesContent } from '../../components/WebsiteRedesignService'
 import Card from "components/Fawwaz/Card/Card";
-import { ChevronDoubleRightIcon, ChevronDownIcon } from "@heroicons/react/outline";
+import { ChevronDoubleRightIcon, ChevronDownIcon, PlayIcon } from "@heroicons/react/outline";
+import VideoPlayer from "../../components/ReactPlayerModal";
+import { TableOfContent } from "components/Fawwaz/Table";
+
 
 
 
@@ -32,7 +35,7 @@ const Page: NextPage = () => {
             </div>
 
             {/* Grow your revenue */}
-            <div className="p-3 bg-red-10">
+            <div className="p-3 bg-red-100">
                 <div className="flex flex-wrap gap-10 justify-center py-20">
                     <div className="max-w-[760px] space-y-7">
                         <h2 className="text-4xl">
@@ -75,9 +78,11 @@ const Page: NextPage = () => {
                                 Request a Proposal
                             </Button>
                         </Card>
-                        <div className="relative min-w-[200px] w-full max-w-[400px] h-[320px] mx-auto bg-white-gray md:mx-0">
-                            <VideoFrame className="absolute w-full h-full" />
-                        </div>
+                        <VideoPlayer
+                            Icon={PlayIcon}
+                            width="w-fit"
+                            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        />
                     </div>
                 </div>
             </div>
@@ -97,13 +102,13 @@ const Page: NextPage = () => {
                         Website Redesign Calculator — Get a Free Website Redesign Service Estimate!
                     </h2>
 
-                    <p className="py-8 text-black-70">
+                    <p className="py-8 text-black">
                         Curious about the cost of our web redesign services? Whether
                         you’re looking to create a responsive website to increase leads
                         or update your site to reflect your brand’s image for your target audience, our free cost calculator covers everything your company may need with a professional website redesign.
                     </p>
 
-                    <p className="py-8 text-black-70">
+                    <p className="py-8 text-black">
                         Get a free custom quote with our easy-to-use website redesign calculator:
                     </p>
                 </Section>
@@ -165,20 +170,7 @@ const Page: NextPage = () => {
                         {/* Website redesign service options */}
                         <WebsiteRedesignServicesContent />
                     </div>
-                    <TableOfContent
-                        content={[
-                            "Muscled's website design services are an investment in the success of your site.",
-                            "Award-winning web design. with open pricing.",
-                            "Our collectionof websites.",
-                            "What is included in Muscled's Web Design servises.",
-                            "Why use Muscled as your website design partner?",
-                            "How Are Websites Designed by Muscled?",
-                            "Why use Muscled as your website design partner?",
-                            "Get Your Company a Website That is Focused on Performance.",
-                        ]}
-                        IconTable={<ChevronDoubleRightIcon />}
-                        IconContent={<ChevronDownIcon />}
-                    />
+                    <TableOfContent />
                     {/* Request an Instant Quote */}
 
                 </Section>
