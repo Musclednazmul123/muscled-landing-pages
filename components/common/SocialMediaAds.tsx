@@ -2,7 +2,6 @@ import React from "react";
 import TableOfContent from "./UsableTableContent";
 import Section from "components/Fawwaz/Sections/Section";
 import { TableMetaData } from "components/utils/muscled-d2c-constants";
-import Button from "../Button";
 
 const SocialMediaAds = () => {
   const url =

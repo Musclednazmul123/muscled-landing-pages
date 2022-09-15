@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "./Button";
 import { SimpleCardProps } from "./types";
 
 const SimpleCard = ({ itemTitle, itemPara, buttonLabel }: SimpleCardProps) => {

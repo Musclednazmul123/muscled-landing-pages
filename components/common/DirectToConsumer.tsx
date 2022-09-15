@@ -1,7 +1,7 @@
 import Section from "components/Fawwaz/Sections/Section";
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import Button from "../Button";
+import Button from "./Button";
 import ReactPlayerModal from "components/ReactPlayerModal";
 import PlayIcon from "components/playIcon";
 import classNames from "classnames";
