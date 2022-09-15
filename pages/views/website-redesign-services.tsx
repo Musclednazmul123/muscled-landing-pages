@@ -11,7 +11,7 @@ import { InputRangeSlider, Quotation, ServicesCard, WebsiteRedesignServicesConte
 import Card from "components/Fawwaz/Card/Card";
 import { ChevronDoubleRightIcon, ChevronDownIcon, PlayIcon } from "@heroicons/react/outline";
 import VideoPlayer from "../../components/ReactPlayerModal";
-import { TableOfContent } from "components/Fawwaz/Table";
+import TableOfContent from "components/Fawwaz/Table/TableOfContent";
 
 
 
