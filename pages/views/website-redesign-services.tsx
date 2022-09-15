@@ -17,6 +17,14 @@ import TableOfContent from "components/Fawwaz/Table/TableOfContent";
 
 
 const Page: NextPage = () => {
+    const contentsOfTOC = [
+        "Our First-Principle and Data-Driven SEO Process",
+        "What does the MUSCLED SEO Management Service look like?",
+        "How do I choose the BEST SEO company to help me?",
+        "How can SEO help my business grow?",
+        "Your SEO Strategy Needs to be Competitive",
+        "FAQs about SEO services",
+    ];
     return (
         <>
             {/* Hero Section */}
@@ -170,7 +178,23 @@ const Page: NextPage = () => {
                         {/* Website redesign service options */}
                         <WebsiteRedesignServicesContent />
                     </div>
-                    <TableOfContent />
+                    <TableOfContent
+
+                        bgColor="bg-[#868686]"
+                        titleColor="text-black"
+                        titleIconColor="black"
+                        isOpen={isOpen}
+                        setIsOpen={() => setIsOpen((prev) => !prev)}
+                        contents={contentsOfTOC.map((content, key) => (
+                            <IconItem
+                                key={key}
+                                title={content}
+                                icon={<ChevronDoubleRightIcon className="fill-black-80 w-5 h-5" />}
+                                className=" mb-5 w-full items-center text-black-80"
+                            />
+                        ))}
+
+                    />
                     {/* Request an Instant Quote */}
 
                 </Section>
