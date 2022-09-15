@@ -4,7 +4,7 @@ import Range from "../Range";
 const SimpleCustomCMS = () => { 
   return (
     <div className="w-full bg-[#c40000]/[0.06] py-[40px] px-[5px] xl:py-[80px] xl:px-[70px] font-sans">
-      <div>
+      <div> 
         <h1 className="text-center text-4xl font-bold pb-11">
           Simple Custom Content Management Systems
         </h1>

@@ -3,7 +3,7 @@ import { Section } from "../Fawwaz/Sections";
 import { useRouter } from "next/router";
 import { Input } from "../Fawwaz/Form";
 
-import Rectangle from "../Rectangle";
+import Rectangle from "../Rectangle"; 
 
 import IconSaleFunnel from "../../components/assets/icon-sales-funnel.png";
 import Group from "../../components/assets/group.png";
@@ -15,6 +15,8 @@ const CMSHero: FC = () => {
 
   return (
     <div>
+      <div className="bg-black/[0.7] flex flex-col xl:flex-row">
+        <div className="xl:mx-[55px]">
       <Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
         <div className="max-w-[690px]">
           <p className="text-white text-lg font-medium space-x-2 cursor-pointer">
@@ -86,6 +88,8 @@ const CMSHero: FC = () => {
           </div>
         </div>
       </Section>
+    </div>
+    </div>
     </div>
   );
 };

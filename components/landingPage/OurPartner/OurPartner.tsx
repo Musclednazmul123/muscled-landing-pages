@@ -4,7 +4,7 @@ export default function OurPartner() {
 	const logo = [
 		{
 			icon: "logo1",
-		},
+		}, 
 		{
 			icon: "logo2",
 		},
@@ -24,7 +24,7 @@ export default function OurPartner() {
 	return (
 		<div className="w-full bg-white">
 			{" "}
-			<div className="pt-[50px] bg-white flex flex-col items-center  justify-center px-5 md:px-10 lg:px-20 mx-auto container">
+			<div className="py-[50px] bg-white flex flex-col items-center  justify-center px-5 md:px-10 lg:px-20 mx-auto container">
 				<h2 className="text-2xl font-bold leading-loose text-black text-opacity-50">
 					Our Partners
 				</h2>
