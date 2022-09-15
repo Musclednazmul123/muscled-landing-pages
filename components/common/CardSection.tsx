@@ -76,7 +76,7 @@ const CardSection = () => {
                     <img src={star.src} height="30px" width="30px" />
                   )}
                 </CardHeader>
-                <CardContent className="space-y-11 mt-[34px]">
+                <CardContent className="space-y-11">
                   {cardItem &&
                     cardItem.iconItems.map((item) => (
                       <IconItem
