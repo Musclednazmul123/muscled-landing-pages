@@ -2,7 +2,6 @@ import React from "react";
 import ReactPlayer from "react-player";
 
 interface Props {
-  className?: string;
   url: string;
   Icon: any;
   thumbnail?: string;
@@ -16,7 +15,6 @@ const ReactPlayerModal: React.FC<Props> = ({
   thumbnail,
   width,
   height,
-  className,
 }) => {
   const [isplaying, setIsPlaying] = React.useState<boolean>(false);
   const [hover, setHover] = React.useState<boolean>(false);
@@ -31,7 +29,7 @@ const ReactPlayerModal: React.FC<Props> = ({
           width: width && width,
           height: height && height,
         }}
-        className={`bg-gray-300 rounded-lg lg:mt-0 mt-12 lg:w-[640px] md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center ${className}`}
+        className="bg-gray-300 rounded-lg lg:mt-0 mt-12 md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center"
       >
         <div onClick={() => setIsPlaying(true)}>
           <Icon />
@@ -42,11 +40,11 @@ const ReactPlayerModal: React.FC<Props> = ({
           onClick={() => {
             setIsPlaying(false);
           }}
-          className="fixed top-0 flex items-center justify-center w-full h-full px-6 bg-black cursor-pointer bg-opacity-90"
+          className="bg-black fixed inset-0 h-full cursor-pointer w-full bg-opacity-90 flex items-center justify-center px-6"
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative overflow-visible  pr-7"
+            className=" relative pr-7  overflow-visible "
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
@@ -59,7 +57,7 @@ const ReactPlayerModal: React.FC<Props> = ({
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="absolute right-0 w-5 h-5 text-white border-white cursor-pointer  focus:border -top-1"
+                className=" w-5  h-5 absolute right-0 focus:border border-white	 -top-1  cursor-pointer text-white"
               >
                 <path
                   strokeLinecap="round"

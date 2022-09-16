@@ -1,11 +1,11 @@
-import React, { CSSProperties, FC, ReactNode, SetStateAction } from "react";
+import React, { CSSProperties, FC, ReactNode } from "react";
 
 interface Props {
   className?: string;
   id?: string;
   placeholder?: string;
   type?: string;
-  onChange?: (ev: React.SetStateAction<string>) => void;
+  onChange?: (ev: any) => void;
   style?: CSSProperties;
   value: string | number;
   label?: string;
@@ -21,7 +21,6 @@ const index: FC<Props> = ({
   value,
   onChange,
   style,
-  label,
   inIcon,
   endIcon,
 }) => {
@@ -32,12 +31,9 @@ const index: FC<Props> = ({
         value={value}
         placeholder={placeholder}
         type={type}
-        onChange={(e: any) =>
-          // @ts-ignore
-          onChange(onChange)
-        }
+        onChange={onChange}
         style={style}
-        className={` outline-none ${className}`}
+        className={` outline-none text-black text-xl ${className}`}
       />
       {endIcon && endIcon}
     </div>

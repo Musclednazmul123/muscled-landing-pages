@@ -2,13 +2,9 @@ import React from "react";
 import { Card } from "../../Fawwaz/Card";
 import { Section } from "../../Fawwaz/Sections";
 import ReactPlayerModal from "../../ReactPlayerModal";
-import playIcon from "../PlayButton.png";
-import VideoPlayer from "../../ReactPlayerModal";
-import ReactModalPlayer from "../ReactModalPlayer";
 import Image_14 from "../../assets/image-14.png";
 import Buttons from "../Buttons";
-import ReactPlayer from "react-player";
-import webDesign from "../webDesign.png";
+import playIcon from "../playIconPartner";
 
 const DesignSevices = () => {
   return (
@@ -39,13 +35,13 @@ const DesignSevices = () => {
         </p>
       </div>
 
-      <div className="">
-        <ReactModalPlayer
-          thumbnail={webDesign}
+      <div>
+        <ReactPlayerModal
+          thumbnail={"/webDesign.png"}
           url="https://www.youtube.com/embed/D0UnqGm_miA"
-          PlayIcon={playIcon}
-          isPlay={false}
-          control={true}
+          Icon={playIcon}
+          width={"480px"}
+          height={"280px"}
         />
 
         <Card className="bg-[#3E5661] flex flex-col w-[480px] h-[270px] mt-4 mx-auto md:mx-0 rounded-md">
@@ -60,7 +56,7 @@ const DesignSevices = () => {
             >
               Get Free Proposal
             </Buttons>
-            <div>
+            <div className="-mt-5">
               <img src={Image_14.src} alt={"image-14"} />
             </div>
           </div>

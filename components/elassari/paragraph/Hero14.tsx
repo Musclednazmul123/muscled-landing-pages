@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import React, { ReactNode } from "react";
-import { SVGProps } from "types/types";
+import { SVGProps } from "../../../types/types";
 
 interface IProps {
   children?: ReactNode;

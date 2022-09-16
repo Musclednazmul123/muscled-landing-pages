@@ -1,5 +1,5 @@
 import React from "react";
-import { SVGProps } from "../../../types/types";
+import { SVGProps } from "../../../../types/types";
 import { Logo1, Logo2, Logo4, Logo5, Logo6, Logo7 } from "../";
 
 const OurPartners = () => {

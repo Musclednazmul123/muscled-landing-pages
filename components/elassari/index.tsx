@@ -26,6 +26,9 @@ import Paragraph6 from "./paragraph/Paragraph6";
 import Paragraph7 from "./paragraph/Paragraph7";
 import Paragraph8 from "./paragraph/Paragraph8";
 import ServicesCard from "./ServicesCard";
+import Hero from "./Hero";
+import PriceTable from "./PriceTable";
+import BlogArticle from "./paragraph/BlogArticle";
 
 export {
   Input,
@@ -53,6 +56,9 @@ export {
   Paragraph7,
   Paragraph8,
   ServicesCard,
+  Hero,
+  PriceTable,
+  BlogArticle,
   TableOfContent,
   OverBuild,
   Services,
