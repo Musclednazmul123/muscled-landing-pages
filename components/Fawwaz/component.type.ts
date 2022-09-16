@@ -93,3 +93,7 @@ export interface VideoFrameProps {
 export interface TestmonailProps {
 	services:string[],
 }
+export interface RangeSliderSectionProps {
+	bgColor:string,
+	textColor:string,
+}

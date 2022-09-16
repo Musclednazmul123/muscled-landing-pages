@@ -1,65 +1,72 @@
-import React from 'react'
-import FlexLayout from "@/components/layout/FlexLayout";
-import Button from "@/components/ui/Button";
-import Slider from "@/components/ui/Slider";
-import CostInfo from "./CostInfo";
+import React, { FC } from 'react'
+import FlexLayout from "./FlexLayout";
+import Button from "../../../Fawwaz/Button";
+import Slider from "./Slider";
+import { RangeSliderSectionProps } from 'components/Fawwaz/component.type';
 
-const RangeSliderSection = () => {
+const RangeSliderSection: FC<RangeSliderSectionProps> = ({
+    bgColor,
+    textColor,
+    ...props
+}) => {
     return (
-        <div className="bg-black text-white w-full p-16">
-            <h2 className="text-[40px] font-bold mb-8 w-[70%]">
-                Get an Instant Quote With Our Web Design Calculator
+        <div className={`${bgColor} ${textColor} w-full p-16`}>
+            <h2 className={`${textColor} text-[40px] font-bold mb-8 w-[70%]`}>
+                Request an Instant Quote using  Our Website Design Calculator
             </h2>
             <p className="text-[20px]">
-                Prices for website builders range from zero to more than $500 per
-                month, with yearly maintenance fees ranging from zero to $5400. Your
-                company&apos;s website builder costs will vary depending on a number
-                of criteria, including the level of functionality you want.
+                To get a free, instant quote, use the sliders below to indicate your needs,
+                then click the "See Pricing" button. We'll show you both low and high-ended
+                estimates for each service category, so you'll have an overall range of how
+                much it might cost to build such a website.
             </p>
-            <div className="py-14 space-y-10 w-[70%] mx-auto">
+            <div className="py-14 space-y-10 mx-auto">
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">Number of pages</h5>
-                    <Slider percentage={50} tags={["0-10", "10-50", "50-100"]} />
+                    <h5 className="text-xs md:text-[20px] font-bold">Number of pages</h5>
+                    <Slider percentage={50} tags={["0-10", "10-50", "50-100"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">Style of design</h5>
+                    <h5 className="text-xs md:text-[20px] font-bold">Style of design</h5>
                     <Slider
                         percentage={50}
                         tags={["Simple", "Simple yet attractive", "Attractive"]}
+                        sliderColor={'bg-[#0f0d10]'}
                     />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">
+                    <h5 className="text-xs md:text-[20px] font-bold">
                         Copywriting number of pages
                     </h5>
-                    <Slider percentage={50} tags={["0-5", "5-10", "10-20"]} />
+                    <Slider percentage={50} tags={["0-5", "5-10", "10-20"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">SEO</h5>
+                    <h5 className="text-xs md:text-[20px] font-bold">SEO</h5>
                     <Slider
                         percentage={50}
                         tags={["10 Keywords", "30 Keywords", "100 Keywords"]}
+                        sliderColor={'bg-[#0f0d10]'}
                     />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">Responsive Design</h5>
-                    <Slider percentage={100} tags={["No", "Maybe", "Yes"]} />
+                    <h5 className="text-xs md:text-[20px] font-bold">Responsive Design</h5>
+                    <Slider percentage={100} tags={["No", "Maybe", "Yes"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">Database Integration</h5>
-                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} />
+                    <h5 className="text-xs md:text-[20px] font-bold">Database Integration</h5>
+                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">Ecommerce Functionality</h5>
-                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} />
+                    <h5 className="text-xs md:text-[20px] font-bold">Ecommerce Functionality</h5>
+                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
-                    <h5 className="text-20px font-bold">CMS</h5>
-                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} />
+                    <h5 className="text-xs md:text-[20px] font-bold">CMS</h5>
+                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
-                <FlexLayout justify="justify-evenly">
-                    <div className="text-20px font-bold w-[30%]"></div>
-                    <Button>See Pricing</Button>
+                <FlexLayout justify="justify-end">
+                    <div className="text-xs md:text-[20px] font-bold w-[50%] ">
+                        <Button className='w-full' bgColor='bg-black' textColor='text-white'>See Pricing</Button>
+                    </div>
                 </FlexLayout>
             </div>
         </div>
