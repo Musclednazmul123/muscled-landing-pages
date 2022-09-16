@@ -9,6 +9,7 @@ import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
 import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
 import TestimonialSection from "components/EcommerceSEOServices/TestimonialSection";
+import ServiceTableSection from "@/components/EcommerceSEOServices/ServiceTableSection";
 
 const Page: NextPage = () => {
   return (
@@ -52,6 +53,7 @@ const Page: NextPage = () => {
         testimony="“Muscled has gone above and beyond to make me happy. So far, after a few months, I have already seen significant improvement in rankings and conversions, and they have also greatly improved the speed of my site.”"
         videoUrl="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       />
+      <ServiceTableSection />
     </div>
   );
 };
