@@ -1,6 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 import HeroSection from "components/CROServices/HeroSection";
+import PromotionSection from "components/EcommerceSEOServices/PromotionSection";
 import PricingPlanSection from "components/EcommerceSEOServices/PricingPlanSection";
 import PartnerSection from "components/CROServices/PartnerSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
@@ -43,6 +44,7 @@ const Page: NextPage = () => {
       />
       <PartnerSection />
       <PricingPlanSection />
+      <PromotionSection videoUrl="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
     </div>
   );
 };
