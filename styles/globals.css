@@ -89,7 +89,7 @@
 .seo-marketing-services-ads::after {
 	content: '';
 	position: absolute;
-	background: #2E1E34E5;
+	background: #2E1E34E5; 
 	inset: 0;
 }
 
@@ -329,4 +329,21 @@ html {
 
 .red-stroke {
 	-webkit-text-stroke: 3px #C40000;
+}
+/* Tables of Content Silde */
+.animate-slideUp{
+	animation:slideUp .25s ease-in-out forwards
+}
+
+@keyframes slideUp{
+	from{
+		opacity:0;
+		max-height:0;
+		 
+	}  
+	to{
+		transform:translateY(0);
+		opacity:1;
+		max-height:300px;
+	}
 }

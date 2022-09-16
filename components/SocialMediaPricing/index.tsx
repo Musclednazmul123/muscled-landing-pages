@@ -41,7 +41,7 @@ function SocialMediaPricing() {
         <article>
           <h3 className="leading-[154%]">
             Pricing for social media management services: How much do they cost?
-          </h3>
+          </h3>  
 
           <p>
             Social media sites are becoming increasingly popular, and they are
@@ -51,7 +51,7 @@ function SocialMediaPricing() {
             and services.
           </p>
 
-          <p>
+          <p> 
             The majority of people want to know how much social media marketing
             costs. What is the solution? It is determined by a number of
             factors, including the experience of the employees at the agency you

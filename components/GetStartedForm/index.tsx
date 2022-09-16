@@ -12,7 +12,7 @@ function GetStartedForm() {
         <input
           className={styles.form__input}
           type="text"
-          placeholder="Enter your website link"
+          placeholder="Enter your website link" 
         />
 
         <PrimaryButton label="Get Started" />

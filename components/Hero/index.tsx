@@ -8,7 +8,7 @@ function Hero() {
       <article className={styles.wrapper__content}>
         <h2 className={styles.content__heading}>
           How Much Will Social Media Management Cost in 2022?
-        </h2>
+        </h2> 
 
         <p className={styles.content__description}>
           The cost of social media is determined by a variety of factors,
@@ -29,7 +29,7 @@ function Hero() {
       <article className={styles.logos}>
         <Logo1 />
         <Logo2 />
-        <Logo1 />
+        <Logo1 /> 
         <Logo2 />
         <Logo1 />
         <Logo2 />

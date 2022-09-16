@@ -9,7 +9,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const [showChild, setShowChild] = useState(false);
   useEffect(() => {
     setShowChild(true);
-  }, []);
+  }, []); 
 
   if (!showChild) {
     return null;
