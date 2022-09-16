@@ -185,7 +185,7 @@ const WebsiteRedesignServicesContent = () => {
         <Section>
           <div className="flex flex-col lg:flex-row py-12 px-6 justify-between gap-2 items-center bg-black rounded-lg ">
             <div className="flex flex-col text-accent-white lg:w-2/4 items-center lg:items-start">
-              <h4 className=" text-accent-white font-semibold leading-10 text-center">
+              <h4 className=" text-accent-white font-semibold leading-10 text-center lg:text-start">
                 We don’t want to tell you about the work we do, we want to{" "}
                 <span className="text-red-600"> SHOW </span>
                 you.
