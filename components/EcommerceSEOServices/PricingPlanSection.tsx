@@ -61,7 +61,7 @@ const PricingPlanSection = () => {
       </div>
       <div className="mt-[60px]">
         <Link href="/ecommerce-seo-services#">
-          <a className="text-[#5F27BD] flex justify-center items-center underline">
+          <a className="text-[#5F27BD] flex justify-center items-center underline text-2xl">
             See Full Deliverables
           </a>
         </Link>
