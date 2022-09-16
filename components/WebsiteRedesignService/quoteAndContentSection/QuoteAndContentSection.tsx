@@ -11,7 +11,6 @@ const QuoteAndContentSection = () => {
         <div>
             <Section className="py-32 gap-10">
                 {/* Quotation */}
-                {/* <InstantQuoteSection /> */}
                 <RangeSlider bgColor='bg-[#574A5B]' textColor='text-white'/>
 
                 {/* Content Section */}
