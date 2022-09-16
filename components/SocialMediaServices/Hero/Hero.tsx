@@ -29,7 +29,7 @@ function Hero() {
   ];
   return (
     <div className='bg-black bg-opacity-70'>
-      <div className='xl:py-[100px] md:py-20 py-4  px-5 md:px-10 lg:px-20 xl:px-4 mx-auto container  xl:flex items-center justify-between'>
+      <div className='xl:py-[100px] md:py-20 py-4  px-5 md:px-24 lg:px-24 xl:px-24 mx-auto container  xl:flex items-center justify-between'>
         <div className='max-w-[720px]'>
           <p className='md:text-lg text-base font-medium  xl:text-left text-center leading-[18px] text-white'>
             Home {'>'} WEB DEVELOPMENT {'>'} SERVICES
@@ -60,7 +60,10 @@ function Hero() {
         <div className='space-y-[10px] xm:mt-0 mt-12 xl:ml-[84px]'>
           {cardData.map((card, index) => {
             return (
-              <div className='bg-black bg-opacity-80 rounded-sm flex md:flex-row flex-col items-center py-3 pl-3 pr-10'>
+              <div
+                className='bg-black bg-opacity-80 rounded-sm flex md:flex-row flex-col items-center py-3 pl-3 pr-10'
+                key={index}
+              >
                 <Icon customClasses='md:w-auto md:h-auto' icon={card.icon} />
                 <div className='md:ml-1.5 md:mt-0 mt-2 md:gap-y-0 space-y-1'>
                   <p className='text-base  md:text-left text-center font-medium leading-[20.8px] text-white'>
