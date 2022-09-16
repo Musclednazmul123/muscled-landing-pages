@@ -1,36 +1,46 @@
 import React from "react";
 import { NextPage } from "next";
-import { Hero, Section } from "components/Fawwaz/Sections";
-import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
-import Logo from "components/Fawwaz/Logo";
-import logo from "components/assets/logo/logo1.png";
+import HeroSection from "components/CROServices/HeroSection";
+import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
+import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
+import TrophyIcon from "components/assets/svg/TrophyIcon";
+import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
 
- const Page: NextPage = () => {
+const Page: NextPage = () => {
+  return (
+    <div>
+      <HeroSection
+        features={[
+          {
+            title: "Access the data-fueled plans behind",
+            renderIcon: () => <SalesFunnelIcon />,
+            numbers: "$3,021,182,299",
+            description: "IN CLIENT REVENUE",
+          },
+          {
+            title: "Use the expert-led tactics behind",
+            renderIcon: () => <GroupPeopleIcon />,
+            numbers: "7,839,684",
+            description: "IN LEADS FOR OUR CLIENTS",
+          },
+          {
+            title: "Unlock do-it-for-me marketing with",
+            renderIcon: () => <TrophyIcon />,
+            numbers: "450",
+            description: "DIGITAL MARKETING EXPERTS",
+          },
+          {
+            title: "Accelerate ROI with",
+            renderIcon: () => <CloudComputingIcon />,
+            numbers: "1+ BILLION",
+            description: "DATA POINTS FROM MARKETINGCLOUDFX",
+          },
+        ]}
+        title="Ecommerce SEO Services: Earn More Sales With SEO Experts"
+        description="Capture more online sales with ecommerce SEO services from WebFX. Access the team and tech that have helped our clients earn $3 billion in revenue, and use them to accelerate your earnings from the web. Learn more about our tech-enabled ecommerce SEO services now, or request a custom proposal for your store."
+      />
+    </div>
+  );
+};
 
-	return (<div>
-        {/* First Section */}
-			<div className=" bg-black-70 px-3 lg:px-0">
-				<Hero
-					title="Ecommerce SEO Services: Earn More Sales With SEO Experts"
-					description="Capture more online sales with ecommerce SEO services from WebFX. Access the team and tech that have helped our clients earn $3 billion in revenue, and use them to accelerate your earnings from the web. Learn more about our tech-enabled ecommerce SEO services now, or request a custom proposal for your store."
-					heroSVG={<SEOMarketingSVG className="w-80 lg:w-full" />}
-					input
-				/>
-			</div>
-		{/* Our partner section */}
-		<Section className="text-center pt-16">
-            <h3 className="text-black-50 text-2xl">Our Partners</h3>
-
-            <div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
-                <Logo src={logo.src} width={154} height={34} />
-                <Logo src={logo.src} width={154} height={34} />
-                <Logo src={logo.src} width={154} height={34} />
-                <Logo src={logo.src} width={154} height={34} />
-                <Logo src={logo.src} width={154} height={34} />
-            </div>
-        </Section>
-    </div>)
-}
-
-
-export default Page
+export default Page;
