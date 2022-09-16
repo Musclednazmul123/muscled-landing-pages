@@ -1,11 +1,10 @@
 import React from 'react'
-import Container from "@/components/layout/Container";
 import FlexLayout from "@/components/layout/FlexLayout";
 import Button from "@/components/ui/Button";
 import Slider from "@/components/ui/Slider";
 import CostInfo from "./CostInfo";
 
-const InstantQuoteReuseable = () => {
+const RangeSliderSection = () => {
     return (
         <div className="bg-black text-white w-full p-16">
             <h2 className="text-[40px] font-bold mb-8 w-[70%]">
@@ -67,4 +66,4 @@ const InstantQuoteReuseable = () => {
     )
 }
 
-export default InstantQuoteReuseable
+export default RangeSliderSection
