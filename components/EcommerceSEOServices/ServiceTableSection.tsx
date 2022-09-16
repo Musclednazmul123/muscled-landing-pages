@@ -16,13 +16,18 @@ const ServiceTableSection = (props: ServiceTableSectionProps) => {
         <h2 className="text-4xl text-center">
           Our Cost for Ecommerce SEO Services
         </h2>
-        <p className="md:text-xl text-center mt-8">
-          Learn more about what our ecommerce SEO services include by exploring
-          our four ecommerce SEO packages, which we can customize to your
-          business. All our ecommerce SEO experts are familiar with using and
-          optimizing platforms like <span className="font-bold">Shopify</span>, <span className="font-bold">WordPress</span>, <span className="font-bold">BigCommerce</span>, and more
-          for ecommerce SEO.
-        </p>
+        <div className="flex justify-center">
+          <p className="md:text-xl text-center mt-8 max-w-[1000px]">
+            Learn more about what our ecommerce SEO services include by
+            exploring our four ecommerce SEO packages, which we can customize to
+            your business. All our ecommerce SEO experts are familiar with using
+            and optimizing platforms like{" "}
+            <span className="font-bold">Shopify</span>,{" "}
+            <span className="font-bold">WordPress</span>,{" "}
+            <span className="font-bold">BigCommerce</span>, and more for
+            ecommerce SEO.
+          </p>
+        </div>
       </div>
       <Table className="table-auto rounded-b-md">
         <thead>
