@@ -14,7 +14,7 @@ const CardHeader: FC<CardHeaderProps> = ({
 				type === "premium"
 					? "bg-red-6"
 					: type === "ultimate"
-					? "bg-red-9"
+					? "bg-red-9" 
 					: "bg-red-3"
 			}`}>
 			{children}

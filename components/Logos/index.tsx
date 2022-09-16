@@ -6,7 +6,7 @@ export const Logo1 = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g opacity="0.7">
+    <g opacity="0.7"> 
       <path
         fillRule="evenodd"
         clipRule="evenodd"

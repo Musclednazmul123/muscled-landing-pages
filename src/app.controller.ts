@@ -137,5 +137,10 @@ public shopifyDevServices() {
     return {}
   }
 
+  @Render('cms-development-services')
+  @Get('/cms-development-services')
+  public cmsDevelopmentServices() {
+    return {}
+  }
 }
   

@@ -17,7 +17,7 @@ function FreeQuote() {
             Muscled is a multi-award-winning digital marketing firm with over
             two decades of experience. We know what it takes to create effective
             social media campaigns, and we work with clients from a variety of
-            industries.
+            industries. 
           </p>
 
           <p>

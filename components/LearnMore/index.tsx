@@ -16,7 +16,7 @@ function LearnMore() {
           <li key={i}>{content}</li>
         ))}
       </ul>
-    </div>
+    </div> 
   );
 
   return (

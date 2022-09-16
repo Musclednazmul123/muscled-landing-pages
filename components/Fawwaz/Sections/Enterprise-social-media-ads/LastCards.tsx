@@ -32,7 +32,7 @@ const lastCards = [
 const LastCards: React.FC = () => {
 	return (
 		<Section className="mt-36 mb-28">
-			<div className="flex flex-wrap gap-10 md:gap-24 justify-around px-5">
+			<div className="flex flex-wrap gap-10 md:gap-20 justify-around px-5">
 				{lastCards.map((content, key) => (
 					<div
 						key={key}
