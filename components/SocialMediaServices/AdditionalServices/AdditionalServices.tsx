@@ -59,7 +59,22 @@ export default function AdditionalServices() {
               </span>
               <button className=' flex justify-between items-center p-[15px] mx-auto bg-black text-white rounded-md absolute top-[214px] right-[86px] bottom-[40px] left-[86px] h-[46px] w-[227px] text-center'>
                 {row.buttonLabel}
-                <AiOutlineArrowRight className='text-white' size={17} />
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='w-6 h-6'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
+                  />
+                </svg>
+                {/* 
+                <AiOutlineArrowRight className='text-white' size={17} /> */}
               </button>
             </div>
           </>
@@ -77,7 +92,20 @@ export default function AdditionalServices() {
               </span>
               <button className='  flex justify-between items-center  mx-auto bg-black p-[15px] text-white rounded-md absolute top-[214px] right-[86px] bottom-[40px] left-[86px] h-[46px] w-[227px] text-center'>
                 {row.buttonLabel}
-                <AiOutlineArrowRight className='text-white' size={17} />
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='w-6 h-6'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
+                  />
+                </svg>
               </button>
             </div>
           </>

@@ -5,9 +5,9 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function PromotionalSection() {
   return (
-    <div className='px-5 md:px-10 lg:px-20 py-20 bg-[#C40000] bg-opacity-[0.06] mt-[120px] flex flex-col justify-center items-center'>
-      <div className='lg:flex items-start justify-between lg:justify-center lg:gap-x-[60px]'>
-        <div className='flex-col '>
+    <div className='px-5 md:px-10 lg:px-20 h-[730px]  bg-[#C40000] bg-opacity-[0.06] mt-[120px] flex flex-col justify-center items-center'>
+      <div className='lg:flex items-start mb-[80px] justify-between lg:justify-center lg:gap-x-[60px]'>
+        <div className='flex-col mt-[138px]'>
           <p className='md:text-[40px] text-2xl font-bold md:leading-[52px] leading-[52px] sm:text-left text-center  max-w-[1000px] '>
             See results with social media marketing services
           </p>
@@ -33,15 +33,17 @@ export default function PromotionalSection() {
             <br /> management services excel.
           </p>
         </div>
-        <div className='flex-col justify-center items-center flex'>
-          <div className='w-[400px] h-[320px]'>
-            <VideoPlayer
-              Icon={PlayIcon}
-              // width={"500px"}
-              // height={"500px"}
-              url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
-              // thumbnail="main.png"
-            />
+        <div className='flex-col mt-[80px]'>
+          <div className='flex-col justify-center items-center flex'>
+            <div className='w-[400px] h-[320px]'>
+              <VideoPlayer
+                Icon={PlayIcon}
+                // width={"500px"}
+                height={'320px'}
+                url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                // thumbnail="main.png"
+              />
+            </div>
           </div>
           <div className='w-[400px] h-[200px] bg-[#3E5661] mt-[50px] rounded-lg relative'>
             <button className='py-5 px-10 mx-auto bg-black text-white rounded-md absolute top-[70px] right-[134px] bottom-[70px] left-[40px]'>
