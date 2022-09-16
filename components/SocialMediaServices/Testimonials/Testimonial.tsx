@@ -9,7 +9,7 @@ export default function Testimonial() {
       <div className=' py-20 bg-black'>
         <div className='px-5 md:px-10 lg:px-20 mx-auto container'>
           <div className='lg:flex items-start justify-between lg:justify-center lg:gap-x-[60px]'>
-            <div className='lg:max-w-[590px] w-[50%] pb-[76px] h-[180px]'>
+            <div className='lg:max-w-[580px]  pb-[76px]'>
               <p className='md:text-2xl text-xl md:leading-[36px] text-gray-50'>
                 "Muscled is a fantastic tool for managing and creating content
                 for social networking. The crew does their task with great
@@ -23,12 +23,10 @@ export default function Testimonial() {
                 See Our Clients’ Testimonials
               </button>
             </div>
-            <div className='flex w-[50%] pl-[60px]'>
-              <div className='w-[590px] h-[400px]'>
+            <div className='flex'>
+              <div className='sm:w-[536px] w-[590px]'>
                 <VideoPlayer
                   Icon={PlayIcon}
-                  // width={"500px"}
-                  // height={"500px"}
                   url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
                   // thumbnail="main.png"
                 />
