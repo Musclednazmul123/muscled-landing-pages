@@ -1,6 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 import HeroSection from "components/CROServices/HeroSection";
+import PartnerSection from "components/CROServices/PartnerSection";
 import SalesFunnelIcon from "components/assets/svg/SalesFunnelIcon";
 import GroupPeopleIcon from "components/assets/svg/GroupPeopleIcon";
 import TrophyIcon from "components/assets/svg/TrophyIcon";
@@ -39,6 +40,7 @@ const Page: NextPage = () => {
         title="Ecommerce SEO Services: Earn More Sales With SEO Experts"
         description="Capture more online sales with ecommerce SEO services from WebFX. Access the team and tech that have helped our clients earn $3 billion in revenue, and use them to accelerate your earnings from the web. Learn more about our tech-enabled ecommerce SEO services now, or request a custom proposal for your store."
       />
+      <PartnerSection />
     </div>
   );
 };
