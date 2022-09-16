@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React from 'react';
+import ReactPlayer from 'react-player';
 
 interface Props {
   url: string;
@@ -23,9 +23,9 @@ const ReactPlayerModal: React.FC<Props> = ({
       <div
         style={{
           backgroundImage: thumbnail && `url('./${thumbnail}')`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
           width: width && width,
           height: height && height,
         }}
@@ -43,7 +43,7 @@ const ReactPlayerModal: React.FC<Props> = ({
           className="bg-black fixed inset-0 h-full cursor-pointer w-full bg-opacity-90 flex items-center justify-center px-6"
         >
           <div
-            onClick={(e) => e.stopPropagation()}
+            onClick={e => e.stopPropagation()}
             className=" relative pr-7  overflow-visible "
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
@@ -74,4 +74,4 @@ const ReactPlayerModal: React.FC<Props> = ({
   );
 };
 
-export default ReactPlayerModal
+export default ReactPlayerModal;
