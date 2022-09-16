@@ -1,4 +1,9 @@
 import React from 'react'
+import Container from "@/components/layout/Container";
+import FlexLayout from "@/components/layout/FlexLayout";
+import Button from "@/components/ui/Button";
+import Slider from "@/components/ui/Slider";
+import CostInfo from "./CostInfo";
 
 const InstantQuoteReuseable = () => {
     return (
