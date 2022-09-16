@@ -1,5 +1,5 @@
-import React from "react";
-import Icon from "../../assets/landingPageSVG/Icons";
+import React from 'react';
+import Icon from '../../assets/landingPageSVG/Icons';
 export default function OurPartner() {
 	const logo = [
 		{
