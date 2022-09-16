@@ -24,7 +24,7 @@ const ServiceTableSection = (props: ServiceTableSectionProps) => {
           for ecommerce SEO.
         </p>
       </div>
-      <Table className="table-auto rounded-b-md mb-24">
+      <Table className="table-auto rounded-b-md">
         <thead>
           <tr>
             <Th

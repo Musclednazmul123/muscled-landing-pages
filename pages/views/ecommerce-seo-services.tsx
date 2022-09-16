@@ -10,6 +10,7 @@ import TrophyIcon from "components/assets/svg/TrophyIcon";
 import CloudComputingIcon from "components/assets/svg/CloudComputingIcon";
 import TestimonialSection from "components/EcommerceSEOServices/TestimonialSection";
 import ServiceTableSection from "@/components/EcommerceSEOServices/ServiceTableSection";
+import BottomSection from "components/EcommerceSEOServices/BottomSection";
 
 const Page: NextPage = () => {
   return (
@@ -54,6 +55,7 @@ const Page: NextPage = () => {
         videoUrl="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       />
       <ServiceTableSection />
+      <BottomSection />
     </div>
   );
 };
