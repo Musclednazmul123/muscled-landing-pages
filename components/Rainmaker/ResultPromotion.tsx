@@ -5,10 +5,10 @@ const ResultPromotion = () => {
     <section>
       <div className="flex items-start py-20 px-24 gap-28 bg-[#291E2E]">
         <div className="text-white">
-          <h3 className="font-bold text-4xl text-inherit mb-5">
+          <h3 className="font-bold text-[2.5rem] leading-[130%] text-inherit mb-5">
             Design Focused on Results
           </h3>
-          <p className="text-lg">
+          <p className="text-[1.25rem] leading-[150%] font-normal">
             At Muscled, we are constantly focused on helping our clients achieve
             tangible outcomes. Because of this, we want to make it as simple as
             possible for you to begin using RainmakerFX to generate leads
@@ -26,13 +26,13 @@ const ResultPromotion = () => {
         </div>
       </div>
 
-      <div className="bg-white flex flex-col space-y-4 lg:flex-row p-24 gap-x-8 justify-center items-center">
-        <p className="font-bold text-[1.75rem]">
+      <div className="bg-white flex flex-col space-y-4 lg:flex-row p-24 gap-x-10 gap-y-4 lg:gap-y-0 justify-center items-center px-[6.25rem]">
+        <p className="font-bold text-[1.75rem] leading-[130%] not-italic">
           You'll work with a professional project manager to create sitemap
           architecture, user experience, and conversion planning goals after
           selecting the template that best fits your needs and objectives.
         </p>
-        <p className="text-[1.25rem]">
+        <p className="text-[1.25rem] not-italic font-normal leading-[150%]">
           Then, within 30 days, we'll publish your site after requesting a few
           crucial details (such as your logo, branding, and photos).
           <br />
