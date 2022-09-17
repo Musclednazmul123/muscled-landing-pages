@@ -44,29 +44,38 @@ const heroCardData: HeroCardDataType[] = [
 ];
 const HeroSection = () => {
   return (
-    <section className="bg-black/70 grid grid-cols-1 lg:grid-cols-3 auto-rows-fr grid-rows-1 items-center">
-      <div className="text-white col-span-2 lg:p-24 lg:pt-24 lg:my-[7.25rem] px-10 mt-8 mb-8 mr-8">
-        <span className="text-[1.125rem] cursor-pointer">
-          Home <ChevronRightIcon className="h-4 inline text-gray-400" /> Web
-          Design <ChevronRightIcon className="h-4 inline text-gray-400" />{' '}
+    <section
+      className="flex justify-center items-center bg-black/70 gap-x-[3.5625rem] flex-col xl:flex-row
+      xl:space-y-0
+      space-y-16
+      xl:justify-evenly
+      xl:items-center
+      py-[6.25rem] px-[7.09375rem] 
+    "
+    >
+      {/* px-10 mt-8 mb-8 mr-8 */}
+      <div className="text-white flex flex-col items-start gap-[1.875rem] max-w-[720px]">
+        <span className="text-[1.125rem] font-medium leading-[1.125rem] cursor-pointer">
+          Home <ChevronRightIcon className="h-4 inline text-white/50" /> Web
+          Design <ChevronRightIcon className="h-4 inline text-white/50" />{' '}
           Services
         </span>
-        <h2 className="text-white text-[3.75rem] mt-[1.875rem] mb-5">
+        <h2 className="text-white mt-[1.875rem] leading-[130%] mb-5 font-bold text-[3.5rem]">
           Design a Website In 30 Days
         </h2>
-        <p className="text-[1.25rem] mb-[2.8125rem]">
+        <p className="text-[1.25rem] leading-[1.875rem] mb-[1.875rem]">
           At Muscled, we are aware that practically every sector needs a strong
           online presence to draw in and convert clients. But we also recognise
           that not every business requires a complex website to accomplish their
           objectives, which is why we provide straightforward, goal-oriented
           designs.
         </p>
-        <button className="bg-black py-[0.9375rem] px-10 rounded-[0.3125rem]">
+        <button className="bg-black py-[0.9375rem] px-10 rounded-[0.3125rem] flex justify-center items-center font-semibold text-[1.25rem]">
           Start Now
         </button>
       </div>
       <div
-        className=" lg:mr-[7.09375rem] xl:mt-[4.25rem] lg:mt-24 mt-4 space-y-[0.625rem] flex flex-col items-center mb-4
+        className="xl:ml-[3.5625rem] xl:mr-[7.09375rem] xl:my-[6.25rem] relative md:w-full lg:w-fit xl:max-w-[436px] space-y-[0.625rem]
       "
       >
         {heroCardData.map(hero => (
