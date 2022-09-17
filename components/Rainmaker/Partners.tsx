@@ -8,7 +8,7 @@ import Logo7 from './assets/Logo7logo.png';
 const Partners = () => {
   return (
     <section className="text-center bg-white py-[3.125rem] px-[6.25rem]">
-      <h3 className="text-black/50 text-[1.5rem] mb-4 font-bold leading-[130%]">
+      <h3 className="text-black/50 text-[1.5rem] mb-6 font-bold leading-[130%]">
         Our Partners
       </h3>
       <div className="max-w-[77.5rem] mx-auto flex items-center justify-center px-8 lg:px-28 gap-x-[3.2rem] xl:gap-x-[4.5rem] mt-4 pb-4">
