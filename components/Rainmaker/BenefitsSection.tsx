@@ -51,7 +51,7 @@ const data = [
 ];
 const BenefitsSection = () => {
   return (
-    <section className="bg-white p-20">
+    <section className="bg-white p-20 pb-[12.875rem]">
       <div className="text-center mb-16">
         <h3 className="font-bold text-[2.5rem] mb-[1.875rem]">
           5 Advantages of Quick Web Design

@@ -32,22 +32,25 @@ const GuidesSection = () => {
 
       <div className="flex gap-10 justify-center items-stretch flex-wrap xl:flex-nowrap">
         {cardData.map(data => (
-          <div className="flex flex-col rounded-lg bg-[#E1FDD3] max-w-[24.1875rem] ">
+          <div className="flex flex-col rounded-lg bg-[#E1FDD3] max-w-[24.1875rem] items-center">
             <div className="relative h-[15.125rem]">
-              <Image
+              {/* <Image
                 src={data.img || '/banner.png'}
                 alt="image"
                 layout="fill"
                 objectFit="cover"
-              />
+              /> */}
+              <div className="bg-[#D9D9D9] rounded-[0.625rem] rounded-bl-none rounded-br-none w-[24.1875rem] h-full"></div>
             </div>
             <div className="px-10 flex flex-col flex-1">
-              <h4 className="font-medium text-[1.75rem] mb-2">{data.title}</h4>
-              <h5 className="text-[1.25rem] font-medium mb-3">
+              <h4 className="font-medium text-[1.75rem] mb-[0.9375rem] mt-[0.625rem]">
+                {data.title}
+              </h4>
+              <h5 className="text-[1.25rem] font-medium mb-[0.9375rem]">
                 {data.subtitle}
               </h5>
               <p className="text-[1.25rem] mb-9 flex-1">{data.text}</p>
-              <button className="rounded-md py-5 px-10 bg-black w-[320px] text-white mb-5 mx-auto">
+              <button className="rounded-md py-[0.9375rem] px-10 bg-black w-[20rem] h-[3.75rem] text-white mb-5 mx-auto font-semibold text-[1.25rem] leading-[1.875rem]">
                 View Theme
               </button>
             </div>
