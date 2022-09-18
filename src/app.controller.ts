@@ -86,8 +86,8 @@ export class AppController {
     return {};
   }
 
-  @Render('muscled-website-rainmaker ')
-  @Get('/muscled-website-rainmaker ')
+  @Render('muscled-website-rainmaker')
+  @Get('/muscled-website-rainmaker')
   public interactive() {
     return {};
   }
