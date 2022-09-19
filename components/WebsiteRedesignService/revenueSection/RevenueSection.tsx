@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../../Fawwaz/Card/Card'
 import cardBg from '../../../components/assets/qwe.png'
 import Button from '../../Fawwaz/Button'
-import VideoPlayer from "../../../components/ReactPlayerModal";
+import ReactPlayerModal from "../../../components/ReactPlayerModal";
 import { PlayIcon } from "@heroicons/react/outline";
 
 
@@ -52,10 +52,11 @@ const RevenueSection = () => {
                             Request a Proposal
                         </Button>
                     </Card>
-                    <VideoPlayer
-                        Icon={PlayIcon}
+                    <ReactPlayerModal
                         width="w-fit"
-                        url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        url="https://www.youtube.com/embed/D0UnqGm_miA"
+                        thumbnail="https://www.youtube.com/embed/D0UnqGm_miA"
+                        Icon={PlayIcon}
                     />
                 </div>
             </div>
