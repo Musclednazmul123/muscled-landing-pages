@@ -26,8 +26,8 @@ const TableOfContent: FC<TableOfContentProps> = ({
 				</h2>
 				<ChevronUpIcon className={`${titleIconColor ? titleIconColor : "text-white"} ${isOpen ? "rotate-0" : "rotate-180"} w-8`} />
 			</div>
-			<ul className={`w-full ${isOpen ? "h-auto" : "h-0 hidden"} py-8	px-4`}>
-				<div className="py-8">
+			<ul className={`w-full ${isOpen ? "h-auto" : "h-0 hidden"}	px-4`}>
+				<div className="py-4">
 					{contents}
 				</div>
 			</ul>

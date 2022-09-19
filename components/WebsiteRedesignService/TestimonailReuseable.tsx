@@ -3,8 +3,8 @@ import { Section } from "../Fawwaz/Sections";
 import Button from "../Fawwaz/Button";
 import VideoFrame from "../Fawwaz/VideoFrame";
 import { TestmonailProps } from "../Fawwaz/component.type";
-import VideoPlayer from "../ReactPlayerModal";
-import { PlayIcon } from "@heroicons/react/outline";
+import ReactPlayerModal from "../ReactPlayerModal";
+import playIcon from "components/playIcon";
 
 
 
@@ -32,10 +32,11 @@ const TestimonailReuseable: FC<TestmonailProps> = ({ services }) => {
 					</Button>
 				</div>
 				<div className="w-[500px] min-h-[400px] rounded-md h-full bg-white-gray relative">
-					<VideoPlayer
-						Icon={PlayIcon}
+					<ReactPlayerModal
 						width="w-fit"
-						url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+						url="https://www.youtube.com/embed/D0UnqGm_miA"
+						thumbnail="https://www.youtube.com/embed/D0UnqGm_miA"
+						Icon={playIcon}
 					/>
 				</div>
 			</Section >

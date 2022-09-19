@@ -3,7 +3,7 @@ import Card from '../../Fawwaz/Card/Card'
 import cardBg from '../../../components/assets/qwe.png'
 import Button from '../../Fawwaz/Button'
 import ReactPlayerModal from "../../../components/ReactPlayerModal";
-import { PlayIcon } from "@heroicons/react/outline";
+import playIcon from 'components/playIcon';
 
 
 
@@ -56,7 +56,7 @@ const RevenueSection = () => {
                         width="w-fit"
                         url="https://www.youtube.com/embed/D0UnqGm_miA"
                         thumbnail="https://www.youtube.com/embed/D0UnqGm_miA"
-                        Icon={PlayIcon}
+                        Icon={playIcon}
                     />
                 </div>
             </div>

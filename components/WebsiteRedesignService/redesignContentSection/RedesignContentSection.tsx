@@ -2,18 +2,19 @@ import React, { useState } from 'react'
 import { Section } from '../../Fawwaz/Sections'
 import { WebsiteRedesignServicesContent } from '../../../components/WebsiteRedesignService'
 import { TableOfContent } from '../../Fawwaz/Table'
-import { ChevronDoubleRightIcon } from '@heroicons/react/outline';
 import {IconItem} from '../../Fawwaz/Card'
+import { ChevronDoubleRightIcon } from '@heroicons/react/outline'
 
 
 
 const contentsOfWRS = [
-    "Our First-Principle and Data-Driven SEO Process",
-    "What does the MUSCLED SEO Management Service look like?",
-    "How do I choose the BEST SEO company to help me?",
-    "How can SEO help my business grow?",
-    "Your SEO Strategy Needs to be Competitive",
-    "FAQs about SEO services",
+    "Website redesign service options from Muscled Digital Agency",
+    "What should you expect from our website redesign service?",
+    "Web Design Services from a digital agency that cares about results.",
+    "Why do you need a website redesign service?",
+    "Why do you need a website redesign?",
+    "What should I focus on with my website redesign service?",
+    "FAQs for Web Redesign Services",
 ];
 const RedesignContentSection = () => {
     const [isOpen, setIsOpen] = useState(true);
@@ -37,7 +38,7 @@ const RedesignContentSection = () => {
                         <IconItem
                             key={key}
                             title={content}
-                            icon={<ChevronDoubleRightIcon className="fill-black-80 w-5 h-5" />}
+                            icon={<ChevronDoubleRightIcon className=" w-5 h-4" />}
 
                         />
                     ))}

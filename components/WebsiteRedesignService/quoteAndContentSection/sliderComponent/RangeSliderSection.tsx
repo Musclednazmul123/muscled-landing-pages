@@ -64,8 +64,8 @@ const RangeSliderSection: FC<RangeSliderSectionProps> = ({
                     <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
                 </FlexLayout>
                 <FlexLayout justify="justify-end">
-                    <div className="text-xs md:text-[20px] font-bold w-[50%] ">
-                        <Button className='w-full' bgColor='bg-black' textColor='text-white'>See Pricing</Button>
+                    <div className="md:text-[20px] w-[50%] ">
+                        <Button className='w-full py-3.5 px-5 font-semibold text-sm' bgColor='bg-black' textColor='text-white'>See Pricing</Button>
                     </div>
                 </FlexLayout>
             </div>

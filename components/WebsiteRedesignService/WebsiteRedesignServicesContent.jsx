@@ -183,7 +183,7 @@ const WebsiteRedesignServicesContent = () => {
 
         {/* Portfolio Card */}
         <Section>
-          <div className="flex flex-col lg:flex-row py-12 px-6 justify-between gap-2 items-center bg-black rounded-lg ">
+          <div className="flex flex-col lg:flex-row py-12 px-6 justify-between gap-2 items-center bg-[#1F1F1F] rounded-lg ">
             <div className="flex flex-col text-accent-white lg:w-2/4 items-center lg:items-start">
               <h4 className=" text-accent-white font-semibold leading-10 text-center lg:text-start">
                 We don’t want to tell you about the work we do, we want to{" "}
@@ -192,31 +192,32 @@ const WebsiteRedesignServicesContent = () => {
               </h4>
               <br />
               <Button
-                bgColor="bg-white text-black w-fit"
+                bgColor="bg-white text-[#141010] font-semibold w-fit"
                 textColor="text-white"
               >
-                <span className="text-sm md:text-lg">View our Portfolio</span>
+                <span className="text-xs md:text-lg">View our Portfolio</span>
                 <AiOutlineArrowRight />
               </Button>
             </div>
 
-            <div className="flex flex-col text-accent-white justify-between w-fit items-center leading-8 space-y-1">
-              <p className="text-center lg:leading-7  w-3/4 sm:w-1/2">
+            <div className="flex flex-col text-accent-white justify-between w-fit items-center leading-8 space-y-1 font-semibold text-xl">
+              <p className="text-center lg:leading-7  w-3/4 sm:w-2/3 ">
                 WE’VE BUILT OVER
               </p>
               <div className="flex gap-2 md:gap-2">
-                <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
-                <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
-                <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
-                <CounterBox className="text-[#C40000] font-bold">6</CounterBox>
+                <CounterBox className="text-[#C40000]">6</CounterBox>
+                <CounterBox className="text-[#C40000]">6</CounterBox>
+                <CounterBox className="text-[#C40000]">6</CounterBox>
+                <CounterBox className="text-[#C40000]">6</CounterBox>
               </div>
-              <p className="text-center text-xs">
-                <span className="text-lg">WEBSITES</span> <br />
+              <p className="text-center text-xs text-[#FFFFFFB2] font-normal">
+                <span className="text-lg text-white font-semibold">WEBSITES</span> <br />
                 in a variety of industries
               </p>
             </div>
           </div>
         </Section>
+        <br />
         <br />
         <br />
         <article>
