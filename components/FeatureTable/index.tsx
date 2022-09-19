@@ -69,13 +69,13 @@ export default function Index({ tableData }: Props) {
   return (
     <>
       <div className='text-center mt-[100px] mb-[60px] px-5 md:px-10 lg:px-20 mx-auto  container'>
-        <h2 className='md:text-4xl text-2xl font-bold max-w-[700px] mx-auto md:leading-[52px] text-center text-black text-opacity-80'>
+        <h2 className='md:text-4xl text-2xl font-bold max-w-[700px] mx-auto md:leading-[52px] text-center text-black '>
           <span className='sm:whitespace-nowrap  whitespace-normal'>
             {tableData.heading}
           </span>
         </h2>
         {tableData.description !== '' && (
-          <p className='md:text-2xl text-lg md:leading-[36px] text-center text-black text-opacity-70  whitespace-pre-wrap'>
+          <p className='md:text-2xl text-lg md:leading-[36px] text-center text-black  whitespace-pre-wrap'>
             {tableData.description}
           </p>
         )}

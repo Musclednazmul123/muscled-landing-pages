@@ -8,7 +8,7 @@ export default function FAQ({}: Props) {
       <div className='mt-[100px] px-5 md:px-10 lg:px-20 mx-auto container gap-[60px] lg:flex items-start pb-12 relative'>
         <div className='lg:w-[60%] mt-[20px]'>
           <div className=''>
-            <h2 className='md:text-4xl text-2xl font-bold leading-10 text-black text-opacity-80'>
+            <h2 className='md:text-4xl text-2xl font-bold leading-10 text-black '>
               What do Muscled website copywriter services include?
             </h2>
             <p className='md:text-xl text-base md:leading-[30px] text-black text-opacity-70 mt-10'>
@@ -24,7 +24,7 @@ export default function FAQ({}: Props) {
               <br /> services:
             </p>
 
-            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black text-opacity-70'>
+            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black '>
               Keyword research
             </p>
             <br />
@@ -40,7 +40,7 @@ export default function FAQ({}: Props) {
               <br /> team.
             </p>
 
-            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black text-opacity-70'>
+            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black '>
               Professional copywriting
             </p>
             <br />
@@ -61,7 +61,7 @@ export default function FAQ({}: Props) {
               not only
               <br /> engages but also attracts your target market.
             </p>
-            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black text-opacity-70'>
+            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black '>
               Optimized SEO copy
             </p>
             <br />
@@ -75,7 +75,7 @@ export default function FAQ({}: Props) {
               website will show up in <br />
               search results thus, attracting more visitors.
             </p>
-            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black text-opacity-70'>
+            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black '>
               Website implementation
             </p>
             <br />
@@ -95,7 +95,7 @@ export default function FAQ({}: Props) {
               photos to enhance
               <br /> reader engagement.
             </p>
-            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black text-opacity-70'>
+            <p className='md:text-2xl text-base md:leading-[30px]  mt-[40px] font-extrabold text-black '>
               Dedicated project manager
             </p>
             <br />
@@ -127,7 +127,7 @@ export default function FAQ({}: Props) {
                 <br /> campaign
               </p>
 
-              <button className=' flex justify-between items-center p-[15px] mt-[40px] bg-black text-white rounded-md  h-[60px] w-[362.14px] text-left'>
+              <button className=' flex justify-around px-[30px] text-xl items-center p-[15px] mt-[40px] bg-black text-white rounded-md  h-[60px] w-[362.14px] text-left'>
                 Learn from our customers
                 <svg
                   width='10'

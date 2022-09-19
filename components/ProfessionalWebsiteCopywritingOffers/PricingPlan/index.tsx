@@ -3,7 +3,7 @@ import Icon from '../../assets/landingPageSVG/Icons';
 export default function Pricing() {
   return (
     <div className='bg-white w-full pt-[50px]'>
-      <div className='pt-16 bg-[#f5f5f5]  mx-auto conatiner lg:px-0 md:px-12 px-4'>
+      <div className='pt-[15px] bg-[#f5f5f5]  mx-auto conatiner lg:px-0 md:px-12 px-4'>
         <h2 className='md:text-4xl text-2xl font-bold md:leading-[52px] text-center'>
           Explore Our Website Copywriting Service Packages
         </h2>

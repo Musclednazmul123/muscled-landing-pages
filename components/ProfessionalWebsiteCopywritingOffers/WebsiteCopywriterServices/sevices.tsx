@@ -7,7 +7,7 @@ interface ServiceProps {
 export const Service: FC<ServiceProps> = ({ label }) => {
   return (
     <>
-      <button className='  flex justify-between items-center  mx-auto bg-transparent border-solid border-2 border-black p-[15px] text-black rounded-lg w-[350px] h-[40px]  text-center'>
+      <button className='  flex justify-between items-center text-xl  mx-auto bg-transparent border-solid border-2 border-black p-[15px] text-black rounded-lg w-[426px] h-[45px]  text-center'>
         {label}
         <svg
           xmlns='http://www.w3.org/2000/svg'
