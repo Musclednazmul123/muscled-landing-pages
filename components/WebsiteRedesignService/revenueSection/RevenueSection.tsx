@@ -35,20 +35,20 @@ const RevenueSection = () => {
                 </div>
 
                 <div className="w-full md:w-[400px]">
-                    <Card className="max-w-[440px] w-full p-6 rounded-md relative self-start my-3">
+                    <Card className="max-w-[440px] w-full p-6 rounded-md mb-7 relative self-start my-3">
                         <img
                             src={cardBg.src}
                             alt={cardBg.src}
-                            className="absolute top-0 left-0 w-full h-full z-10"
+                            className="absolute top-0 left-0 w-full h-full z-10 rounded-md"
                         />
-                        <p className="relative text-white max-w-[190px] z-20">
+                        <p className="relative text-white max-w-[210px] font-bold leading-[150%] z-20">
                             Looking for custom plans and pricing? Request a
                             proposal to receive yours.
                         </p>
                         <Button
                             bgColor="bg-black"
                             textColor="text-white"
-                            className="mt-6 relative z-20">
+                            className="mt-6 relative z-20 py-3.5 px-5">
                             Request a Proposal
                         </Button>
                     </Card>
