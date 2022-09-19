@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "components/Fawwaz/Sections/Section";
+import Section from "../../components/Fawwaz/Sections/Section";
 import TextHeading from "./TextHeading";
 import TextList from "./TextList";
 import FaqSection from "./FaqSection";

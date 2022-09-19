@@ -13,7 +13,6 @@ const TableOfContent = ({ TableMetaData }: PropsTableMetaData) => {
   const [toggle, setToggle] = useState(true);
 
   const handleClick = () => {
-    console.log("handle");
     setToggle(!toggle);
   };
   const { heading, items } = TableMetaData;

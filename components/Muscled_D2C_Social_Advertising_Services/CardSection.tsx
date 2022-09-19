@@ -3,13 +3,14 @@ import IconItem from "./IconItem";
 import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
 import CardHeader from "./CardHeader";
-import { Section } from "components/Fawwaz/Sections";
-import star from "components/assets/Star.png";
-import star1 from "components/assets/Star_2.png";
-import star2 from "components/assets/Star_3.png";
+import { Section } from "../../components/Fawwaz/Sections";
+import { GrStar } from "react-icons/gr";
+// import star from "../assets/Star_2.png";
+// import star1 from "../assets/logo";
+// import star2 from "components/assets/Star_3.png";
 import { FaCheckCircle } from "react-icons/fa";
 
-import { cardData } from "components/utils/muscled-d2c-constants";
+import { cardData } from "../../components/utils/muscled-d2c-constants";
 
 const CardSection = () => {
   return (
@@ -31,44 +32,39 @@ const CardSection = () => {
                 >
                   {cardItem?.type === "premium" && (
                     <div className="flex">
-                      <img
-                        src={star1.src}
-                        height="30px"
-                        width="30px"
+                      <GrStar
+                        size={35}
+                        fill={"#4b4848"}
                         className="ml-[10px]"
                       />
-                      <img
-                        src={star1.src}
-                        height="30px"
-                        width="30px"
+                      <GrStar
+                        size={35}
+                        fill={"#4b4848"}
                         className="ml-[10px]"
                       />
                     </div>
                   )}
                   {cardItem?.type === "ultimate" && (
                     <div className="flex">
-                      <img
-                        src={star2.src}
-                        height="30px"
-                        width="30px"
+                      <GrStar
+                        size={35}
+                        fill={"#322e2e"}
                         className="ml-[10px]"
                       />
-                      <img
-                        src={star2.src}
-                        height="30px"
-                        width="30px"
+                      <GrStar
+                        size={35}
+                        fill={"#322e2e"}
                         className="ml-[10px]"
                       />
-                      <img
-                        src={star2.src}
-                        height="30px"
-                        width="30px"
+                      <GrStar
+                        size={35}
+                        fill={"#322e2e"}
                         className="ml-[10px]"
                       />
                     </div>
                   )}
                   {cardItem.type === undefined && (
-                    <img src={star.src} height="30px" width="30px" />
+                    <GrStar size={35} fill={"#7f7c7c"} />
                   )}
                 </CardHeader>
                 <CardContent className="space-y-11">

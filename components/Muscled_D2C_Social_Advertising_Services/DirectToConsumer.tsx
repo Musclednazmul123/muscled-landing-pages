@@ -1,9 +1,8 @@
-import Section from "components/Fawwaz/Sections/Section";
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
+
 import Button from "./Button";
-import ReactPlayerModal from "components/ReactPlayerModal";
-import PlayIcon from "components/playIcon";
+import ReactPlayerModal from "../../components/ReactPlayerModal";
+import PlayIcon from "../../components/playIcon";
 import classNames from "classnames";
 
 const DirectToConsumer = () => {
@@ -13,8 +12,7 @@ const DirectToConsumer = () => {
     if (toggle) return "flex";
     else return "";
   };
-  console.log("as");
-  console.log(toggle, "n");
+
   return (
     <div
       className={`w-50 bg-[#C40000]/[.06] h-[804px] mt-[100px]  pb-[80px] ${toggle}`}

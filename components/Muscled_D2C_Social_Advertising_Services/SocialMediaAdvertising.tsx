@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, Td, Th } from "../Fawwaz/Table";
 import { Section } from "../Fawwaz/Sections";
-import { SocialMediaAdvertisingMetaData } from "components/utils/muscled-d2c-constants";
+import { SocialMediaAdvertisingMetaData } from "../../components/utils/muscled-d2c-constants";
 
 const SocialMediaAdvertising = () => {
   const {

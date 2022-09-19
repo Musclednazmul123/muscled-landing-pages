@@ -8,18 +8,18 @@ import logo4 from "components/assets/logo/logo4.png";
 import logo5 from "components/assets/logo/logo5.png";
 import logo6 from "components/assets/logo/logo6.png";
 import logo7 from "components/assets/logo/logo7.png";
-import DirectToConsumer from "components/common/DirectToConsumer";
-import ReusableTestimonials from "components/common/Testimonials";
-import PartnerLogoSection from "components/common/Partner";
-import AdditionalSocailMedia from "components/common/AdditionalSocailMedia";
-import SocialMediaAdvertising from "components/common/SocialMediaAdvertising";
-import CardSection from "components/common/CardSection";
+import DirectToConsumer from "components/Muscled_D2C_Social_Advertising_Services/DirectToConsumer";
+import ReusableTestimonials from "components/Muscled_D2C_Social_Advertising_Services/Testimonials";
+import PartnerLogoSection from "components/Muscled_D2C_Social_Advertising_Services/Partner";
+import AdditionalSocailMedia from "components/Muscled_D2C_Social_Advertising_Services/AdditionalSocailMedia";
+import SocialMediaAdvertising from "components/Muscled_D2C_Social_Advertising_Services/SocialMediaAdvertising";
+import CardSection from "components/Muscled_D2C_Social_Advertising_Services/CardSection";
 import {
   testimonialData,
   AdditionalSocailMediaMetaData,
 } from "components/utils/muscled-d2c-constants";
-import SocialMediaAds from "components/common/SocialMediaAds";
-import TextSection from "components/common/TextSection";
+import SocialMediaAds from "components/Muscled_D2C_Social_Advertising_Services/SocialMediaAds";
+import TextSection from "components/Muscled_D2C_Social_Advertising_Services/TextSection";
 const Page: NextPage = () => {
   return (
     <div>

@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Section from "../Fawwaz/Sections/Section";
 import Button from "../Fawwaz/Button";
-import ReactPlayerModal from "components/ReactPlayerModal";
-import PlayIcon from "components/playIcon";
+import ReactPlayerModal from "../../components/ReactPlayerModal";
+import PlayIcon from "../../components/playIcon";
 
 interface ReusableTestimonialsProps {
   testimonialData: { para1?: string; para2?: string; buttonLabel?: string };
