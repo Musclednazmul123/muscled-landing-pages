@@ -9,7 +9,7 @@ import UserTurn from "components/assets/UserTurn.png";
 const Paragraph8 = () => {
   return (
     <Paragraph
-      className="h-[4477px] mb-25"
+      className="h-[4477px] mb-[100px]"
       title="Why spend money on expert Web Design Services?"
     >
       <p>
@@ -19,7 +19,7 @@ const Paragraph8 = () => {
         these outcomes have the potential to directly and favourably affect your
         revenue, market share, and expansion.
       </p>
-      <p>Below are the advantages of Web Design Services in greater detail:</p>{" "}
+      <p>Below are the advantages of Web Design Services in greater detail:</p>
       <h4>Boost your conversion rate:</h4>
       <p>
         A conversion can be anything from a customer making a purchase to a user

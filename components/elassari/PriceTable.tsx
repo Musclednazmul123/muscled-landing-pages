@@ -5,7 +5,7 @@ import React from "react";
 
 const PriceTable = () => {
   return (
-    <Section className="w-[996px] mx-auto my-21">
+    <Section className="w-[996px] mx-auto my-[84px]">
       <Pricing
         title={"Get a Free Quote Now Making use of our web design calculator"}
         desc={`For a free, immediate quote, enter your needs into the sliders below and then click the "See Pricing" button. You'll get an overall range outlining how much it may cost to have such a website carried up because we\'ll give you both low and high end estimates for each service category.`}

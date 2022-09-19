@@ -7,7 +7,7 @@ import { Paragraph, TableOfContent } from "../";
 
 const Paragraph1 = () => {
   return (
-    <div className="flex mx-25">
+    <div className="flex mx-[100px]">
       <Paragraph
         className="h-[605px] mx-0"
         title="Muscled's website design services are an investment in the success

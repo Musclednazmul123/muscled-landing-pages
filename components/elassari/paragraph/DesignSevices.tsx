@@ -51,7 +51,7 @@ const DesignSevices = () => {
           </h4>
           <div className="flex flex-row justify-between pl-6 ">
             <Buttons
-              className="px-5 py-4 font-sans font-semibold text-black bg-white text-md mt-7"
+              className="px-5 py-4 font-sans font-semibold text-black bg-white text-[16px] mt-7"
               onClick={() => console.log("get free proposal")}
             >
               Get Free Proposal

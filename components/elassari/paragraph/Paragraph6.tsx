@@ -6,7 +6,7 @@ import Increase from "components/assets/Increase.png";
 const Paragraph8 = () => {
   return (
     <Paragraph
-      className="h-[5715px] mb-25"
+      className="h-[5715px] mb-[100px]"
       title="How Are Websites Designed by Muscled?"
     >
       <p>

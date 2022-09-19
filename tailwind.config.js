@@ -27,21 +27,6 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
-      padding: {
-        25: "100px",
-      },
-      fontSize: {
-        56: "56px",
-        md: "16px",
-      },
-      margin: {
-        21: "84px",
-        10: "10px",
-        20: "20px",
-        30: "30px",
-        21: "84px",
-        25: "100px",
-      },
     },
   },
   plugins: [],

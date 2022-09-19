@@ -15,12 +15,12 @@ const playIcon: FC = () => {
         height="76"
         transform="translate(0 0.5)"
         fill="#C40000"
-        fill-opacity="0.63"
+        fillOpacity="0.63"
       />
       <path
         d="M67 38.5L40 28.5V48.5L67 38.5Z"
         fill="white"
-        fill-opacity="0.85"
+        fillOpacity="0.85"
       />
     </svg>
   );

@@ -15,20 +15,20 @@ const playIcon: FC = () => {
         height="280"
         rx="7"
         fill="#C40000"
-        fill-opacity="0.26"
+        fillOpacity="0.26"
       />
       <rect
         width="107"
         height="76"
         transform="translate(187 102.5)"
         fill="#C40000"
-        fill-opacity="0.63"
+        fillOpacity="0.63"
         className="cursor-pointer"
       />
       <path
         d="M254 140.5L227 130.5V150.5L254 140.5Z"
         fill="white"
-        fill-opacity="0.85"
+        fillOpacity="0.85"
         className="cursor-pointer"
       />
     </svg>

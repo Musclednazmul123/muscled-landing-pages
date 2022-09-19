@@ -15,7 +15,7 @@ const Header: FC = () => {
       </div>
 
       {/* Menu */}
-      <ul className="justify-center flex-1 hidden mx-10 space-x-2 text-sm xl:text-md lg:flex">
+      <ul className="justify-center flex-1 hidden mx-[10px] space-x-2 text-sm xl:text-[16px] lg:flex">
         <div className="relative">
           <div
             onClick={() => setModalOpen(`${modalOpen === "1" ? "" : "1"}`)}

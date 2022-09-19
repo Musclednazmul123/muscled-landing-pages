@@ -10,7 +10,7 @@ interface IProps {
 const Pargraph: NextPage<IProps> = ({ className, title = "", children }) => {
   return (
     <div
-      className={`flex flex-col justify-between text-xl mx-25 mb-[65px] w-[760px] ${className}`}
+      className={`flex flex-col justify-between text-xl mx-[100px] mb-[65px] w-[760px] ${className}`}
     >
       <h3 className="text-normal">{title}</h3>
       {/* @ts-ignore */}
