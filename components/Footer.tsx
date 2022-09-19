@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import { Section } from "./Fawwaz/Sections";
-import Button from "components/Button";
+import Button from "./Fawwaz/Button";
 import { Counter, CounterBox } from "./Fawwaz/Counter";
 
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
