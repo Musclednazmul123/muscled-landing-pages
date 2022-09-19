@@ -48,7 +48,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input, button
 								View porfolio
 							</span>
 						</Button>
-						<Button bgColor="bg-black" textColor="text-white">
+						<Button className="py-3.5 px-5" bgColor="bg-black" textColor="text-white">
 							<span className="text-sm md:text-lg">
 								Build a custom quote
 							</span>
