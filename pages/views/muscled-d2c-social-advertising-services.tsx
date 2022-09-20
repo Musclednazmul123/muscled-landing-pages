@@ -1,6 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
-import { Hero } from "components/Fawwaz/Sections";
+import Hero from "components/Muscled_D2C_Social_Advertising_Services/Hero";
 import MuscledD2CSVG from "components/assets/svg/MuscledD2CSVG";
 import logo1 from "components/assets/logo/logo1.png";
 import logo3 from "components/assets/logo/logo3.png";

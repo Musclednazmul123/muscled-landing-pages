@@ -69,13 +69,18 @@ const CardSection = () => {
                 </CardHeader>
                 <CardContent className="space-y-11">
                   {cardItem &&
-                    cardItem.iconItems.map((item) => (
-                      <IconItem
-                        icon={<FaCheckCircle size={24} />}
-                        title={item?.iconTitle}
-                        className={item?.class}
-                      />
-                    ))}
+                    cardItem.iconItems.map(
+                      (item: {
+                        iconTitle: string;
+                        class: string | undefined;
+                      }) => (
+                        <IconItem
+                          icon={<FaCheckCircle size={24} />}
+                          title={item?.iconTitle}
+                          className={item?.class}
+                        />
+                      )
+                    )}
                 </CardContent>
                 <CardFooter
                   isFooterDescription={cardItem?.isFooterDescription}
