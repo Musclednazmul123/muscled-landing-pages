@@ -1,7 +1,5 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
-// import styles from "./styles.module.scss";
 
 interface IProps {
   width?: number;

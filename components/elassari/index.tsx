@@ -28,6 +28,7 @@ import Paragraph8 from "./paragraph/Paragraph8";
 import ServicesCard from "./ServicesCard";
 import Hero from "./Hero";
 import PriceTable from "./PriceTable";
+import ListBullet from "./ListBullet";
 import BlogArticle from "./paragraph/BlogArticle";
 
 export {
@@ -58,6 +59,7 @@ export {
   ServicesCard,
   Hero,
   PriceTable,
+  ListBullet,
   BlogArticle,
   TableOfContent,
   OverBuild,

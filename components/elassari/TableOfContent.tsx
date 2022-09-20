@@ -1,33 +1,26 @@
 import React, { FC, ReactNode, useState } from "react";
-
-import { FaListAlt } from "react-icons/fa";
+import ListBullet from "./ListBullet";
 
 interface IProps {
   IconContent?: ReactNode;
   content: string[];
   IconTable: ReactNode;
-  height?: number;
 }
 
-const TableOfContent: FC<IProps> = ({
-  IconContent,
-  content,
-  IconTable,
-  height,
-}) => {
+const TableOfContent: FC<IProps> = ({ IconContent, content, IconTable }) => {
   const [table, setTable] = useState(true);
 
   return (
     <div
       style={{ height: table ? 520 : 55 }}
-      className="order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full overflow-hidden lg:max-w-[440px] border rounded-md"
+      className="order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full overflow-hidden lg:max-w-[440px] border border-gray-400 rounded-md"
     >
       <div
         className="bg-[#F2F2F2] rounded-md p-4 flex justify-between items-center cursor-pointer"
         onClick={() => setTable(!table)}
       >
         <h2 className="flex items-center gap-2 text-lg">
-          <FaListAlt size={20} />
+          <ListBullet className="h-8 w-8 bg-gray-300 p-[2px] rounded-md" />
           Table of Contents
         </h2>
         <div className={`flex w-6 h-6 ${!table && "rotate-180"}`}>
