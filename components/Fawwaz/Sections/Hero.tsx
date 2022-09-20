@@ -16,8 +16,8 @@ const Hero: FC<HeroSectionProps> = ({
 }) => {
 	const router = useRouter();
 	return (
-		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
-			<div className="max-w-[640px]">
+		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center xl:justify-between items-center space-y-8 lg:space-y-0 gap-4">
+			<div className="flex flex-col max-w-[640px] items-center xl:items-start">
 				{/* //? Pagination -- this should be dynamic? */}
 				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
 					<span>Home {router.asPath.replace("/", " > ")}</span>

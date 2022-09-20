@@ -167,3 +167,11 @@ export interface LinkCardProps {
 	title: string;
 	links: [];
 }
+
+export interface TestmonailProps {
+	services:string[],
+}
+export interface RangeSliderSectionProps {
+	bgColor:string,
+	textColor:string,
+}
