@@ -6,7 +6,12 @@ type Props = {
   number: string;
   subtitle: string;
 };
-const HeroCard = ({ title, icon, number, subtitle }: Props) => {
+const HeroCard: React.FC<Props> = ({
+  title,
+  icon,
+  number,
+  subtitle,
+}: Props) => {
   return (
     <div className="bg-black/80 text-white rounded-[0.1875rem] xl:w-[29.25rem] h-[6.625rem] flex items-center py-2 px-5 ">
       <div className="relative flex-shrink-0 mr-1 w-20 h-20">

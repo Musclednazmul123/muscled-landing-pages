@@ -1,3 +1,4 @@
+import React from 'react';
 import ClockLogo from './assets/ClockLogo.png';
 import TargetLogo from './assets/TargetLogo.png';
 import GoogleAnalyticsLogo from './assets/GoogleAnalyticsLogo.png';
@@ -42,7 +43,7 @@ const features = [
     desc: 'Setting up the monitoring code, measurements, statistics, and reporting for Google Analytics',
   },
 ];
-const FeaturedSection = () => {
+const FeaturedSection: React.FC = () => {
   return (
     <div className="px-24 mt-[3.875rem] pb-[4.75rem] w-full bg-[#F5F5F5]">
       <div className="flex justify-center ">

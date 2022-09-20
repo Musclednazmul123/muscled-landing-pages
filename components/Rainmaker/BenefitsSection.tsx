@@ -1,3 +1,4 @@
+import React from 'react';
 import MoneyIcon from './assets/MoneyIcon.png';
 import RecentIcon from './assets/RecentIcon.png';
 import StarIcon from './assets/StarIcon.png';
@@ -49,7 +50,7 @@ const data = [
     description2: `We can handle everything when you deal with Muscled. Users will remain interested and engaged on your RainmakerFX website, improving KPIs like time on page.`,
   },
 ];
-const BenefitsSection = () => {
+const BenefitsSection: React.FC = () => {
   return (
     <section className="bg-white p-20 pb-[12.875rem]">
       <div className="text-center mb-16">

@@ -1,4 +1,6 @@
-const PlayIcon = () => {
+import React from 'react';
+
+const PlayIcon: React.FC = () => {
   return (
     <div className="hover:opacity-60 cursor-pointer">
       <svg

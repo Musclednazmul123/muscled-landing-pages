@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChevronRightIcon } from '@heroicons/react/solid';
 import HeroCard from './HeroCard';
 import CloudComputingIcon from './assets/icon-cloud-computing.png';
@@ -42,7 +43,7 @@ const heroCardData: HeroCardDataType[] = [
     subtitle: 'Data points from markettingcloudvfx',
   },
 ];
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <section
       className="flex justify-center items-center bg-black/70 gap-x-[3.5625rem] flex-col xl:flex-row

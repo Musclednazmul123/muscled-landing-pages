@@ -1,6 +1,7 @@
+import React from 'react';
 import Image from 'next/image';
 import ResultLogo from './assets/ResultLogo.png';
-const ResultPromotion = () => {
+const ResultPromotion: React.FC = () => {
   return (
     <section>
       <div className="flex items-start py-20 px-24 gap-28 bg-[#291E2E]">

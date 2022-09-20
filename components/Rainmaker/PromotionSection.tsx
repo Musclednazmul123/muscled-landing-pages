@@ -1,7 +1,8 @@
+import React from 'react';
 import ReactPlayerModal from '../ReactPlayerModal';
 import PlayIcon from './PlayIcon';
 
-const PromotionSection = () => {
+const PromotionSection: React.FC = () => {
   return (
     <section className="py-[50px] px-[6.25rem] bg-[rgba(196,0,0,0.06)] ">
       <div className="max-w-[77.5rem] mx-auto">
@@ -12,10 +13,8 @@ const PromotionSection = () => {
         </p>
         <p className="text-[1.25rem] text-black/80 text-center mb-10">
           Time is of the essence! Call us at{' '}
-          <span
-            className="text-[#8248FC] font-bold cursor-pointer
-"
-          >
+          <span className="text-[#8248FC] font-bold cursor-pointer underline decoration-[2px] underline-offset-2 ">
+            {/* border-b-2 border-[#8248fc] */}
             888-601-5359
           </span>{' '}
           to get started, or continue reading to find out more.

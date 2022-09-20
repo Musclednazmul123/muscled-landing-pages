@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 
 const cardData = [
@@ -23,7 +24,7 @@ const cardData = [
     text: 'This template is most effective for small enterprises or nonprofit organisations that provide a variety of services.',
   },
 ];
-const GuidesSection = () => {
+const GuidesSection: React.FC = () => {
   return (
     <div className="bg-[#291E2E] p-28 pt-24">
       <h3 className="text-white text-center mb-14">
