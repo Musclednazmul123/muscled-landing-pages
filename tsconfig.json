@@ -30,7 +30,13 @@
       "@/components/*": ["components/*"]
     }
   },
-  "include": ["./pages/**/*", "./src/**/*", "./ui/**/*", "types/types.ts", "assets/**/*"],
+  "include": [
+    "./pages/**/*",
+    "./src/**/*",
+    "./ui/**/*",
+    "types/types.ts",
+    "assets/**/*"
+  ],
   "exclude": ["node_modules"],
   "files": ["custom.d.ts"]
 }

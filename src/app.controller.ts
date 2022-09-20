@@ -91,6 +91,11 @@ export class AppController {
     return {};
   }
 
+  @Render('muscled-website-rainmaker')
+  @Get('/muscled-website-rainmaker')
+  public interactive() {
+    return {};
+  }
   @Render('ux-analysis-services')
   @Get('/ux-analysis-services')
   public uxAnalysisServices() {
@@ -149,5 +154,4 @@ export class AppController {
   public websiteredesignservices() {
     return {}
   }
-
 }
