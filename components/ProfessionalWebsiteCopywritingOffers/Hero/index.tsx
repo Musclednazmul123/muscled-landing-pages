@@ -70,7 +70,7 @@ function Hero() {
                   <p className='md:text-3xl md:text-left text-center text-xl font-bold md:leading-[41.6px] text-white'>
                     {card.numbers}
                   </p>
-                  <p className='text-base md:text-left text-center font-medium md:leading-[20.8px] text-gray-400 uppercase'>
+                  <p className='text-base md:text-left text-center font-medium md:leading-[20.8px] text-gray-400 uppercase whitespace-nowrap'>
                     {card.subHeading}
                   </p>
                 </div>
