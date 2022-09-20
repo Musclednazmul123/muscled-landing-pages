@@ -70,14 +70,14 @@ const Slider = ({ tags, percentage, sliderColor }: SliderProp) => {
         style={{ width: `${knobPosition}%` }}
       ></div>
       <div
-        className="absolute rounded-full h-10	 w-fit px-1 md:px-4 bg-white grid place-content-center top-[-10px] z-20"
+        className="absolute rounded-full  font-semibold h-10	 w-fit px-1 md:px-6 md:py-6 bg-white grid place-content-center top-[-10px] md:top-[-16px] z-20"
         style={{ left: `${knobPosition - 9.6}%` }}
       >
         <FlexLayout>
           <div className="rotate-[90deg]">
             <ChevronDown fill="fill-black	" />
           </div>
-          <p className="text-black w-fit text-center font-semibold md:text-sm text-[10px] select-none">
+          <p className="text-black w-fit text-center md:text-sm text-[10px] select-none">
             {tags[curIdx]}
           </p>
           <div className="rotate-[-90deg]">
