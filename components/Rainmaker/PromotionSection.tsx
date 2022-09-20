@@ -3,7 +3,7 @@ import PlayIcon from './PlayIcon';
 
 const PromotionSection = () => {
   return (
-    <section className="py-[3.125rem] pb-[3.875rem] px-[6.25rem] bg-[rgba(196,0,0,0.06)] ">
+    <section className="py-[50px] px-[6.25rem] bg-[rgba(196,0,0,0.06)] ">
       <div className="max-w-[77.5rem] mx-auto">
         <p className="font-bold text-[1.75rem] leading-9 text-center text-black mb-[2.6875rem]">
           We'll merge your current branding into one of our custom themes as

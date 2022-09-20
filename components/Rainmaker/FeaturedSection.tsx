@@ -44,9 +44,12 @@ const features = [
 ];
 const FeaturedSection = () => {
   return (
-    <div className="px-24 pb-[4.75rem] w-full bg-[#F5F5F5]">
-      <div className="flex justify-center">
-        <div className="flex flex-wrap basis-[80rem] justify-center  gap-x-14 gap-y-[3.75rem]">
+    <div className="px-24 mt-[3.875rem] pb-[4.75rem] w-full bg-[#F5F5F5]">
+      <div className="flex justify-center ">
+        <div
+          className="flex flex-wrap basis-[80rem] justify-center 2xl:gap-x-14 gap-x-8 gap-y-[3.75rem] 
+"
+        >
           {features.map((feature: featureProps) => (
             <div className="flex w-[23.75rem]" key={feature.id}>
               <div className="relative flex-shrink-0 mr-6">

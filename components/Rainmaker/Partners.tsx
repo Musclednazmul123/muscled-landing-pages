@@ -11,7 +11,7 @@ const Partners = () => {
       <h3 className="text-black/50 text-[1.5rem] mb-6 font-bold leading-[130%]">
         Our Partners
       </h3>
-      <div className="max-w-[77.5rem] mx-auto flex items-center justify-center px-8 lg:px-28 gap-x-[3.2rem] xl:gap-x-[4.5rem] mt-4 pb-4">
+      <div className="max-w-[77.5rem] mx-auto flex items-center justify-center px-8 lg:px-28 gap-x-[3.2rem] xl:gap-x-[4.5rem]">
         <div className="relative flex-shrink-0 max-w-[9.875rem]">
           <Image src={Logo1} alt="companyName" objectFit="contain" />
         </div>
