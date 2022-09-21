@@ -27,6 +27,8 @@ export interface CardHeaderProps {
 	rate: string;
 	monthly?: JSX.Element;
 	type: CardHeaderType | string | undefined;
+	description?: string;
+    bgColor?: string;
 }
 
 export interface CardContentProps {
@@ -52,6 +54,7 @@ export interface IconProps {
   title: string;
   className?: string;
   full?: string;
+  headingClassName?: string;
 }
 
 // Form

@@ -18,5 +18,4 @@ const CardFooter: FC<CardFooterProps> = ({ children }) => {
 		</div>
 	);
 };
-
 export default CardFooter;

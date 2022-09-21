@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import IconItem from "./IconItem"
+import IconItem from "./IconItem";
 
 import { CardContentProps } from "../component.type";
 

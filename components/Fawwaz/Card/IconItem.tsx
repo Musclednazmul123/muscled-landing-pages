@@ -10,4 +10,4 @@ const IconItem: FC<IconProps> = ({ icon, title, className, full }) => {
   );
 };
 
-export default IconItem
+export default IconItem;
