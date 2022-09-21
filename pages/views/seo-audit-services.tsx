@@ -117,7 +117,7 @@ const Page: NextPage = () => {
 				</div>
 			</Section>
 
-			<Section className="flex flex-wrap md:justify-center xl:justify-start gap-10 mt-60 py-10">
+			<Section className="flex flex-wrap gap-10 py-10 md:justify-center xl:justify-start mt-60">
 				<div className="max-w-[760px]">
 					<h3 className="text-4xl">
 						Not ranked first in search results? With SEO audit
@@ -131,12 +131,12 @@ const Page: NextPage = () => {
 						help you increase your online visibility.
 					</p>
 
-					<h5 className="font-bold text-xl mt-16">
+					<h5 className="mt-16 text-xl font-bold">
 						Our SEO auditing procedure includes <br /> the following
 						steps:
 					</h5>
 
-					<ul className="list-decimal pl-6 my-8">
+					<ul className="pl-6 my-8 list-decimal">
 						<li>
 							An overall assessment to determine your website's
 							strengths and an SEO strategy.
@@ -173,7 +173,7 @@ const Page: NextPage = () => {
 
 			<Testimonial />
 
-			<Section className="text-center pt-32">
+			<Section className="pt-32 text-center">
 				<h2 className="text-4xl text-black-80">
 					Muscled provides Site Speed Optimization Services
 				</h2>
@@ -202,14 +202,14 @@ const Page: NextPage = () => {
 					<tbody>
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Quarterly Hours"
 							/>
 							<Td content="35 hours" type="ultimate" />
 						</tr>
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Best for websites-"
 							/>
 							<Td content="500+ pages" type="ultimate" />
@@ -217,7 +217,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Dedicated Project POC"
 							/>
 							<Td
@@ -238,7 +238,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Website Theme & Plugin Optimization"
 							/>
 							<Td
@@ -251,7 +251,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Website/CSS Optimization"
 							/>
 							<Td
@@ -264,7 +264,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Set and/or Reduction in http(s) Requests"
 							/>
 							<Td
@@ -277,7 +277,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Removal of Unused Code"
 							/>
 							<Td
@@ -290,7 +290,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="450+ SME’s Behind Campaign Driving Results"
 							/>
 							<Td
@@ -303,7 +303,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Initial Investment"
 							/>
 							<Td type="ultimate" content="$3,600" />
@@ -311,7 +311,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Combine, Prioritization & Minification of CSS and JavaScript Files"
 							/>
 							<Td
@@ -324,7 +324,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Image Size Optimization & Compression"
 							/>
 							<Td
@@ -337,7 +337,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Gzip Compression"
 							/>
 							<Td
@@ -350,7 +350,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Website & Browser Caching Setup and/or Configuration"
 							/>
 							<Td
@@ -363,7 +363,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Optimize/Reduce Number of Redirects"
 							/>
 							<Td
@@ -376,7 +376,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Font Delivery Optimization"
 							/>
 							<Td
@@ -389,7 +389,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Performance Testing"
 							/>
 							<Td
@@ -402,7 +402,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Host Recommendations"
 							/>
 							<Td
@@ -415,7 +415,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Setup and/or Configuration of a CDN"
 							/>
 							<Td
@@ -428,7 +428,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Host Migration"
 							/>
 							<Td
@@ -441,7 +441,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="UX & UI Optimizations"
 							/>
 							<Td
@@ -454,7 +454,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Quarterly Submission of URL Inspection"
 							/>
 							<Td
@@ -467,7 +467,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Quarterly Performance Updates to Top 5 Pages with Most Traffic"
 							/>
 							<Td
@@ -480,7 +480,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Quarterly Core Mertics Reporting & Analytics (LCP, FID & CLS)"
 							/>
 							<Td
@@ -493,7 +493,7 @@ const Page: NextPage = () => {
 
 						<tr className="text-center text-black-80">
 							<Th
-								className="text-left text-white font-normal"
+								className="font-normal text-left text-white"
 								content="Initial Investment"
 							/>
 							<Td type="ultimate" content="$3,750" />
@@ -501,16 +501,16 @@ const Page: NextPage = () => {
 
 						<tr className="text-center">
 							<Th
-								className="text-white text-left font-normal rounded-bl-xl"
+								className="font-normal text-left text-white rounded-bl-xl"
 								content={
 									<>
 										<p>
 											Give Us a Call if You Need
 											Information
 										</p>
-										<div className="flex gap-2 items-center mt-2 cursor-pointer">
+										<div className="flex items-center gap-2 mt-2 cursor-pointer">
 											<AiFillPhone className="fill-sky-500" />
-											<p className="text-sky-500 font-bold">
+											<p className="font-bold text-sky-500">
 												888-601-5359
 											</p>
 										</div>
@@ -534,7 +534,7 @@ const Page: NextPage = () => {
 				</Table>
 			</Section>
 
-			<Section className="text-center pt-32">
+			<Section className="pt-32 text-center">
 				<h2 className="text-4xl text-black-80">
 					Muscled provides Site Speed Optimization Services
 				</h2>
@@ -545,7 +545,7 @@ const Page: NextPage = () => {
 				</p>
 			</Section>
 
-			<Section className="grid grid-cols-1 lg:grid-cols-4 py-32 gap-10">
+			<Section className="grid grid-cols-1 gap-10 py-32 lg:grid-cols-4">
 				<div className="order-2 lg:order-1 lg:col-span-2">
 					<div className="space-y-10">
 						<div className="space-y-10 seo-audit-article">
@@ -568,7 +568,7 @@ const Page: NextPage = () => {
 								These suggestions could include but are not
 								limited to:
 							</p>
-							<ul className="list-disc pl-8">
+							<ul className="pl-8 list-disc">
 								<li>Content duplication</li>
 								<li>Broken links</li>
 								<li>Dangling links</li>
@@ -671,7 +671,7 @@ const Page: NextPage = () => {
 						</div>
 
 						<div className="seo-audit-services-ads">
-							<div className="relative z-10 text-white grid grid-cols-3 gap-10">
+							<div className="relative z-10 grid grid-cols-3 gap-10 text-white">
 								<div className="col-span-2 space-y-10">
 									<h3 className="text-4xl text-white">
 										Build Up Your Sales Game.
@@ -683,11 +683,11 @@ const Page: NextPage = () => {
 										pump your bottom-line metrics.
 									</p>
 								</div>
-								<div className="col-span-1 self-end">
+								<div className="self-end col-span-1">
 									<img src={sectionIcon.src} alt="1" />
 								</div>
 							</div>
-							<div className="grid grid-cols-1 md:grid-cols-3 gap-2 relative z-10 mt-24">
+							<div className="relative z-10 grid grid-cols-1 gap-2 mt-24 md:grid-cols-3">
 								<Input
 									type="text"
 									placeholder="Enter Your Website Link"
@@ -781,7 +781,7 @@ const Page: NextPage = () => {
 								properly configured can have a significant
 								impact on your rankings.
 							</p>
-							<ul className="list-decimal pl-6">
+							<ul className="pl-6 list-decimal">
 								<li>
 									<strong>.htaccess:</strong> The .htaccess
 									file is a configuration file that is
@@ -843,12 +843,12 @@ const Page: NextPage = () => {
 							</p>
 
 							{/* Cards */}
-							<div className="bg-white p-4 space-y-6 rounded-lg">
-								<div className="flex justify-between items-center ">
+							<div className="p-4 space-y-6 bg-white rounded-lg">
+								<div className="flex items-center justify-between ">
 									<h3 className="text-semibold">
 										What exactly are SEO audit services?
 									</h3>
-									<div className="border border-black-80 w-4" />
+									<div className="w-4 border border-black-80" />
 								</div>
 								<p>
 									SEO audit services are professional services
@@ -862,12 +862,12 @@ const Page: NextPage = () => {
 								</p>
 							</div>
 
-							<div className="bg-white p-4 space-y-6 rounded-lg">
-								<div className="flex justify-between items-center ">
+							<div className="p-4 space-y-6 bg-white rounded-lg">
+								<div className="flex items-center justify-between ">
 									<h3 className="text-semibold">
 										How much does an SEO audit service cost?
 									</h3>
-									<div className="border border-black-80 w-4" />
+									<div className="w-4 border border-black-80" />
 								</div>
 								<p>
 									The cost of an SEO audit service is
@@ -878,12 +878,12 @@ const Page: NextPage = () => {
 								</p>
 							</div>
 
-							<div className="bg-white p-4 space-y-6 rounded-lg">
-								<div className="flex justify-between items-center ">
+							<div className="p-4 space-y-6 bg-white rounded-lg">
+								<div className="flex items-center justify-between ">
 									<h3 className="text-semibold">
 										What exactly are SEO audit services?
 									</h3>
-									<div className="border border-black-80 w-4" />
+									<div className="w-4 border border-black-80" />
 								</div>
 								<p className="space-y-4">
 									<span>
@@ -933,10 +933,10 @@ const Page: NextPage = () => {
 					/>
 			</Section>
 
-			<Section className="grid mt-10 gap-8 lg:grid-cols-3 mb-44">
-				<div className="bg-white-bluish p-10">
+			<Section className="grid gap-8 mt-10 lg:grid-cols-3 mb-44">
+				<div className="p-10 bg-white-bluish">
 					<h4 className="text-lg font-bold">Services</h4>
-					<div className="text-sm space-y-5 mt-6">
+					<div className="mt-6 space-y-5 text-sm">
 						<p>Digital marketing Services</p>
 						<p>SEO Services</p>
 						<p>PPC Services</p>
@@ -946,9 +946,9 @@ const Page: NextPage = () => {
 						<p>Content Marketing Services</p>
 					</div>
 				</div>
-				<div className="bg-white-bluish p-10">
+				<div className="p-10 bg-white-bluish">
 					<h4 className="text-lg font-bold">Knowledge Base</h4>
-					<div className="text-sm space-y-5 mt-6">
+					<div className="mt-6 space-y-5 text-sm">
 						<p>Digital Marketing</p>
 						<p>Content Marketing </p>
 						<p>Social Media</p>
@@ -958,9 +958,9 @@ const Page: NextPage = () => {
 						<p>Amazon</p>
 					</div>
 				</div>
-				<div className="bg-white-bluish p-10">
+				<div className="p-10 bg-white-bluish">
 					<h4 className="text-lg font-bold">Our Company</h4>
-					<div className="text-sm space-y-5 mt-6">
+					<div className="mt-6 space-y-5 text-sm">
 						<p>Digital Marketing Agency</p>
 						<p>SEO Agency</p>
 						<p>PPC Agency</p>
