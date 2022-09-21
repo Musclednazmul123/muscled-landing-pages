@@ -30,5 +30,4 @@ const CardHeader: FC<CardHeaderProps> = ({
 		</div>
 	);
 };
-
 export default CardHeader;
