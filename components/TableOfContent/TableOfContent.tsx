@@ -32,8 +32,8 @@ const TableOfContent: FC<TableProps> = ({ list }) => {
           </div>
         </div>
 
-        <ul className={`bg-white  pl-1 py-2 rounded-[10px] ${
-          isOpen ? "animate-slide bg-white" : "animate-slideUp bg-[#FAE8E8] pl-0 py-0"} `}>
+        <ul className={`bg-inherit  pl-4 py-2 rounded-[10px] ${
+          isOpen ? "animate-slide" : "animate-slideUp pl-0 py-0"} `}>
             
           { isOpen && list.map((e) => {
             return (
