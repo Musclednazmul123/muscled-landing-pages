@@ -12,7 +12,7 @@ const PromotionOne: FC<PromotionOneProps> = ({title}) => {
                         <h2 className='promotion-title text-2xl md:text-4xl font-bold leading-normal mb-10'>{title}</h2>
                         <div className='promotion-content-list flex flex-col items-start justify-center gap-4'>
                             <p>At Muscled, our professional landing page design services deliver:</p>
-                            <ul>
+                            <ul className='list-disc ml-[30px]'>
                                 <li> A professional landing page design that will remain consistent and representative of your brand.</li>
                                 <li>Striking and user friendly landing page that will entice visitors to convert.</li>
                                 <li> A curated landing page that will speak directly to your target audience, meets your needs and surpasses your expectations.</li>

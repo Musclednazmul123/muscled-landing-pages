@@ -18,11 +18,9 @@ const Testimonial: FC = () => {
 						also greatly improved the speed of my site.”
 					</p>
 
-					<p className="font-bold text-xl md:text-2xl mb-8">Owner</p>
+          <p className="mb-8 text-xl font-bold md:text-2xl">Owner</p>
 
-					<p className="font-bold text-base md:text-xl mb-14">
-						Company Name
-					</p>
+          <p className="text-base font-bold md:text-xl mb-14">Company Name</p>
 
 					<Button bgColor="bg-[#C40000]" textColor="text-white">
 						See Our Client's Testimonials

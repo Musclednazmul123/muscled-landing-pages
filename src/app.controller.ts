@@ -1,21 +1,22 @@
 import { Controller, Get, Query, Render, Req } from '@nestjs/common';
 
+
 @Controller()
 export class AppController {
-  @Render('home')
+  @Render("home")
   @Get()
   public index(@Query('name') name?: string) {
     return { name };
   }
 
-  @Render('about')
-  @Get('/about')
+  @Render("about")
+  @Get("/about")
   public about() {
     return {};
   }
 
-  @Render('contact')
-  @Get('/contact')
+  @Render("contact")
+  @Get("/contact")
   public contact() {
     return {};
   }
@@ -31,14 +32,14 @@ export class AppController {
     return {};
   }
 
-  @Render('seo-audit-services')
-  @Get('/seo-audit-services')
+  @Render("seo-audit-services")
+  @Get("/seo-audit-services")
   public seoAuditServices() {
     return {};
   }
 
-  @Render('speed-optimization-services')
-  @Get('/speed-optimization-services')
+  @Render("speed-optimization-services")
+  @Get("/speed-optimization-services")
   public speedOptimizationServices() {
     return {};
   }
@@ -49,8 +50,8 @@ export class AppController {
     return {};
   }
 
-  @Render('enterprise-social-media-advertising-services')
-  @Get('/enterprise-social-media-advertising-services')
+  @Render("enterprise-social-media-advertising-services")
+  @Get("/enterprise-social-media-advertising-services")
   public enterpriseSocialMediaAdvertisingServices() {
     return {};
   }
@@ -61,8 +62,8 @@ export class AppController {
     return {};
   }
 
-  @Render('social-media-design')
-  @Get('/social-media-design')
+  @Render("social-media-design")
+  @Get("/social-media-design")
   public socialMediaDesign() {
     return {};
   }
@@ -73,8 +74,8 @@ export class AppController {
     return {};
   }
 
-  @Render('ecommerce-ppc-management')
-  @Get('/ecommerce-ppc-management')
+  @Render("ecommerce-ppc-management")
+  @Get("/ecommerce-ppc-management")
   public ecommercePpcManagement() {
     return {};
   }
@@ -153,5 +154,10 @@ export class AppController {
   @Get('/website-redesign-services')
   public websiteredesignservices() {
     return {}
+  }
+  @Render("website-design-service")
+  @Get("/website-design-service")
+  public websiteDesignService() {
+    return {};
   }
 }
