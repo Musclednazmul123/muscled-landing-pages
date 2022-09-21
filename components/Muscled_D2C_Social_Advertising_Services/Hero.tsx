@@ -16,7 +16,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
           <span>Home {router.asPath.replace("/", " > ")}</span>
         </p>
 
-        <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
+        <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5 w-[720px]">
           {title}
         </h1>
 
