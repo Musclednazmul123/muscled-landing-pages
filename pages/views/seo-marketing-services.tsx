@@ -204,7 +204,7 @@ const Page: NextPage = () => {
 								className="text-black-70 font-normal text-xl"
 							/>
 						</CardContent>
-						<div className="px-4 pb-10 mt-4 flex items-center justify-center flex-col">
+						<div className="px-4 pb-10  flex items-center justify-center flex-col">
 								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center" />
 								
 								<Button
