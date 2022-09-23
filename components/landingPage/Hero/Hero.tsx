@@ -1,5 +1,7 @@
 import React from "react";
 import Icon from "../../assets/landingPageSVG/Icons";
+import HeroCards from "./HeroCards";
+
 function Hero() {
 	const cardData = [
 		{
@@ -55,26 +57,7 @@ function Hero() {
 						</button>
 					</div>
 				</div>
-				<div className="space-y-[10px] xm:mt-0 mt-12 xl:ml-[84px]">
-					{cardData.map((card, index) => {
-						return (
-							<div className="bg-black bg-opacity-80 rounded-sm flex md:flex-row flex-col items-center py-3 pl-3 pr-10">
-								<Icon customClasses="md:w-auto md:h-auto" icon={card.icon} />
-								<div className="md:ml-1.5 md:mt-0 mt-2 md:gap-y-0 space-y-1">
-									<p className="text-base  md:text-left text-center font-medium leading-[20.8px] text-white">
-										{card.pTag}
-									</p>
-									<p className="md:text-3xl md:text-left text-center text-xl font-bold md:leading-[41.6px] text-white">
-										{card.numbers}
-									</p>
-									<p className="text-base md:text-left text-center font-medium md:leading-[20.8px] text-gray-400 uppercase">
-										{card.subHeading}
-									</p>
-								</div>
-							</div>
-						);
-					})}
-				</div>
+				<HeroCards className="space-y-[10px] xm:mt-0 mt-12 xl:ml-[84px]"/>
 				<div className="mt-[30px] xl:hidden block ">
 					<input
 						className="text-xl leading-[30px] focus:outline-none py-[15px] px-5 text-black placeholder-text-black placeholder-opacity-50 rounded bg-white xl:max-w-[480px] w-full"
