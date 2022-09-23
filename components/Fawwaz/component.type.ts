@@ -103,6 +103,7 @@ export interface TableOfContentProps {
 	titleIconColor?: string;
 	contents: JSX.Element[] | string[] | ReactNode;
 	isOpen: Boolean;
+	className?:string;
 	setIsOpen: () => void;
 }
 

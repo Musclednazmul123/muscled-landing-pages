@@ -150,14 +150,22 @@ export class AppController {
   public cmsDevelopmentServices() {
     return {};
   }
+  
   @Render('website-redesign-services')
   @Get('/website-redesign-services')
   public websiteredesignservices() {
     return {}
   }
+
   @Render("website-design-service")
   @Get("/website-design-service")
   public websiteDesignService() {
     return {};
+  }
+  
+  @Render('website-maintenance')
+  @Get('/website-maintenance')
+  public websiteMaintenance() {
+    return {}
   }
 }
