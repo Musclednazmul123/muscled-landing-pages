@@ -70,6 +70,7 @@ export interface InputButtonProps {
   children?: ReactNode;
   className?: string;
   rounded?: boolean;
+  textSize?:string;
 }
 
 export interface RoundedBtnProps {
