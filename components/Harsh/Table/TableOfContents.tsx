@@ -3,8 +3,6 @@ import React,{ FC,useState } from "react"
 import { IconItem } from "../../Fawwaz/Card"
 import {  TableOfContent as TableFawaz} from "../../Fawwaz/Table";
 import {ChevronDoubleRightIcon} from "@heroicons/react/solid";
-import { FaListAlt } from "react-icons/fa"
-import { BiDownArrowAlt } from "react-icons/bi"
 
 import { BsDot } from "react-icons/bs"
 

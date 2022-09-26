@@ -3,7 +3,9 @@ import { NextPage, NextPageContext} from 'next'
 import HeroSection from '../../components/WebDevelopmentServices/HeroSection';
 import OurPartnersSection from '../../components/WebDevelopmentServices/OurPartnersSection';
 import PromotionSection from '../../components/ShopifyDevServices/PromotionSection/PromotionSection'
-import TestimonialsSection from "../../components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
+import TestimonialMedia from "../../components/ShopifyDevServices/TestimonialMedia/TestimonialMedia";
+import TestimonialSection from "@/components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
+import GuideDetailsAndTOC from "@/components/ShopifyDevServices/GuideDetailsAndTOC/GuideDetailsAndTOC";
 import {heroSectionProps,partnersSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 import {testimonialsSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 
@@ -41,9 +43,7 @@ let testimonialsSectionData:testimonialsSectionProps={
         owner:"Owner",
         company:"Company Name"
     },
-    media:{
-        url:"/"
-    }
+    Media:TestimonialMedia
 }
 
 
@@ -53,7 +53,8 @@ const Page:NextPage = () => {
         <HeroSection {...heroSectionData}/>
         <OurPartnersSection {...ourPartnersSectionData} />
         <PromotionSection />
-        <TestimonialsSection {...testimonialsSectionData} />
+        <TestimonialSection  {...testimonialsSectionData} />
+        <GuideDetailsAndTOC />
     </div>
   )
 }

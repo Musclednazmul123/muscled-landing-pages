@@ -104,6 +104,7 @@ export interface TableOfContentProps {
 	contents: JSX.Element[] | string[] | ReactNode;
 	isOpen: Boolean;
 	className?:string;
+	contentsClassName?:string;
 	setIsOpen: () => void;
 }
 

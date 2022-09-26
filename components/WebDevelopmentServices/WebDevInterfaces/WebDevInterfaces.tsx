@@ -1,3 +1,5 @@
+import React, {FC} from "react";
+
 export interface Props{
     routes:string[] | undefined
   }
@@ -80,5 +82,5 @@ export interface partnersSectionProps{
   export interface testimonialsSectionProps{
     variant:string,
     testimonialData:testimonialData,
-    media:testimonialMedia
+    Media:FC
     }
