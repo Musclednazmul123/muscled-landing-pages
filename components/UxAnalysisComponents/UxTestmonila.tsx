@@ -8,48 +8,25 @@ export default function UxTesmonial() {
     <>
       <div className="bg-red-10">
         <div className="flex flex-wrap gap-10 justify-center py-20">
-          <div className="max-w-[760px] space-y-7">
-            <h2 className="text-4xl">
-              The Digital Workout That Grows Your Traffic and Revenue through
-              SEO
+          <div className="max-w-[760px] flex flex-col space-y-6">
+            <h2 className="text-[40px] leading-[52px] text-black-80">
+            Website User Experience Analysis from Muscled
             </h2>
-            <p className="md:text-xl">
-              <span>
-                Don’t let your page be buried. If you’re looking for ways to
-                improve your website, your best bet will be SEO.
-              </span>
-              <br />
-              <br />
-              <span>But What is SEO?</span>
-              <br />
-              <br />
-              <span>
-                SEO is a digital marketing strategy that helps your website rank
-                higher on Google, Bing, and other search engines on the
-                internet. Some of its known techniques are optimizing your
-                page’s keywords to building your internal links. The more
-                visible your website is, the more you’re likely to accumulate
-                the attention of your prospective customers, hence, the more
-                likely you’ll be able to increase your revenue.
-              </span>
-              <br />
-              <br />
-              <span>
-                Muscled Digital Agency is the only workout your page needs when
-                it comes to SEO. From on-page SEO, off-page SEO, and technical
-                SEO, you’re sure to hook those warm and hot customers to your
-                business without investing a lot of work.
-              </span>
-              <br />
-              <br />
-              <span>How about you boost your performance today</span>
-              <br />
-              <br />
-              <span>
-                Reach out to us and chat with an expert from our SEO team about
-                developing your website’s performance and profit.
-              </span>
-            </p>
+            <div className="flex flex-col text-xl leading-[30px] space-y-10 text-black-70">
+              <p>Interested in improving your bottom line? Great user experience (UX) will 
+                make your visitors happier, based on which you will improve your customers' number and revenue. 
+                You can make that happen with a personalized, comprehensive UX analysis
+                 report from Muscled.</p>
+              <p>The website analysis will give you these benefits:</p>
+              <ul className="list-decimal list-inside">
+                <li>Improvement of your customer experience based on their needs</li>
+                <li>Brand loyalty and trust instead of confusing navigations, long check-outs,
+                   and vague directions.</li>
+                <li> Collaboration with a team of web designers and website conversion experts that can 
+                  provide the required tools to make the website more successful.</li>
+              </ul>
+              <p>Call us at 888-601-5359 right away to begin enhancing the user experience (and conversion rates) of your website!</p>
+            </div>
           </div>
           <div className="w-[389px] min-h-[214px] relative">
             <ReactPlayerModal
@@ -66,3 +43,14 @@ export default function UxTesmonial() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+

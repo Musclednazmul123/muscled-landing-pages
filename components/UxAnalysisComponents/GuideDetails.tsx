@@ -10,7 +10,7 @@ import section4 from "components/assets/card10.png";
 import section5 from "components/assets/card7.png";
 
 const tableOfContent: string[] = [
-  "WebFX and UX optimization",
+  "Muscled and UX optimization",
   "Bad usability means fewer customers",
   "How do we approach UX?",
   "What can I expect from a user experience analysis?",
@@ -29,13 +29,13 @@ const links: { title: string; link: string }[] = [
 ];
 export default function GuideDetails() {
   return (
-    <Section className="flex justify-around pt-32">
-      <div className="flex-2 px-10">
-        <div className="space-y-10">
+    <Section className="flex justify-between pt-32 gap-x-10">
+      <div className="flex-2 w-[760px]">
+        <div className="space-y-10 text-xl">
           {/* First */}
-          <div className="space-y-5">
-            <h2 className="text-4xl">WebFX and UX optimization</h2>
-
+          <div className="space-y-8">
+            <h2 className="text-4xl">Muscled and UX optimization</h2>
+            
             <p>
               Muscled and UX optimization A user experience report shows what
               your website does well and what it may improve, all based on a
@@ -53,7 +53,7 @@ export default function GuideDetails() {
               rates, i.e. more sales you are in the right place as well.
             </p>
 
-            <p>
+            <p className="pb-3">
               Our Muscled talented team has years of experience in spotting
               usability issues that can be fixed. We take confidence in
               implementing our recommendations and value seeing your website
@@ -65,7 +65,7 @@ export default function GuideDetails() {
               <img src={section1.src} alt="1" />
             </div>
 
-            <p>
+            <p className="pt-4">
               Finding and removing poor design elements that bring navigation
               confusion or complicate the check-out process will increase the
               number of your customers, and sales. Our service will fix these
@@ -259,7 +259,7 @@ export default function GuideDetails() {
           </div>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 self-start sticky top-0">
         <TableOfContent list={tableOfContent}></TableOfContent>
         <div className="pt-10">
           <h2 className="text-4xl">Learn more about UX</h2>

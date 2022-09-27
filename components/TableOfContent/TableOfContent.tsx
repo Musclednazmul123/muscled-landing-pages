@@ -16,8 +16,9 @@ const TableOfContent: FC<TableProps> = ({ list }) => {
   return (
     <>
       {/* header */}
-      <div className="border-[1px] border-solid border-black-30 rounded-[10px] w-[440px]">
-        <div className="bg-[#F2F2F2] text-white py-2 px-8 flex justify-between items-center h-[60px] rounded-[10px]">
+      <div className="border-[1px] border-solid border-black border-opacity-[30%] rounded-[10px] w-[440px]">
+        <div className="bg-[#F2F2F2] text-white py-2 px-8 flex 
+        justify-between items-center h-[60px] rounded-tl-[10px] rounded-tr-[10px]">
           <h2 className="flex items-center text-xl gap-[10px] font-bold text-black-80">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="24" height="24" rx="5" fill="black" fill-opacity="0.8"/>
@@ -32,7 +33,7 @@ const TableOfContent: FC<TableProps> = ({ list }) => {
           </div>
         </div>
 
-        <ul className={`bg-inherit  pl-4 py-2 rounded-[10px] ${
+        <ul className={`bg-inherit  pl-4 py-2 rounded-[10px] rounded-bl-[10px] rounded-br-[10px] ${
           isOpen ? "animate-slide" : "animate-slideUp pl-0 py-0"} `}>
             
           { isOpen && list.map((e) => {
