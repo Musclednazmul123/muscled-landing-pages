@@ -3,7 +3,11 @@ import { NextPage, NextPageContext} from 'next'
 import HeroSection from '../../components/WebDevelopmentServices/HeroSection';
 import OurPartnersSection from '../../components/WebDevelopmentServices/OurPartnersSection';
 import PromotionSection from '../../components/ShopifyDevServices/PromotionSection/PromotionSection'
-import TestimonialsSection from "../../components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
+import TestimonialMedia from "../../components/ShopifyDevServices/TestimonialMedia/TestimonialMedia";
+import TestimonialSection from "@/components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
+import GuideDetailsAndTOC from "@/components/ShopifyDevServices/GuideDetailsAndTOC/GuideDetailsAndTOC";
+import ShopifyServiceSection from "@/components/ShopifyDevServices/ShopifyServicsesSection";
+import ImportantLinksSection from "@/components/ShopifyDevServices/ImportantLinksSection";
 import {heroSectionProps,partnersSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 import {testimonialsSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 
@@ -41,19 +45,20 @@ let testimonialsSectionData:testimonialsSectionProps={
         owner:"Owner",
         company:"Company Name"
     },
-    media:{
-        url:"/"
-    }
+    Media:TestimonialMedia
 }
 
 
 const Page:NextPage = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full '>
         <HeroSection {...heroSectionData}/>
-        <OurPartnersSection {...ourPartnersSectionData} />
+        <OurPartnersSection {...ourPartnersSectionData} headingColor="text-black"/>
         <PromotionSection />
-        <TestimonialsSection {...testimonialsSectionData} />
+        <TestimonialSection  {...testimonialsSectionData} />
+        <GuideDetailsAndTOC />
+        <ShopifyServiceSection />
+        <ImportantLinksSection />
     </div>
   )
 }

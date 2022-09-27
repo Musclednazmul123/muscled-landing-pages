@@ -1,5 +1,5 @@
 import React,{FC} from 'react'
-import ReactPlayerModal from "../../../ReactPlayerModal";
+import ReactPlayerModal from "../../ReactPlayerModal";
 
 const PlayIcon:FC=()=>{
 

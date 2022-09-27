@@ -1,7 +1,9 @@
 import React,{FC} from 'react'
 import {heroSectionProps} from "./WebDevInterfaces/WebDevInterfaces";
+import HeroCards from '../landingPage/Hero/HeroCards';
 
 // ["Home","Web Development","Serivces"];
+
 
 
 const HeroSection:FC<heroSectionProps> = (props) => {
@@ -39,10 +41,9 @@ const HeroSection:FC<heroSectionProps> = (props) => {
        </div>
 
         </div>
-
-        <div className='flex w-[436px]'>
-       {props?.serviceData}
-        </div>
+ 
+       <HeroCards className='space-y-[10px] self-center'/>
+        
     </div>
   )
 }

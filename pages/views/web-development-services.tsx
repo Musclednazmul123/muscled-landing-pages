@@ -4,6 +4,7 @@ import HeroSection from "../../components/WebDevelopmentServices/HeroSection";
 import OurPartnersSection from "../../components/WebDevelopmentServices/OurPartnersSection";
 import PromotionSection from "../../components/WebDevelopmentServices/PromotionSection/PromotionSection";
 import TestimonialsSection from "../../components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
+import TestimonialMedia from "@/components/WebDevelopmentServices/TestimonialsSection/TestimonialsMedia/TestimonialsMedia";
 import ServicesSection from "../../components/WebDevelopmentServices/ServicesSection/ServicesSetion";
 import GuideDetailsSection from "../../components/WebDevelopmentServices/GuideDetailsSection/GuideDetailsSection";
 import ImportantLinksSection from "../../components/WebDevelopmentServices/ImportantLinksSection/ImportantLinksSection";
@@ -51,9 +52,7 @@ let ourPartnersSectionData:partnersSectionProps={
         owner:"Owner",
         company:"Company Name"
     },
-    media:{
-        url:"/"
-    }
+    Media:TestimonialMedia
 }
 
 

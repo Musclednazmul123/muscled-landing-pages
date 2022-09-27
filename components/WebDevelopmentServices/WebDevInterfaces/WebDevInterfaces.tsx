@@ -1,3 +1,5 @@
+import React, {FC} from "react";
+
 export interface Props{
     routes:string[] | undefined
   }
@@ -45,7 +47,8 @@ export interface WebDevCounterProps {
 
 export interface ImportantLinkItemData{
   heading:string,
-  listItems:string[]
+  listItems:string[],
+  bgColor?:string,
 }
 
 export interface heroSectionProps{
@@ -66,6 +69,7 @@ export interface partnersSectionProps{
     width:string,
     height:string,
   },
+  headingColor?:string,
   }
   export interface testimonialData{
     details:string,
@@ -80,5 +84,5 @@ export interface partnersSectionProps{
   export interface testimonialsSectionProps{
     variant:string,
     testimonialData:testimonialData,
-    media:testimonialMedia
+    Media:FC
     }

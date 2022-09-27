@@ -6,7 +6,7 @@ const PromotionSection:FC = () => {
 
 
     return (
-    <div className='flex  w-[1240px] m-auto space-x-[97px]'>
+    <div className='flex  w-[1240px] m-auto space-x-[97px] pt-3'>
         <LeftContent />
         <RightContent />
     </div>

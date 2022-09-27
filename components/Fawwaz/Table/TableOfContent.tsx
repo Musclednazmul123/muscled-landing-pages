@@ -12,6 +12,7 @@ const TableOfContent: FC<TableOfContentProps> = ({
 	titleIconColor,
 	contents,
 	isOpen,
+	contentsClassName,
 	setIsOpen
 }) => {
 
@@ -19,7 +20,7 @@ const TableOfContent: FC<TableOfContentProps> = ({
 		<div className={`order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[400px] ${className}`} onClick={() => setIsOpen()}>
 			<div
 				className={`${bgColor ? bgColor : "bg-[#3E5661]"} 
-				 rounded-md p-4 flex justify-between items-center cursor-pointer `}>
+				 rounded-tl-[10px] rounded-tr-[10px] p-4 flex justify-between items-center cursor-pointer `}>
 				<h2 className={`flex items-center text-lg gap-2 ${
 					titleColor ? titleColor : "text-white"
 				}`}>
@@ -28,7 +29,8 @@ const TableOfContent: FC<TableOfContentProps> = ({
 				</h2>
 				<ChevronUpIcon className={`${titleIconColor ? titleIconColor : "text-white"} ${isOpen ? "rotate-0" : "rotate-180"} w-6`}/>
 			</div>
-			<ul className={`w-full ${isOpen ? "h-auto" : "h-0 hidden"}`}>
+			<ul className={`w-full ${isOpen ? "h-auto rounded-bl-[10px] rounded-br-[10px]" : "h-0 hidden"}
+			 ${contentsClassName}`}>
 				<div className="py-8">
 					{ contents }
 				</div>
