@@ -8,7 +8,7 @@ import {ChevronDoubleRightIcon} from "@heroicons/react/solid";
 const TableOfContentsSection:FC = () => {
     let [isOpen,setIsOpen]= useState<boolean>(true);
   return (
-    <div className="w-[440px]">
+    <div className="w-[440px] sticky top-0 self-start">
     <TableOfContent
     className="border border-black-30  h-fit  rounded-[10px]"
     contentsClassName="px-[30px]"

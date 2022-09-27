@@ -51,9 +51,9 @@ let testimonialsSectionData:testimonialsSectionProps={
 
 const Page:NextPage = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full '>
         <HeroSection {...heroSectionData}/>
-        <OurPartnersSection {...ourPartnersSectionData} />
+        <OurPartnersSection {...ourPartnersSectionData} headingColor="text-black"/>
         <PromotionSection />
         <TestimonialSection  {...testimonialsSectionData} />
         <GuideDetailsAndTOC />

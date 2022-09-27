@@ -69,6 +69,7 @@ export interface partnersSectionProps{
     width:string,
     height:string,
   },
+  headingColor?:string,
   }
   export interface testimonialData{
     details:string,
