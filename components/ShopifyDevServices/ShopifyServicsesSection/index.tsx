@@ -1,7 +1,7 @@
 import React,{FC} from 'react'
 import Button from "../../Fawwaz/Button";
 
-const ShopifyDevServices = () => {
+const ShopifyDevServices:FC = () => {
   return (
     <div className='flex flex-col w-[760px] ml-14 mt-4'>
      <div className='flex flex-col gap-y-[40px]'>   

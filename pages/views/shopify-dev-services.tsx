@@ -7,6 +7,7 @@ import TestimonialMedia from "../../components/ShopifyDevServices/TestimonialMed
 import TestimonialSection from "@/components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
 import GuideDetailsAndTOC from "@/components/ShopifyDevServices/GuideDetailsAndTOC/GuideDetailsAndTOC";
 import ShopifyServiceSection from "@/components/ShopifyDevServices/ShopifyServicsesSection";
+import ImportantLinksSection from "@/components/ShopifyDevServices/ImportantLinksSection";
 import {heroSectionProps,partnersSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 import {testimonialsSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 
@@ -57,6 +58,7 @@ const Page:NextPage = () => {
         <TestimonialSection  {...testimonialsSectionData} />
         <GuideDetailsAndTOC />
         <ShopifyServiceSection />
+        <ImportantLinksSection />
     </div>
   )
 }

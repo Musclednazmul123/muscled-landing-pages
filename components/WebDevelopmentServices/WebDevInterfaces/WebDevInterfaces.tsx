@@ -47,7 +47,8 @@ export interface WebDevCounterProps {
 
 export interface ImportantLinkItemData{
   heading:string,
-  listItems:string[]
+  listItems:string[],
+  bgColor?:string,
 }
 
 export interface heroSectionProps{

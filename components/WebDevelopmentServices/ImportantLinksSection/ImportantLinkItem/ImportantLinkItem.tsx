@@ -2,9 +2,9 @@ import React,{FC} from 'react'
 import {ImportantLinkItemData} from "../../WebDevInterfaces/WebDevInterfaces"; 
 import Link from "next/link";
 
-const ImportantLinkItem:FC<ImportantLinkItemData> = ({heading,listItems}) => {
+const ImportantLinkItem:FC<ImportantLinkItemData> = ({heading,listItems,bgColor}) => {
   return (
-    <div className='flex flex-col w-[400px] space-y-[21px] bg-[#C4000012] pt-3 pr-[46px] pb-[68px] pl-6 rounded-lg'>
+    <div className={`flex flex-col w-[400px] space-y-[21px] ${bgColor?bgColor:'bg-[#C4000012]'} pt-3 pr-[46px] pb-[68px] pl-6 rounded-lg`}>
       
       <div>
         <p className='text-2xl leading-[39px] font-[500] text-[#141010] whitespace-pre'>{heading}</p>
