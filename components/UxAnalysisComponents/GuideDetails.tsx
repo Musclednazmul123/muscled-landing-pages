@@ -31,9 +31,9 @@ export default function GuideDetails() {
   return (
     <Section className="flex justify-between pt-32 gap-x-10">
       <div className="flex-2 w-[760px]">
-        <div className="space-y-10 text-xl">
+        <div className="flex flex-col space-y-10 text-xl leading-[30px]">
           {/* First */}
-          <div className="space-y-8">
+          <div className="flex flex-col space-y-8">
             <h2 className="text-4xl">Muscled and UX optimization</h2>
             
             <p>
@@ -61,7 +61,7 @@ export default function GuideDetails() {
               for your clients to find what they're looking for online, which
               can make them dissatisfied and cost you money.
             </p>
-            <div className="flex flex-row justify-center w-[543px] h-[143px]">
+            <div className="flex flex-row justify-center w-[563px] h-[162px]">
               <img src={section1.src} alt="1" />
             </div>
 
@@ -74,13 +74,15 @@ export default function GuideDetails() {
           </div>
 
           {/* Second */}
-          <div className="space-y-5">
-            <h2 className="text-4xl">Bad usability means fewer customers</h2>
+          <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-4">
+            <h2 className="text-[40px] leading-[60px]">Bad usability means fewer customers</h2>
             <p>
               Every element of user experience has an influence on your
               website’s conversion rate. With hard navigation, slow load, and
               other issues you will see a drop in your customers.
             </p>
+            </div>
             <p>
               Your website is like a customer service representative of your
               business. Imagine if your service is polite, clear and helpful.
@@ -91,7 +93,7 @@ export default function GuideDetails() {
               One of the simplest and most efficient ways to improve your sales
               process
             </p>
-            <div className="flex flex-row justify-center w-[543px] h-[200px]">
+            <div className="flex flex-row justify-center w-[643px] h-[265px]">
               <img src={section2.src} alt="1" />
             </div>
             <p>
@@ -99,7 +101,7 @@ export default function GuideDetails() {
               usability.
             </p>
 
-            <ul className="list-disc  pl-5">
+            <ul className="list-disc  list-inside pl-3">
               <li>Confusing navigation</li>
               <li>Confusing navigation</li>
               <li>Slow download times</li>
@@ -117,8 +119,8 @@ export default function GuideDetails() {
           </div>
 
           {/* Third */}
-          <div className="space-y-5">
-            <h2 className="text-4xl">How do we approach UX?</h2>
+          <div className="flex flex-col space-y-8">
+            <h2 className="text-[40px]">How do we approach UX?</h2>
 
             <p>
               It may be challenging to evaluate the usability of your own
@@ -128,10 +130,8 @@ export default function GuideDetails() {
             </p>
 
             <p>At Muscled, we know how to get into the mind of a customer.</p>
-            <p></p>
-
-            <p></p>
-            <div className="flex px-4 items-center w-[543px] h-[200px]">
+            
+            <div className="flex px-4 items-center w-[563px] h-[162px]">
               <img src={section3.src} alt="1" />
             </div>
 
@@ -159,8 +159,9 @@ export default function GuideDetails() {
           </div>
 
           {/* Forth */}
-          <div className="space-y-5">
-            <h2 className="text-4xl">
+          <div className="flex flex-col space-y-8">
+            <div  className="flex flex-col space-y-5 pb-8">
+            <h2 className="text-[40px] leading-[60px]">
               What can I expect from a user experience analysis?
             </h2>
             <p>
@@ -171,11 +172,12 @@ export default function GuideDetails() {
               could influence this. We identify the key sections of your website
               and optimize them for user convenience.
             </p>
-            <div className="flex flex-row justify-center w-[543px] h-[200px]">
+            </div>
+            <div className="flex flex-row justify-center w-[643px] h-[288px]">
               <img src={section4.src} alt="1" />
             </div>
 
-            <p>
+            <p className="pt-8">
               We also focus on high-traffic areas. In order to improve these
               factors, we come up with valuable suggestions and put them into
               practice.
@@ -205,8 +207,9 @@ export default function GuideDetails() {
           </div>
 
           {/* Fifth */}
-          <div className="space-y-5">
-            <h2 className="text-4xl">What makes Muscled an authority on UX?</h2>
+          <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-5">
+            <h2 className="text-[40px] leading-[60px]">What makes Muscled an authority on UX?</h2>
             <p>
               What makes Muscled an authority on UX? We have in-depth knowledge
               of how consumers interact with online media, which supports our
@@ -214,6 +217,7 @@ export default function GuideDetails() {
               in promoting increased functionality and streamlined website use,
               you will have everything to boost your revenue.
             </p>
+            </div>
             <p>
               We ensure there are no obstacles in your conversion funnel. If
               your users are not able to figure out how to handle something they
@@ -225,14 +229,14 @@ export default function GuideDetails() {
               customers are telling you exactly what they want. All you need to
               do is to evaluate their voice!
             </p>
-            <div className="flex  justify-center w-[543px] h-[400px]">
+            <div className="flex  justify-center w-[562px] h-[430px]">
               <img src={section5.src} alt="1" />
             </div>
           </div>
 
           {/* Sixth */}
-          <div className="space-y-5">
-            <h2 className="text-4xl">
+          <div className="flex flex-col space-y-8">
+            <h2 className="text-[40px] leading-[60px]">
               Improve conversions rates with UX analysis services
             </h2>
             <p>
