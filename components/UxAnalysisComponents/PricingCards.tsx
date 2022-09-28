@@ -43,7 +43,7 @@ export default function PricingCard() {
             duration="month"
             list={list}
             className="text-red-400 w-full max-w-[400px] opacity-3	"
-            type="pricing"
+            type="standard"
             height={917}
             header={1}
           />
@@ -60,7 +60,7 @@ export default function PricingCard() {
             title="$1,500"
             list={list2}
             className="text-red-400 w-full max-w-[400px] opacity-6"
-            type="pricing"
+            type="premium"
             height={917}
             header={1}
           />
@@ -77,7 +77,7 @@ export default function PricingCard() {
             duration="month"
             list={list3}
             className="text-red-400 w-full max-w-[400px] opacity-9"
-            type="pricing"
+            type="trailblazer"
             height={917}
             header={1}
           />

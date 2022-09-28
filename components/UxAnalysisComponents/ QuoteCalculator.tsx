@@ -2,8 +2,20 @@ import React from "react";
 
 import { Section } from "../Fawwaz/Sections";
 import { Table, Td, Th } from "../Fawwaz/Table";
-import { AiOutlineCheck } from "react-icons/ai";
+
 import Button from "../Fawwaz/Button";
+
+let AiOutlineCheck=()=><svg className="mx-auto" width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg" 
+xmlnsXlink="http://www.w3.org/1999/xlink">
+<path d="M0 0H35V30H0V0Z" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlinkHref="#image0_2_11170" transform="translate(0 -0.0833333) scale(0.0416667 0.0486111)"/>
+</pattern>
+<image id="image0_2_11170" width="24" height="24" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAD1BMVEVHcExAz4dAz49B1ItB1IwkJqDLAAAABHRSTlMAICDfCDbLnQAAAD5JREFUeNpjYKAaUDZAsJlMkDjKzgJIEob4JZiNkCSYnRUQOhhNjJB0CDsrIYxiNDFGMkrYBckORmMBBhoAAFjVBy1PQzQHAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+
 
 const tableRows = [
   {
@@ -281,19 +293,19 @@ export default function QuoteCalculator() {
         <Table className="table-fixed">
           <thead>
             <tr>
-              <Th className="text-left text-white" content="Features" />
+              <Th className="text-left text-white border border-b-gray border-opacity-10" content="Features" />
               <Td
-                className="text-center font-bold"
+                className="text-center font-bold border border-b-black border-opacity-10"
                 content="Aggressive"
                 type="basic"
               />
               <Td
-                className="text-center font-bold"
+                className="text-center font-bold border border-b-black border-opacity-10"
                 content="Market Leader"
                 type="standard"
               />
               <Td
-                className="text-center font-bold"
+                className="text-center font-bold border border-b-black border-opacity-10"
                 content="Trailblazer"
                 type="premium"
               />
@@ -304,13 +316,14 @@ export default function QuoteCalculator() {
               return (
                 <tr className="text-center text-black-80">
                   <Th
-                    className="text-left text-white font-light"
+                    className="text-left text-white font-light border border-b-gray border-opacity-10"
                     content={row.head}
                   />
                   <Td
+                  className="border border-b-black border-opacity-10"
                     content={
                       row.basic === "1" ? (
-                        <AiOutlineCheck className="mx-auto fill-green-500 w-[34px] h-[30px]" />
+                        <AiOutlineCheck />
                       ) : (
                         row.basic
                       )
@@ -318,9 +331,10 @@ export default function QuoteCalculator() {
                     type="basic"
                   />
                   <Td
+                  className="border border-b-black border-opacity-10"
                     content={
                       row.standard === "1" ? (
-                        <AiOutlineCheck className="mx-auto fill-green-500 w-[34px] h-[30px]" />
+                        <AiOutlineCheck  />
                       ) : (
                         row.standard
                       )
@@ -328,9 +342,10 @@ export default function QuoteCalculator() {
                     type="standard"
                   />
                   <Td
+                   className="border border-b-black border-opacity-10"
                     content={
                       row.premium === "1" ? (
-                        <AiOutlineCheck className="mx-auto fill-green-500 w-[34px] h-[30px]" />
+                        <AiOutlineCheck  />
                       ) : (
                         row.premium
                       )

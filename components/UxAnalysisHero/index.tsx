@@ -37,7 +37,7 @@ const HeroCards: HeroCardProps[] = [
 
 function UxAnalysisHero() {
   return (
-    <section className="min-h-[890px] bg-black-70 px-3 lg:px-0">
+    <section className="min-h-[847px] bg-black-70 px-3 lg:px-0">
       <Hero
         title="Website User Experience Analysis Services for SMBs"
         description="Website User Experience Analysis Services for SMBs

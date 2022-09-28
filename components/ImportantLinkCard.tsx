@@ -1,27 +1,24 @@
 import React from "react";
 import { FC } from "react";
 
-import { FaListAlt } from "react-icons/fa";
-import { BiUpArrowAlt } from "react-icons/bi";
-import { HiChevronDoubleRight } from "react-icons/hi";
 interface TableProps {
   list: { title: string; link: string }[];
   title: string;
   bgColor?: string;
 }
-const ImportantLinkCard: FC<TableProps> = ({ list, title, bgColor }) => {
+const ImportantLinkCard: FC<TableProps> = ({ list, title, bgColor}) => {
   return (
     <div
-      className={`p-4 ${
+      className={`p-4 flex flex-col space-y-[31px] w-[385px] min-h-[344px] pr-14   ${
         bgColor && bgColor.length ? `bg-${bgColor}` : `bg-[#C4000033]`
       }`}
     >
       {/* header */}
-      <h4 className="text-lg font-bold">{title}</h4>
-      <ul className="text-left py-2">
+      <h4 className="text-2xl font-bold text-[#494949]">{title}</h4>
+      <ul className="flex flex-col space-y-14">
         {list.map((l) => {
           return (
-            <li className="py-2 underline">
+            <li className="underline text-xl leading-[31.01px]">
               <a href={l.link}>{l.title}</a>
             </li>
           );

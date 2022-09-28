@@ -1,22 +1,17 @@
 import React, { FC } from "react";
 import { IProps } from "../../types/types";
-import Button from "../Button";
-import Star from "../assets/svg/Star";
 import Check from "../assets/svg/Check";
-import Image from "next/image";
+
 
 const Card: FC<IProps> = ({
   children,
   type,
-  starIcon,
   subtitle,
   list,
   title,
   description,
   duration,
-  highlight,
   height,
-  header,
 }) => {
   const center = false;
   const image =
@@ -24,108 +19,55 @@ const Card: FC<IProps> = ({
 
   const button = "hello world";
 
-  if (type === "pricing") {
+
     return (
       <div
-        className={`flex flex-col w-full  justify-between align-baseline space-y-5  border overflow-hidden rounded-md border-gray-500 ${
+        className={`flex flex-col w-full  justify-between align-baseline border overflow-hidden rounded-md border-gray-500 ${
           height ? `h-[${height}px]` : "h-[630px]"
         }`}
       >
         {/* header */}
-        <>
-          {header && header === 1 ? (
-            <div className="flex flex-col justify-around space-y-5 bg-red-50 items-center h-[240px]">
-              <p className="text-xl font-bold mt-20 uppercase">{subtitle}</p>
-              <h3 className="text-2xl text-red-500 space-y-2 items-center justify-center">
-                <span>{title}</span>{" "}
+
+            <div className={`flex flex-col justify-around  space-y-5 pb-3  bg-[#C40000] ${type=="premium"?"bg-opacity-[6%]":type=="trailblazer"?"bg-opacity-[9%]":"bg-opacity-[3%]"}  items-center min-h-[300px]`}>
+              <p className="text-2xl font-bold mt-16 uppercase">{subtitle}</p>
+              <h3 className="text-2xl space-y-2 items-center items center">
+                <span className="text-[40px] text-[#C40000]">{title}</span>{" "}
                 {duration && (
-                  <span className="text-sm font-normal text-gray-700">
+                  <span className="font-normal text-[#010101] text-2xl">
                     /{duration}
                   </span>
                 )}
               </h3>
             </div>
-          ) : (
-            <div className="flex flex-col justify-between space-y-5 h-[300px] py-10 px-5 bg-red-50 items-center">
-              <div className="flex space-y-5 flex-col">
-                <div className="flex space-x-5 justify-center  align-baseline">
-                  {starIcon! >= 1 && (
-                    <Star
-                      opacity={starIcon! >= 3 ? 1 : starIcon! >= 2 ? 0.85 : 0.7}
-                    />
-                  )}
-                  {starIcon! >= 2 && (
-                    <Star
-                      opacity={starIcon! >= 3 ? 1 : starIcon! >= 2 ? 0.85 : 0.7}
-                    />
-                  )}
-                  {starIcon! >= 3 && (
-                    <Star
-                      opacity={starIcon! >= 3 ? 1 : starIcon! >= 2 ? 0.85 : 0.7}
-                    />
-                  )}
-                </div>
-                {subtitle && <p className="text-center">{subtitle}</p>}
-              </div>
-              <h3 className=" text-2xl text-red-500 flex flex-col space-y-2 items-center justify-center">
-                <span>{title}</span>{" "}
-                {duration && (
-                  <span className="text-sm font-normal text-gray-700">
-                    /{duration}
-                  </span>
-                )}
-              </h3>
-              {highlight && <p>Standard consultation & reporting plan</p>}
-            </div>
-          )}
-        </>
 
         {/* body */}
-        <ul className="p-5">
+        <ul className="flex flex-col px-5 py-8 min-h-[425px] gap-y-[30px] bg-white">
           {list?.map((listItem, index) => (
-            <li className="flex my-4 space-x-2">
+            <li className="flex  space-x-4">
               {listItem.icon && (
                 <span>
-                  <Check className="w-5 h-5" />
+                  <Check className="" />
                 </span>
               )}{" "}
-              <span>{listItem.text}</span>
+              <span className="text-xl text-black-70">{listItem.text}</span>
             </li>
           ))}
         </ul>
-        <hr className="m-5 bg-gray-700 border-0 h-[0.9px] rounded-full" />
         {/* footer */}
-        <div className="flex flex-col space-y-5 p-5">
-          <p className="p-2 text-center">{description}</p>
-          <button className="py-5 px-10 mx-auto bg-black text-white rounded-md">
+        <div className="bg-white">
+        <hr className="mx-5 bg-black-50 border-0 h-[0.9px] rounded-full" />
+        <div className="flex flex-col space-y-9 p-5 pb-10 bg-white items-center">
+          <p className="p-2 text-center text-xl text-black-80">{description}</p>
+          <button className="py-[15px] px-[40px] text-xl  bg-black text-white rounded-md font-medium min-h-[60px]">
             Send Proposal
           </button>
         </div>
         <>{children}</>
       </div>
-    );
-  }
-  return (
-    <div className={`shadow-[0_4px_4px_0_#c3c3c3] max-w-full`}>
-      <div
-        className={`rounded-md p-6 flex flex-col space-y-2 ${
-          center && "text-center justify-center items-start "
-        } `}
-      >
-        {image && <img className="w-full " src={`${image}`} />}
-        <h3 className="text-2xl font-semibold">Email Marketing Services</h3>
-        <div className="flex flex-col space-y-2 font-sm">
-          <h4>Email Marketing Management Services</h4>
-          <h4>Enterprise Email Marketing Management Services</h4>
-          <h4>B2C Email Marketing Management Services</h4>
-          <h4>Email Marketing Design</h4>
-        </div>
-        <div className="w-full pt-2">
-          {button && <Button text={`${button}`} red />}
-        </div>
       </div>
-    </div>
-  );
+    );
+
+
 };
 
 export default Card;
