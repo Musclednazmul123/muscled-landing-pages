@@ -18,22 +18,14 @@ export interface ServerProps{
 export interface tableContentProps{
   tableTitle:string,
   tableIcon:JSX.Element,
-  tableWidth:string,
+  tableWidth?:string,
   subSection?:{
       title:string,
       link:string,
   },
-  list:{
-  items:string[],    
-  itemsGap?:number,
-  padding?:{
-  t:string,
-  r:string,
-  b:string,
-  l:string,    
-  },
-  fontSize?:string,
-  }
+
+  List:JSX.Element
+  
   }
   
 export interface detailGeneratorProps{
