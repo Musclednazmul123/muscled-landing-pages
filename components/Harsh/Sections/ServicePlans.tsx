@@ -34,7 +34,7 @@ const ServicePlans:FC = () => {
 
           <Table className="table-fixed">
             <thead>
-              <tr className="border-bottom">
+              <tr className="border border-b-black border-opacity-10">
                 <Th
                   className="text-left text-white rounded-tl-xl"
                   content="Features"
@@ -57,7 +57,7 @@ const ServicePlans:FC = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-left text-white font-normal"
                   content="Billing"
@@ -66,7 +66,7 @@ const ServicePlans:FC = () => {
                 <Td content="Billed in 30-min.increments" type="standard" />
                 <Td content="Billed in 30-min.increments" type="premium" />
               </tr>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Minimum Service Request"
@@ -76,7 +76,7 @@ const ServicePlans:FC = () => {
                 <Td content="1 hour" type="standard" />
                 <Td content="1.5 hour" type="premium" />
               </tr>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Online Customer Support System"
@@ -101,7 +101,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom-table-footer ">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10-table-footer ">
                 <Th
                   className="text-white text-left font-normal"
                   content="Rates"
@@ -183,7 +183,7 @@ const ServicePlans:FC = () => {
         <div className="text-center  mb-10">
           <Table className="table-fixed">
             <thead>
-              <tr className="border-bottom">
+              <tr className="border border-b-black border-opacity-10">
                 <Th
                   className="text-left text-white rounded-tl-xl"
                   content="Features"
@@ -201,7 +201,7 @@ const ServicePlans:FC = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="text-center text-black-80 border-bottom ">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10 ">
                 <Th
                   className="text-left text-white font-normal"
                   content="Recommended for:"
@@ -209,19 +209,19 @@ const ServicePlans:FC = () => {
                 <Td content="WordPress sites 500 or less pages" type="basic" />
                 <Td content="WordPress sites 500+ pages" type="standard" />
               </tr>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th className="text-white text-left font-normal" content="" />
 
                 <Td content="Primarily static content" type="basic" />
                 <Td content="WooCommerce & Shopify" type="standard" />
               </tr>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th className="text-white text-left font-normal" content="" />
                 <Td type="basic" content="" />
                 <Td type="standard" content="Custom & dynamic functionality" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Website Updates M-F 8a-5p EST"
@@ -241,7 +241,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="UX Design, Website Maintenance, Project Management, Visitor & UX Analysis, Client Support, Web Development & Web Infrastructure Hours"
@@ -250,7 +250,7 @@ const ServicePlans:FC = () => {
                 <Td type="standard" content="Additional cost: $150/hour" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="If 1 business day turnaround is requested"
@@ -259,7 +259,7 @@ const ServicePlans:FC = () => {
                 <Td type="standard" content="$250/hour" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="WordPress Quarterly Upgrades/Security Patches"
@@ -272,7 +272,7 @@ const ServicePlans:FC = () => {
                 <Td type="standard" content="" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Enterprise WordPress, WooCommerce & Shopify Quarterly Upgrades/Security Patches"
@@ -285,7 +285,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Daily Security Scan"
@@ -305,7 +305,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Daily full-site backup and storage at 3rd party location (for easy restore)"
@@ -325,7 +325,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Urgent Support/Restore if Website is Hacked"
@@ -345,7 +345,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom-table-footer">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10-table-footer">
                 <Th
                   className="text-white text-left font-normal"
                   content="Monthly Investment"
@@ -409,7 +409,7 @@ const ServicePlans:FC = () => {
         <div>
           <Table className="table-fixed">
             <thead>
-              <tr className="border-bottom">
+              <tr className="border border-b-black border-opacity-10">
                 <Th
                   className="text-left text-white rounded-tl-xl"
                   content="Features"
@@ -432,7 +432,7 @@ const ServicePlans:FC = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-left text-white font-normal"
                   content="Recommended for:"
@@ -445,21 +445,21 @@ const ServicePlans:FC = () => {
                   type="premium"
                 />
               </tr>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th className="text-white text-left font-normal" content="" />
 
                 <Td content="Primarily static content" type="basic" />
                 <Td content="WooCommerce & Shopify" type="standard" />
                 <Td content="" type="premium" />
               </tr>
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th className="text-white text-left font-normal" content="" />
                 <Td type="basic" content="" />
                 <Td type="standard" content="Custom & dynamic functionality" />
                 <Td type="premium" content="" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Website Updates M-F 8a-5p EST"
@@ -485,7 +485,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="UX Design, Website Maintenance, Project Management, Visitor & UX Analysis, Client Support, Web Development & Web Infrastructure Hours"
@@ -499,7 +499,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Typical hours spent and allocated to website UI/UX improvements & refreshed site content as requested by the client"
@@ -515,7 +515,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Unused hours roll to the next month & accrue 1/4ly"
@@ -541,7 +541,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="FuelTankFX system to ensure delivery and transparency of investment"
@@ -567,7 +567,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Proactive quarterly UX, A/B Testing, & Website Performance: Strategy & Strategy Execution (With excess accrued hours)"
@@ -593,7 +593,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Unit Tests by a SME for Functionality Synthetic Browser Monitoring"
@@ -603,7 +603,7 @@ const ServicePlans:FC = () => {
                 <Td type="premium" content="Advanced" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="If client requesed & desired – Git and/or staging environment utilized by WebFX developers"
@@ -629,7 +629,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="SSL, Web Hosting & Domain Hosting Expiration Monitoring & Renewal Support"
@@ -655,7 +655,7 @@ const ServicePlans:FC = () => {
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="WordPress Quarterly Upgrades/Security Patches"
@@ -671,7 +671,7 @@ web infrastructure to support security patch implementation is deducted from the
                 <Td type="premium" content="" />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Enterprise WordPress, WooCommerce & Shopify Quarterly Upgrades/Security Patches"
@@ -692,7 +692,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Daily Security Scan"
@@ -718,7 +718,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Website Uptime Monitoring (Every minute)"
@@ -744,7 +744,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Daily full-site backup and storage at 3rd party location (for easy restore)"
@@ -770,7 +770,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Urgent Support/Restore if Website is Hacked"
@@ -796,7 +796,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="TeamworkFX communication & project management portal"
@@ -822,7 +822,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Server monitoring & quarterly upgrades using unused 1/4ly hours"
@@ -848,7 +848,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="One time server migration (if needed)"
@@ -874,7 +874,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Dedicated UX Analyst"
@@ -900,7 +900,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="If 1 business day turnaround is requested"
@@ -919,7 +919,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Emergency Evening Support M-F 5p-9p EST"
@@ -934,7 +934,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10">
                 <Th
                   className="text-white text-left font-normal"
                   content="Emergency Weekend Support Sat-Sun 9a-5p EST"
@@ -949,7 +949,7 @@ web infrastructure to support security patch implementation is deducted from the
                 />
               </tr>
 
-              <tr className="text-center text-black-80 border-bottom-table-footer">
+              <tr className="text-center text-black-80 border border-b-black border-opacity-10-table-footer">
                 <Th
                   className="text-white text-left font-normal"
                   content="Monthly Investment"

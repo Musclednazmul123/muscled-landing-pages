@@ -10,10 +10,11 @@ const TableOfContent: FC = () => {
   let [isOpen,setIsOpen]= useState<boolean>(true);
   return (
     <TableFawaz
-    className="border border-black-30 h-fit"
+    className="border border-black-30 h-fit sticky top-0"
     bgColor="bg-[#F2F2F2]"
 		titleColor="text-black"
 		titleIconColor="black"
+    contentsClassName="pl-4"
 		isOpen={isOpen}
 		setIsOpen={() => setIsOpen((prev) => !prev)}   
      contents={
