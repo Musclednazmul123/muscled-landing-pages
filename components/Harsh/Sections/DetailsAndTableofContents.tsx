@@ -11,7 +11,7 @@ const DetailsAndTableofContents:FC = () => {
           <div className="space-y-10">
             {/* First */}
             <div className="space-y-10">
-              <h2 className="text-4xl">
+              <h2 className="text-[40px] leading-[52px]">
                 What does website maintenance consist of?
               </h2>
               <div className='text-xl'>
@@ -117,7 +117,7 @@ const DetailsAndTableofContents:FC = () => {
                 </p>
               </div>
 
-              <h2 className="text-4xl">
+              <h2 className="text-[40px] leading-[52px]">
                 What types of regular updates are included in website
                 maintenance services?
               </h2>
@@ -241,7 +241,7 @@ const DetailsAndTableofContents:FC = () => {
 
             {/* Second */}
             <div className="space-y-10">
-              <h2 className="text-4xl">
+              <h2 className="text-[40px] leading-[52px]">
                 What does website maintenance not include?
               </h2>
 
