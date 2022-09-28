@@ -15,7 +15,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 	const router =useRouter()
 	return (
         <div className=" bg-black-70 px-3 lg:px-0">
-		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
+		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-x-[57px] lg:justify-between">
 			<div className="max-w-[640px]">
 				{/* //? Pagination -- this should be dynamic? */}
 				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
@@ -24,11 +24,11 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 					<span>Services</span>
 				</p>
 
-				<h1 className="hero-title text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
+				<h1 className="hero-title text-[56px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
 					{title}
 				</h1>
 
-				<p className="hero-description text-base md:text-2xl leading-normal my-7">
+				<p className="hero-description text-2xl md:text-2xl leading-[36px] my-7">
 					{/* {description} */}
 					Landing pages play a crucial role in the marketing and advertising of your business. At <span className="highlight">Muscled</span> we can provide you with a professionally designed landing page that will have a greater impact in your sales, boost your lead quality and increase your revenue.
 				</p>
@@ -39,7 +39,7 @@ const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
 					<Input
 						type="text"
 						placeholder="Enter Your Website Link"
-						className="text-sm flex-1 md:text-lg"
+						className="text-sm flex-1 md:text-lg h-[60px]"
 					/>
 					<Button bgColor="bg-black" textColor="text-white">
 						<span className="text-sm md:text-lg">
