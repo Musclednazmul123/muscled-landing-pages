@@ -7,7 +7,7 @@ const PromotionThree = () => {
                 <p className='text-left text-2xl md:text-4xl mb-24 font-bold leading-normal'>
                     You will get all the advantages that come with professional landing page design services
                 </p>
-                <div className="promo-content flex flex-col items-start justify-center gap-4">
+                <div className="promo-content flex flex-col items-start justify-center gap-4 text-xl">
                     <p>By working with our professional landing page design team you'll have access to several benefits:</p>
                     <ol>
                         <li>Receive a custom conversion strategy and design for every landing page.</li>

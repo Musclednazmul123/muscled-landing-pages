@@ -6,7 +6,7 @@ import ButtonRounded from '../ButtonRounded';
 const PromotionOne: FC<PromotionOneProps> = ({title}) => {
     return (
         <>
-            <div className='promotion-section px-6 md:px-24 mb-12'>
+            <div className='promotion-section px-6 md:px-24 mb-16'>
                 <div className='promotion-content grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
                     <div className='col-span-1 md:col-span-1 lg:col-span-2'>
                         <h2 className='promotion-title text-2xl md:text-4xl font-bold leading-normal mb-10'>{title}</h2>
