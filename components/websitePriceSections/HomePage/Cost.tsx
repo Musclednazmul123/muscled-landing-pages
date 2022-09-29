@@ -21,26 +21,26 @@ const Cost = () => {
           <div className="py-14 space-y-10 w-[70%] mx-auto">
             <FlexLayout justify="justify-between">
               <h5 className="text-20px font-bold">Number of pages</h5>
-              <Slider percentage={50} tags={["0-10", "10-50", "50-100"]} />
+              <Slider percentage={50} tags={["0-10", "10-50", "50-100","250"]} />
             </FlexLayout>
             <FlexLayout justify="justify-between">
               <h5 className="text-20px font-bold">Style of design</h5>
               <Slider
                 percentage={50}
-                tags={["Simple", "Simple yet attractive", "Attractive"]}
+                tags={["Simple", "Simple yet attractive", "Attractive","World Class"]}
               />
             </FlexLayout>
             <FlexLayout justify="justify-between">
               <h5 className="text-20px font-bold">
                 Copywriting number of pages
               </h5>
-              <Slider percentage={50} tags={["0-5", "5-10", "10-20"]} />
+              <Slider percentage={50} tags={["0-5", "5-10", "10-20","25-50"]} />
             </FlexLayout>
             <FlexLayout justify="justify-between">
               <h5 className="text-20px font-bold">SEO</h5>
               <Slider
                 percentage={50}
-                tags={["10 Keywords", "30 Keywords", "100 Keywords"]}
+                tags={["10 Keywords", "30 Keywords", "100 Keywords","150 Keywords"]}
               />
             </FlexLayout>
             <FlexLayout justify="justify-between">

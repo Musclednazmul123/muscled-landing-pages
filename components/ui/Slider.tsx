@@ -70,7 +70,7 @@ const Slider = ({ tags, percentage }: SliderProp) => {
       ></div>
       <div
         className="absolute rounded-xl h-[40px] w-max px-4 bg-[#D9D9D9] grid place-content-center top-[-10px] z-20"
-        style={{ left: `${knobPosition - 9.6}%` }}
+        style={{ left: `${knobPosition - 15}%` }}
       >
         <FlexLayout>
           <div className="rotate-[90deg]">
