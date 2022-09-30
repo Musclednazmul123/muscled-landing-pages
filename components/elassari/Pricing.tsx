@@ -9,17 +9,14 @@ interface IProps {
 
 const Pricing: NextPage<IProps> = ({ title, desc, children }) => {
   return (
-    <div className="bg-black h-[1395px] rounded-md text-white p-10">
+    <div className="bg-[#1F1818] pb-[150px] p-10 rounded-md text-white ">
       <h4 className="mb-4 text-white">{title}</h4>
       <p className="text-lg">{desc}</p>
 
-      <div className="flex flex-col justify-between mt-16 h-[1045px]">
-        {/* @ts-ignore */}
-        {children.map((item: JSX.Element, idx: number) => (
-          <div key={title + idx.toString()} onClick={() => console.log(idx)}>
-            {item}
-          </div>
-        ))}{" "}
+      <div className="space-y-24 mt-16  w-full">
+        
+            {children}
+        
       </div>
     </div>
   );

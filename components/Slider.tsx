@@ -56,7 +56,12 @@ handleClassName }: SliderProp) => {
     const element = sliderContainerRef.current;
 
     const handleMove = (e: PointerEvent) => {
-      const realPosition = e.clientX - (element?.offsetLeft ?? 0);
+        console.log(e.clientX);
+        console.log(element?.getBoundingClientRect().width)
+        console.log(element?.offsetLeft);
+        // console.log(element?.offsetWidth);
+        console.log(element?.getBoundingClientRect().left)
+      const realPosition = e.clientX - (element?.getBoundingClientRect().left ?? 0);
       const perc = (realPosition / (element?.offsetWidth ?? -1)) * 100;
       if (perc >= 0 && perc <= 100) {
         setCurIdx(percentageToArrayIndex(perc));
@@ -98,7 +103,7 @@ handleClassName }: SliderProp) => {
       ></div>
       <div
         className={`absolute  h-[40px] w-max px-4  grid 
-        place-content-center top-[-10px] z-20 ${handleTextColor} 
+        place-content-center top-[-10px] z-20  
         ${handleBgColor} ${handleClassName}`}
         style={{ left: `${knobPosition - 15}%` }}
       >
@@ -106,7 +111,7 @@ handleClassName }: SliderProp) => {
           <div className="rotate-[90deg]">
             <ChevronDown  fill={`${handleIconFill}`}/>
           </div>
-          <p className="text-black w-fit font-semibold select-none">
+          <p className={`${handleTextColor} w-fit font-semibold select-none`}>
             {tags[curIdx]}
           </p>
           <div className="rotate-[-90deg]">
