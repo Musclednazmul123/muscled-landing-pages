@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import React, { RefObject, useEffect, useRef, useState,FC } from "react";
 import FlexLayout from "./FlexLayout";
 import ChevronDown from "./icons/ChevronDown";
 import Ellipse from "./icons/Ellipse";
@@ -7,6 +7,26 @@ interface SliderProp {
   tags: string[];
   percentage: number;
   sliderColor: string;
+}
+interface EllipsesProps{
+  arrayLength:number,delta:number
+}
+
+let Ellipses:FC<EllipsesProps>=({arrayLength,delta})=>{
+let ellipses:JSX.Element[]=[];
+let iterations:number=arrayLength<=3?2:arrayLength-2
+for (let i=1;i<=iterations;i++){
+  ellipses.push(<div
+  key={i}
+  className={`absolute`}
+  style={{ left: `${i * delta}%`, top: "30%" }}
+>
+  <Ellipse />
+</div>)
+}
+return <>
+{ellipses}
+</>;
 }
 
 const Slider = ({ tags, percentage, sliderColor }: SliderProp) => {
@@ -56,22 +76,16 @@ const Slider = ({ tags, percentage, sliderColor }: SliderProp) => {
       ref={sliderContainerRef}
       className="rounded-full bg-[#333333] w-[50%] h-5 relative cursor-pointer"
     >
-      {[1, 2].map((i) => (
-        <div
-          key={i}
-          className={`absolute`}
-          style={{ left: `${i * delta}%`, top: "30%" }}
-        >
-          <Ellipse />
-        </div>
-      ))}
+
+      <Ellipses arrayLength={tags.length} delta={delta} />
+      
       <div
         className={`${sliderColor} rounded-full h-full bg-red-600 relative z-10`}
         style={{ width: `${knobPosition}%` }}
       ></div>
       <div
-        className="absolute rounded-full  font-semibold h-10	 w-fit px-1 md:px-6 md:py-6 bg-white grid place-content-center top-[-10px] md:top-[-16px] z-20"
-        style={{ left: `${knobPosition - 9.6}%` }}
+        className="absolute rounded-full  font-semibold h-10	 w-max px-1 md:px-6 md:py-6 bg-white grid place-content-center top-[-10px] md:top-[-16px] z-20"
+        style={{ left: `${knobPosition - 22}%` }}
       >
         <FlexLayout>
           <div className="rotate-[90deg]">
