@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import FlexLayout from "./FlexLayout";
 import Button from "../../../Fawwaz/Button";
-import Slider from "./Slider";
+import Slider from "../../../Slider";
 import { RangeSliderSectionProps } from 'components/Fawwaz/component.type';
 
 const RangeSliderSection: FC<RangeSliderSectionProps> = ({
@@ -23,45 +23,66 @@ const RangeSliderSection: FC<RangeSliderSectionProps> = ({
             <div className="py-14 space-y-10 mx-auto">
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">Number of pages</h5>
-                    <Slider percentage={50} tags={["0-10", "10-50", "50-100"]} sliderColor={'bg-[#0f0d10]'} />
+                    <Slider percentage={50} tags={["0-10", "10-50", "50-100"]}
+                    handleClassName="rounded-full md:p-6"
+                    handleIconFill='fill-black-80' handleBgColor='bg-white' 
+                    timelineColor='bg-black' />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">Style of design</h5>
                     <Slider
                         percentage={50}
                         tags={["Simple", "Simple yet attractive", "Attractive"]}
-                        sliderColor={'bg-[#0f0d10]'}
+                        handleClassName="rounded-full md:p-6"
+                        handleIconFill='fill-black-80' handleBgColor='bg-white' 
+                        timelineColor='bg-black'                       
                     />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">
                         Copywriting number of pages
                     </h5>
-                    <Slider percentage={50} tags={["0-5", "5-10", "10-20"]} sliderColor={'bg-[#0f0d10]'} />
+                    <Slider percentage={50} tags={["0-5", "5-10", "10-20"]}  handleClassName="rounded-full md:p-6"
+                     handleIconFill='fill-black-80' handleBgColor='bg-white'
+                     timelineColor='bg-black'/>
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">SEO</h5>
                     <Slider
                         percentage={50}
                         tags={["10 Keywords", "30 Keywords", "100 Keywords"]}
-                        sliderColor={'bg-[#0f0d10]'}
+                        handleClassName="rounded-full md:p-6"
+                        handleIconFill='fill-black-80' handleBgColor='bg-white' 
+                        timelineColor='bg-black'                       
                     />
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">Responsive Design</h5>
-                    <Slider percentage={100} tags={["No", "Maybe", "Yes"]} sliderColor={'bg-[#0f0d10]'} />
+                    <Slider percentage={100} tags={["No", "Maybe", "Yes"]}  
+                    handleClassName="rounded-full md:p-6"
+                     handleIconFill='fill-black-80' handleBgColor='bg-white'
+                     timelineColor='bg-black'/>
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">Database Integration</h5>
-                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
+                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]}  
+                    handleClassName="rounded-full md:p-6"
+                    handleIconFill='fill-black-80' handleBgColor='bg-white'
+                    timelineColor='bg-black'/>
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">Ecommerce Functionality</h5>
-                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
+                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]}  
+                    handleClassName="rounded-full md:p-6"
+                    handleIconFill='fill-black-80' handleBgColor='bg-white'
+                    timelineColor='bg-black'/>
                 </FlexLayout>
                 <FlexLayout justify="justify-between">
                     <h5 className="text-xs md:text-[20px] font-bold">CMS</h5>
-                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]} sliderColor={'bg-[#0f0d10]'} />
+                    <Slider percentage={50} tags={["None", "Basic", "Ultra"]}  
+                    handleClassName="rounded-full md:p-6"
+                     handleIconFill='fill-black-80' handleBgColor='bg-white'
+                     timelineColor='bg-black'/>
                 </FlexLayout>
                 <FlexLayout justify="justify-end">
                     <div className="md:text-[20px] w-[50%] ">

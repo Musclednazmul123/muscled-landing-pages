@@ -1,35 +1,48 @@
 import React, { RefObject, useEffect, useRef, useState,FC } from "react";
-import FlexLayout from "./FlexLayout";
-import ChevronDown from "./icons/ChevronDown";
-import Ellipse from "./icons/Ellipse";
+import FlexLayout from "./layout/FlexLayout";
+import ChevronDown from "./ui//icons/ChevronDown";
+import Ellipse from "./ui//icons/Ellipse";
 
 interface SliderProp {
   tags: string[];
   percentage: number;
-  sliderColor: string;
+  timelineColor?:string;
+  rangeColor?:string;
+  handleBgColor?:string;
+  handleTextColor?:string;
+  handleIconFill?:string;
+  handleClassName?:string;
 }
+
 interface EllipsesProps{
-  arrayLength:number,delta:number
-}
-
-let Ellipses:FC<EllipsesProps>=({arrayLength,delta})=>{
-let ellipses:JSX.Element[]=[];
-let iterations:number=arrayLength<=3?2:arrayLength-2
-for (let i=1;i<=iterations;i++){
-  ellipses.push(<div
-  key={i}
-  className={`absolute`}
-  style={{ left: `${i * delta}%`, top: "30%" }}
->
-  <Ellipse />
-</div>)
-}
-return <>
-{ellipses}
-</>;
-}
-
-const Slider = ({ tags, percentage, sliderColor }: SliderProp) => {
+    arrayLength:number,delta:number
+  }
+  
+  let Ellipses:FC<EllipsesProps>=({arrayLength,delta})=>{
+  let ellipses:JSX.Element[]=[];
+  let iterations:number=arrayLength<=3?2:arrayLength-2
+  for (let i=1;i<=iterations;i++){
+    ellipses.push(<div
+    key={i}
+    className={`absolute`}
+    style={{ left: `${i * delta}%`, top: "30%" }}
+  >
+    <Ellipse />
+  </div>)
+  }
+  return <>
+  {ellipses}
+  </>;
+  }
+  
+const Slider = ({ tags,
+    percentage,
+timelineColor="bg-[#C40000]",
+rangeColor="bg-[#333333]",
+handleBgColor="bg-[#D9D9D9]",
+handleTextColor="text[#1F1A45]",
+handleIconFill="fill-[#79768F]",
+handleClassName }: SliderProp) => {
   const sliderContainerRef: RefObject<HTMLDivElement> = useRef(null);
   const delta = tags.length > 0 ? 100 / tags.length : 0;
   const [curIdx, setCurIdx] = useState(percentageToArrayIndex(percentage));
@@ -74,28 +87,30 @@ const Slider = ({ tags, percentage, sliderColor }: SliderProp) => {
   return (
     <div
       ref={sliderContainerRef}
-      className="rounded-full bg-[#333333] w-[50%] h-5 relative cursor-pointer"
+      className={`rounded-full  w-[50%] h-5 relative cursor-pointer ${rangeColor}`}
     >
 
-      <Ellipses arrayLength={tags.length} delta={delta} />
+       <Ellipses arrayLength={tags.length} delta={delta} />
       
       <div
-        className={`${sliderColor} rounded-full h-full bg-red-600 relative z-10`}
+        className={`rounded-full h-full relative z-10 ${timelineColor} `}
         style={{ width: `${knobPosition}%` }}
       ></div>
       <div
-        className="absolute rounded-full  font-semibold h-10	 w-max px-1 md:px-6 md:py-6 bg-white grid place-content-center top-[-10px] md:top-[-16px] z-20"
-        style={{ left: `${knobPosition - 22}%` }}
+        className={`absolute  h-[40px] w-max px-4  grid 
+        place-content-center top-[-10px] z-20 ${handleTextColor} 
+        ${handleBgColor} ${handleClassName}`}
+        style={{ left: `${knobPosition - 15}%` }}
       >
         <FlexLayout>
           <div className="rotate-[90deg]">
-            <ChevronDown fill="fill-black	" />
+            <ChevronDown  fill={`${handleIconFill}`}/>
           </div>
-          <p className="text-black w-fit text-center md:text-sm text-[10px] select-none">
+          <p className="text-black w-fit font-semibold select-none">
             {tags[curIdx]}
           </p>
           <div className="rotate-[-90deg]">
-            <ChevronDown fill="fill-black" />
+            <ChevronDown  fill={`${handleIconFill}`}/>
           </div>
         </FlexLayout>
       </div>
