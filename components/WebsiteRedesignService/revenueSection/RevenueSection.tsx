@@ -12,7 +12,7 @@ const RevenueSection = () => {
         <div className="p-3 bg-red-100">
             <div className="flex flex-wrap gap-10 justify-center py-20">
                 <div className="max-w-[760px] space-y-7">
-                    <h2 className="text-4xl">
+                    <h2 className="text-[40px] leading-[40px] font-bold">
                         Grow your revenue with website redesign services.
                     </h2>
                     <p className="text-xl leading-5">

@@ -17,10 +17,11 @@ const TableOfContent: FC<TableOfContentProps> = ({
 }) => {
 
 	return (
-		<div className={`order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[400px] ${className}`} onClick={() => setIsOpen()}>
+		<div className={`order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[400px] self-start sticky top-0 ${className}`} onClick={() => setIsOpen()}>
 			<div
 				className={`${bgColor ? bgColor : "bg-[#3E5661]"} 
-				 rounded-tl-[10px] rounded-tr-[10px] p-4 flex justify-between items-center cursor-pointer `}>
+				 rounded-tl-[10px] rounded-tr-[10px] p-4 flex justify-between items-center
+				  cursor-pointer w-full ${!isOpen && "rounded-[10px]" }`}>
 				<h2 className={`flex items-center text-lg gap-2 ${
 					titleColor ? titleColor : "text-white"
 				}`}>

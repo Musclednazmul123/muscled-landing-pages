@@ -7,9 +7,9 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const WebsiteRedesignServicesContent = () => {
   return (
     <section>
-      <div>
+      <div className="text-[20px] w-[760px]">
         <article>
-          <h3 className="leading-[154%] text-3xl	">
+          <h3 className="leading-[154%] text-[40px]">
             Website redesign service options from Muscled Digital Agency
           </h3>
           <br />
@@ -34,7 +34,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         <article>
-          <h3 className="leading-[154%] text-3xl	">
+          <h3 className="leading-[154%] text-[40px]	">
             What should you expect from our website redesign service?{" "}
           </h3>
           <br />
@@ -121,7 +121,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         <article>
-          <h3 className="leading-[154%] text-3xl">
+          <h3 className="leading-[154%] text-[40px] mb-8">
             Web Design Services from a digital agency that cares about results.
           </h3>
           <p>
@@ -182,10 +182,11 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         {/* Portfolio Card */}
-        <Section>
+        <Section className="w-[667px]">
           <div className="flex flex-col lg:flex-row py-12 px-6 justify-between gap-2 items-center bg-[#1F1F1F] rounded-lg ">
             <div className="flex flex-col text-accent-white lg:w-2/4 items-center lg:items-start">
-              <h4 className=" text-accent-white font-semibold leading-10 text-center lg:text-start">
+              <h4 className=" text-accent-white font-semibold 
+               text-center lg:text-start text-[30px] leading-[48.75px]">
                 We don’t want to tell you about the work we do, we want to{" "}
                 <span className="text-red-600"> SHOW </span>
                 you.
@@ -201,7 +202,7 @@ const WebsiteRedesignServicesContent = () => {
             </div>
 
             <div className="flex flex-col text-accent-white justify-between w-fit items-center leading-8 space-y-1 font-semibold text-xl">
-              <p className="text-center lg:leading-7  w-3/4 sm:w-2/3 ">
+              <p className="text-center lg:leading-7  w-3/4 sm:w-2/3">
                 WE’VE BUILT OVER
               </p>
               <div className="flex gap-2 md:gap-2">
@@ -211,7 +212,7 @@ const WebsiteRedesignServicesContent = () => {
                 <CounterBox className="text-[#C40000]">6</CounterBox>
               </div>
               <p className="text-center text-xs text-[#FFFFFFB2] font-normal">
-                <span className="text-lg text-white font-semibold">WEBSITES</span> <br />
+                <span className="text-lg text-white font-semibold text-[20px]">WEBSITES</span> <br />
                 in a variety of industries
               </p>
             </div>
@@ -221,7 +222,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
         <br />
         <article>
-          <h3 className="text-3xl">Why do you need a website redesign service?</h3>
+          <h3 className="text-[40px]">Why do you need a website redesign service?</h3>
           <br />
           <p>
             Do you find yourself falling short of your online marketing goals?
@@ -236,7 +237,7 @@ const WebsiteRedesignServicesContent = () => {
             is what you need to thrive.
           </p>
           <br />
-          <p className="font-bold	text-lg	">
+          <p className="font-bold	text-[24px]	">
             1.Your website is an extension of your company’s identity.
           </p>
           <br />
@@ -265,7 +266,7 @@ const WebsiteRedesignServicesContent = () => {
             instead of those coming from cookie-cutters.
           </p>
           <br />
-          <p className="font-bold	text-lg	">
+          <p className="font-bold	text-[24px]	">
             2.Strengthening your brand takes a great web redesign.
           </p>
           <br />
@@ -284,7 +285,7 @@ const WebsiteRedesignServicesContent = () => {
             most about how it will improve your profit.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             3.Generating more leads still leans toward having an effective
             website redesign.
           </p>
@@ -303,7 +304,7 @@ const WebsiteRedesignServicesContent = () => {
             missing once your improved site goes live.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             4.A better website is better at capturing a user’s attention.
           </p>
           <br />
@@ -322,7 +323,7 @@ const WebsiteRedesignServicesContent = () => {
             through modern, user-friendly, and professional design standards.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             5.A website redesign is needed to follow the ever-changing standard
             of professionalism.
           </p>
@@ -358,7 +359,7 @@ const WebsiteRedesignServicesContent = () => {
         <br />
         <br />
         <article>
-          <h3 className="text-3xl">Why do you need a website redesign?</h3>
+          <h3 className="text-[40px]">Why do you need a website redesign?</h3>
           <br />
           <p>
             Consider these questions below to see if you should invest in a
@@ -366,7 +367,7 @@ const WebsiteRedesignServicesContent = () => {
             on what you will want to prioritize for the growth of your business.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             6 website redesign questions you need to ask
           </p>
           <br />
@@ -380,7 +381,7 @@ const WebsiteRedesignServicesContent = () => {
           </ol>
           <br />
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             1. Is it easy for my users to find what they’re looking for?
           </p>
           <br />
@@ -404,7 +405,7 @@ const WebsiteRedesignServicesContent = () => {
             too. It means that you need to redesign your website.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             2. Am I making good sales based on the visitors I get?
           </p>
           <br />
@@ -430,7 +431,7 @@ const WebsiteRedesignServicesContent = () => {
             you’re going to end up paying a lot of money to just lose customers.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             3. Am I on the same ground as my competitors?
           </p>
           <br />
@@ -456,7 +457,7 @@ const WebsiteRedesignServicesContent = () => {
             losing.
           </p>
           <br />
-          <p className="font-bold	text-lg">4. Do I make helpful content?</p>
+          <p className="font-bold	text-[24px]">4. Do I make helpful content?</p>
           <br />
           <p>
             Your visitors are always looking for something; they won’t find your
@@ -475,7 +476,7 @@ const WebsiteRedesignServicesContent = () => {
             online presence.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             5. Does my website represent my business well?
           </p>
           <br />
@@ -501,7 +502,7 @@ const WebsiteRedesignServicesContent = () => {
             Muscled Digital Agency to handle it for you.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             6. Am I making the most of my website’s visitors?
           </p>
           <br />
@@ -531,13 +532,13 @@ const WebsiteRedesignServicesContent = () => {
         <br />
         <br />
         <article>
-          <h3 className="text-3xl">What should I focus on with my website redesign service?</h3>
+          <h3 className="text-[40px]">What should I focus on with my website redesign service?</h3>
           <br />
           <p>
             The list below might help you focus on what your business needs.
           </p>
           <br />
-          <p className="font-bold	text-lg">1. Focus on User Experience</p>
+          <p className="font-bold	text-[24px]">1. Focus on User Experience</p>
           <br />
           <p>
             One of the most important aspects of a website redesign project is
@@ -598,7 +599,7 @@ const WebsiteRedesignServicesContent = () => {
             people and earn more money online.
           </p>
           <br />
-          <p className="font-bold	text-lg">2. Don't forget the visuals</p>
+          <p className="font-bold	text-[24px]">2. Don't forget the visuals</p>
           <br />
           <p>
             A part of your website’s performance relies on the visuals you’ve
@@ -642,7 +643,7 @@ const WebsiteRedesignServicesContent = () => {
             generating more valuable leads for your company.
           </p>
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             3. Consider Search Engine Optimization (SEO)
           </p>
           <br />
@@ -687,10 +688,10 @@ const WebsiteRedesignServicesContent = () => {
         <br />
 
         <article>
-          <h3 className="text-3xl">FAQs for Web Redesign Services</h3>
+          <h3 className="text-[40px]">FAQs for Web Redesign Services</h3>
           <br />
           <br />
-          <p className="font-bold	text-lg">
+          <p className="font-bold	text-[24px]">
             What are website redesign services?
           </p>
           <br />
@@ -701,7 +702,7 @@ const WebsiteRedesignServicesContent = () => {
             development work, and search engine optimization.
           </p>
           <br />
-          <p className="font-bold	text-lg">How much does it usually cost?</p>
+          <p className="font-bold	text-[24px]">How much does it usually cost?</p>
           <br />
           <p>
             It depends on the size of your site, your design, development

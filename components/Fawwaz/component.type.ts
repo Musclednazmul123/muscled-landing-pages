@@ -106,6 +106,7 @@ export interface TableOfContentProps {
 	isOpen: Boolean;
 	className?:string;
 	contentsClassName?:string;
+	width?:string;
 	setIsOpen: () => void;
 }
 
@@ -180,4 +181,14 @@ export interface TestmonailProps {
 export interface RangeSliderSectionProps {
 	bgColor:string,
 	textColor:string,
+}
+export interface WebRedesignHeroSectionProps{
+	title:string;
+	titleClassNames?:string;
+	description:string;
+	descriptionTextColor?:string;
+	heroSVG:JSX.Element;
+	children?:any;
+	contentWidth?:string;
+	descriptionClassName?:string;
 }
