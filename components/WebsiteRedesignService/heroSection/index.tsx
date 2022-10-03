@@ -15,10 +15,10 @@ const Hero:FC = () => {
             descriptionClassName="text-[20px] leading-[30px]">
                 {
                     <div className='flex gap-x-3'>
-                        <Button textSize='text-[20px]'className='w-[176px] h-[60px]'
+                        <Button textSize='text-xl'className='w-[176px] h-[60px]'
                          textColor='text-black' bgColor='bg-white'>View portfolio</Button>
                         <Button textColor='text-white' className='font-[600] w-[296px] h-[60px]'
-                         bgColor='bg-black'>Build a custom quote</Button>
+                         bgColor='bg-black' textSize='text-xl'>Build a custom quote</Button>
                     </div>
                 }
     </HeroSection>
