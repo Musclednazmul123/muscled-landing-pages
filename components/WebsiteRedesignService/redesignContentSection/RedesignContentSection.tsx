@@ -21,26 +21,27 @@ const RedesignContentSection = () => {
 
     return (
         <div>
-            <Section className="grid grid-cols-1 lg:grid-cols-4 py-12 md:py-32 gap-10">
+            <Section className="grid grid-cols-2 lg:grid-cols-4 py-12 md:py-32 gap-10 relative ">
                 <div className="order-2 lg:order-1 lg:col-span-2">
 
                     {/* Website redesign service options */}
                     <WebsiteRedesignServicesContent />
                 </div>
                 <TableOfContent
-
                     bgColor="bg-[#F2F2F2]"
                     titleColor="text-black"
                     titleIconColor="black"
+                    className='border border-black border-opacity-[30%] rounded-[10px]'
+                    contentsClassName='pl-5'
                     isOpen={isOpen}
                     setIsOpen={() => setIsOpen((prev) => !prev)}
                     contents={contentsOfWRS.map((content, key) => (
                         <IconItem
                             key={key}
                             title={content}
-                            icon={<ChevronDoubleRightIcon className=" w-5 h-4" />}
+                            icon={<ChevronDoubleRightIcon className=" w-5 h-4 " />}
 
-                        />
+                        className="mb-6 items-center"/>
                     ))}
 
                 />

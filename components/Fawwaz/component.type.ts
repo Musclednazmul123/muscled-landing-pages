@@ -106,6 +106,7 @@ export interface TableOfContentProps {
 	isOpen: Boolean;
 	className?:string;
 	contentsClassName?:string;
+	width?:string;
 	setIsOpen: () => void;
 }
 
