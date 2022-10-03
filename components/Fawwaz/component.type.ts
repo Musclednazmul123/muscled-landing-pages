@@ -182,3 +182,13 @@ export interface RangeSliderSectionProps {
 	bgColor:string,
 	textColor:string,
 }
+export interface WebRedesignHeroSectionProps{
+	title:string;
+	titleClassNames?:string;
+	description:string;
+	descriptionTextColor?:string;
+	heroSVG:JSX.Element;
+	children?:any;
+	contentWidth?:string;
+	descriptionClassName?:string;
+}
