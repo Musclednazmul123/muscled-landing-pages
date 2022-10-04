@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Section } from "../Fawwaz/Sections";
 import { useRouter } from "next/router";
 import { Input } from "../Fawwaz/Form";
 
@@ -17,8 +16,8 @@ const CMSHero: FC = () => {
     <div>
       <div className="bg-black/[0.7] flex flex-col xl:flex-row">
         <div className="xl:mx-[55px]">
-      <Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
-        <div className="max-w-[690px]">
+      <div className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
+        <div className="max-w-[720px]">
           <p className="text-white text-lg font-medium space-x-2 cursor-pointer">
             <span>Home {router.asPath.replace("/", " > ")}</span>
           </p>
@@ -44,14 +43,15 @@ const CMSHero: FC = () => {
               placeholder="Enter Your Website Link"
               className="text-sm md:text-lg xl:h-[60px] h-[40px] xl:w-[470px] w-[287px]"
             />
-            <button className="bg-black text-white font-poppins xl:py-[15px] py-[10px] px-[20px] xl:px-[45px] rounded-md">
+            <button className="bg-black text-white font-poppins xl:py-[15px] py-[10px] px-[20px] xl:px-[45px]
+             rounded-md text-xl font-bold">
               Send Proposal
             </button>
           </div>
         </div>
 
         {/* Right Side */}
-        <div className="xl:ml-12 mx-auto">
+        <div className="xl:ml-12 mx-auto w-[436px]">
           <div className="max-w-[640px] max-h-[640px] flex flex-col justify-center">
             <div className="my-1">
               <Rectangle
@@ -87,7 +87,7 @@ const CMSHero: FC = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </div>
     </div>
     </div>
     </div>
