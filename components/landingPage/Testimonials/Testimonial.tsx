@@ -6,7 +6,7 @@ import PlayIcon from "../../playIcon";
 export default function Testimonial() {
 	return (
 		<>
-			<div className=" py-20 bg-black mt-[141px]">
+			<div className=" py-20 bg-black mt-[15px]">
 				<div className="">
 					<div className="lg:flex items-start justify-around ">
 						<div className="lg:max-w-[560px]  pb-[76px] space-y-15">
