@@ -31,7 +31,9 @@ const Accordion = ({ header, content }: AccordionProp) => {
       </div>
       {content && (
         <div className={`${isOpen ? "animate-slide" : "animate-slideUp"}`}>
-          <p className={`w-[40%] text-[20px] ml-10 p-4`}>{content}</p>
+          {
+            isOpen && 
+            <p className={`w-[40%] text-[20px] ml-10 p-4`}>{content}</p>}
         </div>
       )}
     </div>
