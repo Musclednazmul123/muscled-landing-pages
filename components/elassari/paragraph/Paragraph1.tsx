@@ -1,15 +1,10 @@
-import {
-  ChevronDoubleRightIcon,
-  ChevronDownIcon,
-} from "@heroicons/react/outline";
 import React from "react";
-import { Paragraph, TableOfContent } from "../";
+import { Paragraph } from "../";
 
 const Paragraph1 = () => {
   return (
-    <div className="flex mx-[100px]">
       <Paragraph
-        className="h-[605px] mx-0"
+        className="h-[605px]"
         title="Muscled's website design services are an investment in the success
         of your site."
       >
@@ -34,23 +29,23 @@ const Paragraph1 = () => {
         </p>
       </Paragraph>
 
-      {/* Table of content */}
-      <TableOfContent
-        content={[
-          "Muscled’s website design services are an investment in the success of your site.",
-          "Award-winning web design. with open pricing.",
-          "Our collectionof websites.",
-          "What is included in Muscled’s Web Design servises.",
-          "Why use Muscled as your website design partner?",
-          "How Are Websites Designed by Muscled?",
-          "Why use Muscled as your website design partner?",
-          "Get Your Company a Website That is Focused on Performance.",
-        ]}
-        IconTable={<ChevronDoubleRightIcon />}
-        IconContent={<ChevronDownIcon />}
-      />
-      {/* End Table of content */}
-    </div>
+      // {/* Table of content */}
+      // <TableOfContent
+      //   content={[
+      //     "Muscled’s website design services are an investment in the success of your site.",
+      //     "Award-winning web design. with open pricing.",
+      //     "Our collectionof websites.",
+      //     "What is included in Muscled’s Web Design servises.",
+      //     "Why use Muscled as your website design partner?",
+      //     "How Are Websites Designed by Muscled?",
+      //     "Why use Muscled as your website design partner?",
+      //     "Get Your Company a Website That is Focused on Performance.",
+      //   ]}
+      //   IconTable={<ChevronDoubleRightIcon />}
+      //   IconContent={<ChevronDownIcon />}
+      // />
+      // {/* End Table of content */}
+    
   );
 };
 

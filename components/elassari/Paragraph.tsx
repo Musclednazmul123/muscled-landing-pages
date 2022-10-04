@@ -10,9 +10,9 @@ interface IProps {
 const Pargraph: NextPage<IProps> = ({ className, title = "", children }) => {
   return (
     <div
-      className={`flex flex-col justify-between text-xl mx-[100px] mb-[65px] w-[760px] ${className}`}
+      className={`flex items-start flex-col justify-between text-xl mb-[65px] w-[760px] ${className}`}
     >
-      <h3 className="text-normal">{title}</h3>
+      <h3 className="text-[40px] leading-[52px]">{title}</h3>
       {/* @ts-ignore */}
       {children.map((item: any, idx: number) => {
         const keys = (
@@ -20,7 +20,7 @@ const Pargraph: NextPage<IProps> = ({ className, title = "", children }) => {
           (Math.random() + idx) * 1000
         ).toString();
         return (
-          <div key={keys} onClick={() => console.log(keys)}>
+          <div className="text-xl leading-[30px]" key={keys} onClick={() => console.log(keys)}>
             {item}
           </div>
         );

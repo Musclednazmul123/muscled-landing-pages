@@ -3,7 +3,7 @@ import { Services } from ".";
 
 const ServicesCard = () => {
   return (
-    <div className="flex justify-between mx-24 mb-[56px]">
+    <div className="flex justify-between mx-24 mb-[56px] mt-[300px]">
       <Services
         services={[
           "Website Optimization Services",
