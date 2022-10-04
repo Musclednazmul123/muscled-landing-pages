@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 import logo from "components/assets/logos/logo1.png";
 import { ChevronDownIcon, MenuIcon } from '@heroicons/react/outline'
-import { useRouter } from 'next/router';
+import Muscled from "components/assets/svg/Muscled";
 import Link from 'next/link';
 
 const Header: FC = () => {
@@ -12,9 +12,9 @@ const Header: FC = () => {
   return (
     <div className='flex bg-white shadow-sm justify-between w-full items-center py-3 px-5 md:px-10 lg:px-20'>
       {/* Logo  */}
-      <div className='relative h-10 w-32'>
-        <Image  src={logo} layout='fill' className=' object-contain' />
-      </div>
+      
+        <Muscled />
+      
 
       {/* Menu */}
       <ul className='space-x-2 text-sm xl:text-md justify-center flex-1 mx-10 hidden lg:flex'>
