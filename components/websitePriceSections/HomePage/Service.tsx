@@ -1,4 +1,3 @@
-import Container from "@/components/layout/Container";
 import FlexLayout from "@/components/layout/FlexLayout";
 import Button from "@/components/ui/Button";
 import FrostCard from "@/components/ui/FrostCard";
@@ -6,20 +5,20 @@ import FrostCard from "@/components/ui/FrostCard";
 const Service = () => {
   return (
     <div className="p-20 text-white bg-[url(/Banner.png)] bg-cover">
-      <Container>
-        <div className="w-[80%] mx-auto">
-          <h2 className="text-[40px] font-bold mb-4 text-center">
+      <div>
+        <div className="mx-auto">
+          <h2 className="text-[40px] font-bold mb-4 text-center text-white">
             One Size Does Not Fit All
           </h2>
-          <h4 className="font-semibold text-center text-[20px]">
+          <h4 className="font-semibold text-center text-[20px] text-white">
             Select a web design service to view custom website design costs for
             your company
           </h4>
 
-          <div className="mt-16 2xl:w-[70%] mx-auto">
-            <FlexLayout spaceClass="space-x-8">
-              <FrostCard>
-                <h4 className="font-semibold text-[20px]">
+          <div className="mt-16  mx-auto">
+            <FlexLayout spaceClass="space-x-8" justify="justify-center">
+              <FrostCard width="w-[320px]">
+                <h4 className="font-semibold text-[20px] text-white">
                   Web Design and Redesign Services
                 </h4>
                 <p className="my-5">
@@ -40,8 +39,8 @@ const Service = () => {
                 </div>
               </FrostCard>
 
-              <FrostCard>
-                <h4 className="font-semibold text-[20px] h-[60px]">
+              <FrostCard width="w-[320px]">
+                <h4 className="font-semibold text-[20px] text-white h-[60px]">
                   Landing Page Design
                 </h4>
                 <p className="my-5">
@@ -63,8 +62,8 @@ const Service = () => {
                 </div>
               </FrostCard>
 
-              <FrostCard>
-                <h4 className="font-semibold text-[20px] h-[60px]">
+              <FrostCard width="w-[320px]">
+                <h4 className="font-semibold text-[20px] text-white h-[60px]">
                   Rapid Web Design
                 </h4>
                 <p className="my-5">
@@ -87,7 +86,7 @@ const Service = () => {
             </FlexLayout>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
