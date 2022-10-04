@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 import logo from "components/assets/logos/logo1.png";
 import { ChevronDownIcon, MenuIcon } from '@heroicons/react/outline'
-import { useRouter } from 'next/router';
+import Muscled from "components/assets/svg/Muscled";
 import Link from 'next/link';
 
 const Header: FC = () => {
@@ -12,9 +12,9 @@ const Header: FC = () => {
   return (
     <div className='flex bg-white shadow-sm justify-between w-full items-center py-3 px-5 md:px-10 lg:px-20'>
       {/* Logo  */}
-      <div className='relative h-10 w-32'>
-        <Image  src={logo} layout='fill' className=' object-contain' />
-      </div>
+      
+        <Muscled />
+      
 
       {/* Menu */}
       <ul className='space-x-2 text-sm xl:text-md justify-center flex-1 mx-10 hidden lg:flex'>
@@ -34,48 +34,48 @@ const Header: FC = () => {
             } w-full py-2`}
           >
             <ul>
-              <Link href={`/seo-marketing-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>SEO Marketing Services</li>
+              <Link href={`/home/services/cms-development`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>CMS Development</li>
               </Link>
 
-              <Link href={`/seo-audit-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>SEO Audit Services</li>
+              <Link href={`/home/services/ux-analysis`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>UX Analysis</li>
               </Link>
 
-              <Link href={`/speed-optimization-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>SEO Optimization Services</li>
+              <Link href={`/home/services/web-development`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Web Development Services</li>
               </Link>
 
-              <Link href={`/services-for-paid-social-media-ad`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Services For Paid Social Media Ad </li>
+              <Link href={`/home/services/shopify-development`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Shopify Development Services</li>
               </Link>
 
-              <Link href={`/enterprise-social-media-advertising-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Enterprise Social Media Advertising Services</li>
+              <Link href={`/home/information/website-price`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Website Price</li>
               </Link>
 
-              <Link href={`/social-media-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Social Media Services</li>
+              <Link href={`/home/services/landing-page-design`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Landing Page Development Services</li>
               </Link>
 
-              <Link href={`/social-media-design`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Social Media Design</li>
+              <Link href={`/home/services/cro`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>CRO Services</li>
               </Link>
 
-              <Link href={`/ecommerce-seo-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Ecommerce SEO Services</li>
+              <Link href={`/home/services/website-design`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Website Design Services</li>
+              </Link>
+
+              <Link href={`/home/services/website-redesign`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Website Redesign Services</li>
+              </Link>
+
+              <Link href={`/home/services/website-maintenance`}>
+                <li className='p-2 cursor-pointer bg-slate-50'>Website Management Services</li>
               </Link>
 
               <Link href={`/ecommerce-ppc-management`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Ecommerce PPC Management</li>
-              </Link>
-
-              <Link href={`/muscled-d2c-social-advertising-services`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Muscled D2C Social Advertising Services</li>
-              </Link>
-
-              <Link href={`/social-media-marketing-cost`}>
-                <li className='p-2 cursor-pointer bg-slate-50'>Social Media Marketing Cost</li>
+                <li className='p-2 cursor-pointer bg-slate-50'>Ecommerce-PPC-Management</li>
               </Link>
 
               
