@@ -22,14 +22,14 @@ const Hero14: NextPage<IProps> = ({
 
   return (
     <div
-      className={`h-[767px] bg-black-70 p-[100px] text-white flex ${className}`}
+      className={`h-[767px] bg-black-70 justify-center  items-center text-white flex ${className}`}
     >
-      <div className="w-[767px] mr-[84px]">
-        <p className="mb-2 text-lg">
+      <div className="w-[720px] mr-[84px] flex flex-col gap-y-4 justify-start">
+        <p className="text-lg">
           <span>Home {router.asPath.replace("/", " > ")}</span>
         </p>
         <h1 className="my-5 leading-[72.8px] text-[56px]">{title}</h1>
-        <p className="text-xl font-normal leading-10 mb-[30px]">{desc}</p>
+        <p className="text-xl font-normal leading-[38.9px] mb-[30px]">{desc}</p>
         <div className="flex flex-start">
           {/* @ts-ignore */}
           {children.map((item: JSX.Element, idx: number) => (
