@@ -1,9 +1,8 @@
 import React from "react";
-
+import ExtractRoutes from "../ExtractRoutes";
 import Section from "./Section";
 import HeroInput from "./HeroInput";
 import HeroButton from "../Fawwaz/Button";
-import { useRouter } from "next/router";
 
 export type HeroSectionProps = {
   title?: string;
@@ -21,15 +20,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   description,
   features = [],
 }) => {
-  const router = useRouter();
+  
 
   return (
     <div className="bg-black-70">
       <Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
         <div className="max-w-[640px]">
-          <p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-            <span>Home {router.asPath.replace("/", " > ")}</span>
-          </p>
+        <ExtractRoutes />
 
           <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
             {title}

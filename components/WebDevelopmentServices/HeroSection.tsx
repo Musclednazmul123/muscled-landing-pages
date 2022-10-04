@@ -1,6 +1,7 @@
 import React,{FC} from 'react'
 import {heroSectionProps} from "./WebDevInterfaces/WebDevInterfaces";
 import HeroCards from '../landingPage/Hero/HeroCards';
+import ExtractRoutes from '../ExtractRoutes';
 
 // ["Home","Web Development","Serivces"];
 
@@ -12,19 +13,7 @@ const HeroSection:FC<heroSectionProps> = (props) => {
      text-white justify-center space-x-[57px] py-[100px] "  >
         <div className='flex w-[720px] flex-col space-y-[30px]'>
 
-        <div className='flex space-x-2'>
-        {
-            props?.routesVisited?.map((route,index)=>{
-                return (
-                    index!==props?.routesVisited.length-1?
-                    <>
-                    <p className='font-[500] text-lg'>{route}</p>
-                    <p className='font-[500] text-lg'>{">"}</p>
-                    </>:<p className='font-[500] text-lg'>{route}</p>
-                )
-            })
-        }
-        </div>
+        <ExtractRoutes />
 
        <div className={`w-[${props?.heroData?.headingWidth || 720}px]`}>
          <p className='text-[56px] font-bold leading-[72.8px]'>{props?.heroData?.heading}</p>

@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../../assets/landingPageSVG/Icons";
+import ExtractRoutes from "@/components/ExtractRoutes";
 function Hero() {
 	const cardData = [
 		{
@@ -31,9 +32,7 @@ function Hero() {
 		<div className="bg-black bg-opacity-70">
 			<div className="xl:py-[100px] md:py-20 py-4  px-5 md:px-10 lg:px-20 xl:px-4 mx-auto container  xl:flex items-center justify-between">
 				<div className="max-w-[720px]">
-					<p className="md:text-lg text-base font-medium  xl:text-left text-center leading-[18px] text-white">
-						Home {">"} Web Development {">"} Services
-					</p>
+					<ExtractRoutes />
 					<h1 className="lg:text-6xl md:text-5xl text-2xl xl:text-left text-center font-bold lg:leading-[72.8px] text-white mt-[30px]">
                     Website Maintainance, Security, and Support
 

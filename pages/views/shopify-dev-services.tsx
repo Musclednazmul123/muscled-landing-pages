@@ -10,6 +10,7 @@ import ShopifyServiceSection from "@/components/ShopifyDevServices/ShopifyServic
 import ImportantLinksSection from "@/components/ShopifyDevServices/ImportantLinksSection";
 import {heroSectionProps,partnersSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 import {testimonialsSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
+import ExtractRoutes from "@/components/ExtractRoutes";
 
 export async function getServerSideProps(props:NextPageContext){
 

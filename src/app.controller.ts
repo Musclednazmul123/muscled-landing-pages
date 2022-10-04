@@ -97,20 +97,21 @@ export class AppController {
   public interactive() {
     return {};
   }
+
   @Render('ux-analysis-services')
-  @Get('/ux-analysis-services')
+  @Get('home/services/ux-analysis')
   public uxAnalysisServices() {
     return {};
   }
 
   @Render('landing-page-design-services')
-  @Get('/landing-page-design-services')
+  @Get('home/services/landing-page-design')
   public landingPageDesignServices() {
     return {};
   }
 
   @Render('website-price')
-  @Get('/website-price')
+  @Get('home/information/website-price')
   public websitePrice() {}
 
   @Render('social-advertising-services')
@@ -125,7 +126,7 @@ export class AppController {
     return {};
   }
 
-  @Get('web-development-services')
+  @Get('home/services/web-development')
   @Render('web-development-services')
   public webDevelopmentServices(@Req() req: Request): { url: string } {
     return {
@@ -134,37 +135,37 @@ export class AppController {
   }
 
   @Render('shopify-dev-services')
-  @Get('/shopify-dev-services')
+  @Get('home/services/shopify-development')
   public shopifyDevServices() {
     return {};
   }
 
   @Render('cro-services')
-  @Get('/cro-services')
+  @Get('home/services/cro')
   public croServices() {
     return {};
   }
 
   @Render('cms-development-services')
-  @Get('/cms-development-services')
+  @Get('home/services/cms-development')
   public cmsDevelopmentServices() {
     return {};
   }
   
   @Render('website-redesign-services')
-  @Get('/website-redesign-services')
+  @Get('home/services/website-redesign')
   public websiteredesignservices() {
     return {}
   }
 
   @Render("website-design-service")
-  @Get("/website-design-service")
+  @Get("home/services/website-design")
   public websiteDesignService() {
     return {};
   }
   
   @Render('website-maintenance')
-  @Get('/website-maintenance')
+  @Get('home/services/website-maintenance')
   public websiteMaintenance() {
     return {}
   }

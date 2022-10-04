@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useRouter } from "next/router";
+import ExtractRoutes from "../ExtractRoutes";
 import { Input } from "../Fawwaz/Form";
 
 import Rectangle from "./Rectangle"; 
@@ -10,17 +10,14 @@ import Trophy from "../../components/assets/icon-trophy-big-1.png";
 import CloudComputing from "../../components/assets/icon-cloud-computing-1.png";
 
 const CMSHero: FC = () => {
-  const router = useRouter();
-
+  
   return (
     <div>
       <div className="bg-black/[0.7] flex flex-col xl:flex-row">
         <div className="xl:mx-[55px]">
       <div className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
         <div className="max-w-[720px]">
-          <p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-            <span>Home {router.asPath.replace("/", " > ")}</span>
-          </p>
+        <ExtractRoutes />
 
           <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
             CMS Development Services that are completely transparent

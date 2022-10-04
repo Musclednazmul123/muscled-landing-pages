@@ -4,7 +4,7 @@ import Section  from "../Fawwaz/Sections/Section";
 import { Input } from "../Fawwaz/Form";
 import Button from "../Fawwaz/Button";
 import { UXAnalysisHeroSectionProps } from "../Fawwaz/component.type";
-import { useRouter } from "next/router";
+import ExtractRoutes from "../ExtractRoutes";
 
 
 const Hero: FC<UXAnalysisHeroSectionProps> = ({
@@ -14,14 +14,11 @@ const Hero: FC<UXAnalysisHeroSectionProps> = ({
   children,
   input,
 }) => {
-  const router = useRouter();
   return (
     <Section className="py-[100px] flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
       <div className="w-[720px]">
         {/* //? Pagination -- this should be dynamic? */}
-        <p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-          <span>Home {router.asPath.replace("/", " > ")}</span>
-        </p>
+        <ExtractRoutes />
 
         <h1 className="text-[56px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
           {title}
