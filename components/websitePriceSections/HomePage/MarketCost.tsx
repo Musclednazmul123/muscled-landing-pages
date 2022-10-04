@@ -8,7 +8,7 @@ const MarketCost = () => {
     <section className="p-16 bg-[#F5F5F5]">
       <Container>
         <div className="space-y-16">
-          <FlexLayout justify="justify-center" spaceClass="space-x-5">
+          <FlexLayout justify="justify-center" spaceClass="space-x-5 relative">
             <div className="w-[75%]">
               <h2 className="text-[40px] font-bold mb-8 w-[70%]">
                 How much does it cost to market a website?
@@ -449,7 +449,7 @@ const MarketCost = () => {
               </div>
             </div>
 
-            <div className="w-[25%] self-start mt-20">
+            <div className="w-[25%] self-start mt-20 sticky top-0">
               <div>
                 <h5 className="text-[20px] font-bold pb-4">
                   Table of contents

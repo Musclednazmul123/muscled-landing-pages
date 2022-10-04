@@ -3,13 +3,15 @@ import BlockQuote from "@/components/ui/BlockQuote";
 import Button from "@/components/ui/Button";
 import ArrowLeft from "@/components/ui/icons/ArrowLeft";
 import VideoPlayLg from "@/components/ui/icons/VideoPlayLg";
+import ReactPlayerModal from "@/components/ReactPlayerModal";
+import PlayIcon from "./GuideDetailsPlayerIcon";
 import Table from "@/components/ui/Table";
 import Link from "next/link";
 
 const CostInfo = () => {
   return (
     <div className="space-y-16">
-      <FlexLayout spaceClass="space-x-5">
+      <FlexLayout spaceClass="space-x-5 relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             Costs of website design in 2022
@@ -94,7 +96,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start">
+        <div className="w-[25%] self-start sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
@@ -196,7 +198,7 @@ const CostInfo = () => {
         </div>
       </FlexLayout>
 
-      <FlexLayout>
+      <FlexLayout spaceClass="relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             Costs of website design in 2022
@@ -284,7 +286,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start mt-10">
+        <div className="w-[25%] self-start mt-10 sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
@@ -373,7 +375,7 @@ const CostInfo = () => {
         </div>
       </FlexLayout>
 
-      <FlexLayout>
+      <FlexLayout spaceClass="relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             Costs of online marketing in 2022
@@ -435,7 +437,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start mt-10">
+        <div className="w-[25%] self-start mt-10 sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
@@ -529,7 +531,7 @@ const CostInfo = () => {
         </div>
       </FlexLayout>
 
-      <FlexLayout>
+      <FlexLayout spaceClass="relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             What is the price of creating a website?
@@ -735,7 +737,14 @@ const CostInfo = () => {
             What is website hosting?
           </h4>
           <div className="pt-8">
-            <VideoPlayLg />
+          <ReactPlayerModal 
+            Icon={PlayIcon}
+            width={"756px"}
+            height={"421.56px"}
+            className="rounded-[6.14516px]"
+            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            // thumbnail="main.png"
+            />
           </div>
           <p className="w-[80%] text-[20px] my-5">
             Internet consumers can visit your website thanks to the hosting
@@ -1305,7 +1314,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start mt-10">
+        <div className="w-[25%] self-start mt-10 sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">

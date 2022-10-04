@@ -10,8 +10,8 @@ import GoogleLogo from "@/components/ui/icons/GoogleLogo";
 
 const Partner = () => {
   return (
+    <div  className="bg-white">
     <Container spaceClass="p-3">
-      <div>
         <FlexLayout justify="justify-center" spaceClass="space-x-20">
           <div>
             <Image
@@ -41,8 +41,8 @@ const Partner = () => {
             <Image objectFit="contain" src={HonorRoll} alt="partner logo" />
           </div>
         </FlexLayout>
-      </div>
     </Container>
+      </div>
   );
 };
 
