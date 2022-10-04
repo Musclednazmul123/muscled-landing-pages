@@ -4,7 +4,7 @@ import { Paragraph } from "../";
 const Paragraph8 = () => {
   return (
     <Paragraph
-      className="h-[367px] mb-[300px]"
+      className="h-[367px]"
       title="Get Your Company a Website That is Focused on Performance."
     >
       <p>
