@@ -3,6 +3,8 @@ import BlockQuote from "@/components/ui/BlockQuote";
 import Button from "@/components/ui/Button";
 import ArrowLeft from "@/components/ui/icons/ArrowLeft";
 import VideoPlayLg from "@/components/ui/icons/VideoPlayLg";
+import ReactPlayerModal from "@/components/ReactPlayerModal";
+import PlayIcon from "./GuideDetailsPlayerIcon";
 import Table from "@/components/ui/Table";
 import Link from "next/link";
 
@@ -735,7 +737,14 @@ const CostInfo = () => {
             What is website hosting?
           </h4>
           <div className="pt-8">
-            <VideoPlayLg />
+          <ReactPlayerModal 
+            Icon={PlayIcon}
+            width={"756px"}
+            height={"421.56px"}
+            className="rounded-[6.14516px]"
+            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            // thumbnail="main.png"
+            />
           </div>
           <p className="w-[80%] text-[20px] my-5">
             Internet consumers can visit your website thanks to the hosting

@@ -7,6 +7,7 @@ interface Props {
   thumbnail?: string;
   width?: string;
   height?: string;
+  className?:string;
 }
 
 const ReactPlayerModal: React.FC<Props> = ({
@@ -15,6 +16,7 @@ const ReactPlayerModal: React.FC<Props> = ({
   thumbnail,
   width,
   height,
+  className
 }) => {
   const [isplaying, setIsPlaying] = React.useState<boolean>(false);
   const [hover, setHover] = React.useState<boolean>(false);
@@ -29,7 +31,8 @@ const ReactPlayerModal: React.FC<Props> = ({
           width: width && width,
           height: height && height,
         }}
-        className="bg-gray-300 rounded-lg lg:mt-0 mt-12 md:h-[360px] overflow-hidden h-[250px] flex items-center justify-center"
+        className={`bg-gray-300 rounded-lg lg:mt-0 mt-12 md:h-[360px] 
+        overflow-hidden h-[250px] flex items-center justify-center ${className}`}
       >
         <div onClick={() => setIsPlaying(true)}>
           <Icon />

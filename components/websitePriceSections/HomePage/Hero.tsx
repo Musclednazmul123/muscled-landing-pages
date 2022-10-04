@@ -2,13 +2,15 @@ import Container from "@/components/layout/Container";
 import FlexLayout from "@/components/layout/FlexLayout";
 import Button from "@/components/ui/Button";
 import VideoPlay from "@/components/ui/icons/VideoPlay";
+import ReactPlayerModal from "../../ReactPlayerModal";
+import PlayIcon from "./PlayIcon";
 
 const Hero = () => {
   return (
     <section className="bg-[#F5F5F5] py-20">
-      <Container>
-        <FlexLayout justify="justify-around" spaceClass="space-x-0">
-          <div className="w-[60%]">
+      <div>
+        <FlexLayout justify="justify-center" spaceClass="gap-x-8">
+          <div className="w-[758px]">
             <h1 className="text-[56px] font-bold">
               What Should the Price of a Website Be in 2022?
             </h1>
@@ -28,11 +30,19 @@ const Hero = () => {
               </FlexLayout>
             </div>
           </div>
-          <div className="w-[40%]">
-            <VideoPlay />
+          <div className="w-[448px] self-start mt-6">
+            {/* <VideoPlay /> */}
+            <ReactPlayerModal 
+            Icon={PlayIcon}
+            width={"448px"}
+            height={"343px"}
+            className="shadow-[5px_5px_20px_10px_rgba(177,175,175,0.3)] rounded-[10px]"
+            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            // thumbnail="main.png"
+            />
           </div>
         </FlexLayout>
-      </Container>
+      </div>
     </section>
   );
 };
