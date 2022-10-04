@@ -1735,7 +1735,7 @@ const Page: NextPage = () => {
 					/>
 			</Section>
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

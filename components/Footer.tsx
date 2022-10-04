@@ -57,16 +57,15 @@ const Footer: FC<IProps> = ({ className }) => {
           <p className="py-6 text-2xl font-semibold">
             Discover how we can help your business grow
           </p>
-          <div className="relative w-full max-w-[600px]">
+          <div className="flex w-full max-w-[600px] bg-white p-1 rounded-md">
             <Input
               placeholder="Enter your website"
-              className="w-full text-black md:py-6"
+              className="flex-grow text-black bg-none"
               type="text"
             />
             <Button
               bgColor="bg-[#000000]"
               textColor="text-white"
-              className="mt-4 md:absolute md:top-3 md:right-4 md:mt-0"
             >
               Send me a Proposal
               <BiRightArrowAlt />
