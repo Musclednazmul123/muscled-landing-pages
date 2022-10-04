@@ -11,7 +11,7 @@ import Link from "next/link";
 const CostInfo = () => {
   return (
     <div className="space-y-16">
-      <FlexLayout spaceClass="space-x-5">
+      <FlexLayout spaceClass="space-x-5 relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             Costs of website design in 2022
@@ -96,7 +96,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start">
+        <div className="w-[25%] self-start sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
@@ -198,7 +198,7 @@ const CostInfo = () => {
         </div>
       </FlexLayout>
 
-      <FlexLayout>
+      <FlexLayout spaceClass="relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             Costs of website design in 2022
@@ -286,7 +286,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start mt-10">
+        <div className="w-[25%] self-start mt-10 sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
@@ -375,7 +375,7 @@ const CostInfo = () => {
         </div>
       </FlexLayout>
 
-      <FlexLayout>
+      <FlexLayout spaceClass="relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             Costs of online marketing in 2022
@@ -437,7 +437,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start mt-10">
+        <div className="w-[25%] self-start mt-10 sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
@@ -531,7 +531,7 @@ const CostInfo = () => {
         </div>
       </FlexLayout>
 
-      <FlexLayout>
+      <FlexLayout spaceClass="relative">
         <div className="w-[75%]">
           <h2 className="text-[40px] font-bold mb-8 w-[70%]">
             What is the price of creating a website?
@@ -1314,7 +1314,7 @@ const CostInfo = () => {
           </div>
         </div>
 
-        <div className="w-[25%] self-start mt-10">
+        <div className="w-[25%] self-start mt-10 sticky top-0">
           <div>
             <h5 className="text-[20px] font-bold pb-4">Table of contents</h5>
             <ul className="space-y-4">
