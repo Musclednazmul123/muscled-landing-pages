@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { useRouter } from "next/router";
+import ExtractRoutes from "@/components/ExtractRoutes";
 import React, { ReactNode } from "react";
 import { SVGProps } from "../../../types/types";
 
@@ -18,16 +18,13 @@ const Hero14: NextPage<IProps> = ({
   children,
   HeroIcon,
 }) => {
-  const router = useRouter();
 
   return (
     <div
       className={`h-[767px] bg-black-70 justify-center  items-center text-white flex ${className}`}
     >
       <div className="w-[720px] mr-[84px] flex flex-col gap-y-4 justify-start">
-        <p className="text-lg">
-          <span>Home {router.asPath.replace("/", " > ")}</span>
-        </p>
+        <ExtractRoutes />
         <h1 className="my-5 leading-[72.8px] text-[56px]">{title}</h1>
         <p className="text-xl font-normal leading-[38.9px] mb-[30px]">{desc}</p>
         <div className="flex flex-start">

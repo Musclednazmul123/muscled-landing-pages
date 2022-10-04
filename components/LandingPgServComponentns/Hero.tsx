@@ -4,25 +4,19 @@ import  Section  from "../Fawwaz/Sections/Section"
 import { Input } from "../Fawwaz/Form";
 import Button from "../Fawwaz/Button";
 import { HeroSectionProps } from "../Fawwaz/component.type";
-import { useRouter } from "next/router";
-
+import ExtractRoutes from "../ExtractRoutes";
 import FunnelSVG from "../../components/assets/svg/FunnelSVG";
 import UserSVG from "../../components/assets/svg/UserSVG";
 import TrophySVG from "../../components/assets/svg/TrophySVG";
 import CloudComputingSVG from "../../components/assets/svg/CloudComputingSVG";
 
 const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
-	const router =useRouter()
 	return (
         <div className=" bg-black-70 px-3 lg:px-0">
 		<Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-x-[57px] lg:justify-between">
 			<div className="max-w-[640px]">
 				{/* //? Pagination -- this should be dynamic? */}
-				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-					<span>Home {'>'}</span>
-					<span>Digital Marketing {'>'}</span>
-					<span>Services</span>
-				</p>
+				<ExtractRoutes />
 
 				<h1 className="hero-title text-[56px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
 					{title}

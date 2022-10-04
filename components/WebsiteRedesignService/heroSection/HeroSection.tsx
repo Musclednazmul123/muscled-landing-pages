@@ -2,7 +2,7 @@ import React,{ FC } from "react";
 
 import { Section } from "../../Fawwaz/Sections";
 import {WebRedesignHeroSectionProps } from "../../Fawwaz/component.type";
-import { useRouter } from "next/router";
+import ExtractRoutes from "@/components/ExtractRoutes";
 
 const Hero: FC<WebRedesignHeroSectionProps> = ({
 	title,
@@ -14,15 +14,12 @@ const Hero: FC<WebRedesignHeroSectionProps> = ({
     children,
     contentWidth="w-[720px]"
 }) => {
-	const router = useRouter();
 	return (
 		<Section className={`py-24 flex flex-wrap h-auto mx-auto justify-center 
         xl:justify-between items-center space-y-8 lg:space-y-0 gap-4`}>
 			<div className={`flex flex-col ${contentWidth} items-center xl:items-start`}>
 				{/* //? Pagination -- this should be dynamic? */}
-				<p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-					<span>Home {router.asPath.replace("/", " > ")}</span>
-				</p>
+				<ExtractRoutes />
 
 				<h1 className={`${titleClassNames ? titleClassNames : "text-[36px] leading-normal lg:text-[56px] lg:leading-72"} text-white mt-8 mb-5`}>
 					{title}
