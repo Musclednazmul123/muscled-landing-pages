@@ -1,6 +1,6 @@
 import React from "react";
 
-const Brand2 = (props) => {
+const Brand2 = (props:any) => {
   return (
     <svg
       width="155"
