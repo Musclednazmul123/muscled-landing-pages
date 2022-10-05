@@ -57,14 +57,7 @@ const Tables: React.FC = () => {
 									<Th
 										className="text-left text-white font-normal"
 										content={
-											<>
-												<div className="font-bold">
-													{body.title.content.bold}
-												</div>
-												<div>
-													{body.title.content.desc}
-												</div>
-											</>
+											<BodyContentExtract content={body.title.content as {bold:string;desc:string}}/>
 										}
 									/>
 								)}
@@ -123,5 +116,18 @@ const Tables: React.FC = () => {
 		</Section>
 	);
 };
+
+let BodyContentExtract=({content}:{content:{bold:String,desc:String}})=>{
+
+				return 											<>
+				<div className="font-bold">
+					{content.bold}
+				</div>
+				<div>
+					{content.desc}
+				</div>
+			</>
+}
+
 
 export default Tables;
