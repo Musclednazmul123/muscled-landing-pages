@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import { HeroButton } from '../component.type'
-import Link from 'next/link'
 
 const Button: FC<HeroButton> = ({
   text,

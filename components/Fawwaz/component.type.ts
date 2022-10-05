@@ -10,7 +10,7 @@ export interface PricingCardProps {
 	title?: string;
 	rate?: string;
 	type?: "basic" | "premium" | "ultimate";
-	content?: [];
+	content?: string[];
 }	
 export interface CardProps {
 	children: ReactNode;
@@ -172,7 +172,7 @@ export interface TableOfContentsProps {
 
 export interface LinkCardProps {
 	title: string;
-	links: [];
+	links: string[];
 }
 
 export interface TestmonailProps {

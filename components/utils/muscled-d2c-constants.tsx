@@ -1,8 +1,8 @@
 import { AiOutlineCheck, AiFillPhone } from "react-icons/ai";
 import Button from "components/Fawwaz/Button";
 import React from "react";
-import { CardHeaderDataProps } from "components/common/types";
 import { BsDot } from "react-icons/bs";
+import { CardHeaderDataProps } from "../Muscled_D2C_Social_Advertising_Services/types";
 
 export const testimonialData = {
   para1: `"The  Muscled team is the perfect package for our social media needs!" They handle everything from ad design to targeted marketing to page administration and monitoring!"`,

@@ -20,6 +20,7 @@ export interface ButtonProps {
   arrow?: string;
   text?: string;
   label?: string;
+  className?:string;
 }
 
 // card props and counter props

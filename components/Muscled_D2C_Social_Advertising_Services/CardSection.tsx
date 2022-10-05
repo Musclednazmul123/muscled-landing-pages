@@ -70,10 +70,7 @@ const CardSection = () => {
                 <CardContent className="space-y-11">
                   {cardItem &&
                     cardItem.iconItems.map(
-                      (item: {
-                        iconTitle: string;
-                        class: string | undefined;
-                      }) => (
+                      (item) => (
                         <IconItem
                           icon={<FaCheckCircle size={24} />}
                           title={item?.iconTitle}

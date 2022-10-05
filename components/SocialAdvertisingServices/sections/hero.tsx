@@ -61,7 +61,6 @@ const HeroSection: FC<HeroSectionProps> = ({
           <Button
             text="Send Proposal"
             className="basis-[30%] ml-[10px] md:mt-0 h-[60px] w-[226px]"
-            link="social-advertising-services"
           />
         </div>
       </div>

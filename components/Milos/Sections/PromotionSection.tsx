@@ -14,12 +14,14 @@ const PromotionSection = () => {
     className: 'z-0'
   }
 
-  const sliderRef = useRef<typeof Slider | null>(null);
+  const sliderRef = useRef< Slider | null>(null);
 
   return (
     <div className="py-20 px-24 flex gap-x-[34px] text-center mb-[70px] relative">
       <div className="w-[562px] h-[917px] relative">
-        <button type="button" className="shadow-md bg-white rounded-full p-[10px] absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[82px] h-[82px] flex justify-center items-center" onClick={() => sliderRef.current.slickPrev()}>
+        <button type="button" className="shadow-md bg-white rounded-full p-[10px] absolute z-10 top-[50%] left-[50%] translate-x-[-50%] 
+        translate-y-[-50%] w-[82px] h-[82px] flex justify-center 
+        items-center" onClick={() => sliderRef?.current?.slickPrev()}>
           <img src={PromotionRightImage.src} alt="" />
         </button>
         <Slider ref={sliderRef} {...settings}>

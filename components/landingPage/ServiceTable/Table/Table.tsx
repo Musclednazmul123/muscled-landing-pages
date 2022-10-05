@@ -1,5 +1,5 @@
 import { FC } from 'react'
-
+import { TableProps } from '@/components/Fawwaz/component.type' 
 
 const Table: FC<TableProps> = ({ className, children }) => {
   return (

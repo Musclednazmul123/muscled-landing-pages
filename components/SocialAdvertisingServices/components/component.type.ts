@@ -80,7 +80,7 @@ export interface secondTableRow {
 }
 
 export interface ListType {
-  content: string[] | unknown[]
+  content: string[] | {content:string;link:string}[] 
   className?: string
   id?: string
   link?: string
