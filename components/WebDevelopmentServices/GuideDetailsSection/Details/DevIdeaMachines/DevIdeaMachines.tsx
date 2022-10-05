@@ -1,6 +1,6 @@
 import React,{FC} from 'react'
-import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
+import DetailsGenerator from '../detailsGenerator/DetailsGenerator';
 import DevIdeaMachinesCard from "./DevIdeaMachinesCard/DevIdeaMachinesCard"
 
 let DevIdeaMachinesData:detailGeneratorProps={
