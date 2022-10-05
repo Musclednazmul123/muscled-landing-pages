@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import { Hero, Section } from "components/Fawwaz/Sections";
 import SpeedOptimizationSVG from "components/assets/svg/SpeedOptimizationSVG";
 import Logo from "components/Fawwaz/Logo";
-import logo from "components/assets/logo/Logo1.png";
+import logo from "components/assets/logo/logo1.png";
 import Card from "components/Card";
 
 const Page: NextPage = () => {
