@@ -3,7 +3,7 @@ import { Controller, Get, Query, Render, Req } from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  @Render("home")
+  @Render("services-for-paid-social-media-ad")
   @Get()
   public index(@Query('name') name?: string) {
     return { name };
