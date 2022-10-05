@@ -1052,9 +1052,7 @@ const ServiceTableSection = (props: ServiceTableSectionProps) => {
                   bgColor="bg-black"
                   textColor="text-white"
                   className="mx-auto"
-                  style={{
-                    fontSize: "20px",
-                  }}
+                  textSize= "20px"
                 >
                   Get Started
                 </Button>
@@ -1067,9 +1065,7 @@ const ServiceTableSection = (props: ServiceTableSectionProps) => {
                   bgColor="bg-black"
                   textColor="text-white"
                   className="mx-auto"
-                  style={{
-                    fontSize: "20px",
-                  }}
+                  textSize= "20px"
                 >
                   Get Started
                 </Button>
@@ -1083,10 +1079,7 @@ const ServiceTableSection = (props: ServiceTableSectionProps) => {
                   bgColor="bg-black"
                   textColor="text-white"
                   className="mx-auto"
-                  style={{
-                    fontSize: "20px",
-                  }}
-                >
+                  textSize= "20px">
                   Get Started
                 </Button>
               }
