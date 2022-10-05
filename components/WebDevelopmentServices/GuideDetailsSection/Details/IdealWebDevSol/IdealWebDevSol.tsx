@@ -1,5 +1,5 @@
 import React,{FC} from 'react'
-import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
+// import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 import IdealWebDevSolCard from "./IdealWebDevSolCard/IdealWebDevSolCard";
 
@@ -11,7 +11,7 @@ paragraphs:["Are you ready to grow your business to new levels through the Inter
 const IdealWebDevSol:FC = () => {
   return (
     <div className="flex flex-col space-y-[52px] top-11 relative">
-        <DetailsGenerator {...IdealWebDevSolData}/>
+        {/* <DetailsGenerator {...IdealWebDevSolData}/> */}
         <IdealWebDevSolCard />
     </div>
   )

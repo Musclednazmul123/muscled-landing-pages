@@ -1,5 +1,5 @@
 import React,{FC} from 'react'
-import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
+// import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
 import WebDevExpCard from './WebDevExpCard/WebDevExpCard'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 
@@ -17,7 +17,7 @@ paragraphs:["Our skilled web development staff has the technical expertise to wo
 const WebDevExp:FC = () => {
   return (
     <div className='flex flex-col space-y-[75px]'>
-    <DetailsGenerator {...WenDevExpData}/>
+    {/* <DetailsGenerator {...WenDevExpData}/> */}
     <WebDevExpCard />
     </div>
   )

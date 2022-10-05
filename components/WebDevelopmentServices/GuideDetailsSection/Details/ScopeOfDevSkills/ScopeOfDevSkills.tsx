@@ -1,5 +1,5 @@
 import React,{FC} from 'react'
-import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
+// import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 
 let ScopeOfDevSkillsData:detailGeneratorProps={
@@ -14,7 +14,7 @@ let ScopeOfDevSkillsData:detailGeneratorProps={
 const ScopeOfDevSkills:FC = () => {
   return (
   <div className='flex flex-col'>
-<DetailsGenerator {...ScopeOfDevSkillsData} />
+{/* <DetailsGenerator {...ScopeOfDevSkillsData} /> */}
   </div>
 
     )
