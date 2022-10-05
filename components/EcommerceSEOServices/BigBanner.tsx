@@ -1,5 +1,5 @@
 import React from "react";
-import banner7 from "../assets/banner_7.jpg";
+import banner7 from "../assets/banner_7.png";
 import comp1 from "../../components/assets/comp_1.png";
 import Typography from "./Typography";
 
