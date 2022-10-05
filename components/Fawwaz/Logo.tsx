@@ -5,7 +5,7 @@ import { PartnerLogo } from "./component.type";
 
 const Logo: FC<PartnerLogo> = ({ src, width, height }) => {
   return ( 
-    <Image src={src} alt="Partner Logo" width={width} height={height}/>
+    <Image src={src as string} alt="Partner Logo" width={width} height={height}/>
   )
 } 
 
