@@ -51,7 +51,7 @@ const Tables: React.FC = () => {
 								{body.title.type === "content" ? (
 									<Th
 										className="text-left text-white font-normal"
-										content={body.title.content}
+										content={body.title.content as string}
 									/>
 								) : (
 									<Th
@@ -72,7 +72,7 @@ const Tables: React.FC = () => {
 									<Td
 										className="px-14 py-11 text-black-80"
 										key={key}
-										content={content}
+										content={content as string}
 										type={
 											key % 2 === 0
 												? "basic"

@@ -1,10 +1,10 @@
 import { FaCheck } from "react-icons/fa";
 
+
 interface ITableBody {
 	title: {
 		type: "unique" | "content";
-		content:
-			| String
+		content: String
 			| {
 					bold: String;
 					desc: String;
