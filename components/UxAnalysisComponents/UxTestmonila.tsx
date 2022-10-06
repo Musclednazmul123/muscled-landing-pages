@@ -32,7 +32,7 @@ export default function UxTesmonial() {
             <ReactPlayerModal
               width="389px"
               height="214px"
-              thumbnail="thumbnail.png"
+              thumbnail="/thumbnail.png"
               Icon={playIcon}
               url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             />

@@ -33,7 +33,7 @@ export default function Testimonial() {
                 width="540px"
                 height="400px"
                 url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                thumbnail="thumbnail2.png"
+                thumbnail="/thumbnail2.png"
               />
             </div>
           </div>
