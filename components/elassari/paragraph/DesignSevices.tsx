@@ -5,6 +5,7 @@ import ReactPlayerModal from "../../ReactPlayerModal";
 import Image_14 from "../../assets/image-14.png";
 import Buttons from "../Buttons";
 import playIcon from "../playIconPartner";
+import webDesign from "../../../public/webDesign.png";
 
 const DesignSevices = () => {
   return (
@@ -37,7 +38,7 @@ const DesignSevices = () => {
 
       <div>
         <ReactPlayerModal
-          thumbnail={"/webDesign.png"}
+          thumbnail={webDesign.src}
           url="https://www.youtube.com/embed/D0UnqGm_miA"
           Icon={playIcon}
           width={"480px"}

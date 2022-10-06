@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayerModal from "components/ReactPlayerModal";
 import playIcon from "./playIcon";
 import Testimonial from "./Testimonial";
+import thumbnail from "../../public/thumbnail.png";
 
 export default function UxTesmonial() {
   return (
@@ -32,7 +33,7 @@ export default function UxTesmonial() {
             <ReactPlayerModal
               width="389px"
               height="214px"
-              thumbnail="/thumbnail.png"
+              thumbnail={thumbnail.src}
               Icon={playIcon}
               url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             />
