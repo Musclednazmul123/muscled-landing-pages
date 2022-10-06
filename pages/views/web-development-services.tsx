@@ -38,7 +38,7 @@ let ourPartnersSectionData:partnersSectionProps={
   variant:"webDev",
   heading:"Our  Partners",
   logos:{
-    sources:['/partners1.png','/partners2.png','/partners1.png','/partners2.png','/partners1.png','/partners2.png'],
+    sources:['/partners1.png','/partners2.png','/partners3.png','/partners4.png','/partners5.png','/partners6.png'],
     width:"138",
     height:'36px',
   },
