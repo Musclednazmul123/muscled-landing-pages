@@ -1,5 +1,5 @@
 import React,{FC} from 'react'
-// import DetailsGenerator from '../detailsGenerator/DetailsGenerator'
+import DetailsGenerator from '../DetailsGenerator/DetailsGenerator'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 
 let OurWebDevPhilosphyData:detailGeneratorProps={
@@ -18,7 +18,7 @@ let OurWebDevPhilosphyData:detailGeneratorProps={
 const OurWebDevPhilosphy:FC = () => {
   return (
     <div className='flex flex-col -top-4 relative'>
-      {/* <DetailsGenerator {...OurWebDevPhilosphyData} /> */}
+      <DetailsGenerator {...OurWebDevPhilosphyData} />
     </div>
   )
 }

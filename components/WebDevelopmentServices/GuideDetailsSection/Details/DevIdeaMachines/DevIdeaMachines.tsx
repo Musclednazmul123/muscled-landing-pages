@@ -1,6 +1,6 @@
 import React,{FC} from 'react'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
-// import DetailsGenerator from '../detailsGenerator/DetailsGenerator';
+import DetailsGenerator from '../DetailsGenerator/DetailsGenerator';
 import DevIdeaMachinesCard from "./DevIdeaMachinesCard/DevIdeaMachinesCard"
 
 let DevIdeaMachinesData:detailGeneratorProps={
@@ -15,7 +15,7 @@ paragraphs:["Our developers are so experienced that they can suggest new ways fo
 const DevIdeaMachines:FC = () => {
   return (
     <div className='flex flex-col space-y-11 relative -top-4'>
-        {/* <DetailsGenerator {...DevIdeaMachinesData}/> */}
+        <DetailsGenerator {...DevIdeaMachinesData}/>
         <DevIdeaMachinesCard />
     </div>
   )
