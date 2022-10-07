@@ -62,3 +62,9 @@ export interface HeroCardProps {
   number: string;
   subtitle: string;
 }
+
+//Interface for NavItem in header
+export interface NavItemProps {
+  navTitle:string;
+  navLinks:{title:string;link:string}[]
+  }

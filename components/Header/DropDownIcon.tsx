@@ -1,0 +1,16 @@
+import React,{FC} from 'react'
+
+interface DropDownProps{
+className:string
+}
+
+const DropDownIcon:FC<DropDownProps> = ({className}) => {
+  return (
+    <svg className={`${className}`} width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.92857 0.143136L5.5 3.71456L9.07143 0.143136L10.5 0.857422L5.5 5.85742L0.5 0.857422L1.92857 0.143136Z"  fill-opacity="0.8"/>
+</svg>
+
+  )
+}
+
+export default DropDownIcon
