@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import  { ReactNode, ReactElement } from "react";
 
 export interface IPost {
   title: string;
@@ -66,5 +66,13 @@ export interface HeroCardProps {
 //Interface for NavItem in header
 export interface NavItemProps {
   navTitle:string;
-  navLinks:{title:string;link:string}[]
+  children?:any
   }
+
+//Interface for Nav Sub Categories
+export interface NavSubItemProps {
+    icon:ReactElement;
+    subCategoryTitle:string;
+    navLinks:{linkTitle:string,link:string}[];
+    bgColor?:string
+    }

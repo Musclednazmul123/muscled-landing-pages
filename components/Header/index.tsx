@@ -3,13 +3,15 @@ import React from 'react'
 import { MenuIcon } from '@heroicons/react/outline'
 import Muscled from "..//assets/svg/Muscled";
 import NavItem from "./NavItem";
-import {SeoLeadData,EcommerceData,UXInteractiveData,OurTechnologyData,WhoWeAreData} from "./NavItemsData";
-
+import NavSubItem from "./NavItem/NavSubItem"
+import {SeoLeadDataSubCatData} from "./NavItem/NavItemsData";
+import VideoItem from "./NavItem/VideoItem";
+import SeoLeadGenVideoPlayer from "./NavItemComponents/SeoLeadGenVideoPlayer"; 
 
 const Header: FC = () => {
 
   return (
-    <div className='flex bg-white shadow-sm justify-between 
+    <div className='flex relative  bg-white shadow-sm z-10 justify-between 
     w-full items-center lg:px-[50px] h-[100px]'>
       {/* Logo  */}
       
@@ -17,13 +19,24 @@ const Header: FC = () => {
       
 
       {/* Menu */}
-      <ul className='h-[100px] text-sm xl:text-md justify-center   hidden lg:flex'>
-   <NavItem {...SeoLeadData}/>
-   <NavItem {...EcommerceData}/>
-   <NavItem {...UXInteractiveData}/>
-   <NavItem {...OurTechnologyData}/>    
-   <NavItem {...WhoWeAreData}/>    
-      </ul>
+      <div className='h-[100px] text-sm xl:text-md justify-center hidden lg:flex'>
+   <NavItem navTitle='SEO & Lead Generation'>
+    <div className='flex justify-between bg-[#FFFFFF] w-full'>
+    {
+       SeoLeadDataSubCatData.map((subCategory)=>{
+        return <NavSubItem {...subCategory} />
+       })
+    }
+    <VideoItem  title="Our Missions"
+    videoPlayer={<SeoLeadGenVideoPlayer />}
+     buttonProps={{text:"Send Proposals",link:"/"}}/>
+    </div>
+   </NavItem>
+<NavItem navTitle="Learn" />
+<NavItem navTitle="Who We Are" />
+<NavItem navTitle="Our Technolgy" />
+<NavItem navTitle="Our Projects" />
+      </div>
 
       {/* Button Get free Proposal */}
 

@@ -27,13 +27,13 @@ export class AppController {
     return {};
   }
   @Render('seo-marketing-services')
-  @Get('/seo-marketing-services')
+  @Get('/seo/services/seo-marketing')
   public seoMarketingServices() {
     return {};
   }
 
   @Render("seo-audit-services")
-  @Get("/seo-audit-services")
+  @Get("/seo/services/seo-audits")
   public seoAuditServices() {
     return {};
   }
@@ -45,19 +45,19 @@ export class AppController {
   }
 
   @Render('services-for-paid-social-media-ad')
-  @Get('/services-for-paid-social-media-ad')
+  @Get('/social-media/services/paid-social-ad')
   public servicesForPaidSocialMediaAd() {
     return {};
   }
 
   @Render("enterprise-social-media-advertising-services")
-  @Get("/enterprise-social-media-advertising-services")
+  @Get("/social-media/services/enterprise-social-advertising")
   public enterpriseSocialMediaAdvertisingServices() {
     return {};
   }
 
   @Render('social-media-services')
-  @Get('/social-media-services')
+  @Get('/social-media/services')
   public socialMediaServices() {
     return {};
   }
