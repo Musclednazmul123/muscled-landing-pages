@@ -28,7 +28,7 @@ const handleMouseOut=()=>{
           </div>
           
           <div
-            className={`absolute h-screen bg-[#FFFFFF]  top-18  left-0  w-full  pt-[50px] 
+            className={`absolute h-screen bg-[#FFFFFF] z-[10]  top-18  left-0  w-full  pt-[50px] 
             pr-[30px] pb-[70px] pl-[30px]
      ${
               !selected && 'hidden'
