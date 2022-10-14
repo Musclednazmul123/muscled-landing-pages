@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Muscled:FC = () => {
   return (
-    <Link href="/home/services/cms-development">
+    <Link href="/ecommerce/services/social-media-paid-ads">
         <a className='no-underline'>
     <svg className='cursor-pointer' width="123" height="18" viewBox="0 0 123 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.288 17.588L15.264 7.508L10.32 15.812H8.568L3.648 7.724V17.588H0V0.787999H3.216L9.504 11.228L15.696 0.787999H18.888L18.936 17.588H15.288Z" fill="black"/>
