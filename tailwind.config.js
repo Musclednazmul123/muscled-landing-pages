@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xl_2: { min: "1440px", max: "1536px" },
+        xl_2: { min: "1440px"},
       },
       colors: {
         "accent-white": "#F9F9F9",

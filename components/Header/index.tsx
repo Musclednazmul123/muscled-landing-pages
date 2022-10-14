@@ -24,7 +24,8 @@ That Drives Revenue®</p>
 
       {/* Menu */}
       <div className="flex items-center ">
-      <div className='h-[100px]  text-sm xl:text-md justify-center hidden lg:flex gap-x-[15px]'>
+      <div className='h-[100px]  text-sm xl:text-md justify-center 
+      hidden lg:flex gap-x-[15px] xl_2:gap-x-[49px]'>
    <NavItem navTitle='Services'>
     <div className='flex justify-between w-full gap-x-[16px]'>
     {
