@@ -1,45 +1,58 @@
 import {NavSubItemProps} from "../../../types/types";
 import {EcommerceIcon,WebsiteWebAppsIcon,DigitalMarketingIcon} from "./Icons";
+import Image from "next/image";
+import ecommerce from "../../assets/ecommerce 1.png";
+import uiDesign from "../../assets/ui-design 1.png";
+import emailMarketing from "../../assets/email-marketing 1.png";
 
 export const SeoLeadDataSubCatData:NavSubItemProps[]=[
 {
 icon:EcommerceIcon,
 subCategoryTitle:"Ecommerce",
 navLinks:[
-            {linkTitle:"SEO Marketing Services",link:"/seo/services/seo-marketing"},
-            {linkTitle:"SEO Audit Services",link:"/seo/services/seo-audits"},
-            {linkTitle:"Social Media Services",link:"/social-media/services"},
-            {linkTitle:"Enterprise Social Media Advertising Services",link:"/home/services/cms-development"},
-            {linkTitle:"Services for Paid Social Media ad",link:"/social-media/services/paid-social-ad"},
-                ]
+            {linkTitle:"Shopify Development",link:"/ecommerce/services/shopify-development"},
+            {linkTitle:"Conversion Rate Optimization (CRO)",link:"/ecommerce/services/coversion-rate-optimization"},
+            {linkTitle:"Ecommerce SEO",link:"/ecommerce/services/seo"},
+            {linkTitle:"Ecommerce PPC Management",link:"/ecommerce/services/ppc-management"},
+            {linkTitle:"Ecommerce Social Media Paid Ads",link:"/ecommerce/services/social-media-paid-ads"},
+                ],
+bgIconProps:{icon:<Image src={ecommerce} width="62" height="62" />,
+className:"left-[121.01px] top-[325.89px]"}
 },
 {
     icon:WebsiteWebAppsIcon,
     subCategoryTitle:"Website and Web Apps",
     bgColor:"bg-[#FDFFE4]",
     navLinks:[
-                {linkTitle:"SEO Marketing Services",link:"/seo/services/seo-marketing"},
-                {linkTitle:"SEO Audit Services",link:"/seo/services/seo-audits"},
-                {linkTitle:"Social Media Services",link:"/social-media/services"},
-                {linkTitle:"Enterprise Social Media Advertising Services",link:"/home/services/cms-development"},
-                {linkTitle:"Services for Paid Social Media ad",link:"/social-media/services/paid-social-ad"},
-                {linkTitle:"CMS Development",link:"/home/services/cms-development"},
-                {linkTitle:"CMS Development",link:"/home/services/cms-development"},
+                {linkTitle:"Web Development",link:"/website-and-web-apps/services/web-development"},
+                {linkTitle:"Website Design",link:"/website-and-web-apps/services/website-design"},
+                {linkTitle:"Website Redesign",link:"/website-and-web-apps/services/website-redesign"},
+                {linkTitle:"Website Maintenance",link:"/website-and-web-apps/services/website-maintenance"},
+                {linkTitle:"Landing Page Design",link:"/website-and-web-apps/services/landing-page-design"},
+                {linkTitle:"UI / UX Analysis",link:"/website-and-web-apps/services/ui-ux-analysis"},
+                {linkTitle:"CMS Development",link:"/website-and-web-apps/services/cms-development"},
                 
-                    ]
+                    ],
+                    bgIconProps:{icon:<Image src={uiDesign} width="54" height="67" />,
+                    className:"left-[232.68px] top-[63.26px]"}
     },
     {
         icon:DigitalMarketingIcon,
         subCategoryTitle:"Digital Marketing",
         bgColor:"bg-[#F8FBFF]",
         navLinks:[
-                    {linkTitle:"SEO Marketing Services",link:"/seo/services/seo-marketing"},
-                    {linkTitle:"SEO Audit Services",link:"/seo/services/seo-audits"},
-                    {linkTitle:"Social Media Services",link:"/social-media/services"},
-                    {linkTitle:"Enterprise Social Media Advertising Services",link:"/home/services/cms-development"},
-                    {linkTitle:"Services for Paid Social Media ad",link:"/social-media/services/paid-social-ad"},
-                    {linkTitle:"CMS Development",link:"/home/services/cms-development"},
-                        ]
+                    {linkTitle:"Digital Marketing",link:"/digital-marketing/services"},
+                    {linkTitle:"SEO Audit",link:"/digial-marketing/services/seo-audit"},
+                    {linkTitle:"Enterprise Social Media Advertising",link:"/digial-marketing/services/enterprise-social-media-advertising"},
+                    {linkTitle:"Social Media",link:"/digial-marketing/services/social-media"},
+                    {linkTitle:"Muscled D2C Social Advertising",link:"/digial-marketing/services/muscled-d2c-social-advertising"},
+                    {linkTitle:"Social Advertising by Muscled",link:"/digital-marketing/services/social-advertising"},
+                    {linkTitle:"Muscled Website Rainmaker",link:"/digital-marketing/services/muscled-website-rainmaker"},
+                    {linkTitle:"Professional Website Copywriting Offers",link:"/digital-marketing/services/professional-website-copywriting-offers"},
+                        ],
+                        
+                        bgIconProps:{icon:<Image src={emailMarketing} width="67" height="67" />,
+                        className:"left-[220.33px] top-[196.87px]"}
         }
 
 ];

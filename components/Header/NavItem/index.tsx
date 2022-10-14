@@ -16,8 +16,8 @@ const handleMouseOut=()=>{
   return (
     <div className='h-full' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
          <div
-            className={`flex h-full cursor-pointer pr-[5px] 
-            pl-[30px] gap-x-[10px] items-center ${selected && "bg-[#DBDBDB] bg-opacity-[15%]"}`}
+            className={`flex h-full cursor-pointer  
+            xl_2:px-[30px] px-[22px] gap-[15px]  items-center ${selected && "bg-[#DBDBDB] bg-opacity-[15%]"}`}
           >
             <p className={`text-[16px]  ${selected && "text-[#C40000]"} w-fit-content`}>
               {navTitle}
@@ -28,7 +28,7 @@ const handleMouseOut=()=>{
           </div>
           
           <div
-            className={`absolute h-screen bg-[#FFFFFF] -z-10 top-18  left-0  w-full  pt-[50px] 
+            className={`absolute h-screen bg-[#FFFFFF]  top-18  left-0  w-full  pt-[50px] 
             pr-[30px] pb-[70px] pl-[30px]
      ${
               !selected && 'hidden'

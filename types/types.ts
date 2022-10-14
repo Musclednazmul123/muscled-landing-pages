@@ -74,5 +74,6 @@ export interface NavSubItemProps {
     icon:ReactElement;
     subCategoryTitle:string;
     navLinks:{linkTitle:string,link:string}[];
-    bgColor?:string
+    bgColor?:string;
+    bgIconProps?:{icon:ReactElement,className:string}
     }

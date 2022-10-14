@@ -45,7 +45,7 @@ const ReactPlayerModal: React.FC<Props> = ({
           onClick={() => {
             setIsPlaying(false);
           }}
-          className="bg-black z-[80] fixed inset-0 h-full cursor-pointer w-full bg-opacity-90 flex items-center justify-center px-6"
+          className="bg-black z-[100] fixed inset-0 h-full cursor-pointer w-full bg-opacity-90 flex items-center justify-center px-6"
         >
           <div
             onClick={e => e.stopPropagation()}

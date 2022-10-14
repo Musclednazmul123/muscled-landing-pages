@@ -8,9 +8,11 @@ const NavSubItem:FC<NavSubItemProps> = ({
     subCategoryTitle,
     navLinks,
     bgColor="bg-[#FCF2FD]",
+    bgIconProps
+
 }) => {
   return (
-    <div className={`flex flex-col gap-y-[16px] items-start  w-[332px] h-[461px] pt-[20px]
+    <div className={`relative flex flex-col gap-y-[16px] items-start  w-[332px] h-[461px] pt-[20px]
      px-[20px] pb-[60px] ${bgColor} rounded-[5px]`}>
     <div className='flex gap-x-[10px] items-center'>
         {icon}
@@ -23,6 +25,11 @@ const NavSubItem:FC<NavSubItemProps> = ({
     })
      }
     </div>
+    {
+      bgIconProps && <div className={`absolute ${bgIconProps?.className}`}>
+        {bgIconProps.icon}
+      </div>
+    }
     </div>
   )
 }

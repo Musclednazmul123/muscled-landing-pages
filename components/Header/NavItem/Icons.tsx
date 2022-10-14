@@ -12,6 +12,7 @@ export const EcommerceIcon= <svg width="29" height="29" viewBox="0 0 29 29" fill
 <path d="M17.8624 20.261H17.8546C17.2918 20.261 16.8357 20.7172 16.8357 21.2799V21.2877C16.8357 21.8505 17.2918 22.3067 17.8546 22.3067H17.8624C18.4252 22.3067 18.8813 21.8505 18.8813 21.2877V21.2799C18.8813 20.7172 18.4252 20.261 17.8624 20.261Z" stroke="white" stroke-width="1.17568" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
+ 
 export const WebsiteWebAppsIcon = <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.333344" width="29" height="29" rx="3.91892" fill="#DDE950"/>
 <path d="M16.7928 18.0271H12.8739V21.5541H16.7928V18.0271Z" stroke="white" stroke-width="1.17568" stroke-linecap="round" stroke-linejoin="round"/>

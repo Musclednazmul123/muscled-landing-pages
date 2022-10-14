@@ -1,4 +1,4 @@
-import { FC,useState } from 'react'
+import { FC } from 'react'
 import React from 'react'
 import { MenuIcon } from '@heroicons/react/outline'
 import Muscled from "..//assets/svg/Muscled";
@@ -11,17 +11,22 @@ import SeoLeadGenVideoPlayer from "./NavItemComponents/SeoLeadGenVideoPlayer";
 const Header: FC = () => {
 
   return (
-    <div className='flex relative  bg-white shadow-sm z-10 justify-between 
+    <div className='flex relative  bg-white shadow-sm  justify-between 
     w-full items-center lg:px-[50px] h-[100px]'>
       {/* Logo  */}
-      
+        <div className='flex gap-x-[12px]'>
         <Muscled />
+        <p className='text-black-80 text-[10px] 
+        leading-[10px] font-[500] w-[108px] xl_2:block hidden'>Digital Marketing
+That Drives Revenue®</p>
+        </div>
       
 
       {/* Menu */}
-      <div className='h-[100px] text-sm xl:text-md justify-center hidden lg:flex'>
-   <NavItem navTitle='SEO & Lead Generation'>
-    <div className='flex justify-between bg-[#FFFFFF] w-full'>
+      <div className="flex items-center ">
+      <div className='h-[100px]  text-sm xl:text-md justify-center hidden lg:flex gap-x-[15px]'>
+   <NavItem navTitle='Services'>
+    <div className='flex justify-between w-full gap-x-[16px]'>
     {
        SeoLeadDataSubCatData.map((subCategory)=>{
         return <NavSubItem {...subCategory} />
@@ -32,10 +37,60 @@ const Header: FC = () => {
      buttonProps={{text:"Send Proposals",link:"/"}}/>
     </div>
    </NavItem>
-<NavItem navTitle="Learn" />
-<NavItem navTitle="Who We Are" />
-<NavItem navTitle="Our Technolgy" />
-<NavItem navTitle="Our Projects" />
+
+
+<NavItem navTitle="Learn">
+<div className='flex justify-between w-full gap-x-[16px]'>
+    {
+       SeoLeadDataSubCatData.map((subCategory)=>{
+        return <NavSubItem {...subCategory} />
+       })
+    }
+    <VideoItem  title="Our Missions"
+    videoPlayer={<SeoLeadGenVideoPlayer />}
+     buttonProps={{text:"Send Proposals",link:"/"}}/>
+    </div>
+</NavItem>
+
+
+<NavItem navTitle="Who We Are">
+<div className='flex justify-between w-full gap-x-[16px]'>
+    {
+       SeoLeadDataSubCatData.map((subCategory)=>{
+        return <NavSubItem {...subCategory} />
+       })
+    }
+    <VideoItem  title="Our Missions"
+    videoPlayer={<SeoLeadGenVideoPlayer />}
+     buttonProps={{text:"Send Proposals",link:"/"}}/>
+    </div>
+</NavItem>
+
+<NavItem navTitle="Our Technolgy">
+<div className='flex justify-between w-full gap-x-[16px]'>
+    {
+       SeoLeadDataSubCatData.map((subCategory)=>{
+        return <NavSubItem {...subCategory} />
+       })
+    }
+    <VideoItem  title="Our Missions"
+    videoPlayer={<SeoLeadGenVideoPlayer />}
+     buttonProps={{text:"Send Proposals",link:"/"}}/>
+    </div>
+</NavItem>
+
+<NavItem navTitle="Our Projects">
+<div className='flex justify-between w-full gap-x-[16px]'>
+    {
+       SeoLeadDataSubCatData.map((subCategory)=>{
+        return <NavSubItem {...subCategory} />
+       })
+    }
+    <VideoItem  title="Our Missions"
+    videoPlayer={<SeoLeadGenVideoPlayer />}
+     buttonProps={{text:"Send Proposals",link:"/"}}/>
+    </div>
+</NavItem>
       </div>
 
       {/* Button Get free Proposal */}
@@ -46,6 +101,9 @@ const Header: FC = () => {
         Get Free Proposal
       </button>
 
+      </div>
+
+      
       <MenuIcon className='lg:hidden h-10 w-10' />
     </div>
   )

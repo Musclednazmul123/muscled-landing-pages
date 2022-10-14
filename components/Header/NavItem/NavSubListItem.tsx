@@ -28,8 +28,10 @@ link
           <Link href={link}>
                         <a>
                         <p className="text-[16px] font-300 text-black-70">{linkTitle}
-                        <span className={`ml-2 ${hovered?"opacity-1":"opacity-0"}`}>
+                          <span className='relative -right-0 top-0'>
+                        <span className={`absolute ml-2 ${hovered?"inline opacity-1":"hidden opacity-0"}`}>
                     {HoverListIcon}
+                  </span>
                   </span>
                   </p>
                     </a>

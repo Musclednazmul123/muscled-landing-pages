@@ -22,7 +22,7 @@ export class AppController {
   }
 
   @Render('professional-website-copywriting-offers')
-  @Get('/professional-website-copywriting-offers')
+  @Get('/digital-marketing/services/professional-website-copywriting-offers')
   public professionalWebsiteCopywritingOffers() {
     return {};
   }
@@ -33,7 +33,7 @@ export class AppController {
   }
 
   @Render("seo-audit-services")
-  @Get("/seo/services/seo-audits")
+  @Get("/digial-marketing/services/seo-audit")
   public seoAuditServices() {
     return {};
   }
@@ -45,19 +45,19 @@ export class AppController {
   }
 
   @Render('services-for-paid-social-media-ad')
-  @Get('/social-media/services/paid-social-ad')
+  @Get('/ecommerce/services/social-media-paid-ads')
   public servicesForPaidSocialMediaAd() {
     return {};
   }
 
   @Render("enterprise-social-media-advertising-services")
-  @Get("/social-media/services/enterprise-social-advertising")
+  @Get("/digial-marketing/services/enterprise-social-media-advertising")
   public enterpriseSocialMediaAdvertisingServices() {
     return {};
   }
 
   @Render('social-media-services')
-  @Get('/social-media/services')
+  @Get('/digial-marketing/services/social-media')
   public socialMediaServices() {
     return {};
   }
@@ -69,19 +69,19 @@ export class AppController {
   }
 
   @Render('ecommerce-seo-services')
-  @Get('/ecommerce-seo-services')
+  @Get('/ecommerce/services/seo')
   public ecommerceSeoServices() {
     return {};
   }
 
   @Render("ecommerce-ppc-management")
-  @Get("/ecommerce-ppc-management")
+  @Get("/ecommerce/services/ppc-management")
   public ecommercePpcManagement() {
     return {};
   }
 
   @Render('muscled-d2c-social-advertising-services')
-  @Get('/muscled-d2c-social-advertising-services')
+  @Get('/digial-marketing/services/muscled-d2c-social-advertising')
   public muscledD2cSocialAdvertisingServices() {
     return {};
   }
@@ -93,19 +93,19 @@ export class AppController {
   }
 
   @Render('muscled-website-rainmaker')
-  @Get('/muscled-website-rainmaker')
+  @Get('/digital-marketing/services/muscled-website-rainmaker')
   public interactive() {
     return {};
   }
 
   @Render('ux-analysis-services')
-  @Get('home/services/ux-analysis')
+  @Get('/website-and-web-apps/services/ui-ux-analysis')
   public uxAnalysisServices() {
     return {};
   }
 
   @Render('landing-page-design-services')
-  @Get('home/services/landing-page-design')
+  @Get('/website-and-web-apps/services/landing-page-design')
   public landingPageDesignServices() {
     return {};
   }
@@ -115,19 +115,19 @@ export class AppController {
   public websitePrice() {}
 
   @Render('social-advertising-services')
-  @Get('/social-advertising-services')
+  @Get('/digital-marketing/services/social-advertising')
   public socialAdvertisingServices() {
     return {};
   }
 
   @Render('digital-marketing')
-  @Get('/digital-marketing')
+  @Get('/digital-marketing/services')
   public digitalMarketingServices() {
     return {};
   }
 
   @Get('home/services/web-development')
-  @Render('web-development-services')
+  @Render('/website-and-web-apps/services/web-development')
   public webDevelopmentServices(@Req() req: Request): { url: string } {
     return {
       url: req?.url,
@@ -135,37 +135,37 @@ export class AppController {
   }
 
   @Render('shopify-dev-services')
-  @Get('home/services/shopify-development')
+  @Get('/ecommerce/services/shopify-development')
   public shopifyDevServices() {
     return {};
   }
 
   @Render('cro-services')
-  @Get('home/services/cro')
+  @Get('/ecommerce/services/coversion-rate-optimization')
   public croServices() {
     return {};
   }
 
   @Render('cms-development-services')
-  @Get('home/services/cms-development')
+  @Get('/website-and-web-apps/services/cms-development')
   public cmsDevelopmentServices() {
     return {};
   }
   
   @Render('website-redesign-services')
-  @Get('home/services/website-redesign')
+  @Get('/website-and-web-apps/services/website-redesign')
   public websiteredesignservices() {
     return {}
   }
 
   @Render("website-design-service")
-  @Get("home/services/website-design")
+  @Get("/website-and-web-apps/services/website-design")
   public websiteDesignService() {
     return {};
   }
   
   @Render('website-maintenance')
-  @Get('home/services/website-maintenance')
+  @Get('/website-and-web-apps/services/website-maintenance')
   public websiteMaintenance() {
     return {}
   }
