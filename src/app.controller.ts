@@ -99,13 +99,13 @@ export class AppController {
   }
 
   @Render('ux-analysis-services')
-  @Get('/website-and-web-apps/services/ui-ux-analysis')
+  @Get('/web/services/ui-ux-analysis')
   public uxAnalysisServices() {
     return {};
   }
 
   @Render('landing-page-design-services')
-  @Get('/website-and-web-apps/services/landing-page-design')
+  @Get('/web/services/landing-page-design')
   public landingPageDesignServices() {
     return {};
   }
@@ -121,13 +121,13 @@ export class AppController {
   }
 
   @Render('digital-marketing')
-  @Get('/digital-marketing/services')
+  @Get('/digital-marketing')
   public digitalMarketingServices() {
     return {};
   }
 
-  @Get('home/services/web-development')
-  @Render('/website-and-web-apps/services/web-development')
+  @Render('web-development-services')
+  @Get('/web/services/web-development')
   public webDevelopmentServices(@Req() req: Request): { url: string } {
     return {
       url: req?.url,
@@ -147,25 +147,25 @@ export class AppController {
   }
 
   @Render('cms-development-services')
-  @Get('/website-and-web-apps/services/cms-development')
+  @Get('/web/services/cms-development')
   public cmsDevelopmentServices() {
     return {};
   }
   
   @Render('website-redesign-services')
-  @Get('/website-and-web-apps/services/website-redesign')
+  @Get('/web/services/website-redesign')
   public websiteredesignservices() {
     return {}
   }
 
   @Render("website-design-service")
-  @Get("/website-and-web-apps/services/website-design")
+  @Get("/web/services/website-design")
   public websiteDesignService() {
     return {};
   }
   
   @Render('website-maintenance')
-  @Get('/website-and-web-apps/services/website-maintenance')
+  @Get('/web/services/website-maintenance')
   public websiteMaintenance() {
     return {}
   }
