@@ -1,20 +1,17 @@
 import { FC } from "react";
-
+import ExtractRoutes from "../ExtractRoutes";
 import { Section } from "../Fawwaz/Sections";
 import { Input } from ".././Fawwaz/Form";
 import Button from "../Fawwaz/Button";
 import { HeroSectionProps } from "../Fawwaz/component.type";
-import { useRouter } from "next/router";
+
 
 const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
-  const router = useRouter();
   return (
     <Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
       <div className="max-w-[640px]">
         {/* //? Pagination -- this should be dynamic? */}
-        <p className="text-white text-lg font-medium space-x-2 cursor-pointer">
-          <span>Home {router.asPath.replace("/", " > ")}</span>
-        </p>
+        <ExtractRoutes />
 
         <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5 w-[720px]">
           {title}

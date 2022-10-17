@@ -2,11 +2,10 @@ import React, { FC } from 'react'
 import DynamicSection from '../components/DynamicSection'
 import Input from '../components/heroSection/input'
 import Button from '../components/heroSection/button'
-
+import ExtractRoutes from '@/components/ExtractRoutes'
 import { HeroSectionProps } from '../components/component.type'
 import { FeatureData } from '../data/hero'
 import Feature from '../components/heroSection/feature'
-import { useRouter } from 'next/router'
 
 const HeroSection: FC<HeroSectionProps> = ({
   title,
@@ -15,7 +14,6 @@ const HeroSection: FC<HeroSectionProps> = ({
   input,
   className
 }) => {
-  const router = useRouter()
 
   const DisplayFeatures = () => {
     return FeatureData.map((item, key) => {
@@ -30,19 +28,11 @@ const HeroSection: FC<HeroSectionProps> = ({
       )
     })
   }
-  const getPath = () => {
-    let path = router.asPath
-    console.log(path)
-    path = path.replace('/', ' > ')
-    path = path.replace('-', ' ')
-    path = path.replace('-', ' ')
-    return path
-  }
 
   return (
     <DynamicSection className="flex-col md:flex-row  2xl:h-[75vh] justify-between">
       <div className="flex flex-col xl:basis-[60%] text-white justify-center ">
-        <span className="uppercase mb-[30px]">Home {getPath()}</span>
+      <ExtractRoutes />
         <div className="">
           {/* text-2xl lg:text-3xl xl:text-5xl */}
           <p className="my-2 font-bold text-white text-[56px] whitespace-pre-line leading-[73px]">

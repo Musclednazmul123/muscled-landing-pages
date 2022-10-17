@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRightIcon } from '@heroicons/react/solid';
+import ExtractRoutes from '../ExtractRoutes';
 import HeroCard from './HeroCard';
 import CloudComputingIcon from './assets/icon-cloud-computing.png';
 import GroupPeopleIcon from './assets/icon-group-people.png';
@@ -60,11 +60,7 @@ const HeroSection: React.FC = () => {
     >
       {/* px-10 mt-8 mb-8 mr-8 */}
       <div className="text-white flex flex-col items-start gap-[1.875rem] max-w-[720px]">
-        <span className="text-[1.125rem] font-medium leading-[1.125rem] cursor-pointer">
-          Home <ChevronRightIcon className="h-4 inline text-white/50" /> Web
-          Design <ChevronRightIcon className="h-4 inline text-white/50" />{' '}
-          Services
-        </span>
+      <ExtractRoutes />
         <h2 className="text-white leading-[130%]  font-bold text-[3.5rem]">
           Design a Website In 30 Days
         </h2>
