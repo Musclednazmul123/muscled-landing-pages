@@ -42,6 +42,7 @@ className:"left-[121.01px] top-[325.89px]"}
         bgColor:"bg-[#F8FBFF]",
         navLinks:[
                     {linkTitle:"Digital Marketing",link:"/digital-marketing"},
+                    {linkTitle:"SEO Marketing",link:"/digial-marketing/services/seo-marketing"},
                     {linkTitle:"SEO Audit",link:"/digial-marketing/services/seo-audit"},
                     {linkTitle:"Enterprise Social Media Advertising",link:"/digial-marketing/services/enterprise-social-media-advertising"},
                     {linkTitle:"Social Media",link:"/digial-marketing/services/social-media"},

@@ -27,7 +27,7 @@ export class AppController {
     return {};
   }
   @Render('seo-marketing-services')
-  @Get('/seo/services/seo-marketing')
+  @Get('/digial-marketing/services/seo-marketing')
   public seoMarketingServices() {
     return {};
   }
