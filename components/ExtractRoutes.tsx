@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 const ExtractRoutes:FC = () => {
     const router=useRouter();
     let routesArray=router.asPath.split("/");
-    routesArray.splice(0,1)
+    routesArray.pop();
+    routesArray.splice(0,1,"Home")
     console.log(routesArray); 
     let uperCasedRoutes=routesArray.map((route)=>{
 
