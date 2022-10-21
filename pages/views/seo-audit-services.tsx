@@ -51,6 +51,8 @@ const Page: NextPage = () => {
 					down for more information, or contact us for a
 					personalized proposal!"
 					heroSVG={<SEOAuditSVG className="w-96 md:w-auto" />}
+					descriptionClassName="text-[20px]"
+					descriptionTextColor="text-white"
 					input
 				/>
 			</div>

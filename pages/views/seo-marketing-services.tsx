@@ -3,6 +3,7 @@ import { NextPage } from "next";
 
 // components
 import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
+import Partners from "@/components/SeoMarketingServices/Sections/Partners";
 import { Input } from "components/Fawwaz/Form";
 import Button from "components/Fawwaz/Button";
 import Logo from "components/Fawwaz/Logo";
@@ -55,24 +56,13 @@ const Page: NextPage = () => {
 					and revenue through the services and technology we
 					offer with SEO."
 					heroSVG={<SEOMarketingSVG className="w-80 lg:w-full" />}
+					descriptionClassName="text-[20px]"
 					input
 				/>
 			</div>
 
 			{/* Second section */}
-			<div className="bg-white">
-				<Section className="text-center pt-16">
-					<h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
-
-					<div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-					</div>
-				</Section>
-			</div>
+			<Partners/>
 
 			{/* Third section */}
 			<Section className="pt-5">
@@ -80,7 +70,7 @@ const Page: NextPage = () => {
 					Explore SEO Marketing Service Plans
 				</h2>
 
-				<p className="py-14 flex flex-wrap justify-center gap-1">
+				<p className="py-14 flex flex-wrap justify-center gap-1 text-[20px]">
 					Need help?
 					<span className="underline cursor-pointer">
 						Schedule a call now
@@ -88,7 +78,7 @@ const Page: NextPage = () => {
 				</p>
 
 				<div className="flex flex-wrap justify-center lg:justify-between gap-2">
-					<Card className="rounded-sm border-2 max-w-[400px] w-full">
+					<Card className="rounded-[10px] border-[1px] border-black-70 max-w-[400px] w-full">
 						<CardHeader
 							title="STANDARD PLAN"
 							rate="2,500"
@@ -128,7 +118,7 @@ const Page: NextPage = () => {
 								</Button>
 							</div>
 					</Card>
-					<Card className="rounded-sm border-2 max-w-[400px] w-full">
+					<Card className="rounded-[10px] border-[1px] border-black-70 max-w-[400px] w-full">
 						<CardHeader
 							title="PREMIUM PLAN"
 							rate="5,000"
@@ -171,7 +161,7 @@ const Page: NextPage = () => {
 								</Button>
 							</div>
 					</Card>
-					<Card className="rounded-sm border-2 max-w-[400px] w-full">
+					<Card className="rounded-[10px] border-[1px] border-black-70 max-w-[400px] w-full">
 						<CardHeader
 							title="ULTIMATE PLAN"
 							rate="8,000"
@@ -226,7 +216,7 @@ const Page: NextPage = () => {
 			<div className="p-3 bg-red-10">
 				<div className="flex flex-wrap gap-10 justify-center py-20">
 					<div className="max-w-[760px] space-y-7">
-						<h2 className="text-4xl">
+						<h2 className="text-4xl leding-[52px]">
 							The Digital Workout That Grows Your Traffic and
 							Revenue through SEO
 						</h2>
@@ -275,13 +265,13 @@ const Page: NextPage = () => {
 							</span>
 						</p>
 					</div>
-					<Card className="max-w-[440px] w-full p-6 rounded-md relative self-start">
+					<Card className="rounded-[5px] max-w-[440px] w-full p-6  relative self-start">
 						<img
 							src={cardBg.src}
 							alt={cardBg.src}
 							className="absolute top-0 left-0 w-full h-full z-10"
 						/>
-						<p className="relative text-white max-w-[190px] z-20">
+						<p className="relative text-white max-w-[260px] z-20 text-xl font-bold">
 							Looking for custom plans and pricing? Request a
 							proposal to receive yours.
 						</p>
@@ -296,7 +286,7 @@ const Page: NextPage = () => {
 			</div>
 
 			{/* Section Fifth */}
-			<Testimonial />
+			<Testimonial marginTop="mt-0"/>
 
 			{/* Section Sixth */}
 			<Section>

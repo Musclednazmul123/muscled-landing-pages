@@ -126,6 +126,7 @@ export interface HeroSectionProps {
 	titleClassNames?: string;
 	description: string;
 	descriptionTextColor?: string;
+	descriptionClassName?:string;
 	heroSVG?: JSX.Element | ReactNode;
 	input?: boolean;
 }

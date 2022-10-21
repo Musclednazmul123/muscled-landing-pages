@@ -10,6 +10,7 @@ const Hero: FC<HeroSectionProps> = ({
 	titleClassNames,
 	description,
 	descriptionTextColor,
+	descriptionClassName,
 	heroSVG,
 	input,
 }) => {
@@ -25,10 +26,8 @@ const Hero: FC<HeroSectionProps> = ({
 
 				<p
 					className={`${
-						descriptionTextColor
-							? descriptionTextColor
-							: "text-white-70"
-					} leading-8 mb-8`}>
+						descriptionTextColor || "text-white-70"
+					} leading-8 mb-8 ${descriptionClassName}`}>
 					{description}
 				</p>
 
