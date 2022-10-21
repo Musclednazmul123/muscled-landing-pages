@@ -37,9 +37,9 @@ const Hero: FC<HeroSectionProps> = ({
 						<Input
 							type="text"
 							placeholder="Enter Your Website Link"
-							className="text-sm flex-1 md:text-lg"
+							className="text-sm flex-1 md:text-lg w-[404px] h-[60px]"
 						/>
-						<Button bgColor="bg-black" textColor="text-white">
+						<Button bgColor="bg-black" textColor="text-white" className="w-[226px] h-[60px]">
 							<span className="text-sm md:text-lg">
 								Send Proposal
 							</span>
