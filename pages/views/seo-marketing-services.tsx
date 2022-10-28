@@ -2,11 +2,11 @@ import React,{FC,useState} from "react";
 import { NextPage } from "next";
 
 // components
-import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
+import { Section, Testimonial, Hero } from "components/Fawwaz/Sections";
 import Partners from "@/components/SeoMarketingServices/Sections/Partners";
 import { Input } from "components/Fawwaz/Form";
 import Button from "components/Fawwaz/Button";
-import Logo from "components/Fawwaz/Logo";
+
 import {
 	Card,
 	CardHeader,
@@ -19,7 +19,6 @@ import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
 // assets
 // SVG
 import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
-import logo from "components/assets/logos/logo1.png";
 import cardBg from "components/assets/qwe.png";
 import sectionIcon from "components/assets/1.png";
 
@@ -28,6 +27,11 @@ import { StarIcon, CheckCircleIcon,ChevronDoubleRightIcon} from "@heroicons/reac
 
 
 const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
+
+const TableOfContentIcon=<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="5" fill="black" fill-opacity="0.8"/>
+<path d="M20 9.77778H7.55556V8H20V9.77778ZM20 13.3333H7.55556V11.5556H20V13.3333ZM20 16.8889H7.55556V15.1111H20V16.8889ZM5.77778 16.8889H4V15.1111H5.77778V16.8889ZM5.77778 8V9.77778H4V8H5.77778ZM5.77778 13.3333H4V11.5556H5.77778V13.3333Z" fill="white"/>
+</svg>
 
 const contentsOfTOC = [
 	"Our First-Principle and Data-Driven SEO Process",
@@ -291,10 +295,10 @@ const Page: NextPage = () => {
 			{/* Section Sixth */}
 			<Section>
 				<div className="text-center mt-24 mb-10">
-					<h2 className="text-4xl">
+					<h2 className="text-[40px] font-bold">
 						Muscled Digital Agency Services
 					</h2>
-					<p className="mt-10">
+					<p className="mt-10 text-[20px] leading-[30px]">
 						Our plans are tailored specifically for our partners,
 						but help yourself and scroll a bit down to see the
 						deliverables you can expect from our SEO team. We have
@@ -302,7 +306,7 @@ const Page: NextPage = () => {
 						checks each one’s effectiveness to push your business
 						further and stand atop its competitors.
 					</p>
-					<p className="mt-10">
+					<p className="mt-10 text-[20px] leading-[30px]">
 						{" "}
 						You can get those SEO techniques today!
 					</p>
@@ -990,8 +994,8 @@ const Page: NextPage = () => {
 												Information
 											</p>
 											<div className="flex gap-2 items-center mt-2 cursor-pointer">
-												<AiFillPhone className="fill-sky-500" />
-												<p className="text-sky-500 font-bold">
+												<AiFillPhone className="fill-[#48BBFC] h-6 w-6" />
+												<p className="text-[#48BBFC] font-bold text-[20px]">
 													888-601-5359
 												</p>
 											</div>
@@ -1713,13 +1717,17 @@ const Page: NextPage = () => {
 						titleColor="text-black"
 						titleIconColor="black"
 						isOpen={isOpen}
+						contentsClassName="border-l-[1px] px-5 h-inherit
+						 border-r-[1px] border-b-[1px] border-black border-opacity-[30%]"
+						width="lg:max-w-[440px]"
+						icon={TableOfContentIcon}
 						setIsOpen={() => setIsOpen((prev) => !prev)}
 						contents={contentsOfTOC.map((content, key) => (
 							<IconItem
 								key={key}
 								title={content}
 								icon={<ChevronDoubleRightIcon className="fill-black-80 w-5 h-5"/>}
-								className=" mb-5 w-full items-center text-black-80"
+								className=" mb-5 w-full items-center text-black"
 							/>
 						))}
 					/>

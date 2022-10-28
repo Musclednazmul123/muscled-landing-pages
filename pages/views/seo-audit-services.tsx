@@ -161,7 +161,7 @@ const Page: NextPage = () => {
 						us.
 					</p>
 				</div>
-				<div className="w-full md:w-[400px]">
+				<div className="w-[400px]">
 					<div className="relative min-w-[200px] w-full max-w-[400px] h-[320px] mx-auto bg-white-gray md:mx-0">
 						<VideoFrame className="absolute w-full h-full" />
 					</div>

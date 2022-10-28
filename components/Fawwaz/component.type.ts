@@ -107,6 +107,7 @@ export interface TableOfContentProps {
 	className?:string;
 	contentsClassName?:string;
 	width?:string;
+	icon?:ReactNode
 	setIsOpen: () => void;
 }
 

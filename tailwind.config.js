@@ -51,11 +51,11 @@ module.exports = {
           from: {
             transform: "translateY(0%)",
             opacity: "1",
-            maxHeight: "300px",
+            maxHeight: "fit-content",
           },
           to: {
             opacity: "0",
-            maxHeight: "0",
+            maxHeight: "hidden",
           },
         },
       },
