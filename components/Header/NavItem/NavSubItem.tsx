@@ -20,8 +20,8 @@ const NavSubItem:FC<NavSubItemProps> = ({
     </div>
     <div className='flex flex-col items-start gap-y-6'>
      {
-    navLinks.map(linkItem=>{
-        return <NavSubListItem {...linkItem} />
+    navLinks.map((linkItem, index)=>{
+        return <NavSubListItem key={`${linkItem.linkTitle}-${index}`} {...linkItem} />
     })
      }
     </div>
