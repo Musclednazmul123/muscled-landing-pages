@@ -10,6 +10,7 @@ const Hero: FC<HeroSectionProps> = ({
 	titleClassNames,
 	description,
 	descriptionTextColor,
+	descriptionClassName,
 	heroSVG,
 	input,
 }) => {
@@ -25,10 +26,8 @@ const Hero: FC<HeroSectionProps> = ({
 
 				<p
 					className={`${
-						descriptionTextColor
-							? descriptionTextColor
-							: "text-white-70"
-					} leading-8 mb-8`}>
+						descriptionTextColor || "text-white-70"
+					} leading-8 mb-8 ${descriptionClassName}`}>
 					{description}
 				</p>
 
@@ -37,9 +36,9 @@ const Hero: FC<HeroSectionProps> = ({
 						<Input
 							type="text"
 							placeholder="Enter Your Website Link"
-							className="text-sm flex-1 md:text-lg"
+							className="text-sm flex-1 md:text-lg w-[404px] h-[60px]"
 						/>
-						<Button bgColor="bg-black" textColor="text-white">
+						<Button bgColor="bg-black" textColor="text-white" className="w-[226px] h-[60px]">
 							<span className="text-sm md:text-lg">
 								Send Proposal
 							</span>

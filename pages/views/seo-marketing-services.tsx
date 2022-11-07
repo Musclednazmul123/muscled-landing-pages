@@ -2,10 +2,11 @@ import React,{FC,useState} from "react";
 import { NextPage } from "next";
 
 // components
-import { Section, Testimonial, Footer, Hero } from "components/Fawwaz/Sections";
+import { Section, Testimonial, Hero } from "components/Fawwaz/Sections";
+import Partners from "@/components/SeoMarketingServices/Sections/Partners";
 import { Input } from "components/Fawwaz/Form";
 import Button from "components/Fawwaz/Button";
-import Logo from "components/Fawwaz/Logo";
+
 import {
 	Card,
 	CardHeader,
@@ -18,7 +19,6 @@ import { Table, TableOfContent, Td, Th } from "components/Fawwaz/Table";
 // assets
 // SVG
 import SEOMarketingSVG from "components/assets/svg/SEOMarketingSVG";
-import logo from "components/assets/logos/logo1.png";
 import cardBg from "components/assets/qwe.png";
 import sectionIcon from "components/assets/1.png";
 
@@ -27,6 +27,11 @@ import { StarIcon, CheckCircleIcon,ChevronDoubleRightIcon} from "@heroicons/reac
 
 
 const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
+
+const TableOfContentIcon=<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="5" fill="black" fill-opacity="0.8"/>
+<path d="M20 9.77778H7.55556V8H20V9.77778ZM20 13.3333H7.55556V11.5556H20V13.3333ZM20 16.8889H7.55556V15.1111H20V16.8889ZM5.77778 16.8889H4V15.1111H5.77778V16.8889ZM5.77778 8V9.77778H4V8H5.77778ZM5.77778 13.3333H4V11.5556H5.77778V13.3333Z" fill="white"/>
+</svg>
 
 const contentsOfTOC = [
 	"Our First-Principle and Data-Driven SEO Process",
@@ -55,24 +60,13 @@ const Page: NextPage = () => {
 					and revenue through the services and technology we
 					offer with SEO."
 					heroSVG={<SEOMarketingSVG className="w-80 lg:w-full" />}
+					descriptionClassName="text-[20px]"
 					input
 				/>
 			</div>
 
 			{/* Second section */}
-			<div className="bg-white">
-				<Section className="text-center pt-16">
-					<h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
-
-					<div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-						<Logo src={logo.src} width={154} height={34} />
-					</div>
-				</Section>
-			</div>
+			<Partners/>
 
 			{/* Third section */}
 			<Section className="pt-5">
@@ -80,7 +74,7 @@ const Page: NextPage = () => {
 					Explore SEO Marketing Service Plans
 				</h2>
 
-				<p className="py-14 flex flex-wrap justify-center gap-1">
+				<p className="py-14 flex flex-wrap justify-center gap-1 text-[20px]">
 					Need help?
 					<span className="underline cursor-pointer">
 						Schedule a call now
@@ -88,7 +82,7 @@ const Page: NextPage = () => {
 				</p>
 
 				<div className="flex flex-wrap justify-center lg:justify-between gap-2">
-					<Card className="rounded-sm border-2 max-w-[400px] w-full">
+					<Card className="rounded-[10px] border-[1px] border-black-70 max-w-[400px] w-full">
 						<CardHeader
 							title="STANDARD PLAN"
 							rate="2,500"
@@ -128,7 +122,7 @@ const Page: NextPage = () => {
 								</Button>
 							</div>
 					</Card>
-					<Card className="rounded-sm border-2 max-w-[400px] w-full">
+					<Card className="rounded-[10px] border-[1px] border-black-70 max-w-[400px] w-full">
 						<CardHeader
 							title="PREMIUM PLAN"
 							rate="5,000"
@@ -171,7 +165,7 @@ const Page: NextPage = () => {
 								</Button>
 							</div>
 					</Card>
-					<Card className="rounded-sm border-2 max-w-[400px] w-full">
+					<Card className="rounded-[10px] border-[1px] border-black-70 max-w-[400px] w-full">
 						<CardHeader
 							title="ULTIMATE PLAN"
 							rate="8,000"
@@ -226,7 +220,7 @@ const Page: NextPage = () => {
 			<div className="p-3 bg-red-10">
 				<div className="flex flex-wrap gap-10 justify-center py-20">
 					<div className="max-w-[760px] space-y-7">
-						<h2 className="text-4xl">
+						<h2 className="text-4xl leding-[52px]">
 							The Digital Workout That Grows Your Traffic and
 							Revenue through SEO
 						</h2>
@@ -275,13 +269,13 @@ const Page: NextPage = () => {
 							</span>
 						</p>
 					</div>
-					<Card className="max-w-[440px] w-full p-6 rounded-md relative self-start">
+					<Card className="rounded-[5px] max-w-[440px] w-full p-6  relative self-start">
 						<img
 							src={cardBg.src}
 							alt={cardBg.src}
 							className="absolute top-0 left-0 w-full h-full z-10"
 						/>
-						<p className="relative text-white max-w-[190px] z-20">
+						<p className="relative text-white max-w-[260px] z-20 text-xl font-bold">
 							Looking for custom plans and pricing? Request a
 							proposal to receive yours.
 						</p>
@@ -296,15 +290,15 @@ const Page: NextPage = () => {
 			</div>
 
 			{/* Section Fifth */}
-			<Testimonial />
+			<Testimonial marginTop="mt-0"/>
 
 			{/* Section Sixth */}
 			<Section>
 				<div className="text-center mt-24 mb-10">
-					<h2 className="text-4xl">
+					<h2 className="text-[40px] font-bold">
 						Muscled Digital Agency Services
 					</h2>
-					<p className="mt-10">
+					<p className="mt-10 text-[20px] leading-[30px]">
 						Our plans are tailored specifically for our partners,
 						but help yourself and scroll a bit down to see the
 						deliverables you can expect from our SEO team. We have
@@ -312,7 +306,7 @@ const Page: NextPage = () => {
 						checks each one’s effectiveness to push your business
 						further and stand atop its competitors.
 					</p>
-					<p className="mt-10">
+					<p className="mt-10 text-[20px] leading-[30px]">
 						{" "}
 						You can get those SEO techniques today!
 					</p>
@@ -1000,8 +994,8 @@ const Page: NextPage = () => {
 												Information
 											</p>
 											<div className="flex gap-2 items-center mt-2 cursor-pointer">
-												<AiFillPhone className="fill-sky-500" />
-												<p className="text-sky-500 font-bold">
+												<AiFillPhone className="fill-[#48BBFC] h-6 w-6" />
+												<p className="text-[#48BBFC] font-bold text-[20px]">
 													888-601-5359
 												</p>
 											</div>
@@ -1723,13 +1717,17 @@ const Page: NextPage = () => {
 						titleColor="text-black"
 						titleIconColor="black"
 						isOpen={isOpen}
+						contentsClassName="border-l-[1px] px-5 h-inherit
+						 border-r-[1px] border-b-[1px] border-black border-opacity-[30%]"
+						width="lg:max-w-[440px]"
+						icon={TableOfContentIcon}
 						setIsOpen={() => setIsOpen((prev) => !prev)}
 						contents={contentsOfTOC.map((content, key) => (
 							<IconItem
 								key={key}
 								title={content}
 								icon={<ChevronDoubleRightIcon className="fill-black-80 w-5 h-5"/>}
-								className=" mb-5 w-full items-center text-black-80"
+								className=" mb-5 w-full items-center text-black"
 							/>
 						))}
 					/>

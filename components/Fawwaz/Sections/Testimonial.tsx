@@ -6,9 +6,15 @@ import ReactPlayerModal from "components/ReactPlayerModal";
 
 import PlayIcon from "../../Icons/PlayIcon";
 
-const Testimonial: FC = () => {
+ interface TestimonialProps{
+marginTop?:string,
+}
+
+const Testimonial: FC<TestimonialProps> = ({
+	marginTop="mt-[200px]"
+}) => {
 	return (
-		<div className="bg-black mt-[200px]">
+		<div className={`bg-black ${marginTop}`}>
 			<Section className="flex flex-wrap justify-center items-center py-20 px-3 gap-32">
 				<div className="max-w-[560px] text-accent-white">
 					<p className="text-xl md:text-2xl mb-8">

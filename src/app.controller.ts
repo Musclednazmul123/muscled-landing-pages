@@ -21,10 +21,6 @@ export class AppController {
     return {};
   }
 
-  
-
- 
-
   @Render('social-media-marketing-cost')
   @Get('/social-media-marketing-cost')
   public socialMediaMarketingCost() {
