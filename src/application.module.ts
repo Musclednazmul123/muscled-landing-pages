@@ -6,6 +6,8 @@ import Next from "next";
 import { AppController } from "./app.controller";
 import { BlogController } from "./blog/blog.controller";
 import { BlogService } from "./blog/blog.service";
+import {ServicesController} from "./services/services.controller"
+import {Services} from "./services/services.module"
 
 @Module({
 	imports: [
@@ -19,7 +21,7 @@ import { BlogService } from "./blog/blog.service";
 			rootPath: join(__dirname, "..", "public"),
 		}),
 	],
-	controllers: [AppController, BlogController],
-	providers: [BlogService],
+	controllers: [AppController, ServicesController, BlogController],
+	providers: [BlogService, Services],
 })
 export class AppModule {}

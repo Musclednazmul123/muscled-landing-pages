@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import React from 'react'
 import { MenuIcon } from '@heroicons/react/outline'
-import Muscled from "..//assets/svg/Muscled";
+import Muscled from "../assets/svg/Muscled";
 import NavItem from "./NavItem";
 import NavSubItem from "./NavItem/NavSubItem"
 import {SeoLeadDataSubCatData} from "./NavItem/NavItemsData";
@@ -29,8 +29,8 @@ That Drives Revenue®</p>
    <NavItem navTitle='Services'>
     <div className='flex justify-between w-full gap-x-[16px]'>
     {
-       SeoLeadDataSubCatData.map((subCategory)=>{
-        return <NavSubItem {...subCategory} />
+       SeoLeadDataSubCatData.map((subCategory, index)=>{
+        return <NavSubItem key={`${subCategory.subCategoryTitle}-1-${index}`} {...subCategory} />
        })
     }
     <VideoItem  title="Our Missions"
@@ -43,8 +43,8 @@ That Drives Revenue®</p>
 <NavItem navTitle="Learn">
 <div className='flex justify-between w-full gap-x-[16px]'>
     {
-       SeoLeadDataSubCatData.map((subCategory)=>{
-        return <NavSubItem {...subCategory} />
+       SeoLeadDataSubCatData.map((subCategory, index)=>{
+        return <NavSubItem  key={`${subCategory.subCategoryTitle}-2-${index}`} {...subCategory} />
        })
     }
     <VideoItem  title="Our Missions"
@@ -57,8 +57,8 @@ That Drives Revenue®</p>
 <NavItem navTitle="Who We Are">
 <div className='flex justify-between w-full gap-x-[16px]'>
     {
-       SeoLeadDataSubCatData.map((subCategory)=>{
-        return <NavSubItem {...subCategory} />
+       SeoLeadDataSubCatData.map((subCategory, index)=>{
+        return <NavSubItem  key={`${subCategory.subCategoryTitle}-3-${index}`} {...subCategory} />
        })
     }
     <VideoItem  title="Our Missions"
@@ -70,8 +70,8 @@ That Drives Revenue®</p>
 <NavItem navTitle="Our Technolgy">
 <div className='flex justify-between w-full gap-x-[16px]'>
     {
-       SeoLeadDataSubCatData.map((subCategory)=>{
-        return <NavSubItem {...subCategory} />
+       SeoLeadDataSubCatData.map((subCategory, index)=>{
+        return <NavSubItem key={`${subCategory.subCategoryTitle}-3-${index}`} {...subCategory} />
        })
     }
     <VideoItem  title="Our Missions"
@@ -83,8 +83,8 @@ That Drives Revenue®</p>
 <NavItem navTitle="Our Projects">
 <div className='flex justify-between w-full gap-x-[16px]'>
     {
-       SeoLeadDataSubCatData.map((subCategory)=>{
-        return <NavSubItem {...subCategory} />
+       SeoLeadDataSubCatData.map((subCategory, index)=>{
+        return <NavSubItem key={`${subCategory.subCategoryTitle}-3-${index}`} {...subCategory} />
        })
     }
     <VideoItem  title="Our Missions"
