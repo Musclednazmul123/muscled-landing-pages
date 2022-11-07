@@ -6,11 +6,10 @@ import PromotionSection from '../../components/ShopifyDevServices/PromotionSecti
 import TestimonialMedia from "../../components/ShopifyDevServices/TestimonialMedia/TestimonialMedia";
 import TestimonialSection from "@/components/WebDevelopmentServices/TestimonialsSection/TestimonialsSection";
 import GuideDetailsAndTOC from "@/components/ShopifyDevServices/GuideDetailsAndTOC/GuideDetailsAndTOC";
-import ShopifyServiceSection from "@/components/ShopifyDevServices/ShopifyServicsesSection";
 import ImportantLinksSection from "@/components/ShopifyDevServices/ImportantLinksSection";
 import {heroSectionProps,partnersSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 import {testimonialsSectionProps} from "../../components/WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
-import ExtractRoutes from "@/components/ExtractRoutes";
+
 
 export async function getServerSideProps(props:NextPageContext){
 
@@ -58,7 +57,6 @@ const Page:NextPage = () => {
         <PromotionSection />
         <TestimonialSection  {...testimonialsSectionData} />
         <GuideDetailsAndTOC />
-        <ShopifyServiceSection />
         <ImportantLinksSection />
     </div>
   )

@@ -1,5 +1,6 @@
 import React,{FC} from 'react'
 import GuideDetailsCard from "./GuideDetailsCard";
+import ShopifyServiceSection from "@/components/ShopifyDevServices/ShopifyServicsesSection";
 
 const GuideDetailsSection:FC = () => {
   return (
@@ -50,6 +51,7 @@ const GuideDetailsSection:FC = () => {
         </div>
 
         <GuideDetailsCard />
+        <ShopifyServiceSection />
     </div>
   )
 }

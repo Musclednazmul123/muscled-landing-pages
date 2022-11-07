@@ -51,7 +51,6 @@ module.exports = {
           from: {
             transform: "translateY(0%)",
             opacity: "1",
-            maxHeight: "fit-content",
           },
           to: {
             opacity: "0",

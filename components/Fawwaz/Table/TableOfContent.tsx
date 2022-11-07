@@ -34,11 +34,11 @@ const TableOfContent: FC<TableOfContentProps> = ({
 				<ChevronUpIcon className={`${titleIconColor ? titleIconColor : "text-white"} 
 				transition-transform ${isOpen ? "rotate-0" : "rotate-180"} w-6`}/>
 			</div>
-			<div className={` ${isOpen ? `animate-slide  ${contentsClassName}`: "animate-slideUp" }`} >
-				<div className="py-8">
-					{ contents }
+			
+				<div className={` ${isOpen ? `animate-slide  ${contentsClassName} py-8`: "animate-slideUp" }`}>
+					{isOpen &&  contents }
 				</div>
-			</div>
+			
 		</div>
 	);
 };
