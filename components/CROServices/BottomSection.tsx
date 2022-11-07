@@ -16,7 +16,7 @@ const BottomSection = () => {
             <GuideDetailsSection />
           </div>
           <div id="toc" className="w-[440px]">
-            <div className="sticky top-0">
+            <div className="sticky top-10">
               <TOCSection
                 links={[
                   {
