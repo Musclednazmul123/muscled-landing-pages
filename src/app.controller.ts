@@ -169,4 +169,10 @@ export class AppController {
   public websiteMaintenance() {
     return {}
   }
+
+  @Render('muscled-proposal-form')
+  @Get('/get-proposal/form')
+  public muscledProposalForm() {
+    return {}
+  }
 }
