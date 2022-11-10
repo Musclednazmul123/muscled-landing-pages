@@ -30,7 +30,7 @@ function Hero() {
 	];
 	return (
 		<div className="bg-black bg-opacity-70">
-			<div className="xl:py-[100px] md:py-20 py-4  px-5 md:px-10 lg:px-20 xl:px-4 mx-auto container  xl:flex items-center justify-between">
+			<div className="xl:py-[65px] md:py-20 py-4  px-5 md:px-10 lg:px-20 xl:px-4  xl:flex items-center justify-center">
 				<div className="max-w-[720px]">
 					<ExtractRoutes />
 					<h1 className="lg:text-6xl md:text-5xl text-2xl xl:text-left text-center font-bold lg:leading-[72.8px] text-white mt-[30px]">
