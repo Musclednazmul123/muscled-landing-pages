@@ -4,7 +4,7 @@ import PromotionMedia from "./PromotionMedia/PromotionMedia";
 
 const PromotionSection:FC = () => {
   return (
-    <div className='min-h-[45rem] flex bg-[#C400000F] mt-3  
+    <div className='min-h-[45rem] flex bg-[#C400000F]   
     justify-center space-x-[42px] py-[75px] items-center'>
         <PromotionContent />
         <PromotionMedia />

@@ -6,7 +6,7 @@ import PromotionCard from "./PromotionCard/PromotionCard";
 
 const TablesOfContent:FC = () => {
   return (
-    <div className='sticky top-0 flex flex-col w-[400px] space-y-[80px] self-start'>
+    <div className='sticky top-8 flex flex-col w-[400px] space-y-[80px] self-start'>
 <TableOfContent />
 <RelatedResources />
 <AdditionalReading />

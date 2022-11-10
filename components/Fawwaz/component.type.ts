@@ -1,6 +1,7 @@
 import React, {FC, ReactNode } from "react";
 
 import { title } from "process";
+import { FlexLayoutProp } from "../kelvin/types";
 
 
 
@@ -79,6 +80,9 @@ export interface RoundedBtnProps {
 	textSize: string,
 	children: ReactNode;
 	roundedFull: boolean;
+	textWeight?:string;
+	className?:string;
+	padding?:string;
 }
 
 //  Table

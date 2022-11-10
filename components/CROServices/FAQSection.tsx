@@ -11,14 +11,14 @@ const FAQSection = () => {
         <p className="text-[40px] font-bold mb-10 leading-[52px]">
           FAQ's about Conversion Rate Optimization Services
         </p>
-        <p className="text-lg mb-8">
+        <p className="text-xl mb-8">
           Are you interested in learning more about conversion rate optimization
           services for your company? View our Frequently Asked Questions:
         </p>
         <p className="text-2xl font-bold mb-3">
           What exactly is conversion rate optimization?
         </p>
-        <p className="text-lg mb-8">
+        <p className="text-xl mb-8">
           Conversion rate optimization services test and improve elements on
           your website to improve conversions, such as product purchases or
           guide downloads. Audience research, heatmaps, visitor recordings, and
@@ -27,7 +27,7 @@ const FAQSection = () => {
         <p className="text-2xl font-bold mb-3">
           What are the prices for conversion rate optimization services?
         </p>
-        <p className="text-lg mb-8">
+        <p className="text-xl mb-8">
           The cost of conversion rate optimization services is determined by
           several factors, including the number of tests conducted and the CRO
           agency with which you collaborate. CRO services are typically priced
@@ -35,7 +35,7 @@ const FAQSection = () => {
           most accurate pricing.
         </p>
         <p className="text-2xl font-bold mb-3">We achieve results</p>
-        <p className="text-lg mb-[72px]">
+        <p className="text-xl mb-[72px]">
           We are committed to delivering results that have a genuine impact on
           our clients' most important objectives. We've generated over 7.8
           million leads and $3 billion in revenue for our clients over the last
@@ -44,7 +44,7 @@ const FAQSection = () => {
         <p className="text-[40px] font-bold mb-10 leading-[52px]">
           Grow your revenue with a custom CRO package
         </p>
-        <p className="text-lg mb-20">
+        <p className="text-xl mb-20">
           WebFX is a leader in conversion analysis and website conversion rate
           optimization services. We work with clients across the country, and in
           many industries, and we know what works. So if you’re ready to
