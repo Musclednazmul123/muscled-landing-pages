@@ -9,7 +9,7 @@ import webDesign from "../../../public/webDesign.png";
 
 const DesignSevices = () => {
   return (
-    <Section className="flex flex-wrap md:flex-nowrap h-[652px] gap-24 py-3 mt-1 md:justify-center xl:justify-start bg-[#F5F5F5]">
+    <Section className="flex flex-wrap md:flex-nowrap  gap-24 pt-3 mt-1 md:justify-center xl:justify-start bg-[#F5F5F5]">
       <div className="max-w-[652px] h-[280px]">
         <p className="text-xl ">
           Your website is the first point of contact customers have with your
@@ -43,9 +43,10 @@ const DesignSevices = () => {
           Icon={playIcon}
           width={"480px"}
           height={"280px"}
+          thumbnailGradient="linear-gradient(to right, rgba(196, 0, 0, 0.26),rgba(196, 0, 0, 0.26))"
         />
 
-        <Card className="bg-[#3E5661] flex flex-col w-[480px] h-[270px] mt-4 mx-auto md:mx-0 rounded-md">
+        <Card className="bg-black/60 flex flex-col w-[480px] h-[270px] mt-4 mx-auto md:mx-0 rounded-md">
           <h4 className="p-6 pb-0 text-white text-[25px]">
             Looking for custom plans and pricing? Request a proposal to receive
             yours.
@@ -53,8 +54,8 @@ const DesignSevices = () => {
           <div className="flex flex-row justify-between pl-6 ">
             <Buttons
               className="px-5 py-4 font-sans font-semibold text-[16px] mt-7"
-              bgColor = "bg-white"
-              color = "text-black"
+              bgColor="bg-white"
+              color="text-black"
               onClick={() => console.log("get free proposal")}
             >
               Get Free Proposal

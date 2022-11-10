@@ -27,7 +27,7 @@ const TableOfContent: FC<IProps> = ({ IconContent, content, IconTable }) => {
           {IconContent}
         </div>
       </div>
-      <ul className="px-6">
+      <ul className="px-6 pl-3">
         {content.map((item: string, idx: number) => (
           <div key={idx} className="flex items-center px-3 my-3">
             <div className="flex w-4 h-4 mr-2">{IconTable}</div> <li>{item}</li>

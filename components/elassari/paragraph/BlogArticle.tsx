@@ -36,7 +36,7 @@ const BlogArticle = () => {
       {/* 8 Paragraph */}
       <Paragraph8 />
     </div>
-    <div className="sticky top-0 self-start">
+    <div className="sticky top-10 self-start">
    <TableOfContent
         content={[
           "Muscled’s website design services are an investment in the success of your site.",
