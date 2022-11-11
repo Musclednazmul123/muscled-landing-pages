@@ -30,4 +30,8 @@ export class AppController {
   @Render('website-price')
   @Get('home/information/website-price')
   public websitePrice() {}
+
+  @Render("muscled-proposal-form")
+  @Get("/proposal-form")
+  public proposalForm() {}
 }
