@@ -264,7 +264,7 @@ const AboutCMS = () => {
     </div>
           {/* Right side */}
           {isOpen ? (
-            <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[340px] sticky top-0">
+            <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[340px] sticky top-10">
               <div className="flex justify-between py-[15px] px-[10px] w-full">
                 <div className="flex">
                   <Logo src={TableIcon} width={30} height={20} />
@@ -438,7 +438,7 @@ const AboutCMS = () => {
               </div>
             </div>
           ) : (
-            <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[65px]">
+            <div className="w-[400px] border-2 bg-[#F2F2F2] rounded-lg h-[65px] sticky top-10">
               <div className="flex justify-between py-[15px] px-[10px] w-full">
                 <div className="flex">
                   <Logo src={TableIcon} width={30} height={20} />

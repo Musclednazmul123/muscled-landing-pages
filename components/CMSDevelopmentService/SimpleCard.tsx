@@ -3,9 +3,9 @@ import React from "react";
 const SimpleCard = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center my-14">
-      <div className="flex flex-col w-full md:flex-row justify-center items-center my-14">
+      <div className="flex flex-col w-full md:flex-row justify-center items-center my-14 ">
         <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
-          <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+          <div className="p-[30px] flex flex-col justify-start h-[350px] items-start">
             <h2 className="text-2xl font-medium pb-5">Web Design Services</h2>
             <ul className="py-5 text-xl font-sans">
               <li className="pb-5">
@@ -25,7 +25,7 @@ const SimpleCard = () => {
         </div>
 
         <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
-          <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+          <div className="p-[30px] flex flex-col justify-start h-[350px] items-start">
             <h2 className="text-2xl font-medium pb-5">
               Web Marketing Services
             </h2>
@@ -50,7 +50,7 @@ const SimpleCard = () => {
         </div>
 
         <div className="xl:w-[29%] w-full font-sans  bg-[#c400001a] ml-[20px] mb-20">
-          <div className="pl-5 py-5 flex flex-col justify-start h-[350px] items-start">
+          <div className="p-[30px] flex flex-col justify-start h-[350px] items-start">
             <h2 className="text-2xl font-medium pb-5">
               Learn More About CMS Development
             </h2>

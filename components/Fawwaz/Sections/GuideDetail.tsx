@@ -10,8 +10,8 @@ import FillStar from 'components/assets/svg/FillStar';
 const GuideDetail = () => {
     return (
         <>
-            <div className="pt-24 px-6 md:px-24 grid grid-cols-1 md:grid-cols-3 gap-16">
-                <div className="order-2 md:order-1 md:col-span-2">
+            <div className="pt-24 flex gap-16 justify-center">
+                <div className="w-[760px]">
                     <GuideItem 
                         id='why-ppc'
                         question='What is PPC?'
@@ -369,17 +369,19 @@ const GuideDetail = () => {
                                 By keeping your forms brief, you will encourage more people to fill them out and share their information with you. This is still a valuable lead.
                                 </p>
                                 <div>
-                                    <div className='bg-[#0D263D] px-24 py-20'>
+                                    <div className='bg-[#0D263D] px-24 py-20 mb-1 mt-10'>
                                         <div className="flex flex-col lg:flex lg:flex-row items-center justify-center mb-4 gap-10">
-                                            <div className='text-white'>
-                                                <p className='text-base font-bold mb-1 md:mr-40'>
+                                            <div className='text-white w-[296px] flex flex-col gap-y-[6px]'>
+                                                <p className='font-bold mb-1 md:mr-40 w-[208px] text-[20px] leading-[30px]'>
                                                     93% of the Muscled customers are extremely satisfied with their digital marketing results.
                                                 </p>
-                                                <p className='text-sm'>
+                                                <div>
+                                                <p className='text-[15px] font-bold '>
                                                 “Working with Muscled, everything is</p> 
-                                                <p className='text-sm'>very organised and strategic. We’re</p> 
-                                                <p className='text-sm'>only a year into our partnership nd our</p> 
-                                                <p className='text-sm'>expectations have definetly been met.”</p>
+                                                <p className='text-[15px] font-bold'>very organised and strategic. We’re</p> 
+                                                <p className='text-[15px] font-bold'>only a year into our partnership nd our</p> 
+                                                <p className='text-[15px] font-bold'>expectations have definetly been met.”</p>
+                                                </div>
                                             </div>
                                             <div className='mt-4'>
                                                 <SpeechBubbleStar />
@@ -456,8 +458,8 @@ const GuideDetail = () => {
                     />
 
                 </div>
-                <div className='custom-relative order-1 col-span-1 lg:order-2 lg:ml-auto md:w-full lg:max-w-[400px]'>
-                    <div className='custom-sticky'>
+                <div className='custom-relative lg:max-w-[404px]'>
+                    <div className='sticky top-10'>
                         <TableOfContents 
                             questions={
                                 [

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { PromotionOneProps } from '../component.type';
 import ButtonRounded from '../ButtonRounded';
-// import ImacBanner from '../../assets/iMac-24-inch.png'
+import ImacBanner from '../../assets/iMac-24-inch.png'
 
 const PromotionOne: FC<PromotionOneProps> = ({title}) => {
     return (
@@ -30,12 +30,14 @@ const PromotionOne: FC<PromotionOneProps> = ({title}) => {
                                 bgColor='bg-black'
                                 textColor='text-white'
                                 textSize='text-lg'
+                                textWeight='font-[600]'
                                 roundedFull
                                 children={"Get Free Proposal"}
+                                padding="py-[14px] px-[19px]"
                             />
                         </div>
                         <div className='banner-bg-image'>
-                            <img src='./iMac-24-inch.png' alt="iMac-banner-img" />
+                            <img src={ImacBanner.src} alt="iMac-banner-img" />
                         </div>
                         
                     </div>

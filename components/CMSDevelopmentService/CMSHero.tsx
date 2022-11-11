@@ -13,9 +13,8 @@ const CMSHero: FC = () => {
   
   return (
     <div>
-      <div className="bg-black/[0.7] flex flex-col xl:flex-row">
-        <div className="xl:mx-[55px]">
-      <div className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
+      <div className="bg-black/[0.7] ">
+      <div className="py-24 flex flex-wrap h-auto  justify-center gap-[57px] items-center space-y-24 lg:space-y-0 ">
         <div className="max-w-[720px]">
         <ExtractRoutes />
 
@@ -23,7 +22,7 @@ const CMSHero: FC = () => {
             CMS Development Services that are completely transparent
           </h1>
 
-          <p className="text-white-70 text-[19px] font-sans leading-8 mb-8">
+          <p className="text-white-70 text-[20px] font-sans leading-8 mb-8">
             Content management systems (CMS) are a must-have for all websites,
             from large informational sites to e-commerce stores. The simplest
             way to ensure a proper web presence is to streamline and organize
@@ -48,8 +47,8 @@ const CMSHero: FC = () => {
         </div>
 
         {/* Right Side */}
-        <div className="xl:ml-12 mx-auto w-[436px]">
-          <div className="max-w-[640px] max-h-[640px] flex flex-col justify-center">
+        <div className="w-[436px]">
+          <div className="max-h-[640px] flex flex-col justify-center">
             <div className="my-1">
               <Rectangle
                 icon={IconSaleFunnel}
@@ -85,7 +84,6 @@ const CMSHero: FC = () => {
           </div>
         </div>
       </div>
-    </div>
     </div>
     </div>
   );

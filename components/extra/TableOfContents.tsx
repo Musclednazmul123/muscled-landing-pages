@@ -13,7 +13,7 @@ const TableOfContents: FC<TableOfContentsProps> = ({questions}) => {
 
     return (
         <>
-            <div className='border rounded-t-lg pb-4'>
+            <div className='border rounded-t-lg w-[404px]'>
                 <div className="bg-[#F2F2F2] text-white p-4 flex justify-between items-center">
                     <h2 className="flex items-center text-lg gap-2">
                         <FaListAlt size={20} />
@@ -24,7 +24,7 @@ const TableOfContents: FC<TableOfContentsProps> = ({questions}) => {
                     </div>
                 </div>
                 {showContent &&
-                    <div className='table-content w-full flex flex-col gap-2'>
+                    <div className='w-full flex flex-col gap-2 pb-4'>
                         {questions.map((item, index) => (
                             <div className='flex items-center gap-2 mx-4 mt-2'>
                                 <span>
