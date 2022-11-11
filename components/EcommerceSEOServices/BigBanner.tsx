@@ -79,7 +79,7 @@ const BigBanner = (props: BigBannerProps) => {
       </div>
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[#2E1E34E5]"></div>
-        <img src={banner7.src} className="h-full bg-cover" />
+        <img src={`${(banner7.src)}`} className="h-full bg-cover" />
       </div>
     </div>
   );

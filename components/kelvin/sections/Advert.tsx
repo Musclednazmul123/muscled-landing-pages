@@ -45,7 +45,7 @@ const Advert = () => {
           <div className="w-[35%]">
             <div
               className="w-[90%] text-white rounded-md"
-              style={{ backgroundImage: `url(${abstImg.src})` }}
+              style={{ backgroundImage: `url('${abstImg.src}')` }}
             >
               <div className="bg-black/20 p-4 rounded-md">
                 <div className="w-[80%] space-y-8">
