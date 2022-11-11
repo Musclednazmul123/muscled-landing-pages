@@ -1,7 +1,7 @@
 import { Section } from "../../Fawwaz/Sections";
 import Button from "../Button";
 import FlexLayout from "../layout/FlexLayout";
-import abstImg from "../../assets/abstract.png";
+import abstImg from "@/components/assets/abstract.png";
 const Advert = () => {
   return (
     <div className="mt-6 pt-20 pb-40 bg-[#C40000]/10">
