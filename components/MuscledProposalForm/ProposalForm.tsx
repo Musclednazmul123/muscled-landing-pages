@@ -41,6 +41,7 @@ const ProposalForm: FC = () => {
         { data }
       );
       console.log(response);
+      methods.reset();
     } catch (error) {
       console.log(error);
     }
