@@ -1,20 +1,7 @@
-import { InputHTMLAttributes } from "react";
-import { RegisterOptions } from "react-hook-form";
+import { FormFieldProps } from "types/types";
 
-interface FormDataProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  label: string;
-  validation?: RegisterOptions;
-  multiline?: {
-    rows: number;
-    cols?: number;
-    textAreaClassName?: string;
-  };
-  wrapperClassName?: string;
-  wrapperWidth?: string;
-}
 
-export const FormData: Array<FormDataProps> = [
+export const FormData: Array<FormFieldProps> = [
   {
     name: "email_adress",
     label: "Work Email Adress",

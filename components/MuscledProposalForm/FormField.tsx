@@ -1,21 +1,9 @@
-import { FC, InputHTMLAttributes } from "react";
-import { useFormContext, RegisterOptions } from "react-hook-form";
+import { FC } from "react";
+import { useFormContext } from "react-hook-form";
 import ShowError from "./ShowError";
+import { FormFieldProps } from "../../types/types";
 
-interface FormDataProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  label: string;
-  validation?: RegisterOptions;
-  multiline?: {
-    rows: number;
-    cols?: number;
-    textAreaClassName?: string;
-  };
-  wrapperClassName?: string;
-  wrapperWidth?: string;
-}
-
-const FormField: FC<FormDataProps> = ({
+const FormField: FC<FormFieldProps> = ({
   name,
   label,
   type,
