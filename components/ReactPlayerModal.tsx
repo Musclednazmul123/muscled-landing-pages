@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
+import React from "react";
+import ReactPlayer from "react-player";
 
 interface Props {
   url: string;
@@ -7,10 +7,10 @@ interface Props {
   thumbnail?: string;
   width?: string;
   height?: string;
-  className?:string;
-  rounded?:string;
-  bgColor?:string;
-  thumbnailGradient?:string;
+  className?: string;
+  rounded?: string;
+  bgColor?: string;
+  thumbnailGradient?: string;
 }
 
 const ReactPlayerModal: React.FC<Props> = ({
@@ -20,26 +20,30 @@ const ReactPlayerModal: React.FC<Props> = ({
   width,
   height,
   className,
-  rounded="rounded-lg",
+  rounded = "rounded-lg",
   bgColor,
   thumbnailGradient,
 }) => {
   const [isplaying, setIsPlaying] = React.useState<boolean>(false);
   const [hover, setHover] = React.useState<boolean>(false);
-  console.log(`${thumbnailGradient && `${thumbnailGradient},`} url('${thumbnail}')`);
-  console.log(thumbnailGradient);
   return (
     <>
       <div
         style={{
-          backgroundImage: thumbnail && `${thumbnailGradient ?`${thumbnailGradient},`:""} url('${thumbnail}')`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
+          backgroundImage:
+            thumbnail &&
+            `${
+              thumbnailGradient ? `${thumbnailGradient},` : ""
+            } url('${thumbnail}')`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           width: width && width,
           height: height && height,
         }}
-        className={`${bgColor?bgColor:"bg-gray-300"} ${rounded} lg:mt-0 mt-12 md:h-[360px] 
+        className={`${
+          bgColor ? bgColor : "bg-gray-300"
+        } ${rounded} lg:mt-0 mt-12 md:h-[360px] 
         overflow-hidden h-[250px] flex items-center justify-center ${className}`}
       >
         <div onClick={() => setIsPlaying(true)}>
@@ -54,7 +58,7 @@ const ReactPlayerModal: React.FC<Props> = ({
           className="bg-black z-[100] fixed inset-0 h-full cursor-pointer w-full bg-opacity-90 flex items-center justify-center px-6"
         >
           <div
-            onClick={e => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
             className=" relative pr-7 z-[100]  overflow-visible"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}

@@ -1,11 +1,10 @@
-import { Controller, Get, Query, Render } from '@nestjs/common';
-
+import { Controller, Get, Query, Render } from "@nestjs/common";
 
 @Controller()
 export class AppController {
   @Render("services-for-paid-social-media-ad")
   @Get()
-  public index(@Query('name') name?: string) {
+  public index(@Query("name") name?: string) {
     return { name };
   }
 
@@ -21,14 +20,14 @@ export class AppController {
     return {};
   }
 
-  @Render('social-media-marketing-cost')
-  @Get('/social-media-marketing-cost')
+  @Render("social-media-marketing-cost")
+  @Get("/social-media-marketing-cost")
   public socialMediaMarketingCost() {
     return {};
   }
 
-  @Render('website-price')
-  @Get('home/information/website-price')
+  @Render("website-price")
+  @Get("home/information/website-price")
   public websitePrice() {}
 
   @Render("muscled-proposal-form")
