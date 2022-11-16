@@ -14,8 +14,8 @@ const DetailsGenerator:FC<detailGeneratorProps> = ({heading,paragraphs}) => {
         
         <div className='flex flex-col space-y-[30px]'>
         {
-            paragraphs.map((paragraph:string):JSX.Element=>{
-                return <div className=''>
+            paragraphs.map((paragraph,index)=>{
+                return <div className='' key={index}>
                 <p className='font-normal text-[#333333] text-xl leading-[32.5px]'>{paragraph}</p>
                 </div>
             })

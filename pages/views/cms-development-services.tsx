@@ -4,7 +4,7 @@ import { NextPage } from "next";
 import SimpleCard from "../../components/CMSDevelopmentService/SimpleCard";
 import SimpleCustomCMS from "../../components/CMSDevelopmentService/SimpleCustomCMS";
 import CMSHero from "../../components/CMSDevelopmentService/CMSHero";
-import AboutCMS from "../../components/CMSDevelopmentService/AboutCMS"; 
+import AboutCMS from "../../components/CMSDevelopmentService/AboutCMS";
 import Testimonial from "components/landingPage/Testimonials/Testimonial";
 import OurPartner from "components/landingPage/OurPartner/OurPartner";
 

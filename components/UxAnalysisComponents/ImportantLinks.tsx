@@ -35,8 +35,8 @@ const importantLinks = [
 export default function ImportantLinks() {
   return (
     <Section className="grid gap-8 lg:grid-cols-3 mb-44">
-      {importantLinks.map((l) => (
-        <ImportantLinkCard title={l.title} list={l.list} />
+      {importantLinks.map((l, index) => (
+        <ImportantLinkCard title={l.title} list={l.list} key={index} />
       ))}
     </Section>
   );

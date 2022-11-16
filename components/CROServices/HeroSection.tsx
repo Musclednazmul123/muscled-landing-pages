@@ -20,13 +20,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   description,
   features = [],
 }) => {
-  
-
   return (
     <div className="bg-black-70">
       <Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-4 lg:justify-between">
         <div className="max-w-[720px]">
-        <ExtractRoutes />
+          <ExtractRoutes />
 
           <h1 className="text-[36px] leading-normal lg:text-[56px] lg:leading-72 text-white mt-8 mb-5">
             {title}

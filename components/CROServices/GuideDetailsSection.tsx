@@ -105,7 +105,7 @@ const GuideDetailsSection = () => {
           <p className="text-[40px] font-bold mb-10 leading-[52px]">
             What are the benefits of using CRO services?
           </p>
-          <p className="text-xl">
+          <div className="text-xl">
             Investing in conversion rate optimization services provides your
             company with several benefits, including:
             <br />
@@ -244,7 +244,7 @@ const GuideDetailsSection = () => {
                 Calculate your CR {buttonArrow}
               </Button>
             </div>
-          </p>
+          </div>
         </div>
         <div>
           <p className="text-[40px] font-bold mb-10 leading-[52px]">

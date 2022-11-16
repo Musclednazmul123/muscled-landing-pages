@@ -1,16 +1,15 @@
-import React,{FC} from 'react'
-import { ImportantLinksData } from './ImportantLinksData';
-import ImportantLinksItem from './ImportantLinksItem';
+import React, { FC } from "react";
+import { ImportantLinksData } from "./ImportantLinksData";
+import ImportantLinksItem from "./ImportantLinksItem";
 
-const ImportantLinks:FC = () => {
+const ImportantLinks: FC = () => {
   return (
-    <div className='flex gap-x-[22px]'>
-       {
-        ImportantLinksData.map(data=><ImportantLinksItem {...data}  className="bg-opacity-20"/>)
-
-         }
+    <div className="flex gap-x-[22px]">
+      {ImportantLinksData.map((data, index) => (
+        <ImportantLinksItem {...data} className="bg-opacity-20" key={index} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ImportantLinks
+export default ImportantLinks;

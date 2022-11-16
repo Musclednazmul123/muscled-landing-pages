@@ -35,7 +35,7 @@ export default function GuideDetails() {
           {/* First */}
           <div className="flex flex-col space-y-8">
             <h2 className="text-4xl">Muscled and UX optimization</h2>
-            
+
             <p>
               Muscled and UX optimization A user experience report shows what
               your website does well and what it may improve, all based on a
@@ -76,12 +76,14 @@ export default function GuideDetails() {
           {/* Second */}
           <div className="flex flex-col space-y-8">
             <div className="flex flex-col space-y-4">
-            <h2 className="text-[40px] leading-[60px]">Bad usability means fewer customers</h2>
-            <p>
-              Every element of user experience has an influence on your
-              website’s conversion rate. With hard navigation, slow load, and
-              other issues you will see a drop in your customers.
-            </p>
+              <h2 className="text-[40px] leading-[60px]">
+                Bad usability means fewer customers
+              </h2>
+              <p>
+                Every element of user experience has an influence on your
+                website’s conversion rate. With hard navigation, slow load, and
+                other issues you will see a drop in your customers.
+              </p>
             </div>
             <p>
               Your website is like a customer service representative of your
@@ -130,7 +132,7 @@ export default function GuideDetails() {
             </p>
 
             <p>At Muscled, we know how to get into the mind of a customer.</p>
-            
+
             <div className="flex px-4 items-center w-[563px] h-[162px]">
               <img src={section3.src} alt="1" />
             </div>
@@ -160,18 +162,18 @@ export default function GuideDetails() {
 
           {/* Forth */}
           <div className="flex flex-col space-y-8">
-            <div  className="flex flex-col space-y-5 pb-8">
-            <h2 className="text-[40px] leading-[60px]">
-              What can I expect from a user experience analysis?
-            </h2>
-            <p>
-              Muscled analyzes your website using a variety of criteria while
-              working on it. To look into our optimization process we check a
-              couple of examples below. We know what user pays attention to
-              first while entering your website and how different browser sizes
-              could influence this. We identify the key sections of your website
-              and optimize them for user convenience.
-            </p>
+            <div className="flex flex-col space-y-5 pb-8">
+              <h2 className="text-[40px] leading-[60px]">
+                What can I expect from a user experience analysis?
+              </h2>
+              <p>
+                Muscled analyzes your website using a variety of criteria while
+                working on it. To look into our optimization process we check a
+                couple of examples below. We know what user pays attention to
+                first while entering your website and how different browser
+                sizes could influence this. We identify the key sections of your
+                website and optimize them for user convenience.
+              </p>
             </div>
             <div className="flex flex-row justify-center w-[643px] h-[288px]">
               <img src={section4.src} alt="1" />
@@ -209,14 +211,17 @@ export default function GuideDetails() {
           {/* Fifth */}
           <div className="flex flex-col space-y-8">
             <div className="flex flex-col space-y-5">
-            <h2 className="text-[40px] leading-[60px]">What makes Muscled an authority on UX?</h2>
-            <p>
-              What makes Muscled an authority on UX? We have in-depth knowledge
-              of how consumers interact with online media, which supports our
-              approaches to the target. Combining that with years of experience
-              in promoting increased functionality and streamlined website use,
-              you will have everything to boost your revenue.
-            </p>
+              <h2 className="text-[40px] leading-[60px]">
+                What makes Muscled an authority on UX?
+              </h2>
+              <p>
+                What makes Muscled an authority on UX? We have in-depth
+                knowledge of how consumers interact with online media, which
+                supports our approaches to the target. Combining that with years
+                of experience in promoting increased functionality and
+                streamlined website use, you will have everything to boost your
+                revenue.
+              </p>
             </div>
             <p>
               We ensure there are no obstacles in your conversion funnel. If
@@ -268,9 +273,9 @@ export default function GuideDetails() {
         <div className="pt-10">
           <h2 className="text-4xl">Learn more about UX</h2>
           <ul className="py-2">
-            {links.map((l) => {
+            {links.map((l, index) => {
               return (
-                <li className="py-2 underline">
+                <li className="py-2 underline" key={index}>
                   <a href={l.link}>{l.title}</a>
                 </li>
               );

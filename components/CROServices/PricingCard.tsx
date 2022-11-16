@@ -33,6 +33,7 @@ const PricingCard = (props: PricingCardProps) => {
         <div className="flex justify-center mb-[30px]">
           {Array.from({ length: starCount }).map((_, index) => (
             <svg
+              key={index}
               width="30"
               height="28"
               viewBox="0 0 30 28"
@@ -45,7 +46,7 @@ const PricingCard = (props: PricingCardProps) => {
             >
               <path
                 d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
-                fill-opacity="0.8"
+                fillOpacity="0.8"
                 className={starClassName}
               />
             </svg>
@@ -65,8 +66,8 @@ const PricingCard = (props: PricingCardProps) => {
         </div>
       </div>
       <div className="py-[40px] px-[30px] bg-white flex-1">
-        {features?.map((f) => (
-          <div className="flex mb-[30px]">
+        {features?.map((f, index) => (
+          <div className="flex mb-[30px]" key={index}>
             <svg
               width="24"
               height="24"
@@ -100,4 +101,4 @@ const PricingCard = (props: PricingCardProps) => {
   );
 };
 
-export default PricingCard
+export default PricingCard;

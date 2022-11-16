@@ -13,9 +13,9 @@ const QuickLinks = (props: QuickLinksProps) => {
   return (
     <div className="bg-white p-8 text-black">
       <div className="font-medium text-2xl mb-10">{props.title}</div>
-      {props.links.map((v) => {
+      {props.links.map((v, index) => {
         return (
-          <div className="mb-7">
+          <div className="mb-7" key={index}>
             <Link href={v.to || "/"}>
               <a>
                 <div>{v.title}</div>

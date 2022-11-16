@@ -17,9 +17,9 @@ const TestimonialBanner = (props: TestimonialBannerProps) => {
     <div className="bg-[#2E1E34] py-16 px-12">
       <p className="text-4xl text-white font-medium w-[372px]">{title}</p>
       <div className="flex mt-9">
-        {Array.from({ length: starCount || 0 }).map(() => {
+        {Array.from({ length: starCount || 0 }).map((data, index) => {
           return (
-            <div className="mr-2">
+            <div className="mr-2" key={index}>
               <svg
                 width="29"
                 height="27"
@@ -49,7 +49,7 @@ const TestimonialBanner = (props: TestimonialBannerProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="ml-7"
               >
-                <path d="M1 1L8 8L1 15" stroke="#48BBFC" stroke-width="2" />
+                <path d="M1 1L8 8L1 15" stroke="#48BBFC" strokeWidth="2" />
               </svg>
             </div>
           </a>

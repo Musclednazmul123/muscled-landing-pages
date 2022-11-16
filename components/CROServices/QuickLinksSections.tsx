@@ -1,6 +1,6 @@
 import React from "react";
 import QuickLinks from "./QuickLinks";
-import { Hero, Section } from "../Fawwaz/Sections";
+import { Section } from "../Fawwaz/Sections";
 
 const QuickLinksSections = () => {
   return (

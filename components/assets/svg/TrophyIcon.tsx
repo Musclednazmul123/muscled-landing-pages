@@ -10,16 +10,16 @@ const TrophyIcon = (props: React.SVGProps<SVGSVGElement>) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_2_10792)">
+      <g clipPath="url(#clip0_2_10792)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M71.974 11.5H61.963V7.5H76V9.5C76 13.989 75.6419 20.5178 73.7203 25.9893C72.7559 28.7356 71.3511 31.3528 69.2743 33.3002C67.1516 35.2905 64.4086 36.5 61 36.5V32.5C63.3692 32.5 65.14 31.6933 66.5382 30.3823C67.9822 29.0283 69.1053 27.0587 69.9463 24.6639C71.3906 20.5514 71.8664 15.5908 71.974 11.5Z"
           fill="#FF7262"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M6.02595 11.5H16.037V7.5H2V9.5C2 13.989 2.35807 20.5178 4.27966 25.9893C5.24415 28.7356 6.6489 31.3528 8.72573 33.3002C10.8484 35.2905 13.5914 36.5 17 36.5V32.5C14.6308 32.5 12.86 31.6933 11.4618 30.3823C10.0178 29.0283 8.89474 27.0587 8.05368 24.6639C6.60937 20.5514 6.13362 15.5908 6.02595 11.5Z"
           fill="#FF7262"
         />
@@ -47,8 +47,8 @@ const TrophyIcon = (props: React.SVGProps<SVGSVGElement>) => {
           y2="75.6603"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C40000" />
-          <stop offset="1" stop-color="#FF7262" />
+          <stop stopColor="#C40000" />
+          <stop offset="1" stopColor="#FF7262" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2_10792"
@@ -58,8 +58,8 @@ const TrophyIcon = (props: React.SVGProps<SVGSVGElement>) => {
           y2="35.9378"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C40000" />
-          <stop offset="1" stop-color="#FF7262" />
+          <stop stopColor="#C40000" />
+          <stop offset="1" stopColor="#FF7262" />
         </linearGradient>
         <clipPath id="clip0_2_10792">
           <rect

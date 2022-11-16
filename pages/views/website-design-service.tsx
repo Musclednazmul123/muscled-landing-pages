@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NextPage } from "next/";
+import { NextPage } from "next";
 import { Testimonial } from "components/Fawwaz/Sections";
 import {
   BlogArticle,

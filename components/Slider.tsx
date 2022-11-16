@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, useRef, useState,FC } from "react";
+import React, { RefObject, useEffect, useRef, useState, FC } from "react";
 import FlexLayout from "./layout/FlexLayout";
 import ChevronDown from "./ui//icons/ChevronDown";
 import Ellipse from "./ui//icons/Ellipse";
@@ -6,43 +6,46 @@ import Ellipse from "./ui//icons/Ellipse";
 interface SliderProp {
   tags: string[];
   percentage: number;
-  timelineColor?:string;
-  rangeColor?:string;
-  handleBgColor?:string;
-  handleTextColor?:string;
-  handleIconFill?:string;
-  handleClassName?:string;
+  timelineColor?: string;
+  rangeColor?: string;
+  handleBgColor?: string;
+  handleTextColor?: string;
+  handleIconFill?: string;
+  handleClassName?: string;
 }
 
-interface EllipsesProps{
-    arrayLength:number,delta:number
+interface EllipsesProps {
+  arrayLength: number;
+  delta: number;
+}
+
+let Ellipses: FC<EllipsesProps> = ({ arrayLength, delta }) => {
+  let ellipses: JSX.Element[] = [];
+  let iterations: number = arrayLength <= 3 ? 2 : arrayLength - 2;
+  for (let i = 1; i <= iterations; i++) {
+    ellipses.push(
+      <div
+        key={i}
+        className={`absolute`}
+        style={{ left: `${i * delta}%`, top: "30%" }}
+      >
+        <Ellipse />
+      </div>
+    );
   }
-  
-  let Ellipses:FC<EllipsesProps>=({arrayLength,delta})=>{
-  let ellipses:JSX.Element[]=[];
-  let iterations:number=arrayLength<=3?2:arrayLength-2
-  for (let i=1;i<=iterations;i++){
-    ellipses.push(<div
-    key={i}
-    className={`absolute`}
-    style={{ left: `${i * delta}%`, top: "30%" }}
-  >
-    <Ellipse />
-  </div>)
-  }
-  return <>
-  {ellipses}
-  </>;
-  }
-  
-const Slider = ({ tags,
-    percentage,
-timelineColor="bg-[#C40000]",
-rangeColor="bg-[#333333]",
-handleBgColor="bg-[#D9D9D9]",
-handleTextColor="text-[#1F1A45]",
-handleIconFill="fill-[#79768F]",
-handleClassName }: SliderProp) => {
+  return <>{ellipses}</>;
+};
+
+const Slider = ({
+  tags,
+  percentage,
+  timelineColor = "bg-[#C40000]",
+  rangeColor = "bg-[#333333]",
+  handleBgColor = "bg-[#D9D9D9]",
+  handleTextColor = "text-[#1F1A45]",
+  handleIconFill = "fill-[#79768F]",
+  handleClassName,
+}: SliderProp) => {
   const sliderContainerRef: RefObject<HTMLDivElement> = useRef(null);
   const delta = tags.length > 0 ? 100 / tags.length : 0;
   const [curIdx, setCurIdx] = useState(percentageToArrayIndex(percentage));
@@ -56,12 +59,13 @@ handleClassName }: SliderProp) => {
     const element = sliderContainerRef.current;
 
     const handleMove = (e: PointerEvent) => {
-        console.log(e.clientX);
-        console.log(element?.getBoundingClientRect().width)
-        console.log(element?.offsetLeft);
-        // console.log(element?.offsetWidth);
-        console.log(element?.getBoundingClientRect().left)
-      const realPosition = e.clientX - (element?.getBoundingClientRect().left ?? 0);
+      // console.log(e.clientX);
+      // console.log(element?.getBoundingClientRect().width)
+      // console.log(element?.offsetLeft);
+      // // console.log(element?.offsetWidth);
+      // console.log(element?.getBoundingClientRect().left)
+      const realPosition =
+        e.clientX - (element?.getBoundingClientRect().left ?? 0);
       const perc = (realPosition / (element?.offsetWidth ?? -1)) * 100;
       if (perc >= 0 && perc <= 100) {
         setCurIdx(percentageToArrayIndex(perc));
@@ -94,9 +98,8 @@ handleClassName }: SliderProp) => {
       ref={sliderContainerRef}
       className={`rounded-full  w-[50%] h-5 relative cursor-pointer ${rangeColor}`}
     >
+      <Ellipses arrayLength={tags.length} delta={delta} />
 
-       <Ellipses arrayLength={tags.length} delta={delta} />
-      
       <div
         className={`rounded-full h-full relative z-10 ${timelineColor} `}
         style={{ width: `${knobPosition}%` }}
@@ -109,13 +112,13 @@ handleClassName }: SliderProp) => {
       >
         <FlexLayout>
           <div className="rotate-[90deg]">
-            <ChevronDown  fill={`${handleIconFill}`}/>
+            <ChevronDown fill={`${handleIconFill}`} />
           </div>
           <p className={`${handleTextColor} w-fit font-semibold select-none`}>
             {tags[curIdx]}
           </p>
           <div className="rotate-[-90deg]">
-            <ChevronDown  fill={`${handleIconFill}`}/>
+            <ChevronDown fill={`${handleIconFill}`} />
           </div>
         </FlexLayout>
       </div>

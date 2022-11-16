@@ -1,8 +1,6 @@
 import React from "react";
-import { NextPage } from "next";
-import { Hero, Section } from "../Fawwaz/Sections";
+import { Section } from "../Fawwaz/Sections";
 import TestimonialBanner from "./TestimonialBanner";
-import Logo from "../Fawwaz/Logo";
 
 const FAQSection = () => {
   return (

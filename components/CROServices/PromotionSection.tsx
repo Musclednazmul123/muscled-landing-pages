@@ -14,15 +14,17 @@ const PromotionSection: NextPage = () => {
           Maximize your site’s perfomance with conversion rate optimization
           services
         </h2>
-        <p className="md:text-xl">
-          Conversion rate optimization services can help you improve the
-          performance of your website. <br />
-          <br />
-          The driving force behind increased revenue is having your viewers
-          perform a desired action once they land on your pages. Muscled
-          recognizes that increasing client conversions is essential for
-          success, which is why our CRO services include: <br />
-          <br />
+        <div className="flex flex-col md:text-xl gap-y-7">
+          <p>
+            Conversion rate optimization services can help you improve the
+            performance of your website.
+          </p>
+          <p>
+            The driving force behind increased revenue is having your viewers
+            perform a desired action once they land on your pages. Muscled
+            recognizes that increasing client conversions is essential for
+            success, which is why our CRO services include:
+          </p>
           <ul className="list-decimal px-5">
             <li>
               Analysis of the usage, conversion rate, copy, and aesthetic appeal
@@ -37,15 +39,16 @@ const PromotionSection: NextPage = () => {
               the conversion potential of your traffic.
             </li>
           </ul>
-          <br />
-          Muscled is a trusted partner for companies looking for website
-          conversion rate optimization services, with a client recommendation
-          score that exceeds the industry average of 488 %.
-          <br />
-          <br />
-          Are you ready to start optimizing your website's conversion rate?
-          Contact us online to speak with an expert.
-        </p>
+          <p>
+            Muscled is a trusted partner for companies looking for website
+            conversion rate optimization services, with a client recommendation
+            score that exceeds the industry average of 488 %.
+          </p>
+          <p>
+            Are you ready to start optimizing your website's conversion rate?
+            Contact us online to speak with an expert.
+          </p>
+        </div>
       </div>
       <Banner
         text="Looking for custom plans and pricing? Request a proposal to receive yours"

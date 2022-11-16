@@ -35,8 +35,8 @@ const SalesFunnelIcon = (props: React.SVGProps<SVGSVGElement>) => {
           y2="44.2533"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C40000" />
-          <stop offset="1" stop-color="#FF7262" />
+          <stop stopColor="#C40000" />
+          <stop offset="1" stopColor="#FF7262" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2_10772"
@@ -46,8 +46,8 @@ const SalesFunnelIcon = (props: React.SVGProps<SVGSVGElement>) => {
           y2="55.5022"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C40000" />
-          <stop offset="1" stop-color="#FF7262" />
+          <stop stopColor="#C40000" />
+          <stop offset="1" stopColor="#FF7262" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2_10772"
@@ -57,8 +57,8 @@ const SalesFunnelIcon = (props: React.SVGProps<SVGSVGElement>) => {
           y2="12.1777"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C40000" />
-          <stop offset="1" stop-color="#FF7262" />
+          <stop stopColor="#C40000" />
+          <stop offset="1" stopColor="#FF7262" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_2_10772"
@@ -68,8 +68,8 @@ const SalesFunnelIcon = (props: React.SVGProps<SVGSVGElement>) => {
           y2="-0.833328"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF7262" />
-          <stop offset="1" stop-color="#C40000" />
+          <stop stopColor="#FF7262" />
+          <stop offset="1" stopColor="#C40000" />
         </linearGradient>
       </defs>
     </svg>

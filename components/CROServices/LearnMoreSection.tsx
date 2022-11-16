@@ -12,8 +12,8 @@ const LearnMoreSection = (props: LearnMoreSectionProps) => {
         Learn more about CRO
       </div>
       <div>
-        {props.links?.map((link) => (
-          <Link href={link.to}>
+        {props.links?.map((link, index) => (
+          <Link href={link.to} key={index}>
             <a>
               <p className="mb-[15px]">{link.title}</p>
             </a>

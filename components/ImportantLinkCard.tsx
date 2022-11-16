@@ -6,7 +6,7 @@ interface TableProps {
   title: string;
   bgColor?: string;
 }
-const ImportantLinkCard: FC<TableProps> = ({ list, title, bgColor}) => {
+const ImportantLinkCard: FC<TableProps> = ({ list, title, bgColor }) => {
   return (
     <div
       className={`p-4 flex flex-col space-y-[31px] w-[385px] min-h-[344px] pr-14   ${
@@ -16,9 +16,9 @@ const ImportantLinkCard: FC<TableProps> = ({ list, title, bgColor}) => {
       {/* header */}
       <h4 className="text-2xl font-bold text-[#494949]">{title}</h4>
       <ul className="flex flex-col space-y-14">
-        {list.map((l) => {
+        {list.map((l, index) => {
           return (
-            <li className="underline text-xl leading-[31.01px]">
+            <li className="underline text-xl leading-[31.01px]" key={index}>
               <a href={l.link}>{l.title}</a>
             </li>
           );

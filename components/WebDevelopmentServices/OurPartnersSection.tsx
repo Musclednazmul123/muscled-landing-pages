@@ -15,10 +15,9 @@ const OurPartnersSection:FC<partnersSectionProps> = (props) => {
 <div className={`flex  justify-center flex-wrap ${props?.variant=="webDev"?"space-x-[56px]"
 :props?.variant=="shopifyDev"?"space-x-[65px]":null}`}>
 {
-    props?.logos?.sources.map((src:string):JSX.Element=>{
-      console.log(src);
+    props?.logos?.sources.map((src,index)=>{
 return ( 
-<div>
+<div key={index}>
     <Image src={src} width={props?.logos?.width} height={props?.logos?.height} />
 </div>
 )

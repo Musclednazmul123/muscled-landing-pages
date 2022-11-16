@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Section } from "./Fawwaz/Sections";
 import Button from "./Fawwaz/Button";
 import { Counter, CounterBox } from "./Fawwaz/Counter";
 

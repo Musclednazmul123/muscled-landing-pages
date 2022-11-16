@@ -38,7 +38,8 @@ const HeroCards:FC<heroCardsProps> = ({className}) => {
     <div className={`${className}`}>
 					{cardData.map((card, index) => {
 						return (
-							<div className="bg-black bg-opacity-80 rounded-sm flex md:flex-row flex-col items-center py-3 pl-3 pr-5">
+							<div className="bg-black bg-opacity-80 rounded-sm flex md:flex-row flex-col 
+              items-center py-3 pl-3 pr-5" key={index}>
 								<Icon customClasses="md:w-auto md:h-auto" icon={card.icon} />
 								<div className="md:ml-1.5 md:mt-0 mt-2 md:gap-y-0 space-y-1">
 									<p className="text-base  md:text-left text-center font-medium leading-[20.8px] text-white">

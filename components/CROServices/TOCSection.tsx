@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 
 export type TOCSectionsProps = {
@@ -9,8 +9,6 @@ export type TOCSectionsProps = {
 };
 
 const TOCSections = (props: TOCSectionsProps) => {
- 
-
   const [isHidden, setIsHidden] = React.useState(true);
 
   return (
@@ -29,7 +27,7 @@ const TOCSections = (props: TOCSectionsProps) => {
               height="24"
               rx="5"
               fill="black"
-              fill-opacity="0.8"
+              fillOpacity="0.8"
             />
             <path
               d="M20 9.77778H7.55556V8H20V9.77778ZM20 13.3333H7.55556V11.5556H20V13.3333ZM20 16.8889H7.55556V15.1111H20V16.8889ZM5.77778 16.8889H4V15.1111H5.77778V16.8889ZM5.77778 8V9.77778H4V8H5.77778ZM5.77778 13.3333H4V11.5556H5.77778V13.3333Z"
@@ -58,7 +56,7 @@ const TOCSections = (props: TOCSectionsProps) => {
             <path
               d="M2.28571 0.428555L8 6.14284L13.7143 0.428555L16 1.57141L8 9.57141L-3.49691e-07 1.57141L2.28571 0.428555Z"
               fill="black"
-              fill-opacity="0.8"
+              fillOpacity="0.8"
             />
           </svg>
         </button>
@@ -80,12 +78,12 @@ const TOCSections = (props: TOCSectionsProps) => {
                     <path
                       d="M-5.84694e-06 8.57143L3.57142 5L-6.47138e-06 1.42857L0.714279 4.37114e-07L5.71428 5L0.71428 10L-5.84694e-06 8.57143Z"
                       fill="black"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     />
                     <path
                       d="M6.14257 8.57143L9.714 5L6.14257 1.42857L6.85686 4.37114e-07L11.8569 5L6.85686 10L6.14257 8.57143Z"
                       fill="black"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     />
                   </svg>
                   <p>{v.title}</p>
