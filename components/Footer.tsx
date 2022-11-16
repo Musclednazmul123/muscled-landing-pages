@@ -1,12 +1,10 @@
 import { FC } from "react";
-
 import { Section } from "./Fawwaz/Sections";
 import Button from "./Fawwaz/Button";
 import { Counter, CounterBox } from "./Fawwaz/Counter";
 
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BiRightArrowAlt } from "react-icons/bi";
-import { Input } from "./Fawwaz/Form";
 
 import footerIcon from "./assets/footer-roket-1.png";
 import FooterImage from "./assets/FooterImage.png";
@@ -21,114 +19,137 @@ import { IProps } from "../types/types";
 const Footer: FC<IProps> = ({ className }) => {
   return (
     <>
+      {/* First Footer Section */}
       <div
-        className={`bg-red-600 text-white flex flex-wrap ${
+        className={`text-white flex  ${
           className ? className : ""
-        }`}
+        } min-h-[512px]`}
       >
-        <Section className="py-10">
-          <div className="grid grid-cols-3 gap-5">
-            <img
-              className="col-span-1"
-              src={footerIcon.src}
-              alt="footer-icon"
-            />
-            <div className="flex flex-wrap items-center col-span-2 gap-10 ml-0">
-              <Counter className="text-white">
-                <h4 className="text-lg text-white md:text-2xl">
+        <div className="bg-[#C40000] w-[58.3%] flex flex-col justify-center items-center">
+          <div className="w-[658px] flex flex-col items-start justify-center  gap-y-[20px]">
+            <div className="flex items-start gap-x-9 ">
+              <img
+                className="w-[163px] h-[200px]"
+                src={footerIcon.src}
+                alt="footer-icon"
+              />
+              <Counter className=" flex flex-col gap-y-[12px]">
+                <h4 className="text-2xl text-white md:text-2xl font-[500] leading-[39px]">
                   We've driven over
                 </h4>
-                <div className="flex gap-2 md:gap-4">
+                <div className="flex items-start gap-[9px]">
                   {[6, 6, 6, 6, 6, 6].map((item: number, idx: number) => (
                     <CounterBox
                       key={idx}
-                      className="text-[#C40000] font-[500]  "
+                      className="text-[#C40000] font-[600]  "
                     >
                       {item}
                     </CounterBox>
                   ))}
                 </div>
-                <h4 className="text-lg text-white md:text-2xl">
+                <h4 className="text-2xl text-white md:text-2xl font-[500] leading-[39px]">
                   leads for clients.
                 </h4>
               </Counter>
             </div>
+            <p className="text-2xl text-white md:text-2xl font-[500] leading-[39px]">
+              Discover how we can help your business grow
+            </p>
+            <div className="flex w-full bg-white/60 rounded-lg py-[12px] px-[20px] h-[79px]">
+              <input
+                placeholder="Enter your website"
+                className="text-[#141010]  font-[500] rounded-md outline-none flex-1 px-1 bg-white/0 
+                text-lg placeholder:text-[#141010] placeholder:font-[400]"
+                type="text"
+              />
+              <button
+                className="bg-[#141010] text-[16px] py-[16px] px-[24px] flex justify-center 
+              items-center text-white rounded-lg font-[500] gap-x-[8px]"
+              >
+                Send me a Proposal
+                <BiRightArrowAlt className="w-[28px] h-[28px]" />
+              </button>
+            </div>
           </div>
-          <p className="py-6 text-2xl font-semibold">
-            Discover how we can help your business grow
-          </p>
-          <div className="flex w-full max-w-[600px] bg-white p-1 rounded-md">
-            <Input
-              placeholder="Enter your website"
-              className="flex-grow text-black bg-none"
-              type="text"
-            />
-            <Button
-              bgColor="bg-[#000000]"
-              textColor="text-white"
-            >
-              Send me a Proposal
-              <BiRightArrowAlt />
-            </Button>
-          </div>
-        </Section>
-        <div className="w-full pt-24 pb-12 pl-4 pr-24 text-right bg-red-800 lg:w-4/12">
-          <p className="text-2xl">
-            MUSCLED has been a pleasure to work with on our SEO needs and I look
-            forward to working with them on future projects.
-          </p>
-          <div className="font-bold text-white mt-9">
-            <h4 className="text-white">Owner</h4>
-            <p>ARIZONA GARAGE DOOR SUPPLIER</p>
-          </div>
-          <div className="flex items-center justify-end gap-4 mt-9">
-            <Button bgColor="bg-white-70" textColor="text-black" rounded>
-              <AiOutlineArrowLeft size={15} />
-            </Button>
-            <Button bgColor="bg-white" textColor="text-black" rounded>
-              <AiOutlineArrowRight size={15} />
-            </Button>
+        </div>
+        <div className="bg-[#8E0000] flex-1 flex flex-col items-start justify-center pl-4">
+          <div className="flex flex-col w-[487px] items-end gap-y-9">
+            <p className="text-2xl text-right">
+              MUSCLED has been a pleasure to work with on our SEO needs and I
+              look forward to working with them on future projects.
+            </p>
+            <div className="text-white text-[16px] text-right font-[500] flex flex-col gap-y-[3px]">
+              <p>Owner</p>
+              <p>ARIZONA GARAGE DOOR SUPPLIER</p>
+            </div>
+            <div className="flex items-center justify-end gap-4">
+              <Button bgColor="bg-white-70" textColor="text-black" rounded>
+                <AiOutlineArrowLeft size={15} />
+              </Button>
+              <Button bgColor="bg-white" textColor="text-black" rounded>
+                <AiOutlineArrowRight size={15} />
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="relative flex items-center w-full py-10 -mt-6 bg-red-900 rounded-t-3xl">
-        <Section>
-          <div className="flex flex-wrap items-center justify-center gap-10 xl:gap-32">
-            <div className="flex flex-wrap items-center justify-center gap-10 md:justify-start">
-              <div className="relative border-[10px] rounded-full border-[#C4000070]">
-                <img src={FooterImage.src} alt={FooterImage.src} />
-              </div>
-              <div className="flex flex-col justify-between text-white">
-                <p>Ready to speak with a marketing expert? Give us a ring</p>
-                <h3 className="text-4xl text-white">508-504-9466</h3>
-              </div>
+
+      {/* Second Contacts Section  */}
+
+      <div
+        className="relative -top-14 flex flex-col items-center justify-center w-full  bg-[#6E0000] 
+      rounded-tl-[57px] rounded-tr-[57px] min-h-[222px]"
+      >
+        <div className="flex flex-wrap items-center justify-evenly gap-10 w-full">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:justify-start">
+            <div className="border-[10px] rounded-full border-[#C4000070]">
+              <img
+                src={FooterImage.src}
+                alt={FooterImage.src}
+                className="w-[112px] h-[112px]"
+              />
             </div>
-            <div className="flex items-center gap-10 text-white">
-              <div className="flex flex-col font-semibold">
-                <h4 className="text-xl text-right text-white">1.6 million</h4>
-                <p className="text-xs">Hours of expertise</p>
-              </div>
-              <div className="flex flex-col font-semibold">
-                <h4 className="text-xl text-right text-white">450+</h4>
-                <p className="text-xs">
-                  Digital Marketing
-                  <br />
-                  Masters On Staff
-                </p>
-              </div>
-              <div className="flex flex-col font-semibold">
-                <h4 className="text-xl text-right text-white">1,128 </h4>
-                <p className="text-xs">Website Launched</p>
-              </div>
+            <div className="flex flex-col gap-y-[18px] text-white">
+              <p className="text-lg font-[500]">
+                Ready to speak with a marketing expert? Give us a ring
+              </p>
+              <h3 className="text-[40px] font-[500] text-white">
+                508-504-9466
+              </h3>
             </div>
           </div>
-        </Section>
+          <div className="flex  justify-start gap-x-[77px] text-white">
+            <div className="flex flex-col">
+              <h4 className="text-xl text-right text-white font-[500]">
+                1.6 million
+              </h4>
+              <p className="text-xs">Hours of expertise</p>
+            </div>
+            <div className="flex flex-col">
+              <h4 className="text-xl text-right text-white font-[500]">450+</h4>
+              <p className="text-xs">
+                Digital Marketing
+                <br />
+                Masters On Staff
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <h4 className="text-xl text-right text-white font-[500]">
+                1,128{" "}
+              </h4>
+              <p className="text-xs">Website Launched</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="w-full bg-black-footer">
-        <Section className="grid gap-10 py-16 lg:grid-cols-5">
-          <div className="text-white">
-            <h3 className="text-2xl font-semibold text-white">Services</h3>
-            <div className="space-y-10 text-white mt-11">
+
+      {/* Third Footer Links Section*/}
+
+      <div className="w-full bg-black-footer -mt-14">
+        <div className="grid gap-10 py-[74px] lg:grid-cols-5 w-[1240px] xl_2:w-[90%] mx-auto min-h-[642px]">
+          <div className="text-white flex flex-col gap-y-[30px]">
+            <h3 className="text-2xl font-[500] text-white">Services</h3>
+            <div className="flex flex-col gap-y-[35px] text-white-70">
               <p>Digital Marketing Services</p>
               <p>SEO Services</p>
               <p>PPC Services</p>
@@ -138,11 +159,9 @@ const Footer: FC<IProps> = ({ className }) => {
               <p>Content Marketing Services</p>
             </div>
           </div>
-          <div className="text-white">
-            <h3 className="text-2xl font-semibold text-white">
-              Knowledge Base
-            </h3>
-            <div className="space-y-10 text-white-70 mt-11">
+          <div className="text-white flex flex-col gap-y-[30px]">
+            <h3 className="text-2xl font-[500] text-white">Knowledge Base</h3>
+            <div className="flex flex-col gap-y-[35px] text-white-70 ">
               <p>Digital Marketing</p>
               <p>Content Marketing</p>
               <p>Social Media</p>
@@ -152,9 +171,9 @@ const Footer: FC<IProps> = ({ className }) => {
               <p>Amazon</p>
             </div>
           </div>
-          <div className="text-white">
-            <h3 className="text-2xl font-semibold text-white">Company</h3>
-            <div className="space-y-10 text-white-70 mt-11">
+          <div className="text-white flex flex-col gap-y-[30px]">
+            <h3 className="text-2xl font-[500] text-white">Company</h3>
+            <div className="flex flex-col gap-y-[35px] text-white-70 ">
               <p>Digital Marketing Agency</p>
               <p>SEO Agency</p>
               <p>PPC Agency</p>
@@ -164,9 +183,9 @@ const Footer: FC<IProps> = ({ className }) => {
               <p>Industries We Serve</p>
             </div>
           </div>
-          <div className="text-white">
-            <h3 className="text-2xl font-semibold text-white">Resources</h3>
-            <div className="space-y-10 text-white-70 mt-11">
+          <div className="text-white flex flex-col gap-y-[30px]">
+            <h3 className="text-2xl font-[500] text-white">Resources</h3>
+            <div className="flex flex-col gap-y-[35px] text-white-70 ">
               <p>About Us</p>
               <p>Contact Us</p>
               <p>Careers</p>
@@ -176,26 +195,25 @@ const Footer: FC<IProps> = ({ className }) => {
               <p>Tools</p>
             </div>
           </div>
-          <div className="space-y-10 text-white">
+          <div className="flex flex-col gap-y-[35px] text-white">
             <p className="text-xs text-white-70">
               REVENUE DRIVEN FOR OUR CLIENTS
             </p>
-            <h3 className="text-2xl font-semibold text-white">
-              $3,021,182,299
-            </h3>
+            <h3 className="text-2xl font-[500] text-white">$3,021,182,299</h3>
           </div>
-        </Section>
+        </div>
 
-        {/* Partner */}
-        <div className=" h-[2px] mx-24 bg-white" />
+        {/* Fourth Partners Section */}
+        <div className="w-[95%]  border-white border-[1px] mx-auto" />
 
-        <Section className="flex py-[80px] text-white items-center justify-between px-0">
-          <div className="w-[516px]">
-            <p className="mb-3 text-sm">
+        <div className="flex py-[80px] text-white items-center w-[1240px] 
+        xl_2:w-[90%] justify-between mx-auto">
+          <div className="w-[516px] flex flex-col space-y-6">
+            <p className="text-sm">
               WebFX® 1995-2022 | Celebrating 25+ Years of Digital Marketing
               Excellence
             </p>
-            <p className="text-sm ">
+            <p className="text-sm">
               Call Toll Free: 508-504-9466 Privacy & Terms of Use Sitemap
             </p>
           </div>
@@ -223,7 +241,7 @@ const Footer: FC<IProps> = ({ className }) => {
               className="w-[179px]"
             />
           </div>
-        </Section>
+        </div>
       </div>
     </>
   );
