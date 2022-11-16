@@ -145,68 +145,85 @@ const Footer: FC<IProps> = ({ className }) => {
       {/* Third Footer Links Section*/}
 
       <div className="w-full bg-black-footer -mt-14">
-        <div className="grid gap-10 py-[74px] lg:grid-cols-5 w-[1240px] xl_2:w-[90%] mx-auto min-h-[642px]">
-          <div className="text-white flex flex-col gap-y-[30px]">
-            <h3 className="text-2xl font-[500] text-white">Services</h3>
-            <div className="flex flex-col gap-y-[35px] text-white-70">
-              <p>Digital Marketing Services</p>
-              <p>SEO Services</p>
-              <p>PPC Services</p>
-              <p>Web Design Services</p>
-              <p>Social Media Services</p>
-              <p>Digital Advertising Services</p>
-              <p>Content Marketing Services</p>
+        <div className="flex gap-x-3 py-[74px] w-[1240px] xl_2:w-[90%] mx-auto 
+        min-h-[642px] justify-center">
+        <div
+          className="grid gap-[40px] lg:grid-cols-4"
+        >
+            <div className="text-white flex flex-col gap-y-[30px]">
+              <h3 className="text-2xl font-[500] text-white uppercase">
+                Services
+              </h3>
+              <div className="flex flex-col gap-y-[35px] text-white-70">
+                <p>Digital Marketing Services</p>
+                <p>SEO Services</p>
+                <p>PPC Services</p>
+                <p>Web Design Services</p>
+                <p>Social Media Services</p>
+                <p>Digital Advertising Services</p>
+                <p>Content Marketing Services</p>
+              </div>
+            </div>
+            <div className="text-white flex flex-col gap-y-[30px]">
+              <h3 className="text-2xl font-[500] text-white uppercase">
+                Knowledge Base
+              </h3>
+              <div className="flex flex-col gap-y-[35px] text-white-70 ">
+                <p>Digital Marketing</p>
+                <p>Content Marketing</p>
+                <p>Social Media</p>
+                <p>Web Design </p>
+                <p>SEO</p>
+                <p>PPC</p>
+                <p>Amazon</p>
+              </div>
+            </div>
+            <div className="text-white flex flex-col gap-y-[30px]">
+              <h3 className="text-2xl font-[500] text-white uppercase">
+                Company
+              </h3>
+              <div className="flex flex-col gap-y-[35px] text-white-70 ">
+                <p>Digital Marketing Agency</p>
+                <p>SEO Agency</p>
+                <p>PPC Agency</p>
+                <p>Content Marketing Agency</p>
+                <p>Social Media Agency</p>
+                <p>Web Design Agency</p>
+                <p>Industries We Serve</p>
+              </div>
+            </div>
+            <div className="text-white flex flex-col gap-y-[30px]">
+              <h3 className="text-2xl font-[500] text-white uppercase">
+                Resources
+              </h3>
+              <div className="flex flex-col gap-y-[35px] text-white-70 ">
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Careers</p>
+                <p>Phishing Scam Alert</p>
+                <p>Locations</p>
+                <p>Community Impact</p>
+                <p>Tools</p>
+              </div>
             </div>
           </div>
-          <div className="text-white flex flex-col gap-y-[30px]">
-            <h3 className="text-2xl font-[500] text-white">Knowledge Base</h3>
-            <div className="flex flex-col gap-y-[35px] text-white-70 ">
-              <p>Digital Marketing</p>
-              <p>Content Marketing</p>
-              <p>Social Media</p>
-              <p>Web Design </p>
-              <p>SEO</p>
-              <p>PPC</p>
-              <p>Amazon</p>
+            <div className="flex flex-col gap-y-[35px] text-white">
+              <p className="text-xs text-white-70">
+                REVENUE DRIVEN FOR OUR CLIENTS
+              </p>
+              <h3 className="text-2xl font-[500] text-white text-[36px]">
+                $3,021,182,299
+              </h3>
             </div>
-          </div>
-          <div className="text-white flex flex-col gap-y-[30px]">
-            <h3 className="text-2xl font-[500] text-white">Company</h3>
-            <div className="flex flex-col gap-y-[35px] text-white-70 ">
-              <p>Digital Marketing Agency</p>
-              <p>SEO Agency</p>
-              <p>PPC Agency</p>
-              <p>Content Marketing Agency</p>
-              <p>Social Media Agency</p>
-              <p>Web Design Agency</p>
-              <p>Industries We Serve</p>
-            </div>
-          </div>
-          <div className="text-white flex flex-col gap-y-[30px]">
-            <h3 className="text-2xl font-[500] text-white">Resources</h3>
-            <div className="flex flex-col gap-y-[35px] text-white-70 ">
-              <p>About Us</p>
-              <p>Contact Us</p>
-              <p>Careers</p>
-              <p>Phishing Scam Alert</p>
-              <p>Locations</p>
-              <p>Community Impact</p>
-              <p>Tools</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-y-[35px] text-white">
-            <p className="text-xs text-white-70">
-              REVENUE DRIVEN FOR OUR CLIENTS
-            </p>
-            <h3 className="text-2xl font-[500] text-white">$3,021,182,299</h3>
-          </div>
         </div>
 
         {/* Fourth Partners Section */}
         <div className="w-[95%]  border-white border-[1px] mx-auto" />
 
-        <div className="flex py-[80px] text-white items-center w-[1240px] 
-        xl_2:w-[90%] justify-between mx-auto">
+        <div
+          className="flex py-[80px] text-white items-center w-[1240px] 
+        xl_2:w-[90%] justify-between mx-auto"
+        >
           <div className="w-[516px] flex flex-col space-y-6">
             <p className="text-sm">
               WebFX® 1995-2022 | Celebrating 25+ Years of Digital Marketing
