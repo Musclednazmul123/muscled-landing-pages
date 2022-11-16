@@ -145,11 +145,8 @@ const Footer: FC<IProps> = ({ className }) => {
       {/* Third Footer Links Section*/}
 
       <div className="w-full bg-black-footer -mt-14">
-        <div className="flex gap-x-3 py-[74px] w-[1240px] xl_2:w-[90%] mx-auto 
-        min-h-[642px] justify-center">
-        <div
-          className="grid gap-[40px] lg:grid-cols-4"
-        >
+        <div className="flex gap-x-3 py-[74px] w-[1240px] xl_2:w-[90%] mx-auto min-h-[642px] justify-center">
+          <div className="grid gap-[40px] lg:grid-cols-4">
             <div className="text-white flex flex-col gap-y-[30px]">
               <h3 className="text-2xl font-[500] text-white uppercase">
                 Services
@@ -207,14 +204,14 @@ const Footer: FC<IProps> = ({ className }) => {
               </div>
             </div>
           </div>
-            <div className="flex flex-col gap-y-[35px] text-white">
-              <p className="text-xs text-white-70">
-                REVENUE DRIVEN FOR OUR CLIENTS
-              </p>
-              <h3 className="text-2xl font-[500] text-white text-[36px]">
-                $3,021,182,299
-              </h3>
-            </div>
+          <div className="flex flex-col gap-y-[35px] text-white text-right">
+            <p className="text-sm text-white-70">
+              REVENUE DRIVEN FOR OUR CLIENTS
+            </p>
+            <h3 className="text-2xl font-[500] text-white text-[36px]">
+              $3,021,182,299
+            </h3>
+          </div>
         </div>
 
         {/* Fourth Partners Section */}
