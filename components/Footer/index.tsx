@@ -1,19 +1,19 @@
 import { FC } from "react";
-import Button from "./Fawwaz/Button";
-import { Counter, CounterBox } from "./Fawwaz/Counter";
-
+import Button from "../Fawwaz/Button";
+import { Counter, CounterBox } from "../Fawwaz/Counter";
+import Slider from "react-slick";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BiRightArrowAlt } from "react-icons/bi";
 
-import footerIcon from "./assets/footer-roket-1.png";
-import FooterImage from "./assets/FooterImage.png";
-import metaVusiness from "./assets/metaVusiness.png";
-import googlePremier from "./assets/googlePremier.png";
-import honorRoll from "./assets/honorRoll.png";
-import millenials from "./assets/millenials.png";
-import bestplaces from "./assets/bestplaces.png";
-
-import { IProps } from "../types/types";
+import footerIcon from "../assets/footer-roket-1.png";
+import FooterImage from "../assets/FooterImage.png";
+import metaVusiness from "../assets/metaVusiness.png";
+import googlePremier from "../assets/googlePremier.png";
+import honorRoll from "../assets/honorRoll.png";
+import millenials from "../assets/millenials.png";
+import bestplaces from "../assets/bestplaces.png";
+import TestimonialSlider from "./TestimonialSlider";
+import { IProps } from "../../types/types";
 
 const Footer: FC<IProps> = ({ className }) => {
   return (
@@ -71,25 +71,8 @@ const Footer: FC<IProps> = ({ className }) => {
             </div>
           </div>
         </div>
-        <div className="bg-[#8E0000] flex-1 flex flex-col items-start justify-center pl-4">
-          <div className="flex flex-col w-[487px] items-end gap-y-9">
-            <p className="text-2xl text-right">
-              MUSCLED has been a pleasure to work with on our SEO needs and I
-              look forward to working with them on future projects.
-            </p>
-            <div className="text-white text-[16px] text-right font-[500] flex flex-col gap-y-[3px]">
-              <p>Owner</p>
-              <p>ARIZONA GARAGE DOOR SUPPLIER</p>
-            </div>
-            <div className="flex items-center justify-end gap-4">
-              <Button bgColor="bg-white-70" textColor="text-black" rounded>
-                <AiOutlineArrowLeft size={15} />
-              </Button>
-              <Button bgColor="bg-white" textColor="text-black" rounded>
-                <AiOutlineArrowRight size={15} />
-              </Button>
-            </div>
-          </div>
+        <div className="bg-[#8E0000] flex-1 flex flex-col justify-center pl-4 pb-10 ">
+          <TestimonialSlider />
         </div>
       </div>
 
@@ -145,7 +128,10 @@ const Footer: FC<IProps> = ({ className }) => {
       {/* Third Footer Links Section*/}
 
       <div className="w-full bg-black-footer -mt-14">
-        <div className="flex gap-x-3 py-[74px] w-[1240px] xl_2:w-[90%] mx-auto min-h-[642px] justify-center">
+        <div
+          className="flex gap-x-3 py-[74px] w-[1240px] xl_2:w-[90%] mx-auto 
+        min-h-[642px] justify-between"
+        >
           <div className="grid gap-[40px] lg:grid-cols-4">
             <div className="text-white flex flex-col gap-y-[30px]">
               <h3 className="text-2xl font-[500] text-white uppercase">

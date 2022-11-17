@@ -92,3 +92,9 @@ export interface FormFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   wrapperClassName?: string;
   wrapperWidth?: string;
 }
+
+export interface footerTestimonialProps {
+  title: string;
+  position: string;
+  companyName: string;
+}

@@ -1,4 +1,4 @@
-import React, {FC, ReactNode } from "react";
+import React, {ButtonHTMLAttributes, FC, ReactNode } from "react";
 
 import { title } from "process";
 import { FlexLayoutProp } from "../kelvin/types";
@@ -65,7 +65,7 @@ export interface InputProps {
   className?: string;
 }
 
-export interface InputButtonProps {
+export interface InputButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   bgColor: string;
   textColor: string;
   children?: ReactNode;
