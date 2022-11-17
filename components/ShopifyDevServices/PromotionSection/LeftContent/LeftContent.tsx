@@ -26,7 +26,7 @@ const LeftContent: FC = () => {
           Ease of setup and use:
         </p>
         <p className="font-normal leading-[30px] text-xl">
-          Shopify´s design is all based around being user-friendly. Since it's a
+          Shopify's design is all based around being user-friendly. Since it's a
           hosted platform, this makes setting up a store much faster and
           simpler. It's easy to use interface and a great selection of templates
           make the set up of a basic ecommerce site much more simple.
