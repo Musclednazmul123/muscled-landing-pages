@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  # Node API Service
+  nextapp:
+    build: .
+    ports:
+      - 5000:5000
+    container_name: next-nest-app
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+    networks:
+      - muscled-new-network
+
+networks:
+  muscled-new-network:
