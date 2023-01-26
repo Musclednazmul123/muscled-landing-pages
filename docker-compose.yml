@@ -15,3 +15,4 @@ services:
 
 networks:
   muscled-new-network:
+    driver: bridge
