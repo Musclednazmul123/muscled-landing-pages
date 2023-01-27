@@ -1,6 +1,6 @@
 import React from "react";
 
-const SalesFunnelIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const SalesFunnelIcon = () => {
   return (
     <svg
       width="80"

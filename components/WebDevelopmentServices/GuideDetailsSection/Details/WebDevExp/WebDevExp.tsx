@@ -3,7 +3,7 @@ import DetailsGenerator from "../DetailsGenerator/DetailsGenerator";
 import WebDevExpCard from "./WebDevExpCard/WebDevExpCard";
 import { detailGeneratorProps } from "../../../WebDevInterfaces/WebDevInterfaces";
 
-let WenDevExpData: detailGeneratorProps = {
+const WenDevExpData: detailGeneratorProps = {
   heading: "WebFX: Cutting-edge web development from an experienced team",
   paragraphs: [
     "Our skilled web development staff has the technical expertise to work with both open source technologies, such as PHP and mySQL. They’re also skilled with Microsoft technologies, such as ASP, .Net, and Microsoft SQL Server.",

@@ -36,7 +36,7 @@ const ProposalForm: FC = () => {
     console.log("Inside the Submit handler of react hook form");
     console.log(data);
     try {
-      let response = await axios.post(
+      const response = await axios.post(
         "https://clownfish-app-emn2y.ondigitalocean.app/api/proposal-forms",
         { data }
       );

@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import { WebDevCounterProps } from "../../../../../WebDevInterfaces/WebDevInterfaces";
 
 const WebsiteDevCounter: FC<WebDevCounterProps> = ({ num }) => {
-  let output: number[] = [];
-  let sNumber: string = num.toString();
+  const output: number[] = [];
+  const sNumber: string = num.toString();
 
-  for (var i = 0, len = sNumber.length; i < len; i += 1) {
+  for (let i = 0, len = sNumber.length; i < len; i += 1) {
     output.push(+sNumber.charAt(i));
   }
 

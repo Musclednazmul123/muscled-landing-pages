@@ -5,7 +5,7 @@ import DynamicSection from '../components/DynamicSection'
 import CardComponent from '../components/servicePlans/card'
 import { Card } from '../components/component.type'
 
-const ServicePlans: FC<ServicePackages> = ({ children, className }) => {
+const ServicePlans: FC<ServicePackages> = () => {
   const displayCards = () => {
     return CardData.map((item: Card, key: number) => {
       return (

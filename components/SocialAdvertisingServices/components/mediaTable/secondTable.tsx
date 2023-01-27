@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import DynamicSection from '../DynamicSection'
 import { secondTableData } from '../../data/mediaTable'
 import { secondTableRow } from '../component.type'

@@ -5,7 +5,7 @@ import { Table, Td, Th } from "../Fawwaz/Table";
 
 import Button from "../Fawwaz/Button";
 
-let AiOutlineCheck = () => (
+const AiOutlineCheck = () => (
   <svg
     className="mx-auto"
     width="35"

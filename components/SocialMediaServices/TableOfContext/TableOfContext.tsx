@@ -1,8 +1,7 @@
 import React from 'react';
 
-type Props = {};
 
-export default function TableOfContext({}: Props) {
+export default function TableOfContext() {
   const [list, setList] = React.useState<boolean>(true);
   const listData = [
     {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import{ tableContentProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 
 
-let items=["B2C Web Development Pricing",
+const items=["B2C Web Development Pricing",
 "Web Development Pricing",
 "SMB Web Development Agency",
 "Ecommerce Web Application\nDevelopment Optimized for the Best Conversions",
@@ -13,9 +13,9 @@ let items=["B2C Web Development Pricing",
 "Questions to Ask a Web Developer Before Hiring"];
 
 
-let tableIcon:JSX.Element=<Image src="/relatedResourcesIcon.png" width="20" height="20"/>
+const tableIcon:JSX.Element=<Image src="/relatedResourcesIcon.png" width="20" height="20"/>
 
-let RelatedResourcesData:tableContentProps={
+const RelatedResourcesData:tableContentProps={
 tableTitle:"Related Resources",
 tableIcon,
 tableWidth:"w-[391px]",

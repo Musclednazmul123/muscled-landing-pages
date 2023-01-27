@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { SVGProps } from "types/types";
 
-const PartnerFour: FC<SVGProps> = ({ className, ...props }) => {
+const PartnerFour: FC<SVGProps> = ({ className }) => {
   return (
     <svg
       width="164"

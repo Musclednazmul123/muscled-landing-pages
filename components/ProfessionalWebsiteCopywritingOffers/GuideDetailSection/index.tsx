@@ -1,8 +1,7 @@
 import React from 'react';
 import PartnerShip from '../../../components/assets/svg/PartnerShip';
-type Props = {};
 
-export default function FAQ({}: Props) {
+export default function FAQ() {
   return (
     <>
       <div className='mt-[100px] px-5 md:px-10 lg:px-20 mx-auto container gap-[60px] lg:flex items-start pb-12 relative'>

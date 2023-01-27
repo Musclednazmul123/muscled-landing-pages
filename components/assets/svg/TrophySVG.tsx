@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import { SVGProps } from "types/types";
 
 const TrophySVG: FC<SVGProps> = ({ className, ...props }) => {
+  console.log(className)
+  console.log(props)
   return (
     <svg
       width="81"

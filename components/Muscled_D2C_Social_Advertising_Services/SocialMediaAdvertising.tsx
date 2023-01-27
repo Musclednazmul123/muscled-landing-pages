@@ -36,8 +36,8 @@ const SocialMediaAdvertising = () => {
           </tr>
         </thead>
         <tbody>
-          {item.map((item) => (
-            <tr className="text-center text-black-80 border-[1px] border-solid border-[#000000]/[0.1]">
+          {item.map((item, i) => (
+            <tr key={`${item?.className1}-${i}th`} className="text-center text-black-80 border-[1px] border-solid border-[#000000]/[0.1]">
               <Th
                 className={
                   "text-left text-white font-normal " + item?.className1

@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-export default function Ticks({}: Props) {
+export default function Ticks() {
   return (
     <>
       <svg

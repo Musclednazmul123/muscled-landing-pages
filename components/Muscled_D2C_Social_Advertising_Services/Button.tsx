@@ -3,7 +3,7 @@ import { FC } from "react";
 import { ButtonProps } from "../../types/types";
 import { BsArrowRight } from "react-icons/bs";
 interface Props {
-  arrow: String;
+  arrow: string;
 }
 const Arrow = ({ arrow }: Props) => {
   if (arrow === "small") {

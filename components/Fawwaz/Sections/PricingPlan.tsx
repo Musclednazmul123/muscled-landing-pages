@@ -5,21 +5,18 @@ import PricingCard from '../Card/PricingCard';
 
 const PricingPlan = () => {
 
-    const [basicContent, setBasicContent] = useState(
-        [
+    const basicContent = [
             '2 landing page design iterations', 
             '1 multivariate conversion testing iteration',
             'Performance test and conversion reporting'
         ]
-    );
 
-    const [premiumContent, setPremiumContent] = useState(
-        [
+    const premiumContent = [
             '2 landing page design iterations',
             '3 multivariate conversion testing iteration',
             'PPC campaign review'
         ]
-    )
+
 
     return (
         <>

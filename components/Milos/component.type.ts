@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 // Card
 export interface CardProps {
   image: ReactNode,
-  title: String,
-  description: String,
+  title: string,
+  description: string,
 }
 
 export interface CardHeaderProps {
@@ -35,11 +35,11 @@ export interface InputProps {
 }
 
 export interface InputButtonProps {
-  text: String,
+  text: string,
   icon?: ReactNode,
-  textColor: String,
-  backgroundColor: String,
-  boxShadow?: String,
+  textColor: string,
+  backgroundColor: string,
+  boxShadow?: string,
 	className?: string;
 	rounded?: string;
 }
@@ -117,5 +117,5 @@ export interface InputProps {
 }
 
 export interface SliderProps {
-  settings: Object
+  settings: object
 } 

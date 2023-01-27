@@ -14,7 +14,7 @@ const ExtractRoutes:FC = () => {
       }
       
     })
-
+    console.log(pageroute)
   return (
     <div className='flex space-x-2 text-white'>
       <p className='font-[500] text-lg'>{bc}</p>

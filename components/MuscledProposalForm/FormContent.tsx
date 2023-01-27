@@ -4,7 +4,7 @@ import formImage from "../assets/formImage.png";
 import Image from "next/image";
 import formBG from "../assets/formBG.jpeg";
 
-let contentData = [
+const contentData = [
   {
     title: "Get to know your business",
     description:

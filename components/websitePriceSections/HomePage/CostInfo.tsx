@@ -2,7 +2,6 @@ import FlexLayout from "@/components/layout/FlexLayout";
 import BlockQuote from "@/components/ui/BlockQuote";
 import Button from "@/components/ui/Button";
 import ArrowLeft from "@/components/ui/icons/ArrowLeft";
-import VideoPlayLg from "@/components/ui/icons/VideoPlayLg";
 import ReactPlayerModal from "@/components/ReactPlayerModal";
 import PlayIcon from "./GuideDetailsPlayerIcon";
 import Table from "@/components/ui/Table";

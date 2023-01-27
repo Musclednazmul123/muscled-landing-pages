@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { SVGProps } from "types/types";
 
 const CheckMark: FC<SVGProps> = ({ className, ...props }) => {
+  console.log(props)
   return (
     <svg
       className={className}

@@ -32,9 +32,8 @@ const PromotionOne: FC<PromotionOneProps> = ({title}) => {
                                 textSize='text-lg'
                                 textWeight='font-[600]'
                                 roundedFull
-                                children={"Get Free Proposal"}
                                 padding="py-[14px] px-[19px]"
-                            />
+                            >"Get Free Proposal"</ButtonRounded>
                         </div>
                         <div className='banner-bg-image'>
                             <img src={ImacBanner.src} alt="iMac-banner-img" />

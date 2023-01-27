@@ -14,7 +14,7 @@ const Card: FC<Card> = ({
   className,
   bgColor
 }) => {
-  let labels: ReactNode[] = []
+  const labels: ReactNode[] = []
   const splitLabels = (Array: number) => {
     if (typeof Array != 'undefined' && Array != null) {
       for (let i = 0; i < Array; i++) {

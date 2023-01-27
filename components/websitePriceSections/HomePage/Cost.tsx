@@ -7,7 +7,7 @@ interface SliderItem {
   title: string;
   tags: string[];
 }
-let slidersData: SliderItem[] = [
+const slidersData: SliderItem[] = [
   {
     title: "Number of pages",
     tags: ["0-10", "10-50", "50-100", "250"],

@@ -1,6 +1,7 @@
 import React from "react";
 
 const GroupPeopleIcon = (props: React.SVGProps<SVGSVGElement>) => {
+  console.log(props)
   return (
     <svg
       width="80"

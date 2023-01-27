@@ -1,9 +1,4 @@
-import React, {ButtonHTMLAttributes, FC, ReactNode } from "react";
-
-import { title } from "process";
-import { FlexLayoutProp } from "../kelvin/types";
-
-
+import {ButtonHTMLAttributes, ReactNode } from "react";
 
 // Card
 
@@ -107,7 +102,7 @@ export interface TableOfContentProps {
 	titleColor?: string;
 	titleIconColor?: string;
 	contents: JSX.Element[] | string[] | ReactNode;
-	isOpen: Boolean;
+	isOpen: boolean;
 	className?:string;
 	contentsClassName?:string;
 	width?:string;

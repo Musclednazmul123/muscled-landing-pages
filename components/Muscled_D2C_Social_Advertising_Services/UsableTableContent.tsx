@@ -44,8 +44,9 @@ const TableOfContent = ({ TableMetaData }: PropsTableMetaData) => {
               icon: JSX.Element | undefined;
               title: string;
               className: string | undefined;
-            }) => (
-              <IconItem
+            }, index) => (
+              <IconItem 
+              key={`${index}-usabletable`}
                 icon={item.icon}
                 title={item.title}
                 className={item.className}

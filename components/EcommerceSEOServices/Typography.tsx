@@ -25,7 +25,7 @@ const Body = (props: TypographyBodyProps) => {
 };
 
 export type TypographySubHeadingProps =
-  {} & HTMLAttributes<HTMLParagraphElement>;
+{} & HTMLAttributes<HTMLParagraphElement>;
 
 const SubHeading = (props: TypographySubHeadingProps) => {
   return (

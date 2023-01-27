@@ -33,7 +33,7 @@ const TableOfContents = () => {
           stroke="currentColor"
           className="w-8 h-8 cursor-pointer transition-all ease-in-out duration-300 rotate-180 font-bold"
           id="tableArrow"
-          onClick={(e) => {
+          onClick={() => {
             toggleTable()
           }}
         >

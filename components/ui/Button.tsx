@@ -1,9 +1,9 @@
-import { Children, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface ButtonProp {
   outlined?: boolean;
-  sizeClass?: String;
-  textColor?: String;
+  sizeClass?: string;
+  textColor?: string;
   bgColorClass?: string;
   borderColorClass?: string;
   onClick?: () => void;
@@ -16,7 +16,6 @@ const Button = ({
   textColor = "text-black",
   bgColorClass: bgColor,
   borderColorClass = "border-black",
-  onClick = () => {},
   children,
 }: ButtonProp) => {
   let buttonClass = outlined
@@ -24,7 +23,6 @@ const Button = ({
     : `${bgColor ? bgColor : "bg-black"} text-white`;
   return (
     <button
-      onClick={onClick}
       className={`${buttonClass} ${sizeClass} border-[3px] ${borderColorClass} rounded font-bold outline-none`}
     >
       {children}

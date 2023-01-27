@@ -7,7 +7,6 @@ const CardHeader: FC<CardHeaderProps> = ({
   type,
   children,
   description,
-  bgColor,
 }) => {
   return (
     <div

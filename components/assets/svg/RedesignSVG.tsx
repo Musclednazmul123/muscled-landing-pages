@@ -2,6 +2,7 @@ import React, { FC } from "react";
 
 import { SVGProps } from "../../../types/types";
 const RedesignSVG: FC<SVGProps> = ({ className, ...props }) => {
+  console.log(props)
   return (
     <svg
       width="436"

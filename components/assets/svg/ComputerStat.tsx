@@ -1,6 +1,6 @@
-import React, { SVGAttributes, SVGProps } from "react";
+import React, { SVGProps } from "react";
 
-export type ComputerStatProps = {} & SVGProps<SVGSVGElement>
+export type ComputerStatProps = Record<string, never> & SVGProps<SVGSVGElement>
 
 const ComputerStat = (props: ComputerStatProps) => {
   return (
@@ -231,8 +231,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="193.905"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2_6643"
@@ -242,9 +242,9 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="108.855"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.3946" stop-color="#383C74" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.3946" stopColor="#383C74" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2_6643"
@@ -254,8 +254,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="227.863"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_2_6643"
@@ -265,8 +265,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="285.745"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFC444" />
-          <stop offset="0.9964" stop-color="#F36F56" />
+          <stop stopColor="#FFC444" />
+          <stop offset="0.9964" stopColor="#F36F56" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_2_6643"
@@ -276,8 +276,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="99.9005"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D8DEE8" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#D8DEE8" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_2_6643"
@@ -287,8 +287,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="72.0958"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_2_6643"
@@ -298,8 +298,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="70.5339"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_2_6643"
@@ -309,8 +309,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="66.9027"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_2_6643"
@@ -320,8 +320,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="65.2009"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_2_6643"
@@ -331,8 +331,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="75.0514"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_2_6643"
@@ -342,8 +342,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="73.668"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_2_6643"
@@ -353,8 +353,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="75.9762"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_2_6643"
@@ -364,8 +364,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="72.3918"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_2_6643"
@@ -375,8 +375,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="68.4674"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9085" />
-          <stop offset="1" stop-color="#FB6FBB" />
+          <stop stopColor="#FF9085" />
+          <stop offset="1" stopColor="#FB6FBB" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_2_6643"
@@ -386,8 +386,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="132.969"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_2_6643"
@@ -397,8 +397,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="103.922"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_2_6643"
@@ -408,8 +408,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="87.1578"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_2_6643"
@@ -419,8 +419,8 @@ const ComputerStat = (props: ComputerStatProps) => {
           y2="148.709"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#444B8C" />
-          <stop offset="0.9964" stop-color="#26264F" />
+          <stop stopColor="#444B8C" />
+          <stop offset="0.9964" stopColor="#26264F" />
         </linearGradient>
       </defs>
     </svg>

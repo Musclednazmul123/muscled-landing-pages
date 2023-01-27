@@ -1,9 +1,7 @@
 import React, { FC } from "react";
 import { IProps } from "./types";
 import Button from "./Button";
-import Star from "../assets/svg/Star";
 import Check from "../assets/svg/Check";
-import FlexLayout from "./layout/FlexLayout";
 
 const Card: FC<IProps> = ({
   starIcons,

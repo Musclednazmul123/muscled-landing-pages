@@ -19,9 +19,9 @@ interface EllipsesProps {
   delta: number;
 }
 
-let Ellipses: FC<EllipsesProps> = ({ arrayLength, delta }) => {
-  let ellipses: JSX.Element[] = [];
-  let iterations: number = arrayLength <= 3 ? 2 : arrayLength - 2;
+const Ellipses: FC<EllipsesProps> = ({ arrayLength, delta }) => {
+  const ellipses: JSX.Element[] = [];
+  const iterations: number = arrayLength <= 3 ? 2 : arrayLength - 2;
   for (let i = 1; i <= iterations; i++) {
     ellipses.push(
       <div
@@ -73,7 +73,7 @@ const Slider = ({
       }
     };
 
-    const handleUp = (e: PointerEvent) => {
+    const handleUp = () => {
       element?.removeEventListener("pointermove", handleMove);
     };
 

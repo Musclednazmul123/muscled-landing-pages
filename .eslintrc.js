@@ -13,7 +13,6 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
   ],
   globals: {
     Atomics: 'readonly',
@@ -31,6 +30,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    "react/no-unescaped-entities": 0,
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'no-unused-vars': 0,
@@ -39,7 +39,7 @@ module.exports = {
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
     '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/ban-ts-ignore': 0,
+    "@typescript-eslint/ban-ts-comment": "error",
     '@typescript-eslint/explicit-function-return-type': [
       'warn',
       {

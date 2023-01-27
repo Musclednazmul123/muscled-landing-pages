@@ -1,8 +1,7 @@
 import React from "react";
 import QuestionCard from "./QuestionCard";
-type Props = {};
 
-export default function FAQ({}: Props) {
+export default function FAQ() {
   const questionCardData = [
     {
       question: "What are ecommerce PPC services?",

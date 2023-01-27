@@ -122,9 +122,9 @@ export default function Index({ tableData }: Props) {
           </thead>
           <tbody>
             {tableData.tableRows.map((item: any) => {
-              let header;
+              
 
-              header = (
+              const header = (
                 <tr>
                   <Th
                     className={'text-left  text-white font-normal'}

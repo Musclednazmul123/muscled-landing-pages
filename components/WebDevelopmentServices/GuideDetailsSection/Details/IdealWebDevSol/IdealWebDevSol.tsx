@@ -3,7 +3,7 @@ import DetailsGenerator from '../DetailsGenerator/DetailsGenerator'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 import IdealWebDevSolCard from "./IdealWebDevSolCard/IdealWebDevSolCard";
 
-let IdealWebDevSolData:detailGeneratorProps={
+const IdealWebDevSolData:detailGeneratorProps={
 heading:"Get your ideal web development solution today",
 paragraphs:["Are you ready to grow your business to new levels through the Internet? We’d love to hear from you!",],    
 }

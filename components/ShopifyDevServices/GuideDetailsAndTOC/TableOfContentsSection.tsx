@@ -5,7 +5,7 @@ import { TableOfContent } from "../../Fawwaz/Table";
 import { ChevronDoubleRightIcon } from "@heroicons/react/solid";
 
 const TableOfContentsSection: FC = () => {
-  let [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(true);
   return (
     <div className="w-[440px] sticky top-5 self-start">
       <TableOfContent

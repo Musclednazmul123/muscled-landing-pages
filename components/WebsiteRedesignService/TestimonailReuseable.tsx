@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { Section } from "../Fawwaz/Sections";
 import Button from "../Fawwaz/Button";
-import VideoFrame from "../Fawwaz/VideoFrame";
 import { TestmonailProps } from "../Fawwaz/component.type";
 import ReactPlayerModal from "../ReactPlayerModal";
 import playIcon from "components/playIcon";

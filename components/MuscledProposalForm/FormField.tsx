@@ -15,7 +15,6 @@ const FormField: FC<FormFieldProps> = ({
 }) => {
   const {
     register,
-    watch,
     formState: { errors },
   } = useFormContext();
   // console.log(errors);

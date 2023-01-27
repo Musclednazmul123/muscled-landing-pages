@@ -1,15 +1,7 @@
 import React from "react";
-import Partner from "../Fawwaz/PartnerLogo/Partner";
-import Logo from "../Fawwaz/Logo";
 import { Section } from "../Fawwaz/Sections";
 import Icons from "../assets/landingPageSVG/Icons";
-// images
-import PartnerOne from '@/components/assets/svg/partner/PartnerOne';
-import PartnerTwo from '@/components/assets/svg/partner/PartnerTwo';
-import PartnerThree from '@/components/assets/svg/partner/PartnerThree';
-import PartnerFour from '@/components/assets/svg/partner/PartnerFour';
-import PartnerFive from '@/components/assets/svg/partner/PartnerFive';
-import PartnerSix from '@/components/assets/svg/partner/PartnerSix';
+
 function Partners() {
   return (
     <div className="bg-white">

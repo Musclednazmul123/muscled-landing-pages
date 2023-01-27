@@ -12,11 +12,6 @@ const Card: FC<IProps> = ({
   duration,
   height,
 }) => {
-  const center = false;
-  const image =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png";
-
-  const button = "hello world";
 
   return (
     <div

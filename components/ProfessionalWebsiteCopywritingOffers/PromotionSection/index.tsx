@@ -1,8 +1,4 @@
 import React from 'react';
-import VideoPlayer from '../../ReactPlayerModal';
-import PlayIcon from '../../playIcon';
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-import { url } from 'inspector';
 
 export default function PromotionalSection() {
   return (

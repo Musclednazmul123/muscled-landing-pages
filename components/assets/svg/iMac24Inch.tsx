@@ -1,6 +1,6 @@
 import React from "react";
 
-const iMac24Inch = (props: React.SVGProps<SVGSVGElement>) => {
+const iMac24Inch = () => {
   return (
     <svg
       width="170"

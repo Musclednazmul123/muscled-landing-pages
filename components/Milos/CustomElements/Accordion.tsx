@@ -32,7 +32,7 @@ const Accordion: FC<AccordionProp> = ({ header, content, job_location, job_type 
             strokeWidth={1.5}
             stroke="currentColor"
             className="w-6 h-6 cursor-pointer text-[33px]"
-            onClick={(e) => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(!isOpen)}
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
@@ -44,7 +44,7 @@ const Accordion: FC<AccordionProp> = ({ header, content, job_location, job_type 
             strokeWidth={1.5}
             stroke="currentColor"
             className="w-6 h-6 cursor-pointer text-[33px]"
-            onClick={(e) => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(!isOpen)}
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
           </svg>

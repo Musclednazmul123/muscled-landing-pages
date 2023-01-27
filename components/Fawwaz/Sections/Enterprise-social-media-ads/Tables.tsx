@@ -117,7 +117,7 @@ const Tables: React.FC = () => {
 	);
 };
 
-let BodyContentExtract=({content}:{content:{bold:String,desc:String}})=>{
+const BodyContentExtract=({content}:{content:{bold:string,desc:string}})=>{
 
 				return 											<>
 				<div className="font-bold">

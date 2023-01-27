@@ -1,10 +1,9 @@
-import Link from "next/link";
 import React from "react";
 import { FC } from "react";
 import { ButtonProps } from "./types";
 
 interface Props {
-  arrow: String;
+  arrow: string;
 }
 const Arrow = ({ arrow }: Props) => {
   if (arrow === "small") {

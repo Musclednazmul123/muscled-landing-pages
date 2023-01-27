@@ -1,7 +1,5 @@
-import Container from "@/components/layout/Container";
 import FlexLayout from "@/components/layout/FlexLayout";
 import Button from "@/components/ui/Button";
-import VideoPlay from "@/components/ui/icons/VideoPlay";
 import ReactPlayerModal from "../../ReactPlayerModal";
 import PlayIcon from "./PlayIcon";
 

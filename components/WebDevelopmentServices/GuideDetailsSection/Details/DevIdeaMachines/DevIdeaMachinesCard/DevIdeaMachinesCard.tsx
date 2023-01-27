@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 
-let measures: string[] = ["Leads", "Transactions", "Calls", "Revenue"];
+const measures: string[] = ["Leads", "Transactions", "Calls", "Revenue"];
 
 const DevIdeaMachinesCard: FC = () => {
   return (

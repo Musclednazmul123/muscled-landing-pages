@@ -2,7 +2,7 @@ import React,{FC} from 'react'
 import DetailsGenerator from '../DetailsGenerator/DetailsGenerator'
 import {detailGeneratorProps} from "../../../WebDevInterfaces/WebDevInterfaces";
 
-let OurWebDevPhilosphyData:detailGeneratorProps={
+const OurWebDevPhilosphyData:detailGeneratorProps={
     heading:"Our web development philosophy",
     paragraphs:["As you can see from our list of web development services above, WebFX web developers have worked in virtually every aspect of development. They’ve coded, created, and worked hand-in-hand with our clients to make sure they get the best results for their investment — no matter how big that investment may be.",
     "Our developers understand that core functionality is critical to the success of any Internet marketing campaign. If you want to create a website that continually draws traffic, engages visitors, and generates paying customers, then your site simply needs to work.",

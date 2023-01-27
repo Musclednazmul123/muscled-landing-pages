@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-export default function Star({}: Props) {
+export default function Star() {
   return (
     <>
       <svg

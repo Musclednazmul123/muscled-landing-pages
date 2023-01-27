@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import { SVGProps } from "../../types/types";
 
-const Star: FC<SVGProps> = ({ className, opacity }) => {
+const Star: FC<SVGProps> = ({ className }) => {
   return (
     <svg
       className={className}

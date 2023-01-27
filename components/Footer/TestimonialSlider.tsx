@@ -5,7 +5,7 @@ import Slider, { Settings } from "react-slick";
 import Button from "../Fawwaz/Button";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
-let testimonialsData: Array<footerTestimonialProps> = [
+const testimonialsData: Array<footerTestimonialProps> = [
   {
     title:
       "MUSCLED has been a pleasure to work with on our SEO needs and I look forward to working with them on future projects.",
@@ -32,10 +32,11 @@ let testimonialsData: Array<footerTestimonialProps> = [
 ];
 
 const TestimonialSlider: FC = () => {
-  let [currentSlide, setCurrentSlide] = useState<number>(0);
-  let sliderRef = useRef<Slider>(null);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const sliderRef = useRef<Slider>(null);
 
-  let afterChange = (newSlide: number) => {
+  console.log(currentSlide)
+  const afterChange = (newSlide: number) => {
     // console.log("After Change Current Slide " + newSlide);
     setCurrentSlide(newSlide);
   };

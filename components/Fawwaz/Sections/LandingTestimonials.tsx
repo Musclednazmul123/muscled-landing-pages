@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import React from "react";
 import Button from "../Button";
-import VideoFrame from "components/Fawwaz/VideoFrame";
 import ReactPlayerModal from "components/ReactPlayerModal";
 import PlayIcon from '@/components/playIcon';
 

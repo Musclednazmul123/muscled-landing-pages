@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-export default function FAQ({}: Props) {
+export default function FAQ() {
   return (
     <>
       <div className='lg:w-[60%] mt-[20px]'>

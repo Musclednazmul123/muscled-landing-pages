@@ -27,16 +27,16 @@ const logo = [
 const Partners:FC = () => {
   return (
     <div className="bg-white">
-				<Section className="text-center pt-16">
-					<h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
+        <Section className="text-center pt-16">
+            <h3 className="text-black-50 text-2xl">SEO TOOLS</h3>
 
-					<div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
-                    {logo.map((logo) => {
-							return <Icon customClasses="" icon={logo.icon} />;
-						})}			
-					</div>
-				</Section>
-			</div>
+            <div className="pt-5 flex flex-wrap justify-center lg:justify-between pb-12 gap-6">
+            {logo.map((logo, i) => {
+                    return <Icon key={`${i}-${logo.icon}`} customClasses="" icon={logo.icon} />;
+                })}			
+            </div>
+        </Section>
+    </div>
 
   )
 }

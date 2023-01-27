@@ -10,7 +10,7 @@ const Table: FC<tableContentProps> = ({
   subSection,
   List,
 }) => {
-  let [isOpen, setOpen] = useState<Boolean>(true);
+  const [isOpen, setOpen] = useState(true);
   return (
     <div
       className={`flex flex-col rounded-lg ${

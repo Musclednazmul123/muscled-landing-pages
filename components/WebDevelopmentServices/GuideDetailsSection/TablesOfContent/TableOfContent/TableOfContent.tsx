@@ -4,7 +4,7 @@ import TableList from "../Tablelist";
 import Image from "next/image";
 import { tableContentProps } from "../../../../WebDevelopmentServices/WebDevInterfaces/WebDevInterfaces";
 
-let tableIcon: JSX.Element = (
+const tableIcon: JSX.Element = (
   <Image src="/tableIcon.png" width="20" height="20" />
 );
 
@@ -18,7 +18,7 @@ const items = [
   "Get your ideal web development solution today",
 ];
 
-let TableOfContentData: tableContentProps = {
+const TableOfContentData: tableContentProps = {
   tableTitle: "Table of content",
   tableIcon,
   tableWidth: "w-[400px]",

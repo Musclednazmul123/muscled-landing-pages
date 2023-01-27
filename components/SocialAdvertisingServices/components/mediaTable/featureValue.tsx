@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react'
+import React, { FC } from 'react'
 import { feature } from '../component.type'
 
 const Value: FC<feature> = ({ featureValue, type }) => {

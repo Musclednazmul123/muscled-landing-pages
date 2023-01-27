@@ -14,8 +14,9 @@ const AdditionalSocailMedia = ({
         {AdditionalSocailMediaMetaData?.para}
       </p>
       <div className="flex flex-row ">
-        {AdditionalSocailMediaMetaData.items.map((item: any) => (
+        {AdditionalSocailMediaMetaData.items.map((item: any, i) => (
           <SimpleCard
+            key={`${i}-${item.itemTitle} `}
             itemTitle={item.itemTitle}
             itemPara={item.itemPara}
             buttonLabel={item.buttonLabel}

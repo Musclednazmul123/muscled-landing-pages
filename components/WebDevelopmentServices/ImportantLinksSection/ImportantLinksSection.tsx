@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import ImportantLinkItem from "./ImportantLinkItem/ImportantLinkItem";
 import { ImportantLinkItemData } from "../WebDevInterfaces/WebDevInterfaces";
 
-let ImportantLinksData: ImportantLinkItemData[] = [
+const ImportantLinksData: ImportantLinkItemData[] = [
   {
     heading: "Web Design Services",
     listItems: [

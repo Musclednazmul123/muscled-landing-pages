@@ -8,7 +8,7 @@ interface SliderItem {
   title: string;
   tags: string[];
 }
-let slidersData: SliderItem[] = [
+const slidersData: SliderItem[] = [
   {
     title: "Number of pages",
     tags: ["0-10", "10-50", "50-100", "250"],
@@ -48,6 +48,7 @@ const RangeSliderSection: FC<RangeSliderSectionProps> = ({
   textColor,
   ...props
 }) => {
+  console.log(props)
   return (
     <div className={`${bgColor} ${textColor} w-full p-16`}>
       <h2 className={`${textColor} text-[40px] font-bold mb-8 w-[70%]`}>

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import DynamicSection from '../components/DynamicSection'
 import { PartnerData } from '../data/partner'
 import Logo from '../components/partnerSection/logo'

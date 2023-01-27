@@ -4,7 +4,7 @@ import DropDownIcon from "./DropDownIcon";
 
 
 const NavItem:FC<NavItemProps> = ({navTitle,children}) => {
-let [selected,setSelected]=useState<boolean>(false);
+const [selected,setSelected]=useState<boolean>(false);
 
 const handleMouseOver=()=>{
     setSelected(true);

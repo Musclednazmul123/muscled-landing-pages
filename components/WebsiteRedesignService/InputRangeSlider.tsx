@@ -1,5 +1,3 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
-import PropTypes from "prop-types";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 // import styles from "./styles.module.scss";
 
@@ -16,6 +14,7 @@ const InputRangeSlider: React.FC<IProps> = ({
   left,
   inputTitle,
 }) => {
+  console.log(width)
   return (
     <div className="flex flex-col lg:flex-row justify-between gap-4">
       <p className=" md:text-2xl text-white">{inputTitle}</p>

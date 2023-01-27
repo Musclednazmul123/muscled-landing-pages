@@ -21,9 +21,8 @@ const CardSection = () => {
 
       <div className="flex flex-wrap justify-center lg:justify-between w-[1240px]">
         {cardData &&
-          cardData.map((cardItem) => {
-            return (
-              <div className="rounded-sm border-[1px] border-[#000000]/[0.7] border-solid max-w-[400px] w-full bg-[#FFFFFF]">
+          cardData.map((cardItem, index) => 
+              <div key={`${index}-${cardItem?.title}`} className="rounded-sm border-[1px] border-[#000000]/[0.7] border-solid max-w-[400px] w-full bg-[#FFFFFF]">
                 <CardHeader
                   title={cardItem?.title}
                   rate={cardItem?.rate}
@@ -85,8 +84,7 @@ const CardSection = () => {
                   buttonLabel={cardItem?.buttonLabel}
                 />
               </div>
-            );
-          })}
+            )}
       </div>
     </Section>
   );

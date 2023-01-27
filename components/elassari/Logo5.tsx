@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import { SVGProps } from "../../types/types";
 
-const Check: FC<SVGProps> = ({ className, opacity }) => {
+const Check: FC<SVGProps> = ({ className }) => {
   return (
     <svg
       className={`${className}`}

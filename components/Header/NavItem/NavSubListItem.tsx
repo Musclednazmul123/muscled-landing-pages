@@ -13,7 +13,7 @@ const NavSubListItem:FC<NavSubListItemProps> = ({
 linkTitle,
 link
 }) => {
-    let [hovered,setHovered]=useState<boolean>(false);
+    const [hovered,setHovered]=useState<boolean>(false);
 
     const handleMouseOver=()=>{
         setHovered(true);

@@ -1,14 +1,13 @@
 import React, { FC } from 'react'
 import Image from 'next/image'
 import { HeroFeatures } from '../component.type'
-import img from '../../../../components/assets/SocialAdvertisingServices/icon-sales-funnel 1.png'
+// import img from '../../../../components/assets/SocialAdvertisingServices/icon-sales-funnel 1.png'
 
 const Feature: FC<HeroFeatures> = ({
   topSubHeading,
   heading,
   bottomSubHeading,
-  icon,
-  className
+  icon
 }) => {
   return (
     <div className="bg-black flex p-2 w-full basis-1/5 xl:basis-1 mb-[10px] rounded-sm">

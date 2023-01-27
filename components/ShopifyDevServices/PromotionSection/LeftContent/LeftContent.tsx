@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-let list: string[] = [
+const list: string[] = [
   "Strong Security features",
   "Fast pages",
   "Responsive themes",

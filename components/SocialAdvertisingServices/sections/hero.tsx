@@ -10,9 +10,6 @@ import Feature from '../components/heroSection/feature'
 const HeroSection: FC<HeroSectionProps> = ({
   title,
   description,
-  features,
-  input,
-  className
 }) => {
 
   const DisplayFeatures = () => {

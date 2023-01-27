@@ -16,8 +16,8 @@ const PartnerLogoSection = ({ noOfLogos }: PropsPartnerSection) => {
       <h3 className="text-black-50 text-2xl">Our Partners</h3>
 
       <div className="pt-5 flex flex-wrap justify-between pb-12 gap-6">
-        {noOfLogos.map((item: { src: string }) => (
-          <Logo src={item.src} width={154} height={34} />
+        {noOfLogos.map((item: { src: string }, i) => (
+          <Logo key={`${item.src}-${i}`} src={item.src} width={154} height={34} />
         ))}
       </div>
     </section>

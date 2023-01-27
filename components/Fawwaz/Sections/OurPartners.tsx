@@ -16,12 +16,13 @@ const OurPartners: FC = () => {
           Our Partners
         </h4>
         <div className="partner-wrapper flex flex-wrap flex-col md:flex-row justify-between items-center gap-10">
-          <Partner src="https://google.com" children={<PartnerOne />} />
-          <Partner src="https://google.com" children={<PartnerTwo />} />
-          <Partner src="https://google.com" children={<PartnerThree />} />
-          <Partner src="https://google.com" children={<PartnerFour />} />
-          <Partner src="https://google.com" children={<PartnerFive />} />
-          <Partner src="https://google.com" children={<PartnerSix />} />
+          <Partner src="https://google.com" ><PartnerOne /></Partner>
+          <Partner src="https://google.com" ><PartnerTwo /></Partner>
+          <Partner src="https://google.com" ><PartnerThree /></Partner>
+          <Partner src="https://google.com" ><PartnerFour /></Partner>
+          <Partner src="https://google.com" ><PartnerFive /></Partner>
+          <Partner src="https://google.com" ><PartnerSix /></Partner>
+          <Partner src="https://google.com" ><PartnerOne /></Partner>
         </div>
       </div>
     </>

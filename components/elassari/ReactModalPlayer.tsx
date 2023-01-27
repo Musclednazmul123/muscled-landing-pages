@@ -1,4 +1,3 @@
-import { PlayIcon } from "@heroicons/react/outline";
 import { NextPage } from "next";
 import Image from "next/image";
 import React, { useState } from "react";

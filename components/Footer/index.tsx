@@ -1,8 +1,5 @@
 import { FC } from "react";
-import Button from "../Fawwaz/Button";
 import { Counter, CounterBox } from "../Fawwaz/Counter";
-import Slider from "react-slick";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 import footerIcon from "../assets/footer-roket-1.png";

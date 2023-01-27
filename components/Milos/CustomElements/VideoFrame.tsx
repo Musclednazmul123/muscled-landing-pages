@@ -4,6 +4,9 @@ import playIconImage from '../../assets/play.png'
 import { VideoFrameProps } from "../../Milos/component.type"
 
 const VideoFrame: FC<VideoFrameProps> = ({ className, allowFullScreen, sourceURL, ...props }) => {
+  console.log(className)
+  console.log(allowFullScreen)
+  console.log(props)
   const playIcon = () => {
     return (
       <img src={playIconImage.src} alt="" style={{ cursor: 'pointer' }} />

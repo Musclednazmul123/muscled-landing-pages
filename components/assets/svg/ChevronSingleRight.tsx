@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { SVGProps } from "types/types";
 
 const ChevronSingleRight: FC<SVGProps> = ({ className, ...props }) => {
+  console.log(props)
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

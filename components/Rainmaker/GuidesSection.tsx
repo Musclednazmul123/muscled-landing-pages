@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const cardData = [
   {
@@ -32,8 +31,8 @@ const GuidesSection: React.FC = () => {
       </h3>
 
       <div className="flex gap-10 justify-center items-stretch flex-wrap xl:flex-nowrap">
-        {cardData.map(data => (
-          <div className="flex flex-col rounded-lg bg-[#E1FDD3] max-w-[24.1875rem] items-center">
+        {cardData.map((data, i) => (
+          <div key={`${i}-${data.title}`} className="flex flex-col rounded-lg bg-[#E1FDD3] max-w-[24.1875rem] items-center">
             <div className="relative h-[15.125rem]">
               {/* <Image
                 src={data.img || '/banner.png'}

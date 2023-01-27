@@ -3,7 +3,7 @@ import { detailGeneratorProps } from "../../../WebDevInterfaces/WebDevInterfaces
 import DetailsGenerator from "../DetailsGenerator/DetailsGenerator";
 import DevIdeaMachinesCard from "./DevIdeaMachinesCard/DevIdeaMachinesCard";
 
-let DevIdeaMachinesData: detailGeneratorProps = {
+const DevIdeaMachinesData: detailGeneratorProps = {
   heading: "Our developers are Idea machines",
   paragraphs: [
     "Our developers are so experienced that they can suggest new ways for your business to succeed online, implement them, and fine-tune them to perfection.",

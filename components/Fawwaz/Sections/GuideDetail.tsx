@@ -16,8 +16,8 @@ const GuideDetail = () => {
             id="why-ppc"
             question="What is PPC?"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <p>
                   Before taking a deep dive into landing pages let´s first cover
                   the basics of PPC. PPC or Paid per clicks, is an advertising
@@ -66,15 +66,14 @@ const GuideDetail = () => {
                   your PPC and social media ads.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="ppc-campaign"
             question="Why have a landing page for a PPC campaign?"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <p>
                   You can't just depend on SEO (search engine optimization) and
                   online advertising to increase your site's traffic. Converting
@@ -97,15 +96,14 @@ const GuideDetail = () => {
                   and many other benefits.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="page-guide"
             question="How Landing Pages Guide Your Audience"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   own an outdoor recreation company and you are currently
                   running a Google Ads campaign that targets searches related to
@@ -135,15 +133,14 @@ const GuideDetail = () => {
                   want consistency.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="better-exp"
             question="How landing pages help you provide a better experience"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   Landing pages structure your data and make it more accessible.
                   It will be impossible for your website to be optimized for
@@ -161,15 +158,14 @@ const GuideDetail = () => {
                   divisions through the integration of better landing pages.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="how-much"
             question="How much do you need to spend on a custom landing page?"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <p>The price varies.</p>
                 <p>
                   The amount of content, testing, development, and optimization
@@ -185,15 +181,14 @@ const GuideDetail = () => {
                   you’re going to pay.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="how-much-specific"
             question="How much does a specific custom landing page cost?"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <p>
                   There are two ways you can get visitors to your landing pages:
                   through social media such as Facebook Pages, Twitter, and so
@@ -202,15 +197,14 @@ const GuideDetail = () => {
                   more about them below.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="ppc-landing-pages"
             question="PPC Landing Pages"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   These are the salespeople for your online PPC campaigns. For
                   it to be effective, you need to have a landing page unique to
@@ -231,15 +225,14 @@ const GuideDetail = () => {
                   listings, among others.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="social-media-landing-pages"
             question="Social media landing pages"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   These landing pages are designed to be viral on internet
                   forums and social media platforms like Twitter or Facebook. It
@@ -280,30 +273,28 @@ const GuideDetail = () => {
                   performance, schedule a call!
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="8-crucial-components"
             question="8 crucial components for top landing page designs"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <p>
                   An effective landing page design hinges upon effective
                   components and structure. Let’s take a look at eight things
                   that make a landing page good.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="focus-on-one-product"
             question="It focuses on one product or service"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   A landing page needs to deliver a focused experience for your
                   viewers. It is expected that your goal should be to persuade
@@ -321,15 +312,14 @@ const GuideDetail = () => {
                   get the best results from your PPC and social media marketing.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="landing-consistent"
             question="The landing pages are consistent"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   It’s normal to invest a lot of time in making sure that your
                   landing page will be excellent. You want it to not only
@@ -354,15 +344,14 @@ const GuideDetail = () => {
                   with your brand.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="catchy-headline"
             question="The headlines are catchy"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   Headlines are the first thing that people see on your page.
                   Put your best foot forward. Make an interesting title that’ll
@@ -380,15 +369,14 @@ const GuideDetail = () => {
                 </p>
                 <p>Remember that your leads are built on catchy headlines</p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="visuals"
             question="It has visuals"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   People don’t want to face a wall of text. Other than boosting
                   engagement, the use of visuals on your landing page will point
@@ -429,15 +417,14 @@ const GuideDetail = () => {
                   themselves into customers.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="strong-cta"
             question="The landing page has strong calls to action (CTAs)"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   Having a call to action, or CTA, means the difference between
                   someone moving forward and forgetting about your site and them
@@ -468,15 +455,14 @@ const GuideDetail = () => {
                   company. You need them to be as effective as they can be.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="trust-signal"
             question="The landing page has trust signals"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   You need to demonstrate why your product is the best option.
                   The trust signals on your page will reinforce that thought and
@@ -498,15 +484,14 @@ const GuideDetail = () => {
                   confidence in your company.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="page-accessible"
             question="The landing page is accessible"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   You should know that your landing page will be accessed by
                   users on their mobile phones. Make sure that your landing page
@@ -520,15 +505,14 @@ const GuideDetail = () => {
                   company.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="short-form"
             question="It has short forms"
             headingSize="small"
-            children={
-              <>
+          >
+            <>
                 <p>
                   It’s normal for businesses to have forms on their landing
                   pages to collect information from their audience. If you feel
@@ -603,15 +587,14 @@ const GuideDetail = () => {
                   </p>
                 </div>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="faq"
             question="FAQs about landing page design services"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <h4 className="text-2xl">
                   What are landing page design services?
                 </h4>
@@ -630,15 +613,14 @@ const GuideDetail = () => {
                   landing page.
                 </p>
               </>
-            }
-          />
+          </GuideItem>
 
           <GuideItem
             id="get-most"
             question="Get the most out of your landing page designs"
             headingSize="large"
-            children={
-              <>
+          >
+            <>
                 <p>
                   If you want to do more with your website and ad campaigns,
                   schedule a call. We’re looking forward to giving your website
@@ -671,8 +653,7 @@ const GuideDetail = () => {
                   </div>
                 </div>
               </>
-            }
-          />
+          </GuideItem>
         </div>
         <div className="custom-relative lg:max-w-[404px]">
           <div className="sticky top-10">

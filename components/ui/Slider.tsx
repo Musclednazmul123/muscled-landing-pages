@@ -30,7 +30,7 @@ const Slider = ({ tags, percentage }: SliderProp) => {
       }
     };
 
-    const handleUp = (e: PointerEvent) => {
+    const handleUp = () => {
       element?.removeEventListener("pointermove", handleMove);
     };
 

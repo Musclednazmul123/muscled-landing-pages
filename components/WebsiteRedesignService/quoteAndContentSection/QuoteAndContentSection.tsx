@@ -1,6 +1,5 @@
 import React from "react";
 import { Section } from "../../Fawwaz/Sections";
-import InstantQuoteSection from "../instantQuoteSection/InstantQuoteSection";
 import RangeSlider from "./sliderComponent/RangeSliderSection";
 import RedesignContentSection from "../redesignContentSection/RedesignContentSection";
 import ServicesCardSection from "../servicesCardSection/ServicesCardSection";

@@ -4,10 +4,9 @@ import { IconItem } from "../../Fawwaz/Card"
 import {  TableOfContent as TableFawaz} from "../../Fawwaz/Table";
 import {ChevronDoubleRightIcon} from "@heroicons/react/solid";
 
-import { BsDot } from "react-icons/bs"
 
 const TableOfContent: FC = () => {
-  let [isOpen,setIsOpen]= useState<boolean>(true);
+  const [isOpen,setIsOpen]= useState<boolean>(true);
   return (
     <TableFawaz
     className="border border-black-30 h-fit sticky top-0"

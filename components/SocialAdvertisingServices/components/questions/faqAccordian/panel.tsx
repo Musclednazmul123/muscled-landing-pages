@@ -24,7 +24,7 @@ const Panel: FC<panel> = ({ heading, description, index }) => {
         {heading}
         <div
           id={`expand-${index ? index : ''}`}
-          onClick={(e) => {
+          onClick={() => {
             togglePanel(index)
           }}
           className={'cursor-pointer' + styles.plusminu}

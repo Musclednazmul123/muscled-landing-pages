@@ -4,13 +4,13 @@ import { FaCheck } from "react-icons/fa";
 interface ITableBody {
 	title: {
 		type: "unique" | "content";
-		content: String
+		content: string
 			| {
-					bold: String;
-					desc: String;
+					bold: string;
+					desc: string;
 			  };
 	};
-	description: String[] | JSX.Element[];
+	description: string[] | JSX.Element[];
 }
 
 const tableHeader = [
@@ -355,6 +355,6 @@ const tableBody: ITableBody[] = [
 	},
 ];
 
-const tableFooter = [...Array(tableHeader.length - 1)].map(x => x)
+const tableFooter = [...Array(tableHeader.length - 1)].map((x) => x)
 
 export { tableHeader, tableBody, tableFooter }

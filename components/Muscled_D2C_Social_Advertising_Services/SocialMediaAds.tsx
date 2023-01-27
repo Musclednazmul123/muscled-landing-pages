@@ -4,8 +4,7 @@ import Section from "../../components/Fawwaz/Sections/Section";
 import { TableMetaData } from "../../components/utils/muscled-d2c-constants";
 
 const SocialMediaAds = () => {
-  const url =
-    "https://s3-alpha-sig.figma.com/img/5ac4/44af/013f20f332ab89e89039d9ba1821657c?Expires=1662940800&Signature=gbQq7B5Od4E~X576Fcs~FfBPy5-TnDzwZagXJBhcpybGl~8gbQXqxLZcg0uP2w9zPHZevmuXxeQ3wwvSvFj26if0F~bVZ22MV3brIujf3ZqkZC9cSBDa4M4v9joI6WN8G2GnXkhUW60CBprPRJK3dPcbzWzzI6qxc9SjJKPW1c2SbnJJQUI5dtgQGG-6xKfF~iFzsm8KqKuElOqKPif7aIgcvggFbgzIPoq9-MJMuxVMRBkbpEPfVhCMA1zDxLqwcw8YxHAzaDzo5tzZAYG1NDrVqttLBt7WZe570vRy0zQZmP8TblSfP7U4LZosux5bD493DE6z6bRdtPojRGobYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA";
+ 
   return (
     <Section>
       <div className="flex mt-[120px]">

@@ -10,7 +10,7 @@ import UserSVG from "../../components/assets/svg/UserSVG";
 import TrophySVG from "../../components/assets/svg/TrophySVG";
 import CloudComputingSVG from "../../components/assets/svg/CloudComputingSVG";
 
-const Hero: FC<HeroSectionProps> = ({ title, description, heroSVG, input }) => {
+const Hero: FC<HeroSectionProps> = ({ title, input }) => {
   return (
     <div className=" bg-black-70 px-3 lg:px-0">
       <Section className="py-24 flex flex-wrap h-auto mx-auto justify-center items-center space-y-24 lg:space-y-0 gap-x-[57px] lg:justify-between">

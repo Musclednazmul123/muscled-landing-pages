@@ -6,6 +6,7 @@ const List: FC<ListType> = ({ content, className, id, link }) => {
   const displayList = (
     array: { content: string; link: string }[] | string[]
   ) => {
+    console.log(link)
     return array.map(
       (item: { content: string; link: string } | string, key: number) => {
         return (

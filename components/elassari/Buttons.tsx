@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import React, { ReactNode } from "react";
 
 interface IProps {
@@ -28,7 +27,6 @@ const Buttons: NextPage<IProps> = ({
   width = "w-[205px]",
   rounded = "rounded-[5px]",
   fontSize = "font-[20px]",
-  EndIcon,
   shadow,
   border,
   children,

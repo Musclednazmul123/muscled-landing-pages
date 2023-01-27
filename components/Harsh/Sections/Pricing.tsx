@@ -1,8 +1,7 @@
 import React,{FC} from 'react'
-import {Section} from "../../Fawwaz/Sections";
 import Button from "../../Fawwaz/Button";
 import { Card, CardContent, IconItem } from "../../Fawwaz/Card";
-import {CardFooter,CardHeader} from "../Card";
+import {CardHeader} from "../Card";
 import { StarIcon, CheckCircleIcon} from "@heroicons/react/solid";
 
 const CheckIcon: FC = () => <CheckCircleIcon className="fill-black w-6 h-6" />;
